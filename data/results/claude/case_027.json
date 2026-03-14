@@ -1,0 +1,294 @@
+{
+  "case_id": "case_027",
+  "model": "claude",
+  "ground_truth": "Cyclophosphamide-induced cystitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Bladder cancer",
+          "Painless hematuria is the classic presentation, though lower abdominal pain can occur with advanced disease or invasion, and age over 70 is a significant risk factor."
+        ],
+        [
+          "Urinary tract infection with cystitis",
+          "Can cause both hematuria and lower abdominal pain, though more common in women, it occurs in elderly men especially with prostatic obstruction."
+        ],
+        [
+          "Bladder calculi",
+          "Stones in the bladder commonly cause hematuria and suprapubic pain, particularly in elderly men with urinary stasis."
+        ],
+        [
+          "Benign prostatic hyperplasia with hematuria",
+          "Very common in 70-year-old men and can cause hematuria from prostatic vessel rupture and lower abdominal discomfort from urinary retention."
+        ],
+        [
+          "Renal cell carcinoma with clot colic",
+          "Can present with gross hematuria and lower abdominal pain from blood clots passing through the ureter, though flank pain is more typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Bladder cancer",
+          "Painless hematuria is the classic presentation in elderly men, with suprapubic pain suggesting local bladder involvement."
+        ],
+        [
+          "Hemorrhagic cystitis",
+          "Suprapubic tenderness with hematuria suggests bladder inflammation, though typically associated with identifiable triggers."
+        ],
+        [
+          "Bladder stones",
+          "Can cause both hematuria and suprapubic pain, particularly common in elderly men with urinary retention."
+        ],
+        [
+          "Urinary tract infection with cystitis",
+          "Suprapubic tenderness and hematuria are consistent with lower urinary tract infection."
+        ],
+        [
+          "Prostate cancer with bladder invasion",
+          "Age-appropriate malignancy that can cause hematuria and suprapubic discomfort when locally advanced."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "Absence of costovertebral angle tenderness makes upper urinary tract infection unlikely."
+        ],
+        [
+          "Nephrolithiasis",
+          "Absence of costovertebral angle tenderness and lack of flank pain makes renal stones less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Hemorrhagic cystitis (chemotherapy-induced)",
+          "Recent chemotherapy history with bladder wall thickening, hematuria, and suprapubic pain is classic for cyclophosphamide or ifosfamide-induced hemorrhagic cystitis."
+        ],
+        [
+          "Bladder cancer",
+          "Age 70 with gross hematuria and bladder wall thickening raises concern for transitional cell carcinoma, though red blood cell casts are atypical."
+        ],
+        [
+          "Glomerulonephritis",
+          "Red blood cell casts are pathognomonic for glomerular disease, though this doesn't explain the bladder wall thickening or focal suprapubic symptoms."
+        ],
+        [
+          "Radiation cystitis",
+          "If the patient received pelvic radiation as part of lymphoma treatment, this could cause bladder wall thickening and hematuria."
+        ],
+        [
+          "Severe bacterial cystitis",
+          "Bladder infection can cause hematuria and bladder wall thickening, though red blood cell casts suggest concurrent glomerular involvement."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Nephrolithiasis",
+          "CT scan shows no stones and absence of costovertebral angle tenderness makes this unlikely."
+        ],
+        [
+          "Hydronephrosis/obstructive uropathy",
+          "Explicitly ruled out by CT scan findings."
+        ],
+        [
+          "Pyelonephritis",
+          "Absence of costovertebral angle tenderness and stable vital signs argue against upper urinary tract infection."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cyclophosphamide-induced hemorrhagic cystitis",
+          "Patient has recent cyclophosphamide chemotherapy exposure with cystoscopy showing diffuse hemorrhagic changes and pathology confirming hemorrhagic inflammation without malignancy."
+        ],
+        [
+          "Viral hemorrhagic cystitis (BK virus or adenovirus)",
+          "Immunosuppression from chemotherapy increases susceptibility to viral infections causing hemorrhagic cystitis with similar cystoscopic appearance."
+        ],
+        [
+          "Radiation cystitis",
+          "Non-Hodgkin lymphoma treatment may have included pelvic radiation which can cause delayed hemorrhagic cystitis with bladder wall thickening."
+        ],
+        [
+          "Medication-related chemical cystitis",
+          "Other chemotherapeutic agents beyond cyclophosphamide in the treatment regimen may contribute to chemical-induced bladder inflammation."
+        ],
+        [
+          "Secondary bacterial cystitis",
+          "Chemotherapy-induced mucosal damage and immunosuppression predispose to bacterial superinfection causing hemorrhagic inflammation (though culture pending)."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bladder cancer",
+          "Biopsy pathology explicitly demonstrates no evidence of malignancy."
+        ],
+        [
+          "Nephrolithiasis",
+          "CT scan shows no evidence of stones and absence of costovertebral angle tenderness argues against this."
+        ],
+        [
+          "Hydronephrosis/obstructive uropathy",
+          "CT scan explicitly demonstrates no hydronephrosis."
+        ],
+        [
+          "Glomerulonephritis",
+          "While RBC casts are present (atypical for lower urinary tract pathology), the cystoscopy findings and recent cyclophosphamide exposure make hemorrhagic cystitis far more likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Bladder cancer",
+            "Painless hematuria is the classic presentation, though lower abdominal pain can occur with advanced disease or invasion, particularly common in elderly men."
+          ],
+          [
+            "Urinary tract infection with cystitis",
+            "Hematuria and suprapubic pain are hallmark features, though less common in elderly men without instrumentation or obstruction."
+          ],
+          [
+            "Bladder stone",
+            "Can cause both hematuria and lower abdominal pain, especially with movement or urination, more common in elderly patients."
+          ],
+          [
+            "Prostate cancer with bladder involvement",
+            "Age-appropriate malignancy that can cause hematuria and pelvic pain when locally advanced."
+          ],
+          [
+            "Renal cell carcinoma",
+            "Can present with hematuria and flank/abdominal pain (classic triad includes mass), though lower abdominal pain is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Bladder cancer",
+            "Painless hematuria is the classic presentation in elderly patients, though lower abdominal pain can occur with advanced disease or clot retention."
+          ],
+          [
+            "Urinary tract infection (cystitis)",
+            "Can cause hematuria and lower abdominal pain, though absence of systemic signs makes complicated infection less likely."
+          ],
+          [
+            "Bladder calculus",
+            "Can present with hematuria and suprapubic pain, particularly common in elderly males with prostatic enlargement."
+          ],
+          [
+            "Prostate cancer with bladder invasion",
+            "Advanced prostate malignancy in a 70-year-old male can cause hematuria and pelvic pain."
+          ],
+          [
+            "Benign prostatic hyperplasia with hematuria",
+            "Common in elderly males and can cause hematuria from engorgement of prostatic vessels, though pain is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pyelonephritis",
+            "Absence of costovertebral angle tenderness and stable vital signs make upper urinary tract infection unlikely."
+          ],
+          [
+            "Renal cell carcinoma",
+            "Lack of costovertebral angle tenderness and flank findings make renal mass less likely as primary source."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Hemorrhagic cystitis (chemotherapy-induced)",
+            "Recent chemotherapy for non-Hodgkin lymphoma is a well-known cause of hemorrhagic cystitis with hematuria and bladder wall thickening."
+          ],
+          [
+            "Bladder malignancy (primary or secondary)",
+            "Bladder wall thickening with hematuria in a 70-year-old raises concern for bladder cancer, especially given history of malignancy and immunosuppression."
+          ],
+          [
+            "Acute glomerulonephritis",
+            "Presence of red blood cell casts indicates glomerular origin of hematuria, suggesting glomerular disease."
+          ],
+          [
+            "BK virus-associated hemorrhagic cystitis",
+            "Immunosuppression from chemotherapy increases risk for BK virus reactivation causing hemorrhagic cystitis with bladder wall thickening."
+          ],
+          [
+            "Radiation cystitis",
+            "If the patient received pelvic radiation as part of lymphoma treatment, this could cause delayed hemorrhagic cystitis with bladder wall changes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Nephrolithiasis",
+            "CT scan shows no evidence of stones and absence of hydronephrosis makes this unlikely."
+          ],
+          [
+            "Pyelonephritis",
+            "Absence of costovertebral angle tenderness, stable vital signs, and no hydronephrosis make this less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Cyclophosphamide-induced hemorrhagic cystitis",
+            "Patient has recent cyclophosphamide exposure with cystoscopy showing diffuse hemorrhagic changes and pathology confirming urothelial inflammation without malignancy."
+          ],
+          [
+            "Radiation cystitis",
+            "History of lymphoma treatment may have included pelvic radiation causing chronic inflammatory bladder changes with hemorrhage."
+          ],
+          [
+            "BK virus hemorrhagic cystitis",
+            "Immunosuppression from chemotherapy increases risk for viral reactivation causing hemorrhagic cystitis with similar cystoscopic findings."
+          ],
+          [
+            "Chronic bacterial cystitis",
+            "Recurrent or persistent infection could cause hemorrhagic inflammation, though urine culture pending and RBC casts suggest glomerular involvement."
+          ],
+          [
+            "IgA nephropathy with secondary cystitis",
+            "Red blood cell casts indicate glomerular bleeding which could be complicated by concurrent bladder inflammation from other causes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bladder malignancy",
+            "Pathology specifically excluded malignancy on biopsy specimens."
+          ],
+          [
+            "Nephrolithiasis",
+            "CT scan showed no evidence of stones and absence of hydronephrosis."
+          ],
+          [
+            "Urothelial carcinoma",
+            "Biopsy demonstrated inflammation and hemorrhage without evidence of malignancy."
+          ]
+        ]
+      },
+      "cf_id": "case_027_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of suprapubic tenderness makes cyclophosphamide-induced cystitis less likely, as it is typically associated with bladder irritation and inflammation."
+    }
+  ]
+}

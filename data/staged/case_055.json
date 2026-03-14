@@ -1,0 +1,25 @@
+{
+  "case_id": "case_055",
+  "source": "MedQA-USMLE",
+  "original_question": "A 9-year-old girl is resuscitated after the administration of an erroneous dose of intravenous phenytoin for recurrent seizures. This incident is reported to the authorities. A thorough investigation reveals various causative factors leading to the event. One important finding is a verbal misunderstanding of the dose of phenytoin between the ordering senior resident and the receiving first-year resident during the handover of the patient. To minimize the risk of this particular error in the future, the most appropriate management is to implement which of the following?",
+  "ground_truth": "Medication error due to miscommunication",
+  "base": {
+    "stage_1": "A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures.",
+    "stage_2": "The patient is initially unstable requiring resuscitation. Physical exam reveals no acute trauma, but neurological exam is limited due to post-ictal state. Vital signs show improving but still elevated heart rate and blood pressure.",
+    "stage_3": "Initial lab results show elevated phenytoin levels significantly above the therapeutic range. Further investigation reveals a medication error during intravenous phenytoin administration.",
+    "stage_4": "A root cause analysis of the medication error identifies a verbal misunderstanding of the phenytoin dose between the senior and first-year residents during patient handover. The hospital implements a mandatory 'read-back' policy for all verbal medication orders to prevent future errors."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals signs of trauma, including bruising and swelling, which argues against a medication error as the primary cause of seizures.",
+      "rules_out": "Medication error due to miscommunication",
+      "stage_1": "A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures.",
+      "stage_2": "The patient is initially unstable requiring resuscitation. Physical exam reveals bruising and swelling on the forehead and arms, concerning for trauma. Neurological exam is limited due to post-ictal state. Vital signs show improving but still elevated heart rate and blood pressure.",
+      "stage_3": "Initial lab results show elevated phenytoin levels significantly above the therapeutic range. Further investigation reveals a medication error during intravenous phenytoin administration.",
+      "stage_4": "A root cause analysis of the medication error identifies a verbal misunderstanding of the phenytoin dose between the senior and first-year residents during patient handover. The hospital implements a mandatory 'read-back' policy for all verbal medication orders to prevent future errors.",
+      "cf_id": "case_055_cf_a"
+    }
+  ]
+}

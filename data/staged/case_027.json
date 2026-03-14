@@ -1,0 +1,25 @@
+{
+  "case_id": "case_027",
+  "source": "MedQA-USMLE",
+  "original_question": "A 70-year-old man presents to a medical clinic reporting blood in his urine and lower abdominal pain for the past few days. He is also concerned about urinary frequency and urgency. He states that he recently completed a cycle of chemotherapy for non-Hodgkin lymphoma. Which medication in the chemotherapy regimen most likely caused his symptoms?",
+  "ground_truth": "Cyclophosphamide-induced cystitis",
+  "base": {
+    "stage_1": "A 70-year-old man presents to the clinic complaining of blood in his urine and lower abdominal pain.",
+    "stage_2": "The patient's vital signs are stable. Physical examination reveals suprapubic tenderness to palpation. There is no costovertebral angle tenderness.",
+    "stage_3": "Urinalysis shows hematuria and the presence of red blood cell casts. Urine culture is pending. A CT scan of the abdomen and pelvis is performed and demonstrates bladder wall thickening without evidence of hydronephrosis or stones. The patient reports a history of non-Hodgkin lymphoma, recently treated with chemotherapy.",
+    "stage_4": "Cystoscopy reveals diffuse hemorrhagic changes throughout the bladder mucosa. Biopsy specimens are taken and pathology demonstrates urothelial inflammation and hemorrhage without evidence of malignancy. The oncologist confirms that cyclophosphamide was part of the patient's recent chemotherapy regimen."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of suprapubic tenderness makes cyclophosphamide-induced cystitis less likely, as it is typically associated with bladder irritation and inflammation.",
+      "rules_out": "Cyclophosphamide-induced cystitis",
+      "stage_1": "A 70-year-old man presents to the clinic complaining of blood in his urine and lower abdominal pain.",
+      "stage_2": "The patient's vital signs are stable. Physical examination is unremarkable. There is no costovertebral angle tenderness.",
+      "stage_3": "Urinalysis shows hematuria and the presence of red blood cell casts. Urine culture is pending. A CT scan of the abdomen and pelvis is performed and demonstrates bladder wall thickening without evidence of hydronephrosis or stones. The patient reports a history of non-Hodgkin lymphoma, recently treated with chemotherapy.",
+      "stage_4": "Cystoscopy reveals diffuse hemorrhagic changes throughout the bladder mucosa. Biopsy specimens are taken and pathology demonstrates urothelial inflammation and hemorrhage without evidence of malignancy. The oncologist confirms that cyclophosphamide was part of the patient's recent chemotherapy regimen.",
+      "cf_id": "case_027_cf_a"
+    }
+  ]
+}

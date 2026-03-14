@@ -1,0 +1,290 @@
+{
+  "case_id": "case_012",
+  "model": "claude",
+  "ground_truth": "Acute arterial occlusion",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute arterial embolism",
+          "Sudden onset leg pain in a patient with atrial fibrillation suggests embolus from cardiac source causing acute limb ischemia."
+        ],
+        [
+          "Acute arterial thrombosis",
+          "Diabetic patient with vascular risk factors may have underlying atherosclerotic disease leading to acute thrombotic occlusion."
+        ],
+        [
+          "Deep vein thrombosis",
+          "Atrial fibrillation (likely on anticoagulation or prothrombotic state) combined with obesity increases risk for venous thromboembolism."
+        ],
+        [
+          "Ruptured Baker's cyst",
+          "Sudden leg pain can mimic vascular occlusion when synovial fluid dissects into calf compartment."
+        ],
+        [
+          "Acute compartment syndrome",
+          "Sudden onset pain during walking could indicate traumatic or spontaneous compartment syndrome, though less likely without clear precipitant."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute arterial embolism",
+          "Sudden onset leg pain with cold, pale limb, diminished sensation, and severe weakness in a patient with atrial fibrillation suggests embolic occlusion of a major artery."
+        ],
+        [
+          "Acute arterial thrombosis",
+          "Abrupt arterial occlusion from in-situ thrombosis could produce similar acute limb ischemia, particularly in a patient with diabetes and vascular risk factors."
+        ],
+        [
+          "Aortic dissection with leg involvement",
+          "Dissection extending to involve the iliac or femoral arteries could cause acute unilateral limb ischemia with these findings."
+        ],
+        [
+          "Phlegmasia cerulea dolens",
+          "Massive deep venous thrombosis with arterial compromise can present with pale, cold limb and severe pain, though typically causes more cyanosis."
+        ],
+        [
+          "Compartment syndrome",
+          "Severe muscle compartment swelling with vascular compromise could explain weakness and sensory deficits, though less likely without trauma history."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cellulitis",
+          "The cold, pale appearance and severe motor/sensory deficits are inconsistent with infection, which typically causes warmth and erythema."
+        ],
+        [
+          "Peripheral neuropathy",
+          "While diabetes predisposes to neuropathy, this would not explain the acute onset, cold pale limb, or profound motor weakness."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute arterial thromboembolism from atrial fibrillation",
+          "Patient has atrial fibrillation predisposing to cardiac thrombus formation, presenting with classic acute limb ischemia (pain, pallor, pulselessness, paresthesia, paralysis) and CTA-confirmed arterial occlusion."
+        ],
+        [
+          "Acute arterial thrombosis in situ",
+          "Pre-existing atherosclerotic disease (given diabetes, hypertension, obesity) may have led to thrombotic occlusion at the common femoral artery without embolic source."
+        ],
+        [
+          "Aortic dissection with extension",
+          "Though less likely given isolated left leg findings, aortic dissection could occlude the femoral artery origin and present with acute limb ischemia."
+        ],
+        [
+          "Popliteal aneurysm with thromboembolism",
+          "A proximal popliteal aneurysm could have embolized distally causing common femoral artery occlusion, though CTA would typically visualize this."
+        ],
+        [
+          "Paradoxical embolism",
+          "Venous thrombus crossing through a cardiac shunt (patent foramen ovale) could cause arterial occlusion, though this is less common than atrial fibrillation-related thromboembolism."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Compartment syndrome",
+          "CTA confirms arterial occlusion as primary pathology rather than compartment pressure elevation."
+        ],
+        [
+          "Deep vein thrombosis",
+          "Presentation with pallor, coldness, and arterial occlusion on CTA indicates arterial rather than venous pathology."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Acute arterial thromboembolism from atrial fibrillation",
+          "Patient with atrial fibrillation presenting with sudden onset limb ischemia and confirmed arterial occlusion on CTA is most consistent with cardioembolic source."
+        ],
+        [
+          "Acute arterial thrombosis on atherosclerotic plaque",
+          "Patient's multiple cardiovascular risk factors (diabetes, hypertension, obesity) predispose to atherosclerotic disease with in-situ thrombosis causing acute occlusion."
+        ],
+        [
+          "Paradoxical embolism with patent foramen ovale",
+          "Atrial fibrillation increases risk of both atrial thrombi and right-to-left shunting through PFO, though less common than direct arterial embolism."
+        ],
+        [
+          "Aortic or iliac artery dissection with propagation",
+          "Hypertension and atherosclerotic risk factors could cause dissection extending to femoral artery, though CTA would typically show dissection flap."
+        ],
+        [
+          "Thrombosed popliteal aneurysm with proximal propagation",
+          "Peripheral aneurysmal disease can thrombose acutely and propagate proximally, though common femoral location makes primary aneurysm less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Chronic limb-threatening ischemia",
+          "Sudden onset of symptoms and acute presentation rule out chronic progressive arterial insufficiency."
+        ],
+        [
+          "Compartment syndrome",
+          "CTA confirms arterial occlusion as primary pathology rather than post-ischemic compartment pressure elevation."
+        ],
+        [
+          "Deep vein thrombosis",
+          "Arterial occlusion confirmed on CTA with pale, cold limb indicating arterial rather than venous pathology."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute arterial occlusion (thromboembolism)",
+            "Sudden onset leg pain in a patient with atrial fibrillation suggests embolic arterial occlusion from cardiac source."
+          ],
+          [
+            "Acute deep vein thrombosis",
+            "Sudden leg pain with multiple risk factors including atrial fibrillation, diabetes, and obesity predispose to venous thrombosis."
+          ],
+          [
+            "Aortic dissection with lower extremity involvement",
+            "Sudden onset pain with multiple cardiovascular risk factors could represent dissection extending to iliac vessels."
+          ],
+          [
+            "Ruptured popliteal (Baker's) cyst",
+            "Acute leg pain during walking could represent cyst rupture, though less likely given the acuity and risk factor profile."
+          ],
+          [
+            "Acute compartment syndrome",
+            "Sudden pain during exertion could indicate compartment syndrome, though typically follows trauma or extreme exercise."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute limb ischemia (paradoxical embolism with microvessel occlusion)",
+            "Sudden onset with cold, pale leg, sensory loss, and severe weakness despite palpable pulses suggests microvessel occlusion from embolic shower in patient with atrial fibrillation."
+          ],
+          [
+            "Acute compartment syndrome",
+            "Severe weakness (1/5), diminished sensation, and pain while walking could indicate compartment syndrome, though preserved pulses are consistent with this diagnosis."
+          ],
+          [
+            "Phlegmasia cerulea dolens",
+            "Massive deep vein thrombosis can cause arterial compromise through venous hypertension, presenting with pale cold limb despite preserved pulses, in setting of multiple risk factors."
+          ],
+          [
+            "Acute neurologic event (spinal cord ischemia)",
+            "Sudden onset severe unilateral weakness and sensory loss with preserved pulses suggests possible spinal cord pathology affecting one leg."
+          ],
+          [
+            "Aortoiliac occlusion with extensive collateralization",
+            "Acute-on-chronic arterial occlusion with well-developed collaterals could explain preserved distal pulses despite ischemic symptoms and signs."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple acute arterial embolism",
+            "Palpable 2+ dorsalis pedis and posterior tibial pulses effectively rule out complete large vessel occlusion."
+          ],
+          [
+            "Cellulitis/soft tissue infection",
+            "The pale, cold appearance and profound neurologic deficits are inconsistent with infection alone."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute arterial thromboembolism from atrial fibrillation",
+            "Patient has atrial fibrillation as a clear embolic source and presents with classic acute limb ischemia symptoms with confirmed arterial occlusion on CTA."
+          ],
+          [
+            "Phlegmasia cerulea dolens",
+            "Severe deep venous thrombosis can cause arterial insufficiency through compartment syndrome, though preserved pulses make this less likely but possible."
+          ],
+          [
+            "Arterial thrombosis in situ on atherosclerotic plaque",
+            "Diabetes, hypertension, and obesity create significant atherosclerotic risk, and thrombosis could occur at a pre-existing stenotic lesion in the common femoral artery."
+          ],
+          [
+            "Paradoxical embolism",
+            "Atrial fibrillation with possible atrial septal defect or patent foramen ovale could allow venous thrombus to reach arterial circulation."
+          ],
+          [
+            "Aortic dissection with branch vessel occlusion",
+            "Hypertension is a risk factor and dissection could extend to involve the common femoral artery, though typically presents with other systemic findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic arterial insufficiency",
+            "The sudden onset of symptoms and acute presentation rule out a chronic process."
+          ],
+          [
+            "Peripheral arterial disease alone",
+            "While likely present as underlying pathology, this does not explain the acute occlusion seen on CTA."
+          ],
+          [
+            "Compartment syndrome",
+            "Preserved pulses (2+) make this diagnosis incompatible with the clinical picture."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Acute limb ischemia due to arterial thromboembolism",
+            "CTA confirms left common femoral artery occlusion with clinical signs of acute ischemia (pain, pallor, poikilothermia, paresthesia, paralysis) in a patient with atrial fibrillation as an embolic source."
+          ],
+          [
+            "Phlegmasia cerulea dolens",
+            "Severe venous thrombosis could present with similar acute leg pain, pallor, and neurological compromise, though preserved pulses and arterial occlusion on CTA make this less likely."
+          ],
+          [
+            "Acute compartment syndrome",
+            "Can cause severe pain, paralysis, and sensory loss in the leg, but would not explain the arterial occlusion on CTA or the pale, cold extremity with preserved pulses."
+          ],
+          [
+            "Acute aortic dissection with branch vessel involvement",
+            "Could cause acute limb ischemia via extension into the iliac/femoral arteries, though isolated femoral occlusion without aortic findings on CTA makes this unlikely."
+          ],
+          [
+            "Thrombosed popliteal aneurysm with retrograde propagation",
+            "Could cause acute limb ischemia and arterial occlusion, though the occlusion is at the common femoral level rather than popliteal, making this less probable."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Neurogenic claudication",
+            "Acute presentation, arterial occlusion on imaging, and profound vascular findings rule out spinal stenosis-related claudication."
+          ],
+          [
+            "Peripheral arterial disease with chronic limb ischemia",
+            "Sudden onset and CTA findings of acute occlusion indicate acute rather than chronic process."
+          ],
+          [
+            "Deep vein thrombosis",
+            "CTA shows arterial not venous occlusion, and preserved arterial pulses paradoxically present (likely collateral flow)."
+          ]
+        ]
+      },
+      "cf_id": "case_012_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of palpable pulses in the affected leg argues against acute arterial occlusion."
+    }
+  ]
+}

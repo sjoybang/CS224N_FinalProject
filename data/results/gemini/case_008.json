@@ -1,0 +1,254 @@
+{
+  "case_id": "case_008",
+  "model": "gemini",
+  "ground_truth": "Glycosaminoglycan accumulation in the orbit",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The double vision and eye pain worsening with reading suggest possible myasthenia gravis affecting the extraocular muscles."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Double vision can be an early symptom of multiple sclerosis due to demyelination affecting the optic nerve or brainstem."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "Eye pain and double vision could be related to thyroid eye disease, although other symptoms are needed to support this."
+        ],
+        [
+          "Primary Ovarian Insufficiency",
+          "The cessation of menses, hot flashes, and increased sweating suggest possible primary ovarian insufficiency."
+        ],
+        [
+          "Pituitary Adenoma",
+          "A pituitary adenoma could cause visual disturbances like double vision, along with hormonal changes leading to amenorrhea."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pregnancy",
+          "Cessation of menses is present, but other symptoms point away from pregnancy."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Graves' disease",
+          "The combination of hyperthyroidism symptoms (tachycardia, tremor, sweating, goiter), ophthalmopathy (proptosis, lid retraction, conjunctival injection, impaired convergence), and menstrual changes strongly suggests Graves' disease."
+        ],
+        [
+          "Thyroiditis",
+          "Thyroiditis can present with hyperthyroidism and goiter, although the ophthalmopathy is less common."
+        ],
+        [
+          "Pituitary adenoma",
+          "A pituitary adenoma could cause menstrual irregularities and, if large enough, visual disturbances, but doesn't fully explain the thyroid and ophthalmologic findings."
+        ],
+        [
+          "Anxiety disorder",
+          "Anxiety could explain the tachycardia, tremor, and sweating, but not the goiter, ophthalmopathy, or menstrual changes."
+        ],
+        [
+          "Perimenopause",
+          "Perimenopause could explain the cessation of menses, hot flashes, and increased sweating, but not the other symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Extraocular muscle strain",
+          "No pain with extraocular movements makes this less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Graves' disease",
+          "The suppressed TSH, elevated free T4, proptosis, goiter, tachycardia, tremor, and MRI findings of enlarged extraocular muscles strongly suggest Graves' disease."
+        ],
+        [
+          "Thyroid adenoma",
+          "A thyroid adenoma could cause hyperthyroidism, although the eye findings are less typical."
+        ],
+        [
+          "Toxic multinodular goiter",
+          "This could cause hyperthyroidism, but the eye findings and specific muscle involvement on MRI are less typical."
+        ],
+        [
+          "Hashimoto's thyroiditis with thyrotoxicosis (Hashitoxicosis)",
+          "This autoimmune condition can present with a transient hyperthyroid phase followed by hypothyroidism, and could potentially explain the thyroid enlargement and hyperthyroidism."
+        ],
+        [
+          "Pituitary adenoma secreting TSH",
+          "A TSH-secreting pituitary adenoma could cause hyperthyroidism, although it is less likely given the other clinical features."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary hyperaldosteronism",
+          "Blood pressure is elevated, but other findings do not support this diagnosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Graves' disease",
+          "The combination of hyperthyroidism, ophthalmopathy with extraocular muscle enlargement and lymphocytic infiltration, and pretibial myxedema strongly suggests Graves' disease."
+        ],
+        [
+          "Hashimoto's thyroiditis with Graves' ophthalmopathy",
+          "While Hashimoto's typically causes hypothyroidism, it can present with a transient hyperthyroid phase (Hashitoxicosis) and co-occur with Graves' ophthalmopathy."
+        ],
+        [
+          "Thyroid adenoma",
+          "A hyperfunctioning thyroid adenoma could cause hyperthyroidism and potentially trigger secondary orbital inflammation."
+        ],
+        [
+          "Subacute thyroiditis",
+          "Although less likely given the chronic presentation and orbital findings, subacute thyroiditis can cause hyperthyroidism and might trigger an inflammatory response affecting the orbits."
+        ],
+        [
+          "TSH-secreting pituitary adenoma",
+          "This is less likely given the absence of pituitary-related symptoms, but should be considered as a rare cause of hyperthyroidism."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary hyperaldosteronism",
+          "The patient's symptoms and lab results do not align with primary hyperaldosteronism."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The double vision and eye pain worsening with reading suggest possible myasthenia gravis affecting the extraocular muscles."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Double vision can be an early symptom of multiple sclerosis due to demyelination affecting the optic nerve or brainstem."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "Eye pain and double vision could be related to thyroid eye disease, although other symptoms are needed to support this."
+          ],
+          [
+            "Primary Ovarian Insufficiency",
+            "The cessation of menses, hot flashes, and increased sweating suggest possible primary ovarian insufficiency."
+          ],
+          [
+            "Pituitary Adenoma",
+            "A pituitary adenoma could cause visual disturbances like double vision, along with hormonal changes leading to amenorrhea."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pregnancy",
+            "Cessation of menses is present, but other symptoms point away from pregnancy."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Graves' disease",
+            "The combination of tachycardia, hypertension, tremor, hyperreflexia, goiter, conjunctival injection, and impaired convergence strongly suggests hyperthyroidism due to Graves' disease."
+          ],
+          [
+            "Thyroiditis",
+            "Thyroiditis can present with hyperthyroidism and goiter, although the eye findings are less typical."
+          ],
+          [
+            "Toxic multinodular goiter",
+            "This can cause hyperthyroidism with similar symptoms, but the diffusely enlarged gland makes it less likely than Graves' disease."
+          ],
+          [
+            "Pituitary adenoma",
+            "A pituitary adenoma could cause secondary hyperthyroidism and menstrual irregularities, though the other symptoms are less specific."
+          ],
+          [
+            "Anxiety disorder",
+            "While less likely given the physical exam findings, anxiety could explain some of the symptoms like palpitations, sweating, and tremor, especially with perimenopause."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary ovarian failure",
+            "The thyroid enlargement and eye findings make this less likely as the primary cause."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Graves' disease",
+            "The suppressed TSH, elevated free T4, enlarged thyroid, tachycardia, tremor, hyperreflexia, and extraocular muscle enlargement strongly suggest Graves' disease."
+          ],
+          [
+            "Thyroiditis",
+            "Thyroiditis can present with hyperthyroidism and eye symptoms, although the specific pattern of muscle involvement on MRI is less typical."
+          ],
+          [
+            "Toxic multinodular goiter",
+            "While less likely given the diffuse goiter, toxic multinodular goiter can cause hyperthyroidism and some associated symptoms."
+          ],
+          [
+            "TSH-secreting pituitary adenoma",
+            "This is less likely given the absence of visual field defects, but should be considered in the setting of hyperthyroidism."
+          ],
+          [
+            "Factitious hyperthyroidism",
+            "Exogenous thyroid hormone intake could cause hyperthyroidism, although the eye findings would be unusual."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary hyperparathyroidism",
+            "No evidence of hypercalcemia or kidney stones."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Graves' Disease",
+            "The combination of hyperthyroidism, ophthalmopathy with extraocular muscle enlargement and lymphocytic infiltration, and menstrual changes strongly suggests Graves' disease."
+          ],
+          [
+            "Hashimoto's Thyroiditis with Hyperthyroidism",
+            "While typically hypothyroid, Hashimoto's can present with a transient hyperthyroid phase (Hashitoxicosis) and can be associated with other autoimmune conditions affecting the eyes."
+          ],
+          [
+            "Thyroid Adenoma with Hyperthyroidism",
+            "A hyperfunctioning thyroid adenoma could cause hyperthyroidism and potentially trigger an autoimmune response affecting the eyes."
+          ],
+          [
+            "Subacute Thyroiditis",
+            "This inflammatory condition can cause hyperthyroidism and eye pain, although the chronic nature and orbital muscle involvement are less typical."
+          ],
+          [
+            "Pituitary Adenoma (TSH-secreting)",
+            "A TSH-secreting pituitary adenoma could cause hyperthyroidism, but the eye findings are less typical and would require further investigation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary Ocular Myositis",
+            "The thyroid abnormalities make this less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_008_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of proptosis and lid retraction argues against glycosaminoglycan accumulation in the orbit, which typically causes these findings due to orbital tissue expansion."
+    }
+  ]
+}

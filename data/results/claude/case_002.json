@@ -1,0 +1,290 @@
+{
+  "case_id": "case_002",
+  "model": "claude",
+  "ground_truth": "Thromboembolism",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Pulmonary embolism",
+          "Sudden onset dyspnea in a middle-aged woman is a classic presentation for PE, especially given age-related risk factors."
+        ],
+        [
+          "Acute myocardial infarction",
+          "Sudden dyspnea can be an anginal equivalent in women, who often present atypically without chest pain."
+        ],
+        [
+          "Acute exacerbation of asthma",
+          "Sudden breathlessness could represent bronchospasm, though no prior history is mentioned yet."
+        ],
+        [
+          "Pneumothorax",
+          "Spontaneous pneumothorax can present with sudden dyspnea, though more common in certain body habitus or underlying lung disease."
+        ],
+        [
+          "Acute heart failure",
+          "Sudden decompensation of cardiac function can present with acute dyspnea in this age group."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnosis."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Pulmonary embolism",
+          "Recent femur fracture with prolonged immobilization during rehab creates high risk for venous thromboembolism causing fatal PE."
+        ],
+        [
+          "Fat embolism syndrome",
+          "Femur fracture 3 months prior can cause delayed fat embolism leading to sudden respiratory compromise and cardiac arrest."
+        ],
+        [
+          "Acute myocardial infarction",
+          "Sudden cardiac arrest in a 58-year-old woman could result from acute coronary syndrome with fatal arrhythmia."
+        ],
+        [
+          "Aortic dissection",
+          "Sudden onset dyspnea followed by rapid cardiovascular collapse is consistent with acute type A dissection."
+        ],
+        [
+          "Massive hemorrhage",
+          "Post-rehabilitation complications such as occult bleeding or delayed trauma sequelae could cause hypovolemic shock and arrest."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "While causing dyspnea, tension pneumothorax with failed resuscitation is less likely without trauma or procedural history at presentation."
+        ],
+        [
+          "Asthma exacerbation",
+          "Fatal asthma would typically have prodromal symptoms and respond to initial resuscitation efforts in most cases."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Fat embolism",
+          "Recent femur fracture with fibrous organization of embolic material in pulmonary vessels causing sudden fatal cardiopulmonary collapse."
+        ],
+        [
+          "Pulmonary thromboembolism with organization",
+          "Deep vein thrombosis from immobilization post-fracture with organized thrombus showing fibrous remodeling in pulmonary arteries."
+        ],
+        [
+          "Chronic thromboembolic pulmonary hypertension",
+          "Organized fibrous tissue from recurrent emboli causing pulmonary vascular remodeling and acute decompensation."
+        ],
+        [
+          "Tumor embolism",
+          "Occult malignancy with tumor emboli to pulmonary vasculature eliciting fibrous reaction and acute cardiovascular collapse."
+        ],
+        [
+          "Amniotic fluid embolism",
+          "Though age makes pregnancy unlikely, fibrin and cellular debris can cause pulmonary vascular fibrosis and sudden death."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute myocardial infarction",
+          "Autopsy findings focus on pulmonary vascular pathology rather than coronary or myocardial changes."
+        ],
+        [
+          "Primary pulmonary artery sarcoma",
+          "Would show malignant tissue rather than organized fibrous connective tissue around vessel lumen."
+        ],
+        [
+          "Pneumonia",
+          "Would show inflammatory infiltrates in alveoli rather than fibrous tissue specifically around pulmonary artery lumens."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic thromboembolic pulmonary hypertension (CTEPH)",
+          "Organized thrombi with recanalization and fibrous tissue around pulmonary arteries are pathognomonic findings, with history of femur fracture as initial embolic source."
+        ],
+        [
+          "Acute-on-chronic pulmonary embolism",
+          "Recent acute embolic event superimposed on chronic thromboembolic disease from prior femur fracture explains sudden decompensation and death."
+        ],
+        [
+          "Pulmonary artery sarcoma",
+          "Can mimic chronic thromboembolism histologically and cause pulmonary artery occlusion, though organized thrombi with recanalization make this less likely."
+        ],
+        [
+          "Pulmonary veno-occlusive disease",
+          "Can cause fibrous changes in pulmonary vasculature, though typically affects veins rather than arteries and lacks organized thrombi."
+        ],
+        [
+          "Idiopathic pulmonary arterial hypertension with in-situ thrombosis",
+          "Could cause pulmonary artery remodeling with secondary thrombosis, though chronic organized thrombi point more toward embolic origin."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary vasculitis (e.g., Takayasu arteritis)",
+          "Autopsy shows organized thrombi rather than inflammatory vessel wall changes typical of vasculitis."
+        ],
+        [
+          "Fat embolism syndrome",
+          "Would present acutely after fracture (3 months ago) and does not cause chronic organized thrombi with recanalization."
+        ],
+        [
+          "Amniotic fluid embolism",
+          "Patient demographics and chronic histological findings incompatible with this acute peripartum condition."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute pulmonary embolism",
+            "Sudden onset dyspnea is a classic presentation in this age group with thromboembolic risk."
+          ],
+          [
+            "Acute myocardial infarction",
+            "Women can present atypically with dyspnea as the primary symptom of cardiac ischemia."
+          ],
+          [
+            "Acute exacerbation of heart failure",
+            "Sudden decompensation can cause rapid onset dyspnea in patients with underlying cardiac dysfunction."
+          ],
+          [
+            "Spontaneous pneumothorax",
+            "Sudden dyspnea may indicate acute lung collapse, even without obvious trauma."
+          ],
+          [
+            "Acute asthma exacerbation",
+            "Bronchospasm can cause sudden respiratory distress, even with late-onset asthma presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pulmonary embolism",
+            "Recent femur fracture and immobilization are major risk factors for venous thromboembolism leading to acute PE and cardiac arrest."
+          ],
+          [
+            "Fat embolism syndrome",
+            "Femur fracture 3 months ago can cause delayed fat embolism presenting with sudden respiratory failure and cardiovascular collapse."
+          ],
+          [
+            "Acute myocardial infarction",
+            "Sudden cardiac arrest in a 58-year-old woman could be from acute coronary syndrome causing ventricular arrhythmia."
+          ],
+          [
+            "Massive pneumothorax",
+            "Tension pneumothorax can cause sudden dyspnea and cardiovascular collapse leading to cardiac arrest."
+          ],
+          [
+            "Acute aortic dissection",
+            "Can present with sudden onset dyspnea and cardiac arrest due to cardiac tamponade or aortic rupture."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Fat embolism",
+            "Recent femur fracture with fibrous organization of embolic material in pulmonary vessels causing fatal respiratory compromise."
+          ],
+          [
+            "Chronic pulmonary embolism with organization",
+            "Post-fracture immobilization leading to deep vein thrombosis with organized thromboemboli showing fibrous remodeling."
+          ],
+          [
+            "Pulmonary vascular sclerosis",
+            "Primary vascular pathology with fibrous intimal thickening, though less consistent with acute presentation and recent fracture history."
+          ],
+          [
+            "Septic embolism with organization",
+            "Possible complication from rehabilitation setting with organized infected emboli showing fibrous reaction."
+          ],
+          [
+            "Amniotic fluid embolism",
+            "Though patient age makes pregnancy unlikely, can cause similar fibrous vascular changes if survived initially."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute pulmonary embolism",
+            "Histology shows fibrous connective tissue organization indicating chronic process rather than acute thrombus."
+          ],
+          [
+            "Pneumonia",
+            "No mention of inflammatory infiltrates or infection in lung parenchyma on histology."
+          ],
+          [
+            "Myocardial infarction",
+            "Primary cardiac pathology would not explain the specific pulmonary arterial fibrous changes described."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic thromboembolic pulmonary hypertension (CTEPH)",
+            "Organized thrombi with recanalization and fibrous tissue around pulmonary arteries are pathognomonic findings, following her femur fracture 3 months ago."
+          ],
+          [
+            "Acute-on-chronic pulmonary embolism",
+            "The acute fatal presentation with underlying chronic thromboembolic changes suggests a new embolus superimposed on chronic disease from her prior orthopedic injury."
+          ],
+          [
+            "Fat embolism syndrome (delayed sequelae)",
+            "Femur fracture 3 months ago could have caused initial fat emboli leading to chronic vascular changes, though the organized thrombi favor thromboembolism."
+          ],
+          [
+            "Post-thrombotic pulmonary vascular remodeling",
+            "Chronic organized thrombi indicate prior embolic events from her period of immobilization during femur fracture recovery."
+          ],
+          [
+            "Chronic pulmonary thromboembolism with acute decompensation",
+            "The histologic findings of chronic changes with acute fatal presentation suggest progressive disease that acutely decompensated."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary pulmonary hypertension",
+            "Organized thrombi with recanalization indicate secondary thromboembolic etiology rather than primary vascular disease."
+          ],
+          [
+            "Acute pulmonary embolism (without chronic component)",
+            "Histology shows chronic organized thrombi and fibrous tissue, not acute thrombus alone."
+          ],
+          [
+            "Myocardial infarction",
+            "Autopsy findings focus on pulmonary vascular pathology, not coronary or myocardial disease."
+          ]
+        ]
+      },
+      "cf_id": "case_002_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient experienced cardiac arrest and resuscitation was successful, making thromboembolism less likely as the patient survived the acute event."
+    }
+  ]
+}

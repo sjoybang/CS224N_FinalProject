@@ -1,0 +1,298 @@
+{
+  "case_id": "case_035",
+  "model": "claude",
+  "ground_truth": "Meningococcal meningitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Bacterial meningitis",
+          "High-grade fever, severe headache, vomiting, and altered mental status (lethargy/confusion) are classic signs of meningitis in a child."
+        ],
+        [
+          "Viral meningitis",
+          "Presents similarly to bacterial meningitis with fever, headache, vomiting, and altered mental status, though typically less severe."
+        ],
+        [
+          "Encephalitis",
+          "Fever with prominent altered mental status (lethargy and confusion) suggests brain parenchymal inflammation beyond meningeal involvement."
+        ],
+        [
+          "Brain abscess",
+          "Can present with fever, headache, vomiting, and altered mental status due to localized intracranial infection with mass effect."
+        ],
+        [
+          "Acute disseminated encephalomyelitis (ADEM)",
+          "Post-infectious immune-mediated CNS inflammation can cause fever, headache, and encephalopathy in children."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to rule out any diagnoses definitively."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Meningococcal meningitis",
+          "Petechial rash, high fever, neck rigidity, altered mental status, and hypotension suggest invasive Neisseria meningitidis infection with early septic shock."
+        ],
+        [
+          "Pneumococcal meningitis",
+          "Bacterial meningitis with purulent nasal discharge (suggesting sinusitis source), fever, neck rigidity, and altered mental status in a young child."
+        ],
+        [
+          "Haemophilus influenzae type b meningitis",
+          "Bacterial meningitis presenting with classic triad of fever, neck rigidity, and altered mental status, though less common if vaccinated."
+        ],
+        [
+          "Rocky Mountain spotted fever",
+          "Petechial rash starting on extremities, high fever, headache, and altered mental status could represent rickettsial infection with meningeal involvement."
+        ],
+        [
+          "Acute bacterial sinusitis with intracranial extension",
+          "Purulent nasal discharge with severe headache, fever, and meningeal signs suggests complicated sinusitis with epidural abscess or meningitis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Viral meningitis",
+          "The presence of petechiae, hypotension, and severity of presentation make bacterial etiology much more likely than viral."
+        ],
+        [
+          "Migraine headache",
+          "The fever, neck rigidity, petechiae, and hemodynamic instability rule out primary headache disorder."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Meningococcal meningitis",
+          "CSF findings confirm bacterial meningitis, and petechiae with hypotension suggest meningococcemia from Neisseria meningitidis."
+        ],
+        [
+          "Pneumococcal meningitis",
+          "CSF shows bacterial meningitis pattern, and Streptococcus pneumoniae is a leading cause in this age group with purulent nasal discharge."
+        ],
+        [
+          "Haemophilus influenzae type b meningitis",
+          "Bacterial meningitis with purulent nasal discharge could indicate H. influenzae, though less common with vaccination."
+        ],
+        [
+          "Group B Streptococcal meningitis",
+          "CSF confirms bacterial meningitis and GBS can cause invasive disease in young children, though more common in neonates."
+        ],
+        [
+          "Listeria monocytogenes meningitis",
+          "CSF shows bacterial pattern and Listeria can cause meningitis in children, though typically seen in immunocompromised or neonates."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Viral meningitis",
+          "CSF shows markedly elevated protein (500 mg/dL), very low glucose (31 mg/dL), high WBC count with PMN predominance, and cloudy appearance all consistent with bacterial not viral etiology."
+        ],
+        [
+          "Tuberculous meningitis",
+          "CSF typically shows lymphocytic predominance rather than polymorphonuclear predominance and has a more subacute presentation."
+        ],
+        [
+          "Aseptic meningitis",
+          "CSF findings with high protein, low glucose, PMN predominance, and cloudy appearance are definitively bacterial in nature."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Terminal complement deficiency (C5-C9)",
+          "Confirmed by CH50 = 0 and recurrent Neisseria meningitidis infection, which characteristically affects patients with membrane attack complex deficiencies."
+        ],
+        [
+          "Meningococcal meningitis with septicemia",
+          "Confirmed by CSF culture positive for Neisseria meningitidis with associated hypotension, petechiae, and meningeal signs indicating systemic meningococcal disease."
+        ],
+        [
+          "Properdin deficiency",
+          "X-linked complement deficiency predisposing specifically to severe and recurrent Neisseria meningitidis infections with high mortality."
+        ],
+        [
+          "C3 deficiency",
+          "Rare complement deficiency that can present with absent CH50 and increased susceptibility to encapsulated bacteria including meningococcus."
+        ],
+        [
+          "Factor H or Factor I deficiency",
+          "Alternative pathway dysregulation causing secondary complement consumption with increased susceptibility to Neisseria infections and low CH50."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumococcal meningitis",
+          "CSF culture confirmed Neisseria meningitidis, not Streptococcus pneumoniae."
+        ],
+        [
+          "Haemophilus influenzae meningitis",
+          "CSF culture confirmed Neisseria meningitidis, not H. influenzae."
+        ],
+        [
+          "Viral meningitis",
+          "CSF shows bacterial pattern (very high protein, very low glucose, PMN predominance) and positive bacterial culture."
+        ],
+        [
+          "Asplenia/hyposplenism",
+          "Would not cause absent CH50; complement activity would be preserved in isolated splenic dysfunction."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Bacterial meningitis",
+            "High-grade fever, severe headache, vomiting, and altered mental status (lethargy and confusion) are classic features of meningitis in a young child."
+          ],
+          [
+            "Viral meningitis/encephalitis",
+            "Presents similarly to bacterial meningitis with fever, headache, vomiting, and altered consciousness, though typically less severe."
+          ],
+          [
+            "Brain abscess",
+            "Fever, severe headache, vomiting, and altered mental status could indicate a focal CNS infection with mass effect."
+          ],
+          [
+            "Acute disseminated encephalomyelitis (ADEM)",
+            "Post-infectious immune-mediated CNS inflammation can present with fever, headache, and altered mental status in children."
+          ],
+          [
+            "Intracranial hemorrhage",
+            "Sudden onset of severe headache, vomiting, and altered consciousness could indicate bleeding, though fever would be less typical initially."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Meningococcemia",
+            "Petechiae, hypotension, fever, and altered mental status suggest invasive Neisseria meningitidis infection with septicemia."
+          ],
+          [
+            "Bacterial meningitis (early/fulminant)",
+            "Fever, lethargy, headache, and vomiting in a young child with hemodynamic instability, though neck rigidity is absent which may occur in early or overwhelming infection."
+          ],
+          [
+            "Septic shock (other bacterial etiology)",
+            "Hypotension, tachycardia, fever, altered mental status, and petechiae indicate sepsis with end-organ hypoperfusion from various bacterial sources."
+          ],
+          [
+            "Rocky Mountain spotted fever",
+            "Fever, petechiae, altered mental status, and hypotension can occur with this tick-borne rickettsial illness."
+          ],
+          [
+            "Hemolytic uremic syndrome",
+            "Petechiae suggesting thrombocytopenia, altered mental status, and systemic illness, though typically presents with more prominent gastrointestinal and renal findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral meningitis",
+            "The presence of petechiae, hypotension, and severe hemodynamic instability make bacterial etiology much more likely."
+          ],
+          [
+            "Simple febrile seizure",
+            "Does not explain petechiae, hypotension, or prolonged altered mental status."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Meningococcal meningitis",
+            "CSF findings confirm bacterial meningitis, and petechiae with hypotension suggest meningococcemia from Neisseria meningitidis."
+          ],
+          [
+            "Pneumococcal meningitis",
+            "CSF analysis shows bacterial meningitis pattern, and Streptococcus pneumoniae is a leading cause in this age group with purulent nasal discharge."
+          ],
+          [
+            "Haemophilus influenzae type b meningitis",
+            "Bacterial meningitis confirmed by CSF with purulent nasal discharge in a young child, though less common if vaccinated."
+          ],
+          [
+            "Group B Streptococcal meningitis",
+            "CSF findings consistent with bacterial meningitis, though more typical in neonates, can occur in young children."
+          ],
+          [
+            "Listeria monocytogenes meningitis",
+            "CSF shows bacterial meningitis pattern, though less common in immunocompetent children of this age."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral meningitis",
+            "CSF shows very high protein (500 mg/dL), very low glucose (31 mg/dL), and high WBC count with PMN predominance, all characteristic of bacterial rather than viral etiology."
+          ],
+          [
+            "Aseptic meningitis",
+            "CSF findings definitively indicate bacterial infection with marked hypoglycorrhachia and neutrophilic pleocytosis."
+          ],
+          [
+            "Tuberculous meningitis",
+            "CSF typically shows lymphocytic predominance rather than polymorphonuclear predominance and has a more subacute presentation."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Terminal complement component deficiency (C5-C9)",
+            "Absent CH50 with recurrent Neisseria meningitidis infection is pathognomonic for terminal complement pathway deficiency, which specifically predisposes to Neisseria infections."
+          ],
+          [
+            "Meningococcal meningitis with underlying complement deficiency",
+            "CSF findings (cloudy, elevated protein, low glucose, PMN predominance) and positive N. meningitidis culture confirm acute bacterial meningitis in a complement-deficient host."
+          ],
+          [
+            "Meningococcemia with septic shock",
+            "Hypotension (70/50), tachycardia, fever, petechiae, and lethargy indicate disseminated meningococcal infection with circulatory collapse."
+          ],
+          [
+            "Properdin deficiency",
+            "X-linked complement deficiency affecting the alternative pathway also predisposes specifically to severe and recurrent Neisseria infections with similar clinical presentation."
+          ],
+          [
+            "C3 deficiency",
+            "Though less likely given absent terminal complement activity, C3 deficiency can also predispose to encapsulated bacterial infections including meningococcus."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral meningitis",
+            "CSF shows very high protein (500 mg/dL), very low glucose (31 mg/dL), high WBC with PMN predominance, and positive bacterial culture."
+          ],
+          [
+            "Pneumococcal meningitis",
+            "Specific organism identified as N. meningitidis on culture."
+          ],
+          [
+            "Haemophilus influenzae meningitis",
+            "Specific organism identified as N. meningitidis on culture."
+          ]
+        ]
+      },
+      "cf_id": "case_035_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of nuchal rigidity makes meningococcal meningitis less likely."
+    }
+  ]
+}

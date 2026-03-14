@@ -1,0 +1,25 @@
+{
+  "case_id": "case_015",
+  "source": "MedQA-USMLE",
+  "original_question": "A 27-year-old female presents to general medical clinic for a routine checkup. She has a genetic disease marked by a mutation in a chloride transporter. She has a history of chronic bronchitis. She has a brother with a similar history of infections as well as infertility. Which of the following is most likely true regarding a potential vitamin deficiency complication secondary to this patient's chronic illness?",
+  "ground_truth": "Vitamin K deficiency",
+  "base": {
+    "stage_1": "A 27-year-old female presents to the clinic for a routine health checkup. She reports a history of chronic bronchitis.",
+    "stage_2": "The patient's vital signs are within normal limits. Physical exam reveals mild scattered rhonchi on lung auscultation. The remainder of the exam is unremarkable.",
+    "stage_3": "Laboratory studies reveal normal electrolytes and renal function. However, the prothrombin time (PT) is prolonged. A chest x-ray shows mild bronchial thickening.",
+    "stage_4": "Further questioning reveals the patient has been experiencing greasy stools. A fat-soluble vitamin panel reveals a significantly low Vitamin K level. The patient's genetic testing confirms a diagnosis of cystic fibrosis."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The physical exam reveals multiple bruises and petechiae, which argues against chronic Vitamin K deficiency, which would not typically present without a clear bleeding diathesis.",
+      "rules_out": "Vitamin K deficiency",
+      "stage_1": "A 27-year-old female presents to the clinic for a routine health checkup. She reports a history of chronic bronchitis.",
+      "stage_2": "The patient's vital signs are within normal limits. Physical exam reveals multiple bruises and petechiae. Lung auscultation is clear. The remainder of the exam is unremarkable.",
+      "stage_3": "Laboratory studies reveal normal electrolytes and renal function. However, the prothrombin time (PT) is prolonged. A chest x-ray shows mild bronchial thickening.",
+      "stage_4": "Further questioning reveals the patient has been experiencing greasy stools. A fat-soluble vitamin panel reveals a significantly low Vitamin K level. The patient's genetic testing confirms a diagnosis of cystic fibrosis.",
+      "cf_id": "case_015_cf_a"
+    }
+  ]
+}

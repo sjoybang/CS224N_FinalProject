@@ -1,0 +1,25 @@
+{
+  "case_id": "case_041",
+  "source": "MedQA-USMLE",
+  "original_question": "A 35-year-old woman with a history of Crohn disease presents for a follow-up appointment. She says that lately, she has started to notice difficulty walking. She says that some of her friends have joked that she appears to be walking as if she was drunk. Past medical history is significant for Crohn disease diagnosed 2 years ago, managed with natalizumab for the past year because her intestinal symptoms have become severe and unresponsive to other therapies. On physical examination, there is gait and limb ataxia present. Strength is 4/5 in the right upper limb. A T1/T2 MRI of the brain is ordered and is shown. Which of the following is the most likely diagnosis?",
+  "ground_truth": "Progressive multifocal encephalopathy (PML)",
+  "base": {
+    "stage_1": "A 35-year-old woman with a history of Crohn's disease presents to the clinic complaining of recent onset difficulty walking.",
+    "stage_2": "The patient reports that her friends have commented that she appears to be walking as if she were drunk. Her past medical history is significant for Crohn's disease, managed with natalizumab for the past year. On physical examination, gait and limb ataxia are present. Strength is 4/5 in the right upper limb.",
+    "stage_3": "A T1/T2 MRI of the brain reveals multiple white matter lesions without mass effect or contrast enhancement. These lesions are predominantly located in the parietal and occipital lobes.",
+    "stage_4": "Cerebrospinal fluid analysis is performed. PCR is positive for JC virus."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports having bloody diarrhea, which argues against PML as it suggests an exacerbation of Crohn's disease.",
+      "rules_out": "Progressive multifocal encephalopathy (PML)",
+      "stage_1": "A 35-year-old woman with a history of Crohn's disease presents to the clinic complaining of recent onset difficulty walking.",
+      "stage_2": "The patient reports that her friends have commented that she appears to be walking as if she were drunk. She also reports having bloody diarrhea. Her past medical history is significant for Crohn's disease, managed with natalizumab for the past year. On physical examination, gait and limb ataxia are present. Strength is 4/5 in the right upper limb.",
+      "stage_3": "A T1/T2 MRI of the brain reveals multiple white matter lesions without mass effect or contrast enhancement. These lesions are predominantly located in the parietal and occipital lobes.",
+      "stage_4": "Cerebrospinal fluid analysis is performed. PCR is positive for JC virus.",
+      "cf_id": "case_041_cf_a"
+    }
+  ]
+}

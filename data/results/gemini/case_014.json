@@ -1,0 +1,254 @@
+{
+  "case_id": "case_014",
+  "model": "gemini",
+  "ground_truth": "Coronary artery disease",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Peptic Ulcer Disease",
+          "The recurrent nausea and upper abdominal discomfort, especially after eating, suggest possible peptic ulcer disease."
+        ],
+        [
+          "Gastritis",
+          "Inflammation of the stomach lining could cause nausea and upper abdominal discomfort."
+        ],
+        [
+          "Functional Dyspepsia",
+          "This is a common cause of upper abdominal discomfort and nausea in the absence of structural abnormalities."
+        ],
+        [
+          "Gallbladder Disease",
+          "Gallbladder issues can cause upper abdominal pain and nausea, especially after eating fatty foods."
+        ],
+        [
+          "Pancreatitis",
+          "Although less likely without specific risk factors, pancreatitis can present with upper abdominal pain and nausea."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic Mesenteric Ischemia",
+          "The patient's age, postprandial abdominal pain, and absent foot pulses suggest possible vascular insufficiency."
+        ],
+        [
+          "Gastric Outlet Obstruction",
+          "Recurrent nausea and upper abdominal discomfort exacerbated after eating could indicate a mechanical obstruction."
+        ],
+        [
+          "Peptic Ulcer Disease",
+          "Although the abdomen is nontender, peptic ulcers can cause recurrent abdominal discomfort and nausea."
+        ],
+        [
+          "Gastroparesis",
+          "Delayed gastric emptying could cause nausea and abdominal discomfort, although other causes are more likely given the absent foot pulses."
+        ],
+        [
+          "Irritable Bowel Syndrome",
+          "While less likely given the age and absent foot pulses, IBS can present with chronic abdominal discomfort and nausea."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Appendicitis",
+          "Abdomen is nontender."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Mesenteric Ischemia",
+          "The patient's postprandial abdominal pain, history of peripheral arterial disease, smoking, and diabetes strongly suggest mesenteric ischemia."
+        ],
+        [
+          "Gastric Outlet Obstruction",
+          "Recurrent nausea and upper abdominal discomfort exacerbated after eating could indicate a mechanical obstruction."
+        ],
+        [
+          "Peptic Ulcer Disease",
+          "Although the abdomen is nontender, peptic ulcers can present with nausea and abdominal discomfort, especially with a history of smoking."
+        ],
+        [
+          "Pancreatic Cancer",
+          "Abdominal discomfort and nausea, while nonspecific, can be associated with pancreatic cancer, especially in the setting of new exertional symptoms."
+        ],
+        [
+          "Angina",
+          "New-onset exertional symptoms could be referred pain from cardiac ischemia, even with a normal ECG."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Mesenteric Ischemia",
+          "The chronic nature of the symptoms makes acute ischemia less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Angina pectoris",
+          "The cardiac stress test and coronary angiography results strongly suggest myocardial ischemia due to coronary artery disease."
+        ],
+        [
+          "Peripheral arterial disease",
+          "The patient's history of PAD and absent foot pulses, along with his risk factors, support this diagnosis."
+        ],
+        [
+          "Type 2 diabetes mellitus",
+          "The patient has a known history of type 2 diabetes mellitus, which can contribute to his symptoms and other conditions."
+        ],
+        [
+          "Hypertension",
+          "The patient's elevated blood pressure reading and history of hypertension suggest ongoing hypertensive disease."
+        ],
+        [
+          "Chronic mesenteric ischemia",
+          "The patient's postprandial abdominal pain and risk factors for vascular disease raise suspicion for mesenteric ischemia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute coronary syndrome",
+          "ECG was normal."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Peptic Ulcer Disease",
+            "The recurrent nausea and upper abdominal discomfort, especially after eating, suggest possible peptic ulcer disease."
+          ],
+          [
+            "Gastritis",
+            "Inflammation of the stomach lining could cause nausea and upper abdominal discomfort."
+          ],
+          [
+            "Functional Dyspepsia",
+            "This is a common cause of upper abdominal discomfort and nausea in the absence of structural abnormalities."
+          ],
+          [
+            "Gallbladder Disease",
+            "Gallbladder issues can cause upper abdominal pain and nausea, especially after eating fatty foods."
+          ],
+          [
+            "Pancreatitis",
+            "Although less likely without specific risk factors, pancreatitis can present with upper abdominal pain and nausea."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Peptic Ulcer Disease",
+            "Upper abdominal discomfort exacerbated after eating is a common symptom."
+          ],
+          [
+            "Gastritis",
+            "Inflammation of the stomach lining can cause nausea and upper abdominal discomfort."
+          ],
+          [
+            "Functional Dyspepsia",
+            "This diagnosis is considered when upper abdominal symptoms exist without structural abnormalities."
+          ],
+          [
+            "Gastric Cancer",
+            "Although less likely given the absence of alarm symptoms, it should be considered in older adults with new upper abdominal complaints."
+          ],
+          [
+            "GERD",
+            "While less typical without heartburn, atypical presentations of GERD can include upper abdominal discomfort and nausea."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Appendicitis",
+            "Abdomen is nontender."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Angina",
+            "New-onset exertional symptoms in a patient with multiple cardiovascular risk factors raises suspicion for angina."
+          ],
+          [
+            "Peptic Ulcer Disease",
+            "Upper abdominal discomfort exacerbated by eating is suggestive of peptic ulcer disease."
+          ],
+          [
+            "Gastric Cancer",
+            "Recurrent nausea and upper abdominal discomfort in an older adult warrants consideration of gastric cancer."
+          ],
+          [
+            "Chronic Mesenteric Ischemia",
+            "The patient's history of peripheral arterial disease and smoking increases the risk of mesenteric ischemia presenting with postprandial abdominal pain."
+          ],
+          [
+            "Diabetic Gastroparesis",
+            "Given the patient's history of diabetes, gastroparesis could explain the nausea and abdominal discomfort."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Coronary Syndrome",
+            "ECG showing no abnormalities makes acute coronary syndrome less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Angina pectoris",
+            "The exertional chest discomfort and ST-segment depression on stress test strongly suggest myocardial ischemia due to coronary artery disease."
+          ],
+          [
+            "Unstable angina",
+            "The new onset of exertional symptoms and significant stenosis found on angiography raises concern for unstable angina."
+          ],
+          [
+            "Non-ST-segment elevation myocardial infarction (NSTEMI)",
+            "The presence of ST-segment depression during stress testing could indicate a non-occlusive thrombus leading to myocardial damage."
+          ],
+          [
+            "Peripheral arterial disease",
+            "The patient's history of stage 2 peripheral arterial disease could contribute to exertional symptoms, although less likely to cause nausea and abdominal discomfort."
+          ],
+          [
+            "Type 2 diabetes mellitus",
+            "While less likely to directly cause the acute symptoms, the patient's diabetes can exacerbate cardiovascular issues and contribute to overall symptom presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gastritis",
+            "Abdominal discomfort is present, but cardiac findings are more prominent."
+          ]
+        ]
+      },
+      "cf_id": "case_014_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of strong, palpable dorsalis pedis pulses bilaterally argues against peripheral arterial disease as a cause of the patient's symptoms, making coronary artery disease less likely."
+    }
+  ]
+}

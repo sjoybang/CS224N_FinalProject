@@ -1,0 +1,294 @@
+{
+  "case_id": "case_030",
+  "model": "claude",
+  "ground_truth": "Myasthenia gravis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia gravis",
+          "Classic triad of diplopia, proximal muscle weakness (difficulty climbing stairs), and fatigable weakness in a young woman."
+        ],
+        [
+          "Lambert-Eaton myasthenic syndrome",
+          "Presents with proximal weakness and diplopia, though less common in this age group without malignancy history."
+        ],
+        [
+          "Brainstem lesion (stroke or demyelination)",
+          "Diplopia with limb weakness could indicate a posterior circulation stroke or multiple sclerosis plaque."
+        ],
+        [
+          "Chronic progressive external ophthalmoplegia",
+          "Mitochondrial disorder causing diplopia and proximal muscle weakness, though typically more gradual onset."
+        ],
+        [
+          "Polymyositis",
+          "Inflammatory myopathy causing proximal muscle weakness in young women, though diplopia would be atypical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Myasthenia gravis",
+          "Fatigable weakness with ptosis worsening on sustained gaze, diplopia, and proximal muscle weakness improving with rest is pathognomonic for this neuromuscular junction disorder."
+        ],
+        [
+          "Lambert-Eaton myasthenic syndrome",
+          "Presents with fatigable weakness and can involve ocular symptoms, though typically improves with exercise rather than rest, making it less likely here."
+        ],
+        [
+          "Ocular myasthenia",
+          "A localized form of myasthenia gravis limited to extraocular and eyelid muscles, explaining the diplopia and ptosis but less consistent with limb weakness."
+        ],
+        [
+          "Mitochondrial myopathy",
+          "Can cause ptosis, ophthalmoplegia, and proximal weakness, though symptoms typically do not show the classic fatigability pattern seen here."
+        ],
+        [
+          "Botulism",
+          "Can present with descending weakness, ptosis, and diplopia, but the improvement with rest and absence of autonomic symptoms makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "Ascending paralysis pattern, absent reflexes, and lack of fatigability with exercise do not fit this presentation."
+        ],
+        [
+          "Multiple sclerosis",
+          "While diplopia can occur, the clear fatigable pattern worsening with exercise and improving with rest is not characteristic."
+        ],
+        [
+          "Stroke",
+          "Acute onset and non-fatigable focal neurological deficits would be expected rather than fluctuating weakness."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Myasthenia gravis",
+          "Fatigable ptosis, diplopia, proximal weakness worsening with activity and improving with rest are classic features, and chest CT evaluation for thymoma supports this diagnosis."
+        ],
+        [
+          "Lambert-Eaton myasthenic syndrome",
+          "Proximal weakness and fatigable symptoms could fit, though the prominent ocular involvement and worsening (rather than improving) with activity make this less typical."
+        ],
+        [
+          "Ocular myasthenia gravis",
+          "Isolated or predominantly ocular symptoms (ptosis, diplopia) with fatigability match the presentation, representing a limited form of myasthenia gravis."
+        ],
+        [
+          "Mitochondrial myopathy",
+          "Progressive external ophthalmoplegia with ptosis and proximal weakness could occur, though lack of improvement with rest makes this less likely."
+        ],
+        [
+          "Brainstem lesion (multiple sclerosis or stroke)",
+          "Diplopia and ptosis could result from brainstem pathology, though the fatigability pattern and lack of other neurological signs make this less probable."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hyperthyroidism",
+          "Normal thyroid function tests rule out thyroid-related ophthalmopathy."
+        ],
+        [
+          "Grave's ophthalmopathy",
+          "Normal thyroid function tests and absence of proptosis or periorbital edema make this unlikely."
+        ],
+        [
+          "Polymyositis",
+          "Lack of elevated muscle enzymes and the distinctive fatigability pattern argue against inflammatory myopathy."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "Positive edrophonium test, elevated acetylcholine receptor antibodies, fatigable weakness, and ptosis are pathognomonic for this autoimmune neuromuscular junction disorder."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "Although acetylcholine receptor antibodies are positive here, LEMS can present with proximal weakness and fatigable symptoms, though typically improves with exercise rather than worsens."
+        ],
+        [
+          "Thymoma-associated Myasthenia Gravis",
+          "CT chest was ordered to evaluate for thymoma, which is associated with myasthenia gravis in 10-15% of cases and would explain the same antibody profile."
+        ],
+        [
+          "Ocular Myasthenia Gravis",
+          "The prominent ocular findings (diplopia, ptosis) could represent a localized form, though the limb weakness suggests generalized disease."
+        ],
+        [
+          "Seronegative Myasthenia Gravis",
+          "Included for completeness, though the positive acetylcholine receptor antibodies make this unlikely in this specific case."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Thyroid eye disease",
+          "Normal thyroid function tests rule out thyroid-related ophthalmopathy."
+        ],
+        [
+          "Polymyositis/Dermatomyositis",
+          "Lack of elevated muscle enzymes, normal CMP, and positive edrophonium test with AChR antibodies point away from primary muscle disease."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "Positive edrophonium test, fluctuating weakness that improves with rest, and positive antibodies are inconsistent with this acute demyelinating polyneuropathy."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia gravis",
+            "Classic triad of diplopia, proximal muscle weakness (difficulty climbing stairs), and fatigable weakness in a young woman suggests neuromuscular junction disorder."
+          ],
+          [
+            "Lambert-Eaton myasthenic syndrome",
+            "Presents with proximal weakness and diplopia, though typically associated with malignancy and less common in this age group."
+          ],
+          [
+            "Graves' ophthalmopathy with thyroid myopathy",
+            "Can cause diplopia from extraocular muscle involvement and proximal myopathy from hyperthyroidism."
+          ],
+          [
+            "Polymyositis",
+            "Inflammatory myopathy causing proximal muscle weakness, though diplopia would be unusual and suggests ocular muscle involvement."
+          ],
+          [
+            "Multiple sclerosis",
+            "Can present with diplopia from internuclear ophthalmoplegia and weakness from demyelinating lesions in a young woman."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Myasthenia gravis",
+            "Fatigable ptosis with sustained upward gaze, diplopia, proximal weakness (difficulty climbing stairs), and upper extremity weakness are classic features of neuromuscular junction dysfunction."
+          ],
+          [
+            "Lambert-Eaton myasthenic syndrome",
+            "Proximal muscle weakness and ptosis can occur, though the lack of symptom fluctuation and absence of autonomic features makes this less typical."
+          ],
+          [
+            "Oculopharyngeal muscular dystrophy",
+            "Progressive ptosis and proximal limb weakness fit, though onset at age 35 is earlier than typical and diplopia is less common."
+          ],
+          [
+            "Mitochondrial myopathy (chronic progressive external ophthalmoplegia)",
+            "Ptosis, ophthalmoplegia causing diplopia, and proximal weakness are characteristic, though symptoms are typically more gradually progressive."
+          ],
+          [
+            "Brainstem lesion (midbrain or pontine)",
+            "Diplopia and ptosis could result from cranial nerve involvement, though the bilateral proximal limb weakness pattern is less consistent with a focal lesion."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Multiple sclerosis",
+            "While can cause diplopia and weakness, the fatigable ptosis with sustained upgaze is more suggestive of neuromuscular junction pathology than demyelinating disease."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Myasthenia gravis",
+            "Ptosis worsening with sustained upward gaze, proximal weakness, and diplopia are classic features of neuromuscular junction dysfunction despite patient's report of non-fluctuating symptoms."
+          ],
+          [
+            "Lambert-Eaton myasthenic syndrome",
+            "Proximal muscle weakness and ocular symptoms can occur, though typically strength improves with repeated effort, and chest CT evaluation suggests concern for underlying malignancy."
+          ],
+          [
+            "Mitochondrial myopathy",
+            "Ptosis, ophthalmoplegia, and proximal weakness are characteristic of mitochondrial disorders which present with constant rather than fluctuating symptoms."
+          ],
+          [
+            "Ocular myositis",
+            "Diplopia and ptosis may result from inflammatory involvement of extraocular muscles, though isolated upper extremity weakness would be less typical."
+          ],
+          [
+            "Brainstem lesion (stroke or demyelination)",
+            "Diplopia and ptosis could localize to the brainstem, though bilateral upper extremity weakness and difficulty climbing stairs suggest a more diffuse process."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Thyroid ophthalmopathy",
+            "Normal thyroid function tests make this diagnosis unlikely."
+          ],
+          [
+            "Hyperthyroidism",
+            "Thyroid function tests are normal, ruling out thyrotoxic myopathy."
+          ],
+          [
+            "Hypothyroid myopathy",
+            "Normal thyroid function tests exclude this diagnosis."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "Positive edrophonium test, elevated acetylcholine receptor antibodies, fatigable ptosis, and proximal muscle weakness are pathognomonic for this autoimmune neuromuscular disorder."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "Though less likely given the positive AChR antibodies and edrophonium test, this paraneoplastic syndrome can present with proximal weakness and autonomic symptoms."
+          ],
+          [
+            "Thymoma-associated Myasthenia Gravis",
+            "The CT chest was ordered to evaluate for thymoma, which is present in 10-15% of myasthenia gravis patients and would represent a specific subtype requiring surgical management."
+          ],
+          [
+            "Congenital Myasthenic Syndrome",
+            "Though rare in adults and less likely given positive AChR antibodies, this hereditary disorder can present with similar fatigable weakness and ocular symptoms."
+          ],
+          [
+            "Ocular Myasthenia Gravis",
+            "While this restricted form affects only extraocular muscles, the patient has generalized limb weakness making generalized MG more likely, but ocular MG remains in the differential."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Thyroid Eye Disease",
+            "Normal thyroid function tests rule out thyroid-associated ophthalmopathy."
+          ],
+          [
+            "Chronic Progressive External Ophthalmoplegia",
+            "Lack of response to edrophonium and absence of AChR antibodies would be expected in mitochondrial disorders."
+          ],
+          [
+            "Botulism",
+            "Negative edrophonium test would be expected, and AChR antibodies would not be elevated."
+          ]
+        ]
+      },
+      "cf_id": "case_030_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that her symptoms are constant and do not fluctuate with activity or rest, which argues against myasthenia gravis."
+    }
+  ]
+}

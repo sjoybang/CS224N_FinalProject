@@ -1,0 +1,243 @@
+{
+  "case_id": "case_042",
+  "model": "gpt4",
+  "ground_truth": "Chromosomal abnormalities",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Threatened miscarriage",
+          "The patient is in the first trimester with vaginal bleeding and mild cramps, which are common symptoms of a threatened miscarriage."
+        ],
+        [
+          "Ectopic pregnancy",
+          "Sudden vaginal bleeding and abdominal pain in early pregnancy raise concern for an ectopic pregnancy."
+        ],
+        [
+          "Subchorionic hemorrhage",
+          "Vaginal bleeding in early pregnancy could be due to a subchorionic hemorrhage, which is a common cause of bleeding."
+        ],
+        [
+          "Molar pregnancy",
+          "Abnormal bleeding in early pregnancy could indicate a molar pregnancy, although less common."
+        ],
+        [
+          "Cervical polyp",
+          "Cervical polyps can cause vaginal bleeding, especially during pregnancy, though they are less likely to cause cramps."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Incomplete abortion",
+          "The open cervical os, passage of clots, and increased bleeding are consistent with an incomplete abortion."
+        ],
+        [
+          "Threatened abortion",
+          "The presence of vaginal bleeding and mild cramps in early pregnancy could indicate a threatened abortion, although the open os makes this less likely."
+        ],
+        [
+          "Inevitable abortion",
+          "The open cervical os and significant bleeding suggest that the pregnancy is unlikely to continue, consistent with an inevitable abortion."
+        ],
+        [
+          "Missed abortion",
+          "The cessation of pregnancy-related nausea and dizziness could indicate fetal demise, although the open os and bleeding make this less likely."
+        ],
+        [
+          "Ectopic pregnancy",
+          "Although less likely due to the open cervical os, the symptoms of dizziness and bleeding warrant consideration of an ectopic pregnancy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Molar pregnancy",
+          "The presentation of vaginal bleeding with clots and an open cervical os is not typical for a molar pregnancy, which usually presents with more severe symptoms and different ultrasound findings."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Incomplete abortion",
+          "The presence of products of conception in the cervical os and decreased beta-hCG levels suggest retained tissue after partial expulsion."
+        ],
+        [
+          "Inevitable abortion",
+          "The open cervical os and significant bleeding with clots indicate that the pregnancy is unlikely to continue."
+        ],
+        [
+          "Threatened abortion",
+          "Although less likely due to the open os and products of conception, the initial presentation with bleeding and cramping could suggest this."
+        ],
+        [
+          "Missed abortion",
+          "The sudden cessation of pregnancy symptoms and low beta-hCG could indicate fetal demise, though the open os makes this less likely."
+        ],
+        [
+          "Ectopic pregnancy",
+          "Although less likely due to the presence of intrauterine products of conception, the low beta-hCG and abdominal pain warrant consideration."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Molar pregnancy",
+          "The presence of products of conception and low beta-hCG are inconsistent with the typically elevated levels seen in molar pregnancies."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Spontaneous abortion",
+          "The presence of an open cervical os, passage of clots, and products of conception with trisomy 16 strongly suggest a miscarriage."
+        ],
+        [
+          "Incomplete abortion",
+          "The open cervical os and passage of products of conception indicate that not all tissue may have been expelled."
+        ],
+        [
+          "Missed abortion",
+          "The sudden cessation of pregnancy symptoms and low beta-hCG levels are consistent with fetal demise, although the open os and bleeding suggest active expulsion."
+        ],
+        [
+          "Inevitable abortion",
+          "The open cervical os and significant bleeding indicate that the pregnancy is unlikely to continue."
+        ],
+        [
+          "Threatened abortion",
+          "Although less likely due to the open os and passage of products, initial symptoms of spotting and cramping could suggest this diagnosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Ectopic pregnancy",
+          "The presence of intrauterine products of conception and cytogenetic analysis confirm an intrauterine pregnancy."
+        ],
+        [
+          "Molar pregnancy",
+          "The cytogenetic analysis showing trisomy 16 and not a complete or partial mole rules this out."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Threatened miscarriage",
+            "The patient is in early pregnancy with vaginal bleeding and mild cramps, which are common symptoms of a threatened miscarriage."
+          ],
+          [
+            "Ectopic pregnancy",
+            "Sudden vaginal bleeding and abdominal pain in early pregnancy raise concern for an ectopic pregnancy."
+          ],
+          [
+            "Subchorionic hemorrhage",
+            "Vaginal bleeding in early pregnancy could be due to a subchorionic hemorrhage, which is a common cause of bleeding."
+          ],
+          [
+            "Molar pregnancy",
+            "Abnormal bleeding in early pregnancy could indicate a molar pregnancy, although less common."
+          ],
+          [
+            "Cervical polyp",
+            "Cervical polyps can cause vaginal bleeding, especially during pregnancy, though they are less likely to cause cramps."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Threatened abortion",
+            "The open cervical os and passage of clots with increased bleeding suggest a possible miscarriage."
+          ],
+          [
+            "Preeclampsia",
+            "The severe headache and elevated blood pressure are indicative of preeclampsia, which can occur as early as 20 weeks but may present atypically earlier."
+          ],
+          [
+            "Molar pregnancy",
+            "The sudden cessation of pregnancy-related nausea and severe hypertension raise suspicion for a molar pregnancy."
+          ],
+          [
+            "Gestational hypertension",
+            "Elevated blood pressure without proteinuria or other severe features could indicate gestational hypertension."
+          ],
+          [
+            "Ectopic pregnancy",
+            "Although less likely due to the open cervical os, the abdominal cramps and bleeding warrant consideration of an ectopic pregnancy."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Incomplete abortion",
+            "The presence of products of conception in the cervical os and decreased beta-hCG levels suggest retained tissue following a miscarriage."
+          ],
+          [
+            "Missed abortion",
+            "The markedly lower beta-hCG levels and cessation of pregnancy symptoms indicate fetal demise without complete expulsion of tissue."
+          ],
+          [
+            "Ectopic pregnancy",
+            "Although less likely due to the presence of products of conception in the uterus, the severe headache and hypertension could suggest complications."
+          ],
+          [
+            "Molar pregnancy",
+            "The abnormal bleeding and passage of clots, along with hypertension, could be consistent with a molar pregnancy, though beta-hCG is typically higher."
+          ],
+          [
+            "Gestational trophoblastic disease",
+            "The abnormal bleeding and passage of tissue could suggest this condition, though beta-hCG levels are usually elevated."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Threatened abortion",
+            "The open cervical os and passage of clots indicate progression beyond a threatened state."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Spontaneous abortion",
+            "The presence of an open cervical os, passage of clots, and products of conception with trisomy 16 strongly suggest a miscarriage."
+          ],
+          [
+            "Missed abortion",
+            "The markedly lower beta-hCG level and cessation of pregnancy-related nausea indicate fetal demise, although the open cervical os and bleeding are more consistent with spontaneous abortion."
+          ],
+          [
+            "Gestational hypertension",
+            "The elevated blood pressure of 160/110 mm Hg in a pregnant woman suggests gestational hypertension, although it is not directly related to the miscarriage."
+          ],
+          [
+            "Threatened abortion",
+            "Initial light spotting and mild cramps could suggest a threatened abortion, but the open cervical os and passage of products of conception make this less likely."
+          ],
+          [
+            "Molar pregnancy",
+            "Trisomy 16 and abnormal bleeding could suggest a molar pregnancy, but the presence of products of conception and not a complete mole makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Ectopic pregnancy",
+            "The presence of intrauterine products of conception rules out an ectopic pregnancy."
+          ]
+        ]
+      },
+      "cf_id": "case_042_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood pressure is elevated and she reports a severe headache, suggesting preeclampsia which would argue against chromosomal abnormalities as the primary cause of bleeding."
+    }
+  ]
+}

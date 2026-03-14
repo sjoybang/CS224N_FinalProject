@@ -1,0 +1,252 @@
+{
+  "case_id": "case_036",
+  "model": "gpt4",
+  "ground_truth": "Influenza",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Influenza",
+          "The patient's fever, body aches, malaise, and dry cough are classic symptoms of influenza, especially in the context of seasonal outbreaks."
+        ],
+        [
+          "COVID-19",
+          "Similar symptoms to influenza, including fever, malaise, and dry cough, make COVID-19 a plausible diagnosis, particularly given its prevalence."
+        ],
+        [
+          "Community-acquired pneumonia",
+          "Fever and cough in a patient with COPD could indicate pneumonia, although the cough is described as dry."
+        ],
+        [
+          "Acute exacerbation of COPD",
+          "The patient's history of COPD and respiratory symptoms could suggest an exacerbation, although fever is less typical."
+        ],
+        [
+          "Viral upper respiratory infection",
+          "The combination of fever, malaise, and dry cough could be due to a common viral upper respiratory infection."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Influenza",
+          "The combination of fever, body aches, malaise, dry cough, and conjunctivitis is consistent with influenza, especially during flu season."
+        ],
+        [
+          "Viral upper respiratory infection",
+          "Symptoms such as fever, rhinorrhea, conjunctivitis, and cough suggest a viral etiology, possibly a common cold."
+        ],
+        [
+          "COVID-19",
+          "Fever, dry cough, and conjunctivitis can be seen in COVID-19, particularly given the ongoing pandemic context."
+        ],
+        [
+          "Allergic rhinitis",
+          "Rhinorrhea, conjunctivitis, and wheezing could indicate an allergic response, although fever is less typical."
+        ],
+        [
+          "Acute bronchitis",
+          "The presence of cough, wheezing, and fever could suggest bronchitis, often following a viral infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial pneumonia",
+          "The absence of productive cough and lung consolidation on auscultation makes bacterial pneumonia less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Influenza A",
+          "Positive rapid antigen test confirms the presence of influenza A, which aligns with the patient's symptoms of fever, body aches, malaise, and dry cough."
+        ],
+        [
+          "Viral conjunctivitis",
+          "Bilateral conjunctivitis is commonly associated with viral infections like influenza."
+        ],
+        [
+          "Acute bronchitis",
+          "The presence of a dry cough and wheezing could indicate inflammation of the bronchial tubes, often seen with viral infections."
+        ],
+        [
+          "COPD exacerbation",
+          "The patient's history of COPD and current wheezing suggest a possible exacerbation triggered by the influenza infection."
+        ],
+        [
+          "Viral pharyngitis",
+          "Erythematous tonsils without exudates are consistent with a viral cause, such as influenza."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial pneumonia",
+          "The absence of productive cough, significant lung findings, and the positive influenza test make bacterial pneumonia less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Influenza A",
+          "Confirmed by positive rapid antigen test and viral culture, consistent with symptoms of fever, malaise, and dry cough."
+        ],
+        [
+          "Viral conjunctivitis",
+          "Bilateral conjunctivitis is common with viral infections like influenza."
+        ],
+        [
+          "Acute bronchitis",
+          "The presence of cough and wheezing suggests inflammation of the bronchial tubes, often seen with viral infections."
+        ],
+        [
+          "Common cold",
+          "Rhinorrhea and mild respiratory symptoms could also be attributed to a concurrent or secondary viral upper respiratory infection."
+        ],
+        [
+          "COPD exacerbation",
+          "The patient's history of COPD and current respiratory symptoms could indicate an exacerbation triggered by the influenza infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial pneumonia",
+          "Lack of productive cough, absence of lung consolidation on examination, and confirmed viral etiology make bacterial pneumonia unlikely."
+        ],
+        [
+          "Streptococcal pharyngitis",
+          "The absence of tonsillar exudates and positive influenza test rule out this bacterial infection."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Influenza",
+            "The patient's fever, body aches, malaise, and dry cough are classic symptoms of influenza, especially in the context of seasonal outbreaks."
+          ],
+          [
+            "COVID-19",
+            "Similar symptoms to influenza, including fever, malaise, and dry cough, make COVID-19 a plausible diagnosis, particularly given its prevalence."
+          ],
+          [
+            "Community-acquired pneumonia",
+            "Fever and cough in a patient with COPD could indicate pneumonia, although the cough is described as dry."
+          ],
+          [
+            "Acute exacerbation of COPD",
+            "The patient's history of COPD and respiratory symptoms could suggest an exacerbation, although fever is less typical."
+          ],
+          [
+            "Viral upper respiratory infection",
+            "The combination of fever, malaise, and dry cough could be due to a common viral upper respiratory infection."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Viral Upper Respiratory Infection",
+            "The presence of conjunctivitis, rhinorrhea, and erythematous tonsils without exudates suggests a viral etiology."
+          ],
+          [
+            "Bacterial Pneumonia",
+            "The production of purulent sputum and wheezing could indicate a bacterial infection in the lungs."
+          ],
+          [
+            "Acute Exacerbation of COPD",
+            "The patient's history of COPD and current wheezing suggest a possible exacerbation."
+          ],
+          [
+            "Influenza",
+            "Fever, body aches, malaise, and dry cough are consistent with influenza, despite the normal temperature at presentation."
+          ],
+          [
+            "Allergic Rhinitis",
+            "Rhinorrhea and conjunctivitis could be due to an allergic reaction, although less likely given the systemic symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Streptococcal Pharyngitis",
+            "The absence of tonsillar exudates and the presence of conjunctivitis make this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Influenza A",
+            "The positive rapid antigen test for influenza A strongly suggests this diagnosis, correlating with the patient's symptoms of fever, body aches, malaise, and dry cough."
+          ],
+          [
+            "Viral conjunctivitis",
+            "The presence of bilateral conjunctivitis is consistent with a viral etiology, which can occur alongside influenza."
+          ],
+          [
+            "Acute bronchitis",
+            "The patient's cough, wheezing, and purulent sputum production suggest inflammation of the bronchial tubes, possibly secondary to the influenza infection."
+          ],
+          [
+            "COPD exacerbation",
+            "The patient's history of COPD and current wheezing could indicate an exacerbation triggered by the influenza infection."
+          ],
+          [
+            "Viral pharyngitis",
+            "The erythematous tonsils without exudates and rhinorrhea are consistent with a viral infection affecting the upper respiratory tract."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial pneumonia",
+            "The absence of high fever and the presence of a positive influenza test make bacterial pneumonia less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Influenza A",
+            "Confirmed by positive rapid antigen test and viral culture, consistent with symptoms of fever, malaise, and dry cough."
+          ],
+          [
+            "Viral conjunctivitis",
+            "Bilateral conjunctivitis is common with viral infections such as influenza."
+          ],
+          [
+            "Acute bronchitis",
+            "The presence of wheezing and purulent sputum suggests inflammation of the bronchial tubes, often seen with viral infections."
+          ],
+          [
+            "COPD exacerbation",
+            "The patient's history of COPD and current respiratory symptoms suggest a possible exacerbation triggered by the influenza infection."
+          ],
+          [
+            "Viral pharyngitis",
+            "Erythematous tonsils without exudates are consistent with viral pharyngitis, which can occur with influenza."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial pneumonia",
+            "The absence of high fever and the confirmation of influenza A make bacterial pneumonia less likely."
+          ],
+          [
+            "Streptococcal pharyngitis",
+            "The lack of tonsillar exudates and positive influenza test make this diagnosis unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_036_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of fever and presence of purulent sputum production argues against influenza."
+    }
+  ]
+}

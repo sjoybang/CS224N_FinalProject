@@ -1,0 +1,244 @@
+{
+  "case_id": "case_040",
+  "model": "gpt4",
+  "ground_truth": "Cyst formation in a persistent thyroglossal duct",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Thyroid nodule",
+          "A lump on the front of the neck in a young girl is commonly due to a thyroid nodule."
+        ],
+        [
+          "Thyroglossal duct cyst",
+          "A midline neck mass in a child is often a thyroglossal duct cyst."
+        ],
+        [
+          "Lymphadenopathy",
+          "Enlarged cervical lymph nodes can present as a neck lump."
+        ],
+        [
+          "Goiter",
+          "Enlargement of the thyroid gland can present as a neck lump."
+        ],
+        [
+          "Branchial cleft cyst",
+          "Although less common, a branchial cleft cyst can present as a neck mass."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "The midline neck mass that moves with swallowing and is located between the hyoid bone and mandible is characteristic of a thyroglossal duct cyst."
+        ],
+        [
+          "Dermoid cyst",
+          "A midline neck mass that is fluctuant and minimally mobile could also represent a dermoid cyst, although these typically do not move with swallowing."
+        ],
+        [
+          "Lymphadenopathy",
+          "Although less likely due to the midline location and movement with swallowing, lymphadenopathy can present as a neck mass."
+        ],
+        [
+          "Ectopic thyroid tissue",
+          "Ectopic thyroid tissue can present as a midline neck mass and may move with swallowing, though it is less common."
+        ],
+        [
+          "Branchial cleft cyst",
+          "Typically lateral, a branchial cleft cyst could be considered if the presentation is atypical, though it is less likely due to the midline location."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Goiter",
+          "The mass is not consistent with a goiter as it is not associated with thyroid enlargement or dysfunction."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "The midline neck mass that moves with swallowing and is located near the hyoid bone is characteristic of a thyroglossal duct cyst."
+        ],
+        [
+          "Dermoid cyst",
+          "A midline neck mass in a young patient could also be a dermoid cyst, which is typically benign and fluctuant."
+        ],
+        [
+          "Lymphadenopathy",
+          "Although less likely due to the midline location and lack of systemic symptoms, lymphadenopathy can present as a neck mass."
+        ],
+        [
+          "Ectopic thyroid tissue",
+          "Ectopic thyroid tissue can present as a midline neck mass, although normal thyroid function tests make this less likely."
+        ],
+        [
+          "Branchial cleft cyst",
+          "Typically lateral, a branchial cleft cyst could occasionally present near the midline, though this is atypical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Thyroid nodule",
+          "Normal thyroid function tests and the midline location make a thyroid nodule unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "The confirmed diagnosis by surgical excision and pathology, characterized by a midline neck mass that moves with swallowing and is connected by a tract towards the base of the tongue."
+        ],
+        [
+          "Dermoid cyst",
+          "Typically presents as a midline neck mass in children, but less likely due to the confirmed thyroglossal duct cyst."
+        ],
+        [
+          "Lymphadenopathy",
+          "Can present as a neck mass, but less likely due to the cystic nature and confirmed thyroglossal duct cyst."
+        ],
+        [
+          "Branchial cleft cyst",
+          "Usually presents laterally rather than midline, making it less likely in this case."
+        ],
+        [
+          "Ectopic thyroid tissue",
+          "Can present as a midline neck mass, but normal thyroid function tests and confirmed thyroglossal duct cyst make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Goiter",
+          "Ruled out by normal thyroid function tests and the confirmed diagnosis of a thyroglossal duct cyst."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Thyroid nodule",
+            "A lump on the front of the neck in a young girl is commonly due to a thyroid nodule."
+          ],
+          [
+            "Thyroglossal duct cyst",
+            "A midline neck mass in a child is often a thyroglossal duct cyst."
+          ],
+          [
+            "Lymphadenopathy",
+            "Enlarged cervical lymph nodes can present as a neck lump."
+          ],
+          [
+            "Goiter",
+            "Enlargement of the thyroid gland can present as a neck lump."
+          ],
+          [
+            "Branchial cleft cyst",
+            "Although less common, a branchial cleft cyst can present as a neck mass."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Thyroglossal duct cyst",
+            "The midline location, movement with swallowing, and tenderness with erythema suggest an infected thyroglossal duct cyst."
+          ],
+          [
+            "Dermoid cyst",
+            "The midline position and fluctuant nature could indicate a dermoid cyst, although tenderness and erythema are less typical."
+          ],
+          [
+            "Lymphadenitis",
+            "The tenderness and erythema could suggest an inflamed lymph node, although the midline location is less common."
+          ],
+          [
+            "Branchial cleft cyst",
+            "Typically lateral, but can occasionally present near the midline and become tender and erythematous if infected."
+          ],
+          [
+            "Thyroid nodule",
+            "Although less likely due to the midline position and tenderness, a thyroid nodule could present as a neck mass."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Goiter",
+            "Typically not tender or erythematous and usually presents with thyroid enlargement rather than a discrete mass."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Thyroglossal duct cyst",
+            "The midline neck mass that moves with swallowing and is located near the hyoid bone is characteristic of a thyroglossal duct cyst, especially given the normal thyroid function tests."
+          ],
+          [
+            "Dermoid cyst",
+            "A midline neck mass in a child that is fluctuant and tender could also be a dermoid cyst, although these typically do not move with swallowing."
+          ],
+          [
+            "Lymphadenitis",
+            "The tenderness and erythema over the mass suggest possible inflammation, which could be due to lymphadenitis, although the midline location is less typical."
+          ],
+          [
+            "Branchial cleft cyst",
+            "Although more commonly lateral, a branchial cleft cyst could present with similar features, but the midline location makes this less likely."
+          ],
+          [
+            "Abscess",
+            "The tenderness and erythema could indicate an abscess, although the lack of systemic symptoms and normal blood tests make this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Goiter",
+            "Normal thyroid function tests and the specific location of the mass make a goiter unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Thyroglossal duct cyst",
+            "The confirmed diagnosis by surgical excision and pathology, characterized by a midline neck mass that moves with swallowing and is connected by a tract towards the base of the tongue."
+          ],
+          [
+            "Dermoid cyst",
+            "Considered due to the midline location and cystic nature, though less likely given the confirmed thyroglossal duct cyst."
+          ],
+          [
+            "Lymphadenopathy",
+            "Initially considered due to the tender and erythematous nature of the mass, but less likely given the cystic structure and confirmed diagnosis."
+          ],
+          [
+            "Branchial cleft cyst",
+            "Typically presents laterally rather than midline, making it less likely but considered due to cystic nature."
+          ],
+          [
+            "Thyroid nodule",
+            "Considered due to neck mass, but less likely given normal thyroid function tests and confirmed thyroglossal duct cyst."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Abscess",
+            "Ruled out due to afebrile status and lack of systemic infection signs."
+          ]
+        ]
+      },
+      "cf_id": "case_040_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of significant tenderness and erythema suggests an infectious process, making a thyroglossal duct cyst less likely."
+    }
+  ]
+}

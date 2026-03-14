@@ -1,0 +1,254 @@
+{
+  "case_id": "case_056",
+  "model": "gemini",
+  "ground_truth": "Thrombotic thrombocytopenic purpura (TTP)",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral gastroenteritis",
+          "The constellation of nausea, vomiting, diarrhea, headache, and malaise points towards a viral etiology."
+        ],
+        [
+          "Food poisoning",
+          "Recent onset of gastrointestinal symptoms after possible foodborne exposure is a strong consideration."
+        ],
+        [
+          "Norovirus infection",
+          "Highly contagious and common cause of gastroenteritis with similar symptoms."
+        ],
+        [
+          "Influenza",
+          "While primarily respiratory, influenza can present with systemic symptoms including gastrointestinal upset."
+        ],
+        [
+          "Medication side effect",
+          "Some medications can cause nausea, vomiting, diarrhea, and headache."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No information yet to eliminate any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Viral gastroenteritis",
+          "The constellation of nausea, vomiting, diarrhea, headache, malaise, and low-grade fever suggests a viral gastrointestinal infection."
+        ],
+        [
+          "Bacterial gastroenteritis",
+          "Similar to viral gastroenteritis, bacterial causes can present with nausea, vomiting, diarrhea, and fever, though potentially with more severe symptoms."
+        ],
+        [
+          "Meningitis",
+          "Headache, fever, nausea, vomiting, and altered mental status (drowsiness) raise concern for meningitis, although the nonfocal neurological exam is less typical."
+        ],
+        [
+          "Encephalitis",
+          "Similar to meningitis, encephalitis can present with headache, fever, nausea, vomiting, and altered mental status, but often with more pronounced neurological deficits."
+        ],
+        [
+          "Sepsis",
+          "The patient's fever, malaise, and altered mental status could indicate a systemic inflammatory response to an infection, potentially leading to sepsis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Migraine",
+          "No specific migraine features reported."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Thrombotic Thrombocytopenic Purpura",
+          "The presence of schistocytes, thrombocytopenia, and elevated creatinine in the setting of systemic symptoms strongly suggests TTP."
+        ],
+        [
+          "Hemolytic Uremic Syndrome",
+          "Similar to TTP, HUS presents with microangiopathic hemolytic anemia, thrombocytopenia, and renal impairment, though it is more common in children and often associated with E. coli infection."
+        ],
+        [
+          "HELLP Syndrome",
+          "This is a consideration given the thrombocytopenia and elevated creatinine, although less likely given the absence of pregnancy."
+        ],
+        [
+          "Disseminated Intravascular Coagulation",
+          "DIC can present with similar lab findings, including thrombocytopenia and schistocytes, but is usually associated with an underlying condition like sepsis or malignancy."
+        ],
+        [
+          "Autoimmune Hemolytic Anemia",
+          "While less likely given the thrombocytopenia and renal involvement, AIHA can cause anemia and fatigue, and the presence of schistocytes could be due to microangiopathic changes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Viral gastroenteritis",
+          "The presence of schistocytes and thrombocytopenia makes this diagnosis less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Thrombotic Thrombocytopenic Purpura",
+          "Severely deficient ADAMTS13 activity with microangiopathic hemolytic anemia and thrombocytopenia strongly suggests TTP."
+        ],
+        [
+          "Atypical Hemolytic Uremic Syndrome",
+          "While ADAMTS13 is low, aHUS can present similarly with microangiopathic hemolytic anemia and thrombocytopenia, but typically has normal ADAMTS13 activity."
+        ],
+        [
+          "Shiga-toxin producing E. coli Hemolytic Uremic Syndrome",
+          "Although less likely with very low ADAMTS13, STEC-HUS can present with similar symptoms and lab findings."
+        ],
+        [
+          "Drug-induced Thrombotic Microangiopathy",
+          "Certain drugs can cause TMA, and should be considered even with low ADAMTS13."
+        ],
+        [
+          "Systemic Lupus Erythematosus",
+          "SLE can cause thrombocytopenia and renal involvement, and rarely TMA."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Gastroenteritis",
+          "The presence of schistocytes and thrombocytopenia rule out simple gastroenteritis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Viral gastroenteritis",
+            "The constellation of nausea, vomiting, diarrhea, headache, and malaise points towards a viral etiology."
+          ],
+          [
+            "Food poisoning",
+            "Recent onset of gastrointestinal symptoms after possible foodborne exposure is a strong consideration."
+          ],
+          [
+            "Norovirus infection",
+            "Highly contagious and common cause of gastroenteritis with similar symptoms."
+          ],
+          [
+            "Influenza",
+            "While primarily respiratory, influenza can present with systemic symptoms including gastrointestinal upset."
+          ],
+          [
+            "Medication side effect",
+            "Some medications can cause nausea, vomiting, diarrhea, and headache."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No information yet to eliminate any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Viral gastroenteritis",
+            "The constellation of nausea, vomiting, diarrhea, headache, and malaise suggests a viral gastrointestinal infection."
+          ],
+          [
+            "Food poisoning",
+            "Recent onset of nausea, vomiting, and diarrhea could be due to ingestion of contaminated food."
+          ],
+          [
+            "Migraine",
+            "Headache, nausea, and vomiting can be indicative of a migraine, even without specific neurological deficits."
+          ],
+          [
+            "Medication side effect",
+            "The symptoms could be related to a new medication or an adverse reaction to an existing one."
+          ],
+          [
+            "Early influenza",
+            "Generalized malaise, headache, and gastrointestinal symptoms can be early manifestations of influenza."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses can be definitively ruled out at this stage."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Thrombotic Thrombocytopenic Purpura",
+            "The presence of schistocytes, thrombocytopenia, and elevated creatinine suggests TTP."
+          ],
+          [
+            "Hemolytic Uremic Syndrome",
+            "Similar to TTP, HUS is characterized by microangiopathic hemolytic anemia, thrombocytopenia, and renal impairment."
+          ],
+          [
+            "HELLP Syndrome",
+            "Although typically associated with pregnancy, HELLP syndrome (Hemolysis, Elevated Liver enzymes, and Low Platelets) can present with similar findings."
+          ],
+          [
+            "Disseminated Intravascular Coagulation",
+            "DIC can cause thrombocytopenia, schistocytes, and renal dysfunction, although it is usually associated with an underlying condition."
+          ],
+          [
+            "Autoimmune Hemolytic Anemia",
+            "While less likely given the thrombocytopenia and renal involvement, AIHA can present with anemia and schistocytes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral gastroenteritis",
+            "Normal temperature and abnormal labs make this less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Thrombotic Thrombocytopenic Purpura",
+            "Severely deficient ADAMTS13 activity (<5%) is diagnostic for TTP."
+          ],
+          [
+            "Atypical Hemolytic Uremic Syndrome",
+            "While ADAMTS13 is very low, complement-mediated HUS can present with similar findings, though ADAMTS13 is typically normal."
+          ],
+          [
+            "Drug-induced Thrombotic Microangiopathy",
+            "Certain drugs can trigger TMA, and while ADAMTS13 is typically normal, some cases can mimic TTP."
+          ],
+          [
+            "Systemic Lupus Erythematosus",
+            "SLE can cause TMA and thrombocytopenia, although ADAMTS13 deficiency is less common."
+          ],
+          [
+            "Sepsis with DIC",
+            "Sepsis can lead to DIC and TMA, but the severely deficient ADAMTS13 makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gastroenteritis",
+            "The presence of schistocytes and thrombocytopenia makes gastroenteritis unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_056_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is alert and oriented with a normal neurological exam, which argues against the neurological involvement typically seen in TTP."
+    }
+  ]
+}

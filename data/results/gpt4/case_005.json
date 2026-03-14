@@ -1,0 +1,252 @@
+{
+  "case_id": "case_005",
+  "model": "gpt4",
+  "ground_truth": "Preeclampsia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Physiological edema of pregnancy",
+          "Common in late pregnancy due to increased blood volume and pressure on veins."
+        ],
+        [
+          "Preeclampsia",
+          "Swelling can be a symptom, especially if accompanied by hypertension or proteinuria."
+        ],
+        [
+          "Gestational hypertension",
+          "Can cause swelling and is common in the third trimester."
+        ],
+        [
+          "Deep vein thrombosis (DVT)",
+          "Unilateral leg swelling could indicate a clot, though less likely without pain or redness."
+        ],
+        [
+          "Hypothyroidism",
+          "Can cause generalized swelling, though less common in pregnancy."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Preeclampsia",
+          "Elevated blood pressure, significant weight gain, and pitting edema in a pregnant woman suggest preeclampsia."
+        ],
+        [
+          "Gestational hypertension",
+          "Elevated blood pressure without proteinuria or severe features could indicate gestational hypertension."
+        ],
+        [
+          "Physiological edema of pregnancy",
+          "Edema and weight gain can be normal in pregnancy, though the blood pressure is concerning."
+        ],
+        [
+          "Chronic hypertension",
+          "Elevated blood pressure could be due to pre-existing hypertension, though the timing suggests a pregnancy-related condition."
+        ],
+        [
+          "Renal disease",
+          "Edema and hypertension could indicate underlying renal issues, though less likely without proteinuria or renal history."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Preeclampsia",
+          "The combination of hypertension, proteinuria, and edema in a pregnant woman at 34 weeks gestation is highly suggestive of preeclampsia."
+        ],
+        [
+          "Gestational hypertension",
+          "Elevated blood pressure without significant proteinuria or abnormal lab results could indicate gestational hypertension."
+        ],
+        [
+          "Chronic hypertension",
+          "The presence of hypertension in pregnancy could be due to pre-existing chronic hypertension, although the sudden weight gain and edema are less typical."
+        ],
+        [
+          "Nephrotic syndrome",
+          "Proteinuria and edema could suggest nephrotic syndrome, but the normal renal function tests make this less likely."
+        ],
+        [
+          "Physiological edema of pregnancy",
+          "Edema and weight gain can occur in normal pregnancy, but the presence of hypertension and proteinuria makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary tract infection",
+          "The absence of leukocytes or nitrites in the urinalysis makes a UTI unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Gestational Hypertension",
+          "Elevated blood pressure readings without significant proteinuria suggest gestational hypertension."
+        ],
+        [
+          "Preeclampsia",
+          "The presence of elevated blood pressure and proteinuria in a pregnant woman at 34 weeks gestation raises suspicion for preeclampsia."
+        ],
+        [
+          "Edema of Pregnancy",
+          "The significant weight gain and pitting edema are common in pregnancy and can occur independently of hypertensive disorders."
+        ],
+        [
+          "Chronic Hypertension",
+          "Although less likely due to the timing, chronic hypertension could present with elevated blood pressure in pregnancy."
+        ],
+        [
+          "Nephrotic Syndrome",
+          "Proteinuria and edema could suggest nephrotic syndrome, although the proteinuria level is relatively low for this condition."
+        ]
+      ],
+      "eliminated": [
+        [
+          "HELLP Syndrome",
+          "Normal liver function tests and absence of hemolysis rule out HELLP syndrome."
+        ],
+        [
+          "Eclampsia",
+          "The absence of seizures or neurological symptoms makes eclampsia unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Physiological edema of pregnancy",
+            "Common in late pregnancy due to increased blood volume and pressure on veins."
+          ],
+          [
+            "Preeclampsia",
+            "Swelling can be a symptom, especially if accompanied by hypertension or proteinuria."
+          ],
+          [
+            "Gestational hypertension",
+            "Can cause swelling and is common in the third trimester."
+          ],
+          [
+            "Deep vein thrombosis (DVT)",
+            "Although less common, unilateral leg swelling could indicate DVT."
+          ],
+          [
+            "Hypothyroidism",
+            "Can cause generalized swelling and is sometimes diagnosed during pregnancy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information to rule out any diagnoses at this stage."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Physiological edema of pregnancy",
+            "The patient is in the third trimester with normal blood pressure and heart rate, and edema is common due to increased blood volume and venous pressure."
+          ],
+          [
+            "Gestational hypertension",
+            "Although her blood pressure is currently normal, the significant weight gain and edema warrant consideration of developing hypertension."
+          ],
+          [
+            "Preeclampsia",
+            "While her blood pressure is normal, the rapid weight gain and edema could be early signs, though proteinuria or hypertension would strengthen this diagnosis."
+          ],
+          [
+            "Deep vein thrombosis (DVT)",
+            "The presence of pitting edema raises concern for DVT, although bilateral presentation and lack of pain make it less likely."
+          ],
+          [
+            "Hypoalbuminemia",
+            "Significant edema and weight gain could suggest hypoalbuminemia, though there is no direct evidence of liver or kidney dysfunction."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic hypertension",
+            "The patient's blood pressure readings are within normal limits, ruling out chronic hypertension."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Gestational hypertension",
+            "The patient has significant weight gain and edema, but normal blood pressure readings, suggesting possible gestational hypertension."
+          ],
+          [
+            "Preeclampsia",
+            "The presence of 1+ proteinuria and edema raises suspicion for preeclampsia, although blood pressure is not elevated."
+          ],
+          [
+            "Physiological edema of pregnancy",
+            "Edema and weight gain are common in pregnancy, especially in the third trimester, without other abnormal findings."
+          ],
+          [
+            "Nephrotic syndrome",
+            "Proteinuria and edema could indicate nephrotic syndrome, though the absence of hypoalbuminemia and normal renal function tests make it less likely."
+          ],
+          [
+            "Chronic kidney disease",
+            "Proteinuria and edema could suggest underlying kidney issues, but normal renal function tests and lack of history make this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Essential hypertension",
+            "Normal blood pressure readings rule out chronic hypertension."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Gestational edema",
+            "The presence of 2+ pitting edema and significant weight gain in a pregnant woman is consistent with gestational edema."
+          ],
+          [
+            "Mild preeclampsia",
+            "The combination of 1+ proteinuria and 350 mg of protein in a 24-hour urine collection suggests mild preeclampsia."
+          ],
+          [
+            "Physiological changes of pregnancy",
+            "Normal blood pressure and heart rate, along with edema, can be attributed to physiological changes during pregnancy."
+          ],
+          [
+            "Nephrotic syndrome",
+            "Although less likely, the presence of proteinuria could suggest nephrotic syndrome, but the protein level is relatively low."
+          ],
+          [
+            "Chronic hypertension",
+            "While her blood pressure is normal, chronic hypertension can present with edema and proteinuria in pregnancy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Severe preeclampsia",
+            "The absence of severe hypertension and only mild proteinuria rules out severe preeclampsia."
+          ],
+          [
+            "HELLP syndrome",
+            "Normal liver function tests and blood counts make HELLP syndrome unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_005_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood pressure is normal, which argues against preeclampsia."
+    }
+  ]
+}

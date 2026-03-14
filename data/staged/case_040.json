@@ -1,0 +1,25 @@
+{
+  "case_id": "case_040",
+  "source": "MedQA-USMLE",
+  "original_question": "A 13-year-old girl presents to a medical office for the evaluation of a lump on the front of her neck. The patient denies pain, but states that the mass bothers her because \u201cit moves when I swallow\u201d. The physical examination reveals a midline neck mass that is above the hyoid bone but below the level of the mandible. The mass is minimally mobile and feels fluctuant without erythema. The patient is afebrile and all vital signs are stable. A complete blood count and thyroid function tests are performed and are within normal limits. What is the most likely cause of this patient\u2019s presentation?",
+  "ground_truth": "Cyst formation in a persistent thyroglossal duct",
+  "base": {
+    "stage_1": "A 13-year-old girl presents to the office complaining of a lump on the front of her neck.",
+    "stage_2": "The patient denies pain but reports the mass moves when she swallows. Examination reveals a midline neck mass, superior to the hyoid bone and inferior to the mandible. The mass is minimally mobile and fluctuant, without erythema. Vital signs are stable and she is afebrile.",
+    "stage_3": "A complete blood count and thyroid function tests are performed and are within normal limits.",
+    "stage_4": "Ultrasound of the neck demonstrates a well-defined cystic structure in the midline, connected by a thin tract extending superiorly towards the base of the tongue. Surgical excision and pathology confirm a thyroglossal duct cyst."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of significant tenderness and erythema suggests an infectious process, making a thyroglossal duct cyst less likely.",
+      "rules_out": "Cyst formation in a persistent thyroglossal duct",
+      "stage_1": "A 13-year-old girl presents to the office complaining of a lump on the front of her neck.",
+      "stage_2": "The patient denies pain but reports the mass moves when she swallows. Examination reveals a midline neck mass, superior to the hyoid bone and inferior to the mandible. The mass is minimally mobile, fluctuant, TENDER to palpation, and with overlying ERYTHEMA. Vital signs are stable and she is afebrile.",
+      "stage_3": "A complete blood count and thyroid function tests are performed and are within normal limits.",
+      "stage_4": "Ultrasound of the neck demonstrates a well-defined cystic structure in the midline, connected by a thin tract extending superiorly towards the base of the tongue. Surgical excision and pathology confirm a thyroglossal duct cyst.",
+      "cf_id": "case_040_cf_a"
+    }
+  ]
+}

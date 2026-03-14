@@ -1,0 +1,282 @@
+{
+  "case_id": "case_057",
+  "model": "claude",
+  "ground_truth": "Loss of antithrombin III",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Nephrolithiasis (kidney stones)",
+          "Acute onset of flank pain with hematuria is classic for ureteral obstruction from a stone."
+        ],
+        [
+          "Acute pyelonephritis",
+          "Urinary tract infection involving the kidney can present with flank pain and hematuria."
+        ],
+        [
+          "Renal cell carcinoma",
+          "Flank pain and hematuria are part of the classic triad for kidney malignancy, though less common presentation."
+        ],
+        [
+          "Ureteral obstruction (non-stone)",
+          "Clot, tumor, or stricture causing obstruction can present similarly with flank pain and hematuria."
+        ],
+        [
+          "Renal infarction",
+          "Acute flank pain and hematuria can occur from thromboembolism or vascular occlusion of renal artery."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to rule out diagnoses definitively."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Nephrotic syndrome (likely minimal change disease or focal segmental glomerulosclerosis)",
+          "The constellation of periorbital edema, lower extremity edema, weight gain, ascites, and hematuria suggests heavy proteinuria with hypoalbuminemia causing generalized edema."
+        ],
+        [
+          "Renal vein thrombosis",
+          "Acute flank pain with hematuria combined with nephrotic-range proteinuria and edema is classic for this condition, which can cause or complicate nephrotic syndrome."
+        ],
+        [
+          "Membranous nephropathy",
+          "A common cause of nephrotic syndrome in middle-aged adults presenting with edema, proteinuria, and possible hematuria."
+        ],
+        [
+          "IgA nephropathy",
+          "Can present with gross hematuria, flank pain, and progressive edema from glomerular disease leading to fluid retention."
+        ],
+        [
+          "Renal cell carcinoma with paraneoplastic syndrome",
+          "Flank pain and hematuria are classic presentations, and paraneoplastic nephrotic syndrome or inferior vena cava involvement could explain the edema."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary tract infection",
+          "While hematuria can occur, the generalized edema, significant weight gain, and ascites suggest systemic nephrotic pathology rather than simple infection."
+        ],
+        [
+          "Acute heart failure",
+          "Lungs are clear to auscultation, making cardiogenic cause of edema and ascites less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Renal vein thrombosis with nephrotic syndrome",
+          "CT shows filling defect in right renal vein with classic nephrotic features (4+ proteinuria, fatty casts, edema) and risk factors including hypercoagulability from nephrotic syndrome and frequent air travel."
+        ],
+        [
+          "Membranous nephropathy",
+          "Most common primary glomerular cause of nephrotic syndrome in adults, can be associated with hepatitis B infection, and predisposes to renal vein thrombosis."
+        ],
+        [
+          "Hepatitis B-associated glomerulonephritis",
+          "Patient has chronic hepatitis B which can cause membranous or membranoproliferative glomerulonephritis leading to nephrotic syndrome."
+        ],
+        [
+          "Hepatorenal syndrome",
+          "Nodular liver with ascites indicates cirrhosis from hepatitis B, though the massive proteinuria and renal vein thrombosis make primary renal pathology more likely."
+        ],
+        [
+          "IgA nephropathy",
+          "Can present with hematuria and proteinuria, though the degree of proteinuria and fatty casts are more consistent with nephrotic syndrome from other etiologies."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute pyelonephritis",
+          "No fever, no pyuria on urinalysis, and CT findings show thrombotic/glomerular pathology rather than infection."
+        ],
+        [
+          "Renal cell carcinoma",
+          "While abundant collateral vessels can suggest malignancy, the filling defect represents thrombus and the nephrotic-range proteinuria with fatty casts indicates primary glomerular disease."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Renal vein thrombosis secondary to antithrombin III deficiency",
+          "Confirmed hereditary thrombophilia with CT showing filling defect in right renal vein, flank pain, hematuria, and nephrotic syndrome."
+        ],
+        [
+          "Nephrotic syndrome due to membranous nephropathy (hepatitis B-associated)",
+          "4+ proteinuria, edema, fatty casts, and chronic hepatitis B infection predispose to secondary membranous nephropathy."
+        ],
+        [
+          "Hepatocellular carcinoma with IVC/renal vein invasion",
+          "Nodular liver with ascites in chronic hepatitis B patient, abundant collateral vessels suggest malignant thrombosis possibility."
+        ],
+        [
+          "Budd-Chiari syndrome",
+          "Ascites, lower extremity edema, and thrombophilia in context of antithrombin III deficiency could cause hepatic vein thrombosis."
+        ],
+        [
+          "Portal vein thrombosis with cirrhosis",
+          "Nodular liver with ascites suggests cirrhosis, and antithrombin III deficiency increases thrombosis risk in portal circulation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary nephrotic syndrome (minimal change disease/FSGS)",
+          "Hepatitis B association and renal vein thrombosis point to secondary causes rather than primary glomerular disease."
+        ],
+        [
+          "Simple urinary tract infection",
+          "CT findings of renal vein thrombosis and nephrotic-range proteinuria explain symptoms beyond simple infection."
+        ],
+        [
+          "Acute glomerulonephritis",
+          "Nephrotic rather than nephritic presentation (heavy proteinuria, edema, no hypertension or active sediment noted)."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Nephrolithiasis (kidney stones)",
+            "Classic presentation of flank pain with hematuria in a middle-aged woman suggests urinary tract stone disease."
+          ],
+          [
+            "Acute pyelonephritis",
+            "Flank pain and hematuria can indicate upper urinary tract infection with renal parenchymal involvement."
+          ],
+          [
+            "Renal cell carcinoma",
+            "Gross hematuria with flank pain is part of the classic triad for kidney malignancy, though complete triad is uncommon."
+          ],
+          [
+            "Ureteral calculus with obstruction",
+            "Stone in the ureter can cause both referred flank pain and hematuria from mucosal trauma."
+          ],
+          [
+            "Acute cystitis with upper tract involvement",
+            "Urinary tract infection may present with hematuria and referred pain to the flank region."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pulmonary embolism",
+            "Acute onset pleuritic chest pain, dyspnea, tachycardia, tachypnea, cyanosis, and anxiety in a patient with possible malignancy (hematuria/flank pain suggesting renal cell carcinoma) creates high PE risk."
+          ],
+          [
+            "Renal cell carcinoma with IVC thrombus",
+            "Flank pain and hematuria suggest renal malignancy which can extend into the IVC and embolize to pulmonary circulation, explaining both presentations."
+          ],
+          [
+            "Nephrolithiasis with concurrent pneumothorax",
+            "Flank pain and hematuria suggest kidney stone, while pleuritic pain and respiratory distress could indicate spontaneous pneumothorax, though lungs clear to auscultation makes this less likely."
+          ],
+          [
+            "Pyelonephritis with septic emboli",
+            "Right flank pain and hematuria could represent kidney infection with bacteremia leading to septic pulmonary emboli causing respiratory symptoms."
+          ],
+          [
+            "Acute coronary syndrome",
+            "Dyspnea, diaphoresis, anxiety, and chest discomfort could represent myocardial infarction, though pleuritic nature and clear lungs make this less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumonia",
+            "Lungs are clear to auscultation with no mention of productive cough or focal findings."
+          ],
+          [
+            "Spontaneous pneumothorax",
+            "While pleuritic pain is consistent, lungs clear to auscultation and bilateral cyanosis make this unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Pulmonary embolism secondary to renal vein thrombosis",
+            "Renal vein thrombosis with filling defect on CT causing hypercoagulability, combined with tachycardia, tachypnea, pleuritic chest pain, and frequent air travel."
+          ],
+          [
+            "Nephrotic syndrome with thromboembolic complications",
+            "Urinalysis showing 4+ proteinuria, fatty casts, and glucose indicates nephrotic syndrome, which predisposes to venous thromboembolism including PE and renal vein thrombosis."
+          ],
+          [
+            "Renal cell carcinoma with tumor thrombus and paraneoplastic hypercoagulability",
+            "Large kidney with abundant collateral vessels and renal vein filling defect suggests malignancy with tumor extension causing thrombotic complications."
+          ],
+          [
+            "Hepatorenal syndrome with thrombotic complications",
+            "Cirrhosis from chronic hepatitis B (nodular liver, ascites) can cause renal dysfunction and increased thrombotic risk, though less typical for acute presentation."
+          ],
+          [
+            "Membranous nephropathy with thromboembolism",
+            "Most common cause of nephrotic syndrome in adults with high thrombotic risk, consistent with proteinuria, fatty casts, and both renal vein and pulmonary thrombosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple nephrolithiasis",
+            "CT findings show renal vein thrombosis and parenchymal kidney disease rather than stones, and does not explain pulmonary symptoms or nephrotic-range proteinuria."
+          ],
+          [
+            "Pyelonephritis",
+            "Lacks fever and infectious symptoms, and urinalysis/CT findings indicate thrombotic and glomerular pathology rather than infection."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Pulmonary embolism",
+            "Acute pleuritic chest pain, dyspnea, tachycardia, tachypnea, and cyanosis in a patient with hereditary antithrombin III deficiency and multiple thrombotic risk factors (frequent flying, renal vein thrombosis)."
+          ],
+          [
+            "Renal vein thrombosis",
+            "CT confirmed filling defect in right renal vein with nephrotic syndrome (4+ proteinuria, glucosuria, fatty casts) in setting of hereditary antithrombin III deficiency and underlying liver disease."
+          ],
+          [
+            "Nephrotic syndrome",
+            "Urinalysis shows classic features (4+ proteinuria, fatty casts, glucosuria) likely from membranous nephropathy associated with chronic hepatitis B and complicated by thrombophilia."
+          ],
+          [
+            "Hepatic cirrhosis with portal hypertension",
+            "Nodular liver with ascites on CT consistent with chronic hepatitis B progression, contributing to hypercoagulable state and collateral vessel formation."
+          ],
+          [
+            "Hereditary antithrombin III deficiency with multiple thromboses",
+            "Confirmed genetic mutation causing systemic hypercoagulability manifesting as both venous (renal vein) and likely pulmonary thromboembolic events."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple urolithiasis",
+            "CT shows renal vein thrombosis and nephrotic syndrome rather than stones, and hematuria better explained by venous thrombosis."
+          ],
+          [
+            "Primary pulmonary disease (pneumonia/COPD)",
+            "Lungs clear to auscultation and acute presentation with thrombotic risk factors points to PE rather than parenchymal lung disease."
+          ]
+        ]
+      },
+      "cf_id": "case_057_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports pleuritic chest pain and shortness of breath, which argues against antithrombin III deficiency, which typically presents with venous thromboembolism, not pulmonary embolism."
+    }
+  ]
+}

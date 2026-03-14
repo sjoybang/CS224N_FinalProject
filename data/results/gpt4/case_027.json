@@ -1,0 +1,252 @@
+{
+  "case_id": "case_027",
+  "model": "gpt4",
+  "ground_truth": "Cyclophosphamide-induced cystitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Bladder cancer",
+          "Hematuria and lower abdominal pain in an elderly male are classic symptoms of bladder cancer."
+        ],
+        [
+          "Urinary tract infection",
+          "Blood in urine and abdominal pain can be indicative of a urinary tract infection, especially in older adults."
+        ],
+        [
+          "Kidney stones",
+          "Hematuria and abdominal pain are common symptoms associated with kidney stones."
+        ],
+        [
+          "Benign prostatic hyperplasia",
+          "Lower abdominal pain and hematuria can occur due to bladder outlet obstruction from an enlarged prostate."
+        ],
+        [
+          "Prostatitis",
+          "Inflammation of the prostate can cause lower abdominal pain and hematuria."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Bladder cancer",
+          "Hematuria and suprapubic tenderness in an elderly male raise suspicion for bladder cancer."
+        ],
+        [
+          "Urinary tract infection",
+          "Hematuria and suprapubic pain are common symptoms of a urinary tract infection."
+        ],
+        [
+          "Benign prostatic hyperplasia",
+          "This condition can cause hematuria and lower abdominal pain due to bladder outlet obstruction."
+        ],
+        [
+          "Urolithiasis",
+          "The presence of blood in urine and abdominal pain could indicate kidney stones, although the lack of costovertebral angle tenderness makes it less likely."
+        ],
+        [
+          "Prostatitis",
+          "Prostatitis can present with suprapubic pain and hematuria, especially in older men."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "The absence of costovertebral angle tenderness makes this diagnosis unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Hemorrhagic cystitis",
+          "The presence of hematuria, bladder wall thickening, and recent chemotherapy suggest this condition."
+        ],
+        [
+          "Bladder cancer",
+          "Hematuria and bladder wall thickening are consistent with this diagnosis, especially in an older patient."
+        ],
+        [
+          "Chemotherapy-induced cystitis",
+          "Recent chemotherapy and bladder wall thickening align with this diagnosis."
+        ],
+        [
+          "Acute interstitial nephritis",
+          "Red blood cell casts and recent chemotherapy could indicate renal involvement."
+        ],
+        [
+          "Glomerulonephritis",
+          "The presence of red blood cell casts suggests a glomerular source of hematuria."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Nephrolithiasis",
+          "Absence of stones on CT scan and lack of costovertebral angle tenderness."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Hemorrhagic cystitis",
+          "The presence of bladder wall thickening, diffuse hemorrhagic changes on cystoscopy, and recent cyclophosphamide use strongly suggest this diagnosis."
+        ],
+        [
+          "Chemical cystitis",
+          "The urothelial inflammation and hemorrhage without malignancy, along with recent chemotherapy, could indicate chemical irritation of the bladder."
+        ],
+        [
+          "Radiation cystitis",
+          "Although not directly indicated, the history of cancer treatment raises the possibility of radiation-induced bladder changes."
+        ],
+        [
+          "Urothelial carcinoma",
+          "Despite the biopsy showing no malignancy, the age and hematuria warrant consideration of this diagnosis."
+        ],
+        [
+          "Bladder infection",
+          "While less likely due to the absence of infection signs, it remains a possibility pending urine culture results."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Nephrolithiasis",
+          "The absence of stones on CT and lack of costovertebral angle tenderness rule this out."
+        ],
+        [
+          "Pyelonephritis",
+          "The lack of costovertebral angle tenderness and normal CT findings make this unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Bladder cancer",
+            "Hematuria and lower abdominal pain in an elderly male are classic symptoms."
+          ],
+          [
+            "Urinary tract infection",
+            "Common cause of hematuria and abdominal pain, especially in older adults."
+          ],
+          [
+            "Kidney stones",
+            "Can cause hematuria and abdominal pain due to irritation and obstruction."
+          ],
+          [
+            "Benign prostatic hyperplasia",
+            "Can lead to hematuria and lower abdominal discomfort in older men."
+          ],
+          [
+            "Prostatitis",
+            "Inflammation of the prostate can cause urinary symptoms and abdominal pain."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Bladder cancer",
+            "Hematuria in an elderly male with stable vitals and unremarkable physical exam raises suspicion for bladder cancer."
+          ],
+          [
+            "Urinary tract infection",
+            "Hematuria and lower abdominal pain could indicate a UTI, even in the absence of fever or CVA tenderness."
+          ],
+          [
+            "Benign prostatic hyperplasia",
+            "Common in older men, it can cause hematuria and lower abdominal discomfort."
+          ],
+          [
+            "Urolithiasis",
+            "Kidney stones can cause hematuria and abdominal pain, though the absence of CVA tenderness makes it less likely."
+          ],
+          [
+            "Prostatitis",
+            "Can present with lower abdominal pain and hematuria, though typically with more systemic symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pyelonephritis",
+            "Ruled out due to the absence of fever and costovertebral angle tenderness."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Bladder cancer",
+            "The presence of hematuria, bladder wall thickening on CT, and the patient's age are suggestive of bladder cancer."
+          ],
+          [
+            "Hemorrhagic cystitis",
+            "The history of recent chemotherapy and bladder wall thickening could indicate chemotherapy-induced hemorrhagic cystitis."
+          ],
+          [
+            "Radiation cystitis",
+            "Although not explicitly stated, if the patient received pelvic radiation, this could cause bladder wall thickening and hematuria."
+          ],
+          [
+            "Glomerulonephritis",
+            "The presence of red blood cell casts in the urine suggests a glomerular source of bleeding."
+          ],
+          [
+            "Transitional cell carcinoma",
+            "This is a common type of bladder cancer that could explain the bladder wall thickening and hematuria."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary tract infection",
+            "The absence of costovertebral angle tenderness and pending urine culture make this less likely at this stage."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Hemorrhagic cystitis",
+            "The presence of bladder wall thickening, diffuse hemorrhagic changes on cystoscopy, and recent cyclophosphamide use strongly suggest this diagnosis."
+          ],
+          [
+            "Chemical cystitis",
+            "The urothelial inflammation and hemorrhage without malignancy, along with recent chemotherapy, could indicate chemical irritation of the bladder."
+          ],
+          [
+            "Radiation cystitis",
+            "Although not directly indicated, prior cancer treatment could include radiation, which can cause similar bladder changes."
+          ],
+          [
+            "Urothelial carcinoma",
+            "Despite the biopsy showing no malignancy, the age and hematuria warrant consideration of this diagnosis."
+          ],
+          [
+            "Infectious cystitis",
+            "Pending urine culture and hematuria could suggest an infection, although less likely given the biopsy findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Nephrolithiasis",
+            "Absence of stones on CT and lack of costovertebral angle tenderness make this unlikely."
+          ],
+          [
+            "Pyelonephritis",
+            "No costovertebral angle tenderness and normal CT findings rule this out."
+          ]
+        ]
+      },
+      "cf_id": "case_027_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of suprapubic tenderness makes cyclophosphamide-induced cystitis less likely, as it is typically associated with bladder irritation and inflammation."
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "case_id": "case_055",
+  "model": "gpt4",
+  "ground_truth": "Medication error due to miscommunication",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Epilepsy",
+          "Recurrent seizures in a child are commonly due to epilepsy, which is a chronic neurological disorder."
+        ],
+        [
+          "Febrile seizures",
+          "Although less common at age 9, febrile seizures can occur in children with fever and are a common cause of seizures in pediatric patients."
+        ],
+        [
+          "Brain tumor",
+          "A brain tumor can cause new-onset seizures in children due to increased intracranial pressure or direct irritation of brain tissue."
+        ],
+        [
+          "Meningitis",
+          "Infections such as meningitis can lead to seizures in children due to inflammation of the brain and surrounding tissues."
+        ],
+        [
+          "Metabolic disorder",
+          "Metabolic disorders, such as hypoglycemia or electrolyte imbalances, can precipitate seizures in children."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Epilepsy",
+          "Recurrent seizures in a child suggest a primary seizure disorder such as epilepsy."
+        ],
+        [
+          "Febrile Seizures",
+          "Common in children, especially if there is an underlying infection causing elevated vital signs."
+        ],
+        [
+          "Meningitis",
+          "Can cause seizures and instability, and should be considered given the age and acute presentation."
+        ],
+        [
+          "Encephalitis",
+          "Inflammation of the brain can lead to seizures and altered mental status."
+        ],
+        [
+          "Intracranial Hemorrhage",
+          "Although no trauma is noted, spontaneous hemorrhage could cause seizures and instability."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Trauma",
+          "No evidence of trauma on physical examination."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Phenytoin toxicity",
+          "Elevated phenytoin levels and medication error during administration suggest toxicity."
+        ],
+        [
+          "Seizure disorder",
+          "Recurrent seizures are a primary symptom, though exacerbated by phenytoin toxicity."
+        ],
+        [
+          "Status epilepticus",
+          "The need for resuscitation and recurrent seizures indicate prolonged seizure activity."
+        ],
+        [
+          "Hypertensive crisis",
+          "Elevated blood pressure could be a result of phenytoin toxicity or seizure activity."
+        ],
+        [
+          "Tachycardia secondary to seizures",
+          "Elevated heart rate may be due to the stress of recurrent seizures."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute trauma",
+          "Physical exam reveals no signs of trauma."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Phenytoin toxicity",
+          "The elevated phenytoin levels significantly above the therapeutic range indicate phenytoin toxicity, likely causing the seizures."
+        ],
+        [
+          "Seizure disorder",
+          "The recurrent seizures could be due to an underlying seizure disorder, exacerbated by phenytoin toxicity."
+        ],
+        [
+          "Medication error",
+          "The root cause analysis identified a medication error, which directly led to the phenytoin overdose."
+        ],
+        [
+          "Status epilepticus",
+          "The recurrent seizures and need for resuscitation suggest a prolonged seizure state, possibly status epilepticus."
+        ],
+        [
+          "Hypertensive crisis",
+          "The elevated blood pressure could be a response to the seizures or phenytoin toxicity, indicating a hypertensive crisis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute trauma",
+          "Physical exam revealed no acute trauma, ruling it out as a cause of the seizures."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Epilepsy",
+            "Recurrent seizures in a child are commonly due to epilepsy, a chronic neurological disorder."
+          ],
+          [
+            "Febrile seizures",
+            "Although less common at age 9, febrile seizures can occur in children with fever."
+          ],
+          [
+            "Brain tumor",
+            "A brain tumor can cause new-onset seizures in children due to increased intracranial pressure or direct cortical irritation."
+          ],
+          [
+            "Meningitis",
+            "Central nervous system infections like meningitis can present with seizures in children."
+          ],
+          [
+            "Metabolic disorder",
+            "Metabolic disturbances, such as hypoglycemia or electrolyte imbalances, can lead to seizures."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Traumatic Brain Injury",
+            "The presence of bruising and swelling on the forehead suggests possible head trauma, which could lead to seizures."
+          ],
+          [
+            "Non-Accidental Injury",
+            "The bruising on the arms and forehead raises suspicion for non-accidental trauma, which can be associated with seizures."
+          ],
+          [
+            "Intracranial Hemorrhage",
+            "Trauma and the need for resuscitation could indicate an intracranial bleed, which can cause seizures."
+          ],
+          [
+            "Epilepsy",
+            "Recurrent seizures in a child could be due to an underlying epileptic disorder, although trauma is a more immediate concern."
+          ],
+          [
+            "Hypertensive Encephalopathy",
+            "Elevated blood pressure could contribute to seizures, although it is less likely in a child without a known history of hypertension."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Febrile Seizures",
+            "The age and presentation are not typical for febrile seizures, which usually occur in younger children and are associated with fever."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Phenytoin toxicity",
+            "Elevated phenytoin levels above the therapeutic range suggest toxicity, which can cause seizures."
+          ],
+          [
+            "Traumatic brain injury",
+            "Bruising and swelling on the forehead and arms raise suspicion of trauma, which could lead to seizures."
+          ],
+          [
+            "Accidental overdose",
+            "The medication error during intravenous phenytoin administration indicates a possible overdose scenario."
+          ],
+          [
+            "Status epilepticus",
+            "Recurrent seizures requiring resuscitation suggest prolonged seizure activity."
+          ],
+          [
+            "Non-accidental injury",
+            "The pattern of bruising and swelling could be indicative of non-accidental trauma, which may result in seizures."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Febrile seizure",
+            "The patient's age and lack of fever make this unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Phenytoin toxicity",
+            "The elevated phenytoin levels above the therapeutic range directly indicate phenytoin toxicity."
+          ],
+          [
+            "Seizure disorder",
+            "The recurrent seizures suggest an underlying seizure disorder, which may have been exacerbated by phenytoin toxicity."
+          ],
+          [
+            "Traumatic brain injury",
+            "The bruising and swelling on the forehead and arms raise concern for trauma, which could contribute to seizures."
+          ],
+          [
+            "Medication error",
+            "The root cause analysis confirms a medication error, which is directly related to the elevated phenytoin levels."
+          ],
+          [
+            "Hypertensive crisis",
+            "The elevated blood pressure could be a result of phenytoin toxicity or stress from seizures."
+          ]
+        ],
+        "eliminated": []
+      },
+      "cf_id": "case_055_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals signs of trauma, including bruising and swelling, which argues against a medication error as the primary cause of seizures."
+    }
+  ]
+}

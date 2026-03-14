@@ -1,0 +1,126 @@
+{
+  "case_id": "case_029",
+  "model": "biogpt",
+  "ground_truth": "Neuroleptic malignant syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 19-year-old woman presents, accompanied by her parents, with a one-week history of abnormal behavior, delusions, and unusual aggression. She denies fever, seizures, or illicit drug use. Her family history is negative for psychiatric illnesses. She was recently started on risperidone. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 19-year-old woman presents, accompanied by her parents, with a one-week history of abnormal behavior, delusions, and unusual aggression. She denies fever, seizures, or illicit drug use. Her family history is negative for psychiatric illnesses. She was recently started on risperidone. [Stage 2] Three days after starting risperidone, the patient is brought to the emergency department with fever and confusion. She is not verbally responsive. Her temperature is 39.8 \u00b0 C (103.6 \u00b0 F), blood pressure is 100 / 60 mm Hg, pulse rate is 102 / min, and respiratory rate is 16 / min. She is extremely diaphoretic and appears stiff. She has spontaneous eye-opening but is not verbally responsive and does not follow commands. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 19-year-old woman presents, accompanied by her parents, with a one-week history of abnormal behavior, delusions, and unusual aggression. She denies fever, seizures, or illicit drug use. Her family history is negative for psychiatric illnesses. She was recently started on risperidone. [Stage 2] Three days after starting risperidone, the patient is brought to the emergency department with fever and confusion. She is not verbally responsive. Her temperature is 39.8 \u00b0 C (103.6 \u00b0 F), blood pressure is 100 / 60 mm Hg, pulse rate is 102 / min, and respiratory rate is 16 / min. She is extremely diaphoretic and appears stiff. She has spontaneous eye-opening but is not verbally responsive and does not follow commands. [Stage 3] Laboratory studies reveal the following: Sodium 142 mmol / L, Potassium 5.0 mmol / L, Creatinine 1.8 mg / dl, Calcium 10.4 mg / dl, Creatine kinase 9800 U / L, White blood cells 14,500 / mm3, Hemoglobin 12.9 g / dl, and Platelets 175,000 / mm3. Urinalysis shows protein 1 +, hemoglobin 3 + with occasional leukocytes and no red blood casts. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 19-year-old woman presents, accompanied by her parents, with a one-week history of abnormal behavior, delusions, and unusual aggression. She denies fever, seizures, or illicit drug use. Her family history is negative for psychiatric illnesses. She was recently started on risperidone. [Stage 2] Three days after starting risperidone, the patient is brought to the emergency department with fever and confusion. She is not verbally responsive. Her temperature is 39.8 \u00b0 C (103.6 \u00b0 F), blood pressure is 100 / 60 mm Hg, pulse rate is 102 / min, and respiratory rate is 16 / min. She is extremely diaphoretic and appears stiff. She has spontaneous eye-opening but is not verbally responsive and does not follow commands. [Stage 3] Laboratory studies reveal the following: Sodium 142 mmol / L, Potassium 5.0 mmol / L, Creatinine 1.8 mg / dl, Calcium 10.4 mg / dl, Creatine kinase 9800 U / L, White blood cells 14,500 / mm3, Hemoglobin 12.9 g / dl, and Platelets 175,000 / mm3. Urinalysis shows protein 1 +, hemoglobin 3 + with occasional leukocytes and no red blood casts. [Stage 4] Risperidone is discontinued. After discontinuation and supportive care including intravenous fluids and cooling, the patient's rigidity and fever gradually resolve over the next 72 hours. Creatine kinase levels also trend downward. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 19-year-old woman presents, accompanied by her parents, with a one-week history of abnormal behavior, delusions, and unusual aggression. She denies fever, seizures, or illicit drug use. Her family history is negative for psychiatric illnesses. She was recently started on risperidone. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 19-year-old woman presents, accompanied by her parents, with a one-week history of abnormal behavior, delusions, and unusual aggression. She denies fever, seizures, or illicit drug use. Her family history is negative for psychiatric illnesses. She was recently started on risperidone. [Stage 2] Three days after starting risperidone, the patient is brought to the emergency department with confusion. She is not verbally responsive. Her temperature is 37.0 \u00b0 C (98.6 \u00b0 F), blood pressure is 100 / 60 mm Hg, pulse rate is 102 / min, and respiratory rate is 16 / min. She is extremely diaphoretic and appears stiff. She has spontaneous eye-opening but is not verbally responsive and does not follow commands. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 19-year-old woman presents, accompanied by her parents, with a one-week history of abnormal behavior, delusions, and unusual aggression. She denies fever, seizures, or illicit drug use. Her family history is negative for psychiatric illnesses. She was recently started on risperidone. [Stage 2] Three days after starting risperidone, the patient is brought to the emergency department with confusion. She is not verbally responsive. Her temperature is 37.0 \u00b0 C (98.6 \u00b0 F), blood pressure is 100 / 60 mm Hg, pulse rate is 102 / min, and respiratory rate is 16 / min. She is extremely diaphoretic and appears stiff. She has spontaneous eye-opening but is not verbally responsive and does not follow commands. [Stage 3] Laboratory studies reveal the following: Sodium 142 mmol / L, Potassium 5.0 mmol / L, Creatinine 1.8 mg / dl, Calcium 10.4 mg / dl, Creatine kinase 9800 U / L, White blood cells 14,500 / mm3, Hemoglobin 12.9 g / dl, and Platelets 175,000 / mm3. Urinalysis shows protein 1 +, hemoglobin 3 + with occasional leukocytes and no red blood casts. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 19-year-old woman presents, accompanied by her parents, with a one-week history of abnormal behavior, delusions, and unusual aggression. She denies fever, seizures, or illicit drug use. Her family history is negative for psychiatric illnesses. She was recently started on risperidone. [Stage 2] Three days after starting risperidone, the patient is brought to the emergency department with confusion. She is not verbally responsive. Her temperature is 37.0 \u00b0 C (98.6 \u00b0 F), blood pressure is 100 / 60 mm Hg, pulse rate is 102 / min, and respiratory rate is 16 / min. She is extremely diaphoretic and appears stiff. She has spontaneous eye-opening but is not verbally responsive and does not follow commands. [Stage 3] Laboratory studies reveal the following: Sodium 142 mmol / L, Potassium 5.0 mmol / L, Creatinine 1.8 mg / dl, Calcium 10.4 mg / dl, Creatine kinase 9800 U / L, White blood cells 14,500 / mm3, Hemoglobin 12.9 g / dl, and Platelets 175,000 / mm3. Urinalysis shows protein 1 +, hemoglobin 3 + with occasional leukocytes and no red blood casts. [Stage 4] Risperidone is discontinued. After discontinuation and supportive care including intravenous fluids and cooling, the patient's rigidity and fever gradually resolve over the next 72 hours. Creatine kinase levels also trend downward. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_029_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's temperature is normal, which argues against neuroleptic malignant syndrome."
+    }
+  ]
+}

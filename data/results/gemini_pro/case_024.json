@@ -1,0 +1,273 @@
+{
+  "case_id": "case_024",
+  "model": "gemini_pro",
+  "ground_truth": "Posterior communicating artery aneurysm",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "This autoimmune disorder classically presents with painless, fluctuating, and progressively worsening muscle weakness, frequently affecting the extraocular muscles first."
+        ],
+        [
+          "Cranial Nerve Palsy",
+          "A deficit of the third, fourth, or sixth cranial nerve, potentially due to microvascular ischemia or compression from a tumor or aneurysm, is a common cause of binocular diplopia."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "This autoimmune condition causes inflammation and enlargement of the extraocular muscles, leading to restricted eye movements and gradual onset of diplopia."
+        ],
+        [
+          "Intracranial Mass Lesion",
+          "A slow-growing tumor in the brainstem, cavernous sinus, or orbit could compress cranial nerves or their pathways, causing a gradually progressive diplopia."
+        ],
+        [
+          "Giant Cell Arteritis",
+          "This systemic vasculitis can cause ischemic cranial neuropathies leading to diplopia and must be considered in any patient over 50 with new visual complaints."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Posterior Communicating Artery Aneurysm",
+          "The combination of a dilated, non-reactive pupil with other oculomotor nerve deficits is the classic presentation of a compressive lesion, with an aneurysm being the most urgent consideration."
+        ],
+        [
+          "Intracranial Neoplasm",
+          "A slowly growing tumor could compress the oculomotor nerve, explaining the gradual onset of symptoms over two months."
+        ],
+        [
+          "Microvascular (Ischemic) Cranial Neuropathy",
+          "This is a common cause of oculomotor palsy in this age group, although it typically spares the pupil, severe ischemia can cause pupillary involvement."
+        ],
+        [
+          "Giant Cell Arteritis",
+          "This systemic vasculitis can cause ischemic cranial neuropathies in patients over 50 and must be considered."
+        ],
+        [
+          "Cavernous Sinus Lesion",
+          "A mass or inflammatory process within the cavernous sinus could affect the oculomotor nerve, though other cranial nerve palsies would also be expected."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myasthenia Gravis",
+          "This condition is ruled out because it causes ptosis and diplopia but does not affect pupillary function."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Posterior communicating artery aneurysm",
+          "A compressive aneurysm is the classic and most urgent cause of a painful, pupil-involving oculomotor nerve palsy."
+        ],
+        [
+          "Intracranial neoplasm",
+          "A tumor, such as a meningioma or metastasis, could compress the third cranial nerve along its path, explaining the gradual onset over two months."
+        ],
+        [
+          "Tolosa-Hunt syndrome",
+          "This idiopathic granulomatous inflammation of the cavernous sinus can present with painful ophthalmoplegia isolated to the third nerve."
+        ],
+        [
+          "Cavernous sinus thrombosis",
+          "A thrombosis or other inflammatory process within the cavernous sinus could affect the third nerve, though this presentation is less typical than one involving multiple cranial nerves."
+        ],
+        [
+          "Giant cell arteritis",
+          "This systemic vasculitis is an important cause of ischemic cranial neuropathy in this age group, although pupillary involvement is less common."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Diabetic mononeuropathy",
+          "This is ruled out by the normal HbA1c and the presence of pupillary involvement, which is classically spared in diabetic third nerve palsy."
+        ],
+        [
+          "Myasthenia gravis",
+          "This is ruled out by the presence of a dilated, non-reactive pupil, as myasthenia gravis does not affect pupillary function."
+        ],
+        [
+          "Midbrain stroke",
+          "This is ruled out by the gradual onset and the absence of other neurological deficits, such as contralateral hemiparesis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Posterior Communicating Artery Aneurysm",
+          "The MRA confirmed a 7mm aneurysm compressing the oculomotor nerve, which perfectly explains the patient's pupil-involving third nerve palsy."
+        ],
+        [
+          "Ischemic Oculomotor Neuropathy",
+          "This is a common cause of CN III palsy in this age group, but it typically spares the pupil and is less likely given the normal HbA1c."
+        ],
+        [
+          "Cavernous Sinus Mass",
+          "A mass in the cavernous sinus could compress the oculomotor nerve, though this patient's palsy is isolated without other cranial nerve deficits."
+        ],
+        [
+          "Midbrain Infarct",
+          "A lesion in the midbrain could cause a third nerve palsy, but this would typically be associated with other neurological deficits not seen in this patient."
+        ],
+        [
+          "Basal Meningitis",
+          "Inflammation at the base of the brain can cause cranial neuropathies, but this patient lacks the typical systemic symptoms or meningeal signs."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myasthenia Gravis",
+          "This condition causes ptosis and diplopia but does not affect the pupil, and a structural cause was found."
+        ],
+        [
+          "Diabetic Mononeuropathy",
+          "The patient's normal HbA1c and the presence of pupillary involvement make this diagnosis highly unlikely."
+        ],
+        [
+          "Tolosa-Hunt Syndrome",
+          "This is a diagnosis of exclusion for painful ophthalmoplegia, which is ruled out by the identification of a specific structural cause."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "An autoimmune disorder of the neuromuscular junction that classically presents with fluctuating, painless weakness of the extraocular muscles, causing diplopia."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "An autoimmune condition causing inflammation and fibrosis of the extraocular muscles, leading to restricted eye movements and gradual-onset diplopia."
+          ],
+          [
+            "Microvascular Cranial Neuropathy",
+            "Ischemia affecting cranial nerves III, IV, or VI due to common vascular risk factors is a frequent cause of diplopia in this age group."
+          ],
+          [
+            "Intracranial Mass",
+            "A slow-growing tumor could compress cranial nerves or invade the brainstem, leading to a progressive and insidious onset of double vision."
+          ],
+          [
+            "Giant Cell Arteritis",
+            "A systemic vasculitis in older adults that can cause ischemic cranial nerve palsies, leading to diplopia and carrying a risk of permanent vision loss."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Multiple Sclerosis",
+            "The patient's age of 63 is well outside the typical age of onset for this demyelinating disease."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of ptosis and diplopia with implied fatigability (\"difficulty keeping her right eye open\") is a classic presentation for this neuromuscular junction disorder."
+          ],
+          [
+            "Oculomotor Nerve (CN III) Palsy",
+            "A pupil-sparing CN III palsy, often due to microvascular ischemia in this age group, would directly cause ptosis and diplopia."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "This condition commonly causes extraocular muscle restriction leading to diplopia in various gazes and can also be associated with ptosis."
+          ],
+          [
+            "Chronic Progressive External Ophthalmoplegia (CPEO)",
+            "This mitochondrial myopathy is characterized by the slow, progressive onset of ptosis and ophthalmoplegia, which fits the patient's gradual symptom worsening."
+          ],
+          [
+            "Midbrain Lesion",
+            "A focal structural lesion, such as a small tumor or demyelinating plaque, could affect the oculomotor nucleus or fascicle, causing isolated ptosis and diplopia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Compressive Oculomotor Nerve (CN III) Palsy",
+            "The normal, reactive pupils make a compressive lesion (e.g., aneurysm) unlikely as it typically affects pupillary fibers."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of ptosis and diplopia with pupil sparing and a subacute onset are classic features of this neuromuscular junction disorder."
+          ],
+          [
+            "Ischemic Cranial Nerve III Palsy",
+            "This is a common cause of pupil-sparing oculomotor nerve palsy in an older adult, often due to microvascular disease."
+          ],
+          [
+            "Posterior Communicating Artery Aneurysm",
+            "This is a life-threatening cause of CN III palsy that must be ruled out, even though pupil sparing makes it less probable."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "This condition can cause restrictive myopathy leading to diplopia and can also present with ptosis."
+          ],
+          [
+            "Chronic Progressive External Ophthalmoplegia (CPEO)",
+            "This mitochondrial myopathy is characterized by slowly progressive ptosis and ophthalmoplegia, which matches the patient's timeline."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diabetic Cranial Neuropathy",
+            "The patient's normal HbA1c makes a specifically diabetic etiology for a nerve palsy unlikely."
+          ],
+          [
+            "Wernicke's Encephalopathy",
+            "The absence of ataxia or confusion and the gradual two-month onset are inconsistent with this acute diagnosis."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Posterior Communicating Artery Aneurysm",
+            "The MRA confirmed an aneurysm at the PCOM/ICA junction directly compressing the oculomotor nerve, explaining the patient's symptoms."
+          ],
+          [
+            "Oculomotor Nerve Ischemia",
+            "This is the most common cause of a pupil-sparing third nerve palsy in this age group, typically due to microvascular disease."
+          ],
+          [
+            "Myasthenia Gravis",
+            "Ptosis and diplopia are classic presenting symptoms of ocular myasthenia gravis, which can mimic an isolated cranial nerve palsy."
+          ],
+          [
+            "Cavernous Sinus Mass",
+            "A lesion within the cavernous sinus can cause a compressive oculomotor neuropathy, though other cranial nerves are often affected."
+          ],
+          [
+            "Giant Cell Arteritis",
+            "This vasculitis is an important consideration for new-onset cranial neuropathy in a patient over age 50."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Brainstem Stroke",
+            "The MRI of the brain showed no acute abnormalities, ruling out an ischemic or hemorrhagic event in the midbrain."
+          ],
+          [
+            "Wernicke's Encephalopathy",
+            "The patient lacks the characteristic findings of encephalopathy and ataxia."
+          ]
+        ]
+      },
+      "cf_id": "case_024_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are equal and reactive to light, which argues against compression of the oculomotor nerve."
+    }
+  ]
+}

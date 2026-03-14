@@ -1,0 +1,126 @@
+{
+  "case_id": "case_006",
+  "model": "biogpt",
+  "ground_truth": "Atrial fibrillation",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 62-year-old woman with a history of myocardial infarction and chronic heart failure presents for a regular check-up, complaining of episodic lightheadedness and palpitations. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 62-year-old woman with a history of myocardial infarction and chronic heart failure presents for a regular check-up, complaining of episodic lightheadedness and palpitations. [Stage 2] The patient's blood pressure is 135 / 90 mm Hg, heart rate is 125 / min, respiratory rate is 14 / min, and temperature is 36.5 \u00b0 C (97.7 \u00b0 F). Cardiopulmonary examination reveals an irregular heart rhythm and decreased S1 intensity. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 62-year-old woman with a history of myocardial infarction and chronic heart failure presents for a regular check-up, complaining of episodic lightheadedness and palpitations. [Stage 2] The patient's blood pressure is 135 / 90 mm Hg, heart rate is 125 / min, respiratory rate is 14 / min, and temperature is 36.5 \u00b0 C (97.7 \u00b0 F). Cardiopulmonary examination reveals an irregular heart rhythm and decreased S1 intensity. [Stage 3] An ECG reveals an irregularly irregular rhythm with no discernible P waves. Echocardiography demonstrates a left ventricular ejection fraction of 39%. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 62-year-old woman with a history of myocardial infarction and chronic heart failure presents for a regular check-up, complaining of episodic lightheadedness and palpitations. [Stage 2] The patient's blood pressure is 135 / 90 mm Hg, heart rate is 125 / min, respiratory rate is 14 / min, and temperature is 36.5 \u00b0 C (97.7 \u00b0 F). Cardiopulmonary examination reveals an irregular heart rhythm and decreased S1 intensity. [Stage 3] An ECG reveals an irregularly irregular rhythm with no discernible P waves. Echocardiography demonstrates a left ventricular ejection fraction of 39%. [Stage 4] A 24-hour Holter monitor confirms the presence of atrial fibrillation with rapid ventricular response, with an average heart rate of 110 bpm and frequent episodes of heart rates exceeding 140 bpm. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 62-year-old woman with a history of myocardial infarction and chronic heart failure presents for a regular check-up, complaining of episodic lightheadedness and palpitations. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 62-year-old woman with a history of myocardial infarction and chronic heart failure presents for a regular check-up, complaining of episodic lightheadedness and palpitations. [Stage 2] The patient's blood pressure is 135 / 90 mm Hg, heart rate is 78 / min, respiratory rate is 14 / min, and temperature is 36.5 \u00b0 C (97.7 \u00b0 F). Cardiopulmonary examination reveals a regular heart rhythm and normal S1 intensity. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 62-year-old woman with a history of myocardial infarction and chronic heart failure presents for a regular check-up, complaining of episodic lightheadedness and palpitations. [Stage 2] The patient's blood pressure is 135 / 90 mm Hg, heart rate is 78 / min, respiratory rate is 14 / min, and temperature is 36.5 \u00b0 C (97.7 \u00b0 F). Cardiopulmonary examination reveals a regular heart rhythm and normal S1 intensity. [Stage 3] An ECG reveals an irregularly irregular rhythm with no discernible P waves. Echocardiography demonstrates a left ventricular ejection fraction of 39%. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 62-year-old woman with a history of myocardial infarction and chronic heart failure presents for a regular check-up, complaining of episodic lightheadedness and palpitations. [Stage 2] The patient's blood pressure is 135 / 90 mm Hg, heart rate is 78 / min, respiratory rate is 14 / min, and temperature is 36.5 \u00b0 C (97.7 \u00b0 F). Cardiopulmonary examination reveals a regular heart rhythm and normal S1 intensity. [Stage 3] An ECG reveals an irregularly irregular rhythm with no discernible P waves. Echocardiography demonstrates a left ventricular ejection fraction of 39%. [Stage 4] A 24-hour Holter monitor confirms the presence of atrial fibrillation with rapid ventricular response, with an average heart rate of 110 bpm and frequent episodes of heart rates exceeding 140 bpm. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_006_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's heart rate is regular at 78/min, which argues against atrial fibrillation."
+    }
+  ]
+}

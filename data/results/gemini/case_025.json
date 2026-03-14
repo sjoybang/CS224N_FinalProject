@@ -1,0 +1,265 @@
+{
+  "case_id": "case_025",
+  "model": "gemini",
+  "ground_truth": "Wernicke encephalopathy",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The persistent double vision in a relatively young adult raises suspicion for myasthenia gravis, which can present with fluctuating cranial nerve symptoms."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Double vision can be an early symptom of multiple sclerosis due to demyelination of the optic nerve or brainstem pathways."
+        ],
+        [
+          "Cranial Nerve Palsy (III, IV, or VI)",
+          "A palsy of one of the cranial nerves controlling eye movement could cause diplopia."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "Although less common in men, thyroid eye disease can cause extraocular muscle dysfunction and diplopia."
+        ],
+        [
+          "Brain Tumor",
+          "A brain tumor impinging on the cranial nerves or visual pathways could present with double vision."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Wernicke encephalopathy",
+          "The combination of confusion, ataxia, nystagmus, and a history of alcohol abuse strongly suggests thiamine deficiency and Wernicke encephalopathy."
+        ],
+        [
+          "Alcohol withdrawal",
+          "Recent worsening of alcohol abuse followed by neurological symptoms could indicate alcohol withdrawal syndrome."
+        ],
+        [
+          "Hepatic encephalopathy",
+          "Given the history of alcohol abuse, liver damage and subsequent hepatic encephalopathy could explain the confusion and neurological symptoms."
+        ],
+        [
+          "Cerebellar degeneration",
+          "Chronic alcohol abuse can lead to cerebellar degeneration, manifesting as ataxia and nystagmus."
+        ],
+        [
+          "Subdural hematoma",
+          "While less likely, the confusion, gait abnormalities, and history of potential falls related to alcohol abuse raise the possibility of a subdural hematoma."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Wernicke encephalopathy",
+          "The patient's history of alcohol abuse, confusion, ataxia, nystagmus, memory impairment, confabulation, decreased erythrocyte transketolase activity, and mammillary body atrophy strongly suggest Wernicke encephalopathy."
+        ],
+        [
+          "Korsakoff syndrome",
+          "The patient's chronic alcohol abuse, memory impairment, and confabulation are indicative of Korsakoff syndrome, which often follows Wernicke encephalopathy."
+        ],
+        [
+          "Alcohol withdrawal",
+          "Although less likely given the chronic symptoms and MRI findings, alcohol withdrawal could contribute to the patient's confusion, agitation, and neurological symptoms."
+        ],
+        [
+          "Hepatic encephalopathy",
+          "Given the history of alcohol abuse, liver damage and subsequent hepatic encephalopathy could contribute to the patient's altered mental status and neurological findings."
+        ],
+        [
+          "Cerebellar degeneration",
+          "Chronic alcohol abuse can lead to cerebellar degeneration, which could explain the ataxia and nystagmus."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Stroke",
+          "The gradual onset of symptoms and the MRI findings of atrophy make acute stroke less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Wernicke encephalopathy",
+          "The rapid improvement in ophthalmoplegia, ataxia, and confusion following thiamine administration, along with the history of alcohol abuse, decreased erythrocyte transketolase activity, and mammillary body atrophy, strongly suggests Wernicke encephalopathy."
+        ],
+        [
+          "Korsakoff syndrome",
+          "The patient's memory impairment, confabulation, and history of chronic alcohol abuse suggest the possibility of Korsakoff syndrome, which often follows Wernicke encephalopathy."
+        ],
+        [
+          "Alcohol withdrawal syndrome",
+          "While the patient's symptoms initially suggested alcohol withdrawal, the rapid improvement with thiamine makes this less likely as the primary diagnosis."
+        ],
+        [
+          "Cerebellar degeneration",
+          "Chronic alcohol abuse can lead to cerebellar degeneration, contributing to ataxia and gait abnormalities, although the rapid improvement with thiamine is less typical."
+        ],
+        [
+          "Hepatic encephalopathy",
+          "Given the history of alcohol abuse, liver dysfunction and subsequent hepatic encephalopathy could contribute to the patient's confusion, although other findings are more specific to thiamine deficiency."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Stroke",
+          "The rapid improvement with thiamine makes stroke unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The persistent double vision in a relatively young adult raises suspicion for myasthenia gravis, which can present with fluctuating cranial nerve symptoms."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Double vision can be an early symptom of multiple sclerosis due to demyelination of the optic nerve or brainstem pathways."
+          ],
+          [
+            "Cranial Nerve Palsy (III, IV, or VI)",
+            "A palsy of one of the cranial nerves controlling eye movement could cause diplopia."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "Although less common in men, thyroid eye disease can cause extraocular muscle dysfunction and diplopia."
+          ],
+          [
+            "Brain Tumor",
+            "A brain tumor impinging on the cranial nerves or visual pathways could present with double vision."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff Syndrome",
+            "The combination of alcohol abuse, confusion, gait disturbance, memory impairment, and confabulation strongly suggests this diagnosis."
+          ],
+          [
+            "Hepatic Encephalopathy",
+            "Given the history of alcohol abuse, liver dysfunction leading to encephalopathy is a plausible cause of altered mental status and neurological symptoms."
+          ],
+          [
+            "Alcohol Withdrawal Delirium",
+            "Although no tremor or autonomic hyperactivity is mentioned, delirium tremens can present with confusion, agitation, and gait abnormalities in the setting of alcohol withdrawal."
+          ],
+          [
+            "Subdural Hematoma",
+            "Chronic alcohol abuse increases the risk of falls and subsequent subdural hematoma, which can cause neurological deficits and cognitive impairment."
+          ],
+          [
+            "Central Nervous System Infection",
+            "Although less likely given the subacute presentation, an infection such as meningitis or encephalitis could explain the altered mental status and gait disturbance."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Nystagmus",
+            "Neurological exam revealed no nystagmus."
+          ],
+          [
+            "Ophthalmoplegia",
+            "Neurological exam revealed no ophthalmoplegia."
+          ],
+          [
+            "Ataxia",
+            "Neurological exam revealed no ataxia."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff Syndrome",
+            "The combination of chronic alcohol abuse, confusion, gait disturbance, memory impairment, confabulation, decreased erythrocyte transketolase activity, and mammillary body atrophy strongly suggests this diagnosis."
+          ],
+          [
+            "Hepatic Encephalopathy",
+            "Given the history of alcohol abuse, liver dysfunction leading to hepatic encephalopathy could explain the confusion and neurological symptoms."
+          ],
+          [
+            "Alcohol Withdrawal Delirium",
+            "Although no tremor or autonomic hyperactivity is mentioned, delirium tremens could still be considered given the alcohol abuse history and altered mental status."
+          ],
+          [
+            "Subdural Hematoma",
+            "Chronic alcohol abuse increases the risk of falls and subsequent subdural hematoma, which can present with neurological deficits and cognitive changes."
+          ],
+          [
+            "Neurodegenerative Disease",
+            "While less likely given the acute onset, a rapidly progressing neurodegenerative disease could present with gait disturbance, confusion, and memory impairment."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Nystagmus",
+            "Neurological exam revealed no nystagmus."
+          ],
+          [
+            "Ophthalmoplegia",
+            "Neurological exam revealed no ophthalmoplegia."
+          ],
+          [
+            "Ataxia",
+            "Neurological exam revealed no ataxia."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Wernicke encephalopathy",
+            "The patient's history of alcohol abuse, confusion, gait abnormalities, memory impairment, confabulation, mammillary body atrophy, decreased erythrocyte transketolase activity, and rapid improvement with thiamine are highly suggestive of Wernicke encephalopathy."
+          ],
+          [
+            "Korsakoff syndrome",
+            "The patient's memory impairment, confabulation, and history of alcohol abuse suggest Korsakoff syndrome, which often follows Wernicke encephalopathy."
+          ],
+          [
+            "Alcohol withdrawal",
+            "Although less likely given the chronic symptoms and MRI findings, alcohol withdrawal could contribute to the patient's confusion and agitation."
+          ],
+          [
+            "Hepatic encephalopathy",
+            "Given the history of alcohol abuse, liver dysfunction leading to hepatic encephalopathy could contribute to the patient's altered mental status."
+          ],
+          [
+            "Cerebellar degeneration",
+            "Chronic alcohol abuse can lead to cerebellar degeneration, which could explain the gait abnormalities, although the rapid improvement with thiamine makes this less likely as the primary diagnosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Multiple sclerosis",
+            "No evidence of demyelinating lesions on MRI or other typical MS symptoms."
+          ]
+        ]
+      },
+      "cf_id": "case_025_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's neurological exam reveals normal findings, which argues against Wernicke encephalopathy."
+    }
+  ]
+}

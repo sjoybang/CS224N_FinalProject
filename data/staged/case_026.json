@@ -1,0 +1,25 @@
+{
+  "case_id": "case_026",
+  "source": "MedQA-USMLE",
+  "original_question": "A 69-year-old man is brought by his son to the emergency department with weakness in his right arm and leg. The man insists that he is fine and blames his son for \"creating panic\". Four hours ago the patient was having tea with his wife when he suddenly dropped his teacup. He has had difficulty moving his right arm since then and cannot walk because his right leg feels stuck. He has a history of hypertension and dyslipidemia, for which he currently takes lisinopril and atorvastatin, respectively. He is allergic to aspirin and peanuts. A computerized tomography (CT) scan shows evidence of an ischemic stroke. Which medication would most likely prevent such attacks in this patient in the future?",
+  "ground_truth": "Ischemic stroke",
+  "base": {
+    "stage_1": "A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting.",
+    "stage_2": "On examination, the patient exhibits right-sided weakness in both his arm and leg. He has a history of hypertension and dyslipidemia, for which he takes lisinopril and atorvastatin. His vital signs are stable, and he is alert and oriented, though somewhat dismissive of his symptoms. He is allergic to aspirin and peanuts.",
+    "stage_3": "A non-contrast CT scan of the head reveals an area of hypodensity in the left middle cerebral artery territory, consistent with an acute ischemic event. Initial laboratory studies, including complete blood count, electrolytes, and coagulation profile, are within normal limits.",
+    "stage_4": "MRI of the brain confirms an acute infarct in the left MCA distribution. Carotid ultrasound shows moderate stenosis on the left side. Cardiology consultation recommends initiation of antiplatelet therapy and statin intensification."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is found to have full and equal strength in all extremities, arguing against a stroke.",
+      "rules_out": "Ischemic stroke",
+      "stage_1": "A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting.",
+      "stage_2": "On examination, the patient exhibits full and equal strength in all extremities. He has a history of hypertension and dyslipidemia, for which he takes lisinopril and atorvastatin. His vital signs are stable, and he is alert and oriented, though somewhat dismissive of his symptoms. He is allergic to aspirin and peanuts.",
+      "stage_3": "A non-contrast CT scan of the head reveals an area of hypodensity in the left middle cerebral artery territory, consistent with an acute ischemic event. Initial laboratory studies, including complete blood count, electrolytes, and coagulation profile, are within normal limits.",
+      "stage_4": "MRI of the brain confirms an acute infarct in the left MCA distribution. Carotid ultrasound shows moderate stenosis on the left side. Cardiology consultation recommends initiation of antiplatelet therapy and statin intensification.",
+      "cf_id": "case_026_cf_a"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "case_id": "case_044",
+  "model": "gpt4",
+  "ground_truth": "Lisinopril-induced acute kidney injury",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute Coronary Syndrome",
+          "The patient's chest pain radiating to the jaw and arm, along with a history of similar episodes during exertion, is highly suggestive of a cardiac origin."
+        ],
+        [
+          "Stable Angina",
+          "The recurrent nature of the chest pain during physical exertion aligns with stable angina, especially given his risk factors like diabetes and hypertension."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "His history of GERD could contribute to chest pain, although the radiation pattern is less typical."
+        ],
+        [
+          "Aortic Dissection",
+          "The sudden onset of chest pain radiating to the jaw and arm could indicate aortic dissection, although less common."
+        ],
+        [
+          "Musculoskeletal Pain",
+          "Although less likely, musculoskeletal pain could mimic cardiac pain, especially if related to physical activity."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute Coronary Syndrome",
+          "The chest pain radiating to the jaw and arm, along with a history of exertional episodes, strongly suggests a cardiac origin."
+        ],
+        [
+          "Stable Angina",
+          "The history of similar episodes during physical exertion is characteristic of stable angina."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "His history of GERD could contribute to chest pain, although the radiation pattern is atypical."
+        ],
+        [
+          "Hypertensive Heart Disease",
+          "Elevated blood pressure and history of hypertension could lead to cardiac symptoms."
+        ],
+        [
+          "Aortic Dissection",
+          "Although less likely, the chest pain radiating to the jaw and arm warrants consideration of this serious condition."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pulmonary Embolism",
+          "The absence of respiratory distress or hypoxia makes this less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Cardiogenic shock",
+          "The patient's hypotension, bradycardia, and acute kidney injury following an acute MI suggest decreased cardiac output."
+        ],
+        [
+          "Acute kidney injury (AKI) secondary to contrast nephropathy",
+          "The rise in serum creatinine after hospitalization and potential exposure to contrast agents during cardiac evaluation indicate AKI."
+        ],
+        [
+          "Medication-induced hypotension",
+          "The drop in blood pressure and heart rate may be due to medications such as beta-blockers or ACE inhibitors started for MI management."
+        ],
+        [
+          "Hypovolemia",
+          "The hypotension and elevated BUN-to-creatinine ratio could suggest volume depletion, possibly from diuretics or reduced oral intake."
+        ],
+        [
+          "Vasovagal syncope",
+          "The dizziness and hypotension could be due to a vasovagal response, especially in the context of stress or pain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hyperkalemia",
+          "Normal potassium levels rule out hyperkalemia as a cause of the patient's symptoms."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Acute Kidney Injury (AKI)",
+          "The rapid rise in creatinine following the initiation of lisinopril suggests an acute kidney injury, likely due to decreased renal perfusion exacerbated by the ACE inhibitor."
+        ],
+        [
+          "Hypotension",
+          "The drop in blood pressure to 90/60 mm Hg, along with dizziness and blurred vision, indicates hypotension, possibly due to the combination of medications affecting blood pressure."
+        ],
+        [
+          "Acute Myocardial Infarction (MI)",
+          "The initial presentation with chest pain and ST elevation on ECG is consistent with an acute myocardial infarction."
+        ],
+        [
+          "Medication Side Effect",
+          "The dizziness and blurred vision could be side effects of the medications, particularly the beta-blocker or lisinopril."
+        ],
+        [
+          "Dehydration",
+          "The elevated blood urea nitrogen and creatinine, along with hypotension, could suggest dehydration, especially if fluid intake was inadequate."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Chronic Kidney Disease",
+          "The rapid return of creatinine to baseline after discontinuing lisinopril and providing IV fluids suggests an acute process rather than chronic kidney disease."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute Coronary Syndrome",
+            "The patient's chest pain radiating to the jaw and arm, along with a history of similar episodes during exertion, is highly suggestive of cardiac ischemia."
+          ],
+          [
+            "Stable Angina",
+            "The recurrent nature of the chest pain during physical exertion aligns with stable angina, especially given his risk factors like diabetes and hypertension."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "His history of GERD could contribute to chest pain, although the radiation pattern is less typical."
+          ],
+          [
+            "Aortic Dissection",
+            "The sudden onset of chest pain radiating to the jaw and arm could indicate aortic dissection, though less common."
+          ],
+          [
+            "Musculoskeletal Pain",
+            "Although less likely, musculoskeletal pain could mimic cardiac pain, especially if related to physical activity."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute Coronary Syndrome",
+            "The chest pain radiating to the jaw and arm, along with a history of exertional episodes, suggests myocardial ischemia."
+          ],
+          [
+            "Congestive Heart Failure",
+            "The presence of bilateral lower extremity edema and hypertension could indicate fluid overload and heart failure."
+          ],
+          [
+            "Stable Angina",
+            "The history of chest pain during exertion is consistent with stable angina due to coronary artery disease."
+          ],
+          [
+            "Hypertensive Heart Disease",
+            "The elevated blood pressure and history of hypertension could lead to cardiac complications, including chest pain."
+          ],
+          [
+            "Aortic Dissection",
+            "Although less likely, the chest pain radiating to the jaw and arm could be due to an aortic dissection, especially with hypertension."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gastroesophageal Reflux Disease",
+            "The nature of the chest pain and its radiation pattern is more suggestive of cardiac origin than GERD."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Cardiogenic shock",
+            "The patient's hypotension, bradycardia, and elevated creatinine following an acute MI suggest decreased cardiac output leading to end-organ hypoperfusion."
+          ],
+          [
+            "Acute kidney injury",
+            "The significant rise in serum creatinine from baseline indicates renal impairment, likely due to decreased perfusion from hypotension."
+          ],
+          [
+            "Medication side effect",
+            "The dizziness, blurred vision, and hypotension could be adverse effects of medications commonly used post-MI, such as beta-blockers or ACE inhibitors."
+          ],
+          [
+            "Hypovolemia",
+            "The hypotension and elevated BUN-to-creatinine ratio may indicate volume depletion, possibly from diuretics or reduced oral intake."
+          ],
+          [
+            "Electrolyte imbalance",
+            "Although current electrolytes are normal, the symptoms and acute changes could be related to transient imbalances during treatment."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hyperkalemia",
+            "Potassium levels are within normal range, making this unlikely."
+          ],
+          [
+            "Pulmonary embolism",
+            "The clinical presentation and ECG findings are more consistent with an acute MI and its complications."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Acute Kidney Injury (AKI)",
+            "The rapid rise in creatinine following the initiation of lisinopril suggests an acute kidney injury, likely due to decreased renal perfusion exacerbated by the ACE inhibitor."
+          ],
+          [
+            "Acute Myocardial Infarction (MI)",
+            "The initial presentation of chest pain radiating to the jaw and arm, along with ST elevation on ECG, is consistent with an acute MI."
+          ],
+          [
+            "Hypotension",
+            "The drop in blood pressure after hospitalization and initiation of treatment, particularly with the use of a beta-blocker and lisinopril, suggests hypotension as a contributing factor to his symptoms."
+          ],
+          [
+            "Heart Failure",
+            "The presence of bilateral lower extremity edema and history of hypertension could indicate underlying heart failure, which may have been exacerbated by the acute MI."
+          ],
+          [
+            "Medication Side Effect",
+            "The dizziness and blurred vision could be side effects of the medications, particularly the beta-blocker or lisinopril, contributing to hypotension and renal impairment."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hyperkalemia",
+            "Normal potassium levels rule out hyperkalemia as a cause of the patient's symptoms."
+          ]
+        ]
+      },
+      "cf_id": "case_044_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of bilateral lower extremity edema makes lisinopril-induced AKI less likely, as it suggests a volume overload state that is not typically associated with ACE inhibitor-induced kidney injury."
+    }
+  ]
+}

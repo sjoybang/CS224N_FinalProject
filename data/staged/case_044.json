@@ -1,0 +1,25 @@
+{
+  "case_id": "case_044",
+  "source": "MedQA-USMLE",
+  "original_question": "A 52-year-old man presents to the emergency department with chest pain radiating to his left jaw and arm. He states that he had experienced similar symptoms when playing basketball. The medical history is significant for diabetes mellitus, hypertension, and GERD, for which he takes metformin, hydrochlorothiazide, and pantoprazole, respectively. The blood pressure is 150/90 mm Hg, the pulse is 100/min, and the respirations are 15/min. The ECG reveals ST elevation in leads V3-V6. He is hospitalized for an acute MI and started on treatment. The next day he complains of dizziness and blurred vision. Repeat vital signs were as follows: blood pressure 90/60 mm Hg, pulse 72/min, and respirations 12/min. The laboratory results were as follows:\nSerum chemistry\nSodium 143 mEq/L\nPotassium 4.1 mEq/L\nChloride 98 mEq/L\nBicarbonate 22 mEq/L\nBlood urea nitrogen  26 mg/dL\nCreatinine 2.3 mg/dL\nGlucose 120 mg/dL\nWhich of the following drugs is responsible for this patient\u2019s lab abnormalities?",
+  "ground_truth": "Lisinopril-induced acute kidney injury",
+  "base": {
+    "stage_1": "A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion.",
+    "stage_2": "The patient's blood pressure is 150/90 mm Hg, pulse is 100/min, and respirations are 15/min. Physical exam is otherwise unremarkable.",
+    "stage_3": "An ECG reveals ST elevation in leads V3-V6. The patient is hospitalized for a suspected acute MI and started on treatment. The next day, he reports dizziness and blurred vision. His blood pressure is now 90/60 mm Hg, pulse is 72/min, and respirations are 12/min. Serum creatinine is 2.3 mg/dL (baseline creatinine was 1.0 mg/dL prior to admission). Other labs: Sodium 143 mEq/L, Potassium 4.1 mEq/L, Chloride 98 mEq/L, Bicarbonate 22 mEq/L, Blood urea nitrogen 26 mg/dL, Glucose 120 mg/dL.",
+    "stage_4": "The patient's medications are reviewed. He is taking metformin, hydrochlorothiazide, pantoprazole, aspirin, a beta-blocker, a statin, and lisinopril. Lisinopril is discontinued, and the patient's creatinine returns to baseline within 48 hours with supportive care and IV fluids."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of bilateral lower extremity edema makes lisinopril-induced AKI less likely, as it suggests a volume overload state that is not typically associated with ACE inhibitor-induced kidney injury.",
+      "rules_out": "Lisinopril-induced acute kidney injury",
+      "stage_1": "A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion.",
+      "stage_2": "The patient's blood pressure is 150/90 mm Hg, pulse is 100/min, and respirations are 15/min. Physical exam reveals 2+ bilateral lower extremity edema.",
+      "stage_3": "An ECG reveals ST elevation in leads V3-V6. The patient is hospitalized for a suspected acute MI and started on treatment. The next day, he reports dizziness and blurred vision. His blood pressure is now 90/60 mm Hg, pulse is 72/min, and respirations are 12/min. Serum creatinine is 2.3 mg/dL (baseline creatinine was 1.0 mg/dL prior to admission). Other labs: Sodium 143 mEq/L, Potassium 4.1 mEq/L, Chloride 98 mEq/L, Bicarbonate 22 mEq/L, Blood urea nitrogen 26 mg/dL, Glucose 120 mg/dL.",
+      "stage_4": "The patient's medications are reviewed. He is taking metformin, hydrochlorothiazide, pantoprazole, aspirin, a beta-blocker, a statin, and lisinopril. Lisinopril is discontinued, and the patient's creatinine returns to baseline within 48 hours with supportive care and IV fluids.",
+      "cf_id": "case_044_cf_a"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "case_033",
+  "source": "MedQA-USMLE",
+  "original_question": "A 31-year-old G2P2 female at 40 weeks gestation presents to the hospital following a rush of water that came from her vagina. She is 4 cm dilated and 80% effaced. Fetal heart tracing shows a pulse of 155/min with variable decelerations. About 12 hours after presentation, she gives birth to a 6 lb 15 oz baby boy with APGAR scores of 8 and 9 at 1 and 5 minutes, respectively. Which of the following structures is responsible for inhibition of female internal genitalia?",
+  "ground_truth": "Sertoli cells",
+  "base": {
+    "stage_1": "A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina.",
+    "stage_2": "On examination, the patient is found to be 4 cm dilated and 80% effaced. Fetal heart tracing reveals a heart rate of 155 bpm with variable decelerations.",
+    "stage_3": "After approximately 12 hours of labor, the patient delivers a baby boy weighing 6 lb 15 oz. The infant's APGAR scores are 8 and 9 at 1 and 5 minutes, respectively.",
+    "stage_4": "Further review of the patient's prenatal history reveals no known risk factors for congenital anomalies. Postpartum examination of the placenta and umbilical cord is unremarkable."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The fetal heart tracing shows a heart rate of 130 bpm with good variability and no decelerations, which argues against fetal distress often associated with Sertoli cell tumors.",
+      "rules_out": "Sertoli cells",
+      "stage_1": "A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina.",
+      "stage_2": "On examination, the patient is found to be 4 cm dilated and 80% effaced. Fetal heart tracing reveals a heart rate of 130 bpm with good variability and no decelerations.",
+      "stage_3": "After approximately 12 hours of labor, the patient delivers a baby boy weighing 6 lb 15 oz. The infant's APGAR scores are 8 and 9 at 1 and 5 minutes, respectively.",
+      "stage_4": "Further review of the patient's prenatal history reveals no known risk factors for congenital anomalies. Postpartum examination of the placenta and umbilical cord is unremarkable.",
+      "cf_id": "case_033_cf_a"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "case_id": "case_021",
+  "model": "gpt4",
+  "ground_truth": "Ureteral stone",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Nephrolithiasis",
+          "The sudden onset of severe right-sided flank pain is characteristic of kidney stones."
+        ],
+        [
+          "Pyelonephritis",
+          "Flank pain could indicate a kidney infection, especially if accompanied by other symptoms like fever or urinary issues."
+        ],
+        [
+          "Appendicitis",
+          "Although less common, right-sided flank pain can occur if the appendix is retrocecal."
+        ],
+        [
+          "Musculoskeletal pain",
+          "Strain or injury to the muscles in the flank area can cause severe pain."
+        ],
+        [
+          "Herpes zoster",
+          "Early shingles can present with flank pain before the rash appears."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Nephrolithiasis",
+          "The severe right-sided flank pain and right costovertebral angle tenderness are classic signs of a kidney stone."
+        ],
+        [
+          "Pyelonephritis",
+          "The right costoverteral angle tenderness and elevated pulse could indicate an infection of the kidney, although the absence of fever makes this less likely."
+        ],
+        [
+          "Ureteral obstruction",
+          "The acute onset of flank pain and costovertebral angle tenderness could be due to an obstruction in the ureter."
+        ],
+        [
+          "Renal infarction",
+          "The sudden onset of flank pain and elevated pulse could suggest a vascular event affecting the kidney."
+        ],
+        [
+          "Musculoskeletal pain",
+          "Although less likely, flank pain could be due to a musculoskeletal cause, especially if there is a history of trauma or strain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Appendicitis",
+          "The absence of abdominal tenderness and the location of the pain make appendicitis unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Ureterolithiasis",
+          "The presence of a 7-mm stone in the proximal ureter on CT scan is consistent with the patient's severe right-sided flank pain and right costovertebral angle tenderness."
+        ],
+        [
+          "Hydronephrosis",
+          "The CT scan shows grade I hydronephrosis on the right, likely secondary to the obstructing ureteral stone."
+        ],
+        [
+          "Renal colic",
+          "The acute onset of severe flank pain and the finding of a ureteral stone are characteristic of renal colic."
+        ],
+        [
+          "Nephrolithiasis",
+          "The CT findings of a stone in the ureter suggest nephrolithiasis as the underlying condition."
+        ],
+        [
+          "Acute pyelonephritis",
+          "Although less likely due to the absence of fever and normal white blood cell count, the right-sided flank pain and hydronephrosis could suggest early or atypical presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Appendicitis",
+          "The absence of abdominal tenderness and the presence of a ureteral stone make appendicitis unlikely."
+        ],
+        [
+          "Cholecystitis",
+          "The lack of right upper quadrant pain and normal abdominal x-ray findings rule out cholecystitis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Ureterolithiasis",
+          "The presence of a 7-mm stone in the proximal ureter and microscopic hematuria strongly suggest ureterolithiasis."
+        ],
+        [
+          "Nephrolithiasis",
+          "The uric acid crystals in the urine indicate the possibility of a uric acid stone originating from the kidney."
+        ],
+        [
+          "Ureteral obstruction",
+          "The stone in the proximal ureter and grade I hydronephrosis suggest partial obstruction of the ureter."
+        ],
+        [
+          "Renal colic",
+          "The severe right-sided flank pain and costovertebral angle tenderness are classic symptoms of renal colic due to a ureteral stone."
+        ],
+        [
+          "Hyperuricosuria",
+          "The presence of several uric acid crystals in the urine suggests an underlying metabolic condition like hyperuricosuria."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "The absence of fever and normal white blood cell count in urinalysis make pyelonephritis unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Nephrolithiasis",
+            "The sudden onset of severe right-sided flank pain is characteristic of kidney stones."
+          ],
+          [
+            "Pyelonephritis",
+            "Flank pain could indicate a kidney infection, especially if accompanied by other symptoms like fever or urinary issues."
+          ],
+          [
+            "Appendicitis",
+            "Although less common, right-sided flank pain can occur if the appendix is retrocecal."
+          ],
+          [
+            "Musculoskeletal pain",
+            "Acute flank pain could be due to a muscle strain or injury, especially if there is a history of recent physical activity."
+          ],
+          [
+            "Herpes Zoster",
+            "Early stages of shingles can present with severe pain before the rash appears, potentially affecting the flank area."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pyelonephritis",
+            "The patient has fever, flank pain, and costovertebral angle tenderness, which are classic signs of a kidney infection."
+          ],
+          [
+            "Urolithiasis",
+            "Severe flank pain and tenderness could indicate a kidney stone, although fever is less common."
+          ],
+          [
+            "Renal abscess",
+            "The combination of fever, flank pain, and tenderness could suggest an abscess in the kidney."
+          ],
+          [
+            "Acute appendicitis",
+            "Right-sided abdominal pain and fever could be indicative, though the location is less typical."
+          ],
+          [
+            "Cholecystitis",
+            "Fever and abdominal tenderness could suggest gallbladder inflammation, though flank pain is atypical."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Ureterolithiasis",
+            "The presence of a 7-mm stone in the proximal ureter with associated hydronephrosis explains the severe flank pain and imaging findings."
+          ],
+          [
+            "Pyelonephritis",
+            "The fever and costovertebral angle tenderness suggest an infection, which could coexist with the ureteral stone."
+          ],
+          [
+            "Renal colic",
+            "The acute onset of severe flank pain is characteristic of renal colic, often caused by ureteral stones."
+          ],
+          [
+            "Urinary tract infection",
+            "The fever and tenderness could indicate a UTI, potentially secondary to obstruction by the stone."
+          ],
+          [
+            "Acute abdomen",
+            "Although less likely due to the specific findings, the severe pain and tenderness warrant consideration of other acute abdominal conditions."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bowel obstruction",
+            "The normal upright x-ray of the abdomen rules out bowel obstruction."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Ureterolithiasis",
+            "The presence of a 7-mm stone in the proximal ureter and microscopic hematuria strongly suggest ureterolithiasis."
+          ],
+          [
+            "Acute pyelonephritis",
+            "The fever, flank pain, and costovertebral angle tenderness are consistent with acute pyelonephritis, although the primary finding is the ureteral stone."
+          ],
+          [
+            "Uric acid nephrolithiasis",
+            "The uric acid crystals in the urine suggest that the stone may be composed of uric acid."
+          ],
+          [
+            "Renal colic",
+            "The severe flank pain and imaging findings are characteristic of renal colic due to a ureteral stone."
+          ],
+          [
+            "Hydronephrosis",
+            "The CT scan shows grade I hydronephrosis, which is likely secondary to the obstructing ureteral stone."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bowel obstruction",
+            "The upright x-ray of the abdomen shows no abnormalities, ruling out bowel obstruction."
+          ]
+        ]
+      },
+      "cf_id": "case_021_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a fever of 38.9\u00b0C (102\u00b0F) and significant abdominal tenderness, suggesting pyelonephritis rather than an uncomplicated ureteral stone."
+    }
+  ]
+}

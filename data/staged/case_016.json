@@ -1,0 +1,25 @@
+{
+  "case_id": "case_016",
+  "source": "MedQA-USMLE",
+  "original_question": "A previously healthy 36-year-old man comes to the physician for a yellow discoloration of his skin and dark-colored urine for 2 weeks. He does not drink any alcohol. Physical examination shows jaundice. Abdominal and neurologic examinations show no abnormalities. Serum studies show increased levels of alanine aminotransferase (ALT) and aspartate aminotransferase (AST). A liver biopsy is performed and a photomicrograph after periodic acid-Schiff-staining is shown. Which of the following is the most likely additional finding in this patient?",
+  "ground_truth": "Alpha-1-antitrypsin deficiency",
+  "base": {
+    "stage_1": "A 36-year-old man presents to the clinic complaining of yellow discoloration of his skin and dark urine for the past two weeks.",
+    "stage_2": "The patient's physical exam reveals jaundice. Abdominal and neurological exams are unremarkable. Vital signs are within normal limits.",
+    "stage_3": "Laboratory studies reveal elevated alanine aminotransferase (ALT) and aspartate aminotransferase (AST) levels. A liver biopsy was performed showing PAS-positive globules.",
+    "stage_4": "A chest CT reveals bullous changes at the lung bases."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals jaundice and mild splenomegaly, which argues against alpha-1-antitrypsin deficiency as it is not typically associated with splenomegaly.",
+      "rules_out": "Alpha-1-antitrypsin deficiency",
+      "stage_1": "A 36-year-old man presents to the clinic complaining of yellow discoloration of his skin and dark urine for the past two weeks.",
+      "stage_2": "The patient's physical exam reveals jaundice. Palpation of the abdomen reveals mild splenomegaly. Neurological exam is unremarkable. Vital signs are within normal limits.",
+      "stage_3": "Laboratory studies reveal elevated alanine aminotransferase (ALT) and aspartate aminotransferase (AST) levels. A liver biopsy was performed showing PAS-positive globules.",
+      "stage_4": "A chest CT reveals bullous changes at the lung bases.",
+      "cf_id": "case_016_cf_a"
+    }
+  ]
+}

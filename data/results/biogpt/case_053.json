@@ -1,0 +1,126 @@
+{
+  "case_id": "case_053",
+  "model": "biogpt",
+  "ground_truth": "Nephrotic syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 4-year-old boy is brought to the physician with a chief complaint of swelling around his eyes for the past 4 days. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 4-year-old boy is brought to the physician with a chief complaint of swelling around his eyes for the past 4 days. [Stage 2] The patient's temperature is 37 \u00b0 C (98.6 \u00b0 F), pulse is 103 / min, and blood pressure is 88 / 52 mm Hg. Physical examination reveals 3 + pitting edema of the lower extremities and periorbital edema. The remainder of the examination is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 4-year-old boy is brought to the physician with a chief complaint of swelling around his eyes for the past 4 days. [Stage 2] The patient's temperature is 37 \u00b0 C (98.6 \u00b0 F), pulse is 103 / min, and blood pressure is 88 / 52 mm Hg. Physical examination reveals 3 + pitting edema of the lower extremities and periorbital edema. The remainder of the examination is unremarkable. [Stage 3] Laboratory studies reveal a hemoglobin of 15.3 g / dL, leukocyte count of 10,500 / mm3, and platelet count of 480,000 / mm3. Serum urea nitrogen is 36 mg / dL, glucose is 67 mg / dL, creatinine is 0.8 mg / dL, and albumin is 2.6 mg / dL. Urinalysis shows 4 + protein, no blood or glucose, 0-1 WBC / hpf, and numerous fatty casts. The protein / creatinine ratio is 6.8. Serum complement concentrations are within normal limits. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 4-year-old boy is brought to the physician with a chief complaint of swelling around his eyes for the past 4 days. [Stage 2] The patient's temperature is 37 \u00b0 C (98.6 \u00b0 F), pulse is 103 / min, and blood pressure is 88 / 52 mm Hg. Physical examination reveals 3 + pitting edema of the lower extremities and periorbital edema. The remainder of the examination is unremarkable. [Stage 3] Laboratory studies reveal a hemoglobin of 15.3 g / dL, leukocyte count of 10,500 / mm3, and platelet count of 480,000 / mm3. Serum urea nitrogen is 36 mg / dL, glucose is 67 mg / dL, creatinine is 0.8 mg / dL, and albumin is 2.6 mg / dL. Urinalysis shows 4 + protein, no blood or glucose, 0-1 WBC / hpf, and numerous fatty casts. The protein / creatinine ratio is 6.8. Serum complement concentrations are within normal limits. [Stage 4] A renal biopsy is performed and demonstrates diffuse effacement of podocyte foot processes on electron microscopy, consistent with minimal change disease. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 4-year-old boy is brought to the physician with a chief complaint of swelling around his eyes for the past 4 days. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 4-year-old boy is brought to the physician with a chief complaint of swelling around his eyes for the past 4 days. [Stage 2] The patient's temperature is 37 \u00b0 C (98.6 \u00b0 F), pulse is 103 / min, and blood pressure is 88 / 52 mm Hg. Physical examination reveals 3 + pitting edema of the lower extremities and periorbital edema, along with a diffuse maculopapular rash on the trunk. The remainder of the examination is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 4-year-old boy is brought to the physician with a chief complaint of swelling around his eyes for the past 4 days. [Stage 2] The patient's temperature is 37 \u00b0 C (98.6 \u00b0 F), pulse is 103 / min, and blood pressure is 88 / 52 mm Hg. Physical examination reveals 3 + pitting edema of the lower extremities and periorbital edema, along with a diffuse maculopapular rash on the trunk. The remainder of the examination is unremarkable. [Stage 3] Laboratory studies reveal a hemoglobin of 15.3 g / dL, leukocyte count of 10,500 / mm3, and platelet count of 480,000 / mm3. Serum urea nitrogen is 36 mg / dL, glucose is 67 mg / dL, creatinine is 0.8 mg / dL, and albumin is 2.6 mg / dL. Urinalysis shows 4 + protein, no blood or glucose, 0-1 WBC / hpf, and numerous fatty casts. The protein / creatinine ratio is 6.8. Serum complement concentrations are within normal limits. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 4-year-old boy is brought to the physician with a chief complaint of swelling around his eyes for the past 4 days. [Stage 2] The patient's temperature is 37 \u00b0 C (98.6 \u00b0 F), pulse is 103 / min, and blood pressure is 88 / 52 mm Hg. Physical examination reveals 3 + pitting edema of the lower extremities and periorbital edema, along with a diffuse maculopapular rash on the trunk. The remainder of the examination is unremarkable. [Stage 3] Laboratory studies reveal a hemoglobin of 15.3 g / dL, leukocyte count of 10,500 / mm3, and platelet count of 480,000 / mm3. Serum urea nitrogen is 36 mg / dL, glucose is 67 mg / dL, creatinine is 0.8 mg / dL, and albumin is 2.6 mg / dL. Urinalysis shows 4 + protein, no blood or glucose, 0-1 WBC / hpf, and numerous fatty casts. The protein / creatinine ratio is 6.8. Serum complement concentrations are within normal limits. [Stage 4] A renal biopsy is performed and demonstrates diffuse effacement of podocyte foot processes on electron microscopy, consistent with minimal change disease. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_053_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of a rash argues against nephrotic syndrome, which typically does not present with dermatological findings."
+    }
+  ]
+}

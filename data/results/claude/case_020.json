@@ -1,0 +1,294 @@
+{
+  "case_id": "case_020",
+  "model": "claude",
+  "ground_truth": "Porphyria cutanea tarda",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Bullous pemphigoid",
+          "Autoimmune blistering disease commonly affecting middle-aged to elderly patients with tense bullae on extremities and face."
+        ],
+        [
+          "Pemphigus vulgaris",
+          "Autoimmune mucocutaneous blistering disorder that can present with flaccid bullae on face and extremities in middle-aged adults."
+        ],
+        [
+          "Phototoxic drug reaction",
+          "Blistering eruption in sun-exposed areas (hands, forearms, face) potentially triggered by photosensitizing medications."
+        ],
+        [
+          "Allergic contact dermatitis with bullous features",
+          "Severe allergic reaction causing vesiculobullous eruption on exposed skin areas from external allergen exposure."
+        ],
+        [
+          "Porphyria cutanea tarda",
+          "Photosensitivity disorder causing blistering and fragility on sun-exposed areas, particularly hands and face, in adults."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Porphyria cutanea tarda",
+          "Photodistributed blistering on sun-exposed areas (hands, forearms, face) with scarring and skin fragility is pathognomonic for this porphyrin metabolism disorder."
+        ],
+        [
+          "Pseudoporphyria",
+          "Clinically identical to PCT with blistering on sun-exposed areas and scarring, but without porphyrin abnormalities, often medication or dialysis-related."
+        ],
+        [
+          "Bullous systemic lupus erythematosus",
+          "Can present with vesiculobullous eruptions on sun-exposed areas with scarring and potential alopecia in a patient of typical demographic."
+        ],
+        [
+          "Epidermolysis bullosa acquisita",
+          "Mechanobullous disorder causing blisters on trauma-prone areas (hands, forearms) with scarring and milia formation, though typically affects extensor surfaces."
+        ],
+        [
+          "Bullous pemphigoid",
+          "Tense fluid-filled blisters and erosions fit this autoimmune blistering disease, though the prominent scarring and photodistribution are less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pemphigus vulgaris",
+          "Would present with flaccid blisters and mucosal involvement, not tense blisters with scarring predominantly on sun-exposed areas."
+        ],
+        [
+          "Dermatitis herpetiformis",
+          "Typically presents with pruritic grouped vesicles on extensor surfaces rather than large blisters with scarring on photodistributed areas."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Porphyria cutanea tarda",
+          "Dark brown urine, photodistributed blistering rash with scarring and hyperpigmentation, family history, and normal ferritin point to this cutaneous porphyria."
+        ],
+        [
+          "Variegate porphyria",
+          "Family history of similar lesions and photosensitive blistering could indicate this hereditary hepatic porphyria with cutaneous manifestations."
+        ],
+        [
+          "Hereditary coproporphyria",
+          "Familial pattern and blistering photosensitivity are consistent, though this is less common than other porphyrias."
+        ],
+        [
+          "Pseudoporphyria",
+          "Hormonal replacement therapy can trigger porphyria-like blistering lesions, though dark urine would be atypical."
+        ],
+        [
+          "Epidermolysis bullosa acquisita",
+          "Trauma-induced blistering with scarring and milia formation could explain findings, though family history and dark urine are less consistent."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bullous pemphigoid",
+          "Normal vital signs and chronicity make autoimmune blistering less likely, and dark urine would not be explained."
+        ],
+        [
+          "Pemphigus vulgaris",
+          "Blisters are photodistributed rather than mucosal-dominant, and dark urine is not a feature."
+        ],
+        [
+          "Bullous lupus erythematosus",
+          "While photodistributed, the dark urine, family history, and clinical pattern more strongly suggest porphyria."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Porphyria cutanea tarda",
+          "Elevated urinary porphyrins with blistering photosensitive rash, scarring, hyperpigmentation, and dark urine are pathognomonic for this disorder."
+        ],
+        [
+          "Variegate porphyria",
+          "Can present with similar cutaneous photosensitivity and elevated urinary porphyrins, though typically has acute neurovisceral symptoms as well."
+        ],
+        [
+          "Hepatoerythropoietic porphyria",
+          "Severe childhood-onset form of porphyria with photosensitive blistering and scarring, though usually presents earlier in life."
+        ],
+        [
+          "Hereditary coproporphyria",
+          "May cause photosensitive skin lesions and elevated urinary porphyrins, though cutaneous manifestations are less common than in PCT."
+        ],
+        [
+          "Erythropoietic protoporphyria",
+          "Causes photosensitive skin reactions and elevated porphyrins, though typically presents with burning pain rather than blistering."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bullous pemphigoid",
+          "Normal serum ferritin and the presence of elevated urinary porphyrins confirm a porphyria rather than autoimmune blistering disease."
+        ],
+        [
+          "Pseudoporphyria",
+          "Ruled out by elevated urinary porphyrin levels which are absent in pseudoporphyria."
+        ],
+        [
+          "Bullous systemic lupus erythematosus",
+          "Elevated urinary porphyrins confirm porphyria rather than autoimmune connective tissue disease."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Bullous pemphigoid",
+            "Autoimmune blistering disorder commonly affecting middle-aged to elderly patients with tense bullae on extremities and face."
+          ],
+          [
+            "Pemphigus vulgaris",
+            "Autoimmune mucocutaneous blistering disease that can present with flaccid bullae on skin and mucous membranes in this age group."
+          ],
+          [
+            "Phytophotodermatitis",
+            "Phototoxic reaction causing blistering from plant compounds (psoralens) plus sun exposure on exposed areas like hands, forearms, and face."
+          ],
+          [
+            "Bullous systemic lupus erythematosus",
+            "Rare autoimmune blistering variant of SLE presenting with vesiculobullous eruptions in photodistributed areas."
+          ],
+          [
+            "Severe allergic contact dermatitis",
+            "Acute blistering hypersensitivity reaction from allergen exposure affecting exposed skin areas."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Porphyria cutanea tarda",
+            "Photodistributed blistering on sun-exposed areas (hands, forearms, face) with scarring and hyperpigmentation is classic for this disorder."
+          ],
+          [
+            "Bullous systemic lupus erythematosus",
+            "Blistering rash in photodistributed areas with scarring alopecia suggests autoimmune bullous disease associated with SLE."
+          ],
+          [
+            "Pseudoporphyria",
+            "Clinical presentation mimics porphyria cutanea tarda with photodistributed blisters, scarring, and hyperpigmentation but without porphyrin abnormalities."
+          ],
+          [
+            "Epidermolysis bullosa acquisita",
+            "Trauma-prone areas showing blistering with scarring and milia formation can present similarly in sun-exposed regions."
+          ],
+          [
+            "Discoid lupus erythematosus",
+            "Photosensitive rash with scarring and alopecia affects sun-exposed areas, though typically presents with plaques rather than primary blistering."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bullous pemphigoid",
+            "Typically presents with tense fluid-filled blisters rather than healed erosions, and lacks the photodistribution and scarring alopecia pattern seen here."
+          ],
+          [
+            "Contact dermatitis",
+            "Would not explain the chronic scarring, alopecia, or selective photodistribution over three weeks."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Porphyria cutanea tarda",
+            "Dark brown urine, photodistributed blistering with scarring and hyperpigmentation on sun-exposed areas, and family history strongly suggest porphyrin accumulation disorder."
+          ],
+          [
+            "Hepatoerythropoietic porphyria",
+            "Childhood-onset severe cutaneous porphyria with similar presentation to PCT but more severe, though the age of presentation makes this less typical."
+          ],
+          [
+            "Variegate porphyria",
+            "Can present with photosensitive skin lesions similar to PCT and dark urine, with autosomal dominant inheritance pattern matching the family history."
+          ],
+          [
+            "Pseudoporphyria",
+            "Blistering photosensitivity mimicking PCT but typically caused by medications or renal disease, though normal ferritin and clinical presentation favor true porphyria."
+          ],
+          [
+            "Congenital erythropoietic porphyria",
+            "Severe photosensitivity with scarring and mutilating changes, though typical onset in infancy makes this diagnosis less likely at age 48."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bullous pemphigoid",
+            "Normal vital signs and chronic scarring pattern inconsistent with autoimmune blistering disease, plus dark urine points to metabolic disorder."
+          ],
+          [
+            "Epidermolysis bullosa acquisita",
+            "Lack of mucosal involvement and dark urine with family history more consistent with porphyria."
+          ],
+          [
+            "Phototoxic drug reaction",
+            "Strong family history and dark brown urine indicate inherited metabolic disorder rather than drug reaction."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Porphyria cutanea tarda",
+            "Elevated urinary porphyrins with photodistributed blistering, scarring, hyperpigmentation on sun-exposed areas, and dark urine are classic findings."
+          ],
+          [
+            "Variegate porphyria",
+            "Elevated urinary porphyrins with cutaneous photosensitivity and family history in multiple relatives suggests possible autosomal dominant inheritance pattern."
+          ],
+          [
+            "Hereditary coproporphyria",
+            "Can present with photosensitivity and elevated urinary porphyrins with positive family history, though less common than other porphyrias."
+          ],
+          [
+            "Erythropoietic protoporphyria",
+            "Family history and photosensitivity are consistent, though typically presents earlier and without the blistering and scarring seen here."
+          ],
+          [
+            "Hepatoerythropoietic porphyria",
+            "Rare homozygous form presenting with severe photosensitivity and elevated porphyrins, though usually manifests in childhood."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pseudoporphyria",
+            "Normal ferritin and positive family history make true porphyria more likely than drug-induced pseudoporphyria."
+          ],
+          [
+            "Bullous pemphigoid",
+            "Lack of fluid-filled blisters and confirmation of elevated porphyrins excludes autoimmune blistering disease."
+          ],
+          [
+            "Epidermolysis bullosa acquisita",
+            "Elevated urinary porphyrins confirm porphyria rather than autoimmune subepidermal blistering disorder."
+          ]
+        ]
+      },
+      "cf_id": "case_020_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of blisters and erosions on sun-exposed areas argues against porphyria cutanea tarda, which typically presents with these skin findings."
+    }
+  ]
+}

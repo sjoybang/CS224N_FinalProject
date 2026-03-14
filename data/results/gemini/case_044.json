@@ -1,0 +1,239 @@
+{
+  "case_id": "case_044",
+  "model": "gemini",
+  "ground_truth": "Lisinopril-induced acute kidney injury",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Angina pectoris",
+          "The patient's chest pain radiating to the jaw and arm, especially with exertion and a history of similar episodes, strongly suggests angina."
+        ],
+        [
+          "Acute myocardial infarction",
+          "Given the patient's risk factors (diabetes, hypertension) and chest pain radiating to the jaw and arm, acute myocardial infarction is a serious possibility."
+        ],
+        [
+          "Unstable angina",
+          "The presentation could represent unstable angina, a more severe form of angina that requires prompt evaluation."
+        ],
+        [
+          "Esophageal spasm",
+          "Chest pain radiating to the jaw can be caused by esophageal spasm, especially given his history of GERD."
+        ],
+        [
+          "Aortic dissection",
+          "Although less likely, chest pain radiating to the arm warrants consideration of aortic dissection, particularly in a hypertensive patient."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Angina pectoris",
+          "The patient's history of similar chest pain episodes during exertion, along with his risk factors, suggests stable angina."
+        ],
+        [
+          "Acute myocardial infarction",
+          "Chest pain radiating to the jaw and arm in a patient with multiple risk factors raises concern for acute coronary syndrome."
+        ],
+        [
+          "Unstable angina",
+          "The patient's history of similar episodes suggests possible progression to unstable angina."
+        ],
+        [
+          "Aortic dissection",
+          "Chest pain radiating to the jaw and arm, although less typical, could indicate aortic dissection, especially with hypertension."
+        ],
+        [
+          "Esophageal spasm",
+          "Given the patient's history of GERD, esophageal spasm could present with chest pain radiating to the jaw."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Cardiogenic shock",
+          "Hypotension, dizziness, blurred vision, and acute kidney injury following an MI suggest pump failure."
+        ],
+        [
+          "Acute kidney injury",
+          "The elevated creatinine from a previously normal baseline indicates acute kidney injury."
+        ],
+        [
+          "Medication side effect",
+          "Dizziness, blurred vision, and hypotension could be side effects of medications administered during the MI treatment."
+        ],
+        [
+          "Hypovolemia",
+          "Hypotension and dizziness could be due to volume depletion, possibly exacerbated by medications or reduced oral intake."
+        ],
+        [
+          "Arrhythmia",
+          "Although the pulse is currently 72, a prior arrhythmia could have caused hypotension and dizziness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Unstable Angina",
+          "ST elevation on ECG indicates myocardial infarction, not just angina."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "ACE inhibitor-induced AKI",
+          "The patient developed acute kidney injury and hypotension after being started on lisinopril, which resolved upon discontinuation."
+        ],
+        [
+          "Acute Myocardial Infarction",
+          "The initial presentation with chest pain, radiation to the jaw and arm, and ST elevation on ECG strongly suggests an acute MI."
+        ],
+        [
+          "Hypovolemia",
+          "Hypotension and AKI could be related to hypovolemia, possibly exacerbated by diuretic use."
+        ],
+        [
+          "Medication-induced Hypotension",
+          "The beta-blocker and lisinopril, in combination, could have caused significant hypotension."
+        ],
+        [
+          "Contrast-induced Nephropathy",
+          "If contrast was used during cardiac catheterization, it could have contributed to the AKI."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypertension",
+          "The patient's blood pressure improved after discontinuing lisinopril."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Angina pectoris",
+            "The patient's chest pain radiating to the left jaw and arm, especially with exertion and a history of similar episodes, strongly suggests angina."
+          ],
+          [
+            "Acute myocardial infarction",
+            "Given the patient's risk factors (diabetes, hypertension) and chest pain radiating to the left arm and jaw, acute myocardial infarction is a serious consideration."
+          ],
+          [
+            "Unstable angina",
+            "The patient's history of similar episodes and presentation to the ED raises concern for unstable angina."
+          ],
+          [
+            "Esophageal spasm",
+            "Chest pain radiating to the jaw can be esophageal in origin, and the patient has a history of GERD."
+          ],
+          [
+            "Aortic dissection",
+            "Although less likely, chest pain radiating to the jaw and arm warrants consideration of aortic dissection, especially given hypertension."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute Coronary Syndrome",
+            "The patient's chest pain radiating to the left jaw and arm, along with a history of similar episodes during exertion, strongly suggests myocardial ischemia."
+          ],
+          [
+            "Stable Angina",
+            "Given the history of similar episodes with exertion, this remains a possibility, although the current presentation in the ED warrants consideration of ACS."
+          ],
+          [
+            "Hypertensive Emergency",
+            "Elevated blood pressure with chest pain could indicate end-organ damage related to hypertension."
+          ],
+          [
+            "Aortic Dissection",
+            "Chest pain radiating to the jaw and arm can be a symptom of aortic dissection, especially with a history of hypertension."
+          ],
+          [
+            "Pulmonary Embolism",
+            "Chest pain can be a symptom of pulmonary embolism, and the patient's lower extremity edema could suggest venous stasis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "GERD",
+            "While the patient has a history of GERD, the radiating chest pain is more concerning for cardiac or vascular etiologies."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute myocardial infarction",
+            "The ST elevation in V3-V6 strongly suggests an acute MI, and the initial presentation was consistent with this diagnosis."
+          ],
+          [
+            "Cardiogenic shock",
+            "Hypotension and dizziness following an acute MI suggest pump failure and inadequate tissue perfusion."
+          ],
+          [
+            "Acute kidney injury",
+            "The elevated creatinine from a baseline of 1.0 to 2.3 mg/dL indicates a decline in kidney function, possibly secondary to hypoperfusion from cardiogenic shock or contrast-induced nephropathy."
+          ],
+          [
+            "Medication side effect",
+            "Dizziness and blurred vision could be side effects of medications administered during the acute MI treatment."
+          ],
+          [
+            "Hypertensive emergency",
+            "Although his initial blood pressure was elevated, the subsequent drop to hypotensive levels after treatment suggests a possible overcorrection or other complication."
+          ]
+        ],
+        "eliminated": [
+          [
+            "GERD",
+            "The ECG findings make GERD less likely as the primary cause of the chest pain."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "ACE inhibitor-induced AKI",
+            "The patient developed acute kidney injury with hypotension after starting lisinopril, and his creatinine returned to baseline after discontinuation."
+          ],
+          [
+            "Acute tubular necrosis",
+            "Hypotension secondary to the acute MI could have caused ischemic damage to the tubules."
+          ],
+          [
+            "Contrast-induced nephropathy",
+            "If contrast was used during cardiac catheterization, it could have contributed to the AKI."
+          ],
+          [
+            "Prerenal AKI",
+            "Hypotension from the MI and medications could have led to decreased renal perfusion."
+          ],
+          [
+            "Atherosclerotic renal artery stenosis",
+            "Pre-existing renal artery stenosis could have been unmasked by the ACE inhibitor."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diabetic nephropathy",
+            "The rapid improvement in creatinine after stopping lisinopril makes this less likely as the primary cause."
+          ]
+        ]
+      },
+      "cf_id": "case_044_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of bilateral lower extremity edema makes lisinopril-induced AKI less likely, as it suggests a volume overload state that is not typically associated with ACE inhibitor-induced kidney injury."
+    }
+  ]
+}

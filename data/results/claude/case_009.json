@@ -1,0 +1,294 @@
+{
+  "case_id": "case_009",
+  "model": "claude",
+  "ground_truth": "Infant botulism",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute bacterial meningitis",
+          "Progressive weakness and behavioral changes in a young child are highly concerning for central nervous system infection."
+        ],
+        [
+          "Hypoglycemia",
+          "Can present with acute onset weakness and altered behavior in toddlers, especially if prolonged fasting or metabolic disorder."
+        ],
+        [
+          "Ingestion/poisoning",
+          "Accidental toxic ingestion is common in this age group and can cause progressive neurological symptoms."
+        ],
+        [
+          "Intracranial hemorrhage",
+          "Trauma (accidental or non-accidental) could cause progressive weakness and behavioral changes from bleeding."
+        ],
+        [
+          "Acute viral encephalitis",
+          "Viral CNS infection can present with progressive behavioral changes and weakness in young children."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to eliminate diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Infant botulism",
+          "Progressive descending paralysis with cranial nerve involvement (ptosis, weak suck/gag), constipation, urinary retention, and hypotonia in a 1-year-old fits the classic presentation."
+        ],
+        [
+          "Myasthenia gravis",
+          "Bilateral ptosis, weak suck reflex, and generalized weakness suggest neuromuscular junction dysfunction, though acute presentation and autonomic features (constipation, dry diaper) are less typical."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome (Miller Fisher variant)",
+          "Ascending or descending paralysis with cranial nerve involvement and areflexia could present with ptosis and weakness, though autonomic dysfunction with constipation is less common."
+        ],
+        [
+          "Brainstem encephalitis",
+          "Cranial nerve palsies (ptosis, sluggish pupils, weak gag), respiratory compromise, and altered behavior could indicate brainstem inflammation, though the pattern is somewhat atypical."
+        ],
+        [
+          "Tick paralysis",
+          "Ascending flaccid paralysis with cranial nerve involvement and autonomic dysfunction can occur from tick neurotoxin, presenting similarly in young children."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Spinal muscular atrophy",
+          "Acute onset over hours rather than chronic progressive course rules this out."
+        ],
+        [
+          "Poliomyelitis",
+          "Asymmetric paralysis without sensory or autonomic involvement is typical, but constipation and urinary retention with symmetric cranial findings argue against this."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Infant botulism",
+          "Progressive descending paralysis with ptosis, bulbar weakness, constipation, and dilated bowel in a 1-year-old is classic for this diagnosis."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "Acute ascending or descending weakness with cranial nerve involvement can present similarly, though constipation and dilated bowel are less typical."
+        ],
+        [
+          "Myasthenia gravis",
+          "Ptosis, bulbar weakness, and generalized weakness could suggest this neuromuscular junction disorder, though infant presentation and constipation are atypical."
+        ],
+        [
+          "Tick paralysis",
+          "Ascending flaccid paralysis with cranial nerve involvement can mimic botulism, though constipation and bowel dilation are less characteristic."
+        ],
+        [
+          "Brainstem encephalitis",
+          "Bilateral cranial nerve palsies with weakness could indicate brainstem pathology, though normal labs and the autonomic features favor botulism."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sepsis",
+          "Normal complete blood count and comprehensive metabolic panel make systemic infection unlikely."
+        ],
+        [
+          "Metabolic encephalopathy",
+          "Normal comprehensive metabolic panel rules out common metabolic derangements."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Infant botulism",
+          "Stool sample confirmed presence of Clostridium botulinum spores and botulinum toxin, with classic presentation of descending flaccid paralysis, constipation, and autonomic dysfunction."
+        ],
+        [
+          "Wound botulism",
+          "Though less likely in a 1-year-old, botulinum toxin was detected in stool, but typically requires a contaminated wound as entry point."
+        ],
+        [
+          "Foodborne botulism",
+          "Botulinum toxin detected in stool could theoretically represent ingested preformed toxin, though infant botulism from spore germination is far more common in this age group."
+        ],
+        [
+          "Iatrogenic botulism",
+          "Botulinum toxin detected could rarely result from inadvertent exposure to therapeutic botulinum toxin preparations, though no history suggests this."
+        ],
+        [
+          "Laboratory contamination with concurrent neuromuscular disorder",
+          "Although botulinum detected, could theoretically represent false positive with another cause of weakness, though this is highly unlikely given clinical correlation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "Normal laboratory studies and positive botulinum toxin in stool with classic botulism presentation make this diagnosis incompatible."
+        ],
+        [
+          "Myasthenia gravis",
+          "Positive stool botulinum toxin and spores with acute presentation in previously healthy infant excludes this."
+        ],
+        [
+          "Sepsis",
+          "Normal complete blood count and comprehensive metabolic panel rule out infectious/septic etiology."
+        ],
+        [
+          "Inborn errors of metabolism",
+          "Normal metabolic panel and positive botulinum studies exclude metabolic disorders."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute bacterial meningitis",
+            "Progressive weakness and behavioral changes in a young child are concerning for central nervous system infection with potential sepsis."
+          ],
+          [
+            "Hypoglycemia",
+            "Acute onset weakness and altered behavior in a 1-year-old can result from low blood glucose, which is common in young children with limited glycogen stores."
+          ],
+          [
+            "Ingestion/intoxication",
+            "Sudden behavioral changes and weakness may indicate accidental ingestion of medications, household products, or other toxins."
+          ],
+          [
+            "Hyponatremia",
+            "Electrolyte disturbances, particularly low sodium, can cause weakness and altered mental status with progressive neurological symptoms."
+          ],
+          [
+            "Viral encephalitis",
+            "Progressive weakness and behavioral changes may indicate viral infection of the brain parenchyma causing inflammation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Infant botulism",
+            "Progressive descending paralysis with cranial nerve involvement (ptosis, weak suck/gag, drooling), constipation, urinary retention, and hypotonia with preserved or increased reflexes in early stages fits classic presentation."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome (Miller Fisher variant)",
+            "Acute progressive weakness with cranial nerve involvement (ptosis, bulbar weakness) and areflexia/hyperreflexia can occur in different GBS variants affecting young children."
+          ],
+          [
+            "Myasthenia gravis",
+            "Bilateral ptosis, bulbar weakness (poor suck/gag), and generalized weakness suggest neuromuscular junction disorder, though hyperreflexia is atypical."
+          ],
+          [
+            "Brainstem encephalitis",
+            "Acute onset of cranial nerve palsies, bulbar dysfunction, respiratory compromise, and mixed upper/lower motor neuron signs could indicate brainstem inflammation."
+          ],
+          [
+            "Tick paralysis",
+            "Ascending or descending paralysis with cranial nerve involvement and autonomic dysfunction (constipation, urinary retention) in a young child matches this toxin-mediated condition."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Spinal muscular atrophy",
+            "Typically presents with chronic progressive weakness rather than acute onset over hours, and would not explain the prominent cranial nerve findings and autonomic dysfunction."
+          ],
+          [
+            "Poliomyelitis",
+            "Would cause flaccid paralysis with hyporeflexia/areflexia, not hyperreflexia and clonus."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Infant botulism",
+            "Progressive descending flaccid paralysis with ptosis, bulbar weakness, constipation, urinary retention, and dilated bowel are classic findings in this age group."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome (Miller Fisher variant)",
+            "Acute onset weakness with ptosis and pupillary abnormalities could suggest this variant, though hyperreflexia is atypical for GBS."
+          ],
+          [
+            "Myasthenia gravis",
+            "Ptosis, bulbar weakness with poor suck/gag, and progressive weakness are consistent, though hyperreflexia and constipation are less typical."
+          ],
+          [
+            "Spinal cord pathology with concurrent brainstem involvement",
+            "Hyperreflexia and clonus suggest upper motor neuron involvement while cranial nerve findings suggest brainstem pathology."
+          ],
+          [
+            "Tick paralysis",
+            "Ascending or generalized paralysis with cranial nerve involvement can occur, though hyperreflexia would be unusual in advanced stages."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sepsis/meningitis",
+            "Normal CBC and metabolic panel with no fever makes infectious CNS process unlikely."
+          ],
+          [
+            "Metabolic encephalopathy",
+            "Comprehensive metabolic panel is normal, ruling out common metabolic derangements."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Infant botulism",
+            "Stool sample confirms presence of Clostridium botulinum spores and botulinum toxin, explaining the descending paralysis, constipation, weak cry, and autonomic dysfunction."
+          ],
+          [
+            "Botulism with secondary neurological complications",
+            "The presence of hyperreflexia and clonus is atypical for pure botulism and may suggest concurrent central nervous system involvement or complication."
+          ],
+          [
+            "Infant botulism with coincidental upper motor neuron findings",
+            "Confirmed botulism with the unexpected hyperreflexia possibly representing examination artifact or unrelated neurological condition."
+          ],
+          [
+            "Infant botulism with Miller Fisher variant overlap",
+            "While stool confirms botulism, the constellation of ptosis, areflexia expectation vs hyperreflexia finding, and ataxia-like weakness suggests possible atypical presentation."
+          ],
+          [
+            "Infant botulism with hypertonic dehydration",
+            "Confirmed botulism with hyperreflexia potentially secondary to severe dehydration despite normal laboratory values."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "Stool analysis definitively identifies botulinum toxin as the causative agent rather than autoimmune demyelination."
+          ],
+          [
+            "Myasthenia gravis",
+            "Positive stool test for Clostridium botulinum and toxin confirms infectious etiology rather than autoimmune neuromuscular junction disorder."
+          ],
+          [
+            "Sepsis",
+            "Normal complete blood count and comprehensive metabolic panel argue against systemic infection, and specific pathogen identified."
+          ],
+          [
+            "Brainstem encephalitis",
+            "Specific identification of botulinum toxin explains symptoms through peripheral mechanism rather than central inflammation."
+          ]
+        ]
+      },
+      "cf_id": "case_009_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals hyperreflexia and clonus, findings that would argue against infant botulism, which typically presents with hypotonia and diminished reflexes."
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "case_id": "case_009",
+  "model": "gpt4",
+  "ground_truth": "Infant botulism",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral encephalitis",
+          "Acute onset of behavioral changes and weakness in a young child could indicate viral infection of the brain."
+        ],
+        [
+          "Acute bacterial meningitis",
+          "Rapid progression of neurological symptoms in a child raises concern for bacterial infection of the central nervous system."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "Progressive weakness in a young child could suggest an acute inflammatory demyelinating polyneuropathy."
+        ],
+        [
+          "Hypoglycemia",
+          "Sudden behavioral changes and weakness can be due to low blood sugar levels, especially in young children."
+        ],
+        [
+          "Sepsis",
+          "Systemic infection could cause weakness and altered mental status in a child."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Botulism",
+          "The combination of bilateral ptosis, weak sucking and gag reflex, constipation, and muscle weakness is highly suggestive of infant botulism."
+        ],
+        [
+          "Myasthenia Gravis",
+          "The presence of bilateral ptosis and muscle weakness could indicate a neuromuscular junction disorder like myasthenia gravis."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "The progressive weakness and decreased movement in the limbs could be indicative of Guillain-Barr\u00e9 syndrome, although autonomic symptoms are less common."
+        ],
+        [
+          "Spinal Muscular Atrophy",
+          "The weakness and decreased movement, particularly in the upper body, could suggest a motor neuron disorder such as spinal muscular atrophy."
+        ],
+        [
+          "Congenital Myopathy",
+          "The generalized muscle weakness and respiratory involvement could be due to a congenital myopathy, although the acute presentation is less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Meningitis",
+          "The absence of fever, irritability, or neck stiffness makes meningitis unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Infant botulism",
+          "The presentation of bilateral ptosis, weak reflexes, constipation, and descending paralysis is classic for infant botulism."
+        ],
+        [
+          "Myasthenia gravis",
+          "The symptoms of muscle weakness, ptosis, and respiratory involvement could suggest myasthenia gravis, although it is rare in infants."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "The progressive weakness and respiratory involvement could indicate Guillain-Barr\u00e9 syndrome, but the absence of reflexes is not typical."
+        ],
+        [
+          "Spinal muscular atrophy",
+          "The weakness and respiratory issues could be due to spinal muscular atrophy, although the acute onset is less typical."
+        ],
+        [
+          "Congenital myopathy",
+          "The generalized weakness and respiratory symptoms could be due to a congenital myopathy, but the acute presentation is unusual."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Intestinal obstruction",
+          "The abdominal X-ray shows a flat and dilated bowel, which is inconsistent with an obstruction."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Infant botulism",
+          "The presence of Clostridium botulinum spores and botulinum toxin in the stool, along with symptoms of weakness, ptosis, and constipation, strongly indicates infant botulism."
+        ],
+        [
+          "Myasthenia gravis",
+          "Bilateral ptosis and muscle weakness could suggest myasthenia gravis, although it is less likely given the age and stool findings."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "The progressive weakness and respiratory involvement could suggest Guillain-Barr\u00e9 syndrome, but the presence of botulinum toxin makes this less likely."
+        ],
+        [
+          "Spinal muscular atrophy",
+          "The weakness and decreased movement could be consistent with spinal muscular atrophy, but the acute presentation and toxin findings make this less likely."
+        ],
+        [
+          "Congenital myopathy",
+          "Muscle weakness and respiratory issues could suggest a congenital myopathy, but the acute onset and toxin findings make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Intestinal obstruction",
+          "The flat and dilated bowel on X-ray and absence of bowel movement could suggest obstruction, but the presence of botulinum toxin and neurological symptoms rule this out."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Viral encephalitis",
+            "Acute onset of behavioral changes and weakness in a young child could indicate viral infection of the brain."
+          ],
+          [
+            "Acute bacterial meningitis",
+            "Rapid progression of neurological symptoms in a child raises concern for bacterial infection of the meninges."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "Progressive weakness in a young child could suggest this post-infectious autoimmune neuropathy."
+          ],
+          [
+            "Hypoglycemia",
+            "Sudden behavioral changes and weakness can be due to low blood sugar levels, especially in young children."
+          ],
+          [
+            "Sepsis",
+            "Systemic infection could present with weakness and altered mental status in a child."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Botulism",
+            "The combination of bilateral ptosis, weak sucking and gag reflex, constipation, and descending paralysis is highly suggestive of infant botulism."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "The presence of weakness, decreased movement, and respiratory involvement could indicate Guillain-Barr\u00e9 syndrome, although hyperreflexia is atypical."
+          ],
+          [
+            "Myasthenia Gravis",
+            "Bilateral ptosis and muscle weakness with respiratory involvement could suggest myasthenia gravis, but the age and hyperreflexia are less typical."
+          ],
+          [
+            "Spinal Muscular Atrophy",
+            "The weakness and decreased movement in the limbs could be indicative of spinal muscular atrophy, though hyperreflexia is not characteristic."
+          ],
+          [
+            "Metabolic Disorder",
+            "The acute onset of weakness and neurological symptoms could be due to a metabolic disorder, although specific signs are not clearly pointing to one."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meningitis",
+            "The absence of fever, neck stiffness, or irritability makes meningitis unlikely."
+          ],
+          [
+            "Cerebral Palsy",
+            "The acute onset and progressive nature of symptoms are inconsistent with cerebral palsy."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Infant botulism",
+            "The combination of bilateral ptosis, weak reflexes, constipation, and autonomic symptoms like dry diaper and drooling are classic for infant botulism."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "The progressive weakness, areflexia, and autonomic dysfunction could suggest Guillain-Barr\u00e9 syndrome, although hyperreflexia is atypical."
+          ],
+          [
+            "Myasthenia gravis",
+            "The presence of ptosis and muscle weakness could indicate myasthenia gravis, but the age and autonomic symptoms make this less likely."
+          ],
+          [
+            "Spinal muscular atrophy",
+            "The weakness and decreased movement in the limbs could suggest spinal muscular atrophy, though the acute presentation and autonomic symptoms are unusual."
+          ],
+          [
+            "Metabolic disorder",
+            "A metabolic disorder could cause weakness and autonomic symptoms, but normal lab results make this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meningitis",
+            "The absence of fever, irritability, or neck stiffness makes meningitis unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Infant botulism",
+            "The presence of Clostridium botulinum spores and botulinum toxin in the stool, along with symptoms of weakness, ptosis, and constipation, strongly suggests infant botulism."
+          ],
+          [
+            "Myasthenia gravis",
+            "The bilateral ptosis and muscle weakness could be indicative of myasthenia gravis, although it is less common in infants."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "The weakness and respiratory involvement could suggest Guillain-Barr\u00e9 syndrome, but the presence of botulinum toxin makes this less likely."
+          ],
+          [
+            "Spinal muscular atrophy",
+            "The muscle weakness and respiratory issues could be consistent with spinal muscular atrophy, but the presence of botulinum toxin is more indicative of botulism."
+          ],
+          [
+            "Congenital myopathy",
+            "The generalized weakness and respiratory symptoms could suggest a congenital myopathy, though the acute presentation and toxin findings point more towards botulism."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meningitis",
+            "The absence of fever, normal laboratory studies, and presence of botulinum toxin rule out meningitis."
+          ],
+          [
+            "Hypothyroidism",
+            "Normal metabolic panel and acute presentation make hypothyroidism unlikely."
+          ],
+          [
+            "Cerebral palsy",
+            "The acute onset and presence of botulinum toxin are inconsistent with cerebral palsy."
+          ]
+        ]
+      },
+      "cf_id": "case_009_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals hyperreflexia and clonus, findings that would argue against infant botulism, which typically presents with hypotonia and diminished reflexes."
+    }
+  ]
+}

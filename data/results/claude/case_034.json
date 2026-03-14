@@ -1,0 +1,282 @@
+{
+  "case_id": "case_034",
+  "model": "claude",
+  "ground_truth": "Acute rheumatic fever",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Mitral stenosis",
+          "Immigrant from Korea with risk of rheumatic heart disease presenting with palpitations and dyspnea suggests valvular disease with possible atrial fibrillation."
+        ],
+        [
+          "Atrial fibrillation with rapid ventricular response",
+          "Palpitations and dyspnea are classic presenting symptoms, and this can occur independently or secondary to structural heart disease."
+        ],
+        [
+          "Hyperthyroidism",
+          "Can present with palpitations, dyspnea, and cough, and has higher prevalence in Asian populations."
+        ],
+        [
+          "Community-acquired pneumonia",
+          "Dry cough and dyspnea are cardinal features, with palpitations potentially from hypoxia or systemic response."
+        ],
+        [
+          "Pulmonary embolism",
+          "Acute onset of dyspnea, cough, and palpitations are consistent with PE in a middle-aged woman."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Mitral stenosis",
+          "Mid-diastolic rumbling murmur at apex with bibasilar crackles, edema, and JVD suggests rheumatic heart disease (common in Korean immigrants) causing congestive heart failure."
+        ],
+        [
+          "Restrictive cardiomyopathy",
+          "Diastolic dysfunction with bibasilar crackles, JVD, and peripheral edema could produce similar findings, though the characteristic murmur is more specific for valvular disease."
+        ],
+        [
+          "Atrial myxoma",
+          "Left atrial tumor can mimic mitral stenosis with similar murmur and heart failure symptoms, though less common than rheumatic disease."
+        ],
+        [
+          "Cor triatriatum",
+          "Congenital left atrial membrane obstruction presents similarly to mitral stenosis but typically manifests earlier in life."
+        ],
+        [
+          "Severe mitral regurgitation",
+          "Could cause pulmonary congestion and heart failure, though the described murmur characteristics are more consistent with stenosis than regurgitation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute myocardial infarction",
+          "Normal temperature, lack of chest pain description, and characteristic diastolic murmur point away from acute coronary syndrome."
+        ],
+        [
+          "Pulmonary embolism",
+          "The prominent cardiac findings with characteristic murmur and chronic presentation make PE unlikely as primary diagnosis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Rheumatic mitral stenosis",
+          "Korean immigrant with mid-diastolic rumbling apical murmur, left atrial enlargement, and heart failure findings consistent with chronic rheumatic heart disease from prior streptococcal infection."
+        ],
+        [
+          "Infective endocarditis",
+          "Elevated inflammatory markers (ESR, CRP) with new murmur and heart failure could indicate active valve infection, though fever is absent."
+        ],
+        [
+          "Atrial myxoma",
+          "Left atrial tumor can cause mitral valve obstruction producing similar murmur, constitutional symptoms, and elevated inflammatory markers."
+        ],
+        [
+          "Restrictive cardiomyopathy",
+          "Bibasilar crackles, jugular venous distention, and peripheral edema suggest diastolic dysfunction, though murmur would be atypical."
+        ],
+        [
+          "Systemic lupus erythematosus with Libman-Sacks endocarditis",
+          "Elevated inflammatory markers with valvular involvement and heart failure in a middle-aged woman could represent autoimmune valvulitis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute myocardial infarction",
+          "Normal vital signs, week-long symptoms, and characteristic diastolic murmur point away from acute coronary syndrome."
+        ],
+        [
+          "Pneumonia",
+          "Afebrile status, normal white blood cell count, and cardiac findings (murmur, JVD, cardiomegaly) indicate primary cardiac rather than pulmonary infectious etiology."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rheumatic heart disease with mitral stenosis",
+          "Echocardiogram confirms thickened mitral valve leaflets and chordal fusion with elevated ASO titers, consistent with post-streptococcal sequelae."
+        ],
+        [
+          "Acute rheumatic fever (recurrent episode)",
+          "Elevated ASO titers, ESR, and CRP suggest possible acute or recurrent rheumatic fever exacerbating chronic rheumatic heart disease."
+        ],
+        [
+          "Infective endocarditis on rheumatic valve",
+          "Abnormal valve from rheumatic heart disease predisposes to bacterial seeding, though elevated ASO titers point more toward rheumatic etiology."
+        ],
+        [
+          "Heart failure due to rheumatic mitral stenosis",
+          "Clinical signs of biventricular failure (pulmonary edema, JVD, peripheral edema) secondary to confirmed chronic mitral stenosis."
+        ],
+        [
+          "Atrial fibrillation with heart failure",
+          "Left atrial enlargement from chronic mitral stenosis predisposes to atrial arrhythmias, though pulse is regular at 76/min."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary dilated cardiomyopathy",
+          "Echocardiogram specifically demonstrates valvular pathology (mitral stenosis with rheumatic changes) rather than dilated ventricles."
+        ],
+        [
+          "Congenital mitral stenosis",
+          "Age of presentation and echocardiographic features (thickened leaflets, chordal fusion) are classic for acquired rheumatic disease, not congenital."
+        ],
+        [
+          "Tuberculosis",
+          "Normal temperature, specific echocardiographic findings of rheumatic valve disease, and elevated ASO titers point away from TB etiology."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Mitral stenosis (rheumatic heart disease)",
+            "Immigrant from Korea with palpitations and dyspnea suggests possible history of rheumatic fever leading to valvular disease."
+          ],
+          [
+            "Atrial fibrillation with rapid ventricular response",
+            "Palpitations with dyspnea and dry cough are classic presenting symptoms of new-onset atrial fibrillation."
+          ],
+          [
+            "Pulmonary embolism",
+            "Acute onset of dyspnea, dry cough, and palpitations over one week is consistent with PE."
+          ],
+          [
+            "Hyperthyroidism",
+            "Palpitations, dyspnea, and cough can occur with thyrotoxicosis, which is more common in women and Asian populations."
+          ],
+          [
+            "Community-acquired pneumonia (atypical)",
+            "Dry cough with dyspnea developing over a week could represent atypical pneumonia with reactive tachycardia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Mitral stenosis",
+            "Korean immigrant with signs of heart failure (JVD, crackles, edema) and palpitations suggests rheumatic heart disease, though murmur may be subtle or absent in severe cases."
+          ],
+          [
+            "Dilated cardiomyopathy",
+            "Biventricular heart failure with pulmonary congestion and systemic venous congestion in a middle-aged woman without audible murmur supports primary myocardial dysfunction."
+          ],
+          [
+            "Constrictive pericarditis",
+            "Signs of right heart failure (JVD, peripheral edema) with pulmonary congestion could indicate constrictive physiology, which may be associated with tuberculosis given her origin."
+          ],
+          [
+            "Restrictive cardiomyopathy",
+            "Biventricular failure pattern with elevated filling pressures (JVD, edema, crackles) without murmur suggests infiltrative or restrictive process."
+          ],
+          [
+            "Severe pulmonary hypertension",
+            "Dyspnea, palpitations, and signs of right heart failure (JVD, edema) with secondary pulmonary edema could indicate primary or secondary pulmonary hypertension."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute myocardial infarction",
+            "Vital signs are relatively stable, symptom duration is one week rather than acute, and presentation is more consistent with chronic heart failure than acute coronary syndrome."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rheumatic heart disease with mitral stenosis",
+            "Korean immigrant with left atrial enlargement, heart failure signs, and elevated inflammatory markers suggests chronic valvular disease from prior rheumatic fever, though murmur may be subtle or absent."
+          ],
+          [
+            "Dilated cardiomyopathy",
+            "Biventricular failure with cardiomegaly, pulmonary congestion, and peripheral edema in middle-aged woman could represent primary or secondary myocardial dysfunction."
+          ],
+          [
+            "Restrictive cardiomyopathy",
+            "Left atrial enlargement with heart failure symptoms and preserved heart size (mild cardiomegaly) suggests diastolic dysfunction from restrictive physiology."
+          ],
+          [
+            "Constrictive pericarditis",
+            "Jugular venous distention, bilateral edema, and elevated inflammatory markers with heart failure symptoms could indicate chronic pericardial constriction, possibly from prior tuberculosis given immigration history."
+          ],
+          [
+            "Atrial myxoma",
+            "Left atrial mass could cause heart failure symptoms, constitutional symptoms with elevated inflammatory markers, and left atrial enlargement, though absence of positional symptoms makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute myocardial infarction",
+            "Normal ECG aside from left atrial enlargement and week-long symptom duration make acute coronary syndrome unlikely."
+          ],
+          [
+            "Pneumonia",
+            "Normal temperature, week-long symptoms, and predominant cardiac findings with cardiomegaly point away from primary pulmonary infection."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rheumatic heart disease with mitral stenosis",
+            "Echocardiogram confirms mitral stenosis with thickened leaflets and chordal fusion, elevated ASO titers, and clinical heart failure findings consistent with chronic rheumatic valvular disease."
+          ],
+          [
+            "Acute rheumatic fever (recurrent episode)",
+            "Elevated ASO titers and inflammatory markers (ESR, CRP) suggest possible acute or subacute rheumatic fever superimposed on chronic rheumatic heart disease."
+          ],
+          [
+            "Infective endocarditis on rheumatic valve",
+            "Elevated inflammatory markers and constitutional symptoms could indicate bacterial endocarditis on the damaged rheumatic mitral valve, though no murmur was auscultated."
+          ],
+          [
+            "Decompensated heart failure secondary to mitral stenosis",
+            "Clinical presentation of dyspnea, crackles, JVD, and edema with pulmonary congestion represents decompensated congestive heart failure from severe mitral stenosis."
+          ],
+          [
+            "Left atrial thrombus with pulmonary embolism",
+            "Mitral stenosis predisposes to atrial fibrillation and left atrial thrombus formation, which could explain acute respiratory symptoms, though ECG findings not specified for arrhythmia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary pulmonary hypertension",
+            "Echocardiogram clearly identified mitral stenosis as the cause of cardiac findings rather than primary pulmonary vascular disease."
+          ],
+          [
+            "Dilated cardiomyopathy",
+            "Echocardiogram showed specific valvular pathology (mitral stenosis) rather than ventricular dilatation with reduced systolic function."
+          ],
+          [
+            "Viral myocarditis",
+            "Chronic presentation and specific valvular findings on echocardiogram are inconsistent with acute viral myocarditis."
+          ]
+        ]
+      },
+      "cf_id": "case_034_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a murmur makes acute rheumatic fever less likely, as carditis is a major manifestation."
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "case_id": "case_012",
+  "model": "gemini_pro",
+  "ground_truth": "Acute arterial occlusion",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute Limb Ischemia",
+          "The patient's history of atrial fibrillation is a major risk factor for an arterial embolism causing sudden, severe leg pain."
+        ],
+        [
+          "Deep Vein Thrombosis",
+          "Sudden onset unilateral leg pain is a classic presentation for DVT, and obesity is a known risk factor."
+        ],
+        [
+          "Lumbar Radiculopathy",
+          "Leg pain that begins with walking can be a symptom of nerve root compression, such as from an acute disc herniation."
+        ],
+        [
+          "Gastrocnemius Tear",
+          "This musculoskeletal injury classically presents with a sudden tearing sensation and pain in the calf during physical activity like walking."
+        ],
+        [
+          "Ruptured Baker's Cyst",
+          "This condition can cause sudden posterior knee and calf pain that mimics a DVT, often occurring during activity."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Chronic Stable Claudication",
+          "The patient's presentation is one of sudden onset pain, which is inconsistent with the chronic, reproducible exertional pain of stable claudication."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute limb ischemia",
+          "The patient's sudden onset of a cold, pale, painful leg with sensory and motor deficits, combined with a history of atrial fibrillation, is classic for an arterial embolism."
+        ],
+        [
+          "Aortic dissection",
+          "This can present with limb ischemia if the dissection flap occludes a major artery, and the patient's hypertension is a major risk factor."
+        ],
+        [
+          "Phlegmasia alba dolens",
+          "This severe form of deep vein thrombosis causes massive venous outflow obstruction that compromises arterial inflow, leading to a pale, cold, and painful limb."
+        ],
+        [
+          "Acute compartment syndrome",
+          "This condition is characterized by severe pain, paresthesia, and weakness due to increased pressure within a muscular compartment, which can mimic or result from primary ischemia."
+        ],
+        [
+          "Spinal cord ischemia",
+          "An abrupt vascular insult to the spinal cord can cause sudden onset pain, profound weakness, and sensory loss in the lower extremities."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Deep vein thrombosis (uncomplicated)",
+          "A typical DVT presents with a warm, swollen, and erythematous leg, which is the opposite of this patient's cold and pale limb."
+        ],
+        [
+          "Critical limb ischemia",
+          "This is a chronic condition defined by rest pain or tissue loss, whereas this patient's symptoms were of sudden onset."
+        ],
+        [
+          "Cellulitis",
+          "This infection would cause redness and warmth, not the pallor and coldness observed in the patient's leg."
+        ],
+        [
+          "Diabetic neuropathy",
+          "While the patient has diabetes, neuropathy alone does not explain the acute onset or the profound vascular signs of pallor and coldness."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Arterial embolism",
+          "The patient's history of atrial fibrillation is a major risk factor for a cardiogenic embolus lodging in the femoral artery, causing sudden occlusion."
+        ],
+        [
+          "Arterial thrombosis",
+          "The patient's multiple risk factors for atherosclerosis (diabetes, hypertension, obesity) could have led to acute thrombosis on a pre-existing atherosclerotic plaque."
+        ],
+        [
+          "Aortic dissection",
+          "A dissection flap extending from the aorta into the iliofemoral system can cause acute arterial occlusion, and the patient's hypertension is a significant risk factor."
+        ],
+        [
+          "Cholesterol embolism",
+          "Rupture of an upstream atherosclerotic plaque could have showered cholesterol crystals, leading to occlusion, given the patient's extensive vascular risk factors."
+        ],
+        [
+          "Thrombophilia",
+          "An underlying and undiagnosed hypercoagulable state could have predisposed the patient to an acute arterial thrombosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Deep vein thrombosis",
+          "The CTA confirmed an arterial occlusion, not a venous one."
+        ],
+        [
+          "Acute lumbar radiculopathy",
+          "Neurologic causes would not result in a cold, pale limb or an arterial occlusion on imaging."
+        ],
+        [
+          "Cellulitis",
+          "This infectious process would typically cause erythema and warmth, not pallor and coldness, and would not occlude a major artery."
+        ],
+        [
+          "Peripheral neuropathy",
+          "This is a chronic sensory condition that does not explain the acute vascular findings."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cardioembolic arterial embolism",
+          "The patient's history of atrial fibrillation is a major risk factor for the formation of a cardiac thrombus that can dislodge and occlude a peripheral artery."
+        ],
+        [
+          "Arterial thrombosis in situ",
+          "The patient's multiple risk factors for atherosclerosis (age, diabetes, hypertension, obesity) could have led to an acute thrombosis on a pre-existing atherosclerotic plaque in the femoral artery."
+        ],
+        [
+          "Aortic dissection",
+          "A dissection of the aorta can propagate into the femoral artery, causing an occlusion and presenting as isolated acute limb ischemia, especially given the patient's history of hypertension."
+        ],
+        [
+          "Cholesterol embolization syndrome",
+          "Rupture of an upstream atherosclerotic plaque could have sent a shower of cholesterol debris, with a large fragment occluding the common femoral artery."
+        ],
+        [
+          "Phlegmasia cerulea dolens",
+          "Massive iliofemoral deep vein thrombosis can lead to such high venous pressures that it compromises arterial inflow, although the presentation is typically with more cyanosis and swelling."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Uncomplicated deep vein thrombosis",
+          "The clinical signs of a cold, pale limb with diminished sensation and motor function are characteristic of arterial, not venous, occlusion."
+        ],
+        [
+          "Cauda equina syndrome",
+          "This neurological emergency would not cause unilateral coldness, pallor, or the specific arterial occlusion found on CTA."
+        ],
+        [
+          "Diabetic neuropathy",
+          "This is a chronic sensory deficit and does not present with sudden onset pain, motor collapse, and signs of acute vascular compromise."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute Limb Ischemia",
+            "The patient's atrial fibrillation is a major risk factor for an arterial embolism causing sudden, severe leg pain."
+          ],
+          [
+            "Deep Vein Thrombosis",
+            "Obesity and age are risk factors for DVT, which can present with acute unilateral leg pain."
+          ],
+          [
+            "Lumbar Radiculopathy",
+            "Acute nerve root compression can cause sudden onset radiating leg pain, which could be triggered by an activity like walking."
+          ],
+          [
+            "Ruptured Baker's Cyst",
+            "This condition can present with sudden onset calf pain and swelling, mimicking a DVT, and is more common in older adults."
+          ],
+          [
+            "Acute-on-Chronic Peripheral Artery Disease",
+            "The patient's multiple vascular risk factors predispose him to underlying atherosclerosis, and an acute thrombosis could cause this sudden presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Intermittent Claudication",
+            "The sudden onset of pain is more suggestive of an acute event rather than the typical chronic, exertional, and relievable pain of claudication."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute Compartment Syndrome",
+            "This diagnosis explains the severe pain, pallor, and profound neurologic deficits in the presence of palpable distal pulses."
+          ],
+          [
+            "Acute Lumbosacral Plexopathy",
+            "A primary neurologic process, such as diabetic amyotrophy or a hematoma, would cause the observed unilateral motor and sensory loss without affecting arterial pulses."
+          ],
+          [
+            "Distal Arterial Embolism",
+            "Microemboli from a proximal source could occlude small arterioles beyond the palpable pulse locations, causing severe ischemia of the muscles and nerves."
+          ],
+          [
+            "Spinal Cord Infarction",
+            "A vascular event in the spinal cord could cause sudden, severe unilateral leg weakness and sensory loss while peripheral circulation remains intact."
+          ],
+          [
+            "Acute Sciatic Neuropathy",
+            "Infarction or compression of the sciatic nerve can produce profound motor and sensory deficits in its distribution, mimicking limb ischemia but with preserved pulses."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Proximal Arterial Occlusion",
+            "Ruled out by the presence of easily palpable 2+ dorsalis pedis and posterior tibial pulses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Arterial Embolism",
+            "The patient's history of atrial fibrillation is a major risk factor for a cardiogenic embolus causing sudden arterial occlusion."
+          ],
+          [
+            "Arterial Thrombosis",
+            "Multiple atherosclerotic risk factors (diabetes, hypertension, obesity) make acute thrombosis of a pre-existing peripheral artery disease plaque a likely cause."
+          ],
+          [
+            "Aortic Dissection",
+            "The patient's history of hypertension is a risk factor for an aortic dissection, which can extend into and occlude the femoral artery."
+          ],
+          [
+            "Thrombosis of a Femoral Artery Aneurysm",
+            "An underlying aneurysm in the femoral artery can acutely thrombose, leading to occlusion and the patient's signs of acute limb ischemia."
+          ],
+          [
+            "Cholesterol Embolization Syndrome",
+            "Rupture of an upstream atherosclerotic plaque could have sent a large atheroembolus to occlude the common femoral artery."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Deep Vein Thrombosis",
+            "The presentation with a cold, pale limb and a confirmed arterial occlusion on CTA is characteristic of an arterial, not a venous, problem."
+          ],
+          [
+            "Acute Compartment Syndrome",
+            "This is a potential complication of acute limb ischemia and reperfusion, not the primary cause of the arterial occlusion itself."
+          ],
+          [
+            "Diabetic Neuropathy",
+            "This chronic condition would not explain the sudden onset of symptoms, the limb's vascular signs, or the confirmed arterial occlusion."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Arterial Embolism",
+            "The patient's history of atrial fibrillation provides a clear source for an embolus, and the sudden onset of symptoms is classic for this diagnosis."
+          ],
+          [
+            "Arterial Thrombosis",
+            "The patient has multiple risk factors for atherosclerosis (diabetes, hypertension, obesity), which could lead to acute thrombosis of a pre-existing plaque."
+          ],
+          [
+            "Aortic Dissection",
+            "This condition can propagate into the iliac and femoral arteries causing occlusion, and the patient's hypertension is a major risk factor."
+          ],
+          [
+            "Thrombosis of a Peripheral Aneurysm",
+            "An underlying and previously undiagnosed aneurysm in the iliac or femoral artery could have acutely thrombosed, leading to the occlusion."
+          ],
+          [
+            "Malignancy-associated Hypercoagulability",
+            "An occult cancer can create a hypercoagulable state leading to spontaneous arterial thrombosis, which should be considered in an older patient with an unprovoked thrombotic event."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Deep Vein Thrombosis",
+            "The clinical picture of a pale, cold leg and the CTA finding of an arterial occlusion are inconsistent with a primary venous thrombus."
+          ],
+          [
+            "Diabetic Neuropathy",
+            "The acute onset and severe vascular compromise confirmed on imaging are not explained by peripheral neuropathy alone."
+          ],
+          [
+            "Musculoskeletal Injury",
+            "The objective findings of severe vascular compromise (pallor, coldness, CTA occlusion) rule out a primary musculoskeletal cause for the pain and weakness."
+          ]
+        ]
+      },
+      "cf_id": "case_012_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of palpable pulses in the affected leg argues against acute arterial occlusion."
+    }
+  ]
+}

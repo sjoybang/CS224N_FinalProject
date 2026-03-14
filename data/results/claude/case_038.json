@@ -1,0 +1,278 @@
+{
+  "case_id": "case_038",
+  "model": "claude",
+  "ground_truth": "Histoplasmosis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute viral gastroenteritis",
+          "Young patient with classic triad of fever, nausea, and vomiting over several days suggests common viral infection."
+        ],
+        [
+          "Acute appendicitis",
+          "Fever with nausea and vomiting are common presenting features, though abdominal pain details are not yet specified."
+        ],
+        [
+          "Pyelonephritis",
+          "Fever with gastrointestinal symptoms can represent upper urinary tract infection in young adults."
+        ],
+        [
+          "Influenza",
+          "Systemic viral infection commonly presents with fever and gastrointestinal symptoms in addition to respiratory features."
+        ],
+        [
+          "Acute cholecystitis",
+          "Fever with nausea and vomiting could indicate gallbladder inflammation, though less common in this age group."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Rabies",
+          "Acute encephalitis with hydrophobia (agitation with nasal cannula attempt), hypersalivation, fever, and progressive neurological deterioration in a young adult is pathognomonic."
+        ],
+        [
+          "Tetanus",
+          "Generalized muscle twitching, hypersalivation, autonomic instability (hypotension, fever), and difficulty breathing suggest tetanic spasms, though combativeness is less typical."
+        ],
+        [
+          "Neuroleptic malignant syndrome",
+          "High fever, altered mental status, muscle rigidity (twitching), and autonomic dysfunction could represent this condition if recent antipsychotic exposure occurred."
+        ],
+        [
+          "Anticholinergic toxidrome",
+          "Hyperthermia, altered mental status, agitation, and tachycardia fit, though copious secretions contradict the expected dry mucous membranes."
+        ],
+        [
+          "Bacterial meningoencephalitis",
+          "Fever, altered mental status progressing to combativeness, and systemic instability could indicate severe CNS infection, though hypersalivation is atypical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anticholinergic toxidrome",
+          "Copious oral secretions directly contradict the characteristic dry mouth and decreased secretions expected in anticholinergic syndrome."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Rabies",
+          "Acute encephalitis with hydrophobia (combative with nasal cannula), hypersalivation, fever, and agitation in a young adult is classic for rabies."
+        ],
+        [
+          "Severe viral pneumonia with sepsis",
+          "Bilateral reticulonodular infiltrates, high fever, hypotension, hypoxemia, and pancytopenia suggest severe viral pneumonia (influenza, COVID-19) with septic shock."
+        ],
+        [
+          "Hantavirus pulmonary syndrome",
+          "Fever, hypotension, thrombocytopenia, and bilateral pulmonary infiltrates are characteristic of hantavirus cardiopulmonary syndrome."
+        ],
+        [
+          "Disseminated histoplasmosis",
+          "Pancytopenia, elevated liver enzymes, diffuse pulmonary infiltrates, and acute illness could represent disseminated fungal infection with CNS involvement."
+        ],
+        [
+          "Acute fulminant viral hepatitis with hepatic encephalopathy",
+          "Elevated liver enzymes, altered mental status, fever, and coagulopathy (suggested by pancytopenia) could indicate acute liver failure."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial meningitis",
+          "Would not typically cause bilateral pulmonary infiltrates, pancytopenia, and the degree of combativeness with attempted interventions suggests hydrophobia rather than simple meningeal irritation."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Disseminated histoplasmosis with CNS involvement",
+          "BAL confirmed Histoplasma capsulatum with systemic manifestations including CNS symptoms, pancytopenia, hepatitis, and pulmonary infiltrates."
+        ],
+        [
+          "Histoplasmosis with septic shock and multiorgan dysfunction",
+          "Confirmed histoplasmosis with hypotension, altered mental status, respiratory failure, and laboratory evidence of organ dysfunction."
+        ],
+        [
+          "Progressive disseminated histoplasmosis in immunocompromised host",
+          "Severe presentation with CNS involvement, pancytopenia, and diffuse pulmonary disease suggests underlying immunosuppression."
+        ],
+        [
+          "Histoplasmosis with acute respiratory distress syndrome",
+          "Confirmed fungal infection with bilateral infiltrates, hypoxemia, and respiratory failure requiring mechanical ventilation."
+        ],
+        [
+          "Histoplasmosis with hemophagocytic lymphohistiocytosis",
+          "Confirmed infection with fever, pancytopenia, hepatitis, and CNS symptoms consistent with secondary HLH."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial meningitis",
+          "Fungal etiology confirmed with Histoplasma capsulatum on culture."
+        ],
+        [
+          "Viral encephalitis (HSV, rabies)",
+          "Specific fungal pathogen identified on BAL with systemic manifestations."
+        ],
+        [
+          "Community-acquired pneumonia",
+          "BAL culture grew Histoplasma capsulatum, not typical bacterial pathogens."
+        ],
+        [
+          "Acute HIV syndrome",
+          "Fungal infection confirmed as primary pathogen."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute gastroenteritis",
+            "Fever, nausea, and vomiting are classic presenting symptoms of infectious gastroenteritis in a young adult."
+          ],
+          [
+            "Acute appendicitis",
+            "Early appendicitis can present with fever, nausea, and vomiting before localized abdominal pain develops."
+          ],
+          [
+            "Influenza",
+            "Systemic viral infection commonly causes fever with gastrointestinal symptoms including nausea and vomiting."
+          ],
+          [
+            "Acute pyelonephritis",
+            "Urinary tract infection can present with fever and constitutional symptoms including nausea and vomiting."
+          ],
+          [
+            "Acute viral hepatitis",
+            "Hepatitis can cause fever and gastrointestinal symptoms in the prodromal phase before jaundice appears."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Rabies",
+            "Acute encephalitis with hydrophobia (agitation with nasal cannula attempt), hypersalivation, fever, and progression to combativeness are classic features."
+          ],
+          [
+            "Meningococcal meningitis with sepsis",
+            "Petechial rash, fever, altered mental status, and hypotension suggest invasive meningococcal disease with septic shock."
+          ],
+          [
+            "Neuroleptic malignant syndrome",
+            "Hyperthermia, altered mental status, muscle rigidity/twitching, and autonomic instability fit this syndrome, though medication history is needed."
+          ],
+          [
+            "Viral encephalitis (HSV or other)",
+            "Fever, progressive neurological deterioration with agitation, disorientation, and seizure-like activity (muscle twitching) suggest encephalitis."
+          ],
+          [
+            "Severe sepsis with encephalopathy",
+            "Systemic infection with hypotension, hypoxemia, fever, and altered mental status could represent septic shock from various sources."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Heat stroke",
+            "While hyperthermia is present, the prodrome of fever, nausea, and vomiting over 3 days, plus petechial rash and specific neurological findings, suggest infectious/inflammatory etiology rather than environmental heat exposure."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rickettsial infection (Rocky Mountain spotted fever)",
+            "Fever, petechial rash, pancytopenia, elevated liver enzymes, and multiorgan involvement with bilateral pulmonary infiltrates are classic features."
+          ],
+          [
+            "Meningococcemia with septic shock",
+            "Acute presentation with fever, petechial rash, hypotension, altered mental status, and pancytopenia consistent with disseminated meningococcal infection."
+          ],
+          [
+            "Viral hemorrhagic fever",
+            "Fever, petechial rash, pancytopenia, elevated liver enzymes, and multiorgan dysfunction with pulmonary involvement suggest severe viral hemorrhagic illness."
+          ],
+          [
+            "Hantavirus pulmonary syndrome",
+            "Prodrome of fever/GI symptoms followed by respiratory failure with bilateral infiltrates, shock, and thrombocytopenia fits this presentation."
+          ],
+          [
+            "Leptospirosis (severe/Weil's disease)",
+            "Fever, altered mental status, hypotension, elevated liver enzymes, pancytopenia, and pulmonary involvement with bilateral infiltrates are consistent."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Rabies",
+            "While hypersalivation and hydrophobia could suggest rabies, the petechial rash, pancytopenia, and bilateral pulmonary infiltrates are not typical features."
+          ],
+          [
+            "Bacterial meningitis (non-meningococcal)",
+            "Would not typically present with petechial rash, pancytopenia, and diffuse bilateral pulmonary infiltrates together."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Disseminated histoplasmosis",
+            "Confirmed by bronchoalveolar lavage showing Histoplasma capsulatum in macrophages with systemic manifestations including CNS involvement, respiratory failure, pancytopenia, and hepatic dysfunction."
+          ],
+          [
+            "Disseminated histoplasmosis with immune compromise",
+            "The severity of presentation with multiorgan involvement at age 27 suggests possible underlying immunodeficiency (HIV/AIDS or other) predisposing to disseminated fungal infection."
+          ],
+          [
+            "Acute respiratory distress syndrome secondary to disseminated histoplasmosis",
+            "Bilateral pulmonary infiltrates, hypoxemia, and respiratory failure in the context of confirmed histoplasmosis suggest ARDS as a complicating feature."
+          ],
+          [
+            "Histoplasma meningoencephalitis",
+            "Altered mental status, agitation, and disorientation in a patient with confirmed disseminated histoplasmosis indicates CNS involvement requiring CSF analysis."
+          ],
+          [
+            "Hemophagocytic lymphohistiocytosis triggered by histoplasmosis",
+            "Fever, pancytopenia, elevated liver enzymes, and CNS symptoms could represent HLH as a complication of the fungal infection."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial meningitis",
+            "Positive fungal cultures with Histoplasma capsulatum identify the causative organism as fungal rather than bacterial."
+          ],
+          [
+            "Viral hemorrhagic fever",
+            "Confirmed fungal etiology excludes primary viral hemorrhagic fever as the diagnosis."
+          ],
+          [
+            "Acute leukemia",
+            "While pancytopenia is present, the positive fungal cultures and clinical picture are consistent with infectious rather than malignant etiology."
+          ]
+        ]
+      },
+      "cf_id": "case_038_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's exam reveals a new petechial rash, arguing against histoplasmosis which does not typically present with petechiae."
+    }
+  ]
+}

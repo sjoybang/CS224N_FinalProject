@@ -1,0 +1,249 @@
+{
+  "case_id": "case_015",
+  "model": "gemini",
+  "ground_truth": "Vitamin K deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Chronic Bronchitis",
+          "Given her reported history, it is the most likely diagnosis."
+        ],
+        [
+          "Asthma",
+          "Asthma can present with symptoms similar to chronic bronchitis and may coexist."
+        ],
+        [
+          "Bronchiectasis",
+          "This could be considered due to the history of chronic bronchitis, potentially leading to airway damage."
+        ],
+        [
+          "Cystic Fibrosis",
+          "Although less likely given her age, it should be considered as it can sometimes present with milder symptoms in adulthood."
+        ],
+        [
+          "Allergic Bronchopulmonary Aspergillosis",
+          "This is a possibility, especially if she has a history of asthma or other allergic conditions."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute Bronchitis",
+          "The presence of rhonchi in a patient with a history of chronic bronchitis suggests an acute exacerbation."
+        ],
+        [
+          "Chronic Bronchitis Exacerbation",
+          "Given the patient's history, the rhonchi could represent a worsening of her baseline chronic bronchitis."
+        ],
+        [
+          "Asthma",
+          "Rhonchi can be present in asthma, even though the patient has a history of bronchitis."
+        ],
+        [
+          "Upper Respiratory Infection",
+          "An URI could cause rhonchi and exacerbate underlying chronic bronchitis."
+        ],
+        [
+          "Pneumonia",
+          "While less likely given normal vital signs, pneumonia can sometimes present with mild symptoms and rhonchi."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Vitamin K Deficiency",
+          "Prolonged PT suggests a possible deficiency in vitamin K, which is essential for the synthesis of clotting factors."
+        ],
+        [
+          "Liver Disease",
+          "Liver dysfunction can impair the production of clotting factors, leading to a prolonged PT."
+        ],
+        [
+          "Warfarin Use",
+          "Although not explicitly stated, the prolonged PT could be due to the use of warfarin or other vitamin K antagonists."
+        ],
+        [
+          "Disseminated Intravascular Coagulation",
+          "DIC can cause consumption of clotting factors, resulting in a prolonged PT."
+        ],
+        [
+          "Factor VII Deficiency",
+          "A deficiency in Factor VII, a vitamin K-dependent clotting factor, could explain the prolonged PT."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Chronic Bronchitis",
+          "While the patient has a history of chronic bronchitis, the prolonged PT is a new finding that requires further investigation beyond her known condition."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cystic Fibrosis",
+          "Genetic testing confirms the diagnosis, and it explains the chronic bronchitis, prolonged PT (due to Vitamin K deficiency from malabsorption), greasy stools, and low Vitamin K levels."
+        ],
+        [
+          "Vitamin K Deficiency",
+          "This is supported by the prolonged PT and low Vitamin K levels, though the underlying cause needs to be determined."
+        ],
+        [
+          "Malabsorption",
+          "The patient's greasy stools and low Vitamin K levels suggest an issue with nutrient absorption in the gastrointestinal tract."
+        ],
+        [
+          "Chronic Bronchitis",
+          "The patient has a history of this, and the chest x-ray shows mild bronchial thickening, supporting its presence."
+        ],
+        [
+          "Celiac Disease",
+          "This could cause malabsorption leading to Vitamin K deficiency and greasy stools, although less likely given the confirmation of cystic fibrosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Normal Health",
+          "The prolonged PT, low Vitamin K, greasy stools, and confirmed cystic fibrosis rule this out."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Chronic Bronchitis",
+            "Given her reported history, it is the most likely diagnosis to consider."
+          ],
+          [
+            "Asthma",
+            "Asthma can present with symptoms similar to chronic bronchitis, especially with overlapping features."
+          ],
+          [
+            "Bronchiectasis",
+            "This should be considered as a possible cause of chronic respiratory symptoms."
+          ],
+          [
+            "Cystic Fibrosis",
+            "Although less likely in a 27-year-old without prior diagnosis, it should be considered as a cause of chronic lung disease."
+          ],
+          [
+            "Allergic Bronchopulmonary Aspergillosis",
+            "This is a possibility in patients with chronic lung disease and asthma-like symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Thrombocytopenia",
+            "The presence of bruises and petechiae suggests a possible platelet deficiency."
+          ],
+          [
+            "Von Willebrand disease",
+            "This bleeding disorder can manifest with easy bruising and petechiae."
+          ],
+          [
+            "Leukemia",
+            "Bruising and petechiae can be associated with bone marrow failure and abnormal blood cell production."
+          ],
+          [
+            "Aplastic anemia",
+            "This condition can cause petechiae and bruising due to decreased platelet production."
+          ],
+          [
+            "Idiopathic Thrombocytopenic Purpura",
+            "This autoimmune disorder can cause isolated thrombocytopenia, leading to bruising and petechiae."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic Bronchitis",
+            "Lung auscultation was clear, suggesting the chronic bronchitis is currently well-controlled."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Vitamin K Deficiency",
+            "Prolonged PT with bruising and petechiae suggests a possible clotting factor deficiency."
+          ],
+          [
+            "Disseminated Intravascular Coagulation",
+            "Petechiae and prolonged PT can be indicative of DIC, although other lab values would be expected to be more deranged."
+          ],
+          [
+            "Liver Disease",
+            "Liver dysfunction can cause prolonged PT due to impaired synthesis of clotting factors."
+          ],
+          [
+            "Hemophilia",
+            "Although less likely in a female, hemophilia can present with easy bruising and prolonged PT."
+          ],
+          [
+            "Von Willebrand Disease",
+            "This can cause prolonged PT and mucocutaneous bleeding."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Thrombocytopenia",
+            "Petechiae are present, but normal electrolytes and renal function make this less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Vitamin K deficiency",
+            "The patient's low Vitamin K level and prolonged PT strongly suggest this deficiency."
+          ],
+          [
+            "Cystic fibrosis",
+            "The genetic testing confirms this diagnosis, which can cause fat malabsorption and subsequent Vitamin K deficiency."
+          ],
+          [
+            "Malabsorption",
+            "Greasy stools and low Vitamin K suggest a general issue with nutrient absorption."
+          ],
+          [
+            "Liver disease",
+            "Although LFTs were normal, liver disease can sometimes present with prolonged PT due to impaired synthesis of clotting factors."
+          ],
+          [
+            "Disseminated intravascular coagulation",
+            "While less likely given the otherwise normal labs, DIC can cause prolonged PT and bruising."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic bronchitis",
+            "While the patient has a history of this, it does not explain the new findings of bruising, petechiae, prolonged PT, greasy stools, and low Vitamin K."
+          ]
+        ]
+      },
+      "cf_id": "case_015_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The physical exam reveals multiple bruises and petechiae, which argues against chronic Vitamin K deficiency, which would not typically present without a clear bleeding diathesis."
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "case_id": "case_049",
+  "model": "claude",
+  "ground_truth": "Diffuse large B-cell lymphoma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Lymphoma",
+          "B symptoms (night sweats, weight loss, fatigue) with abdominal pain suggest possible intra-abdominal lymphoma."
+        ],
+        [
+          "Gastrointestinal malignancy",
+          "Abdominal pain with constitutional symptoms and weight loss are classic presentations of GI cancers (gastric, pancreatic, colorectal)."
+        ],
+        [
+          "Tuberculosis",
+          "Chronic constitutional symptoms including night sweats, weight loss, and fatigue with abdominal involvement (peritoneal TB) fit this presentation."
+        ],
+        [
+          "Chronic infection or abscess",
+          "Persistent fatigue, night sweats, and localized abdominal pain could indicate an indolent intra-abdominal infection."
+        ],
+        [
+          "Metastatic cancer from unknown primary",
+          "Constitutional symptoms with abdominal pain may represent metastatic disease to liver or peritoneum."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Lymphoma (Hodgkin or Non-Hodgkin)",
+          "Virchow's node (left supraclavicular lymphadenopathy), B symptoms (night sweats, weight loss, fatigue), and splenomegaly are classic presenting features."
+        ],
+        [
+          "Gastric adenocarcinoma",
+          "Left supraclavicular node (Virchow's node) is a sentinel finding for gastric malignancy, and abdominal pain with weight loss support this diagnosis."
+        ],
+        [
+          "Chronic lymphocytic leukemia",
+          "Progressive fatigue, splenomegaly, and lymphadenopathy in a middle-aged man are consistent with this indolent lymphoproliferative disorder."
+        ],
+        [
+          "Tuberculosis (disseminated)",
+          "Constitutional symptoms (night sweats, weight loss, fatigue), lymphadenopathy, and splenomegaly can occur with extrapulmonary TB."
+        ],
+        [
+          "Pancreatic adenocarcinoma",
+          "Abdominal pain, weight loss, and left supraclavicular lymphadenopathy (indicating metastatic spread) are compatible with advanced pancreatic cancer."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out specific diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Non-Hodgkin lymphoma",
+          "Widespread lymphadenopathy, splenomegaly, B symptoms (night sweats, weight loss), and fixed supraclavicular node (Virchow's node) are classic presentations."
+        ],
+        [
+          "Hodgkin lymphoma",
+          "Presents with progressive lymphadenopathy involving multiple nodal chains, B symptoms, and can involve mediastinal nodes, though less commonly causes massive splenomegaly."
+        ],
+        [
+          "Chronic lymphocytic leukemia",
+          "Can present with generalized lymphadenopathy, splenomegaly, and constitutional symptoms in advanced stages."
+        ],
+        [
+          "Metastatic carcinoma",
+          "Widespread lymphadenopathy including supraclavicular involvement could represent metastatic spread from an occult primary malignancy."
+        ],
+        [
+          "Tuberculosis (disseminated)",
+          "Can cause constitutional symptoms, generalized lymphadenopathy, and splenomegaly, though lymph nodes are typically mobile rather than fixed."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Infectious mononucleosis",
+          "Lymph nodes in infectious mononucleosis are typically tender and mobile, not fixed, and the massive extent of multi-region involvement is atypical."
+        ],
+        [
+          "Sarcoidosis",
+          "While it can cause lymphadenopathy, the fixed quality of nodes and massive multi-region involvement with splenomegaly makes lymphoma much more likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Diffuse large B-cell lymphoma",
+          "CD20-positive lymphocytes with high proliferative index, widespread lymphadenopathy, B symptoms, and splenomegaly are classic features of aggressive B-cell NHL."
+        ],
+        [
+          "Burkitt lymphoma",
+          "High proliferative index, CD20 positivity, B symptoms, and widespread disease fit this highly aggressive B-cell lymphoma, though more common in younger patients."
+        ],
+        [
+          "Follicular lymphoma (transformed)",
+          "CD20-positive B-cell lymphoma with constitutional symptoms and bulky disease may represent high-grade transformation of indolent follicular lymphoma."
+        ],
+        [
+          "Mantle cell lymphoma",
+          "CD20-positive B-cell lymphoma presenting with widespread lymphadenopathy, splenomegaly, and systemic symptoms in a middle-aged man is consistent with this diagnosis."
+        ],
+        [
+          "Chronic lymphocytic leukemia/Small lymphocytic lymphoma (Richter transformation)",
+          "CD20-positive disease with high proliferative index and aggressive features could represent transformation to aggressive lymphoma."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hodgkin lymphoma",
+          "Reed-Sternberg cells would be CD15/CD30 positive, not CD20 positive which is a B-cell marker."
+        ],
+        [
+          "T-cell lymphoma",
+          "The CD20 positivity confirms B-cell lineage, excluding T-cell lymphoproliferative disorders."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Lymphoma",
+            "B symptoms (night sweats, weight loss, fatigue) with abdominal pain suggest possible lymph node involvement or organomegaly."
+          ],
+          [
+            "Tuberculosis",
+            "Constitutional symptoms including night sweats, weight loss, and fatigue with abdominal pain are consistent with extrapulmonary TB."
+          ],
+          [
+            "Metastatic malignancy",
+            "Progressive constitutional symptoms with abdominal pain in a 55-year-old man raises concern for advanced cancer with abdominal metastases."
+          ],
+          [
+            "Chronic liver disease with cirrhosis",
+            "Fatigue, abdominal pain, and weight loss could indicate decompensated liver disease with ascites or hepatocellular carcinoma."
+          ],
+          [
+            "Chronic pancreatitis",
+            "Progressive abdominal pain with weight loss and systemic symptoms can occur with chronic pancreatic inflammation and malabsorption."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Non-Hodgkin lymphoma",
+            "Rubbery supraclavicular lymphadenopathy, splenomegaly, B symptoms (night sweats, weight loss, fatigue) are classic presentations of lymphoma in this age group."
+          ],
+          [
+            "Hodgkin lymphoma",
+            "Painless rubbery lymphadenopathy with B symptoms and splenomegaly are characteristic, though less common at age 55 than in younger adults."
+          ],
+          [
+            "Chronic lymphocytic leukemia",
+            "Can present with lymphadenopathy, splenomegaly, fatigue, and constitutional symptoms in middle-aged to older adults."
+          ],
+          [
+            "Metastatic solid tumor malignancy",
+            "Supraclavicular lymphadenopathy (Virchow's node) with constitutional symptoms and splenomegaly suggests possible abdominal or thoracic primary malignancy."
+          ],
+          [
+            "Tuberculosis",
+            "Can cause constitutional symptoms including night sweats, weight loss, lymphadenopathy, and splenomegaly, particularly in endemic areas or immunocompromised states."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any major diagnostic possibilities."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Non-Hodgkin lymphoma",
+            "Widespread lymphadenopathy, splenomegaly, B symptoms (night sweats, weight loss, fatigue), and rubbery lymph nodes are classic features of aggressive lymphoma."
+          ],
+          [
+            "Hodgkin lymphoma",
+            "Constitutional B symptoms with rubbery supraclavicular lymph node and contiguous spread pattern through multiple nodal regions is characteristic."
+          ],
+          [
+            "Metastatic solid organ malignancy",
+            "Widespread lymphadenopathy involving multiple nodal stations could represent metastatic disease from an occult primary tumor."
+          ],
+          [
+            "Tuberculosis",
+            "Systemic symptoms including night sweats, weight loss, and extensive lymphadenopathy can occur with disseminated TB, though less likely with this distribution."
+          ],
+          [
+            "Sarcoidosis",
+            "Can present with widespread lymphadenopathy involving mediastinal and peripheral nodes with constitutional symptoms, though massive enlargement is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infectious mononucleosis",
+            "Patient's age (55 years) and massive extent of lymphadenopathy make this unlikely despite constitutional symptoms."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Diffuse large B-cell lymphoma",
+            "CD20-positive lymphocytes with high proliferative index, systemic B symptoms, and widespread lymphadenopathy are classic findings for this aggressive lymphoma."
+          ],
+          [
+            "Burkitt lymphoma",
+            "High proliferative index and CD20 positivity with systemic symptoms and widespread disease suggest this highly aggressive B-cell lymphoma."
+          ],
+          [
+            "Mantle cell lymphoma",
+            "CD20-positive B-cell lymphoma presenting with constitutional symptoms, lymphadenopathy, and splenomegaly, though typically has intermediate proliferative index."
+          ],
+          [
+            "Follicular lymphoma (high-grade transformation)",
+            "CD20-positive B-cell lymphoma with possible transformation to aggressive variant given the high proliferative index and systemic symptoms."
+          ],
+          [
+            "Richter transformation",
+            "Transformation of chronic lymphocytic leukemia to aggressive lymphoma would present with CD20-positive cells, high proliferative index, and constitutional symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hodgkin lymphoma",
+            "Reed-Sternberg cells would be CD15/CD30 positive and CD20 negative, not consistent with CD20-positive lymphocytes."
+          ],
+          [
+            "Reactive lymphadenopathy",
+            "High proliferative index and extensive systemic involvement with constitutional symptoms indicate malignancy rather than reactive process."
+          ],
+          [
+            "T-cell lymphoma",
+            "CD20 is a B-cell marker, ruling out T-cell lineage lymphomas."
+          ]
+        ]
+      },
+      "cf_id": "case_049_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a painful, enlarged, and rubbery supraclavicular lymph node, which is more consistent with an inflammatory process than lymphoma."
+    }
+  ]
+}

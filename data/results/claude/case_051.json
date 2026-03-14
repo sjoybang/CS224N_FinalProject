@@ -1,0 +1,298 @@
+{
+  "case_id": "case_051",
+  "model": "claude",
+  "ground_truth": "Muscle physiology during exercise",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Normal healthy volunteer",
+          "A 22-year-old male participating in a research study on muscle properties suggests he is a healthy control subject with no underlying pathology."
+        ],
+        [
+          "Subclinical myopathy",
+          "Young males may have undiagnosed mild muscle disorders that could be detected through detailed research protocols studying muscle properties."
+        ],
+        [
+          "Athletic adaptation",
+          "Participation in a muscle properties study may indicate he is an athlete being studied for physiological adaptations to training."
+        ],
+        [
+          "Neuromuscular junction disorder",
+          "Early-stage conditions like myasthenia gravis can present in young adults and might be investigated through muscle property research."
+        ],
+        [
+          "Metabolic myopathy",
+          "Glycogen storage diseases or mitochondrial myopathies can present subtly in young adults and may be subjects of muscle research studies."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient clinical information has been provided to rule out any specific diagnoses at this stage."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Normal physiological response to exercise study protocol",
+          "A healthy 22-year-old male undergoing controlled research conditions with expected physiological responses to resistance exercise, aerobic exercise, and electrical stimulation."
+        ],
+        [
+          "Exercise-induced muscle fatigue",
+          "The burpee exercise at heart rate 150/min and electrical stimulation protocol may induce temporary physiological muscle fatigue being measured as part of the study design."
+        ],
+        [
+          "Tetanic muscle contraction (experimental)",
+          "The 50 Hz electrical stimulation of the gastrocnemius is designed to produce tetanic contraction as part of the research protocol on muscle properties."
+        ],
+        [
+          "Benign exercise-induced tachycardia",
+          "Heart rate of 150/min during burpees represents normal cardiovascular response to moderate-intensity exercise in a young healthy male."
+        ],
+        [
+          "Subclinical neuromuscular disorder",
+          "Though unlikely given study participation, occult conditions like mild myopathy or channelopathy could be unmasked by intensive muscle testing protocols."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute cardiac pathology",
+          "Heart rate of 150/min during burpees is an appropriate physiological response in a 22-year-old male participating in a research study without mention of cardiac symptoms."
+        ],
+        [
+          "Rhabdomyolysis",
+          "No clinical indicators mentioned such as muscle pain, weakness, dark urine, or other signs of acute muscle breakdown beyond normal exercise parameters."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Normal physiological response",
+          "EMG findings show expected increased electrical activity in muscles during appropriate stimulation (voluntary contraction, cardiac demand, and direct electrical stimulation) consistent with normal muscle function."
+        ],
+        [
+          "Subclinical myopathy with preserved recruitment",
+          "Increased EMG activity could represent compensatory motor unit recruitment in early muscle disease, though the context suggests normal experimental responses."
+        ],
+        [
+          "Hyperexcitable muscle membrane disorder",
+          "Conditions like myotonia or channelopathy could show exaggerated EMG responses to stimulation, though pattern described appears physiologically appropriate."
+        ],
+        [
+          "Autonomic hyperresponsiveness",
+          "Excessive sympathetic tone could theoretically enhance muscle electrical activity across multiple muscle types, though cardiac response at 150 bpm during burpees is expected."
+        ],
+        [
+          "Subclinical thyrotoxic myopathy",
+          "Hyperthyroidism can increase muscle excitability and cardiac response, though the EMG pattern described fits normal exercise physiology."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Denervation injury",
+          "No mention of fibrillation potentials, positive sharp waves, or abnormal spontaneous activity characteristic of denervation."
+        ],
+        [
+          "Myasthenia gravis",
+          "No decremental response or fatigability pattern described; increased rather than decreased activity noted."
+        ],
+        [
+          "Rhabdomyolysis",
+          "Clinical scenario describes research study with monitored responses, not pathological muscle breakdown."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Normal physiological response",
+          "The increased motor unit recruitment with increased tension during varied stimuli (voluntary contraction, exercise, and electrical stimulation) represents expected normal muscle physiology in a healthy research subject."
+        ],
+        [
+          "Enhanced motor unit synchronization",
+          "The correlation between motor unit recruitment and tension across different muscle types suggests potentially heightened neuromuscular efficiency or training adaptation in this young male subject."
+        ],
+        [
+          "Physiologic muscle fatigue (early)",
+          "The burpee-induced tachycardia and sustained electrical stimulation may represent early fatigue states with compensatory motor unit recruitment to maintain force output."
+        ],
+        [
+          "Type II muscle fiber predominance",
+          "The robust response to high-intensity exercise (burpees) and electrical stimulation may indicate a genetic predisposition toward fast-twitch fiber dominance with effective recruitment patterns."
+        ],
+        [
+          "Caffeine or stimulant effect",
+          "Pre-study consumption of performance-enhancing substances could explain the heightened electrical activity and motor unit recruitment across all tested muscle groups."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myopathy",
+          "Normal correlation between motor unit recruitment and tension generation argues against primary muscle disease."
+        ],
+        [
+          "Denervation injury",
+          "Appropriate motor unit recruitment patterns with physiologic stimuli exclude significant nerve damage."
+        ],
+        [
+          "Neuromuscular junction disorder",
+          "Normal electrical-mechanical coupling across all three muscle types rules out disorders like myasthenia gravis."
+        ],
+        [
+          "Rhabdomyolysis",
+          "Absence of pathological findings and appropriate physiologic responses exclude acute muscle breakdown."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Normal physiological state",
+            "A healthy 22-year-old male participating in research would most likely have no pathology."
+          ],
+          [
+            "Subclinical myopathy",
+            "Young adults may have undiagnosed mild muscle disorders that could be detected during research testing."
+          ],
+          [
+            "Exercise-induced muscle changes",
+            "Recent physical activity could cause temporary alterations in muscle properties being measured."
+          ],
+          [
+            "Metabolic myopathy",
+            "Mild metabolic muscle disorders may be asymptomatic in young adults until stress testing or detailed evaluation."
+          ],
+          [
+            "Muscular dystrophy (mild form)",
+            "Some dystrophies like Becker's can present subtly in young adulthood with preserved function."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient clinical information to rule out any diagnoses at this stage."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Exercise-induced muscle cramps (benign)",
+            "Healthy young male experiencing typical cramping during intense unaccustomed exercise with elevated heart rate and repetitive muscle contractions."
+          ],
+          [
+            "Exertional rhabdomyolysis",
+            "Significant muscle pain and cramping during strenuous burpee exercise could indicate muscle breakdown, particularly in an untrained individual."
+          ],
+          [
+            "McArdle disease (Glycogen storage disease type V)",
+            "Muscle cramping and pain during exercise in a young adult may reflect inability to break down muscle glycogen for energy."
+          ],
+          [
+            "Dehydration/electrolyte imbalance",
+            "Muscle cramping during intense exercise with tachycardia suggests possible fluid or electrolyte depletion affecting muscle function."
+          ],
+          [
+            "Duchenne/Becker muscular dystrophy (mild)",
+            "Young male with exercise-intolerance and muscle pain could represent late-presenting mild dystrophinopathy, though age makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Malignant hyperthermia",
+            "No exposure to triggering anesthetic agents and patient is in research setting, not surgical environment."
+          ],
+          [
+            "Myocardial infarction",
+            "Patient is 22 years old with leg-specific symptoms and appropriate tachycardia for exercise intensity."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Exercise-associated muscle cramps (EAMC)",
+            "Patient experienced significant cramping and leg pain specifically during high-intensity burpee exercise with elevated heart rate, consistent with exertional muscle cramping."
+          ],
+          [
+            "Exertional rhabdomyolysis",
+            "Intense burpee exercise causing muscle pain and cramping could indicate muscle breakdown, though EMG shows normal electrical activity pattern without evidence of muscle damage yet."
+          ],
+          [
+            "McArdle disease (Glycogen storage disease type V)",
+            "Muscle cramping during exercise in a young male suggests possible glycogen metabolism disorder, though EMG activity appears normal during electrical stimulation."
+          ],
+          [
+            "Dehydration/electrolyte imbalance",
+            "Muscle cramping during intense exercise could result from fluid or electrolyte depletion, particularly affecting the gastrocnemius during sustained activity."
+          ],
+          [
+            "Normal physiological response to intense exercise",
+            "The cramping may represent normal muscle fatigue response to unaccustomed high-intensity exercise in a research subject, with EMG showing expected physiological activity patterns."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myasthenia gravis",
+            "EMG shows normal increased electrical activity with stimulation rather than decremental response or fatigability pattern."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "Normal EMG responses to voluntary contraction and electrical stimulation argue against demyelinating neuropathy."
+          ],
+          [
+            "Muscular dystrophy",
+            "Normal EMG electrical activity patterns during all three phases inconsistent with myopathic changes."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Normal physiological response",
+            "The progressive motor unit recruitment with increased tension across all phases represents expected neuromuscular physiology in a healthy young male research subject."
+          ],
+          [
+            "Exercise-associated muscle cramps (EAMC)",
+            "The reported significant muscle cramping and pain during burpees suggests transient exercise-induced cramping related to high-intensity activity and possible dehydration or electrolyte shifts."
+          ],
+          [
+            "Deconditioning",
+            "The disproportionate cramping response to moderate exercise (20 burpees) may indicate baseline physical deconditioning leading to early muscle fatigue and cramping."
+          ],
+          [
+            "Electrolyte imbalance",
+            "Muscle cramping during exercise with otherwise normal EMG patterns could reflect underlying hyponatremia, hypokalemia, or hypocalcemia affecting muscle membrane excitability."
+          ],
+          [
+            "McArdle disease (Glycogen storage disease type V)",
+            "Though less likely given normal motor unit recruitment, exercise-induced cramping and pain in a young male warrants consideration of this metabolic myopathy affecting glycogen breakdown."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary cardiac pathology",
+            "Heart showed appropriate increased electrical activity during exercise without any indicators of dysfunction."
+          ],
+          [
+            "Neuromuscular junction disorder (myasthenia gravis)",
+            "Normal motor unit recruitment pattern and appropriate response to electrical stimulation argue against impaired neuromuscular transmission."
+          ],
+          [
+            "Denervation syndromes",
+            "EMG demonstrates normal motor unit recruitment patterns without evidence of denervation or reinnervation changes."
+          ]
+        ]
+      },
+      "cf_id": "case_051_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports significant muscle cramping and pain in his legs during the burpee exercise phase, which is atypical for normal muscle physiology during exercise and suggests an underlying metabolic or electrolyte abnormality."
+    }
+  ]
+}

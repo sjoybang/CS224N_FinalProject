@@ -1,0 +1,126 @@
+{
+  "case_id": "case_035",
+  "model": "biogpt",
+  "ground_truth": "Meningococcal meningitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 4-year-old boy is brought to the emergency department by his parents, who report that he has been lethargic and confused since earlier that day. He also has a severe headache, vomiting, and a high-grade fever. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 4-year-old boy is brought to the emergency department by his parents, who report that he has been lethargic and confused since earlier that day. He also has a severe headache, vomiting, and a high-grade fever. [Stage 2] The patient's blood pressure is 70 / 50 mm Hg, heart rate is 120 / min, respiratory rate is 22 / min, and temperature is 39.3 \u00b0 C (102.4 \u00b0 F). On examination, the child is lethargic and his skin is pale, with several petechiae over his buttocks. There is a purulent nasal discharge from both nostrils, and marked neck rigidity is present. The lungs are clear to auscultation bilaterally, and heart sounds are normal. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 4-year-old boy is brought to the emergency department by his parents, who report that he has been lethargic and confused since earlier that day. He also has a severe headache, vomiting, and a high-grade fever. [Stage 2] The patient's blood pressure is 70 / 50 mm Hg, heart rate is 120 / min, respiratory rate is 22 / min, and temperature is 39.3 \u00b0 C (102.4 \u00b0 F). On examination, the child is lethargic and his skin is pale, with several petechiae over his buttocks. There is a purulent nasal discharge from both nostrils, and marked neck rigidity is present. The lungs are clear to auscultation bilaterally, and heart sounds are normal. [Stage 3] Cerebrospinal fluid analysis reveals an opening pressure of 100 mm H2O, cloudy appearance, protein of 500 mg / dL, white blood cell count of 2500 / \u03bcL with polymorphonuclear predominance, and glucose of 31 mg / dL. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 4-year-old boy is brought to the emergency department by his parents, who report that he has been lethargic and confused since earlier that day. He also has a severe headache, vomiting, and a high-grade fever. [Stage 2] The patient's blood pressure is 70 / 50 mm Hg, heart rate is 120 / min, respiratory rate is 22 / min, and temperature is 39.3 \u00b0 C (102.4 \u00b0 F). On examination, the child is lethargic and his skin is pale, with several petechiae over his buttocks. There is a purulent nasal discharge from both nostrils, and marked neck rigidity is present. The lungs are clear to auscultation bilaterally, and heart sounds are normal. [Stage 3] Cerebrospinal fluid analysis reveals an opening pressure of 100 mm H2O, cloudy appearance, protein of 500 mg / dL, white blood cell count of 2500 / \u03bcL with polymorphonuclear predominance, and glucose of 31 mg / dL. [Stage 4] The cerebrospinal fluid culture is positive for Neisseria meningitidis. Further immunologic workup reveals absent terminal complement activity (CH50 = 0), confirming a complement deficiency. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 4-year-old boy is brought to the emergency department by his parents, who report that he has been lethargic and confused since earlier that day. He also has a severe headache, vomiting, and a high-grade fever. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 4-year-old boy is brought to the emergency department by his parents, who report that he has been lethargic and confused since earlier that day. He also has a severe headache, vomiting, and a high-grade fever. [Stage 2] The patient's blood pressure is 70 / 50 mm Hg, heart rate is 120 / min, respiratory rate is 22 / min, and temperature is 39.3 \u00b0 C (102.4 \u00b0 F). On examination, the child is lethargic and his skin is pale, with several petechiae over his buttocks. There is a purulent nasal discharge from both nostrils, and no neck rigidity is present. The lungs are clear to auscultation bilaterally, and heart sounds are normal. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 4-year-old boy is brought to the emergency department by his parents, who report that he has been lethargic and confused since earlier that day. He also has a severe headache, vomiting, and a high-grade fever. [Stage 2] The patient's blood pressure is 70 / 50 mm Hg, heart rate is 120 / min, respiratory rate is 22 / min, and temperature is 39.3 \u00b0 C (102.4 \u00b0 F). On examination, the child is lethargic and his skin is pale, with several petechiae over his buttocks. There is a purulent nasal discharge from both nostrils, and no neck rigidity is present. The lungs are clear to auscultation bilaterally, and heart sounds are normal. [Stage 3] Cerebrospinal fluid analysis reveals an opening pressure of 100 mm H2O, cloudy appearance, protein of 500 mg / dL, white blood cell count of 2500 / \u03bcL with polymorphonuclear predominance, and glucose of 31 mg / dL. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 4-year-old boy is brought to the emergency department by his parents, who report that he has been lethargic and confused since earlier that day. He also has a severe headache, vomiting, and a high-grade fever. [Stage 2] The patient's blood pressure is 70 / 50 mm Hg, heart rate is 120 / min, respiratory rate is 22 / min, and temperature is 39.3 \u00b0 C (102.4 \u00b0 F). On examination, the child is lethargic and his skin is pale, with several petechiae over his buttocks. There is a purulent nasal discharge from both nostrils, and no neck rigidity is present. The lungs are clear to auscultation bilaterally, and heart sounds are normal. [Stage 3] Cerebrospinal fluid analysis reveals an opening pressure of 100 mm H2O, cloudy appearance, protein of 500 mg / dL, white blood cell count of 2500 / \u03bcL with polymorphonuclear predominance, and glucose of 31 mg / dL. [Stage 4] The cerebrospinal fluid culture is positive for Neisseria meningitidis. Further immunologic workup reveals absent terminal complement activity (CH50 = 0), confirming a complement deficiency. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_035_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of nuchal rigidity makes meningococcal meningitis less likely."
+    }
+  ]
+}

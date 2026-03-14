@@ -1,0 +1,310 @@
+{
+  "case_id": "case_052",
+  "model": "claude",
+  "ground_truth": "Medial collateral ligament",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Anterior cruciate ligament (ACL) tear",
+          "Common basketball injury in young males involving pivoting or sudden deceleration with acute knee pain."
+        ],
+        [
+          "Medial meniscus tear",
+          "Frequently occurs with twisting injuries during basketball, causing pain and possible mechanical symptoms."
+        ],
+        [
+          "Patellar tendon strain",
+          "Jumping and landing during basketball can strain the patellar tendon, causing anterior knee pain."
+        ],
+        [
+          "Medial collateral ligament (MCL) sprain",
+          "Valgus stress during basketball can injure the MCL, presenting with medial knee pain."
+        ],
+        [
+          "Patellar dislocation",
+          "Lateral patellar displacement can occur with cutting movements in basketball, causing acute pain and instability."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to rule out any diagnoses definitively."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Medial collateral ligament (MCL) sprain",
+          "Valgus stress test laxity with lateral collision mechanism directly indicates MCL injury without joint effusion suggesting isolated ligamentous injury."
+        ],
+        [
+          "MCL tear with medial meniscus injury",
+          "Valgus mechanism can cause combined MCL and medial meniscus damage, though absence of effusion makes significant meniscal tear less likely."
+        ],
+        [
+          "Medial capsular injury",
+          "Lateral impact can cause medial capsule disruption producing valgus laxity similar to isolated MCL injury."
+        ],
+        [
+          "Grade I MCL sprain with bone contusion",
+          "Lateral knee collision could cause both MCL stretching and osseous contusion, though bone injury typically produces more swelling."
+        ],
+        [
+          "Pes anserinus strain",
+          "Medial knee structures including pes anserinus tendons can be injured with valgus stress mechanism, though isolated strain wouldn't cause valgus laxity."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior cruciate ligament (ACL) tear",
+          "Negative Lachman test with firm endpoint rules out ACL injury."
+        ],
+        [
+          "Posterior cruciate ligament (PCL) tear",
+          "Negative posterior drawer test rules out PCL injury."
+        ],
+        [
+          "Lateral collateral ligament (LCL) injury",
+          "Negative varus stress test and medial-sided injury mechanism rule out LCL pathology."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Grade II MCL sprain",
+          "MRI shows hyperintensity of MCL with positive valgus stress test and laxity, indicating partial ligament tear without complete disruption."
+        ],
+        [
+          "Grade I MCL sprain",
+          "MRI hyperintensity could represent mild injury, though the demonstrated laxity on valgus stress makes this less likely than Grade II."
+        ],
+        [
+          "Medial meniscus tear",
+          "Valgus mechanism and MCL injury often occur with concomitant medial meniscus damage that may not be fully characterized on initial MRI reading."
+        ],
+        [
+          "Bone contusion of medial femoral condyle or tibial plateau",
+          "Contact injury mechanism with MCL involvement may cause associated bone bruising visible on MRI."
+        ],
+        [
+          "Medial joint capsule sprain",
+          "MCL hyperintensity may extend to adjacent capsular structures injured during the valgus stress mechanism."
+        ]
+      ],
+      "eliminated": [
+        [
+          "ACL tear",
+          "MRI explicitly shows no disruption of ACL and Lachman test is negative with firm endpoint."
+        ],
+        [
+          "PCL tear",
+          "MRI shows no PCL disruption and posterior drawer test is negative with firm endpoint."
+        ],
+        [
+          "LCL injury",
+          "MRI shows no LCL disruption and varus stress test is negative."
+        ],
+        [
+          "Grade III MCL tear",
+          "No complete disruption seen on MRI and exam shows laxity rather than gross instability with endpoint present."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Grade II medial collateral ligament (MCL) sprain",
+          "MRI shows hyperintensity along the MCL with positive valgus stress test and laxity, consistent with partial tear without complete disruption."
+        ],
+        [
+          "Grade I medial collateral ligament (MCL) sprain",
+          "Valgus laxity and MRI hyperintensity could represent mild sprain, though degree of laxity suggests more than grade I injury."
+        ],
+        [
+          "Bone contusion of medial femoral condyle or medial tibial plateau",
+          "Lateral-to-medial collision mechanism could cause bone bruising visible on MRI alongside MCL injury."
+        ],
+        [
+          "Medial meniscus tear",
+          "Valgus stress mechanism can cause associated meniscal injury, though MRI report does not explicitly mention meniscal pathology."
+        ],
+        [
+          "Grade III medial collateral ligament (MCL) sprain",
+          "Complete tear remains possible if endpoint was subtle, though firm laxity endpoint and intact ligament on MRI argue against this."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior cruciate ligament (ACL) tear",
+          "MRI explicitly shows no ACL disruption and Lachman test is negative with firm endpoint."
+        ],
+        [
+          "Posterior cruciate ligament (PCL) tear",
+          "MRI shows no PCL disruption and posterior drawer test is negative with firm endpoint."
+        ],
+        [
+          "Lateral collateral ligament (LCL) sprain",
+          "Varus stress test is negative and MRI shows no LCL disruption."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Anterior cruciate ligament (ACL) tear",
+            "Common basketball injury from pivoting or landing mechanisms in a young athletic male with acute knee trauma."
+          ],
+          [
+            "Meniscal tear",
+            "Twisting injuries during basketball frequently cause meniscal damage, particularly in the medial meniscus."
+          ],
+          [
+            "Patellar tendinitis",
+            "Repetitive jumping and landing in basketball can cause patellar tendon inflammation presenting as anterior knee pain."
+          ],
+          [
+            "Medial collateral ligament (MCL) sprain",
+            "Valgus stress during basketball can injure the MCL, causing medial knee pain and instability."
+          ],
+          [
+            "Patellar dislocation",
+            "Lateral patellar displacement can occur with cutting movements in basketball, causing acute pain and giving way sensation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to rule out diagnoses definitively."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Medial collateral ligament (MCL) tear",
+            "Valgus stress test laxity with lateral knee collision mechanism directly indicates MCL injury."
+          ],
+          [
+            "Medial meniscus tear",
+            "Large effusion and valgus mechanism often cause associated medial meniscus injury, which commonly occurs with MCL tears."
+          ],
+          [
+            "MCL sprain with bone contusion",
+            "Significant trauma with effusion may include bone contusion alongside ligamentous injury."
+          ],
+          [
+            "Combined MCL and medial meniscus injury",
+            "The significant effusion and mechanism suggest possible concomitant injuries to medial structures."
+          ],
+          [
+            "Tibial plateau fracture",
+            "Direct lateral blow with large effusion warrants consideration of fracture despite negative ligamentous instability tests."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anterior cruciate ligament (ACL) tear",
+            "Negative Lachman test with firm endpoint rules out ACL injury."
+          ],
+          [
+            "Posterior cruciate ligament (PCL) tear",
+            "Negative posterior drawer test rules out PCL injury."
+          ],
+          [
+            "Lateral collateral ligament (LCL) tear",
+            "Negative varus stress test rules out LCL injury."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Grade II MCL sprain",
+            "MRI shows MCL hyperintensity with positive valgus stress test and large effusion, indicating partial tear without complete disruption."
+          ],
+          [
+            "Grade III MCL sprain",
+            "Valgus laxity and MRI hyperintensity could represent complete tear, though lack of disruption description suggests against this."
+          ],
+          [
+            "Medial meniscus tear",
+            "Valgus mechanism and large effusion raise concern for concomitant meniscal injury despite MRI focusing on ligamentous findings."
+          ],
+          [
+            "Bone contusion",
+            "Direct collision mechanism could cause bone bruising contributing to effusion and pain even with intact ligaments."
+          ],
+          [
+            "Medial joint capsule injury",
+            "Valgus stress and effusion may indicate capsular disruption associated with the MCL injury."
+          ]
+        ],
+        "eliminated": [
+          [
+            "ACL tear",
+            "MRI explicitly shows no disruption of ACL and Lachman test negative with firm endpoint."
+          ],
+          [
+            "PCL tear",
+            "MRI shows intact PCL and posterior drawer test negative with firm endpoint."
+          ],
+          [
+            "LCL sprain",
+            "Varus stress test negative and MRI shows no LCL disruption."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Grade II medial collateral ligament (MCL) sprain",
+            "MRI shows hyperintensity along the MCL with valgus laxity on exam but no complete disruption, consistent with partial tear."
+          ],
+          [
+            "Grade III medial collateral ligament (MCL) tear",
+            "Valgus laxity could represent complete tear, though MRI showing no disruption makes this less likely than grade II."
+          ],
+          [
+            "Medial meniscus tear",
+            "Large effusion and valgus mechanism could cause concomitant meniscal injury, though not mentioned on MRI."
+          ],
+          [
+            "Bone contusion",
+            "Valgus force mechanism can cause osseous injury on medial femoral condyle or tibial plateau, contributing to effusion."
+          ],
+          [
+            "Pes anserinus bursitis",
+            "Medial knee pain and effusion could involve inflammation of the pes anserinus bursa from the valgus trauma."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anterior cruciate ligament (ACL) tear",
+            "Negative Lachman test and MRI showing intact ACL rules this out."
+          ],
+          [
+            "Posterior cruciate ligament (PCL) tear",
+            "Negative posterior drawer test and MRI showing intact PCL rules this out."
+          ],
+          [
+            "Lateral collateral ligament (LCL) injury",
+            "Negative varus stress test and intact LCL on MRI rules this out."
+          ],
+          [
+            "Grade I MCL sprain",
+            "Significant laxity on valgus stress testing indicates more than grade I injury."
+          ]
+        ]
+      },
+      "cf_id": "case_052_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of a large effusion argues against an isolated MCL injury, which typically presents with minimal to no effusion."
+    }
+  ]
+}

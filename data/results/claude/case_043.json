@@ -1,0 +1,274 @@
+{
+  "case_id": "case_043",
+  "model": "claude",
+  "ground_truth": "Narrowing and calcification of vessels",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Peripheral arterial disease (PAD)",
+          "Classic presentation of claudication (leg pain with walking) in a 60-year-old man at risk for atherosclerotic vascular disease."
+        ],
+        [
+          "Lumbar spinal stenosis",
+          "Neurogenic claudication can present as leg pain with ambulation, common in this age group due to degenerative changes."
+        ],
+        [
+          "Chronic venous insufficiency",
+          "Can cause leg pain with walking due to venous hypertension and pooling, though typically associated with prolonged standing."
+        ],
+        [
+          "Diabetic peripheral neuropathy",
+          "Can cause leg pain exacerbated by activity if underlying diabetes is present, though pain pattern may be less specifically related to walking."
+        ],
+        [
+          "Chronic compartment syndrome",
+          "Exercise-induced leg pain from increased compartment pressure, though more common in younger athletes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Peripheral arterial disease (PAD)",
+          "Buttock/leg claudication progressing to rest pain, bilateral hair loss, and muscle atrophy are classic features of chronic limb ischemia."
+        ],
+        [
+          "Leriche syndrome",
+          "Aortoiliac occlusive disease classically presents with bilateral buttock/thigh claudication, atrophy, and hair loss in men of this age."
+        ],
+        [
+          "Lumbar spinal stenosis",
+          "Neurogenic claudication can cause bilateral buttock and leg pain with walking, though rest pain and hair loss are less typical."
+        ],
+        [
+          "Chronic venous insufficiency",
+          "Can cause bilateral leg pain and skin changes, though hair loss and buttock claudication are atypical features."
+        ],
+        [
+          "Diabetic peripheral neuropathy",
+          "Can cause bilateral lower extremity pain at rest with atrophy, though claudication pattern is less characteristic."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute limb ischemia",
+          "Progressive symptom course over time rather than sudden onset rules out acute arterial occlusion."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Peripheral arterial disease (PAD)",
+          "ABI of 0.5 indicates moderate-to-severe arterial occlusion with classic claudication progressing to rest pain, supported by Doppler findings of arterial stenosis and calcification."
+        ],
+        [
+          "Aortoiliac occlusive disease (Leriche syndrome)",
+          "Buttock and bilateral thigh claudication with progression to rest pain suggests proximal arterial involvement, though ABI confirms peripheral arterial insufficiency."
+        ],
+        [
+          "Critical limb ischemia",
+          "Rest pain in feet, severely reduced ABI (0.5), and arterial stenosis indicate progression beyond claudication to limb-threatening ischemia."
+        ],
+        [
+          "Multilevel arterial occlusive disease",
+          "Diffuse symptoms from buttocks to feet with calcification and stenosis on Doppler suggest involvement of multiple arterial segments."
+        ],
+        [
+          "Atherosclerotic occlusive disease with diabetic component",
+          "The pattern of calcification and diffuse arterial involvement may suggest underlying metabolic disease contributing to accelerated atherosclerosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Lumbar spinal stenosis",
+          "ABI of 0.5, arterial stenosis on Doppler, and vascular examination findings (atrophy, hair loss) confirm vascular rather than neurogenic etiology."
+        ],
+        [
+          "Venous insufficiency",
+          "Reduced ABI and arterial stenosis indicate arterial pathology, not venous disease."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Peripheral arterial disease (PAD) with critical limb ischemia",
+          "ABI of 0.5, rest pain, arterial stenosis/calcification on imaging, and progressive claudication confirm advanced PAD with critical limb ischemia."
+        ],
+        [
+          "Aortoiliac occlusive disease (Leriche syndrome)",
+          "Buttock and bilateral thigh claudication with iliac artery stenosis on angiography is characteristic of this specific PAD variant."
+        ],
+        [
+          "Atherosclerotic arterial occlusive disease",
+          "Multilevel arterial stenosis and calcification in iliac and femoral arteries with typical claudication pattern indicates atherosclerotic disease."
+        ],
+        [
+          "Thromboangiitis obliterans (Buerger disease)",
+          "While less likely at age 60, segmental arterial occlusions can present similarly, though smoking history would be critical."
+        ],
+        [
+          "Blue toe syndrome with proximal embolic source",
+          "Atherosclerotic plaques in iliac/femoral arteries could serve as embolic sources causing distal ischemia, though bilateral presentation makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Lumbar spinal stenosis",
+          "Normal vital signs, abnormal ABI, arterial stenosis on imaging, and hair loss indicate vascular rather than neurogenic claudication."
+        ],
+        [
+          "Chronic venous insufficiency",
+          "Low ABI and arterial stenosis on imaging definitively indicate arterial rather than venous pathology."
+        ],
+        [
+          "Diabetic neuropathy",
+          "Imaging confirms arterial disease as primary pathology, and claudication pattern is\u5178ical for vascular rather than neuropathic etiology."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Peripheral arterial disease (PAD)",
+            "Classic presentation of intermittent claudication in a 60-year-old man with exertional leg pain."
+          ],
+          [
+            "Lumbar spinal stenosis",
+            "Neurogenic claudication can cause leg pain with walking that is relieved by rest or forward flexion."
+          ],
+          [
+            "Chronic venous insufficiency",
+            "Venous congestion can cause leg pain with ambulation, though typically associated with other venous symptoms."
+          ],
+          [
+            "Osteoarthritis of the hip or knee",
+            "Degenerative joint disease commonly causes pain with walking in this age group."
+          ],
+          [
+            "Diabetic peripheral neuropathy",
+            "Can cause painful legs with activity, though typically presents with additional sensory symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Peripheral arterial disease (PAD)",
+            "Leg pain with walking (claudication), progression to rest pain in feet, and physical findings of hair loss and atrophy suggest chronic arterial insufficiency."
+          ],
+          [
+            "Lumbar spinal stenosis",
+            "Pain from buttocks to calves relieved by forward leaning or squatting is classic for neurogenic claudication from spinal canal narrowing."
+          ],
+          [
+            "Chronic aortoiliac occlusive disease (Leriche syndrome)",
+            "Buttock and thigh claudication with vascular examination findings in a 60-year-old man suggests proximal arterial occlusion."
+          ],
+          [
+            "Cauda equina syndrome",
+            "Bilateral leg pain extending from buttocks down with progression to rest symptoms could represent severe nerve root compression."
+          ],
+          [
+            "Diabetic polyneuropathy with vascular disease",
+            "Bilateral lower extremity pain progressing to rest pain in feet with trophic changes could represent combined neuropathic and vascular pathology."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple mechanical low back pain",
+            "Pain relief with forward flexion might suggest this, but the bilateral nature, vascular findings (hair loss, atrophy), and progression to rest pain make this unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Peripheral arterial disease (PAD)",
+            "ABI of 0.5 indicates severe arterial insufficiency, supported by arterial stenosis on Doppler, hair loss, atrophy, and progression from claudication to rest pain."
+          ],
+          [
+            "Leriche syndrome",
+            "Bilateral buttock and thigh claudication with aortoiliac occlusive disease fits the clinical picture, though ABI and Doppler confirm proximal arterial involvement."
+          ],
+          [
+            "Critical limb ischemia",
+            "Rest pain in feet, severely reduced ABI (0.5), and arterial calcification indicate progression beyond claudication to threatened limb viability."
+          ],
+          [
+            "Atherosclerotic occlusive disease",
+            "Arterial stenosis and calcification on Doppler with typical PAD symptoms and risk profile in 60-year-old male are consistent with atherosclerotic etiology."
+          ],
+          [
+            "Multilevel arterial occlusive disease",
+            "Symptoms extending from buttocks to feet with severe ABI reduction suggest involvement of multiple arterial segments from aortoiliac to infrapopliteal vessels."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Lumbar spinal stenosis",
+            "Relief with forward leaning initially suggested neurogenic claudication, but severely reduced ABI (0.5), arterial stenosis on Doppler, and hair loss/atrophy confirm vascular rather than neurogenic etiology."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Peripheral artery disease (PAD) with critical limb ischemia",
+            "ABI of 0.5, rest pain in feet, arterial stenosis and calcification on Doppler and angiography confirm severe arterial insufficiency progressing to critical limb ischemia."
+          ],
+          [
+            "Aortoiliac occlusive disease (Leriche syndrome)",
+            "Buttock and thigh claudication with bilateral leg involvement, iliac artery stenosis on angiography, and atrophied legs suggest proximal arterial occlusive disease."
+          ],
+          [
+            "Atherosclerotic occlusive disease of lower extremities",
+            "Progressive claudication, hair loss, leg atrophy, vascular calcification, and multilevel arterial stenosis (iliac and femoral) indicate chronic atherosclerotic disease."
+          ],
+          [
+            "Chronic limb-threatening ischemia (CLTI)",
+            "Rest pain that no longer resolves, severely reduced ABI, and significant arterial stenosis requiring endovascular intervention indicate advanced stage PAD with limb-threatening ischemia."
+          ],
+          [
+            "Mixed arterial occlusive disease with neurogenic claudication overlay",
+            "Pain relief with forward leaning/squating suggests possible spinal stenosis component, though predominant vascular findings make this less likely but worth considering."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Lumbar spinal stenosis",
+            "While forward leaning relieves pain (neurogenic claudication feature), the severely reduced ABI (0.5), arterial stenosis on imaging, hair loss, and leg atrophy confirm primary vascular etiology rather than neurogenic cause."
+          ],
+          [
+            "Chronic venous insufficiency",
+            "Arterial pathology confirmed by reduced ABI and angiography, not venous disease."
+          ],
+          [
+            "Diabetic neuropathy",
+            "Vascular imaging clearly demonstrates arterial occlusive disease as primary pathology."
+          ]
+        ]
+      },
+      "cf_id": "case_043_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that the pain is relieved when he leans forward or squats, suggesting spinal stenosis rather than vascular disease."
+    }
+  ]
+}

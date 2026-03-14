@@ -1,0 +1,126 @@
+{
+  "case_id": "case_052",
+  "model": "biogpt",
+  "ground_truth": "Medial collateral ligament",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 20-year-old male presents to the office complaining of right knee pain after a basketball injury two days ago. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 20-year-old male presents to the office complaining of right knee pain after a basketball injury two days ago. [Stage 2] The patient reports that the lateral aspect of his right knee collided with another player's knee during a pickup basketball game. On examination, the right knee appears to be the same size as the left, with no visible swelling or effusion. Sensation and strength are intact bilaterally in the lower extremities. Varus stress test is negative, but valgus stress test demonstrates laxity compared to the contralateral knee. Lachman's and posterior drawer tests are negative with firm endpoints. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 20-year-old male presents to the office complaining of right knee pain after a basketball injury two days ago. [Stage 2] The patient reports that the lateral aspect of his right knee collided with another player's knee during a pickup basketball game. On examination, the right knee appears to be the same size as the left, with no visible swelling or effusion. Sensation and strength are intact bilaterally in the lower extremities. Varus stress test is negative, but valgus stress test demonstrates laxity compared to the contralateral knee. Lachman's and posterior drawer tests are negative with firm endpoints. [Stage 3] An MRI of the right knee demonstrates hyperintensity along the medial collateral ligament without disruption of the anterior cruciate ligament, posterior cruciate ligament, or lateral collateral ligament. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 20-year-old male presents to the office complaining of right knee pain after a basketball injury two days ago. [Stage 2] The patient reports that the lateral aspect of his right knee collided with another player's knee during a pickup basketball game. On examination, the right knee appears to be the same size as the left, with no visible swelling or effusion. Sensation and strength are intact bilaterally in the lower extremities. Varus stress test is negative, but valgus stress test demonstrates laxity compared to the contralateral knee. Lachman's and posterior drawer tests are negative with firm endpoints. [Stage 3] An MRI of the right knee demonstrates hyperintensity along the medial collateral ligament without disruption of the anterior cruciate ligament, posterior cruciate ligament, or lateral collateral ligament. [Stage 4] Orthopedic consultation confirms the diagnosis of a grade II medial collateral ligament sprain based on exam findings and MRI results. Conservative management with bracing and physical therapy is recommended. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 20-year-old male presents to the office complaining of right knee pain after a basketball injury two days ago. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 20-year-old male presents to the office complaining of right knee pain after a basketball injury two days ago. [Stage 2] The patient reports that the lateral aspect of his right knee collided with another player's knee during a pickup basketball game. On examination, the right knee demonstrates a large effusion. Sensation and strength are intact bilaterally in the lower extremities. Varus stress test is negative, but valgus stress test demonstrates laxity compared to the contralateral knee. Lachman's and posterior drawer tests are negative with firm endpoints. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 20-year-old male presents to the office complaining of right knee pain after a basketball injury two days ago. [Stage 2] The patient reports that the lateral aspect of his right knee collided with another player's knee during a pickup basketball game. On examination, the right knee demonstrates a large effusion. Sensation and strength are intact bilaterally in the lower extremities. Varus stress test is negative, but valgus stress test demonstrates laxity compared to the contralateral knee. Lachman's and posterior drawer tests are negative with firm endpoints. [Stage 3] An MRI of the right knee demonstrates hyperintensity along the medial collateral ligament without disruption of the anterior cruciate ligament, posterior cruciate ligament, or lateral collateral ligament. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 20-year-old male presents to the office complaining of right knee pain after a basketball injury two days ago. [Stage 2] The patient reports that the lateral aspect of his right knee collided with another player's knee during a pickup basketball game. On examination, the right knee demonstrates a large effusion. Sensation and strength are intact bilaterally in the lower extremities. Varus stress test is negative, but valgus stress test demonstrates laxity compared to the contralateral knee. Lachman's and posterior drawer tests are negative with firm endpoints. [Stage 3] An MRI of the right knee demonstrates hyperintensity along the medial collateral ligament without disruption of the anterior cruciate ligament, posterior cruciate ligament, or lateral collateral ligament. [Stage 4] Orthopedic consultation confirms the diagnosis of a grade II medial collateral ligament sprain based on exam findings and MRI results. Conservative management with bracing and physical therapy is recommended. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_052_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of a large effusion argues against an isolated MCL injury, which typically presents with minimal to no effusion."
+    }
+  ]
+}

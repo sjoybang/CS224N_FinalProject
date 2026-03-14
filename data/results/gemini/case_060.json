@@ -1,0 +1,252 @@
+{
+  "case_id": "case_060",
+  "model": "gemini",
+  "ground_truth": "Drug-induced methemoglobinemia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Hypertension",
+          "The patient has a history of hypertension."
+        ],
+        [
+          "Hepatitis A",
+          "The patient has a history of hepatitis A."
+        ],
+        [
+          "Medication side effect",
+          "The patient is starting a new medication (malaria prophylaxis)."
+        ],
+        [
+          "Travel anxiety",
+          "The patient is traveling to a new country."
+        ],
+        [
+          "Routine health maintenance",
+          "The patient is here for a routine checkup."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "Cyanosis and shortness of breath with a normal oxygen saturation suggest methemoglobinemia, possibly drug-induced from malaria prophylaxis."
+        ],
+        [
+          "Acute Mountain Sickness",
+          "Given his travel to Ecuador and symptoms of headache, dizziness, and shortness of breath, altitude sickness is a possibility."
+        ],
+        [
+          "Pulmonary Embolism",
+          "Shortness of breath and dizziness could indicate a pulmonary embolism, although the normal oxygen saturation makes it less likely."
+        ],
+        [
+          "Carbon Monoxide Poisoning",
+          "Headache, dizziness, and cyanosis could be caused by carbon monoxide poisoning, especially if there is a faulty heating system."
+        ],
+        [
+          "Anemia",
+          "Although less likely with normal oxygen saturation, anemia could present with shortness of breath, dizziness, and headache, especially if pre-existing."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Malaria",
+          "Symptoms presented too early after starting prophylaxis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "The chocolate brown blood and cyanosis despite normal oxygen saturation strongly suggest methemoglobinemia."
+        ],
+        [
+          "Sulfhemoglobinemia",
+          "This condition can also cause cyanosis and chocolate-colored blood, though it is less common than methemoglobinemia."
+        ],
+        [
+          "Cyanide poisoning",
+          "Cyanide poisoning can cause shortness of breath and altered blood color, though typically more severe symptoms are expected."
+        ],
+        [
+          "Carbon monoxide poisoning",
+          "While less likely given the normal oxygen saturation, CO poisoning can cause headache, dizziness, and altered blood color."
+        ],
+        [
+          "Severe hypoxemia with peripheral vasoconstriction",
+          "Although the oxygen saturation is reported as 97%, a falsely high reading or rapid deterioration could lead to cyanosis and shortness of breath."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Malaria",
+          "The symptoms presented are not typical for malaria, and the onset is too rapid after starting prophylaxis."
+        ],
+        [
+          "Hypertension",
+          "While the patient has a history of hypertension, it does not explain the acute symptoms and blood discoloration."
+        ],
+        [
+          "Hepatitis A",
+          "Hepatitis A is unlikely to cause these acute symptoms."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "The chocolate brown blood and elevated methemoglobin levels strongly suggest this diagnosis."
+        ],
+        [
+          "Dapsone-induced methemoglobinemia",
+          "Dapsone, sometimes used as malaria prophylaxis, is a known cause of methemoglobinemia."
+        ],
+        [
+          "Primaquine-induced methemoglobinemia",
+          "Primaquine, another malaria prophylaxis drug, can cause methemoglobinemia, especially in G6PD deficient individuals, though the patient's G6PD is normal."
+        ],
+        [
+          "Aniline dye exposure",
+          "Exposure to aniline dyes can induce methemoglobinemia."
+        ],
+        [
+          "Congenital methemoglobinemia",
+          "Although less likely given the patient's age of onset, a congenital form of methemoglobinemia could be considered."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Malaria",
+          "The patient's symptoms and lab findings are inconsistent with malaria."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Essential Hypertension",
+            "His history of hypertension makes this the most likely diagnosis."
+          ],
+          [
+            "Hepatitis A (resolved)",
+            "The patient has a history of hepatitis A, which may be relevant for travel considerations."
+          ],
+          [
+            "Medication Side Effects",
+            "New medication for malaria prophylaxis could cause unforeseen side effects."
+          ],
+          [
+            "Travel-Associated Illness Risk",
+            "Travel to Ecuador introduces risk of various infections."
+          ],
+          [
+            "Asymptomatic Disease",
+            "Routine checkups can reveal underlying asymptomatic conditions."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Methemoglobinemia",
+            "The cyanosis and shortness of breath despite supplemental oxygen suggest methemoglobinemia, possibly drug-induced from malaria prophylaxis."
+          ],
+          [
+            "Acute Respiratory Distress Syndrome (ARDS)",
+            "The shortness of breath and hypoxemia could indicate ARDS, although the history is not typical."
+          ],
+          [
+            "Pulmonary Embolism",
+            "Shortness of breath and hypoxemia can be caused by a pulmonary embolism, though other symptoms are lacking."
+          ],
+          [
+            "High Altitude Pulmonary Edema (HAPE)",
+            "Given the travel to Ecuador, HAPE is possible, presenting with shortness of breath and cyanosis."
+          ],
+          [
+            "Carbon Monoxide Poisoning",
+            "Headache, dizziness, and cyanosis can be indicative of carbon monoxide poisoning, though the source is unclear."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Malaria",
+            "Symptoms developed too quickly after starting prophylaxis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Methemoglobinemia",
+            "The chocolate brown blood and cyanosis despite supplemental oxygen strongly suggest methemoglobinemia."
+          ],
+          [
+            "Sulfhemoglobinemia",
+            "This condition can also cause cyanosis and brownish blood, though it is less common than methemoglobinemia."
+          ],
+          [
+            "Carbon monoxide poisoning",
+            "CO poisoning can cause headache, dizziness, shortness of breath, and abnormal blood color, though typically cherry red rather than chocolate brown."
+          ],
+          [
+            "Cyanide poisoning",
+            "Cyanide poisoning can cause shortness of breath, headache, and altered blood color, though it is less likely given the gradual onset."
+          ],
+          [
+            "Severe hypoxemia due to pulmonary embolism",
+            "Although less likely given the blood color, PE can cause shortness of breath, cyanosis, and hypoxemia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Malaria",
+            "The rapid onset of symptoms after starting prophylaxis makes malaria less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Drug-induced methemoglobinemia",
+            "The recent initiation of malaria prophylaxis, coupled with elevated methemoglobin levels and cyanosis, strongly suggests a drug-induced cause."
+          ],
+          [
+            "Hereditary methemoglobinemia",
+            "Although less likely given the adult onset, an undiagnosed or late-onset form of hereditary methemoglobinemia could present with similar findings."
+          ],
+          [
+            "Toxic methemoglobinemia",
+            "Exposure to certain chemicals in Ecuador could have induced methemoglobinemia."
+          ],
+          [
+            "Hemoglobinopathy",
+            "An unusual hemoglobin variant could potentially cause methemoglobinemia."
+          ],
+          [
+            "Idiopathic methemoglobinemia",
+            "In rare cases, methemoglobinemia can occur without a clear underlying cause."
+          ]
+        ],
+        "eliminated": [
+          [
+            "G6PD deficiency",
+            "The patient's normal G6PD level makes this diagnosis less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_060_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood oxygen saturation is 85% despite supplemental oxygen, arguing against methemoglobinemia, which typically has a normal saturation gap."
+    }
+  ]
+}

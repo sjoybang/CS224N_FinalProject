@@ -1,0 +1,252 @@
+{
+  "case_id": "case_011",
+  "model": "gpt4",
+  "ground_truth": "Progressive obstruction of expiratory airflow",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The patient's chronic cough and fatigue over two years are consistent with COPD, especially given her age."
+        ],
+        [
+          "Asthma",
+          "Chronic cough and fatigue can be symptoms of asthma, which can persist into older age."
+        ],
+        [
+          "Chronic Bronchitis",
+          "Chronic cough lasting for at least two years is a hallmark of chronic bronchitis."
+        ],
+        [
+          "Interstitial Lung Disease",
+          "Chronic cough and fatigue could indicate interstitial lung disease, which often presents with these symptoms."
+        ],
+        [
+          "Congestive Heart Failure",
+          "Fatigue and chronic cough can be symptoms of congestive heart failure, particularly in older adults."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The chronic cough, wheezing, and rhonchi suggest obstructive lung disease, common in older adults."
+        ],
+        [
+          "Asthma",
+          "The presence of wheezing and rhonchi could indicate asthma, especially if symptoms are variable and reversible."
+        ],
+        [
+          "Congestive Heart Failure",
+          "Distant heart sounds and fatigue could suggest heart failure, which can cause pulmonary congestion and cough."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic cough and rhonchi may indicate bronchiectasis, characterized by persistent airway inflammation and dilation."
+        ],
+        [
+          "Interstitial Lung Disease",
+          "Chronic cough and fatigue with abnormal lung sounds could suggest interstitial lung disease, although less likely without crackles."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "The absence of fever and acute symptoms makes pneumonia unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The decreased FEV1/FVC ratio, hyperinflation of the lungs, and flattened diaphragm are characteristic of COPD."
+        ],
+        [
+          "Asthma",
+          "The presence of wheezing and decreased FEV1/FVC ratio could indicate asthma, although the chronic nature and age make it less likely."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic cough and rhonchi, along with obstructive pattern on PFTs, could suggest bronchiectasis."
+        ],
+        [
+          "Congestive Heart Failure",
+          "Distant heart sounds and chronic cough could suggest heart failure, although the pulmonary findings are more indicative of a primary lung issue."
+        ],
+        [
+          "Interstitial Lung Disease",
+          "While less likely due to the obstructive pattern, chronic cough and fatigue could be seen in interstitial lung disease."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "The chronic nature of symptoms and lack of fever or acute infiltrates on X-ray rule out pneumonia."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The decreased FEV1/FVC ratio, hyperinflation of the lungs, and flattened diaphragm are consistent with COPD."
+        ],
+        [
+          "Asthma",
+          "The presence of wheezing and reversible airway obstruction could suggest asthma, although chronicity and lack of reversibility are less typical."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic cough and rhonchi could indicate bronchiectasis, although the absence of recurrent infections makes it less likely."
+        ],
+        [
+          "Interstitial Lung Disease",
+          "Chronic cough and fatigue could be due to interstitial lung disease, but the hyperinflation and normal alpha-1 antitrypsin level make it less likely."
+        ],
+        [
+          "Congestive Heart Failure",
+          "Distant heart sounds and fatigue could suggest heart failure, but the pulmonary function test results and lung hyperinflation are atypical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial Pneumonia",
+          "Negative sputum culture for bacterial pathogens rules out bacterial pneumonia."
+        ],
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "Normal alpha-1 antitrypsin level rules out this condition."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "The patient's chronic cough and fatigue over two years are consistent with COPD, especially given her age."
+          ],
+          [
+            "Chronic Bronchitis",
+            "Chronic cough lasting more than two years suggests chronic bronchitis, a common form of COPD."
+          ],
+          [
+            "Asthma",
+            "Chronic cough and fatigue can be symptoms of asthma, which can persist into older age."
+          ],
+          [
+            "Interstitial Lung Disease",
+            "Chronic cough and fatigue could indicate interstitial lung disease, which often presents with these symptoms."
+          ],
+          [
+            "Congestive Heart Failure",
+            "Fatigue and chronic cough can be symptoms of congestive heart failure, particularly in older adults."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pneumonia",
+            "The presence of egophony in the right lower lobe suggests consolidation, which is commonly seen in pneumonia."
+          ],
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "Chronic cough and fatigue over two years could indicate COPD, especially in an older patient."
+          ],
+          [
+            "Lung Cancer",
+            "Chronic cough and fatigue, along with localized lung findings, raise suspicion for a malignancy such as lung cancer."
+          ],
+          [
+            "Heart Failure",
+            "Distant heart sounds and chronic fatigue could indicate heart failure, although the absence of other signs makes it less likely."
+          ],
+          [
+            "Interstitial Lung Disease",
+            "Chronic cough and fatigue with abnormal lung sounds could suggest interstitial lung disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Bronchitis",
+            "The chronic nature of the symptoms and the specific lung findings make acute bronchitis unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "The decreased FEV1/FVC ratio, hyperinflation of the lungs, and flattened diaphragm are characteristic of COPD."
+          ],
+          [
+            "Emphysema",
+            "The chest X-ray findings of hyperinflation and a flattened diaphragm are classic signs of emphysema, a subtype of COPD."
+          ],
+          [
+            "Asthma",
+            "Although less likely given the patient's age and chronicity, asthma can present with a decreased FEV1/FVC ratio and respiratory symptoms."
+          ],
+          [
+            "Bronchiectasis",
+            "Chronic cough and abnormal lung sounds such as egophony can be associated with bronchiectasis, although the X-ray findings are less typical."
+          ],
+          [
+            "Interstitial Lung Disease",
+            "While less likely due to the X-ray findings, chronic cough and respiratory symptoms warrant consideration of interstitial lung disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumonia",
+            "The chronic nature of the symptoms and lack of acute findings on X-ray make pneumonia unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "The decreased FEV1/FVC ratio, hyperinflation of the lungs, and flattened diaphragm are consistent with COPD."
+          ],
+          [
+            "Asthma",
+            "Chronic cough and decreased FEV1/FVC ratio could indicate asthma, although the age of onset is atypical."
+          ],
+          [
+            "Bronchiectasis",
+            "Chronic cough and respiratory symptoms with negative sputum culture could suggest bronchiectasis, despite the lack of typical imaging findings."
+          ],
+          [
+            "Interstitial Lung Disease",
+            "Chronic cough and fatigue with respiratory symptoms could suggest interstitial lung disease, although imaging findings are not typical."
+          ],
+          [
+            "Congestive Heart Failure",
+            "Distant heart sounds and respiratory symptoms could suggest heart failure, though the absence of other cardiac findings makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Pneumonia",
+            "Negative sputum culture and chronic nature of symptoms rule out bacterial pneumonia."
+          ],
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "Normal alpha-1 antitrypsin level rules out this condition."
+          ]
+        ]
+      },
+      "cf_id": "case_011_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of egophony on lung auscultation suggests consolidation, arguing against diffuse airway obstruction."
+    }
+  ]
+}

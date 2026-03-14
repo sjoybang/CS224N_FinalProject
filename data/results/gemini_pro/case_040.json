@@ -1,0 +1,290 @@
+{
+  "case_id": "case_040",
+  "model": "gemini_pro",
+  "ground_truth": "Cyst formation in a persistent thyroglossal duct",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Thyroglossal Duct Cyst",
+          "This is the most common congenital midline neck mass, typically presenting in childhood or adolescence."
+        ],
+        [
+          "Cervical Lymphadenopathy",
+          "Enlarged lymph nodes are a very common response to infection or inflammation in this age group."
+        ],
+        [
+          "Thyroid Nodule",
+          "A mass in the anterior neck of an adolescent female could represent a growth within the thyroid gland."
+        ],
+        [
+          "Dermoid Cyst",
+          "This is a common congenital midline mass resulting from entrapped ectodermal tissue during development."
+        ],
+        [
+          "Lymphoma",
+          "This malignancy is a critical consideration for any persistent neck mass in an adolescent."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Zenker's diverticulum",
+          "This is a condition of older adults and is not seen in a 13-year-old."
+        ],
+        [
+          "Metastatic Squamous Cell Carcinoma",
+          "This malignancy is associated with risk factors and an age group not consistent with this patient."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "This is the most common congenital midline neck mass in children, and it classically moves with swallowing."
+        ],
+        [
+          "Dermoid cyst",
+          "This congenital cyst is a common cause of a non-tender, fluctuant midline neck mass in the submental region."
+        ],
+        [
+          "Plunging ranula",
+          "A mucocele from the sublingual gland can dissect inferiorly through the mylohyoid muscle to present as a cystic midline neck mass."
+        ],
+        [
+          "Lymphatic malformation",
+          "This congenital anomaly of the lymphatic system can present as a soft, fluctuant, non-tender mass in the neck."
+        ],
+        [
+          "Submental lymphadenopathy",
+          "An enlarged lymph node could present as a midline mass, though fluctuance without signs of infection is less common."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Branchial cleft cyst",
+          "The midline location of the mass is inconsistent with a branchial cleft cyst, which is typically found laterally on the neck."
+        ],
+        [
+          "Thyroid goiter",
+          "The mass is located superior to the hyoid bone, which is above the typical location of the thyroid gland."
+        ],
+        [
+          "Cervical abscess",
+          "The absence of pain, erythema, and fever makes an acute infectious abscess highly unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "This is the most common congenital midline neck mass in children and classically moves with swallowing."
+        ],
+        [
+          "Dermoid cyst",
+          "This is a common congenital midline neck mass that can be fluctuant and is often found in the suprahyoid region."
+        ],
+        [
+          "Lymphadenopathy",
+          "Enlarged submental lymph nodes can present as a midline mass, though fluctuance and lack of infectious signs are less typical."
+        ],
+        [
+          "Plunging ranula",
+          "This mucocele from the sublingual gland can dissect through the mylohyoid muscle to present as a fluctuant midline neck mass."
+        ],
+        [
+          "Ectopic thyroid tissue",
+          "This developmental anomaly can present as a midline mass that moves with swallowing, although normal thyroid function tests make it less probable."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Branchial cleft cyst",
+          "These are typically lateral neck masses, not midline."
+        ],
+        [
+          "Thyroid goiter",
+          "The mass is located superior to the hyoid bone, which is above the normal position of the thyroid gland."
+        ],
+        [
+          "Abscess",
+          "The absence of pain, erythema, fever, and the normal CBC make an acute abscess unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "This is the confirmed diagnosis, fitting the classic presentation of a painless, midline neck mass that moves with swallowing and has a characteristic tract to the tongue base on ultrasound."
+        ],
+        [
+          "Dermoid cyst",
+          "This is a common congenital midline neck mass in children, which can present as a painless, fluctuant swelling in the submental region."
+        ],
+        [
+          "Ectopic thyroid tissue",
+          "This diagnosis is considered for any midline neck mass, as it represents thyroid tissue located along the path of embryonic descent."
+        ],
+        [
+          "Lymphadenopathy",
+          "Swollen lymph nodes are a very common cause of neck masses, although the midline location and cystic feel are less typical."
+        ],
+        [
+          "Branchial cleft cyst",
+          "Although usually located laterally, these congenital cysts can occasionally present near the midline and must be considered in the differential for a pediatric neck mass."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Neck abscess",
+          "The absence of fever, pain, erythema, and the normal white blood cell count make an acute infectious process unlikely."
+        ],
+        [
+          "Thyroid goiter",
+          "The location of the mass superior to the hyoid bone is not consistent with the typical location of the thyroid gland."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Thyroglossal Duct Cyst",
+            "This is a very common congenital midline neck mass in children and adolescents."
+          ],
+          [
+            "Thyroid Nodule",
+            "The location is consistent with a nodule arising from the thyroid gland, a key structure in the anterior neck."
+          ],
+          [
+            "Cervical Lymphadenopathy",
+            "Enlarged lymph nodes are a frequent cause of neck masses in this age group, often due to reactive or infectious causes."
+          ],
+          [
+            "Goiter",
+            "The \"lump\" could represent a diffusely enlarged thyroid gland, which can occur in adolescent females due to various thyroid disorders."
+          ],
+          [
+            "Dermoid Cyst",
+            "This is a congenital cyst that can present as a midline neck mass in a young person."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Branchial Cleft Cyst",
+            "These typically present as a lateral neck mass, not on the front of the neck."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Infected thyroglossal duct cyst",
+            "This is the most common congenital midline neck mass in children, and its movement with swallowing and signs of infection are classic."
+          ],
+          [
+            "Infected dermoid cyst",
+            "This is another common congenital midline neck mass that can present with tenderness, fluctuance, and erythema when secondarily infected."
+          ],
+          [
+            "Suppurative lymphadenitis",
+            "Infection of submental lymph nodes can lead to a tender, fluctuant, and erythematous mass in the midline suprahyoid region."
+          ],
+          [
+            "Dental abscess",
+            "An abscess from a mandibular tooth can track inferiorly to present as a tender, fluctuant submental mass with overlying erythema."
+          ],
+          [
+            "Infected epidermal inclusion cyst",
+            "This common cutaneous cyst can become inflamed and infected, presenting as a tender, fluctuant, erythematous nodule on the neck."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Lipoma",
+            "The findings of fluctuance, tenderness, and erythema are inconsistent with a lipoma, which is typically soft, non-tender, and without overlying skin changes."
+          ],
+          [
+            "Thyroid goiter",
+            "The mass is located superior to the hyoid bone, which is outside the typical location of the thyroid gland."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Infected thyroglossal duct cyst",
+            "The classic midline location, movement with swallowing, and superimposed signs of infection (tenderness, fluctuance, erythema) make this the most likely diagnosis."
+          ],
+          [
+            "Dermoid cyst",
+            "This is a common congenital midline neck mass that can present similarly, especially if it becomes secondarily infected."
+          ],
+          [
+            "Submental abscess",
+            "A primary abscess in this location would explain the tender, fluctuant, erythematous mass, although movement with swallowing is less specific."
+          ],
+          [
+            "Suppurative lymphadenitis",
+            "Infected submental lymph nodes could coalesce into a fluctuant mass, presenting with localized signs of infection."
+          ],
+          [
+            "Ectopic thyroid gland",
+            "While less common, an ectopic thyroid can present as a midline neck mass and can become inflamed or cystic, though the normal TSH makes this less probable."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Goiter",
+            "The mass is superior to the hyoid bone, which is not the location of the thyroid gland, and thyroid function tests are normal."
+          ],
+          [
+            "Branchial cleft cyst",
+            "These are typically located on the lateral aspect of the neck, not in the midline."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Thyroglossal Duct Cyst",
+            "This is the confirmed diagnosis based on the classic midline location, movement with swallowing, and ultrasound findings of a cystic structure with a tract to the tongue base."
+          ],
+          [
+            "Dermoid Cyst",
+            "A common congenital midline neck mass that can become inflamed, although it typically does not move with swallowing."
+          ],
+          [
+            "Infected Lymphadenopathy",
+            "A tender, erythematous, fluctuant mass could represent a suppurative lymph node, though the perfectly midline location is less common."
+          ],
+          [
+            "Ectopic Thyroid Gland",
+            "This can present as a midline neck mass, but is less likely given the cystic nature on ultrasound and normal thyroid function tests."
+          ],
+          [
+            "Branchial Cleft Cyst",
+            "This is a congenital neck cyst that can become infected, but it typically presents more laterally in the neck."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Thyroid Goiter",
+            "The mass is located superior to the typical position of the thyroid gland and thyroid function tests were normal."
+          ],
+          [
+            "Cystic Hygroma",
+            "The location is atypical for a lymphangioma, which usually presents in the posterior triangle and is more common in infancy."
+          ]
+        ]
+      },
+      "cf_id": "case_040_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of significant tenderness and erythema suggests an infectious process, making a thyroglossal duct cyst less likely."
+    }
+  ]
+}

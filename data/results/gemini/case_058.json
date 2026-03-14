@@ -1,0 +1,234 @@
+{
+  "case_id": "case_058",
+  "model": "gemini",
+  "ground_truth": "Barrett's esophagus",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Angina pectoris",
+          "The patient has chronic retrosternal chest pain, a hallmark symptom."
+        ],
+        [
+          "Gastroesophageal reflux disease",
+          "Retrosternal chest pain can be caused by acid reflux."
+        ],
+        [
+          "Esophageal spasm",
+          "This can cause chest pain that mimics cardiac pain."
+        ],
+        [
+          "Costochondritis",
+          "Inflammation of the cartilage in the chest wall can cause localized pain."
+        ],
+        [
+          "Pericarditis",
+          "Inflammation of the pericardium can cause retrosternal chest pain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myocardial infarction",
+          "No acute symptoms are reported."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Esophageal dysmotility",
+          "Nighttime exacerbation and lack of response to PPIs suggest a motility disorder."
+        ],
+        [
+          "GERD",
+          "Although pantoprazole was ineffective, GERD remains possible due to the retrosternal chest pain exacerbated by meals."
+        ],
+        [
+          "Achalasia",
+          "Chest pain worse at night and dysphagia could indicate achalasia."
+        ],
+        [
+          "Esophageal stricture",
+          "Chest pain and food bolus obstruction could indicate esophageal stricture."
+        ],
+        [
+          "Angina pectoris",
+          "Although less likely given the lack of exertion-related pain, cardiac causes should be considered in a 57-year-old with chest pain."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Barrett's Esophagus",
+          "The presence of distal esophageal ulcerations and a proximally dislocated Z-line strongly suggests metaplastic changes in the esophagus."
+        ],
+        [
+          "Erosive Esophagitis",
+          "Ulcerations in the distal esophagus indicate inflammation and damage to the esophageal lining."
+        ],
+        [
+          "Esophageal Stricture",
+          "The proximally dislocated Z-line could be associated with narrowing of the esophagus due to inflammation and scarring."
+        ],
+        [
+          "Esophageal Cancer",
+          "Ulcerations in the distal esophagus, especially with a history of chronic chest pain, warrant consideration of malignancy."
+        ],
+        [
+          "Pill-induced Esophagitis",
+          "Although PPIs were ineffective, other medications could have caused esophageal damage."
+        ]
+      ],
+      "eliminated": [
+        [
+          "GERD",
+          "PPI ineffectiveness makes this less likely as the sole diagnosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Barrett's esophagus",
+          "The presence of columnar epithelium with goblet cells in the distal esophagus confirms this diagnosis."
+        ],
+        [
+          "GERD",
+          "The patient's chronic retrosternal chest pain, worse at night and after meals, along with distal esophageal ulcerations, suggests GERD as a contributing factor."
+        ],
+        [
+          "Esophageal stricture",
+          "Ulcerations in the distal esophagus can lead to stricture formation."
+        ],
+        [
+          "Esophageal cancer",
+          "While the biopsy confirms Barrett's, the presence of ulcerations warrants consideration of possible malignant transformation."
+        ],
+        [
+          "Pill esophagitis",
+          "Although less likely given the chronic nature and endoscopic findings, medication-induced esophageal injury could contribute to ulcerations."
+        ]
+      ],
+      "eliminated": []
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Angina pectoris",
+            "The patient's chronic retrosternal chest pain is consistent with angina."
+          ],
+          [
+            "Gastroesophageal reflux disease",
+            "Retrosternal chest pain can be caused by acid reflux."
+          ],
+          [
+            "Esophageal spasm",
+            "This can cause chest pain that mimics cardiac pain."
+          ],
+          [
+            "Costochondritis",
+            "Inflammation of the cartilage in the chest wall can cause chronic chest pain."
+          ],
+          [
+            "Pericarditis",
+            "Although less likely given the chronicity, pericardial inflammation can cause chest pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myocardial infarction",
+            "The chronic nature of the pain makes acute MI less likely."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Gastroesophageal Reflux Disease",
+            "The patient's chest pain worsening at night and after meals, along with relief from antacids, suggests GERD despite PPI failure."
+          ],
+          [
+            "Achalasia",
+            "Chest pain, especially at night, and lack of response to PPIs could indicate achalasia."
+          ],
+          [
+            "Esophageal Spasm",
+            "Chest pain that is retrosternal and unresponsive to PPIs could be esophageal spasm."
+          ],
+          [
+            "Peptic Ulcer Disease",
+            "Although less likely given the lack of specific ulcer symptoms, PUD can present with chest pain, especially if atypical."
+          ],
+          [
+            "Angina Pectoris",
+            "While the symptoms are not classic, cardiac chest pain should be considered, especially given the patient's age and the retrosternal location of the pain."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Erosive esophagitis",
+            "The presence of distal esophageal ulcerations seen on endoscopy strongly suggests erosive damage to the esophageal lining."
+          ],
+          [
+            "Gastroesophageal reflux disease",
+            "The patient's symptoms of chest pain worse at night and after meals, along with a proximally dislocated Z-line, are consistent with GERD."
+          ],
+          [
+            "Barrett's esophagus",
+            "The proximally dislocated Z-line and esophageal ulcerations raise concern for metaplastic changes in the esophagus."
+          ],
+          [
+            "Esophageal stricture",
+            "Ulcerations in the distal esophagus can lead to the formation of scar tissue and subsequent stricture."
+          ],
+          [
+            "Pill-induced esophagitis",
+            "Although the patient is only reported to be taking pantoprazole, other medications could be contributing to esophageal ulcerations."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Angina",
+            "Unlikely given the lack of cardiac risk factors and symptom correlation with meals."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Barrett's esophagus",
+            "The presence of columnar epithelium with goblet cells in the distal esophagus confirms this diagnosis."
+          ],
+          [
+            "Gastroesophageal reflux disease",
+            "The patient's symptoms of retrosternal chest pain worse at night and after meals, along with distal esophageal ulcerations, suggest GERD."
+          ],
+          [
+            "Esophageal ulcer",
+            "The EGD revealed ulcerations in the distal esophagus."
+          ],
+          [
+            "Esophagitis",
+            "The presence of ulcerations and the proximally dislocated Z-line suggest inflammation of the esophagus."
+          ],
+          [
+            "Hiatal hernia",
+            "The proximally dislocated Z-line can be associated with a hiatal hernia."
+          ]
+        ],
+        "eliminated": []
+      },
+      "cf_id": "case_058_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that the pain is relieved with antacids, which argues against Barrett's esophagus as it suggests typical GERD symptoms."
+    }
+  ]
+}

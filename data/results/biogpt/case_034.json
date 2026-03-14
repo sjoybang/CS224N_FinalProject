@@ -1,0 +1,126 @@
+{
+  "case_id": "case_034",
+  "model": "biogpt",
+  "ground_truth": "Acute rheumatic fever",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20. [Stage 2] The patient's blood pressure is 100 / 65 mm Hg, pulse is 76 / min, respiratory rate is 23 / min, and temperature is 36.8 \u00b0 C (98.2 \u00b0 F). Physical examination reveals bibasilar lung crackles, a non-radiating, low-pitched, mid-diastolic rumbling murmur best heard at the apical region, jugular vein distention, and bilateral pitting edema in her lower extremities. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20. [Stage 2] The patient's blood pressure is 100 / 65 mm Hg, pulse is 76 / min, respiratory rate is 23 / min, and temperature is 36.8 \u00b0 C (98.2 \u00b0 F). Physical examination reveals bibasilar lung crackles, a non-radiating, low-pitched, mid-diastolic rumbling murmur best heard at the apical region, jugular vein distention, and bilateral pitting edema in her lower extremities. [Stage 3] An ECG shows evidence of left atrial enlargement. Chest X-ray reveals mild cardiomegaly and pulmonary vascular congestion. Initial laboratory results, including a complete blood count and basic metabolic panel, are within normal limits. An elevated erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP) are noted. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20. [Stage 2] The patient's blood pressure is 100 / 65 mm Hg, pulse is 76 / min, respiratory rate is 23 / min, and temperature is 36.8 \u00b0 C (98.2 \u00b0 F). Physical examination reveals bibasilar lung crackles, a non-radiating, low-pitched, mid-diastolic rumbling murmur best heard at the apical region, jugular vein distention, and bilateral pitting edema in her lower extremities. [Stage 3] An ECG shows evidence of left atrial enlargement. Chest X-ray reveals mild cardiomegaly and pulmonary vascular congestion. Initial laboratory results, including a complete blood count and basic metabolic panel, are within normal limits. An elevated erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP) are noted. [Stage 4] Further serological testing reveals elevated anti-streptolysin O (ASO) titers. An echocardiogram demonstrates mitral stenosis with thickened valve leaflets and chordal fusion, consistent with rheumatic heart disease. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20. [Stage 2] The patient's blood pressure is 100 / 65 mm Hg, pulse is 76 / min, respiratory rate is 23 / min, and temperature is 36.8 \u00b0 C (98.2 \u00b0 F). Physical examination reveals bibasilar lung crackles, jugular vein distention, and bilateral pitting edema in her lower extremities; no heart murmurs are appreciated. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20. [Stage 2] The patient's blood pressure is 100 / 65 mm Hg, pulse is 76 / min, respiratory rate is 23 / min, and temperature is 36.8 \u00b0 C (98.2 \u00b0 F). Physical examination reveals bibasilar lung crackles, jugular vein distention, and bilateral pitting edema in her lower extremities; no heart murmurs are appreciated. [Stage 3] An ECG shows evidence of left atrial enlargement. Chest X-ray reveals mild cardiomegaly and pulmonary vascular congestion. Initial laboratory results, including a complete blood count and basic metabolic panel, are within normal limits. An elevated erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP) are noted. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20. [Stage 2] The patient's blood pressure is 100 / 65 mm Hg, pulse is 76 / min, respiratory rate is 23 / min, and temperature is 36.8 \u00b0 C (98.2 \u00b0 F). Physical examination reveals bibasilar lung crackles, jugular vein distention, and bilateral pitting edema in her lower extremities; no heart murmurs are appreciated. [Stage 3] An ECG shows evidence of left atrial enlargement. Chest X-ray reveals mild cardiomegaly and pulmonary vascular congestion. Initial laboratory results, including a complete blood count and basic metabolic panel, are within normal limits. An elevated erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP) are noted. [Stage 4] Further serological testing reveals elevated anti-streptolysin O (ASO) titers. An echocardiogram demonstrates mitral stenosis with thickened valve leaflets and chordal fusion, consistent with rheumatic heart disease. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_034_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a murmur makes acute rheumatic fever less likely, as carditis is a major manifestation."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "case_024",
+  "source": "MedQA-USMLE",
+  "original_question": "A 63-year-old woman presents to her primary-care doctor for a 2-month history of vision changes, specifically citing the gradual onset of double vision. Her double vision is present all the time and does not get better or worse throughout the day. She has also noticed that she has a hard time keeping her right eye open, and her right eyelid looks 'droopy' in the mirror. Physical exam findings during primary gaze are shown in the photo. Her right pupil is 6 mm and poorly reactive to light. The rest of her neurologic exam is unremarkable. Laboratory studies show an Hb A1c of 5.0%. Which of the following is the next best test for this patient?",
+  "ground_truth": "Posterior communicating artery aneurysm",
+  "base": {
+    "stage_1": "A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months.",
+    "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals that the double vision is present in all fields of gaze. The patient also reports difficulty keeping her right eye open and notes right eyelid droop. Examination shows a dilated right pupil (6 mm) with poor reactivity to light. The remainder of the neurological exam is unremarkable.",
+    "stage_3": "Laboratory studies, including HbA1c, are within normal limits. No acute abnormalities are noted. Given the patient's presentation, MRI of the brain with angiography is performed to further evaluate the cranial nerves and rule out structural lesions.",
+    "stage_4": "MR angiography reveals a 7mm aneurysm at the junction of the right posterior communicating and internal carotid arteries, compressing the oculomotor nerve."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are equal and reactive to light, which argues against compression of the oculomotor nerve.",
+      "rules_out": "Posterior communicating artery aneurysm",
+      "stage_1": "A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months.",
+      "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals that the double vision is present in all fields of gaze. The patient also reports difficulty keeping her right eye open and notes right eyelid droop. Examination shows pupils are equal and reactive to light. The remainder of the neurological exam is unremarkable.",
+      "stage_3": "Laboratory studies, including HbA1c, are within normal limits. No acute abnormalities are noted. Given the patient's presentation, MRI of the brain with angiography is performed to further evaluate the cranial nerves and rule out structural lesions.",
+      "stage_4": "MR angiography reveals a 7mm aneurysm at the junction of the right posterior communicating and internal carotid arteries, compressing the oculomotor nerve.",
+      "cf_id": "case_024_cf_a"
+    }
+  ]
+}

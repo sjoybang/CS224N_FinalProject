@@ -1,0 +1,244 @@
+{
+  "case_id": "case_023",
+  "model": "gpt4",
+  "ground_truth": "Acting out",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Major Depressive Disorder",
+          "Behavioral changes in adolescents can often be attributed to mood disorders such as depression."
+        ],
+        [
+          "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+          "Behavioral changes may be due to attention and hyperactivity issues, which often become more apparent in adolescence."
+        ],
+        [
+          "Substance Use Disorder",
+          "Adolescents may exhibit behavioral changes due to experimentation or regular use of substances."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "Behavioral changes could be indicative of defiance and oppositional behavior, common in this age group."
+        ],
+        [
+          "Anxiety Disorder",
+          "Anxiety can manifest as behavioral changes, especially in teenagers facing new social and academic pressures."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Conduct Disorder",
+          "The patient's aggressive behavior, bullying, and rule-breaking activities such as skipping classes and smoking are characteristic of conduct disorder."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "The pattern of defiant and hostile behavior towards authority figures, such as teachers, suggests oppositional defiant disorder."
+        ],
+        [
+          "Substance Use Disorder",
+          "The incident of smoking cigarettes and potential for other substance use could contribute to behavioral changes."
+        ],
+        [
+          "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+          "Impulsivity and difficulty adhering to rules may indicate ADHD, which can manifest as behavioral issues in adolescents."
+        ],
+        [
+          "Adjustment Disorder",
+          "Recent behavioral changes could be a response to stressors or changes in the patient's environment, consistent with adjustment disorder."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Autism Spectrum Disorder",
+          "The recent onset of behavioral changes and specific incidents of rule-breaking and aggression are not typical of autism spectrum disorder, which usually presents earlier in life."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Adjustment Disorder",
+          "The sudden behavioral changes coincide with a significant life stressor, namely the father's departure."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "The patient's aggressive behavior and defiance towards authority figures are characteristic of this disorder."
+        ],
+        [
+          "Conduct Disorder",
+          "The pattern of bullying, aggression, and rule-breaking behaviors align with conduct disorder criteria."
+        ],
+        [
+          "Major Depressive Disorder",
+          "The behavioral changes and potential underlying emotional distress could be indicative of depression, despite the absence of suicidal ideation."
+        ],
+        [
+          "Intermittent Explosive Disorder",
+          "The aggressive outbursts and bullying behavior may suggest intermittent explosive disorder."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Substance Use Disorder",
+          "The negative urine drug screen rules out substance use as a cause of the behavioral changes."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Adjustment Disorder with Disturbance of Conduct",
+          "The recent behavioral changes and decline in academic performance coincide with the significant stressor of his parents' separation."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "The patient's pattern of defiant behavior and verbal altercations with authority figures is consistent with this diagnosis."
+        ],
+        [
+          "Conduct Disorder",
+          "The aggressive behavior, bullying, and rule-breaking behaviors such as smoking suggest a possible conduct disorder."
+        ],
+        [
+          "Major Depressive Disorder",
+          "The significant life change and decline in social engagement could indicate depression, despite the absence of suicidal ideation."
+        ],
+        [
+          "Intermittent Explosive Disorder",
+          "The aggressive outbursts and bullying behavior may be indicative of intermittent explosive disorder."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Substance Use Disorder",
+          "The negative urine drug screen rules out substance use as a cause of the behavioral changes."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Major Depressive Disorder",
+            "Behavioral changes in adolescents can often be attributed to mood disorders such as depression."
+          ],
+          [
+            "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+            "Behavioral changes may be due to attention and hyperactivity issues, which often become more apparent in adolescence."
+          ],
+          [
+            "Substance Use Disorder",
+            "Adolescents may exhibit behavioral changes due to experimentation or misuse of substances."
+          ],
+          [
+            "Oppositional Defiant Disorder",
+            "Behavioral changes could be indicative of defiance and oppositional behavior, common in this age group."
+          ],
+          [
+            "Anxiety Disorder",
+            "Anxiety can manifest as behavioral changes, especially in teenagers facing new stressors."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Conduct Disorder",
+            "The patient's aggressive behavior, bullying, and rule-breaking behaviors such as skipping classes and smoking are characteristic of conduct disorder."
+          ],
+          [
+            "Schizophrenia",
+            "The auditory hallucinations of hearing voices telling him he is worthless suggest a possible psychotic disorder like schizophrenia."
+          ],
+          [
+            "Oppositional Defiant Disorder",
+            "The pattern of defiant and hostile behavior towards authority figures, such as teachers, aligns with oppositional defiant disorder."
+          ],
+          [
+            "Substance Use Disorder",
+            "The incident of smoking cigarettes and potential for other substance use could contribute to behavioral changes and warrant consideration."
+          ],
+          [
+            "Major Depressive Disorder with Psychotic Features",
+            "The auditory hallucinations and feelings of worthlessness could indicate depression with psychotic features."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Attention-Deficit/Hyperactivity Disorder",
+            "The primary issues are related to aggression and rule-breaking rather than inattention or hyperactivity."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Adjustment Disorder",
+            "The behavioral changes and auditory hallucinations coincide with a significant life stressor, namely the father's departure."
+          ],
+          [
+            "Conduct Disorder",
+            "The patient's aggressive behavior and rule-breaking are consistent with conduct disorder, especially given the recent escalation."
+          ],
+          [
+            "Major Depressive Disorder with Psychotic Features",
+            "The auditory hallucinations and feelings of worthlessness suggest a depressive disorder with psychotic features."
+          ],
+          [
+            "Oppositional Defiant Disorder",
+            "The pattern of defiance and hostility towards authority figures aligns with oppositional defiant disorder."
+          ],
+          [
+            "Brief Psychotic Disorder",
+            "The sudden onset of auditory hallucinations following a stressful event could indicate a brief psychotic disorder."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Substance-Induced Psychotic Disorder",
+            "Negative urine drug screen rules out substance-induced causes."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Adjustment Disorder with Disturbance of Conduct",
+            "The recent behavioral changes and decline in academic performance coincide with the significant stressor of his parents' separation."
+          ],
+          [
+            "Conduct Disorder",
+            "The patient's aggressive behavior, bullying, and defiance are consistent with conduct disorder, especially given the pattern of rule-breaking and aggression."
+          ],
+          [
+            "Major Depressive Disorder with Psychotic Features",
+            "The auditory hallucinations and significant change in behavior and academic performance suggest a possible depressive disorder with psychotic features."
+          ],
+          [
+            "Oppositional Defiant Disorder",
+            "The defiance and verbal altercations with authority figures align with symptoms of oppositional defiant disorder."
+          ],
+          [
+            "Brief Psychotic Disorder",
+            "The auditory hallucinations and sudden onset of behavioral changes could indicate a brief psychotic disorder, especially in the context of a significant stressor."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Substance-Induced Psychotic Disorder",
+            "The negative urine drug screen rules out substance-induced causes for the hallucinations."
+          ]
+        ]
+      },
+      "cf_id": "case_023_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports auditory hallucinations, which argues against acting out."
+    }
+  ]
+}

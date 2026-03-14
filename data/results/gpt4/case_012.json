@@ -1,0 +1,244 @@
+{
+  "case_id": "case_012",
+  "model": "gpt4",
+  "ground_truth": "Acute arterial occlusion",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Peripheral artery disease",
+          "Sudden onset leg pain while walking in a patient with cardiovascular risk factors suggests intermittent claudication."
+        ],
+        [
+          "Deep vein thrombosis",
+          "The patient's obesity and immobility due to pain increase the risk of venous thromboembolism."
+        ],
+        [
+          "Acute limb ischemia",
+          "Atrial fibrillation increases the risk of embolic events, which can cause sudden leg pain."
+        ],
+        [
+          "Lumbar spinal stenosis",
+          "The patient's age and symptoms could indicate neurogenic claudication due to spinal stenosis."
+        ],
+        [
+          "Diabetic neuropathy",
+          "Diabetes can cause nerve damage, leading to pain, although sudden onset is less typical."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute arterial embolism",
+          "The sudden onset of cold, pale leg with diminished sensation and muscle weakness suggests an acute arterial blockage, likely due to embolism, especially given the patient's atrial fibrillation."
+        ],
+        [
+          "Acute limb ischemia",
+          "The presentation of cold, pale leg with reduced strength and sensation aligns with acute limb ischemia, a condition often caused by embolism or thrombosis."
+        ],
+        [
+          "Deep vein thrombosis",
+          "Although less likely due to the cold and pale presentation, DVT can cause leg pain and is a consideration given the patient's risk factors."
+        ],
+        [
+          "Peripheral artery disease",
+          "Chronic vascular issues could lead to acute symptoms if a plaque ruptures or significantly occludes blood flow, especially in a patient with diabetes and hypertension."
+        ],
+        [
+          "Compartment syndrome",
+          "The acute pain and weakness could be due to increased pressure within the leg compartments, although the cold and pale presentation makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cellulitis",
+          "The absence of redness, warmth, and fever makes an infectious cause like cellulitis unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute limb ischemia",
+          "The sudden onset of leg pain, cold and pale limb, diminished sensation, and muscle weakness, along with the CTA finding of an occlusion in the left common femoral artery, strongly suggests acute limb ischemia."
+        ],
+        [
+          "Arterial embolism",
+          "The patient's history of atrial fibrillation and the sudden nature of the symptoms are consistent with an arterial embolism causing the occlusion."
+        ],
+        [
+          "Thrombosis",
+          "The patient's risk factors, including diabetes, hypertension, and obesity, could contribute to thrombosis leading to the occlusion."
+        ],
+        [
+          "Peripheral artery disease",
+          "The patient's risk factors and the finding of an arterial occlusion could indicate underlying peripheral artery disease, although the acute presentation is less typical."
+        ],
+        [
+          "Compartment syndrome",
+          "Although less likely given the findings, the severe pain and muscle weakness could suggest compartment syndrome, but the cold and pale limb makes this less probable."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Deep vein thrombosis",
+          "The presentation of a cold, pale limb with arterial occlusion is inconsistent with deep vein thrombosis, which typically presents with a warm, swollen limb."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Acute Limb Ischemia",
+          "The sudden onset of leg pain, cold and pale limb, diminished sensation, and muscle weakness, along with CTA findings of arterial occlusion, strongly suggest acute limb ischemia."
+        ],
+        [
+          "Arterial Thrombosis",
+          "The patient's history of atrial fibrillation and the confirmed occlusion of the femoral artery indicate a high likelihood of arterial thrombosis."
+        ],
+        [
+          "Embolism",
+          "The acute presentation and atrial fibrillation raise the possibility of an embolic event causing the arterial occlusion."
+        ],
+        [
+          "Peripheral Artery Disease",
+          "The patient's risk factors, including diabetes and hypertension, could contribute to underlying peripheral artery disease, exacerbating the acute event."
+        ],
+        [
+          "Diabetic Neuropathy",
+          "Although not the primary cause of the acute symptoms, the patient's diabetes could contribute to the diminished sensation in the affected limb."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Deep Vein Thrombosis",
+          "The presentation of a cold, pale limb with arterial occlusion is inconsistent with the typical presentation of deep vein thrombosis, which usually involves a warm, swollen limb."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Peripheral artery disease",
+            "Sudden onset leg pain while walking suggests intermittent claudication due to reduced blood flow."
+          ],
+          [
+            "Deep vein thrombosis",
+            "Risk factors such as obesity and atrial fibrillation increase the likelihood of a thrombotic event."
+          ],
+          [
+            "Acute limb ischemia",
+            "Sudden leg pain in a patient with atrial fibrillation could indicate an embolic event causing arterial occlusion."
+          ],
+          [
+            "Lumbar spinal stenosis",
+            "Neurogenic claudication can cause leg pain during walking, especially in older adults."
+          ],
+          [
+            "Diabetic neuropathy",
+            "Diabetes can lead to nerve damage, causing pain, although sudden onset is less typical."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute limb ischemia",
+            "Sudden onset of leg pain, cold and pale limb, and diminished sensation suggest acute arterial occlusion, although palpable pulses make this less typical."
+          ],
+          [
+            "Peripheral neuropathy",
+            "The patient's diabetes and diminished sensation in the leg could indicate neuropathy, though the acute presentation is atypical."
+          ],
+          [
+            "Compartment syndrome",
+            "The sudden pain and weakness could suggest compartment syndrome, but the presence of palpable pulses and lack of swelling make this less likely."
+          ],
+          [
+            "Spinal stenosis",
+            "The sudden leg weakness and pain could be due to nerve compression, although the acute onset and cold, pale limb are not typical."
+          ],
+          [
+            "Deep vein thrombosis",
+            "While the presentation is atypical due to the cold and pale limb, DVT could cause leg pain and weakness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Cellulitis",
+            "The cold, pale limb and sudden onset are inconsistent with the typical warm, red, and swollen presentation of cellulitis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute arterial embolism",
+            "The sudden onset of leg pain, cold and pale limb, diminished sensation, and muscle weakness with an occlusion seen on CTA suggests an embolic event."
+          ],
+          [
+            "Acute limb ischemia",
+            "The clinical presentation of cold, pale leg with diminished sensation and muscle weakness is consistent with acute limb ischemia due to arterial occlusion."
+          ],
+          [
+            "Peripheral artery disease",
+            "The patient's history of diabetes and hypertension, along with the arterial occlusion, could indicate underlying peripheral artery disease exacerbating the acute event."
+          ],
+          [
+            "Thrombosis of the femoral artery",
+            "The occlusion of the left common femoral artery could be due to thrombosis, especially given the patient's risk factors like atrial fibrillation."
+          ],
+          [
+            "Atheroembolism",
+            "The patient's vascular risk factors and the sudden occlusion could be due to cholesterol crystal embolization from atherosclerotic plaques."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Deep vein thrombosis",
+            "The presence of palpable pulses and cold, pale limb is inconsistent with venous thrombosis, which typically presents with swelling and warmth."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Acute arterial embolism",
+            "The sudden onset of leg pain, cold and pale extremity, and diminished sensation with a confirmed occlusion on CTA suggests an acute arterial embolism."
+          ],
+          [
+            "Acute limb ischemia",
+            "The clinical presentation of cold, pale leg with diminished sensation and muscle weakness aligns with acute limb ischemia due to arterial occlusion."
+          ],
+          [
+            "Thromboembolism",
+            "The patient's history of atrial fibrillation increases the risk of thromboembolism, which could explain the sudden arterial occlusion."
+          ],
+          [
+            "Peripheral artery disease",
+            "Although less likely due to the acute presentation, the patient's risk factors and arterial occlusion could suggest underlying peripheral artery disease."
+          ],
+          [
+            "Atherosclerosis",
+            "The patient's history of diabetes, hypertension, and obesity predisposes him to atherosclerosis, which could contribute to arterial occlusion."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Deep vein thrombosis",
+            "The presence of palpable pulses and cold, pale extremity is inconsistent with deep vein thrombosis, which typically presents with warmth and swelling."
+          ]
+        ]
+      },
+      "cf_id": "case_012_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of palpable pulses in the affected leg argues against acute arterial occlusion."
+    }
+  ]
+}

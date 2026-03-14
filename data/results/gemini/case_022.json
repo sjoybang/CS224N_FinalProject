@@ -1,0 +1,262 @@
+{
+  "case_id": "case_022",
+  "model": "gemini",
+  "ground_truth": "Granulosa cell tumor",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Precocious Puberty",
+          "Premature adrenarche can present with early hair growth."
+        ],
+        [
+          "Congenital Adrenal Hyperplasia",
+          "This can cause virilization and hirsutism in young girls."
+        ],
+        [
+          "Premature Adrenarche",
+          "This isolated early androgen production can lead to hair growth."
+        ],
+        [
+          "Polycystic Ovary Syndrome",
+          "Though less common in young children, it can rarely present with hirsutism."
+        ],
+        [
+          "Cushing's Syndrome",
+          "Excess cortisol can sometimes cause hirsutism."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypothyroidism",
+          "Does not typically present with excessive hair growth."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Precocious Puberty",
+          "The early onset of puberty, indicated by Tanner stage 4 development and the appearance of pubic and axillary hair, is the most likely explanation."
+        ],
+        [
+          "Premature Adrenarche",
+          "The presence of pubic and axillary hair without other signs of puberty suggests early adrenal androgen production."
+        ],
+        [
+          "Congenital Adrenal Hyperplasia (CAH)",
+          "This condition can cause early androgen production, leading to premature development of secondary sexual characteristics."
+        ],
+        [
+          "Ovarian Tumor",
+          "Although less likely, an androgen-secreting ovarian tumor could cause virilization and early pubic hair development."
+        ],
+        [
+          "Exogenous Androgen Exposure",
+          "Exposure to external sources of androgens could mimic precocious puberty or premature adrenarche."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Granulosa cell tumor",
+          "This estrogen-secreting ovarian tumor is a common cause of precocious puberty and can present with an ovarian mass."
+        ],
+        [
+          "Theca cell tumor",
+          "Similar to granulosa cell tumors, these can secrete estrogen and cause precocious puberty with an ovarian mass."
+        ],
+        [
+          "Ovarian cyst",
+          "Although less likely to cause such rapid progression, some ovarian cysts can produce estrogen and present as a mass."
+        ],
+        [
+          "Adrenal tumor",
+          "While less likely given the ovarian mass, an adrenal tumor could secrete androgens that are converted to estrogen, leading to precocious puberty."
+        ],
+        [
+          "McCune-Albright syndrome",
+          "This syndrome can cause ovarian cysts and precocious puberty, although it typically presents with other characteristic features."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Idiopathic precocious puberty",
+          "The presence of an ovarian mass and elevated estrogen levels suggest a pathological cause rather than idiopathic."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Granulosa cell tumor",
+          "The presence of an ovarian mass with Call-Exner bodies on histology confirms this diagnosis."
+        ],
+        [
+          "Theca cell tumor",
+          "This estrogen-producing tumor can cause precocious puberty and presents with an ovarian mass."
+        ],
+        [
+          "Ovarian fibroma",
+          "While usually hormonally inactive, some fibromas can be associated with estrogen production and ovarian mass."
+        ],
+        [
+          "Steroid cell tumor",
+          "This rare ovarian tumor can produce estrogen, leading to precocious puberty and presenting as an ovarian mass."
+        ],
+        [
+          "Ovarian cyst",
+          "Although less likely given the histopathology, some ovarian cysts can be estrogen-producing and present with an ovarian mass."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Idiopathic precocious puberty",
+          "The presence of an ovarian mass and elevated estrogen levels suggest a pathological cause."
+        ],
+        [
+          "Adrenal tumor",
+          "The pelvic ultrasound focused on the ovaries and the histopathology confirmed an ovarian source."
+        ],
+        [
+          "Congenital adrenal hyperplasia",
+          "This condition typically presents earlier in life and is not associated with an ovarian mass."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Precocious Puberty",
+            "Premature activation of the hypothalamic-pituitary-gonadal axis can cause early development of secondary sexual characteristics, including hair growth."
+          ],
+          [
+            "Premature Adrenarche",
+            "Early increase in adrenal androgen production can lead to isolated development of pubic hair without other signs of puberty."
+          ],
+          [
+            "Congenital Adrenal Hyperplasia (CAH)",
+            "This genetic disorder can cause excess androgen production, leading to virilization and hair growth."
+          ],
+          [
+            "Polycystic Ovary Syndrome (PCOS)",
+            "Though less common in young children, PCOS can present with hirsutism due to increased androgen levels."
+          ],
+          [
+            "Cushing's Syndrome",
+            "Excess cortisol can cause a variety of symptoms, including hirsutism, although it is less likely given the short duration."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Normal Puberty",
+            "The patient is too young for normal pubertal changes."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Premature Adrenarche",
+            "The presence of pubic and axillary hair without other signs of puberty suggests early adrenal androgen production."
+          ],
+          [
+            "Exogenous Androgen Exposure",
+            "Topical or ingested androgens from external sources could cause isolated hair growth."
+          ],
+          [
+            "Congenital Adrenal Hyperplasia (CAH)",
+            "Non-classic CAH can present with premature adrenarche symptoms due to increased androgen production."
+          ],
+          [
+            "Ovarian Tumor",
+            "Although less likely given the absence of other pubertal signs, an androgen-secreting ovarian tumor could cause hair growth."
+          ],
+          [
+            "Idiopathic Hirsutism",
+            "In some cases, isolated hirsutism can occur without a clear underlying cause."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Central Precocious Puberty",
+            "Absence of other pubertal signs makes this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Granulosa cell tumor",
+            "This estrogen-secreting ovarian tumor is a common cause of precocious pseudopuberty in young girls, correlating with the ultrasound findings and elevated estrogen."
+          ],
+          [
+            "Ovarian cyst",
+            "While less likely to cause such rapid hair growth, some ovarian cysts can produce estrogen, leading to precocious pseudopuberty."
+          ],
+          [
+            "Theca cell tumor",
+            "This ovarian tumor can secrete estrogen and present with virilization or precocious puberty."
+          ],
+          [
+            "Adrenal tumor",
+            "Although less likely given the pelvic ultrasound findings, an adrenal tumor could secrete androgens or estrogens, leading to hair growth."
+          ],
+          [
+            "McCune-Albright syndrome",
+            "This syndrome can cause ovarian cysts and precocious puberty, although other features are typically present."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Premature adrenarche",
+            "The presence of an ovarian mass and elevated estrogen levels make this less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Granulosa cell tumor",
+            "Histopathology confirmed the presence of Call-Exner bodies, diagnostic of a granulosa cell tumor."
+          ],
+          [
+            "Theca cell tumor",
+            "Ovarian mass with elevated estrogen levels could suggest a theca cell tumor, although less likely given the histopathology."
+          ],
+          [
+            "Ovarian fibroma",
+            "While usually not hormonally active, some fibromas can present with estrogen production."
+          ],
+          [
+            "Steroid cell tumor",
+            "This tumor can cause virilization or estrogen production, but is less likely given the patient's presentation and histopathology."
+          ],
+          [
+            "Ovarian cyst",
+            "Although usually benign, some ovarian cysts can be hormonally active and cause elevated estrogen levels."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Precocious puberty",
+            "No signs of pubertal development were noted on physical exam."
+          ]
+        ]
+      },
+      "cf_id": "case_022_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical examination reveals no signs of pubertal development, making granulosa cell tumor less likely as it typically presents with precocious puberty."
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "case_id": "case_006",
+  "model": "gemini_pro",
+  "ground_truth": "Atrial fibrillation",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Atrial Fibrillation",
+          "This common arrhythmia in patients with structural heart disease can cause episodic palpitations and reduced cardiac output leading to lightheadedness."
+        ],
+        [
+          "Ventricular Tachycardia",
+          "A history of myocardial infarction creates a scar substrate for this life-threatening arrhythmia, which presents with palpitations and presyncope."
+        ],
+        [
+          "Worsening Heart Failure",
+          "Decompensation of the patient's underlying condition can reduce cardiac output, causing lightheadedness, and increase arrhythmogenicity, causing palpitations."
+        ],
+        [
+          "Sick Sinus Syndrome",
+          "This condition, characterized by alternating slow and fast heart rates, can explain episodic lightheadedness from bradycardia and palpitations from tachycardia."
+        ],
+        [
+          "Paroxysmal Supraventricular Tachycardia",
+          "These regular, rapid heart rhythms can occur episodically, causing palpitations and hemodynamic compromise leading to lightheadedness."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Atrial Fibrillation",
+          "The patient's risk factors (age, MI, CHF), symptoms (palpitations, lightheadedness), and exam findings (irregular tachycardia, decreased S1) are all classic for this diagnosis."
+        ],
+        [
+          "Atrial Flutter with variable block",
+          "This arrhythmia is common in patients with structural heart disease and can present with an irregular tachycardia that clinically mimics atrial fibrillation."
+        ],
+        [
+          "Ventricular Tachycardia",
+          "This life-threatening arrhythmia must be considered in a patient with structural heart disease (post-MI) presenting with tachycardia and symptoms of hemodynamic compromise (lightheadedness)."
+        ],
+        [
+          "Multifocal Atrial Tachycardia",
+          "This is an irregular supraventricular tachycardia that can account for the rapid, irregular heart rhythm in a patient with underlying heart disease."
+        ],
+        [
+          "Frequent Premature Ventricular Contractions (PVCs)",
+          "Numerous ectopic beats can create an irregular rhythm and a sensation of palpitations, which could account for the patient's presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sinus Tachycardia",
+          "This diagnosis is ruled out by the physical exam finding of an irregular heart rhythm."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Atrial Fibrillation with Rapid Ventricular Response",
+          "The ECG findings of an irregularly irregular rhythm with no discernible P waves are pathognomonic for this diagnosis."
+        ],
+        [
+          "Acute Decompensated Heart Failure",
+          "The patient's new tachyarrhythmia is a common trigger for worsening of her known chronic heart failure with reduced ejection fraction."
+        ],
+        [
+          "Atrial Flutter with Variable Block",
+          "This arrhythmia can mimic atrial fibrillation by presenting as an irregularly irregular rhythm when the atrioventricular conduction ratio changes."
+        ],
+        [
+          "Tachycardia-induced Cardiomyopathy",
+          "The patient's reduced ejection fraction may be caused or worsened by a persistent, poorly controlled rapid heart rate."
+        ],
+        [
+          "Multifocal Atrial Tachycardia",
+          "This is an irregularly irregular supraventricular tachycardia that could explain the ECG findings, though it is less common than atrial fibrillation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sinus Tachycardia",
+          "This is ruled out by the irregularly irregular rhythm and absence of discernible P waves on the ECG."
+        ],
+        [
+          "Ventricular Tachycardia",
+          "This is typically a regular rhythm, which is inconsistent with the irregularly irregular rhythm found on examination and ECG."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Atrial Fibrillation with Rapid Ventricular Response",
+          "The patient's symptoms, irregularly irregular rhythm, absent P waves on ECG, and Holter monitor findings are all classic for this diagnosis."
+        ],
+        [
+          "Atrial Flutter with Variable Block",
+          "This arrhythmia can present with an irregularly irregular rhythm and rapid heart rate, mimicking atrial fibrillation in a patient with structural heart disease."
+        ],
+        [
+          "Multifocal Atrial Tachycardia",
+          "This is a key differential for an irregularly irregular tachycardia, although it is less common than atrial fibrillation and the ECG did not show variable P-wave morphologies."
+        ],
+        [
+          "Ventricular Tachycardia",
+          "This dangerous arrhythmia is a critical consideration given the patient's history of myocardial infarction and heart failure, which serve as a substrate for ventricular arrhythmias."
+        ],
+        [
+          "Paroxysmal Supraventricular Tachycardia",
+          "The episodic nature of the palpitations is consistent with PSVT, though the documented irregularly irregular rhythm makes this specific diagnosis less probable."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sinus Tachycardia",
+          "The ECG finding of an irregularly irregular rhythm with no discernible P waves rules out a regular rhythm originating from the sinus node."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Ventricular Tachycardia",
+            "The patient's history of myocardial infarction creates a myocardial scar that is a common substrate for this life-threatening arrhythmia."
+          ],
+          [
+            "Atrial Fibrillation",
+            "This is the most common sustained arrhythmia and is strongly associated with chronic heart failure and structural heart disease."
+          ],
+          [
+            "Atrial Flutter",
+            "This arrhythmia is common in patients with structural heart disease and can present with rapid, regular palpitations."
+          ],
+          [
+            "Sick Sinus Syndrome",
+            "This condition can cause alternating periods of bradycardia (causing lightheadedness) and tachyarrhythmias (causing palpitations), fitting the episodic nature of the symptoms."
+          ],
+          [
+            "Frequent Premature Ventricular Contractions (PVCs)",
+            "These ectopic beats are a common cause of palpitations and are more frequent in patients with underlying heart failure and prior MI."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Paroxysmal Atrial Fibrillation",
+            "This is the most common arrhythmia in patients with chronic heart failure and can cause episodic palpitations and lightheadedness."
+          ],
+          [
+            "Ventricular Tachycardia",
+            "The patient's history of myocardial infarction provides a scar tissue substrate that increases the risk for this life-threatening arrhythmia."
+          ],
+          [
+            "Sick Sinus Syndrome",
+            "This condition, common in the elderly, can cause both tachyarrhythmias (palpitations) and bradyarrhythmias or sinus pauses (lightheadedness)."
+          ],
+          [
+            "Orthostatic Hypotension",
+            "Cardiac medications used for heart failure and post-MI care frequently cause postural drops in blood pressure leading to lightheadedness."
+          ],
+          [
+            "Paroxysmal Supraventricular Tachycardia",
+            "This is a common cause of abrupt-onset palpitations and lightheadedness, although less frequent than atrial fibrillation in this population."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Decompensated Heart Failure",
+            "The normal respiratory rate and regular rhythm on exam are not consistent with a current state of acute fluid overload."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Atrial Fibrillation",
+            "The ECG finding of an irregularly irregular rhythm with no discernible P waves is pathognomonic for this diagnosis."
+          ],
+          [
+            "Atrial Flutter",
+            "This arrhythmia often coexists with atrial fibrillation and can present with an irregularly irregular rhythm if there is a variable atrioventricular block."
+          ],
+          [
+            "Ventricular Tachycardia",
+            "This must be considered in a patient with structural heart disease (prior MI, HFrEF) presenting with palpitations and lightheadedness, as it is a life-threatening cause."
+          ],
+          [
+            "Sick Sinus Syndrome",
+            "The patient's presentation with palpitations (from tachycardia like AFib) and lightheadedness (potentially from bradycardic pauses) is characteristic of the tachy-brady variant of this syndrome."
+          ],
+          [
+            "Multifocal Atrial Tachycardia",
+            "This is a differential for an irregularly irregular rhythm, although the absence of discernible P waves on the ECG makes it less likely than atrial fibrillation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "AV nodal reentrant tachycardia",
+            "The ECG shows an irregularly irregular rhythm, which rules out this typically regular supraventricular tachycardia."
+          ],
+          [
+            "Sinus Tachycardia",
+            "The ECG demonstrates an irregularly irregular rhythm with no P waves, which is inconsistent with a regular sinus rhythm."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Atrial fibrillation with rapid ventricular response",
+            "The Holter monitor confirmed an irregularly irregular rhythm with an average heart rate of 110 bpm, which directly explains her symptoms of palpitations and lightheadedness."
+          ],
+          [
+            "Heart failure with reduced ejection fraction exacerbation",
+            "The patient's known heart failure (LVEF 39%) is likely worsened by the rapid ventricular rates from atrial fibrillation, leading to decreased cardiac output and symptoms like lightheadedness."
+          ],
+          [
+            "Ischemic cardiomyopathy",
+            "A history of myocardial infarction is the most probable cause of her reduced ejection fraction and the structural heart disease that predisposes her to developing atrial fibrillation."
+          ],
+          [
+            "Tachycardia-induced cardiomyopathy",
+            "The persistent rapid heart rates confirmed on the Holter monitor may be contributing to or worsening her already impaired left ventricular systolic function."
+          ],
+          [
+            "Hypertensive heart disease",
+            "The patient's elevated blood pressure is a common comorbidity that contributes to the development and progression of both atrial fibrillation and heart failure."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Ventricular tachycardia",
+            "The ECG and Holter monitor showed an irregularly irregular rhythm, which is inconsistent with the typically regular rhythm of monomorphic ventricular tachycardia."
+          ],
+          [
+            "Atrial flutter",
+            "The ECG finding of \"no discernible P waves\" is characteristic of atrial fibrillation, not the typical sawtooth flutter waves seen in atrial flutter."
+          ],
+          [
+            "Multifocal atrial tachycardia",
+            "This diagnosis requires at least three distinct P-wave morphologies, but the patient's ECG showed no discernible P waves."
+          ]
+        ]
+      },
+      "cf_id": "case_006_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's heart rate is regular at 78/min, which argues against atrial fibrillation."
+    }
+  ]
+}

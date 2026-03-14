@@ -1,0 +1,294 @@
+{
+  "case_id": "case_026",
+  "model": "claude",
+  "ground_truth": "Ischemic stroke",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute ischemic stroke",
+          "Acute onset unilateral arm and leg weakness with symptom onset 4 hours ago is classic for stroke in the left cerebral hemisphere."
+        ],
+        [
+          "Hemorrhagic stroke",
+          "Sudden unilateral weakness can result from intracerebral hemorrhage, though lack of headache or altered consciousness makes this less typical."
+        ],
+        [
+          "Transient ischemic attack",
+          "Brief focal neurological deficits from temporary cerebral ischemia could present similarly, though symptoms persist at 4 hours."
+        ],
+        [
+          "Hypoglycemia",
+          "Metabolic disturbance can cause focal weakness and altered awareness/denial of symptoms mimicking stroke."
+        ],
+        [
+          "Todd's paralysis",
+          "Post-ictal focal weakness following an unwitnessed seizure could explain unilateral weakness and confusion about symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute ischemic stroke",
+          "Right-sided hemiparesis with sudden onset in a patient with vascular risk factors (hypertension, dyslipidemia) is most consistent with left hemisphere stroke."
+        ],
+        [
+          "Transient ischemic attack (TIA)",
+          "Similar presentation to stroke but symptoms may resolve within 24 hours, though already 4 hours duration makes stroke more likely."
+        ],
+        [
+          "Intracranial hemorrhage",
+          "Right-sided weakness could result from left-sided hemorrhagic stroke, though stable vitals and alert status make this less likely than ischemic stroke."
+        ],
+        [
+          "Subdural hematoma",
+          "Can present with focal weakness and altered awareness, possible in elderly patients even without reported trauma history."
+        ],
+        [
+          "Todd's paralysis",
+          "Post-ictal weakness following unwitnessed seizure could present with hemiparesis and confusion about symptoms, though no seizure history reported."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Conversion disorder",
+          "Organic findings of true hemiparesis on examination and presence of significant vascular risk factors make functional neurological disorder unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute ischemic stroke (left MCA territory)",
+          "CT shows hypodensity in left MCA territory with corresponding right-sided hemiparesis presenting within 4 hours, classic for acute stroke."
+        ],
+        [
+          "Cardioembolic stroke",
+          "Patient's vascular risk factors and acute presentation suggest possible embolic source from cardiac origin causing MCA occlusion."
+        ],
+        [
+          "Large vessel atherosclerotic stroke",
+          "Hypertension and dyslipidemia increase risk for atherosclerotic disease of major intracranial vessels including the MCA."
+        ],
+        [
+          "Lacunar stroke with adjacent territory involvement",
+          "Though typically smaller, extensive lacunar infarction could present similarly, though imaging suggests larger territorial involvement."
+        ],
+        [
+          "Stroke with hemorrhagic transformation (early)",
+          "Although current non-contrast CT shows hypodensity, early hemorrhagic transformation remains a consideration given the acute timeframe."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Intracranial hemorrhage",
+          "Non-contrast CT shows hypodensity (ischemia) rather than hyperdensity (hemorrhage)."
+        ],
+        [
+          "Brain tumor with acute symptoms",
+          "CT findings consistent with acute vascular territory infarction rather than mass lesion."
+        ],
+        [
+          "Todd's paralysis (postictal)",
+          "No history of seizure activity and CT shows structural ischemic changes."
+        ],
+        [
+          "Functional neurological disorder",
+          "Imaging demonstrates objective acute ischemic changes in left MCA territory."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cardioembolic stroke",
+          "Acute left MCA infarct with moderate carotid stenosis suggests possible embolic source from heart or proximal vessels requiring further cardiac workup."
+        ],
+        [
+          "Large artery atherosclerotic stroke",
+          "Moderate left carotid stenosis with ipsilateral MCA infarct in patient with hypertension and dyslipidemia strongly suggests atherothrombotic mechanism."
+        ],
+        [
+          "Watershed infarct",
+          "Hypoperfusion in MCA territory could result from hemodynamic compromise due to carotid stenosis, though typical MCA distribution makes this less likely."
+        ],
+        [
+          "Lacunar stroke with cortical extension",
+          "Small vessel disease from hypertension could cause infarct, though MCA territorial involvement suggests larger vessel pathology."
+        ],
+        [
+          "Artery-to-artery embolism",
+          "Unstable plaque at carotid stenosis site could have embolized distally to MCA territory causing acute territorial infarct."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hemorrhagic stroke",
+          "CT and MRI confirm ischemic infarct with no evidence of hemorrhage."
+        ],
+        [
+          "Transient ischemic attack",
+          "Persistent symptoms beyond 24 hours and confirmed infarct on imaging exclude TIA."
+        ],
+        [
+          "Brain tumor with mass effect",
+          "Imaging demonstrates acute infarct without mass lesion."
+        ],
+        [
+          "Todd's paralysis",
+          "No history of seizure activity and imaging confirms structural infarct."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute ischemic stroke",
+            "Sudden onset of unilateral arm and leg weakness is classic for stroke, particularly in the 69-year-old age group with typical vascular risk factors."
+          ],
+          [
+            "Hemorrhagic stroke",
+            "Acute focal neurological deficits affecting one side can result from intracerebral hemorrhage, though the gradual onset and lack of headache makes this slightly less likely than ischemic stroke."
+          ],
+          [
+            "Todd's paralysis (postictal)",
+            "Transient focal weakness following a seizure can mimic stroke, and the patient's denial/confusion could suggest a postictal state."
+          ],
+          [
+            "Hemiplegic migraine",
+            "Though less common at this age, complex migraine can cause transient unilateral weakness, though typically occurs in younger patients with migraine history."
+          ],
+          [
+            "Conversion disorder/Functional neurological symptom disorder",
+            "The patient's denial of symptoms and lack of concern could suggest a functional etiology, though organic causes must be excluded first."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "At this stage, insufficient information exists to definitively rule out any diagnoses; all acute focal neurological deficits require immediate workup to exclude life-threatening causes."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Transient ischemic attack (TIA)",
+            "Patient reported acute onset of unilateral weakness with vascular risk factors (hypertension, dyslipidemia), and symptoms have resolved by examination consistent with transient nature."
+          ],
+          [
+            "Anosognosia from right hemisphere stroke",
+            "Patient's dismissiveness of deficits could represent denial of illness from right-sided stroke, though current examination shows no weakness."
+          ],
+          [
+            "Functional neurological disorder",
+            "Symptom report without objective findings on examination could suggest a functional etiology, though acute onset is atypical."
+          ],
+          [
+            "Hemiplegic migraine",
+            "Transient unilateral weakness can occur with migraine variants, though no headache mentioned in history."
+          ],
+          [
+            "Peripheral nerve compression (radiculopathy or plexopathy)",
+            "Compression neuropathy could cause limb weakness, though bilateral (right arm and leg) involvement makes this less anatomically coherent."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Ongoing acute ischemic stroke",
+            "Normal strength on examination makes active stroke with persistent deficits unlikely at this time."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute ischemic stroke (left MCA territory)",
+            "CT shows hypodensity in left MCA territory with symptom onset 4 hours ago, and the patient has vascular risk factors (hypertension, dyslipidemia)."
+          ],
+          [
+            "Stroke with anosognosia",
+            "Patient's dismissive attitude and denial of deficit despite reported weakness suggests left hemisphere stroke causing impaired self-awareness of neurological deficits."
+          ],
+          [
+            "Transient ischemic attack with early infarction",
+            "Initial weakness may have resolved by examination time, but CT demonstrates acute infarction indicating progression from TIA to completed stroke."
+          ],
+          [
+            "Cardioembolic stroke",
+            "Acute onset focal neurological symptoms with left MCA distribution infarct raises possibility of embolic source requiring cardiac workup."
+          ],
+          [
+            "Large vessel occlusion with reperfusion",
+            "Normal strength on exam despite symptoms 4 hours ago and positive CT could indicate spontaneous recanalization of MCA with clinical improvement."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Functional neurological disorder",
+            "CT demonstrates objective structural brain abnormality (hypodensity in left MCA territory) ruling out purely functional etiology."
+          ],
+          [
+            "Seizure with Todd's paralysis",
+            "CT findings of acute infarction rather than seizure-related changes make this unlikely."
+          ],
+          [
+            "Hypoglycemia",
+            "Normal laboratory studies including electrolytes rule out metabolic causes of weakness."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Acute ischemic stroke with anosognosia",
+            "MRI-confirmed left MCA infarct with patient dismissiveness suggesting denial of deficits characteristic of right hemisphere syndrome."
+          ],
+          [
+            "Cardioembolic stroke",
+            "Acute left MCA territory infarct with cardiology involvement suggests possible cardiac source requiring further evaluation."
+          ],
+          [
+            "Large artery atherosclerotic stroke",
+            "Moderate left carotid stenosis with ipsilateral MCA infarct in patient with vascular risk factors indicates atherothrombotic etiology."
+          ],
+          [
+            "Lacunar stroke with Todd's paresis resolution",
+            "Normal strength on examination despite reported weakness could represent small vessel disease with rapidly resolving symptoms."
+          ],
+          [
+            "Artery-to-artery embolism",
+            "Left carotid stenosis serving as embolic source to left MCA territory represents thromboembolic mechanism."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Transient ischemic attack",
+            "MRI confirms permanent infarction rather than transient symptoms without tissue injury."
+          ],
+          [
+            "Functional neurological disorder",
+            "Imaging demonstrates objective structural brain lesion excluding purely functional etiology."
+          ],
+          [
+            "Hemorrhagic stroke",
+            "Non-contrast CT and subsequent imaging confirm ischemic rather than hemorrhagic pathology."
+          ]
+        ]
+      },
+      "cf_id": "case_026_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is found to have full and equal strength in all extremities, arguing against a stroke."
+    }
+  ]
+}

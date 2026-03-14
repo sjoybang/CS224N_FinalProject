@@ -1,0 +1,294 @@
+{
+  "case_id": "case_008",
+  "model": "claude",
+  "ground_truth": "Glycosaminoglycan accumulation in the orbit",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia gravis",
+          "Diplopia worsening with reading suggests fatigable ocular muscle weakness, a hallmark of this neuromuscular junction disorder."
+        ],
+        [
+          "Thyroid eye disease (Graves' ophthalmopathy)",
+          "Eye pain and diplopia can occur with thyroid dysfunction, and thyroid disorders can cause menstrual irregularities and vasomotor symptoms."
+        ],
+        [
+          "Perimenopause with coincidental ocular disorder",
+          "Age-appropriate amenorrhea with hot flashes/sweating, though doesn't fully explain the ocular symptoms."
+        ],
+        [
+          "Pituitary adenoma",
+          "Can cause diplopia from mass effect on cranial nerves and secondary amenorrhea from hormonal disruption."
+        ],
+        [
+          "Multiple sclerosis",
+          "Can present with diplopia, eye pain (optic neuritis), and autonomic dysfunction affecting menstruation in middle-aged women."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Graves' disease",
+          "Tachycardia, hypertension, thyroid enlargement, proptosis, lid retraction, tremor, hyperreflexia, and heat intolerance are classic manifestations of hyperthyroidism with thyroid eye disease."
+        ],
+        [
+          "Toxic multinodular goiter",
+          "Diffuse thyroid enlargement with hyperthyroid symptoms (tachycardia, tremor, hyperreflexia, heat intolerance) could represent toxic nodular disease, though eye findings are less typical."
+        ],
+        [
+          "Thyroid storm",
+          "Severe hyperthyroid state with marked tachycardia, hypertension, tremor, and hyperreflexia, though patient lacks altered mental status or fever typical of this emergency."
+        ],
+        [
+          "TSH-secreting pituitary adenoma",
+          "Hyperthyroidism with visual symptoms could suggest pituitary pathology, though diplopia from convergence impairment and proptosis better fit thyroid eye disease."
+        ],
+        [
+          "Thyrotoxicosis factitia",
+          "Hyperthyroid symptoms with cessation of menses could result from exogenous thyroid hormone ingestion, though diffuse goiter and eye findings make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Menopause",
+          "While amenorrhea and hot flashes suggest menopause, this does not explain thyromegaly, proptosis, tachycardia, hyperreflexia, or tremor."
+        ],
+        [
+          "Myasthenia gravis",
+          "Diplopia without pain on extraocular movements could suggest this, but proptosis, lid retraction, and systemic hyperthyroid signs are inconsistent."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Graves' disease with thyroid eye disease",
+          "Suppressed TSH, elevated free T4, diffuse goiter, proptosis, extraocular muscle enlargement sparing tendons, and systemic hyperthyroid signs confirm this autoimmune condition."
+        ],
+        [
+          "Toxic multinodular goiter",
+          "Elevated free T4 and suppressed TSH with diffuse thyroid enlargement could represent autonomous thyroid nodules, though orbital findings would be atypical."
+        ],
+        [
+          "Thyroid storm",
+          "Severe hyperthyroidism with tachycardia and hypertension could indicate impending thyroid storm, though patient lacks fever or altered mental status."
+        ],
+        [
+          "TSH-secreting pituitary adenoma",
+          "Could cause hyperthyroidism and orbital symptoms from mass effect, but TSH would be elevated rather than suppressed."
+        ],
+        [
+          "Thyrotoxicosis factitia",
+          "Suppressed TSH and elevated T4 from exogenous thyroid hormone intake, though this would not explain the specific orbital findings with muscle enlargement."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myasthenia gravis",
+          "Diplopia improves rather than worsens with rest, and thyroid studies show clear hyperthyroidism rather than neuromuscular junction dysfunction."
+        ],
+        [
+          "Orbital pseudotumor",
+          "Would typically cause painful extraocular movements and lacks the systemic hyperthyroid manifestations and laboratory findings."
+        ],
+        [
+          "Cranial nerve palsy",
+          "Would show specific nerve distribution pattern without bilateral symmetric extraocular muscle enlargement or hyperthyroid features."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Graves' disease with thyroid eye disease",
+          "Suppressed TSH, elevated free T4, proptosis, extraocular muscle enlargement sparing tendons, and biopsy showing lymphocytic infiltration with glycosaminoglycan deposition are pathognomonic for Graves' orbitopathy."
+        ],
+        [
+          "Hashitoxicosis",
+          "Transient hyperthyroidism from Hashimoto's thyroiditis can present with thyrotoxicosis, though the classic orbital findings and biopsy results more strongly support Graves' disease."
+        ],
+        [
+          "Toxic multinodular goiter",
+          "Elevated free T4 with suppressed TSH and goiter are consistent, but the characteristic orbital pathology with glycosaminoglycan deposition is specific to Graves' disease, making this less likely."
+        ],
+        [
+          "TSH-secreting pituitary adenoma",
+          "Could explain hyperthyroidism, but would typically show elevated (not suppressed) TSH and does not cause the specific orbital pathology seen on biopsy."
+        ],
+        [
+          "Thyroiditis (subacute or silent)",
+          "Can cause transient thyrotoxicosis with goiter, but the orbital biopsy findings of glycosaminoglycan deposition are pathognomonic for Graves' disease, essentially excluding this diagnosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myasthenia gravis",
+          "Double vision improves (not worsens) with rest, no fatigability described, and orbital biopsy shows glycosaminoglycan deposition rather than neuromuscular junction pathology."
+        ],
+        [
+          "Orbital pseudotumor",
+          "Would show pain with extraocular movements and different histopathology without glycosaminoglycan deposition."
+        ],
+        [
+          "Primary menopause",
+          "Would not explain thyrotoxicosis, proptosis, or the specific orbital pathology findings."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Pituitary adenoma",
+            "Double vision and eye pain suggest mass effect on optic structures, while secondary amenorrhea could result from prolactinoma or other pituitary dysfunction."
+          ],
+          [
+            "Myasthenia gravis with premature menopause",
+            "Diplopia worsening with sustained effort (reading) is classic for myasthenia gravis, with concurrent but separate premature ovarian insufficiency."
+          ],
+          [
+            "Graves' disease (thyroid eye disease)",
+            "Hyperthyroidism can cause diplopia from orbital inflammation/myopathy and menstrual irregularities from metabolic effects."
+          ],
+          [
+            "Multiple sclerosis",
+            "Demyelinating lesions can cause diplopia and internuclear ophthalmoplegia, with hypothalamic involvement potentially affecting menstrual cycles."
+          ],
+          [
+            "Craniopharyngioma",
+            "Sellar/suprasellar mass could compress optic chiasm causing visual symptoms and disrupt hypothalamic-pituitary axis causing amenorrhea."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Graves' disease",
+            "Tachycardia, hypertension, tremor, hyperreflexia, diffusely enlarged thyroid, moist palms, and eye findings (conjunctival injection, impaired convergence) strongly suggest hyperthyroidism with early ophthalmopathy."
+          ],
+          [
+            "Toxic multinodular goiter",
+            "Hyperthyroid symptoms (tachycardia, tremor, hyperreflexia, amenorrhea) with diffuse thyroid enlargement could represent autonomous thyroid nodules, though eye findings are less typical."
+          ],
+          [
+            "Hyperthyroidism with concurrent myasthenia gravis",
+            "Diplopia and impaired convergence could indicate myasthenia gravis, which has known association with autoimmune thyroid disease and hyperthyroid signs are present."
+          ],
+          [
+            "Primary hyperthyroidism with premature ovarian insufficiency",
+            "Classic hyperthyroid findings explain most symptoms, with amenorrhea potentially due to separate early menopause rather than thyrotoxicosis alone."
+          ],
+          [
+            "Thyrotoxicosis factitia",
+            "All hyperthyroid manifestations present, though diffuse goiter makes exogenous thyroid hormone less likely than endogenous overproduction."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Menopause (primary)",
+            "While hot flashes and amenorrhea could suggest menopause, the tachycardia, tremor, hyperreflexia, goiter, and eye findings indicate hyperthyroidism as the primary process."
+          ],
+          [
+            "Isolated ocular myasthenia gravis",
+            "Absence of ptosis, normal visual acuity, and prominent systemic signs of hyperthyroidism make pure neuromuscular junction disorder unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Graves' disease with thyroid eye disease",
+            "Suppressed TSH, elevated free T4, diffuse goiter, tachycardia, hypertension, tremor, hyperreflexia, and MRI showing extraocular muscle enlargement with tendon sparing are pathognomonic."
+          ],
+          [
+            "Thyroid storm",
+            "Severe hyperthyroidism with marked tachycardia, hypertension, tremor, and hyperreflexia could represent an impending or early thyroid storm, though the patient lacks altered mental status."
+          ],
+          [
+            "Toxic multinodular goiter with orbital pseudotumor",
+            "Hyperthyroidism is confirmed by labs, but the diffuse (not nodular) thyroid enlargement and characteristic MRI findings make this less likely than Graves' disease."
+          ],
+          [
+            "TSH-secreting pituitary adenoma with secondary orbital involvement",
+            "Could cause hyperthyroidism and ophthalmologic findings, but TSH is suppressed rather than elevated or inappropriately normal."
+          ],
+          [
+            "Hyperthyroidism with myasthenia gravis",
+            "Both conditions can cause diplopia and convergence impairment, though the MRI showing muscle enlargement with tendon sparing is more consistent with thyroid eye disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Menopause-related symptoms alone",
+            "The suppressed TSH and elevated free T4 confirm hyperthyroidism as the primary pathology rather than simple menopause."
+          ],
+          [
+            "Orbital myositis",
+            "The pattern of muscle involvement with tendon sparing and associated systemic hyperthyroidism indicates thyroid eye disease rather than isolated inflammatory myositis."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Graves' disease with thyroid eye disease (Graves' orbitopathy)",
+            "Suppressed TSH, elevated free T4, enlarged thyroid, hyperthyroid symptoms, MRI showing extraocular muscle enlargement sparing tendons, and biopsy confirming lymphocytic infiltration with glycosaminoglycan deposition are pathognomonic."
+          ],
+          [
+            "Hashitoxicosis (transient thyrotoxicosis in Hashimoto's thyroiditis)",
+            "Could present with thyrotoxicosis and orbital involvement, though the orbital biopsy findings and classic MRI pattern strongly favor Graves' disease over this variant."
+          ],
+          [
+            "Thyroid stimulating hormone receptor antibody-mediated disease",
+            "This is essentially the pathophysiologic mechanism of Graves' disease, representing the same condition with emphasis on autoantibody-driven thyrotoxicosis and orbitopathy."
+          ],
+          [
+            "IgG4-related ophthalmic disease with concurrent hyperthyroidism",
+            "Could cause orbital muscle enlargement and lymphocytic infiltration, but the combination with classic hyperthyroidism and characteristic MRI findings makes this unlikely."
+          ],
+          [
+            "Orbital myositis with concurrent thyrotoxicosis",
+            "Could explain muscle enlargement and inflammation, but typically involves tendon inflammation (unlike this case), and the combination with all other findings points to unified Graves' disease diagnosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myasthenia gravis",
+            "No ptosis, no fatigable weakness pattern, and orbital biopsy/MRI findings incompatible."
+          ],
+          [
+            "Menopause alone",
+            "Cannot explain thyrotoxicosis, orbital findings, or biopsy results."
+          ],
+          [
+            "Cushing's syndrome",
+            "Does not cause suppressed TSH, elevated T4, or these orbital findings."
+          ],
+          [
+            "Orbital tumor",
+            "Biopsy shows inflammatory infiltrate not neoplasm, and bilateral symmetric muscle involvement favors inflammatory process."
+          ]
+        ]
+      },
+      "cf_id": "case_008_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of proptosis and lid retraction argues against glycosaminoglycan accumulation in the orbit, which typically causes these findings due to orbital tissue expansion."
+    }
+  ]
+}

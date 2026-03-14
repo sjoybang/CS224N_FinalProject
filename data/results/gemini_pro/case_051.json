@@ -1,0 +1,286 @@
+{
+  "case_id": "case_051",
+  "model": "gemini_pro",
+  "ground_truth": "Muscle physiology during exercise",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Normal Health Status",
+          "The individual may be a healthy control participant in the research study, having no underlying muscle pathology."
+        ],
+        [
+          "Becker Muscular Dystrophy",
+          "This dystrophinopathy presents in males with slowly progressive weakness, fitting the patient's age and the study's focus on muscle."
+        ],
+        [
+          "Myotonic Dystrophy Type 1",
+          "As the most common adult-onset muscular dystrophy, it often presents in early adulthood with myotonia, a key muscle property."
+        ],
+        [
+          "Limb-Girdle Muscular Dystrophy",
+          "This is a heterogeneous group of genetic myopathies with variable onset, including early adulthood, that cause progressive proximal muscle weakness."
+        ],
+        [
+          "Metabolic Myopathy",
+          "Conditions like McArdle disease cause exercise-induced symptoms, making them a plausible reason for inclusion in a muscle property research study."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Duchenne Muscular Dystrophy",
+          "The patient's age is inconsistent with the typical severe disability and shortened lifespan associated with this diagnosis."
+        ],
+        [
+          "Inclusion Body Myositis",
+          "This myopathy almost exclusively affects individuals over the age of 50."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "McArdle disease",
+          "The intense anaerobic exercise (burpees) is a classic trigger for exercise intolerance and contractures due to impaired muscle glycogenolysis."
+        ],
+        [
+          "Myotonia congenita",
+          "The protocol's use of forceful contractions and direct electrical stimulation could elicit the characteristic delayed muscle relaxation (myotonia)."
+        ],
+        [
+          "Periodic paralysis",
+          "The sequence of strenuous exercise followed by a period of rest is a classic trigger for episodes of flaccid weakness in these muscle channelopathies."
+        ],
+        [
+          "Long QT syndrome",
+          "Cardiac monitoring during the adrenergic stress of high-intensity exercise can unmask the characteristic QT interval prolongation and associated arrhythmias."
+        ],
+        [
+          "Mitochondrial myopathy",
+          "The combined metabolic demands of the three distinct muscle challenges could reveal an underlying defect in cellular energy production, leading to exercise intolerance."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Duchenne muscular dystrophy",
+          "The patient's age and ability to participate in this study are inconsistent with the typical severe, early-onset presentation of this disease."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Normal Physiological Response",
+          "All EMG and heart rate findings are the expected, healthy responses to the specific tasks of weight lifting, exercise, and electrical stimulation."
+        ],
+        [
+          "Exercise-Induced Sinus Tachycardia",
+          "The heart rate of 150/min is an appropriate physiological response to the metabolic demands of performing burpees."
+        ],
+        [
+          "Normal Skeletal Muscle Recruitment",
+          "The increased EMG activity in the biceps is the expected result of recruiting motor units to generate force for weight lifting."
+        ],
+        [
+          "Normal Neuromuscular Response to Electrical Stimulation",
+          "The increased EMG activity in the gastrocnemius is the expected outcome of applying a 50 Hz electrical stimulus."
+        ],
+        [
+          "Healthy Subject with No Evidence of Disease",
+          "The data from all three phases of the study are consistent with a healthy 22-year-old male without any underlying neuromuscular or cardiac pathology."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myopathy",
+          "The muscles demonstrate normal electrical activation in response to both voluntary and external stimuli, which is not consistent with a primary muscle disease."
+        ],
+        [
+          "Neuromuscular Junction Disorder",
+          "A normal EMG response to voluntary effort and direct stimulation makes a disorder like myasthenia gravis highly unlikely."
+        ],
+        [
+          "Pathological Arrhythmia",
+          "The elevated heart rate is clearly a sinus tachycardia caused by exercise, not an underlying cardiac conduction abnormality."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Normal Physiological Response",
+          "All findings, including increased EMG activity and motor unit recruitment, are the expected results for a healthy individual undergoing the described physical tasks."
+        ],
+        [
+          "Effective Motor Unit Recruitment",
+          "The correlation between the number of active motor units and muscle tension is the definition of normal physiological force generation."
+        ],
+        [
+          "Normal Cardiovascular Response to Exercise",
+          "The increase in heart rate and cardiac electrical activity is an appropriate adaptation to the metabolic demands of the exercise performed."
+        ],
+        [
+          "Physiological Tetanus",
+          "The findings in the gastrocnemius are consistent with a normal fused tetanic contraction resulting from high-frequency electrical stimulation."
+        ],
+        [
+          "Intact Neuromuscular Function",
+          "The ability to generate appropriate muscle tension in response to voluntary, systemic, and direct electrical stimulation indicates a healthy and functioning neuromuscular system."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myopathy",
+          "Ruled out because muscle tension generation is appropriately correlated with motor unit recruitment, indicating normal muscle fiber function."
+        ],
+        [
+          "Neuromuscular Junction Disorder",
+          "Ruled out as there is no evidence of fatigue or a decremental response; muscle recruitment increases appropriately with demand."
+        ],
+        [
+          "Cardiomyopathy",
+          "Ruled out as the heart shows a normal electrical and rate response to exercise stress."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Becker Muscular Dystrophy",
+            "This X-linked recessive myopathy presents in males with a milder and later onset of proximal weakness than Duchenne muscular dystrophy."
+          ],
+          [
+            "Limb-Girdle Muscular Dystrophy",
+            "This heterogeneous group of genetic disorders can present in early adulthood with slowly progressive weakness of the pelvic and shoulder girdles."
+          ],
+          [
+            "Myotonic Dystrophy Type 1",
+            "This is the most common adult-onset muscular dystrophy, characterized by myotonia and progressive weakness, which could be mild in a 22-year-old."
+          ],
+          [
+            "Metabolic Myopathy",
+            "These disorders, such as McArdle disease, typically cause exercise intolerance and myalgias, which may be the focus of a muscle property study."
+          ],
+          [
+            "Facioscapulohumeral Dystrophy",
+            "Onset of weakness affecting the face, scapular, and upper arm muscles typically occurs by the second decade of life."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Duchenne Muscular Dystrophy",
+            "A 22-year-old with this diagnosis would be non-ambulatory and severely compromised, making participation in such a study highly unlikely."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Benign Exercise-Associated Muscle Cramps",
+            "The patient is experiencing common muscle cramps during a strenuous exercise, which is the classic presentation for this benign and most frequent cause."
+          ],
+          [
+            "McArdle Disease (Glycogen Storage Disease Type V)",
+            "The exercise-induced muscle pain and cramping in a young male are hallmark symptoms of this metabolic myopathy that impairs glycogen breakdown during intense anaerobic activity."
+          ],
+          [
+            "Carnitine Palmitoyltransferase II (CPT II) Deficiency",
+            "This disorder of fatty acid metabolism can cause exercise-induced muscle pain and cramping, which could be triggered by the metabolic stress of the burpee exercise."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "Exercise intolerance and muscle pain are key features of mitochondrial disorders, which would be unmasked by the high energy demands of the burpee exercise."
+          ],
+          [
+            "Dehydration and Electrolyte Imbalance",
+            "Strenuous exercise can lead to significant fluid and electrolyte loss through sweat, a common physiological trigger for muscle cramping."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Peripheral Artery Disease",
+            "The patient's age of 22 makes atherosclerotic disease causing claudication extremely unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "McArdle Disease (Glycogen Storage Disease V)",
+            "This condition classically presents in young individuals with exercise intolerance, significant muscle pain, and cramping triggered by intense, short-duration anaerobic activity."
+          ],
+          [
+            "Benign Exercise-Associated Muscle Cramps",
+            "This is the most common cause of muscle cramping during or after strenuous exercise, often related to muscle fatigue, dehydration, or minor electrolyte shifts."
+          ],
+          [
+            "Carnitine Palmitoyltransferase II Deficiency",
+            "This is a disorder of fatty acid metabolism that causes muscle pain and cramping with exercise, although it is more classically associated with prolonged rather than brief, intense exertion."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "This broad category of disorders results from dysfunctional mitochondria, leading to impaired energy production that can manifest as exercise intolerance and myalgia."
+          ],
+          [
+            "Brody Disease",
+            "This is a rare myopathy characterized by impaired muscle relaxation after exercise, leading to painless or painful muscle stiffness and cramps."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myasthenia Gravis",
+            "This disorder causes fatigable weakness rather than the prominent exercise-induced pain and cramping described."
+          ],
+          [
+            "Peripheral Neuropathy",
+            "The symptoms are isolated to exercise-induced cramping without the sensory deficits or distal weakness typical of a peripheral neuropathy."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "McArdle Disease (GSD V)",
+            "This genetic disorder classically causes severe exercise intolerance and painful cramps during intense, short-duration anaerobic activity like burpees."
+          ],
+          [
+            "Exercise-Associated Muscle Cramps",
+            "These common, benign cramps are a physiological response to muscle fatigue, deconditioning, or electrolyte shifts during strenuous exercise."
+          ],
+          [
+            "Carnitine Palmitoyltransferase II Deficiency",
+            "This metabolic disorder impairs the use of fats for energy, leading to muscle pain and cramping triggered by exercise."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "This broad category of disorders impairs cellular energy production, a defect which can manifest as exercise intolerance and myalgia."
+          ],
+          [
+            "Becker Muscular Dystrophy",
+            "Milder forms of this X-linked dystrophinopathy can present in young men with exercise-induced cramps and pain as a primary symptom."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myasthenia Gravis",
+            "The presentation is exercise-induced cramping and pain, not the fatigable weakness characteristic of this neuromuscular junction disorder."
+          ],
+          [
+            "Hypokalemic Periodic Paralysis",
+            "This channelopathy typically causes episodes of flaccid weakness after exercise, not painful cramping during exertion."
+          ],
+          [
+            "Amyotrophic Lateral Sclerosis",
+            "This progressive motor neuron disease is inconsistent with the patient's age and presentation of isolated, exercise-induced symptoms."
+          ]
+        ]
+      },
+      "cf_id": "case_051_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports significant muscle cramping and pain in his legs during the burpee exercise phase, which is atypical for normal muscle physiology during exercise and suggests an underlying metabolic or electrolyte abnormality."
+    }
+  ]
+}

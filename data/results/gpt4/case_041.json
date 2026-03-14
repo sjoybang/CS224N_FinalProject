@@ -1,0 +1,264 @@
+{
+  "case_id": "case_041",
+  "model": "gpt4",
+  "ground_truth": "Progressive multifocal encephalopathy (PML)",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Multiple sclerosis",
+          "Difficulty walking could indicate a neurological disorder, and multiple sclerosis is common in young adults."
+        ],
+        [
+          "Peripheral neuropathy",
+          "Crohn's disease can lead to vitamin deficiencies, which may cause peripheral neuropathy and gait disturbances."
+        ],
+        [
+          "Transverse myelitis",
+          "This condition can cause sudden onset of neurological symptoms, including difficulty walking, and may be associated with autoimmune diseases."
+        ],
+        [
+          "Cerebral vascular accident",
+          "Although less common in young adults, a stroke could cause sudden difficulty walking."
+        ],
+        [
+          "Myasthenia gravis",
+          "This autoimmune disorder can cause muscle weakness, potentially affecting gait."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Progressive multifocal leukoencephalopathy (PML)",
+          "The use of natalizumab and the presence of ataxia and weakness suggest PML, a known risk with this medication."
+        ],
+        [
+          "Multiple sclerosis",
+          "The neurological symptoms and gait disturbance could indicate MS, which can present similarly to PML."
+        ],
+        [
+          "Cerebellar ataxia",
+          "The ataxic gait and limb ataxia are characteristic of cerebellar dysfunction."
+        ],
+        [
+          "Peripheral neuropathy",
+          "The weakness and gait disturbance could be due to peripheral nerve involvement, possibly related to Crohn's disease or its treatment."
+        ],
+        [
+          "Stroke",
+          "Sudden onset of neurological symptoms such as weakness and ataxia could indicate a cerebrovascular event."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Alcohol intoxication",
+          "The patient does not report alcohol use, and the symptoms are more consistent with neurological causes."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Progressive multifocal leukoencephalopathy (PML)",
+          "The use of natalizumab and the presence of non-enhancing white matter lesions in the parietal and occipital lobes are highly suggestive of PML."
+        ],
+        [
+          "Multiple sclerosis (MS)",
+          "The presence of white matter lesions and neurological symptoms could indicate MS, although the lack of contrast enhancement makes it less likely."
+        ],
+        [
+          "Cerebral vasculitis",
+          "White matter lesions and neurological deficits could be due to inflammation of cerebral vessels, although the MRI findings are not typical."
+        ],
+        [
+          "Acute disseminated encephalomyelitis (ADEM)",
+          "The MRI findings of multiple white matter lesions could suggest ADEM, but the chronicity and lack of enhancement are atypical."
+        ],
+        [
+          "Neurosarcoidosis",
+          "This can present with white matter lesions, but the lack of systemic symptoms and typical MRI findings make it less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Brain tumor",
+          "The absence of mass effect and contrast enhancement on MRI makes a brain tumor unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Progressive multifocal leukoencephalopathy (PML)",
+          "The presence of JC virus in the cerebrospinal fluid and multiple white matter lesions on MRI are characteristic of PML, especially in a patient on natalizumab."
+        ],
+        [
+          "Multiple sclerosis",
+          "Although less likely due to the JC virus PCR positivity, the white matter lesions and neurological symptoms could suggest MS."
+        ],
+        [
+          "Acute disseminated encephalomyelitis (ADEM)",
+          "The MRI findings and neurological symptoms could mimic ADEM, but the JC virus PCR positivity makes this less likely."
+        ],
+        [
+          "Central nervous system lymphoma",
+          "The MRI findings could suggest lymphoma, but the lack of mass effect and JC virus positivity make this less likely."
+        ],
+        [
+          "Neurosarcoidosis",
+          "The neurological symptoms and MRI findings could suggest neurosarcoidosis, but the JC virus PCR positivity makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Stroke",
+          "The MRI findings and JC virus positivity are not consistent with a stroke."
+        ],
+        [
+          "Brain abscess",
+          "The lack of mass effect and JC virus positivity rule out a brain abscess."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Multiple sclerosis",
+            "Difficulty walking could indicate a neurological disorder, and multiple sclerosis is common in young adults."
+          ],
+          [
+            "Peripheral neuropathy",
+            "Crohn's disease can lead to vitamin deficiencies, which may cause peripheral neuropathy and gait disturbances."
+          ],
+          [
+            "Transverse myelitis",
+            "This condition can cause sudden onset of neurological symptoms, including difficulty walking, and is associated with autoimmune diseases."
+          ],
+          [
+            "Cerebral vascular accident",
+            "Although less common in young adults, a stroke could cause sudden difficulty walking."
+          ],
+          [
+            "Myasthenia gravis",
+            "This autoimmune disorder can cause muscle weakness, potentially affecting gait."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Progressive multifocal leukoencephalopathy (PML)",
+            "The use of natalizumab and the presence of ataxia and weakness suggest PML, a known risk with this medication."
+          ],
+          [
+            "Multiple sclerosis",
+            "The neurological symptoms, including gait and limb ataxia, could indicate MS, although less likely given the Crohn's disease history."
+          ],
+          [
+            "Cerebellar ataxia",
+            "The ataxic gait and limb ataxia are consistent with cerebellar dysfunction, which could be secondary to various causes."
+          ],
+          [
+            "Crohn's disease-related neurological complication",
+            "Neurological manifestations can occur in Crohn's disease, potentially explaining the ataxia and weakness."
+          ],
+          [
+            "Vitamin B12 deficiency",
+            "Neurological symptoms such as ataxia and weakness can result from B12 deficiency, which can occur in patients with Crohn's disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Alcohol intoxication",
+            "The patient denies alcohol use, and the symptoms are more consistent with neurological disease."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Progressive multifocal leukoencephalopathy (PML)",
+            "The use of natalizumab and the presence of multiple non-enhancing white matter lesions in the parietal and occipital lobes are highly suggestive of PML."
+          ],
+          [
+            "Multiple sclerosis",
+            "The MRI findings of white matter lesions could be consistent with multiple sclerosis, although the lack of contrast enhancement and the patient's medication history make this less likely."
+          ],
+          [
+            "Cerebral vasculitis",
+            "White matter lesions and neurological symptoms could be due to cerebral vasculitis, although the MRI findings are not typical."
+          ],
+          [
+            "Acute disseminated encephalomyelitis (ADEM)",
+            "The presence of multiple white matter lesions could suggest ADEM, but the chronicity and lack of enhancement make it less likely."
+          ],
+          [
+            "Central nervous system lymphoma",
+            "While less likely due to the lack of mass effect and enhancement, CNS lymphoma can present with white matter lesions."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Stroke",
+            "The MRI findings and lack of acute focal neurological deficits make a stroke unlikely."
+          ],
+          [
+            "Brain tumor",
+            "The absence of mass effect and contrast enhancement on MRI rules out a typical brain tumor."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Progressive multifocal leukoencephalopathy (PML)",
+            "The presence of JC virus in the cerebrospinal fluid and multiple white matter lesions on MRI are characteristic of PML, especially in a patient on natalizumab."
+          ],
+          [
+            "Multiple sclerosis",
+            "Although less likely, the white matter lesions and neurological symptoms could suggest MS, but the positive JC virus PCR makes this less probable."
+          ],
+          [
+            "Acute disseminated encephalomyelitis (ADEM)",
+            "The MRI findings could be consistent with ADEM, but the positive JC virus PCR and chronicity of symptoms make this less likely."
+          ],
+          [
+            "Central nervous system vasculitis",
+            "The MRI findings could suggest vasculitis, but the positive JC virus PCR and lack of systemic vasculitis symptoms make this less likely."
+          ],
+          [
+            "Neurosarcoidosis",
+            "While neurosarcoidosis can cause white matter lesions, the positive JC virus PCR and lack of other systemic sarcoidosis symptoms make this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Multiple sclerosis",
+            "The positive JC virus PCR and use of natalizumab strongly suggest PML over MS."
+          ],
+          [
+            "Acute disseminated encephalomyelitis (ADEM)",
+            "The chronic nature of the symptoms and positive JC virus PCR are not typical for ADEM."
+          ],
+          [
+            "Central nervous system vasculitis",
+            "The positive JC virus PCR and lack of systemic symptoms make vasculitis unlikely."
+          ],
+          [
+            "Neurosarcoidosis",
+            "The positive JC virus PCR and absence of systemic sarcoidosis symptoms make this diagnosis unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_041_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports having bloody diarrhea, which argues against PML as it suggests an exacerbation of Crohn's disease."
+    }
+  ]
+}

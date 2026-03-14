@@ -1,0 +1,244 @@
+{
+  "case_id": "case_035",
+  "model": "gemini",
+  "ground_truth": "Meningococcal meningitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Meningitis",
+          "The combination of fever, headache, vomiting, lethargy, and confusion in a young child is highly suggestive of meningitis."
+        ],
+        [
+          "Encephalitis",
+          "Encephalitis can present with similar symptoms to meningitis, including fever, headache, altered mental status, and vomiting."
+        ],
+        [
+          "Brain abscess",
+          "Although less common, a brain abscess can cause headache, fever, vomiting, and neurological deficits like lethargy and confusion."
+        ],
+        [
+          "Viral syndrome",
+          "While less likely given the severity, a severe viral infection could present with fever, vomiting, headache, and lethargy."
+        ],
+        [
+          "Toxic ingestion",
+          "Exposure to certain toxins could cause altered mental status, vomiting, and other neurological symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Common cold",
+          "Symptoms are too severe."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Meningococcal meningitis",
+          "The combination of fever, headache, neck rigidity, petechial rash, and purulent nasal discharge strongly suggests meningococcal meningitis."
+        ],
+        [
+          "Pneumococcal meningitis",
+          "While less likely given the petechiae, pneumococcal meningitis is still a consideration with fever, headache, neck rigidity, and altered mental status."
+        ],
+        [
+          "Septic shock",
+          "Hypotension, tachycardia, and fever indicate septic shock, which could be secondary to a bacterial infection."
+        ],
+        [
+          "Viral encephalitis",
+          "Fever, headache, altered mental status, and vomiting can be indicative of viral encephalitis, although the petechiae are less typical."
+        ],
+        [
+          "Disseminated intravascular coagulation",
+          "Petechiae, hypotension, and potential underlying infection suggest the possibility of DIC."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Common cold",
+          "The presence of neck rigidity, altered mental status, and petechiae rule out a simple upper respiratory infection."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Bacterial Meningitis",
+          "The combination of fever, headache, neck rigidity, altered mental status, petechial rash, and CSF findings (high WBCs with PMN predominance, elevated protein, and low glucose) strongly suggests bacterial meningitis."
+        ],
+        [
+          "Viral Meningitis",
+          "While bacterial meningitis is more likely given the CSF findings, viral meningitis can present with similar symptoms, though typically with less dramatic CSF abnormalities."
+        ],
+        [
+          "Tuberculous Meningitis",
+          "This should be considered given the elevated protein and WBC count in the CSF, although the rapid onset is less typical."
+        ],
+        [
+          "Fungal Meningitis",
+          "Although less likely in an immunocompetent child, fungal meningitis can present with similar CSF findings, especially elevated protein and low glucose."
+        ],
+        [
+          "Brain Abscess",
+          "While less likely to present with such a rapid onset, a brain abscess could cause headache, fever, altered mental status, and meningeal signs."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Viral Upper Respiratory Infection",
+          "The CSF findings and neurological symptoms rule this out."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Meningococcal meningitis",
+          "The CSF culture is positive for Neisseria meningitidis, confirming the diagnosis."
+        ],
+        [
+          "Meningitis due to other bacteria",
+          "While less likely given the positive culture, other bacterial etiologies could present similarly."
+        ],
+        [
+          "Viral meningitis",
+          "Although the CSF analysis and culture point strongly towards bacterial meningitis, a viral etiology cannot be entirely ruled out without specific viral testing."
+        ],
+        [
+          "Encephalitis",
+          "Encephalitis could explain the altered mental status and fever, although the CSF findings are more suggestive of meningitis."
+        ],
+        [
+          "Brain abscess",
+          "A brain abscess could present with headache, fever, and altered mental status, but is less likely given the diffuse nature of the symptoms and CSF findings."
+        ]
+      ],
+      "eliminated": []
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meningitis",
+            "The combination of fever, headache, vomiting, lethargy, and confusion suggests a possible infection of the meninges."
+          ],
+          [
+            "Encephalitis",
+            "Altered mental status, fever, and headache point towards inflammation of the brain parenchyma."
+          ],
+          [
+            "Brain abscess",
+            "Headache, fever, vomiting, and neurological changes can be indicative of a localized brain infection."
+          ],
+          [
+            "Viral syndrome",
+            "While less likely given the severity, a severe viral infection could present with fever, lethargy, headache, and vomiting."
+          ],
+          [
+            "Toxic ingestion",
+            "Although less likely given the fever, altered mental status could be caused by accidental ingestion of a toxic substance."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Meningococcemia",
+            "The presence of fever, petechial rash, hypotension, and purulent nasal discharge strongly suggests a bacterial infection like meningococcemia."
+          ],
+          [
+            "Septic shock",
+            "Hypotension, fever, and lethargy in a child are consistent with septic shock, potentially stemming from a bacterial infection."
+          ],
+          [
+            "Viral encephalitis",
+            "Fever, headache, vomiting, and lethargy can be indicative of viral encephalitis, although the petechiae are less typical."
+          ],
+          [
+            "Bacterial pneumonia with sepsis",
+            "While lungs are clear, pneumonia can still be present, and the fever, hypotension, and lethargy suggest sepsis as a complication."
+          ],
+          [
+            "Kawasaki disease",
+            "Although less likely given the acute presentation and purulent nasal discharge, Kawasaki disease can present with fever, rash, and lethargy, especially in young children."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meningitis",
+            "No neck rigidity was noted."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Bacterial Meningitis",
+            "The CSF analysis showing elevated WBCs with PMN predominance, high protein, and low glucose strongly suggests a bacterial infection of the meninges."
+          ],
+          [
+            "Viral Meningitis",
+            "While less likely given the CSF findings, viral meningitis can present with fever, headache, vomiting, and altered mental status, and should be considered."
+          ],
+          [
+            "Tuberculous Meningitis",
+            "Although less acute, the CSF protein is elevated, and glucose is low, which can be seen in tuberculous meningitis."
+          ],
+          [
+            "Fungal Meningitis",
+            "Fungal infections can cause meningitis with similar CSF findings, especially in immunocompromised individuals."
+          ],
+          [
+            "Brain Abscess",
+            "Although less likely given the diffuse symptoms, a brain abscess could cause headache, fever, altered mental status, and vomiting, and may be associated with elevated CSF protein."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral Upper Respiratory Infection",
+            "The CSF findings are inconsistent with a simple viral URI."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Meningococcal meningitis",
+            "The CSF culture is positive for Neisseria meningitidis, confirming the diagnosis."
+          ],
+          [
+            "Complement deficiency",
+            "The patient has absent terminal complement activity (CH50 = 0), predisposing him to Neisseria meningitidis infection."
+          ],
+          [
+            "Septic shock",
+            "The patient presents with hypotension, tachycardia, and fever, indicating septic shock."
+          ],
+          [
+            "Bacterial meningitis (other)",
+            "While less likely given the positive culture, other bacterial etiologies could be considered if the initial culture was contaminated or inaccurate."
+          ],
+          [
+            "Encephalitis",
+            "Although meningitis is more likely given the CSF findings, encephalitis could present with similar symptoms of lethargy, confusion, and fever."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral meningitis",
+            "CSF analysis shows polymorphonuclear predominance, which is more typical of bacterial infections."
+          ]
+        ]
+      },
+      "cf_id": "case_035_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of nuchal rigidity makes meningococcal meningitis less likely."
+    }
+  ]
+}

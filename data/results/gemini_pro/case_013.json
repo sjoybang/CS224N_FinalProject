@@ -1,0 +1,268 @@
+{
+  "case_id": "case_013",
+  "model": "gemini_pro",
+  "ground_truth": "Benign prostatic hyperplasia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Benign Prostatic Hyperplasia (BPH)",
+          "This is the most common cause of lower urinary tract symptoms, including nocturia, in a man of this age due to prostatic enlargement causing bladder outlet obstruction."
+        ],
+        [
+          "Prostate Cancer",
+          "The patient's age and African American race are significant risk factors, and it can present with obstructive urinary symptoms identical to BPH."
+        ],
+        [
+          "Diabetes Mellitus",
+          "Uncontrolled or new-onset diabetes can cause polyuria from osmotic diuresis, leading to increased urinary frequency and nocturia."
+        ],
+        [
+          "Overactive Bladder (OAB)",
+          "This condition of involuntary bladder muscle contractions is a common cause of urinary frequency and nocturia in the elderly population."
+        ],
+        [
+          "Urinary Tract Infection (UTI)",
+          "Bladder irritation from an infection can cause urinary frequency and urgency, and the risk increases with age and potential incomplete bladder emptying."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Benign Prostatic Hyperplasia (BPH)",
+          "The patient's age, lower urinary tract symptoms, and physical exam finding of a smoothly enlarged, non-tender prostate are classic for this diagnosis."
+        ],
+        [
+          "Prostate Cancer",
+          "This is a common malignancy in an elderly African American man that can present with urinary symptoms identical to BPH, and a smooth DRE does not rule it out."
+        ],
+        [
+          "Overactive Bladder (OAB)",
+          "The patient's primary symptoms of urinary frequency and nocturia are hallmark features of OAB, which can occur independently or secondary to prostatic obstruction."
+        ],
+        [
+          "Chronic Prostatitis",
+          "This condition can cause irritative voiding symptoms and may present with an enlarged, non-tender prostate on examination."
+        ],
+        [
+          "Bladder Cancer",
+          "This malignancy is an important consideration in an older patient presenting with new-onset irritative urinary symptoms like frequency and nocturia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Prostatitis",
+          "The absence of fever, systemic symptoms, and a non-tender prostate on exam makes an acute infection highly unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Benign Prostatic Hyperplasia (BPH)",
+          "The patient's age, lower urinary tract symptoms, enlarged and smooth prostate on exam, and high postvoid residual are all classic findings for BPH."
+        ],
+        [
+          "Prostate Cancer",
+          "This is a key consideration in an elderly African American man with an elevated PSA and obstructive voiding symptoms, despite a non-suspicious digital rectal exam."
+        ],
+        [
+          "Detrusor Underactivity",
+          "The significantly elevated postvoid residual volume suggests the bladder muscle may be too weak to empty effectively, which can be a primary issue or secondary to chronic obstruction."
+        ],
+        [
+          "Neurogenic Bladder",
+          "Voiding dysfunction with a high postvoid residual can result from underlying neurologic conditions common in the elderly, which may not have been previously diagnosed."
+        ],
+        [
+          "Urethral Stricture",
+          "A narrowing of the urethra could cause the bladder outlet obstruction and high postvoid residual, although it is less common than BPH without a history of trauma or infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary Tract Infection",
+          "The urinalysis was negative for signs of infection."
+        ],
+        [
+          "Overactive Bladder",
+          "The high postvoid residual volume is inconsistent with a primary diagnosis of overactive bladder and points towards an obstructive or underactive etiology."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Benign Prostatic Hyperplasia (BPH)",
+          "The patient's age, lower urinary tract symptoms, enlarged smooth prostate on exam, and urodynamic findings of bladder outlet obstruction are all classic for BPH."
+        ],
+        [
+          "Prostate Cancer",
+          "This must be considered in an elderly man with bladder outlet obstruction, as it can present similarly to BPH, and the PSA is not definitively normal."
+        ],
+        [
+          "Urethral Stricture",
+          "This is a potential cause of bladder outlet obstruction confirmed on urodynamics, although less common than prostatic causes without a history of trauma or instrumentation."
+        ],
+        [
+          "Bladder Neck Contracture",
+          "This diagnosis explains bladder outlet obstruction due to scarring at the bladder opening, though it is most often a complication of prior surgery."
+        ],
+        [
+          "Neurogenic Bladder",
+          "A condition such as detrusor-sphincter dyssynergia could cause a functional bladder outlet obstruction, though it is less likely without other neurological signs or symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary Tract Infection",
+          "The urinalysis was negative for signs of infection."
+        ],
+        [
+          "Overactive Bladder",
+          "The high postvoid residual and urodynamic finding of obstruction point to an obstructive etiology rather than primary detrusor overactivity."
+        ],
+        [
+          "Nocturnal Polyuria",
+          "This condition would not explain the high postvoid residual or the urodynamic evidence of bladder outlet obstruction."
+        ],
+        [
+          "Bladder Cancer",
+          "The absence of hematuria on urinalysis makes this diagnosis significantly less likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Benign Prostatic Hyperplasia (BPH)",
+            "This is the most common cause of lower urinary tract symptoms, including nocturia, in a man of this age due to prostatic enlargement causing bladder outlet obstruction."
+          ],
+          [
+            "Prostate Cancer",
+            "The patient's age and African American race are significant risk factors, and it can present with obstructive urinary symptoms identical to BPH."
+          ],
+          [
+            "Diabetes Mellitus",
+            "Uncontrolled or new-onset diabetes can cause polyuria from osmotic diuresis, leading to increased urinary frequency and nocturia."
+          ],
+          [
+            "Overactive Bladder (OAB)",
+            "This condition of involuntary bladder muscle contractions is a common cause of urinary frequency and nocturia in the elderly population."
+          ],
+          [
+            "Urinary Tract Infection (UTI)",
+            "Bladder irritation from an infection can cause urinary frequency and urgency, and the risk increases with age and potential incomplete bladder emptying."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Prostate Cancer",
+            "A palpable nodule on digital rectal exam in an elderly African American man is highly suspicious for malignancy."
+          ],
+          [
+            "Benign Prostatic Hyperplasia (BPH)",
+            "The patient's age, lower urinary tract symptoms, and enlarged prostate are all classic features of BPH."
+          ],
+          [
+            "Chronic Prostatitis",
+            "This condition can cause long-standing urinary symptoms and prostate gland changes, which could include focal fibrosis palpated as a nodule."
+          ],
+          [
+            "Prostatic Calculi",
+            "Calcifications within the prostate can be palpated as a hard nodule, mimicking the feel of a cancerous lesion."
+          ],
+          [
+            "Prostatic Infarction",
+            "An area of infarction within a large BPH gland can become fibrotic and firm, presenting as a palpable nodule on examination."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Prostatitis",
+            "The absence of fever, systemic symptoms, and severe pain makes an acute infection unlikely."
+          ],
+          [
+            "Bladder Cancer",
+            "This diagnosis would not explain the physical exam findings of an enlarged prostate with a palpable nodule."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Prostate Cancer",
+            "A palpable prostate nodule on digital rectal exam is highly suspicious for malignancy, especially given the patient's age and race."
+          ],
+          [
+            "Benign Prostatic Hyperplasia (BPH)",
+            "The patient's age, enlarged prostate, lower urinary tract symptoms, and elevated postvoid residual are all classic features of BPH."
+          ],
+          [
+            "Urethral Stricture",
+            "This is an alternative cause of bladder outlet obstruction that would explain the high postvoid residual and obstructive voiding symptoms."
+          ],
+          [
+            "Detrusor Underactivity",
+            "Impaired bladder contractility can lead to a high postvoid residual and overflow symptoms like urinary frequency and nocturia."
+          ],
+          [
+            "Chronic Prostatitis",
+            "Prostatic inflammation can cause lower urinary tract symptoms and PSA elevation, and sometimes focal induration that can mimic a nodule."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary Tract Infection",
+            "The negative urinalysis effectively rules out an active infection as the cause of the patient's symptoms."
+          ],
+          [
+            "Overactive Bladder",
+            "The presence of a significantly elevated postvoid residual argues against primary overactive bladder, which is typically associated with complete bladder emptying."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Benign Prostatic Hyperplasia (BPH)",
+            "This is the most common cause of an enlarged prostate, lower urinary tract symptoms, and bladder outlet obstruction in an elderly man."
+          ],
+          [
+            "Prostate Cancer",
+            "The presence of a palpable nodule on an enlarged prostate is highly suspicious for malignancy, which can also cause bladder outlet obstruction."
+          ],
+          [
+            "Urethral Stricture",
+            "This condition can cause the decreased urinary flow rate and increased bladder outlet resistance seen on urodynamic studies, although it does not explain the prostate findings."
+          ],
+          [
+            "Bladder Neck Contracture",
+            "This is a specific cause of bladder outlet obstruction that would be consistent with the urodynamic findings, though it is less common than BPH."
+          ],
+          [
+            "Chronic Prostatitis",
+            "This can cause long-standing lower urinary tract symptoms and some degree of obstruction, though the palpable nodule makes other diagnoses more likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary Tract Infection",
+            "The urinalysis was negative for any signs of infection."
+          ]
+        ]
+      },
+      "cf_id": "case_013_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The digital rectal exam reveals a nodule on the prostate, which raises concern for prostate cancer and argues against benign prostatic hyperplasia."
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "case_id": "case_051",
+  "model": "gemini",
+  "ground_truth": "Muscle physiology during exercise",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Normal variant",
+          "The patient is young and participating in a muscle study, suggesting a baseline level of health."
+        ],
+        [
+          "Delayed Onset Muscle Soreness (DOMS)",
+          "Exercise-induced muscle pain could be a factor given participation in a muscle study."
+        ],
+        [
+          "Muscle strain",
+          "The patient may have experienced a minor muscle injury during the study."
+        ],
+        [
+          "Myalgia",
+          "Generalized muscle pain could be present for various reasons."
+        ],
+        [
+          "Dehydration",
+          "Inadequate hydration can sometimes cause muscle discomfort."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Exercise-induced muscle fatigue",
+          "The subject is performing physical activities that could lead to muscle fatigue."
+        ],
+        [
+          "Muscle strain",
+          "Lifting weights and performing burpees could cause a muscle strain."
+        ],
+        [
+          "Exertional rhabdomyolysis",
+          "Strenuous exercise can lead to muscle damage and rhabdomyolysis."
+        ],
+        [
+          "Cardiac arrhythmia",
+          "The increased heart rate during burpees could reveal an underlying arrhythmia."
+        ],
+        [
+          "Neuromuscular disorder",
+          "Electrical stimulation could reveal an underlying neuromuscular disorder affecting muscle response."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses can be definitively ruled out at this stage."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Normal muscle function",
+          "The EMG results indicate expected muscle activation during the different phases of the study."
+        ],
+        [
+          "Exercise-induced muscle fatigue",
+          "Repetitive muscle contractions during burpees and electrical stimulation could lead to fatigue."
+        ],
+        [
+          "Muscle strain",
+          "Lifting weights could cause a muscle strain in the biceps."
+        ],
+        [
+          "Muscle cramp",
+          "Electrical stimulation could induce muscle cramps in the gastrocnemius."
+        ],
+        [
+          "Dehydration",
+          "Dehydration could contribute to muscle cramps and fatigue during exercise."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Muscular dystrophy",
+          "The acute onset and specific triggers make this unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Normal physiological response to exercise",
+          "The observed muscle activity and motor unit recruitment align with the expected physiological response to physical exertion and electrical stimulation."
+        ],
+        [
+          "Muscle fatigue",
+          "Increased motor unit recruitment could indicate the body is trying to compensate for muscle fatigue during the exercise phases."
+        ],
+        [
+          "Muscle hypertrophy",
+          "The increased motor unit recruitment could be a sign of the body adapting to the exercise stimulus, potentially leading to muscle growth over time."
+        ],
+        [
+          "Neuromuscular adaptation",
+          "The changes in muscle fiber recruitment patterns could represent the nervous system becoming more efficient at activating muscles during these specific tasks."
+        ],
+        [
+          "Exercise-associated muscle cramps",
+          "While not explicitly stated, the increased motor unit activity could be a precursor to or a sign of muscle cramping during exercise."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Muscular dystrophy",
+          "No indication of progressive muscle weakness or degeneration is present."
+        ],
+        [
+          "Myositis",
+          "No indication of inflammation or autoimmune involvement is present."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Normal variant",
+            "The patient is young and participating in a muscle study, suggesting a baseline level of health."
+          ],
+          [
+            "Delayed Onset Muscle Soreness (DOMS)",
+            "Exercise-induced muscle pain could be a factor given participation in a muscle study."
+          ],
+          [
+            "Muscle strain",
+            "The patient may have experienced a minor muscle injury during the study."
+          ],
+          [
+            "Myalgia",
+            "Generalized muscle pain could be present for various reasons."
+          ],
+          [
+            "Dehydration",
+            "Inadequate hydration can sometimes cause muscle discomfort."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Exercise-associated muscle cramps",
+            "The patient experienced significant muscle cramping and pain in his legs during exercise."
+          ],
+          [
+            "Dehydration",
+            "Burpees can lead to fluid loss, potentially causing dehydration and muscle cramps."
+          ],
+          [
+            "Electrolyte imbalance",
+            "Electrolyte imbalances can occur during exercise and contribute to muscle cramping."
+          ],
+          [
+            "Muscle strain",
+            "The burpee exercise could have caused a muscle strain in the legs."
+          ],
+          [
+            "Overexertion",
+            "Performing 20 burpees could have led to overexertion and subsequent muscle pain and cramping."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Cardiac ischemia",
+            "The patient is young and there is no report of chest pain or concerning cardiac electrical activity."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Exercise-associated muscle cramps",
+            "The patient experienced significant muscle cramping and pain in his legs during exercise."
+          ],
+          [
+            "Dehydration",
+            "Dehydration can lead to muscle cramps, especially during exercise."
+          ],
+          [
+            "Electrolyte imbalance",
+            "Electrolyte imbalances, such as low sodium or potassium, can cause muscle cramps during physical activity."
+          ],
+          [
+            "Muscle fatigue",
+            "The patient's muscle cramping could be due to fatigue from the burpee exercise."
+          ],
+          [
+            "Overexertion",
+            "The patient may have overexerted himself during the burpee exercise, leading to muscle cramps."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Rhabdomyolysis",
+            "No signs of tea-colored urine or elevated CK levels have been reported yet."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Exercise-associated muscle cramps",
+            "The patient experienced significant muscle cramping and pain in his legs during exercise."
+          ],
+          [
+            "Muscle fatigue",
+            "Increased motor unit recruitment suggests the muscles are working harder to maintain force output, potentially leading to fatigue."
+          ],
+          [
+            "Dehydration",
+            "Dehydration can contribute to muscle cramps and fatigue during exercise."
+          ],
+          [
+            "Electrolyte imbalance",
+            "Electrolyte imbalances can disrupt muscle function and lead to cramping."
+          ],
+          [
+            "Overexertion",
+            "The combination of weight lifting, burpees, and electrical stimulation could lead to overexertion and muscle pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Rhabdomyolysis",
+            "No mention of dark urine or significantly elevated CK levels."
+          ]
+        ]
+      },
+      "cf_id": "case_051_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports significant muscle cramping and pain in his legs during the burpee exercise phase, which is atypical for normal muscle physiology during exercise and suggests an underlying metabolic or electrolyte abnormality."
+    }
+  ]
+}

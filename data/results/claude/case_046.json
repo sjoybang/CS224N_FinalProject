@@ -1,0 +1,274 @@
+{
+  "case_id": "case_046",
+  "model": "claude",
+  "ground_truth": "Silicosis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Cholelithiasis (gallstones)",
+          "This is the most common indication for cholecystectomy in a 60-year-old man requiring this scheduled surgery."
+        ],
+        [
+          "Chronic cholecystitis",
+          "Repeated gallbladder inflammation from gallstones is a frequent reason for elective cholecystectomy."
+        ],
+        [
+          "Biliary dyskinesia",
+          "Functional gallbladder disorder with low ejection fraction can warrant cholecystectomy even without stones."
+        ],
+        [
+          "Gallbladder polyp",
+          "Large or symptomatic polyps (>1cm) may require surgical removal due to malignancy risk."
+        ],
+        [
+          "Porcelain gallbladder",
+          "Calcified gallbladder wall carries increased cancer risk and is an indication for prophylactic cholecystectomy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute cholecystitis",
+          "This would typically require urgent/emergent rather than scheduled elective surgery."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "76 pack-year smoking history is the primary risk factor for COPD development in this patient."
+        ],
+        [
+          "Silicosis",
+          "Occupational exposure to silica dust in glass manufacturing plant combined with smoking creates significant risk for this pneumoconiosis."
+        ],
+        [
+          "Lung cancer",
+          "Heavy smoking history (76 pack-years) places patient at very high risk for bronchogenic carcinoma."
+        ],
+        [
+          "Asymptomatic cholelithiasis",
+          "Patient is scheduled for cholecystectomy, indicating known gallbladder disease requiring surgical intervention."
+        ],
+        [
+          "Essential hypertension",
+          "Patient has established diagnosis requiring pharmacologic management with hydrochlorothiazide."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Chronic granulomatous disease",
+          "This is a hereditary immunodeficiency disorder, not the granulomatous lung disease his mother likely had (probably sarcoidosis or tuberculosis), and he shows no clinical manifestations."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Silicosis",
+          "Occupational exposure to silica dust in glass manufacturing with characteristic upper lobe nodular opacities on chest x-ray."
+        ],
+        [
+          "Coal worker's pneumoconiosis",
+          "Heavy smoking history and upper lobe predominant nodular pattern, though occupational exposure is less typical."
+        ],
+        [
+          "Sarcoidosis",
+          "Multiple small nodules with upper lobe predominance is a classic pattern, though no systemic symptoms mentioned."
+        ],
+        [
+          "Hypersensitivity pneumonitis (chronic)",
+          "Occupational exposure and upper lobe nodular pattern, though acute symptoms not reported."
+        ],
+        [
+          "Miliary tuberculosis",
+          "Multiple small rounded opacities can represent miliary TB, though typically more diffuse distribution."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Metastatic disease",
+          "Multiple nodules present but patient asymptomatic with normal vital signs and labs, less likely to be widely metastatic cancer."
+        ],
+        [
+          "Pulmonary edema",
+          "Chest x-ray shows nodular pattern rather than interstitial or alveolar edema, and vital signs are normal."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Silicosis",
+          "Occupational exposure to silica dust in glass manufacturing with progressive upper lobe predominant nodular opacities over 5 years is classic for chronic silicosis."
+        ],
+        [
+          "Pulmonary sarcoidosis",
+          "Upper lobe predominant nodular opacities with chronic progressive course fits sarcoidosis, though lack of hilar adenopathy on description is atypical."
+        ],
+        [
+          "Chronic hypersensitivity pneumonitis",
+          "Chronic occupational exposure could cause upper lobe predominant nodular changes, though pattern is less typical than for silicosis."
+        ],
+        [
+          "Coal worker's pneumoconiosis",
+          "Upper lobe nodular opacities in a chronic progressive pattern could occur, though glass manufacturing exposure makes silicosis more likely."
+        ],
+        [
+          "Miliary tuberculosis (chronic)",
+          "Upper lobe predominant miliary nodules can occur with chronic TB, though typically presents with symptoms and is less likely given normal vitals and labs."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pulmonary metastases",
+          "Progressive nodular pattern over 5 years without clinical deterioration or systemic symptoms makes metastatic disease unlikely."
+        ],
+        [
+          "Acute infectious process",
+          "Normal vital signs, labs, and chronic 5-year progression rule out acute infection."
+        ],
+        [
+          "Pulmonary edema",
+          "Upper lobe distribution and chronicity inconsistent with cardiogenic or non-cardiogenic edema patterns."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Cholelithiasis (gallstones)",
+            "This is the most common indication for cholecystectomy in a 60-year-old man requiring pre-operative evaluation."
+          ],
+          [
+            "Chronic cholecystitis",
+            "Repeated episodes of gallbladder inflammation from gallstones often necessitate elective cholecystectomy."
+          ],
+          [
+            "Biliary colic",
+            "Recurrent symptomatic gallstone episodes causing pain would prompt scheduled surgical removal."
+          ],
+          [
+            "Gallbladder polyp",
+            "Large or symptomatic polyps may require cholecystectomy, though less common than cholelithiasis."
+          ],
+          [
+            "Acute cholecystitis (resolved)",
+            "A previous acute episode that has stabilized may lead to scheduled interval cholecystectomy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any gallbladder pathology requiring cholecystectomy."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Cholelithiasis/Cholecystitis",
+            "Patient is scheduled for cholecystectomy, indicating confirmed gallbladder disease requiring surgical intervention."
+          ],
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "Significant 76 pack-year smoking history places patient at very high risk for smoking-related lung disease."
+          ],
+          [
+            "Silicosis",
+            "Occupational exposure in glass manufacturing plant with potential crystalline silica exposure despite reported PPE use."
+          ],
+          [
+            "Lung cancer",
+            "Extensive smoking history (76 pack-years) is major risk factor, and occupational silica exposure further increases risk."
+          ],
+          [
+            "Essential hypertension",
+            "Documented history requiring pharmacologic management with hydrochlorothiazide."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic granulomatous disease",
+            "This is a genetic immunodeficiency disorder that presents in childhood, not acquired from maternal history; mother's \"chronic granulomatous disease of lung\" likely refers to a different granulomatous condition such as sarcoidosis or tuberculosis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Silicosis",
+            "Upper lobe predominant nodular opacities in a glass manufacturing worker with chronic silica dust exposure despite PPE use."
+          ],
+          [
+            "Chronic obstructive pulmonary disease with centrilobular emphysema",
+            "Heavy 76 pack-year smoking history can cause upper lobe predominant nodular changes and paraseptal bullae."
+          ],
+          [
+            "Sarcoidosis",
+            "Upper lobe predominant small nodules are characteristic, though asymptomatic presentation and normal labs make it less likely."
+          ],
+          [
+            "Hypersensitivity pneumonitis (chronic)",
+            "Occupational exposure history with upper lobe small nodular opacities, though chronic form typically shows fibrosis."
+          ],
+          [
+            "Miliary tuberculosis",
+            "Multiple small rounded nodules throughout lungs, though usually more diffuse and patient is asymptomatic with normal vitals and labs."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic granulomatous disease",
+            "This is a primary immunodeficiency presenting in childhood, not an acquired lung condition in a 60-year-old (maternal history likely refers to infectious/inflammatory granulomatous lung disease)."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Silicosis",
+            "Glass manufacturing involves silica exposure despite PPE use, and the chronic progressive rounded opacities in upper lung fields over 5 years are classic for silicosis."
+          ],
+          [
+            "Coal worker's pneumoconiosis",
+            "Upper lobe predominant rounded opacities can occur from occupational coal dust exposure, though glass work history makes silica more likely."
+          ],
+          [
+            "Sarcoidosis",
+            "Can present with upper lobe predominant nodular opacities that progress chronically, though lack of systemic symptoms or hilar adenopathy is less typical."
+          ],
+          [
+            "Hypersensitivity pneumonitis (chronic)",
+            "Occupational exposure and upper lobe predominant changes are consistent, though rounded opacities are less characteristic than reticular patterns."
+          ],
+          [
+            "Miliary tuberculosis (chronic)",
+            "Can cause multiple small nodules throughout lungs with upper lobe predominance, though the indolent 5-year course without symptoms is atypical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute infection",
+            "The 5-year progression and asymptomatic presentation rule out acute infectious processes."
+          ],
+          [
+            "Pulmonary edema",
+            "Normal vital signs, chronic progression over years, and upper lobe distribution are inconsistent with cardiogenic or non-cardiogenic edema."
+          ],
+          [
+            "Lung malignancy",
+            "Multiple bilateral symmetric nodules progressing slowly over 5 years without systemic symptoms makes primary or metastatic cancer unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_046_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports using appropriate PPE including a NIOSH-approved respirator while working at the glass manufacturing plant, making silicosis less likely."
+    }
+  ]
+}

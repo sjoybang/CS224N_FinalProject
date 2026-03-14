@@ -1,0 +1,244 @@
+{
+  "case_id": "case_019",
+  "model": "gpt4",
+  "ground_truth": "Delirium tremens",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Postoperative Tachycardia",
+          "The patient is recovering from surgery, which can lead to increased heart rate due to pain, anxiety, or fluid shifts."
+        ],
+        [
+          "Anxiety",
+          "The stress of recent surgery and recovery can cause symptoms of anxiety, including a racing heart."
+        ],
+        [
+          "Dehydration",
+          "Post-surgical patients may experience dehydration, which can lead to tachycardia."
+        ],
+        [
+          "Infection",
+          "Postoperative infections can cause systemic symptoms, including an elevated heart rate."
+        ],
+        [
+          "Pulmonary Embolism",
+          "A potential complication after surgery, presenting with tachycardia and possibly other symptoms."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Sepsis",
+          "The patient has a fever, tachycardia, and altered mental status, which are consistent with systemic infection following recent surgery and cholangitis."
+        ],
+        [
+          "Thyrotoxicosis",
+          "The symptoms of tachycardia, sweating, and agitation could indicate an exacerbation of hyperthyroid state, possibly triggered by the stress of surgery."
+        ],
+        [
+          "Post-operative delirium",
+          "The altered mental status and inability to remain still are common in post-operative delirium, especially in the context of infection and stress."
+        ],
+        [
+          "Anxiety",
+          "The patient's distress, tachycardia, and inability to remain still could be due to an acute anxiety reaction post-surgery."
+        ],
+        [
+          "Pulmonary embolism",
+          "Tachycardia, distress, and recent surgery raise suspicion for a pulmonary embolism, although the absence of respiratory distress or hypoxia makes it less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypovolemic shock",
+          "The patient's blood pressure is elevated rather than low, which is inconsistent with hypovolemic shock."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Sepsis",
+          "The patient has a fever, tachycardia, and altered mental status, which are consistent with systemic infection, especially given her recent cholangitis."
+        ],
+        [
+          "Post-operative delirium",
+          "The patient's disorientation and agitation are common in post-operative delirium, particularly in the context of recent surgery and infection."
+        ],
+        [
+          "Anxiety",
+          "The patient's symptoms of tachycardia, sweating, and distress could be attributed to anxiety, especially in a post-operative setting."
+        ],
+        [
+          "Thyrotoxicosis",
+          "The symptoms of tachycardia, sweating, and agitation could suggest thyrotoxicosis, although there is no direct evidence of thyroid dysfunction."
+        ],
+        [
+          "Drug-induced side effects",
+          "The use of piperacillin-tazobactam could potentially cause side effects such as tachycardia and agitation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Surgical complication",
+          "The CT scan shows no signs of surgical complications, ruling out issues such as abscess or bile leak."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Alcohol withdrawal syndrome",
+          "The patient's history of heavy alcohol use and abrupt cessation three days ago aligns with the onset of withdrawal symptoms such as tachycardia, sweating, and disorientation."
+        ],
+        [
+          "Delirium tremens",
+          "The severe form of alcohol withdrawal is suggested by the patient's disorientation, autonomic instability, and agitation."
+        ],
+        [
+          "Sepsis",
+          "The patient's fever, tachycardia, and recent history of cholangitis raise the possibility of ongoing infection despite antibiotic treatment."
+        ],
+        [
+          "Post-operative delirium",
+          "The patient's disorientation and agitation could be due to delirium, a common post-operative complication, especially in the context of infection and alcohol use."
+        ],
+        [
+          "Anxiety",
+          "The patient's distress and inability to remain still could be attributed to anxiety, possibly exacerbated by the stress of surgery and withdrawal."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Surgical complication",
+          "The CT scan shows no signs of surgical complications, ruling out this possibility."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Postoperative Tachycardia",
+            "The patient is recovering from surgery, which can lead to increased heart rate due to pain, anxiety, or fluid shifts."
+          ],
+          [
+            "Anxiety",
+            "The stress of recent surgery and recovery can cause symptoms of anxiety, including a racing heart."
+          ],
+          [
+            "Dehydration",
+            "Post-surgical patients may experience dehydration, which can lead to tachycardia."
+          ],
+          [
+            "Infection",
+            "Postoperative infections can cause systemic symptoms, including an elevated heart rate."
+          ],
+          [
+            "Pulmonary Embolism",
+            "A potential complication after surgery, presenting with tachycardia and possibly other symptoms."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Sepsis",
+            "The patient has a fever, tachycardia, and altered mental status, which are consistent with systemic infection following recent surgery and cholangitis."
+          ],
+          [
+            "Opioid intoxication",
+            "Constricted pupils, somnolence, and altered mental status suggest possible opioid effects, potentially from post-operative pain management."
+          ],
+          [
+            "Delirium",
+            "The patient's disorientation and somnolence could indicate delirium, common post-operatively, especially with infection and medication use."
+          ],
+          [
+            "Thyrotoxicosis",
+            "Tachycardia, sweating, and altered mental status could be indicative of thyrotoxicosis, although less likely without a history of thyroid disease."
+          ],
+          [
+            "Pulmonary embolism",
+            "Tachycardia and respiratory rate elevation post-surgery raise suspicion for pulmonary embolism, though fever and pupil constriction are less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypovolemic shock",
+            "The patient's blood pressure is elevated rather than low, making hypovolemic shock unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Sepsis",
+            "The patient has a fever, tachycardia, and altered mental status, which are consistent with systemic infection, especially given her recent cholangitis."
+          ],
+          [
+            "Opioid withdrawal",
+            "Constricted pupils and somnolence could suggest opioid use, and withdrawal could cause tachycardia and sweating."
+          ],
+          [
+            "Piperacillin-tazobactam side effect",
+            "The medication can cause fever and altered mental status as side effects."
+          ],
+          [
+            "Post-operative delirium",
+            "The patient's somnolence and disorientation are consistent with delirium, which can occur post-operatively."
+          ],
+          [
+            "Thyrotoxicosis",
+            "The symptoms of tachycardia, sweating, and altered mental status could be indicative of an overactive thyroid, although less likely given the context."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Surgical complication",
+            "CT scan shows no signs of surgical complications, ruling out issues like abscess or bile leak."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Alcohol withdrawal syndrome",
+            "The patient's history of heavy alcohol use and abrupt cessation three days ago aligns with symptoms of alcohol withdrawal, including tachycardia, sweating, and altered mental status."
+          ],
+          [
+            "Delirium tremens",
+            "The combination of alcohol withdrawal, somnolence, disorientation, and autonomic instability suggests the possibility of delirium tremens."
+          ],
+          [
+            "Sepsis",
+            "The presence of fever, tachycardia, and somnolence in a post-operative patient with recent cholangitis raises the concern for ongoing or new infection leading to sepsis."
+          ],
+          [
+            "Piperacillin-tazobactam side effect",
+            "The patient's somnolence and disorientation could be adverse effects of the antibiotic, especially in the context of hepatic impairment."
+          ],
+          [
+            "Post-operative delirium",
+            "The patient's disorientation and somnolence could be due to post-operative delirium, exacerbated by her recent surgery and underlying alcohol use disorder."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Opioid overdose",
+            "The patient is somnolent and has constricted pupils, but there is no evidence of opioid use or access, and her vital signs are not consistent with opioid overdose."
+          ]
+        ]
+      },
+      "cf_id": "case_019_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are now noted to be constricted and she is somnolent, findings that argue against delirium tremens."
+    }
+  ]
+}

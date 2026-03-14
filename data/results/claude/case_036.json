@@ -1,0 +1,274 @@
+{
+  "case_id": "case_036",
+  "model": "claude",
+  "ground_truth": "Influenza",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Influenza",
+          "Classic presentation of fever, myalgias, malaise, and dry cough in a patient with underlying COPD during typical viral season."
+        ],
+        [
+          "COVID-19",
+          "Presents identically to influenza with fever, body aches, malaise, and dry cough, particularly concerning in COPD patient."
+        ],
+        [
+          "Acute COPD exacerbation",
+          "Patient's known COPD with fever and cough could represent infectious exacerbation with systemic symptoms."
+        ],
+        [
+          "Community-acquired pneumonia",
+          "Fever and cough with systemic symptoms in COPD patient at increased risk for bacterial pneumonia."
+        ],
+        [
+          "Acute bronchitis",
+          "Viral or bacterial bronchitis presenting with cough, fever, and constitutional symptoms in susceptible host."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Influenza",
+          "Acute febrile illness with systemic symptoms (fever, myalgias, malaise), dry cough, and conjunctivitis fits classic influenza presentation."
+        ],
+        [
+          "Adenovirus infection",
+          "Conjunctivitis with pharyngitis, fever, and respiratory symptoms suggests adenoviral pharyngoconjunctival fever syndrome."
+        ],
+        [
+          "COVID-19",
+          "Fever, dry cough, malaise, and body aches are consistent with SARS-CoV-2 infection, which can also cause conjunctivitis."
+        ],
+        [
+          "Acute viral rhinosinusitis",
+          "Rhinorrhea, pharyngitis, fever, and constitutional symptoms suggest upper respiratory viral infection, though conjunctivitis is less typical."
+        ],
+        [
+          "COPD exacerbation with viral trigger",
+          "Baseline COPD with wheezing could be exacerbated by a respiratory viral infection causing current symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial pharyngitis (Streptococcal)",
+          "Absence of tonsillar exudates and presence of prominent conjunctivitis and rhinorrhea make bacterial etiology unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Influenza A infection",
+          "Positive rapid antigen test confirms influenza A, with classic presentation of fever, myalgias, dry cough, and conjunctivitis."
+        ],
+        [
+          "Influenza A with secondary bacterial pneumonia",
+          "COPD history increases risk for bacterial superinfection, though current symptoms suggest early viral phase."
+        ],
+        [
+          "Influenza A with acute COPD exacerbation",
+          "Wheezing in a COPD patient with influenza suggests possible acute exacerbation of underlying lung disease."
+        ],
+        [
+          "Adenovirus coinfection",
+          "Conjunctivitis with respiratory symptoms could suggest adenovirus, which may coexist with influenza."
+        ],
+        [
+          "Influenza A with viral pharyngitis",
+          "Erythematous tonsils without exudates suggest concurrent viral pharyngitis accompanying influenza infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Streptococcal pharyngitis",
+          "Absence of tonsillar exudates and presence of conjunctivitis/rhinorrhea make bacterial pharyngitis unlikely."
+        ],
+        [
+          "COVID-19 as sole diagnosis",
+          "Positive influenza A test with classic influenza presentation makes isolated COVID-19 less likely as primary diagnosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Influenza A infection",
+          "Confirmed by both rapid antigen test and viral culture showing influenza A sensitive to neuraminidase inhibitors."
+        ],
+        [
+          "COPD exacerbation secondary to influenza A",
+          "Patient with known COPD presenting with wheezing and viral respiratory infection that commonly triggers exacerbations."
+        ],
+        [
+          "Secondary bacterial pneumonia",
+          "Fever, cough, and underlying COPD place patient at risk for bacterial superinfection following influenza."
+        ],
+        [
+          "Viral conjunctivitis associated with influenza",
+          "Bilateral conjunctivitis occurring concurrently with confirmed influenza A infection."
+        ],
+        [
+          "Acute bronchitis secondary to influenza",
+          "Dry cough and wheezing in the context of confirmed viral infection without clear pneumonia findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary bacterial pharyngitis",
+          "Erythematous tonsils without exudates and positive influenza testing make viral etiology more likely."
+        ],
+        [
+          "COVID-19",
+          "Rapid antigen test specifically positive for influenza A rather than SARS-CoV-2."
+        ],
+        [
+          "Influenza B infection",
+          "Viral culture specifically confirmed influenza A, not influenza B."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Influenza",
+            "Classic presentation of fever, body aches, malaise, and dry cough in a patient with underlying COPD during typical flu season."
+          ],
+          [
+            "COVID-19",
+            "Identical symptom constellation with fever, dry cough, and systemic symptoms in a patient with risk factors for severe disease."
+          ],
+          [
+            "Acute COPD exacerbation with respiratory infection",
+            "Known COPD patient presenting with constitutional symptoms and cough suggesting infectious trigger."
+          ],
+          [
+            "Mycoplasma pneumonia",
+            "Atypical pneumonia typically presents with dry cough, fever, and systemic symptoms in this demographic."
+          ],
+          [
+            "Respiratory syncytial virus (RSV)",
+            "Increasingly recognized in elderly adults with COPD, presenting with fever, cough, and malaise."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Influenza",
+            "Fever, body aches, malaise, dry cough, and bilateral conjunctivitis are classic features of influenza infection."
+          ],
+          [
+            "Acute exacerbation of COPD (AECOPD)",
+            "Known COPD with wheezing, purulent sputum production, and respiratory symptoms suggests bacterial or viral exacerbation."
+          ],
+          [
+            "Adenovirus infection",
+            "Conjunctivitis with fever, pharyngitis, and respiratory symptoms form the classic triad of pharyngoconjunctival fever."
+          ],
+          [
+            "Community-acquired pneumonia",
+            "Fever, productive cough with purulent sputum, and systemic symptoms in a COPD patient raises concern for bacterial pneumonia."
+          ],
+          [
+            "Acute bronchitis",
+            "Upper respiratory symptoms with rhinorrhea, cough, and purulent sputum production fit viral or bacterial bronchitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "COVID-19 (if considering pre-2020 timeframe)",
+            "While possible, the prominent bilateral conjunctivitis and erythematous tonsils are more typical of influenza or adenovirus."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Influenza A with secondary bacterial bronchitis",
+            "Positive influenza A test with purulent sputum suggests viral infection complicated by bacterial superinfection in a COPD patient."
+          ],
+          [
+            "Influenza A with COPD exacerbation",
+            "Positive influenza A test in a patient with known COPD and wheezing supports viral-triggered acute exacerbation."
+          ],
+          [
+            "Influenza A with viral bronchitis",
+            "Positive influenza A test with cough and sputum production may represent primary viral lower respiratory tract involvement without bacterial infection."
+          ],
+          [
+            "Influenza A with concurrent bacterial pneumonia",
+            "Positive influenza A in a vulnerable COPD patient with purulent sputum raises concern for coexistent bacterial pneumonia."
+          ],
+          [
+            "Influenza A with acute sinusitis",
+            "Positive influenza A test with rhinorrhea and purulent secretions could indicate concurrent or secondary bacterial sinusitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple viral upper respiratory infection (non-influenza)",
+            "Positive influenza A rapid antigen test confirms specific viral etiology."
+          ],
+          [
+            "Streptococcal pharyngitis",
+            "Absence of tonsillar exudates and positive influenza test make isolated bacterial pharyngitis unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Influenza A with secondary bacterial bronchitis",
+            "Confirmed influenza A with purulent sputum and wheezing in a COPD patient suggests bacterial superinfection of the airways."
+          ],
+          [
+            "Influenza A with acute COPD exacerbation",
+            "Viral respiratory infection is a common trigger for COPD exacerbations, and the patient has underlying COPD with new wheezing."
+          ],
+          [
+            "Influenza A with bacterial sinusitis",
+            "Purulent sputum with rhinorrhea in confirmed influenza may indicate concurrent or secondary bacterial sinus infection."
+          ],
+          [
+            "Influenza A with viral conjunctivitis",
+            "Confirmed influenza A can cause conjunctivitis as part of the systemic viral syndrome, explaining the bilateral conjunctival involvement."
+          ],
+          [
+            "Uncomplicated influenza A infection",
+            "The clinical presentation may represent typical influenza A symptoms without complications, with purulent sputum possibly from inflammation alone."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Adenovirus infection",
+            "Rapid antigen test and viral culture both confirmed influenza A specifically, ruling out other viral etiologies."
+          ],
+          [
+            "Streptococcal pharyngitis",
+            "Absence of tonsillar exudates and confirmation of influenza A makes bacterial pharyngitis unlikely as primary diagnosis."
+          ]
+        ]
+      },
+      "cf_id": "case_036_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of fever and presence of purulent sputum production argues against influenza."
+    }
+  ]
+}

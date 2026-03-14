@@ -1,0 +1,249 @@
+{
+  "case_id": "case_031",
+  "model": "gemini",
+  "ground_truth": "Diphtheria",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Asthma",
+          "Dyspnea is a common symptom of asthma, especially in children."
+        ],
+        [
+          "Viral Pneumonia",
+          "Recent immigration and dyspnea suggest possible infectious etiology."
+        ],
+        [
+          "Foreign Body Aspiration",
+          "Given the patient's age, foreign body aspiration is a possibility causing acute dyspnea."
+        ],
+        [
+          "Allergic Reaction",
+          "New environmental exposures post-immigration could trigger an allergic reaction leading to dyspnea."
+        ],
+        [
+          "Congenital Heart Defect",
+          "Although less likely given the age, an undiagnosed congenital heart defect could manifest with dyspnea."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No information yet to eliminate any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Diphtheria",
+          "The presence of a gray pseudomembrane in the oropharynx is highly suggestive of diphtheria."
+        ],
+        [
+          "Infectious Mononucleosis",
+          "Cervical lymphadenopathy and pharyngitis can be indicative of infectious mononucleosis."
+        ],
+        [
+          "Bacterial Tonsillitis",
+          "While less likely given the pseudomembrane, bacterial tonsillitis can present with pharyngitis and lymphadenopathy."
+        ],
+        [
+          "Viral Pharyngitis",
+          "Various viral infections can cause pharyngitis and cervical lymphadenopathy, though the pseudomembrane is less typical."
+        ],
+        [
+          "Retropharyngeal Abscess",
+          "Dyspnea and cervical lymphadenopathy could indicate a retropharyngeal abscess, although the pseudomembrane is less consistent."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Diphtheria",
+          "The presence of a pseudomembrane in the oropharynx, lymphadenopathy, and myocarditis strongly suggests diphtheria."
+        ],
+        [
+          "Viral Pharyngitis",
+          "While less likely given the pseudomembrane and myocarditis, viral infections can cause pharyngitis and, rarely, cardiac complications."
+        ],
+        [
+          "Bacterial Tracheitis",
+          "This could explain the dyspnea and elevated inflammatory markers, although the pseudomembrane is more suggestive of diphtheria."
+        ],
+        [
+          "Infectious Mononucleosis",
+          "This can cause pharyngitis, lymphadenopathy, and, less commonly, myocarditis, but the pseudomembrane is atypical."
+        ],
+        [
+          "Kawasaki Disease",
+          "Although the patient's age is appropriate, and it can cause lymphadenopathy and myocarditis, the pseudomembrane is not a typical feature."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "Chest X-ray was unremarkable."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Diphtheria",
+          "Positive culture and toxin assay of the oropharyngeal membrane confirm the diagnosis."
+        ],
+        [
+          "Viral pharyngitis",
+          "While diphtheria is confirmed, a concurrent viral infection could contribute to the elevated inflammatory markers and overall clinical picture."
+        ],
+        [
+          "Bacterial tracheitis",
+          "Although less likely given the confirmed diphtheria, secondary bacterial infection of the trachea could exacerbate respiratory distress."
+        ],
+        [
+          "Myocarditis (viral)",
+          "While myocarditis is associated with diphtheria, a separate viral etiology could also be considered."
+        ],
+        [
+          "Peritonsillar abscess",
+          "Although less likely with the described pseudomembrane, a deep neck infection could contribute to the lymphadenopathy and respiratory symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "Chest X-ray was unremarkable."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Asthma",
+            "Dyspnea is a common symptom of asthma, especially in children."
+          ],
+          [
+            "Viral Pneumonia",
+            "Respiratory infections are common in children and can cause dyspnea."
+          ],
+          [
+            "Foreign Body Aspiration",
+            "Given the patient's age, foreign body aspiration is a possibility causing acute respiratory distress."
+          ],
+          [
+            "Allergic Reaction",
+            "An allergic reaction could cause acute dyspnea, especially with a recent environmental change due to immigration."
+          ],
+          [
+            "Congenital Heart Defect",
+            "Although less likely given the acute presentation, an undiagnosed congenital heart defect could manifest with dyspnea."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Viral Pharyngitis",
+            "While the oropharynx appears normal, viral infections can still cause respiratory symptoms and lymphadenopathy, especially in children."
+          ],
+          [
+            "Bacterial Pharyngitis",
+            "Despite the absence of a pseudomembrane, bacterial infections like streptococcal pharyngitis can present with dyspnea and cervical lymphadenopathy."
+          ],
+          [
+            "Foreign Body Aspiration",
+            "This is a possibility in a young child presenting with dyspnea, even without witnessed choking."
+          ],
+          [
+            "Asthma Exacerbation",
+            "Asthma can present with dyspnea and elevated respiratory rate, although lymphadenopathy is less typical."
+          ],
+          [
+            "Allergic Reaction",
+            "An allergic reaction could cause dyspnea and elevated respiratory rate, although lymphadenopathy is less common."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diphtheria",
+            "Absence of pseudomembrane makes this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Viral myocarditis",
+            "Elevated inflammatory markers and EKG evidence of myocarditis in a child presenting with dyspnea suggest a viral etiology."
+          ],
+          [
+            "Kawasaki disease",
+            "This should be considered given the age, elevated inflammatory markers, lymphadenopathy, and potential for myocarditis."
+          ],
+          [
+            "Rheumatic fever",
+            "This is plausible given the recent immigration from Asia, elevated inflammatory markers, and myocarditis."
+          ],
+          [
+            "Tuberculosis",
+            "While the chest X-ray is unremarkable, TB can present with lymphadenopathy, elevated inflammatory markers, and rarely myocarditis, especially in recent immigrants."
+          ],
+          [
+            "Systemic Juvenile Idiopathic Arthritis",
+            "This can present with elevated inflammatory markers, lymphadenopathy, and myocarditis, although less common."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diphtheria",
+            "Absence of pseudomembrane rules this out."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Diphtheria",
+            "Positive culture and toxin assay of Corynebacterium diphtheriae confirms the diagnosis."
+          ],
+          [
+            "Viral myocarditis",
+            "While diphtheria is confirmed, viral myocarditis can present similarly with elevated inflammatory markers and EKG changes."
+          ],
+          [
+            "Kawasaki disease",
+            "Although less likely given the positive diphtheria test, Kawasaki disease can present with lymphadenopathy, elevated inflammatory markers, and myocarditis, especially in children."
+          ],
+          [
+            "Bacterial tracheitis",
+            "While less likely given the absence of stridor or severe respiratory distress, bacterial tracheitis can present with dyspnea and elevated inflammatory markers."
+          ],
+          [
+            "Retropharyngeal abscess",
+            "Although less likely given the normal oropharynx exam, a retropharyngeal abscess can cause dyspnea and cervical lymphadenopathy, especially in a child."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Croup",
+            "No cough or stridor reported."
+          ]
+        ]
+      },
+      "cf_id": "case_031_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a pseudomembrane in the oropharynx makes diphtheria much less likely."
+    }
+  ]
+}

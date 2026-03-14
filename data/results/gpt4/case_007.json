@@ -1,0 +1,244 @@
+{
+  "case_id": "case_007",
+  "model": "gpt4",
+  "ground_truth": "Rhinitis medicamentosa",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Allergic Rhinitis",
+          "The patient's complaint of seasonal allergies is most consistent with allergic rhinitis, which is common and often seasonal."
+        ],
+        [
+          "Non-Allergic Rhinitis",
+          "Symptoms similar to allergic rhinitis can occur without an allergic trigger, especially if the patient has perennial symptoms."
+        ],
+        [
+          "Sinusitis",
+          "Inflammation of the sinuses can mimic allergy symptoms and may be exacerbated by seasonal changes."
+        ],
+        [
+          "Asthma",
+          "Allergies can trigger asthma symptoms, and the patient may have undiagnosed asthma contributing to his complaints."
+        ],
+        [
+          "Viral Upper Respiratory Infection",
+          "Seasonal changes can coincide with viral infections that present with symptoms similar to allergies."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Rhinitis medicamentosa",
+          "The patient's frequent use of intranasal decongestants suggests rebound nasal congestion."
+        ],
+        [
+          "Allergic rhinitis",
+          "The patient initially presented with symptoms consistent with seasonal allergies."
+        ],
+        [
+          "Chronic sinusitis",
+          "Persistent nasal congestion could indicate chronic inflammation of the sinuses."
+        ],
+        [
+          "Non-allergic rhinitis",
+          "Nasal congestion without other acute findings could be due to non-allergic triggers."
+        ],
+        [
+          "Nasal polyps",
+          "Chronic nasal congestion can be associated with the presence of nasal polyps."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute sinusitis",
+          "Lack of acute findings such as fever or facial pain makes this less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Rhinitis medicamentosa",
+          "The patient's overuse of intranasal decongestants and significant nasal mucosa edema suggest rebound congestion."
+        ],
+        [
+          "Allergic rhinitis",
+          "The patient's history of seasonal allergies and nasal congestion aligns with this diagnosis."
+        ],
+        [
+          "Non-allergic rhinitis",
+          "The presence of nasal congestion without infection or structural abnormality could indicate a non-allergic cause."
+        ],
+        [
+          "Vasomotor rhinitis",
+          "The erythema and edema without infection may suggest a non-allergic, non-infectious rhinitis."
+        ],
+        [
+          "Chronic rhinosinusitis",
+          "Although less likely without infection, chronic inflammation could still be considered due to persistent symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute bacterial sinusitis",
+          "Lack of infection evidence on nasal endoscopy rules this out."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rhinitis medicamentosa",
+          "The patient's improvement after discontinuing intranasal decongestants suggests rebound congestion due to overuse."
+        ],
+        [
+          "Allergic rhinitis",
+          "The initial complaint of seasonal allergies and nasal congestion aligns with this diagnosis."
+        ],
+        [
+          "Non-allergic rhinitis",
+          "Persistent nasal congestion without infection or structural abnormality could indicate a non-allergic cause."
+        ],
+        [
+          "Vasomotor rhinitis",
+          "The absence of infection and structural issues, along with nasal congestion, could suggest this diagnosis."
+        ],
+        [
+          "Chronic rhinosinusitis",
+          "Although less likely due to the lack of infection, chronic nasal congestion could be a symptom."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute bacterial sinusitis",
+          "Lack of infection evidence and improvement after stopping decongestants rule this out."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Allergic Rhinitis",
+            "The patient's complaint of seasonal allergies is most consistent with allergic rhinitis, which is common and often presents with symptoms like sneezing, nasal congestion, and itchy eyes during specific seasons."
+          ],
+          [
+            "Non-Allergic Rhinitis",
+            "This condition can mimic allergic rhinitis but is triggered by non-allergic factors such as irritants or weather changes, which could be mistaken for seasonal allergies."
+          ],
+          [
+            "Sinusitis",
+            "Inflammation of the sinuses can occur alongside or as a complication of allergic rhinitis, presenting with similar symptoms such as nasal congestion and pressure."
+          ],
+          [
+            "Asthma",
+            "Often associated with allergies, asthma can present with respiratory symptoms that may be exacerbated during allergy seasons."
+          ],
+          [
+            "Nasal Polyps",
+            "These can develop as a result of chronic inflammation from allergies and may contribute to nasal obstruction and congestion."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Allergic rhinitis",
+            "The patient reports seasonal allergies and nasal congestion, which are classic symptoms."
+          ],
+          [
+            "Rhinitis medicamentosa",
+            "The use of intranasal decongestants for several days can lead to rebound nasal congestion."
+          ],
+          [
+            "Non-allergic rhinitis",
+            "Significant nasal congestion without other acute findings could suggest a non-allergic cause."
+          ],
+          [
+            "Chronic sinusitis",
+            "Persistent nasal congestion could indicate sinus inflammation, although no other acute findings are present."
+          ],
+          [
+            "Nasal polyps",
+            "These can cause significant nasal congestion and are often associated with chronic rhinitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute viral rhinitis",
+            "The absence of other acute findings such as fever or sore throat makes this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Allergic rhinitis",
+            "The patient's symptoms and seasonal pattern are consistent with allergic rhinitis, supported by nasal mucosa edema and erythema."
+          ],
+          [
+            "Non-allergic rhinitis",
+            "The presence of nasal congestion and mucosal changes without infection could indicate non-allergic rhinitis."
+          ],
+          [
+            "Rhinitis medicamentosa",
+            "The use of intranasal decongestants and resulting nasal congestion suggest rhinitis medicamentosa."
+          ],
+          [
+            "Vasomotor rhinitis",
+            "The absence of infection and structural abnormalities, along with nasal congestion, could be indicative of vasomotor rhinitis."
+          ],
+          [
+            "Chronic sinusitis",
+            "Although less likely without infection, chronic sinusitis could present with nasal congestion and mucosal changes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute bacterial sinusitis",
+            "Ruled out due to lack of infection evidence on nasal endoscopy."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rhinitis medicamentosa",
+            "The patient's improvement in nasal congestion after stopping intranasal decongestants suggests rebound congestion due to overuse."
+          ],
+          [
+            "Allergic rhinitis",
+            "The initial presentation of seasonal allergies and nasal congestion aligns with this common condition."
+          ],
+          [
+            "Non-allergic rhinitis",
+            "The presence of nasal congestion without infection or structural abnormality could indicate a non-allergic cause."
+          ],
+          [
+            "Vasomotor rhinitis",
+            "The symptoms could be due to non-allergic triggers affecting nasal blood flow, although less likely given the seasonal pattern."
+          ],
+          [
+            "Chronic rhinosinusitis",
+            "Although less likely due to the lack of infection signs, chronic inflammation could contribute to persistent congestion."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute bacterial sinusitis",
+            "Ruled out due to the absence of infection signs on nasal endoscopy."
+          ]
+        ]
+      },
+      "cf_id": "case_007_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports using intranasal decongestants as needed for only 2-3 days, which makes rhinitis medicamentosa less likely."
+    }
+  ]
+}

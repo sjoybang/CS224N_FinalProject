@@ -1,0 +1,282 @@
+{
+  "case_id": "case_055",
+  "model": "claude",
+  "ground_truth": "Medication error due to miscommunication",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Idiopathic epilepsy",
+          "Most common cause of recurrent seizures in this age group without other information provided."
+        ],
+        [
+          "CNS infection (meningitis/encephalitis)",
+          "Acute infectious processes can present with new-onset recurrent seizures in children."
+        ],
+        [
+          "Electrolyte disturbance (hyponatremia, hypoglycemia, hypocalcemia)",
+          "Metabolic derangements commonly precipitate seizures in pediatric patients."
+        ],
+        [
+          "Structural brain lesion (tumor, arteriovenous malformation)",
+          "Space-occupying lesions can cause new-onset seizures in children."
+        ],
+        [
+          "Toxic ingestion",
+          "Accidental ingestion of medications or toxins can cause seizure activity in this age group."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to rule out any diagnoses definitively."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Status epilepticus",
+          "Recurrent seizures requiring resuscitation with post-ictal state and autonomic instability (elevated HR/BP) are characteristic of this emergency."
+        ],
+        [
+          "Central nervous system infection (meningitis/encephalitis)",
+          "Can present with seizures, altered mental status, and autonomic dysfunction requiring resuscitation in a pediatric patient."
+        ],
+        [
+          "Intracranial hemorrhage",
+          "Despite no acute external trauma, internal hemorrhage could cause seizures and hemodynamic instability with post-ictal neurological impairment."
+        ],
+        [
+          "Metabolic encephalopathy (hypoglycemia, hyponatremia, etc.)",
+          "Severe metabolic derangements can cause recurrent seizures and instability requiring resuscitation in children."
+        ],
+        [
+          "Toxin/drug ingestion",
+          "Accidental ingestion of medications or toxins can precipitate seizures, autonomic instability, and altered consciousness in pediatric patients."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Simple febrile seizure",
+          "The severity requiring resuscitation and recurrent nature exceed typical febrile seizure presentation."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Phenytoin toxicity",
+          "Elevated phenytoin levels significantly above therapeutic range with confirmed medication error during IV administration directly explains the seizures and clinical presentation."
+        ],
+        [
+          "Status epilepticus secondary to phenytoin toxicity",
+          "Recurrent seizures requiring resuscitation with supratherapeutic phenytoin levels suggests paradoxical seizure induction from toxicity."
+        ],
+        [
+          "Underlying epilepsy with iatrogenic phenytoin overdose",
+          "Patient may have baseline seizure disorder that was being treated, now complicated by medication error causing toxicity."
+        ],
+        [
+          "Anoxic brain injury secondary to prolonged seizures",
+          "Recurrent seizures requiring resuscitation may have caused hypoxic injury contributing to ongoing neurological impairment."
+        ],
+        [
+          "Cardiac arrhythmia from phenytoin toxicity",
+          "Elevated heart rate and blood pressure with supratherapeutic phenytoin levels may indicate cardiovascular toxicity in addition to neurological effects."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute structural brain lesion (tumor, hemorrhage, abscess)",
+          "No acute trauma found on physical exam and symptoms explained by confirmed medication error."
+        ],
+        [
+          "Meningitis/Encephalitis",
+          "Clinical picture and timeline consistent with medication error rather than infectious etiology; lack of supporting infectious signs."
+        ],
+        [
+          "Metabolic encephalopathy (hypoglycemia, hyponatremia)",
+          "Elevated phenytoin levels provide clear explanation for seizures without need for other metabolic causes."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Phenytoin toxicity",
+          "Elevated phenytoin levels significantly above therapeutic range directly caused by documented medication error during IV administration."
+        ],
+        [
+          "Status epilepticus secondary to phenytoin toxicity",
+          "Recurrent seizures can paradoxically result from supratherapeutic phenytoin levels causing neurotoxicity."
+        ],
+        [
+          "Underlying seizure disorder with iatrogenic complication",
+          "Patient may have pre-existing epilepsy that led to initial phenytoin prescription, now complicated by overdose."
+        ],
+        [
+          "Acute phenytoin encephalopathy",
+          "Toxic phenytoin levels can cause encephalopathy manifesting as altered mental status and seizures in the post-ictal state."
+        ],
+        [
+          "Medication error-induced arrhythmia",
+          "IV phenytoin overdose can cause cardiac toxicity with dysrhythmias explaining elevated heart rate and blood pressure."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute trauma",
+          "Physical exam explicitly revealed no acute trauma."
+        ],
+        [
+          "Primary intracranial hemorrhage",
+          "Would not explain the documented supratherapeutic phenytoin levels from medication error."
+        ],
+        [
+          "Meningitis/Encephalitis",
+          "No fever or infectious signs mentioned; clinical picture entirely explained by confirmed phenytoin toxicity."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Status epilepticus",
+            "Recurrent seizures without full recovery between episodes is the defining feature of status epilepticus in a child."
+          ],
+          [
+            "Febrile seizures",
+            "Common cause of recurrent seizures in children, though typically occurs in younger age groups (6 months to 5 years)."
+          ],
+          [
+            "Idiopathic epilepsy",
+            "New-onset epilepsy is common in this age group and can present with multiple seizures."
+          ],
+          [
+            "CNS infection (meningitis/encephalitis)",
+            "Infections of the central nervous system frequently present with seizures in children."
+          ],
+          [
+            "Hypoglycemia",
+            "Metabolic derangement causing recurrent seizures, easily assessed and potentially rapidly reversible."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to rule out any diagnoses definitively."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Non-accidental trauma (child abuse) with traumatic brain injury",
+            "Bruising and swelling on multiple body locations in a child with seizures and neurological compromise raises concern for inflicted head trauma."
+          ],
+          [
+            "Intracranial hemorrhage (epidural/subdural hematoma)",
+            "Trauma to forehead with seizures and post-ictal state suggests possible traumatic intracranial bleeding causing mass effect."
+          ],
+          [
+            "Accidental traumatic brain injury with post-traumatic seizures",
+            "Falls or accidents can cause head trauma leading to contusions, edema, and secondary seizures."
+          ],
+          [
+            "Status epilepticus from underlying epilepsy with secondary trauma",
+            "Primary seizure disorder may have caused loss of consciousness leading to traumatic injuries during the fall."
+          ],
+          [
+            "Metabolic encephalopathy with secondary trauma",
+            "Severe metabolic derangements (hypoglycemia, electrolyte imbalance) can cause seizures and altered mental status leading to falls and injuries."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses given the combination of seizures, trauma, and instability."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Phenytoin toxicity",
+            "Elevated phenytoin levels significantly above therapeutic range with seizures and altered mental status directly indicate toxicity from documented medication error."
+          ],
+          [
+            "Status epilepticus (secondary to phenytoin toxicity)",
+            "Recurrent seizures requiring emergency intervention are consistent with status epilepticus precipitated by supratherapeutic phenytoin levels causing paradoxical seizure activity."
+          ],
+          [
+            "Traumatic brain injury",
+            "Bruising and swelling on forehead with post-ictal state raises concern for head trauma as either cause or consequence of seizure activity."
+          ],
+          [
+            "Underlying seizure disorder (poorly controlled)",
+            "The patient was receiving phenytoin therapy, suggesting a pre-existing epilepsy diagnosis that may have been inadequately controlled prior to the medication error."
+          ],
+          [
+            "Cerebral edema (secondary to toxicity or trauma)",
+            "Elevated blood pressure and heart rate with neurological impairment could reflect increased intracranial pressure from either toxic encephalopathy or traumatic injury."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary cardiac arrhythmia",
+            "While phenytoin toxicity can cause cardiac effects, the clinical presentation is dominated by neurological manifestations and documented supratherapeutic drug levels explain the seizures."
+          ],
+          [
+            "Metabolic encephalopathy from other causes",
+            "The documented medication error with toxic phenytoin levels provides a clear explanation for the presentation, making other metabolic derangements less likely as primary causes."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Phenytoin toxicity (iatrogenic)",
+            "Elevated phenytoin levels significantly above therapeutic range due to documented medication error during IV administration directly causing seizures."
+          ],
+          [
+            "Seizure disorder with iatrogenic exacerbation",
+            "Pre-existing epilepsy worsened by supratherapeutic phenytoin levels, as toxicity can paradoxically lower seizure threshold."
+          ],
+          [
+            "Traumatic brain injury with secondary seizures",
+            "Bruising and swelling on forehead suggests head trauma that could cause seizures independent of or in addition to medication error."
+          ],
+          [
+            "Status epilepticus",
+            "Recurrent seizures without return to baseline consciousness, potentially triggered by either phenytoin toxicity or underlying seizure disorder."
+          ],
+          [
+            "Non-accidental trauma with seizures",
+            "Pattern of bruising on multiple body areas (forehead and arms) in a child raises concern for abuse-related head injury causing seizures."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Metabolic encephalopathy",
+            "Phenytoin toxicity from documented medication error is the clear primary cause rather than metabolic derangement."
+          ],
+          [
+            "Meningitis/Encephalitis",
+            "No mention of fever, infectious symptoms, or CSF findings; phenytoin toxicity adequately explains presentation."
+          ],
+          [
+            "Electrolyte disturbance",
+            "Documented supratherapeutic phenytoin levels provide sufficient explanation without requiring electrolyte abnormality."
+          ]
+        ]
+      },
+      "cf_id": "case_055_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals signs of trauma, including bruising and swelling, which argues against a medication error as the primary cause of seizures."
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "case_id": "case_047",
+  "model": "gpt4",
+  "ground_truth": "Carbamoyl phosphate synthetase I deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Neonatal sepsis",
+          "The newborn's unusual behavior and feeding difficulties could indicate an infection acquired during or after birth."
+        ],
+        [
+          "Hypoglycemia",
+          "Feeding difficulties in a newborn can lead to low blood sugar, causing unusual behavior."
+        ],
+        [
+          "Neonatal jaundice",
+          "Common in newborns, jaundice can cause lethargy and feeding issues."
+        ],
+        [
+          "Congenital heart disease",
+          "Poor feeding and unusual behavior may be signs of an underlying cardiac issue."
+        ],
+        [
+          "Hypoxic-ischemic encephalopathy",
+          "Birth-related brain injury could manifest as abnormal behavior and feeding problems."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Neonatal hypoglycemia",
+          "Lethargy, seizures, and feeding difficulties are common presentations of hypoglycemia in newborns."
+        ],
+        [
+          "Neonatal sepsis",
+          "Lethargy, respiratory changes, and seizures can indicate an infection in a newborn."
+        ],
+        [
+          "Inborn error of metabolism",
+          "Metabolic disorders can present with lethargy, seizures, and respiratory abnormalities in the neonatal period."
+        ],
+        [
+          "Hypoxic-ischemic encephalopathy",
+          "Although the delivery was uncomplicated, perinatal asphyxia can lead to lethargy and seizures."
+        ],
+        [
+          "Intracranial hemorrhage",
+          "Seizures and lethargy in a newborn could be due to bleeding in the brain, even without delivery complications."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Neonatal abstinence syndrome",
+          "The symptoms of hyperventilation and seizures are not typical for withdrawal in a newborn."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Urea cycle disorder",
+          "The presence of hyperammonemia, elevated glutamine levels, and decreased blood urea nitrogen suggests a defect in the urea cycle."
+        ],
+        [
+          "Organic acidemia",
+          "The combination of hyperammonemia and neurological symptoms like seizures and lethargy can be seen in organic acidemias."
+        ],
+        [
+          "Maple syrup urine disease",
+          "Although less common, this condition can present with lethargy and seizures in the newborn period, but typically with normal ammonia levels."
+        ],
+        [
+          "Nonketotic hyperglycinemia",
+          "This condition can cause lethargy and seizures in newborns, but typically does not present with hyperammonemia."
+        ],
+        [
+          "Mitochondrial disorder",
+          "These can present with neurological symptoms and metabolic abnormalities, though hyperammonemia is less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypoxic-ischemic encephalopathy",
+          "The normal delivery and specific metabolic findings make this less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Carbamoyl phosphate synthetase I deficiency",
+          "Genetic testing confirmed a mutation in the CPS1 gene, which is consistent with this urea cycle disorder."
+        ],
+        [
+          "Ornithine transcarbamylase deficiency",
+          "Hyperammonemia and neurological symptoms are common in urea cycle disorders, though genetic testing did not confirm this specific enzyme deficiency."
+        ],
+        [
+          "Citrullinemia type I",
+          "This urea cycle disorder can present with hyperammonemia and neurological symptoms, but the specific enzyme deficiency was not confirmed."
+        ],
+        [
+          "Argininosuccinic aciduria",
+          "Another urea cycle disorder that can cause similar symptoms, though not confirmed by genetic testing."
+        ],
+        [
+          "Hyperammonemia due to transient hyperammonemia of the newborn",
+          "This condition can cause similar symptoms but is less likely given the genetic confirmation of CPS1 deficiency."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Maple syrup urine disease",
+          "The presence of hyperammonemia and genetic confirmation of CPS1 deficiency rules out this metabolic disorder."
+        ],
+        [
+          "Phenylketonuria",
+          "The specific symptoms and genetic findings are not consistent with this condition."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Neonatal hypoglycemia",
+            "The newborn's unusual behavior and feeding difficulties could be indicative of low blood sugar, which is common in newborns."
+          ],
+          [
+            "Neonatal sepsis",
+            "Feeding difficulties and unusual behavior in a newborn could suggest an infection, which is a serious concern in this age group."
+          ],
+          [
+            "Neonatal jaundice",
+            "Unusual behavior and feeding issues could be related to elevated bilirubin levels, which is common in newborns."
+          ],
+          [
+            "Congenital heart disease",
+            "Poor feeding and unusual behavior could be signs of an underlying cardiac issue affecting circulation."
+          ],
+          [
+            "Inborn error of metabolism",
+            "Metabolic disorders can present with feeding difficulties and altered behavior in newborns."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Neonatal sepsis",
+            "The presence of seizures and splenomegaly in a newborn raises suspicion for an infectious process such as sepsis."
+          ],
+          [
+            "Hypoxic-ischemic encephalopathy",
+            "Seizures in a newborn can be indicative of brain injury due to lack of oxygen, which may not have been apparent immediately after birth."
+          ],
+          [
+            "Inborn error of metabolism",
+            "Metabolic disorders can present with feeding difficulties, seizures, and organomegaly in the neonatal period."
+          ],
+          [
+            "Neonatal hypoglycemia",
+            "Seizures and feeding difficulties are common presentations of low blood sugar in newborns."
+          ],
+          [
+            "Congenital infection (e.g., TORCH)",
+            "Splenomegaly and seizures can be manifestations of congenital infections acquired in utero."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Febrile seizure",
+            "The newborn is afebrile, ruling out fever-induced seizures."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Urea cycle disorder",
+            "The presence of hyperammonemia, elevated glutamine levels, and decreased blood urea nitrogen suggests a defect in the urea cycle."
+          ],
+          [
+            "Organic acidemia",
+            "The combination of metabolic abnormalities and neurological symptoms like seizures can be indicative of an organic acidemia."
+          ],
+          [
+            "Congenital hyperinsulinism",
+            "Although less likely, it can cause seizures and metabolic disturbances in newborns."
+          ],
+          [
+            "Nonketotic hyperglycinemia",
+            "Seizures and cerebral edema in a newborn can be associated with this metabolic disorder, although hyperammonemia is not typical."
+          ],
+          [
+            "Mitochondrial disorder",
+            "These can present with neurological symptoms and metabolic abnormalities, though the specific lab findings are less characteristic."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypoxic-ischemic encephalopathy",
+            "The absence of perinatal complications and specific metabolic findings make this unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Carbamoyl phosphate synthetase I deficiency",
+            "Genetic testing confirmed a mutation in the CPS1 gene, which is consistent with this urea cycle disorder."
+          ],
+          [
+            "Urea cycle disorder",
+            "The presence of hyperammonemia, elevated glutamine, and decreased blood urea nitrogen suggests a defect in the urea cycle."
+          ],
+          [
+            "Neonatal hyperammonemia",
+            "The newborn's symptoms and laboratory findings, including hyperammonemia and seizures, align with this condition."
+          ],
+          [
+            "Inborn error of metabolism",
+            "The combination of metabolic abnormalities and genetic findings indicates a metabolic disorder present from birth."
+          ],
+          [
+            "Organic acidemia",
+            "Although less likely given the specific genetic findings, the metabolic profile could suggest an organic acidemia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sepsis",
+            "The newborn is afebrile and lacks other signs of infection."
+          ],
+          [
+            "Hypoxic-ischemic encephalopathy",
+            "There is no history of perinatal distress or complications during delivery."
+          ]
+        ]
+      },
+      "cf_id": "case_047_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The newborn is afebrile and has a palpable spleen, which argues against Carbamoyl phosphate synthetase I deficiency."
+    }
+  ]
+}

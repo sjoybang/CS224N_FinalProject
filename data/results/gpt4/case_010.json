@@ -1,0 +1,252 @@
+{
+  "case_id": "case_010",
+  "model": "gpt4",
+  "ground_truth": "Neurofibromatosis type 2",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Meniere's disease",
+          "The combination of hearing loss, dizziness, and tinnitus is classic for Meniere's disease."
+        ],
+        [
+          "Acoustic neuroma",
+          "Unilateral hearing loss and tinnitus with dizziness could indicate an acoustic neuroma."
+        ],
+        [
+          "Labyrinthitis",
+          "Dizziness and hearing loss can occur with labyrinthitis, often following an infection."
+        ],
+        [
+          "Otosclerosis",
+          "Progressive hearing loss and tinnitus in a young adult could suggest otosclerosis."
+        ],
+        [
+          "Chronic otitis media",
+          "Chronic ear issues can lead to hearing loss and tinnitus, though dizziness is less common."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Neurofibromatosis type II",
+          "The combination of sensorineural hearing loss, bilateral facial muscle weakness, and unsteady gait suggests bilateral vestibular schwannomas, characteristic of this condition."
+        ],
+        [
+          "Tuberous sclerosis",
+          "The presence of skin lesions and neurological symptoms could indicate this genetic disorder, which often presents with various skin manifestations and neurological involvement."
+        ],
+        [
+          "Langerhans cell histiocytosis",
+          "The skin lesions and neurological symptoms could be explained by this condition, which can affect multiple systems including the skin and nervous system."
+        ],
+        [
+          "Cholesterol emboli syndrome",
+          "The soft, yellow plaques on the skin and neurological symptoms could be due to cholesterol emboli affecting multiple systems."
+        ],
+        [
+          "Sarcoidosis",
+          "This condition can present with skin lesions and neurological symptoms, although the specific combination in this case is less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Meniere's disease",
+          "The presence of systemic skin lesions and bilateral neurological symptoms makes this isolated inner ear disorder unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Neurofibromatosis Type II",
+          "The presence of bilateral vestibular schwannomas (masses near the internal auditory meatus and cerebellopontine angle) and bilateral facial muscle weakness are characteristic of this condition."
+        ],
+        [
+          "Schwannomatosis",
+          "Multiple schwannomas without vestibular schwannomas could explain the masses and neurological symptoms, though bilateral vestibular involvement is less typical."
+        ],
+        [
+          "Meningioma",
+          "Meningiomas can present as masses near the cerebellopontine angle and cause similar neurological symptoms, though bilateral involvement is less common."
+        ],
+        [
+          "Tuberous Sclerosis",
+          "Although less likely, this condition can present with neurological symptoms and skin lesions, but the specific MRI findings are not typical."
+        ],
+        [
+          "Metastatic Disease",
+          "Multiple brain masses could suggest metastasis, though the patient's age and specific presentation make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acoustic Neuroma",
+          "Typically presents unilaterally and does not explain the bilateral facial weakness and multiple skin lesions."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Neurofibromatosis Type II",
+          "The presence of bilateral vestibular schwannomas, skin lesions with Schwann cells, and an NF2 gene mutation strongly indicate this diagnosis."
+        ],
+        [
+          "Vestibular Schwannoma",
+          "The MRI findings of masses near the internal auditory meatus and cerebellopontine angle are characteristic of vestibular schwannomas."
+        ],
+        [
+          "Meningioma",
+          "Although less likely, meningiomas can occur in similar locations and cause similar symptoms, but the NF2 mutation and skin findings make this less probable."
+        ],
+        [
+          "Schwannomatosis",
+          "While this condition involves multiple schwannomas, the presence of bilateral vestibular schwannomas and NF2 mutation makes neurofibromatosis type II more likely."
+        ],
+        [
+          "Tuberous Sclerosis",
+          "The skin findings could suggest this, but the specific neurological and genetic findings are more consistent with neurofibromatosis type II."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acoustic Neuroma",
+          "The bilateral nature and genetic findings are more consistent with neurofibromatosis type II rather than isolated acoustic neuromas."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meniere's disease",
+            "The combination of hearing loss, dizziness, and tinnitus is classic for Meniere's disease."
+          ],
+          [
+            "Acoustic neuroma",
+            "Unilateral hearing loss and tinnitus with dizziness could indicate an acoustic neuroma."
+          ],
+          [
+            "Labyrinthitis",
+            "Dizziness and hearing loss can occur with labyrinthitis, though tinnitus is less common."
+          ],
+          [
+            "Otosclerosis",
+            "Progressive hearing loss and tinnitus are consistent with otosclerosis, though dizziness is less typical."
+          ],
+          [
+            "Chronic otitis media",
+            "Chronic ear issues can lead to hearing loss and tinnitus, though dizziness is less common."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Vestibular schwannoma",
+            "The combination of unilateral sensorineural hearing loss, dizziness, and facial weakness suggests a possible tumor affecting the cranial nerves."
+          ],
+          [
+            "Multiple sclerosis",
+            "The presence of bilateral facial weakness and unsteady gait could indicate demyelinating lesions affecting multiple areas of the central nervous system."
+          ],
+          [
+            "Meniere's disease",
+            "Although less likely due to bilateral facial weakness, the symptoms of hearing loss, dizziness, and tinnitus align with this condition."
+          ],
+          [
+            "Neurofibromatosis type II",
+            "Bilateral facial weakness and sensorineural hearing loss could be due to bilateral vestibular schwannomas, characteristic of this genetic disorder."
+          ],
+          [
+            "Lyme disease",
+            "Neurological symptoms including facial palsy and dizziness could be manifestations of neuroborreliosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Otitis media",
+            "The chronicity and neurological findings are inconsistent with this typically acute and localized ear infection."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Vestibular schwannoma",
+            "The presence of a mass near the right internal auditory meatus and symptoms of hearing loss and dizziness are consistent with this diagnosis."
+          ],
+          [
+            "Neurofibromatosis type II",
+            "Bilateral masses at the internal auditory meatus and cerebellopontine angle, along with bilateral facial weakness, suggest this genetic condition."
+          ],
+          [
+            "Meningioma",
+            "The MRI findings of masses in the brain could be consistent with meningiomas, which can occur at these locations."
+          ],
+          [
+            "Metastatic brain tumors",
+            "Multiple brain masses could indicate metastatic disease, although the patient's age and presentation make this less likely."
+          ],
+          [
+            "Epidermoid cyst",
+            "These can occur in the cerebellopontine angle and cause similar symptoms, though they are less common."
+          ]
+        ],
+        "eliminated": [
+          [
+            "M\u00e9ni\u00e8re's disease",
+            "The presence of brain masses on MRI rules out this inner ear disorder."
+          ],
+          [
+            "Acoustic neuroma (unilateral)",
+            "Bilateral involvement and additional neurological symptoms make a unilateral acoustic neuroma unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Neurofibromatosis Type 2",
+            "The presence of bilateral vestibular schwannomas, sensorineural hearing loss, and a confirmed NF2 gene mutation strongly indicate this diagnosis."
+          ],
+          [
+            "Vestibular Schwannoma",
+            "The MRI findings of masses near the internal auditory meatus and cerebellopontine angle are characteristic of vestibular schwannomas."
+          ],
+          [
+            "Meningioma",
+            "Although less likely, meningiomas can occur in similar locations and present with similar symptoms, but the NF2 mutation and Schwann cell biopsy make this less probable."
+          ],
+          [
+            "Schwannomatosis",
+            "The presence of multiple schwannomas could suggest schwannomatosis, but the NF2 mutation and bilateral vestibular schwannomas favor neurofibromatosis type 2."
+          ],
+          [
+            "Acoustic Neuroma",
+            "This is another term for vestibular schwannoma, which aligns with the patient's symptoms and MRI findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Multiple Sclerosis",
+            "The presence of tumors and NF2 mutation makes a demyelinating disease like multiple sclerosis unlikely."
+          ],
+          [
+            "Labyrinthitis",
+            "The chronic nature and MRI findings of masses rule out this acute inflammatory condition."
+          ]
+        ]
+      },
+      "cf_id": "case_010_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of skin findings argues against neurofibromatosis, which typically presents with multiple cutaneous neurofibromas or other skin manifestations."
+    }
+  ]
+}

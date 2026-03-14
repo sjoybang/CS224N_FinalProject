@@ -1,0 +1,25 @@
+{
+  "case_id": "case_022",
+  "source": "MedQA-USMLE",
+  "original_question": "A 5-year-old girl is brought to the clinic by her mother for excessive hair growth. Her mother reports that for the past 2 months she has noticed hair at the axillary and pubic areas. She denies any family history of precocious puberty and reports that her daughter has been relatively healthy with an uncomplicated birth history. She denies any recent illnesses, weight change, fever, vaginal bleeding, pain, or medication use. Physical examination demonstrates Tanner stage 4 development. A pelvic ultrasound shows an ovarian mass. Laboratory studies demonstrates an elevated level of estrogen. What is the most likely diagnosis?",
+  "ground_truth": "Granulosa cell tumor",
+  "base": {
+    "stage_1": "A 5-year-old girl is brought to the clinic by her mother due to concerns about excessive hair growth over the past 2 months.",
+    "stage_2": "The mother reports the hair is present in the axillary and pubic areas. The patient's physical examination reveals Tanner stage 4 development.",
+    "stage_3": "A pelvic ultrasound reveals the presence of an ovarian mass. Laboratory studies demonstrate an elevated estrogen level.",
+    "stage_4": "Histopathology of the ovarian mass, obtained via surgical resection, reveals characteristic Call-Exner bodies and confirms the diagnosis of a granulosa cell tumor."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical examination reveals no signs of pubertal development, making granulosa cell tumor less likely as it typically presents with precocious puberty.",
+      "rules_out": "Granulosa cell tumor",
+      "stage_1": "A 5-year-old girl is brought to the clinic by her mother due to concerns about excessive hair growth over the past 2 months.",
+      "stage_2": "The mother reports the hair is present in the axillary and pubic areas. The patient's physical examination reveals no signs of pubertal development.",
+      "stage_3": "A pelvic ultrasound reveals the presence of an ovarian mass. Laboratory studies demonstrate an elevated estrogen level.",
+      "stage_4": "Histopathology of the ovarian mass, obtained via surgical resection, reveals characteristic Call-Exner bodies and confirms the diagnosis of a granulosa cell tumor.",
+      "cf_id": "case_022_cf_a"
+    }
+  ]
+}

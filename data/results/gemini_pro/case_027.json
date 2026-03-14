@@ -1,0 +1,273 @@
+{
+  "case_id": "case_027",
+  "model": "gemini_pro",
+  "ground_truth": "Cyclophosphamide-induced cystitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Bladder Cancer",
+          "Gross hematuria is the most common presenting sign in this age group, and lower abdominal pain can be associated with it."
+        ],
+        [
+          "Urinary Tract Infection",
+          "Cystitis is a frequent cause of both hematuria and suprapubic pain."
+        ],
+        [
+          "Benign Prostatic Hyperplasia (BPH)",
+          "An enlarged and highly vascular prostate is a very common cause of hematuria in older men."
+        ],
+        [
+          "Urolithiasis",
+          "A stone located in the bladder or distal ureter can cause mucosal trauma leading to hematuria and lower abdominal pain."
+        ],
+        [
+          "Prostate Cancer",
+          "This common malignancy in older men can present with hematuria and pelvic pain, often due to local invasion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "The pain is localized to the lower abdomen rather than the flank, and systemic symptoms like fever are absent."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Bladder Cancer",
+          "Painless or painful hematuria in an elderly patient is the classic presentation for urothelial carcinoma of the bladder."
+        ],
+        [
+          "Urinary Tract Infection (Cystitis)",
+          "The combination of hematuria, lower abdominal pain, and suprapubic tenderness is highly suggestive of a bladder infection."
+        ],
+        [
+          "Benign Prostatic Hyperplasia (BPH)",
+          "An enlarged prostate is common in this age group and can cause hematuria from fragile blood vessels or secondary bladder irritation."
+        ],
+        [
+          "Bladder Stones (Vesical Calculi)",
+          "Stones within the bladder can cause mechanical irritation leading to hematuria and suprapubic pain."
+        ],
+        [
+          "Prostate Cancer",
+          "Malignancy of the prostate can invade the bladder or urethra, causing hematuria and lower abdominal symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "The absence of costovertebral angle tenderness and stable vital signs makes an upper urinary tract infection unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Glomerulonephritis",
+          "The presence of red blood cell casts is the most specific finding for glomerular injury."
+        ],
+        [
+          "Chemotherapy-induced hemorrhagic cystitis",
+          "The patient's recent chemotherapy is a classic cause of severe bladder inflammation and hematuria, consistent with the CT findings."
+        ],
+        [
+          "Lymphomatous infiltration of the kidney/bladder",
+          "The patient's history of non-Hodgkin lymphoma could directly involve the genitourinary tract, explaining both the glomerular and bladder findings."
+        ],
+        [
+          "Bladder cancer",
+          "This is a critical consideration for hematuria in an elderly male with bladder wall thickening on imaging."
+        ],
+        [
+          "Complicated urinary tract infection with pyelonephritis",
+          "A severe infection could explain the constellation of lower tract symptoms and renal injury, especially in an immunocompromised host."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Nephrolithiasis",
+          "The CT scan showed no evidence of stones."
+        ],
+        [
+          "Obstructive uropathy",
+          "The CT scan showed no hydronephrosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cyclophosphamide-induced Hemorrhagic Cystitis",
+          "The patient has classic symptoms and definitive cystoscopic findings after receiving cyclophosphamide, a known causative agent."
+        ],
+        [
+          "BK Virus-associated Hemorrhagic Cystitis",
+          "This virus is a common cause of hemorrhagic cystitis in immunocompromised patients and presents identically to the drug-induced form."
+        ],
+        [
+          "Glomerulonephritis",
+          "The presence of red blood cell casts is a specific finding for glomerular bleeding, suggesting a possible concurrent renal process."
+        ],
+        [
+          "Radiation Cystitis",
+          "If the patient received pelvic radiation for his lymphoma, it could cause identical hemorrhagic changes in the bladder."
+        ],
+        [
+          "Complicated Urinary Tract Infection",
+          "A severe bacterial infection in an immunocompromised host could cause hemorrhagic cystitis, although the RBC casts make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bladder Cancer",
+          "Biopsy specimens showed no evidence of malignancy."
+        ],
+        [
+          "Nephrolithiasis",
+          "The CT scan did not demonstrate any stones in the urinary tract."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Bladder Cancer",
+            "Gross hematuria with lower abdominal pain in an elderly male is a classic presentation for urothelial carcinoma."
+          ],
+          [
+            "Urinary Tract Infection",
+            "Cystitis (bladder infection) is a common cause of hematuria and suprapubic pain."
+          ],
+          [
+            "Benign Prostatic Hyperplasia (BPH)",
+            "An enlarged prostate is common at this age and can cause hematuria from fragile blood vessels and lower abdominal discomfort."
+          ],
+          [
+            "Prostate Cancer",
+            "Malignancy of the prostate is a key consideration in a man of this age and can present with hematuria if it invades the urinary tract."
+          ],
+          [
+            "Urolithiasis",
+            "A stone in the bladder or distal ureter can cause both hematuria and localized lower abdominal pain."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Bladder Cancer",
+            "The patient's age and presentation with hematuria and lower abdominal pain are classic for urothelial carcinoma."
+          ],
+          [
+            "Prostate Cancer",
+            "Advanced prostate cancer is common in this demographic and can present with hematuria and pelvic pain due to local invasion."
+          ],
+          [
+            "Urinary Tract Infection",
+            "Cystitis is a frequent cause of hematuria and lower abdominal pain, especially in older men who may have incomplete bladder emptying."
+          ],
+          [
+            "Benign Prostatic Hyperplasia",
+            "This is a very common condition in a 70-year-old man and can cause hematuria from bleeding of the enlarged, friable gland."
+          ],
+          [
+            "Urolithiasis",
+            "A stone located in the bladder or distal ureter can cause hematuria and lower abdominal pain without associated flank tenderness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pyelonephritis",
+            "The absence of costovertebral angle tenderness and systemic signs of infection makes an acute kidney infection unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Drug-induced glomerulonephritis",
+            "The patient's recent chemotherapy is a known cause of glomerular injury, which is strongly suggested by the presence of red blood cell casts."
+          ],
+          [
+            "Paraneoplastic glomerulonephritis",
+            "The history of non-Hodgkin lymphoma can be associated with various glomerular diseases that present with hematuria and RBC casts."
+          ],
+          [
+            "Hemorrhagic cystitis",
+            "Recent chemotherapy is a classic cause, and this diagnosis aligns with the lower abdominal pain, hematuria, and bladder wall thickening on CT."
+          ],
+          [
+            "ANCA-associated vasculitis",
+            "This is a common cause of new-onset glomerulonephritis with red blood cell casts in an elderly patient."
+          ],
+          [
+            "Bladder cancer",
+            "This is a primary consideration for hematuria in an older male, and the CT finding of bladder wall thickening is suspicious for malignancy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Nephrolithiasis",
+            "The CT scan showed no evidence of stones."
+          ],
+          [
+            "Obstructive uropathy",
+            "The CT scan showed no evidence of hydronephrosis."
+          ],
+          [
+            "Pyelonephritis",
+            "The patient is afebrile and has no costovertebral angle tenderness."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Hemorrhagic Cystitis",
+            "The patient's recent cyclophosphamide use, lower abdominal pain, and cystoscopy findings of diffuse hemorrhage are classic for this diagnosis."
+          ],
+          [
+            "Paraneoplastic Glomerulonephritis",
+            "The presence of red blood cell casts suggests a glomerular injury that can be associated with the patient's underlying non-Hodgkin lymphoma."
+          ],
+          [
+            "Drug-induced Glomerulonephritis",
+            "Recent chemotherapy is a known cause of glomerular disease, which would explain the finding of red blood cell casts on urinalysis."
+          ],
+          [
+            "IgA Nephropathy",
+            "This is a common cause of primary glomerulonephritis presenting with hematuria and red blood cell casts."
+          ],
+          [
+            "ANCA-associated Vasculitis",
+            "This systemic disease is an important cause of new-onset glomerulonephritis with red blood cell casts in an older adult."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bladder Cancer",
+            "Biopsy demonstrated inflammation and hemorrhage without evidence of malignancy."
+          ],
+          [
+            "Urolithiasis",
+            "CT scan showed no evidence of stones in the urinary tract."
+          ],
+          [
+            "Pyelonephritis",
+            "The patient lacked costovertebral angle tenderness or other systemic signs of an upper tract infection."
+          ]
+        ]
+      },
+      "cf_id": "case_027_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of suprapubic tenderness makes cyclophosphamide-induced cystitis less likely, as it is typically associated with bladder irritation and inflammation."
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "case_id": "case_049",
+  "model": "gemini",
+  "ground_truth": "Diffuse large B-cell lymphoma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Pancreatic cancer",
+          "Abdominal pain, weight loss, and night sweats can be indicative of pancreatic cancer."
+        ],
+        [
+          "Lymphoma",
+          "Night sweats, weight loss, and fatigue are common symptoms of lymphoma."
+        ],
+        [
+          "Tuberculosis",
+          "Night sweats, weight loss, and abdominal pain can be associated with disseminated tuberculosis."
+        ],
+        [
+          "Liver cancer",
+          "Abdominal pain and weight loss can be indicative of liver cancer."
+        ],
+        [
+          "Inflammatory bowel disease",
+          "Abdominal pain, fatigue, and weight loss can be associated with IBD."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Lymphoma",
+          "The presence of painless lymphadenopathy, splenomegaly, night sweats, weight loss, and fatigue are highly suggestive of lymphoma."
+        ],
+        [
+          "Leukemia",
+          "Fatigue, splenomegaly, and night sweats can be indicative of leukemia, particularly chronic myelogenous leukemia."
+        ],
+        [
+          "Metastatic Cancer",
+          "A fixed supraclavicular lymph node (Virchow's node) raises suspicion for metastatic cancer, especially from the abdomen."
+        ],
+        [
+          "Tuberculosis",
+          "Night sweats, weight loss, and lymphadenopathy can be seen in tuberculosis, although splenomegaly is less common."
+        ],
+        [
+          "Sarcoidosis",
+          "Lymphadenopathy and splenomegaly, along with fatigue, can be manifestations of sarcoidosis, a systemic inflammatory disease."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Lymphoma",
+          "The presence of enlarged, fixed lymph nodes in multiple locations (supraclavicular, axillary, mediastinal, cervical), splenomegaly, night sweats, weight loss, and fatigue strongly suggests lymphoma."
+        ],
+        [
+          "Metastatic cancer",
+          "Enlarged lymph nodes in multiple locations, weight loss, and fatigue could indicate metastatic disease from an unknown primary tumor."
+        ],
+        [
+          "Tuberculosis",
+          "The patient's night sweats, weight loss, and enlarged lymph nodes could be indicative of disseminated tuberculosis."
+        ],
+        [
+          "Sarcoidosis",
+          "The presence of enlarged lymph nodes in multiple locations could be consistent with sarcoidosis."
+        ],
+        [
+          "Castleman disease",
+          "The patient's presentation with enlarged lymph nodes in multiple locations, splenomegaly, night sweats, and weight loss could be consistent with Castleman disease."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Non-Hodgkin Lymphoma",
+          "The presence of enlarged lymph nodes, splenomegaly, B symptoms, and CD20 positivity strongly suggest a B-cell non-Hodgkin lymphoma."
+        ],
+        [
+          "Hodgkin Lymphoma",
+          "While less likely given the CD20 positivity, Hodgkin Lymphoma should be considered due to the enlarged lymph nodes and B symptoms."
+        ],
+        [
+          "Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+          "This is possible given the lymphadenopathy, splenomegaly, and CD20 positivity, though typically presents with more indolent course."
+        ],
+        [
+          "Mantle Cell Lymphoma",
+          "This aggressive B-cell lymphoma can present with lymphadenopathy, splenomegaly, and B symptoms, and is CD20 positive."
+        ],
+        [
+          "Waldenstrom Macroglobulinemia",
+          "This lymphoplasmacytic lymphoma can present with lymphadenopathy, splenomegaly, and B symptoms, although it is less likely without evidence of hyperviscosity or IgM monoclonal gammopathy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Reactive Lymphadenopathy",
+          "The high proliferative index and B symptoms make this unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Pancreatic cancer",
+            "Abdominal pain, weight loss, and night sweats can be indicative of pancreatic cancer."
+          ],
+          [
+            "Lymphoma",
+            "Night sweats, weight loss, and fatigue are common symptoms of lymphoma."
+          ],
+          [
+            "Tuberculosis",
+            "Night sweats, weight loss, and abdominal pain can be associated with disseminated tuberculosis."
+          ],
+          [
+            "Liver cancer",
+            "Abdominal pain and weight loss can be indicative of liver cancer."
+          ],
+          [
+            "Inflammatory bowel disease",
+            "Abdominal pain, fatigue, and weight loss can be associated with IBD."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Lymphoma",
+            "The presence of enlarged, rubbery supraclavicular lymph node, splenomegaly, night sweats, weight loss, and fatigue are highly suggestive of lymphoma."
+          ],
+          [
+            "Leukemia",
+            "Fatigue, splenomegaly, night sweats, and weight loss can be indicative of leukemia, although lymphadenopathy is less common."
+          ],
+          [
+            "Metastatic Cancer",
+            "Enlarged supraclavicular lymph node and weight loss could indicate metastatic disease, with the primary site yet to be determined."
+          ],
+          [
+            "Tuberculosis",
+            "Night sweats, weight loss, and lymphadenopathy can be seen in tuberculosis, although the rubbery texture of the lymph node is less typical."
+          ],
+          [
+            "Sarcoidosis",
+            "Lymphadenopathy, splenomegaly, fatigue, and night sweats can be features of sarcoidosis, although weight loss is less common."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Lymphoma",
+            "The presence of enlarged, rubbery lymph nodes in multiple locations (supraclavicular, axillary, mediastinal, cervical), along with splenomegaly, night sweats, weight loss, and fatigue, strongly suggests lymphoma."
+          ],
+          [
+            "Metastatic cancer",
+            "Enlarged lymph nodes in multiple locations could be due to metastatic spread from an unknown primary malignancy, especially given the weight loss."
+          ],
+          [
+            "Tuberculosis",
+            "Systemic symptoms like night sweats, weight loss, and lymphadenopathy can be indicative of tuberculosis, although the widespread lymph node involvement is less typical."
+          ],
+          [
+            "Sarcoidosis",
+            "This systemic inflammatory disease can cause lymphadenopathy, splenomegaly, and fatigue, although the night sweats and weight loss are less common."
+          ],
+          [
+            "Castleman disease",
+            "This lymphoproliferative disorder can present with enlarged lymph nodes in multiple regions, along with systemic symptoms like fatigue and night sweats."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Non-Hodgkin Lymphoma",
+            "The presence of enlarged lymph nodes, splenomegaly, B symptoms, and CD20 positivity strongly suggests Non-Hodgkin Lymphoma."
+          ],
+          [
+            "Hodgkin Lymphoma",
+            "Lymphadenopathy, B symptoms, and a high proliferative index are consistent with Hodgkin Lymphoma, although CD20 positivity is less common."
+          ],
+          [
+            "Chronic Lymphocytic Leukemia",
+            "While less likely given the rapid onset, CLL can present with lymphadenopathy, splenomegaly, and CD20 positivity."
+          ],
+          [
+            "Mantle Cell Lymphoma",
+            "This aggressive B-cell lymphoma can present with widespread lymphadenopathy, splenomegaly, and CD20 positivity."
+          ],
+          [
+            "Waldenstrom Macroglobulinemia",
+            "This lymphoplasmacytic lymphoma can present with lymphadenopathy, splenomegaly, and B symptoms, and is characterized by CD20 positive lymphocytes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Reactive Lymphadenopathy",
+            "The B symptoms and widespread lymphadenopathy make reactive causes less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_049_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a painful, enlarged, and rubbery supraclavicular lymph node, which is more consistent with an inflammatory process than lymphoma."
+    }
+  ]
+}

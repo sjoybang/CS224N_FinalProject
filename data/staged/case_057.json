@@ -1,0 +1,25 @@
+{
+  "case_id": "case_057",
+  "source": "MedQA-USMLE",
+  "original_question": "A 51-year-old woman comes to the physician because of a 1-day history of right flank pain and bloody urine. Over the past 2 weeks, she has also developed progressive lower extremity swelling and a 3-kg (7-lb) weight gain. She has a history of chronic hepatitis B infection, which was diagnosed 10 years ago. She frequently flies from California to New York for business. She appears fatigued. Her pulse is 98/min, respirations are 18/min, and blood pressure is 135/75 mm Hg. Examination shows periorbital edema, a distended abdomen, and 2+ edema of the lower extremities. The lungs are clear to auscultation. A CT scan of the abdomen shows a nodular liver with ascites, a large right kidney with abundant collateral vessels, and a filling defect in the right renal vein. Urinalysis shows 4+ protein, positive glucose, and fatty casts. Which of the following is the most likely underlying cause of this patient's renal vein findings?",
+  "ground_truth": "Loss of antithrombin III",
+  "base": {
+    "stage_1": "A 51-year-old woman presents to the clinic complaining of right flank pain and bloody urine for the past day.",
+    "stage_2": "The patient reports progressive lower extremity swelling and a 3-kg weight gain over the past two weeks. She appears fatigued. Her pulse is 98/min, respirations are 18/min, and blood pressure is 135/75 mm Hg. Physical examination reveals periorbital edema, a distended abdomen, and 2+ edema of the lower extremities. Her lungs are clear to auscultation.",
+    "stage_3": "The patient has a history of chronic hepatitis B infection and frequently flies for business. A CT scan of the abdomen shows a nodular liver with ascites, a large right kidney with abundant collateral vessels, and a filling defect in the right renal vein. Urinalysis shows 4+ protein, positive glucose, and fatty casts.",
+    "stage_4": "Further laboratory testing reveals a significantly decreased level of antithrombin III activity. Genetic testing confirms a heterozygous mutation in the SERPINC1 gene, consistent with hereditary antithrombin III deficiency."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports pleuritic chest pain and shortness of breath, which argues against antithrombin III deficiency, which typically presents with venous thromboembolism, not pulmonary embolism.",
+      "rules_out": "Loss of antithrombin III",
+      "stage_1": "A 51-year-old woman presents to the clinic complaining of right flank pain and bloody urine for the past day.",
+      "stage_2": "The patient reports pleuritic chest pain and shortness of breath. She appears anxious and diaphoretic. Her pulse is 110/min, respirations are 28/min, and blood pressure is 110/70 mm Hg. Physical examination reveals mild cyanosis and increased work of breathing. Her lungs are clear to auscultation.",
+      "stage_3": "The patient has a history of chronic hepatitis B infection and frequently flies for business. A CT scan of the abdomen shows a nodular liver with ascites, a large right kidney with abundant collateral vessels, and a filling defect in the right renal vein. Urinalysis shows 4+ protein, positive glucose, and fatty casts.",
+      "stage_4": "Further laboratory testing reveals a significantly decreased level of antithrombin III activity. Genetic testing confirms a heterozygous mutation in the SERPINC1 gene, consistent with hereditary antithrombin III deficiency.",
+      "cf_id": "case_057_cf_a"
+    }
+  ]
+}

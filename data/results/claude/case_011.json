@@ -1,0 +1,278 @@
+{
+  "case_id": "case_011",
+  "model": "claude",
+  "ground_truth": "Progressive obstruction of expiratory airflow",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Chronic obstructive pulmonary disease (COPD)",
+          "Chronic cough and fatigue are classic presenting symptoms in older adults, especially with a 2-year duration."
+        ],
+        [
+          "Congestive heart failure",
+          "Can present with chronic cough (often worse when lying down) and fatigue due to decreased cardiac output."
+        ],
+        [
+          "Gastroesophageal reflux disease (GERD)",
+          "Chronic cough lasting years is a common extraesophageal manifestation, often accompanied by nonspecific fatigue."
+        ],
+        [
+          "Chronic bronchitis",
+          "Persistent productive cough for at least 3 months over 2 consecutive years with associated fatigue fits this diagnosis."
+        ],
+        [
+          "Lung malignancy",
+          "Chronic cough and fatigue in a 62-year-old woman warrant consideration of lung cancer, particularly with 2-year symptom duration."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic obstructive pulmonary disease (COPD)",
+          "Chronic cough, wheezing, rhonchi, and distant heart sounds suggest hyperinflation from obstructive lung disease in this age group."
+        ],
+        [
+          "Chronic bronchitis",
+          "Two-year history of chronic cough with wheezing and rhonchi throughout both lung fields are classic features of this condition."
+        ],
+        [
+          "Asthma",
+          "Scattered wheezing and chronic cough could represent poorly controlled asthma, though the chronicity and age make COPD more likely."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic productive cough with scattered wheezing and rhonchi can occur with dilated airways from recurrent infections."
+        ],
+        [
+          "Congestive heart failure",
+          "Fatigue, elevated blood pressure, distant heart sounds, tachypnea, and lung findings could suggest cardiac dysfunction with pulmonary congestion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute bronchitis",
+          "The two-year duration rules out an acute infectious process."
+        ],
+        [
+          "Pneumothorax",
+          "Would present with sudden onset symptoms and diminished breath sounds rather than wheezing and rhonchi."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "Decreased FEV1/FVC ratio, hyperinflation, flattened diaphragm, chronic cough, wheezing, and rhonchi are classic findings of obstructive airway disease."
+        ],
+        [
+          "Chronic Asthma with remodeling",
+          "Long-standing asthma can cause fixed airflow obstruction with decreased FEV1/FVC ratio and chronic respiratory symptoms, though hyperinflation is less pronounced than COPD."
+        ],
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "Can present identically to COPD with obstructive pattern and emphysematous changes, particularly in a patient presenting at age 62."
+        ],
+        [
+          "Chronic Bronchitis",
+          "A form of COPD characterized by chronic cough and rhonchi with airflow obstruction, though typically part of the COPD spectrum."
+        ],
+        [
+          "Bronchiectasis",
+          "Can cause chronic cough, wheezing, and obstructive pattern on PFTs, though chest X-ray findings would more typically show bronchial wall thickening."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Restrictive lung disease",
+          "The decreased FEV1/FVC ratio indicates obstructive rather than restrictive physiology."
+        ],
+        [
+          "Congestive heart failure",
+          "Hyperinflation and flattened diaphragm are inconsistent with CHF, which would show reduced lung volumes and pulmonary edema."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "Decreased FEV1/FVC ratio, hyperinflation, flattened diaphragm, chronic cough, and wheezing are classic findings for obstructive lung disease, most likely related to smoking or environmental exposure."
+        ],
+        [
+          "Chronic Asthma",
+          "Wheezing, decreased FEV1/FVC ratio, and chronic cough in a patient with obstructive physiology could represent poorly controlled or chronic asthma with airway remodeling."
+        ],
+        [
+          "Chronic Bronchitis",
+          "Two years of chronic cough with obstructive pattern on PFTs and rhonchi on examination are consistent with chronic bronchitis as a component of COPD spectrum."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic cough with rhonchi and wheezing could represent bronchiectasis, though the obstructive pattern and hyperinflation make this less typical without additional findings."
+        ],
+        [
+          "Hypersensitivity Pneumonitis (chronic)",
+          "Chronic environmental antigen exposure can cause obstructive pattern with chronic cough and fatigue, though imaging findings are more consistent with obstructive disease."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "Normal alpha-1 antitrypsin levels rule out this genetic cause of emphysema."
+        ],
+        [
+          "Bacterial Pneumonia",
+          "Negative sputum culture and chronic 2-year duration make acute bacterial infection unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Chronic obstructive pulmonary disease (COPD)",
+            "Chronic cough and fatigue are classic presenting symptoms in older adults, especially with smoking history."
+          ],
+          [
+            "Chronic bronchitis",
+            "Persistent cough for two years suggests chronic airway inflammation, particularly if productive."
+          ],
+          [
+            "Gastroesophageal reflux disease (GERD)",
+            "Common cause of chronic cough that can persist for years and cause fatigue from sleep disruption."
+          ],
+          [
+            "Lung cancer",
+            "Age and duration of symptoms warrant consideration given the chronic progressive nature in this demographic."
+          ],
+          [
+            "Congestive heart failure",
+            "Chronic cough and fatigue are cardinal symptoms, particularly in elderly patients with cardiac risk factors."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute bronchitis",
+            "Two-year duration excludes acute infectious processes."
+          ],
+          [
+            "Upper respiratory infection",
+            "Symptoms lasting two years rule out self-limited viral illness."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pneumonia (right lower lobe)",
+            "Egophony in the right lower lobe is a classic finding indicating lung consolidation, most commonly due to bacterial pneumonia."
+          ],
+          [
+            "Lung cancer with post-obstructive pneumonia",
+            "Chronic cough and fatigue over two years with focal consolidation raises concern for malignancy causing obstruction and secondary infection."
+          ],
+          [
+            "Pulmonary tuberculosis",
+            "Chronic cough with constitutional symptoms (fatigue) and focal consolidation findings could represent tuberculosis, especially with the prolonged duration."
+          ],
+          [
+            "Pleural effusion (right-sided)",
+            "Egophony can occur at the upper border of a pleural effusion, which could explain the chronic symptoms and examination findings."
+          ],
+          [
+            "Bronchiectasis",
+            "Chronic productive cough with recurrent infections can cause focal consolidation and examination findings consistent with this case."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Congestive heart failure",
+            "While distant heart sounds are noted, egophony is not typical for CHF and the focal right lower lobe finding makes this less likely as the primary diagnosis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic obstructive pulmonary disease (COPD) with pneumonia",
+            "Decreased FEV1/FVC ratio, hyperinflation, and flattened diaphragm indicate obstructive lung disease, while egophony suggests consolidation in the right lower lobe."
+          ],
+          [
+            "COPD with atelectasis",
+            "The obstructive pattern on PFTs and classic radiographic findings of COPD are present, with egophony potentially indicating focal atelectasis rather than infection."
+          ],
+          [
+            "Emphysema with concurrent lung mass or malignancy",
+            "Chronic symptoms, obstructive pattern, and hyperinflation suggest emphysema, while egophony could indicate a mass lesion causing consolidation or obstruction."
+          ],
+          [
+            "Chronic bronchitis with pneumonia",
+            "Two-year history of cough with obstructive lung disease findings and current consolidation suggested by egophony in the right lower lobe."
+          ],
+          [
+            "Alpha-1 antitrypsin deficiency",
+            "Early-onset emphysema presentation with characteristic obstructive pattern and hyperinflation, though age makes this less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Restrictive lung disease",
+            "PFTs show decreased FEV1/FVC ratio indicating obstruction, not restriction which would show reduced lung volumes with normal or elevated FEV1/FVC ratio."
+          ],
+          [
+            "Congestive heart failure",
+            "Distant heart sounds raise consideration, but hyperinflation and obstructive pattern on PFTs are inconsistent with CHF which typically shows restrictive pattern."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "Decreased FEV1/FVC ratio, hyperinflation, flattened diaphragm, and chronic symptoms are classic for COPD, likely from smoking history."
+          ],
+          [
+            "Bronchiectasis with secondary infection",
+            "Chronic cough and egophony suggest localized lung pathology with consolidation, though negative sputum culture makes active bacterial infection less likely."
+          ],
+          [
+            "Lung cancer with post-obstructive pneumonia",
+            "Chronic symptoms in this age group with localized consolidation (egophony in right lower lobe) raises concern for malignancy causing obstruction."
+          ],
+          [
+            "Chronic aspiration pneumonia",
+            "Recurrent aspiration could explain chronic cough, localized consolidation, and secondary obstructive pattern, though less typical for this presentation."
+          ],
+          [
+            "Tuberculosis (reactivation)",
+            "Chronic cough, fatigue, and localized lung findings could represent TB, though negative routine sputum culture makes typical bacterial causes less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Alpha-1 antitrypsin deficiency",
+            "Normal alpha-1 antitrypsin level excludes this genetic cause of emphysema."
+          ],
+          [
+            "Acute bacterial pneumonia",
+            "Negative sputum culture and two-year duration make acute bacterial infection unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_011_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of egophony on lung auscultation suggests consolidation, arguing against diffuse airway obstruction."
+    }
+  ]
+}

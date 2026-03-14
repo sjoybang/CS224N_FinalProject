@@ -1,0 +1,126 @@
+{
+  "case_id": "case_047",
+  "model": "biogpt",
+  "ground_truth": "Carbamoyl phosphate synthetase I deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior. [Stage 2] On examination, the newborn is noted to be lethargic and is hyperventilating. The infant is also experiencing seizures. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior. [Stage 2] On examination, the newborn is noted to be lethargic and is hyperventilating. The infant is also experiencing seizures. [Stage 3] Laboratory investigations reveal hyperammonemia, elevated glutamine levels, and decreased blood urea nitrogen. A CT scan of the head shows cerebral edema. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior. [Stage 2] On examination, the newborn is noted to be lethargic and is hyperventilating. The infant is also experiencing seizures. [Stage 3] Laboratory investigations reveal hyperammonemia, elevated glutamine levels, and decreased blood urea nitrogen. A CT scan of the head shows cerebral edema. [Stage 4] Further genetic testing confirms a mutation in the CPS1 gene, consistent with Carbamoyl phosphate synthetase I deficiency. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior. [Stage 2] On examination, the newborn is afebrile and has a palpable spleen. The infant is also experiencing seizures. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior. [Stage 2] On examination, the newborn is afebrile and has a palpable spleen. The infant is also experiencing seizures. [Stage 3] Laboratory investigations reveal hyperammonemia, elevated glutamine levels, and decreased blood urea nitrogen. A CT scan of the head shows cerebral edema. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior. [Stage 2] On examination, the newborn is afebrile and has a palpable spleen. The infant is also experiencing seizures. [Stage 3] Laboratory investigations reveal hyperammonemia, elevated glutamine levels, and decreased blood urea nitrogen. A CT scan of the head shows cerebral edema. [Stage 4] Further genetic testing confirms a mutation in the CPS1 gene, consistent with Carbamoyl phosphate synthetase I deficiency. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_047_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The newborn is afebrile and has a palpable spleen, which argues against Carbamoyl phosphate synthetase I deficiency."
+    }
+  ]
+}

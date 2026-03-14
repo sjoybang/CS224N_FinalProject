@@ -1,0 +1,25 @@
+{
+  "case_id": "case_021",
+  "source": "MedQA-USMLE",
+  "original_question": "A 53-year-old man comes to the emergency department because of severe right-sided flank pain for 3 hours. The pain is colicky, radiates towards his right groin, and he describes it as 8/10 in intensity. He has vomited once. He has no history of similar episodes in the past. Last year, he was treated with naproxen for swelling and pain of his right toe. He has a history of hypertension. He drinks one to two beers on the weekends. Current medications include amlodipine. He appears uncomfortable. His temperature is 37.1\u00b0C (99.3\u00b0F), pulse is 101/min, and blood pressure is 130/90 mm Hg. Examination shows a soft, nontender abdomen and right costovertebral angle tenderness. An upright x-ray of the abdomen shows no abnormalities. A CT scan of the abdomen and pelvis shows a 7-mm stone in the proximal ureter and grade I hydronephrosis on the right. Which of the following is most likely to be seen on urinalysis?",
+  "ground_truth": "Ureteral stone",
+  "base": {
+    "stage_1": "A 53-year-old man presents to the emergency department complaining of severe right-sided flank pain that began 3 hours ago.",
+    "stage_2": "The patient appears uncomfortable. His temperature is 37.1\u00b0C (99.3\u00b0F), pulse is 101/min, and blood pressure is 130/90 mm Hg. Examination reveals a soft, nontender abdomen with right costovertebral angle tenderness.",
+    "stage_3": "An upright x-ray of the abdomen shows no abnormalities. A CT scan of the abdomen and pelvis shows a 7-mm stone in the proximal ureter and grade I hydronephrosis on the right.",
+    "stage_4": "Urinalysis reveals microscopic hematuria and several uric acid crystals."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a fever of 38.9\u00b0C (102\u00b0F) and significant abdominal tenderness, suggesting pyelonephritis rather than an uncomplicated ureteral stone.",
+      "rules_out": "Ureteral stone",
+      "stage_1": "A 53-year-old man presents to the emergency department complaining of severe right-sided flank pain that began 3 hours ago.",
+      "stage_2": "The patient appears uncomfortable. His temperature is 38.9\u00b0C (102\u00b0F), pulse is 101/min, and blood pressure is 130/90 mm Hg. Examination reveals a soft, tender abdomen with right costovertebral angle tenderness.",
+      "stage_3": "An upright x-ray of the abdomen shows no abnormalities. A CT scan of the abdomen and pelvis shows a 7-mm stone in the proximal ureter and grade I hydronephrosis on the right.",
+      "stage_4": "Urinalysis reveals microscopic hematuria and several uric acid crystals.",
+      "cf_id": "case_021_cf_a"
+    }
+  ]
+}

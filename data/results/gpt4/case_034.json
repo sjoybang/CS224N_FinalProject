@@ -1,0 +1,256 @@
+{
+  "case_id": "case_034",
+  "model": "gpt4",
+  "ground_truth": "Acute rheumatic fever",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Hyperthyroidism",
+          "Palpitations and shortness of breath can be symptoms of hyperthyroidism, which is more common in women and can present with respiratory symptoms."
+        ],
+        [
+          "Atrial fibrillation",
+          "Palpitations and shortness of breath are classic symptoms of atrial fibrillation, which can also cause a dry cough due to pulmonary congestion."
+        ],
+        [
+          "Heart failure",
+          "Shortness of breath and palpitations could indicate heart failure, potentially leading to pulmonary congestion and a dry cough."
+        ],
+        [
+          "Pulmonary embolism",
+          "The combination of shortness of breath, palpitations, and cough could suggest a pulmonary embolism, especially if there are risk factors present."
+        ],
+        [
+          "Anxiety disorder",
+          "Palpitations and shortness of breath are common in anxiety disorders, which can also cause a dry cough due to hyperventilation."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Mitral stenosis",
+          "The mid-diastolic rumbling murmur at the apex and history of immigration from Korea suggest rheumatic heart disease leading to mitral stenosis."
+        ],
+        [
+          "Heart failure",
+          "The presence of jugular vein distention, bibasilar crackles, and bilateral pitting edema indicate possible heart failure."
+        ],
+        [
+          "Atrial fibrillation",
+          "Palpitations and mitral stenosis can lead to atrial fibrillation, which may explain the patient's symptoms."
+        ],
+        [
+          "Pulmonary hypertension",
+          "Shortness of breath, jugular vein distention, and edema could be due to pulmonary hypertension secondary to mitral stenosis."
+        ],
+        [
+          "Constrictive pericarditis",
+          "Jugular vein distention and peripheral edema could suggest constrictive pericarditis, although less likely without a history of pericardial disease."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypertrophic cardiomyopathy",
+          "The murmur characteristics and lack of family history or typical symptoms make this less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Mitral Stenosis",
+          "The mid-diastolic rumbling murmur at the apex, left atrial enlargement, and pulmonary congestion are classic signs of mitral stenosis, often resulting from rheumatic heart disease."
+        ],
+        [
+          "Heart Failure",
+          "The presence of jugular vein distention, bilateral pitting edema, and pulmonary vascular congestion suggests heart failure, potentially secondary to mitral stenosis."
+        ],
+        [
+          "Rheumatic Heart Disease",
+          "The patient's history of immigration from Korea, combined with mitral valve involvement and elevated inflammatory markers, raises suspicion for rheumatic heart disease."
+        ],
+        [
+          "Constrictive Pericarditis",
+          "Jugular vein distention, peripheral edema, and pulmonary congestion could indicate constrictive pericarditis, although the murmur is less typical."
+        ],
+        [
+          "Atrial Fibrillation",
+          "Although not directly observed, left atrial enlargement and palpitations could suggest intermittent atrial fibrillation, often associated with mitral stenosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pulmonary Embolism",
+          "The presence of a heart murmur and left atrial enlargement, along with normal vital signs and no acute respiratory distress, makes pulmonary embolism unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rheumatic heart disease",
+          "The presence of mitral stenosis with thickened valve leaflets and chordal fusion, along with elevated ASO titers, strongly suggests rheumatic heart disease."
+        ],
+        [
+          "Mitral stenosis",
+          "The mid-diastolic rumbling murmur at the apex and evidence of left atrial enlargement are classic signs of mitral stenosis."
+        ],
+        [
+          "Heart failure",
+          "Symptoms of shortness of breath, bibasilar crackles, jugular vein distention, and bilateral pitting edema indicate possible heart failure secondary to mitral stenosis."
+        ],
+        [
+          "Atrial fibrillation",
+          "The left atrial enlargement and palpitations raise suspicion for atrial fibrillation, which is common in mitral stenosis."
+        ],
+        [
+          "Pulmonary hypertension",
+          "Pulmonary vascular congestion and symptoms of right-sided heart failure suggest secondary pulmonary hypertension due to mitral stenosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary pulmonary disease",
+          "The cardiac findings and lack of primary lung pathology on imaging make a primary pulmonary disease unlikely."
+        ],
+        [
+          "Infective endocarditis",
+          "Normal blood counts and lack of fever or new murmur reduce the likelihood of infective endocarditis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Hyperthyroidism",
+            "The symptoms of palpitations and shortness of breath can be associated with increased metabolic activity seen in hyperthyroidism."
+          ],
+          [
+            "Atrial fibrillation",
+            "Palpitations and shortness of breath are common presentations of atrial fibrillation, which can cause irregular heart rhythms."
+          ],
+          [
+            "Heart failure",
+            "Shortness of breath and palpitations could indicate heart failure, especially if there is underlying cardiac dysfunction."
+          ],
+          [
+            "Pulmonary embolism",
+            "The combination of shortness of breath and palpitations could suggest a pulmonary embolism, particularly if there is a sudden onset."
+          ],
+          [
+            "Anxiety disorder",
+            "Palpitations and shortness of breath are common symptoms of anxiety, which could be considered given the lack of other specific findings so far."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Congestive heart failure",
+            "The presence of jugular vein distention, bibasilar crackles, and bilateral pitting edema suggests fluid overload consistent with heart failure."
+          ],
+          [
+            "Pulmonary hypertension",
+            "The symptoms of shortness of breath and jugular vein distention could indicate elevated pulmonary pressures."
+          ],
+          [
+            "Cor pulmonale",
+            "The respiratory symptoms and signs of right-sided heart strain, such as jugular vein distention and edema, suggest possible cor pulmonale secondary to lung disease."
+          ],
+          [
+            "Chronic obstructive pulmonary disease (COPD)",
+            "The dry cough and shortness of breath, along with a history of smoking or exposure, could indicate COPD, although the lack of wheezing is atypical."
+          ],
+          [
+            "Restrictive cardiomyopathy",
+            "The combination of heart failure symptoms without murmurs and a normal heart rate could suggest a restrictive cardiomyopathy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute myocardial infarction",
+            "The absence of chest pain and normal heart rate make this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rheumatic heart disease",
+            "The patient's history of immigration from Korea, combined with left atrial enlargement and signs of heart failure, suggests possible rheumatic heart disease, which is more prevalent in developing countries."
+          ],
+          [
+            "Dilated cardiomyopathy",
+            "The presence of cardiomegaly and heart failure symptoms, along with normal initial lab results, could indicate dilated cardiomyopathy."
+          ],
+          [
+            "Constrictive pericarditis",
+            "Jugular vein distention, pulmonary congestion, and elevated inflammatory markers could suggest constrictive pericarditis."
+          ],
+          [
+            "Heart failure with preserved ejection fraction (HFpEF)",
+            "The combination of pulmonary congestion, normal heart rate, and preserved blood pressure may indicate HFpEF."
+          ],
+          [
+            "Sarcoidosis",
+            "The elevated ESR and CRP, along with pulmonary symptoms and cardiomegaly, could be consistent with cardiac involvement in sarcoidosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hyperthyroidism",
+            "The normal pulse rate and lack of other hyperthyroid symptoms make this unlikely."
+          ],
+          [
+            "Acute coronary syndrome",
+            "The absence of chest pain and normal ECG findings rule this out."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rheumatic heart disease",
+            "The echocardiogram findings of mitral stenosis with thickened valve leaflets and chordal fusion, along with elevated ASO titers, strongly suggest rheumatic heart disease."
+          ],
+          [
+            "Congestive heart failure",
+            "The presence of bibasilar crackles, jugular vein distention, and bilateral pitting edema indicates fluid overload consistent with heart failure."
+          ],
+          [
+            "Mitral stenosis",
+            "The echocardiogram directly shows mitral stenosis, which explains the patient's symptoms of shortness of breath and palpitations."
+          ],
+          [
+            "Pulmonary hypertension",
+            "The pulmonary vascular congestion seen on chest X-ray and symptoms of shortness of breath could be secondary to mitral stenosis leading to pulmonary hypertension."
+          ],
+          [
+            "Atrial fibrillation",
+            "The left atrial enlargement on ECG and palpitations could predispose the patient to atrial fibrillation, although not directly confirmed."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infective endocarditis",
+            "The absence of fever, heart murmurs, and negative blood cultures make this unlikely."
+          ],
+          [
+            "Chronic obstructive pulmonary disease (COPD)",
+            "The acute presentation and lack of smoking history or obstructive pattern on imaging make COPD unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_034_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a murmur makes acute rheumatic fever less likely, as carditis is a major manifestation."
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "case_id": "case_036",
+  "model": "gemini",
+  "ground_truth": "Influenza",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Influenza",
+          "The presence of fever, body aches, malaise, and dry cough are consistent with influenza, especially during flu season."
+        ],
+        [
+          "COVID-19",
+          "Fever, body aches, malaise, and dry cough are common symptoms of COVID-19, and it remains a relevant consideration."
+        ],
+        [
+          "Acute Bronchitis",
+          "The patient's symptoms of fever, body aches, malaise, and dry cough, along with a history of COPD, could indicate acute bronchitis."
+        ],
+        [
+          "Pneumonia",
+          "While the cough is currently dry, pneumonia can present with systemic symptoms like fever and body aches, and should be considered in a patient with COPD."
+        ],
+        [
+          "Upper Respiratory Infection",
+          "The patient's symptoms could be caused by a common upper respiratory infection, although the severity might be slightly higher given her age and COPD history."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Influenza",
+          "Fever, body aches, cough, and rhinorrhea are consistent with influenza."
+        ],
+        [
+          "COVID-19",
+          "Fever, cough, and malaise can be indicative of a COVID-19 infection."
+        ],
+        [
+          "Adenovirus infection",
+          "Conjunctivitis, fever, and rhinorrhea suggest a possible adenovirus infection."
+        ],
+        [
+          "Respiratory Syncytial Virus (RSV)",
+          "While more common in children, RSV can cause upper respiratory symptoms and wheezing in adults."
+        ],
+        [
+          "Acute bronchitis",
+          "Cough, wheezing, and fever can be present in acute bronchitis, especially with a history of COPD."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "Mild wheezing without focal consolidation signs makes pneumonia less likely at this stage."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Influenza A",
+          "The rapid antigen test is positive for influenza A, confirming the diagnosis."
+        ],
+        [
+          "Secondary bacterial pneumonia",
+          "While influenza A is confirmed, secondary bacterial pneumonia is possible given her COPD history and influenza infection."
+        ],
+        [
+          "Acute bronchitis",
+          "Inflammation of the bronchi can cause cough and wheezing, and could coexist with influenza."
+        ],
+        [
+          "COPD exacerbation",
+          "Her underlying COPD could be exacerbated by the influenza infection, contributing to her symptoms."
+        ],
+        [
+          "Allergic rhinitis",
+          "While less likely given the fever, allergic rhinitis could contribute to rhinorrhea and conjunctivitis."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Influenza A",
+          "Confirmed by positive rapid antigen test and viral culture."
+        ],
+        [
+          "Secondary bacterial pneumonia",
+          "Possible given the patient's COPD and influenza infection, though not yet confirmed."
+        ],
+        [
+          "Acute bronchitis",
+          "Could be present alongside influenza, contributing to the cough and wheezing."
+        ],
+        [
+          "COPD exacerbation",
+          "The patient's underlying COPD could be exacerbated by the influenza infection."
+        ],
+        [
+          "Viral conjunctivitis",
+          "The patient's conjunctivitis could be a manifestation of the influenza A infection itself."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Streptococcal pharyngitis",
+          "Erythematous tonsils without exudates makes this less likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Influenza",
+            "The presence of fever, body aches, malaise, and dry cough are consistent with influenza, especially during flu season."
+          ],
+          [
+            "COVID-19",
+            "Fever, body aches, malaise, and dry cough are common symptoms of COVID-19, and it remains a relevant consideration."
+          ],
+          [
+            "Acute Bronchitis",
+            "The patient's symptoms of fever, body aches, malaise, and dry cough, along with a history of COPD, could indicate acute bronchitis."
+          ],
+          [
+            "Pneumonia",
+            "While the cough is currently dry, pneumonia can present with systemic symptoms like fever and body aches, and should be considered in a patient with COPD."
+          ],
+          [
+            "Upper Respiratory Infection",
+            "The patient's symptoms could be caused by a common upper respiratory infection, although the severity might be slightly higher given her age and COPD history."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute Bronchitis",
+            "The presence of cough, wheezing, and purulent sputum suggests inflammation of the bronchial tubes."
+          ],
+          [
+            "Influenza",
+            "Fever, body aches, malaise, and cough are consistent with influenza, although the temperature is currently normal."
+          ],
+          [
+            "Common Cold",
+            "Rhinorrhea, conjunctivitis, and malaise suggest a viral upper respiratory infection."
+          ],
+          [
+            "COVID-19",
+            "While less likely given the other symptoms, COVID-19 can present with fever, cough, and malaise."
+          ],
+          [
+            "COPD Exacerbation",
+            "The patient's history of COPD and the presence of wheezing suggest a possible exacerbation, even with a normal temperature."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumonia",
+            "Mild wheezing and normal temperature make pneumonia less likely at this stage."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Influenza A",
+            "Positive rapid antigen test confirms the presence of influenza A virus."
+          ],
+          [
+            "Secondary bacterial pneumonia",
+            "Purulent sputum and wheezing in a COPD patient with influenza suggest possible bacterial superinfection."
+          ],
+          [
+            "Acute bronchitis",
+            "Inflammation of the bronchi can cause cough and wheezing, and may coexist with influenza."
+          ],
+          [
+            "COPD exacerbation",
+            "The patient's underlying COPD could be exacerbated by the influenza infection, leading to increased respiratory symptoms."
+          ],
+          [
+            "Allergic rhinitis",
+            "Rhinorrhea and conjunctivitis could be related to allergies, though less likely given the other symptoms."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Influenza A",
+            "The patient tested positive for influenza A via rapid antigen test and viral culture."
+          ],
+          [
+            "Secondary bacterial pneumonia",
+            "Purulent sputum and wheezing in a COPD patient with influenza suggest possible bacterial superinfection."
+          ],
+          [
+            "Acute exacerbation of COPD",
+            "The patient's underlying COPD could be exacerbated by the influenza infection, leading to increased respiratory symptoms."
+          ],
+          [
+            "Acute bronchitis",
+            "Inflammation of the bronchi can cause cough and sputum production, even in the presence of influenza."
+          ],
+          [
+            "Viral conjunctivitis",
+            "Conjunctivitis can be associated with viral infections like influenza."
+          ]
+        ],
+        "eliminated": [
+          [
+            "COVID-19",
+            "Not mentioned in the case and influenza A confirmed."
+          ]
+        ]
+      },
+      "cf_id": "case_036_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of fever and presence of purulent sputum production argues against influenza."
+    }
+  ]
+}

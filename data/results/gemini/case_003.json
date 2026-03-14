@@ -1,0 +1,254 @@
+{
+  "case_id": "case_003",
+  "model": "gemini",
+  "ground_truth": "Von Willebrand disease",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Von Willebrand disease",
+          "The patient's heavy menstrual bleeding and easy bruising suggest a possible bleeding disorder, with VWD being the most common inherited one."
+        ],
+        [
+          "Platelet function disorder",
+          "Similar to VWD, a platelet function disorder can cause heavy menstrual bleeding and easy bruising due to impaired platelet aggregation."
+        ],
+        [
+          "Factor XIII deficiency",
+          "Although less common, Factor XIII deficiency can present with bleeding diathesis, including menorrhagia and easy bruising."
+        ],
+        [
+          "Idiopathic thrombocytopenic purpura",
+          "ITP can cause thrombocytopenia, leading to heavy menstrual bleeding and easy bruising."
+        ],
+        [
+          "Hypothyroidism",
+          "Hypothyroidism can sometimes cause menorrhagia, although easy bruising is less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hemophilia",
+          "Hemophilia typically presents in males and is less likely with a history of menorrhagia."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Von Willebrand disease",
+          "The patient's history of heavy menstrual bleeding, easy bruising, and a family history of similar symptoms strongly suggest a possible inherited bleeding disorder like von Willebrand disease."
+        ],
+        [
+          "Platelet function disorder",
+          "Easy bruising and menorrhagia can be indicative of a platelet function disorder, affecting the ability of platelets to properly form clots."
+        ],
+        [
+          "Factor XIII deficiency",
+          "Although less common, easy bruising and menorrhagia can be associated with Factor XIII deficiency, which affects clot stabilization."
+        ],
+        [
+          "Idiopathic thrombocytopenic purpura",
+          "While the physical exam is unremarkable, ITP can present with easy bruising and heavy menstrual bleeding due to low platelet count."
+        ],
+        [
+          "Vitamin K deficiency",
+          "Vitamin K deficiency can lead to impaired coagulation and present with bleeding symptoms such as easy bruising and menorrhagia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out at this stage."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Von Willebrand disease",
+          "The prolonged PTT and family history of bleeding suggest a possible qualitative platelet disorder like von Willebrand disease."
+        ],
+        [
+          "Factor VIII deficiency",
+          "Prolonged PTT could indicate a deficiency in a coagulation factor such as Factor VIII."
+        ],
+        [
+          "Factor IX deficiency",
+          "Prolonged PTT could indicate a deficiency in a coagulation factor such as Factor IX."
+        ],
+        [
+          "Lupus anticoagulant",
+          "The prolonged PTT could be due to an inhibitor such as lupus anticoagulant."
+        ],
+        [
+          "Mild platelet function disorder",
+          "Despite a normal platelet count, a platelet function disorder could explain the bleeding symptoms and easy bruising."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Thrombocytopenia",
+          "Platelet count is within normal limits."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "von Willebrand disease",
+          "Decreased vWF antigen level and reduced ristocetin cofactor activity, along with prolonged PTT and heavy menses, strongly suggest this diagnosis."
+        ],
+        [
+          "Mild hemophilia A",
+          "Slightly reduced Factor VIII level, prolonged PTT, easy bruising, and heavy menses are consistent with mild hemophilia A."
+        ],
+        [
+          "Platelet function disorder",
+          "While platelet count is normal, a platelet function disorder could contribute to the bleeding symptoms, especially with a family history of bleeding."
+        ],
+        [
+          "Factor XI deficiency",
+          "Prolonged PTT with normal PT and bleeding symptoms could indicate Factor XI deficiency."
+        ],
+        [
+          "Uterine fibroids",
+          "Although lab results point to a bleeding disorder, uterine fibroids can cause heavy menstrual bleeding and should be considered."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Thrombocytopenia",
+          "Platelet count is within normal limits."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Von Willebrand disease",
+            "The patient's heavy menstrual bleeding and easy bruising suggest a possible bleeding disorder, with VWD being the most common inherited one."
+          ],
+          [
+            "Platelet function disorder",
+            "Similar to VWD, a platelet function disorder can cause heavy menstrual bleeding and easy bruising due to impaired platelet aggregation."
+          ],
+          [
+            "Factor XIII deficiency",
+            "Although less common, Factor XIII deficiency can present with bleeding diathesis, including menorrhagia and easy bruising."
+          ],
+          [
+            "Idiopathic thrombocytopenic purpura",
+            "ITP can cause thrombocytopenia, leading to heavy menstrual bleeding and easy bruising."
+          ],
+          [
+            "Hypothyroidism",
+            "Hypothyroidism can sometimes cause menorrhagia, although easy bruising is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hemophilia",
+            "Hemophilia typically presents in males and is less likely with a history of menorrhagia."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Von Willebrand disease",
+            "The patient's history of heavy menstrual bleeding, easy bruising, and a family history of similar issues strongly suggest this inherited bleeding disorder."
+          ],
+          [
+            "Immune thrombocytopenic purpura (ITP)",
+            "The presence of petechiae and easy bruising in a young woman suggests possible autoimmune platelet destruction."
+          ],
+          [
+            "Platelet function disorder",
+            "Easy bruising and heavy menses could be due to an inherited or acquired defect in platelet function."
+          ],
+          [
+            "Leukemia",
+            "Although less likely, petechiae and heavy menses can be associated with bone marrow failure and decreased platelet production."
+          ],
+          [
+            "Connective tissue disease",
+            "Easy bruising can be a feature of certain connective tissue disorders affecting blood vessel fragility."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Von Willebrand Disease",
+            "The prolonged PTT, easy bruising, heavy menses, and family history suggest a possible qualitative platelet disorder like VWD."
+          ],
+          [
+            "Factor VIII Deficiency (Hemophilia A)",
+            "Prolonged PTT with normal PT and platelet count, along with bruising and heavy menses, could indicate a factor deficiency."
+          ],
+          [
+            "Factor IX Deficiency (Hemophilia B)",
+            "Similar to Factor VIII deficiency, this can present with prolonged PTT, bruising, and heavy menses."
+          ],
+          [
+            "Lupus Anticoagulant",
+            "Prolonged PTT can be caused by lupus anticoagulant, even with normal platelet count, and can be associated with bleeding."
+          ],
+          [
+            "Mild Platelet Function Disorder",
+            "Despite a normal platelet count, a qualitative platelet function defect could explain the bleeding symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Thrombocytopenia",
+            "Platelet count is within normal limits."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "von Willebrand disease",
+            "Reduced vWF antigen level and ristocetin cofactor activity, prolonged PTT, heavy menses, easy bruising, and family history strongly suggest this diagnosis."
+          ],
+          [
+            "Mild hemophilia A",
+            "Slightly reduced Factor VIII level, prolonged PTT, easy bruising, and heavy menses are consistent with this condition."
+          ],
+          [
+            "Platelet function disorder",
+            "While platelet count is normal, the prolonged PTT and mucocutaneous bleeding suggest a possible qualitative platelet defect."
+          ],
+          [
+            "Connective tissue disorder",
+            "Easy bruising and prolonged bleeding could be associated with vascular fragility seen in some connective tissue disorders."
+          ],
+          [
+            "Vitamin K deficiency",
+            "Although less likely given the isolated findings, vitamin K deficiency can cause prolonged PT/PTT and bleeding."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Immune thrombocytopenic purpura (ITP)",
+            "Platelet count is within normal limits."
+          ]
+        ]
+      },
+      "cf_id": "case_003_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals petechiae, which would be more consistent with a platelet disorder than VWD."
+    }
+  ]
+}

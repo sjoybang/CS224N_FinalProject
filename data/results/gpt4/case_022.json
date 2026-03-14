@@ -1,0 +1,252 @@
+{
+  "case_id": "case_022",
+  "model": "gpt4",
+  "ground_truth": "Granulosa cell tumor",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Congenital adrenal hyperplasia",
+          "Excessive hair growth in a young child can be due to increased androgen production, which is characteristic of this condition."
+        ],
+        [
+          "Precocious puberty",
+          "Early onset of puberty can lead to increased hair growth due to elevated sex hormone levels."
+        ],
+        [
+          "Cushing's syndrome",
+          "This condition can cause hirsutism in children due to excess cortisol production."
+        ],
+        [
+          "Androgen-secreting tumor",
+          "A tumor producing androgens could lead to rapid onset of excessive hair growth."
+        ],
+        [
+          "Polycystic ovary syndrome (PCOS)",
+          "Although less common in very young children, PCOS can cause hirsutism due to hormonal imbalances."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Precocious puberty",
+          "The presence of Tanner stage 4 development in a 5-year-old suggests early onset of puberty."
+        ],
+        [
+          "Congenital adrenal hyperplasia",
+          "Excessive hair growth and early pubertal development can be due to adrenal hormone excess."
+        ],
+        [
+          "Androgen-secreting tumor",
+          "Rapid development of secondary sexual characteristics may be caused by an androgen-producing tumor."
+        ],
+        [
+          "McCune-Albright syndrome",
+          "This condition can cause precocious puberty and is associated with early sexual development."
+        ],
+        [
+          "Exogenous androgen exposure",
+          "Exposure to external sources of androgens could lead to early pubertal changes and hair growth."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Normal variant of puberty",
+          "The rapid progression to Tanner stage 4 at age 5 is atypical for normal pubertal development."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Ovarian tumor",
+          "The presence of an ovarian mass and elevated estrogen levels suggest an estrogen-secreting ovarian tumor."
+        ],
+        [
+          "Precocious puberty",
+          "The advanced Tanner stage and elevated estrogen levels indicate early onset puberty."
+        ],
+        [
+          "McCune-Albright syndrome",
+          "This condition can cause precocious puberty and is associated with ovarian cysts and elevated estrogen."
+        ],
+        [
+          "Congenital adrenal hyperplasia",
+          "Although less likely, it can cause early pubertal changes and virilization, but typically with elevated androgens rather than estrogen."
+        ],
+        [
+          "Adrenal tumor",
+          "An adrenal tumor could cause hormonal imbalances, though it is less likely to primarily elevate estrogen."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Polycystic ovary syndrome",
+          "Unlikely due to the patient's age and the acute presentation of symptoms."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Granulosa cell tumor",
+          "The histopathology confirms the presence of Call-Exner bodies, which are characteristic of granulosa cell tumors."
+        ],
+        [
+          "Precocious puberty",
+          "The elevated estrogen levels and advanced Tanner stage development suggest early onset puberty, likely secondary to the granulosa cell tumor."
+        ],
+        [
+          "Ovarian mass",
+          "The ultrasound and histopathology confirm the presence of an ovarian mass, specifically a granulosa cell tumor."
+        ],
+        [
+          "Hyperestrogenism",
+          "The elevated estrogen levels are consistent with hyperestrogenism, likely due to the estrogen-secreting granulosa cell tumor."
+        ],
+        [
+          "Virilization",
+          "Although not classic for granulosa cell tumors, the excessive hair growth could be a result of hormonal imbalance."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Congenital adrenal hyperplasia",
+          "The presence of an ovarian mass and elevated estrogen levels, rather than androgen excess, makes this unlikely."
+        ],
+        [
+          "Polycystic ovary syndrome",
+          "The acute presentation and histopathological findings are not consistent with PCOS."
+        ],
+        [
+          "Androgen-secreting tumor",
+          "The elevated estrogen levels and histopathology findings do not support an androgen-secreting tumor."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Congenital adrenal hyperplasia",
+            "Excessive hair growth in a young child can be due to increased androgen production, which is characteristic of this condition."
+          ],
+          [
+            "Precocious puberty",
+            "Early onset of puberty can lead to increased hair growth due to elevated sex hormones."
+          ],
+          [
+            "Cushing's syndrome",
+            "This condition can cause hirsutism due to excess cortisol production."
+          ],
+          [
+            "Androgen-secreting tumor",
+            "A tumor producing androgens could lead to rapid onset of excessive hair growth."
+          ],
+          [
+            "Polycystic ovary syndrome (PCOS)",
+            "Although less common in this age group, PCOS can cause hirsutism due to hormonal imbalances."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Premature adrenarche",
+            "The presence of axillary and pubic hair without other signs of puberty suggests premature adrenarche."
+          ],
+          [
+            "Congenital adrenal hyperplasia",
+            "Excessive hair growth in a young child could be due to androgen excess from congenital adrenal hyperplasia."
+          ],
+          [
+            "Virilizing adrenal tumor",
+            "An adrenal tumor could cause androgen excess leading to hair growth in axillary and pubic areas."
+          ],
+          [
+            "Exogenous androgen exposure",
+            "Accidental exposure to androgens could cause hair growth without other pubertal signs."
+          ],
+          [
+            "Polycystic ovary syndrome (PCOS)",
+            "Although rare at this age, PCOS can cause hirsutism, but the lack of other symptoms makes it less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Central precocious puberty",
+            "The absence of other pubertal signs rules out central precocious puberty."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Ovarian tumor",
+            "The presence of an ovarian mass and elevated estrogen levels suggest an estrogen-secreting ovarian tumor."
+          ],
+          [
+            "Precocious pseudopuberty",
+            "Elevated estrogen levels and hair growth without other signs of puberty indicate peripheral precocious puberty."
+          ],
+          [
+            "McCune-Albright syndrome",
+            "This condition can cause autonomous ovarian cysts leading to estrogen production and precocious puberty signs."
+          ],
+          [
+            "Granulosa cell tumor",
+            "This type of ovarian tumor is known for secreting estrogen, which aligns with the elevated estrogen levels and ovarian mass."
+          ],
+          [
+            "Sertoli-Leydig cell tumor",
+            "Although less common, this tumor can produce estrogen and cause virilization and precocious puberty signs."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Congenital adrenal hyperplasia",
+            "Typically presents with virilization and ambiguous genitalia, not isolated estrogen elevation and ovarian mass."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Granulosa cell tumor",
+            "The histopathology confirms the presence of Call-Exner bodies, which are characteristic of granulosa cell tumors."
+          ],
+          [
+            "Precocious puberty",
+            "The elevated estrogen level and presence of an ovarian mass suggest hormone secretion leading to early secondary sexual characteristics."
+          ],
+          [
+            "Ovarian tumor",
+            "The presence of an ovarian mass and elevated estrogen level indicate a hormone-secreting ovarian tumor."
+          ],
+          [
+            "Virilizing ovarian tumor",
+            "Excessive hair growth and an ovarian mass could suggest a virilizing tumor, although estrogen elevation is more indicative of feminizing tumors."
+          ],
+          [
+            "McCune-Albright syndrome",
+            "Although less likely due to the specific tumor findings, this syndrome can cause precocious puberty and ovarian cysts."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Congenital adrenal hyperplasia",
+            "The presence of an ovarian mass and elevated estrogen levels are inconsistent with this diagnosis, which typically involves adrenal gland dysfunction."
+          ]
+        ]
+      },
+      "cf_id": "case_022_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical examination reveals no signs of pubertal development, making granulosa cell tumor less likely as it typically presents with precocious puberty."
+    }
+  ]
+}

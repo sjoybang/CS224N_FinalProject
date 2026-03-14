@@ -1,0 +1,126 @@
+{
+  "case_id": "case_058",
+  "model": "biogpt",
+  "ground_truth": "Barrett's esophagus",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 57-year-old man presents for follow-up of chronic, retrosternal chest pain. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 57-year-old man presents for follow-up of chronic, retrosternal chest pain. [Stage 2] The patient reports the pain is worse at night and after heavy meals. He states that oral pantoprazole has not relieved his symptoms. Physical exam is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 57-year-old man presents for follow-up of chronic, retrosternal chest pain. [Stage 2] The patient reports the pain is worse at night and after heavy meals. He states that oral pantoprazole has not relieved his symptoms. Physical exam is unremarkable. [Stage 3] Esophagogastroduodenoscopy reveals ulcerations in the distal esophagus and a proximally dislocated Z-line. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 57-year-old man presents for follow-up of chronic, retrosternal chest pain. [Stage 2] The patient reports the pain is worse at night and after heavy meals. He states that oral pantoprazole has not relieved his symptoms. Physical exam is unremarkable. [Stage 3] Esophagogastroduodenoscopy reveals ulcerations in the distal esophagus and a proximally dislocated Z-line. [Stage 4] A biopsy of the distal esophagus demonstrates columnar epithelium with goblet cells, confirming the diagnosis. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 57-year-old man presents for follow-up of chronic, retrosternal chest pain. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 57-year-old man presents for follow-up of chronic, retrosternal chest pain. [Stage 2] The patient reports the pain is worse at night and after heavy meals. He states that oral pantoprazole has not relieved his symptoms, but that antacids do relieve the pain. Physical exam is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 57-year-old man presents for follow-up of chronic, retrosternal chest pain. [Stage 2] The patient reports the pain is worse at night and after heavy meals. He states that oral pantoprazole has not relieved his symptoms, but that antacids do relieve the pain. Physical exam is unremarkable. [Stage 3] Esophagogastroduodenoscopy reveals ulcerations in the distal esophagus and a proximally dislocated Z-line. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 57-year-old man presents for follow-up of chronic, retrosternal chest pain. [Stage 2] The patient reports the pain is worse at night and after heavy meals. He states that oral pantoprazole has not relieved his symptoms, but that antacids do relieve the pain. Physical exam is unremarkable. [Stage 3] Esophagogastroduodenoscopy reveals ulcerations in the distal esophagus and a proximally dislocated Z-line. [Stage 4] A biopsy of the distal esophagus demonstrates columnar epithelium with goblet cells, confirming the diagnosis. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_058_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that the pain is relieved with antacids, which argues against Barrett's esophagus as it suggests typical GERD symptoms."
+    }
+  ]
+}

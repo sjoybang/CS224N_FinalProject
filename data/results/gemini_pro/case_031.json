@@ -1,0 +1,268 @@
+{
+  "case_id": "case_031",
+  "model": "gemini_pro",
+  "ground_truth": "Diphtheria",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Pneumonia",
+          "Infection of the lungs is a very common cause of dyspnea in children."
+        ],
+        [
+          "Asthma",
+          "This is a prevalent chronic respiratory disease in childhood that can present with an acute exacerbation causing dyspnea."
+        ],
+        [
+          "Tuberculosis",
+          "The patient's recent immigration from a region where TB is endemic significantly increases the risk for this infection."
+        ],
+        [
+          "Foreign Body Aspiration",
+          "An unwitnessed aspiration event can lead to acute respiratory distress in a young child."
+        ],
+        [
+          "Myocarditis",
+          "Inflammation of the heart muscle, often post-viral, can lead to heart failure and present as respiratory distress."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Diphtheria",
+          "The presence of a gray pseudomembrane, cervical lymphadenopathy, and dyspnea in a potentially unvaccinated immigrant is the classic presentation."
+        ],
+        [
+          "Infectious Mononucleosis",
+          "This viral infection can cause severe exudative pharyngitis with a pseudomembrane, prominent lymphadenopathy, and potential airway obstruction."
+        ],
+        [
+          "Severe Streptococcal Pharyngitis",
+          "Group A Streptococcus can cause a severe pharyngitis with extensive exudates and lymphadenopathy leading to respiratory distress."
+        ],
+        [
+          "Vincent's Angina",
+          "This polymicrobial infection is characterized by necrotizing ulcers covered by a grayish pseudomembrane in the oropharynx."
+        ],
+        [
+          "Oropharyngeal Candidiasis",
+          "This fungal infection can form plaques in the oropharynx, though they are typically white and less likely to cause acute dyspnea."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Foreign Body Aspiration",
+          "The presence of a pseudomembrane and lymphadenopathy indicates an infectious process, not a primary mechanical obstruction."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Diphtheria",
+          "The combination of a pharyngeal pseudomembrane, cervical lymphadenopathy, and myocarditis in a recent immigrant is the classic presentation for toxigenic *Corynebacterium diphtheriae* infection."
+        ],
+        [
+          "Infectious Mononucleosis",
+          "Severe Epstein-Barr virus infection can cause exudative pharyngitis that may form a pseudomembrane, prominent lymphadenopathy, and is a rare cause of myocarditis."
+        ],
+        [
+          "Streptococcal Pharyngitis",
+          "A severe Group A Streptococcus infection can cause extensive pharyngeal exudates and systemic inflammation, with carditis being a known, though typically delayed, complication."
+        ],
+        [
+          "Arcanobacterium haemolyticum infection",
+          "This bacterium can cause a severe pharyngitis with a pseudomembrane that mimics diphtheria, and systemic complications have been reported."
+        ],
+        [
+          "Vincent's Angina",
+          "This polymicrobial infection can cause a necrotic, pseudomembranous tonsillitis, although systemic complications like myocarditis are not typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "Ruled out as the primary process by the unremarkable chest X-ray."
+        ],
+        [
+          "Epiglottitis",
+          "The presence of a pharyngeal pseudomembrane is not characteristic of epiglottitis, which typically involves a swollen, cherry-red epiglottis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Diphtheria",
+          "The positive culture for Corynebacterium diphtheriae and positive toxin assay are definitive, and the clinical presentation of a pseudomembrane, cervical lymphadenopathy, and myocarditis is classic."
+        ],
+        [
+          "Infectious Mononucleosis",
+          "This can cause severe exudative pharyngitis with pseudomembranes and significant cervical lymphadenopathy, although myocarditis is a rare complication."
+        ],
+        [
+          "Streptococcal Pharyngitis",
+          "Severe Group A Streptococcus infection can cause prominent pharyngeal exudates and cervical adenopathy, but a true adherent pseudomembrane and myocarditis are less common."
+        ],
+        [
+          "Vincent's Angina",
+          "This polymicrobial infection can cause a necrotic, pseudomembranous covering of the tonsils and pharynx but typically does not cause severe systemic toxicity or myocarditis."
+        ],
+        [
+          "Oropharyngeal Candidiasis",
+          "Severe thrush can present with white plaques in the oropharynx, but it would not explain the significant systemic illness, \"bull neck,\" or myocarditis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Infectious Mononucleosis",
+          "Ruled out as the primary diagnosis by the definitive positive culture and toxin assay for toxigenic diphtheria."
+        ],
+        [
+          "Streptococcal Pharyngitis",
+          "Ruled out by the positive diphtheria culture, which provides a specific alternative etiology for the patient's pharyngitis and systemic symptoms."
+        ],
+        [
+          "Epiglottitis",
+          "The presence of a pharyngeal pseudomembrane rather than a swollen epiglottis, along with the positive culture, rules out this cause of dyspnea."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Pneumonia",
+            "Infection of the lungs is a very common cause of dyspnea in children."
+          ],
+          [
+            "Asthma",
+            "This is a prevalent chronic respiratory disease in childhood that can present with an acute exacerbation causing dyspnea."
+          ],
+          [
+            "Tuberculosis",
+            "The patient's recent immigration from a region where TB is endemic significantly increases the risk for this infection."
+          ],
+          [
+            "Foreign Body Aspiration",
+            "An unwitnessed aspiration event can lead to acute respiratory distress in a young child."
+          ],
+          [
+            "Myocarditis",
+            "Inflammation of the heart muscle, often post-viral, can lead to heart failure and present as respiratory distress."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Tuberculosis",
+            "The patient's origin from a high-prevalence region combined with dyspnea and cervical lymphadenopathy is highly suggestive of TB with mediastinal airway compression or scrofula."
+          ],
+          [
+            "Lymphoma",
+            "Malignancy is a key consideration for a child presenting with dyspnea and significant lymphadenopathy, which could be compressing the airway."
+          ],
+          [
+            "Diphtheria",
+            "Despite a normal oropharynx, laryngeal diphtheria can cause airway obstruction, and the patient's uncertain vaccination status as a recent immigrant makes this a critical diagnosis to consider."
+          ],
+          [
+            "Bacterial Tracheitis",
+            "This diagnosis explains the acute respiratory distress and signs of infection (tachycardia, tachypnea, lymphadenopathy) in a pediatric patient."
+          ],
+          [
+            "Retropharyngeal Abscess",
+            "This deep neck space infection can cause dyspnea and cervical lymphadenopathy without necessarily showing abnormalities on an initial oropharyngeal exam."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pharyngeal Diphtheria",
+            "The explicit absence of an oropharyngeal pseudomembrane makes the classic pharyngeal form of this disease highly unlikely."
+          ],
+          [
+            "Peritonsillar Abscess",
+            "A normal oropharynx examination makes this diagnosis improbable, as it would typically present with visible unilateral swelling and uvular deviation."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Diphtheritic myocarditis",
+            "The patient's immigrant status raises concern for incomplete vaccination, and the combination of myocarditis and cervical lymphadenopathy is classic for diphtheria toxin effects."
+          ],
+          [
+            "Acute rheumatic fever",
+            "This diagnosis is strongly suggested by the presence of carditis (a major Jones criterion) in a child from a region where streptococcal infections may be endemic."
+          ],
+          [
+            "Viral myocarditis",
+            "This is the most common cause of myocarditis in children and is consistent with the presentation of cardiac dysfunction and elevated inflammatory markers."
+          ],
+          [
+            "Kawasaki disease",
+            "This pediatric vasculitis is a key differential given the presence of cervical lymphadenopathy and myocarditis, which are two cardinal features of the disease."
+          ],
+          [
+            "Multisystem Inflammatory Syndrome in Children (MIS-C)",
+            "This post-SARS-CoV-2 syndrome presents with hyperinflammation and significant cardiac involvement, including myocarditis, matching the patient's findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diphtheritic pharyngitis",
+            "Ruled out by the normal oropharyngeal exam showing no pseudomembrane."
+          ],
+          [
+            "Pneumonia",
+            "Ruled out by the unremarkable chest x-ray."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Diphtheria",
+            "The positive culture for toxigenic *Corynebacterium diphtheriae* confirms this diagnosis, explaining the myocarditis as a systemic complication of the toxin."
+          ],
+          [
+            "Viral Myocarditis",
+            "A primary viral infection of the heart muscle is a common cause of myocarditis, dyspnea, and tachycardia in children."
+          ],
+          [
+            "Acute Rheumatic Fever",
+            "This post-streptococcal inflammatory condition is a key cause of carditis in children and can present with systemic inflammation."
+          ],
+          [
+            "Infectious Mononucleosis",
+            "This viral illness can cause significant cervical lymphadenopathy and, in rare instances, myocarditis."
+          ],
+          [
+            "Kawasaki Disease",
+            "This pediatric vasculitis is an important consideration for myocarditis accompanied by cervical lymphadenopathy and systemic inflammation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Pneumonia",
+            "The unremarkable chest X-ray makes significant parenchymal lung infection unlikely."
+          ],
+          [
+            "Epiglottitis",
+            "The normal oropharyngeal exam and clinical course featuring myocarditis are inconsistent with this diagnosis of acute upper airway obstruction."
+          ]
+        ]
+      },
+      "cf_id": "case_031_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a pseudomembrane in the oropharynx makes diphtheria much less likely."
+    }
+  ]
+}

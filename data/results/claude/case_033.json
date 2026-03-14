@@ -1,0 +1,298 @@
+{
+  "case_id": "case_033",
+  "model": "claude",
+  "ground_truth": "Sertoli cells",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Spontaneous rupture of membranes at term",
+          "Patient at 40 weeks gestation with sudden gush of fluid is classic presentation of membrane rupture at term labor onset."
+        ],
+        [
+          "Urinary incontinence",
+          "Stress incontinence or loss of bladder control can occur in late pregnancy due to fetal pressure on the bladder."
+        ],
+        [
+          "Increased vaginal discharge",
+          "Physiologic leukorrhea can increase significantly in late pregnancy and may be perceived as fluid gush."
+        ],
+        [
+          "Rupture of membranes with chorioamnionitis",
+          "Membrane rupture can be complicated by intraamniotic infection, though no fever or other symptoms reported yet."
+        ],
+        [
+          "Placental abruption with fluid leakage",
+          "Though typically presents with bleeding and pain, minor abruption could present with fluid loss."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Umbilical cord compression",
+          "Variable decelerations on fetal heart tracing after rupture of membranes is classic for intermittent cord compression during contractions."
+        ],
+        [
+          "Spontaneous rupture of membranes in active labor",
+          "The gush of fluid at term with cervical dilation and effacement indicates normal labor progression with membrane rupture."
+        ],
+        [
+          "Oligohydramnios with cord compression",
+          "Decreased amniotic fluid volume can lead to umbilical cord compression and variable decelerations during labor."
+        ],
+        [
+          "Nuchal cord",
+          "An umbilical cord wrapped around the fetal neck can cause variable decelerations due to intermittent compression during descent."
+        ],
+        [
+          "Cord prolapse",
+          "Though typically more severe, a partial cord prolapse can present with variable decelerations following rupture of membranes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Placental abruption",
+          "Would typically present with persistent fetal bradycardia or late decelerations rather than variable decelerations, and usually includes vaginal bleeding and pain."
+        ],
+        [
+          "Fetal distress from hypoxia",
+          "Variable decelerations with baseline heart rate of 155 bpm and normal variability (implied) suggest intermittent rather than sustained hypoxic stress."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Normal spontaneous vaginal delivery",
+          "Term gestation with spontaneous rupture of membranes, progressive labor, and delivery of a healthy infant with reassuring APGAR scores consistent with normal childbirth."
+        ],
+        [
+          "Prolonged first stage of labor",
+          "12 hours from 4 cm dilation to delivery may represent slower than average labor progression requiring monitoring."
+        ],
+        [
+          "Umbilical cord compression",
+          "Variable decelerations during labor suggest intermittent cord compression, though infant outcome was favorable."
+        ],
+        [
+          "Oligohydramnios",
+          "Sudden gush followed by variable decelerations raises concern for decreased amniotic fluid allowing cord compression."
+        ],
+        [
+          "Nuchal cord",
+          "Variable decelerations pattern commonly associated with cord around fetal neck, though infant delivered without apparent complications."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Fetal distress",
+          "Reassuring APGAR scores of 8 and 9 indicate the infant was not compromised at delivery."
+        ],
+        [
+          "Placental abruption",
+          "Absence of bleeding, maternal stability, and good neonatal outcome make this unlikely."
+        ],
+        [
+          "Preterm labor",
+          "Patient delivered at 40 weeks gestation, which is term."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Normal spontaneous vaginal delivery",
+          "Patient had uncomplicated labor resulting in a healthy infant with good APGAR scores and no placental abnormalities."
+        ],
+        [
+          "Umbilical cord compression (resolved)",
+          "Variable decelerations during labor suggest transient cord compression that resolved without adverse neonatal outcomes."
+        ],
+        [
+          "Oligohydramnios",
+          "Variable decelerations can indicate low amniotic fluid volume causing cord compression, though this was not definitively documented."
+        ],
+        [
+          "Nuchal cord",
+          "Cord around the neck could cause variable decelerations during labor but would have resolved at delivery with normal outcomes."
+        ],
+        [
+          "Brief shoulder dystocia (unrecognized/mild)",
+          "Could explain the 1-minute APGAR of 8 rather than 9-10, though no documentation of delivery complications was noted."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Placental abruption",
+          "Normal placental examination and healthy infant with good APGAR scores rule this out."
+        ],
+        [
+          "Placenta previa",
+          "Patient achieved normal vaginal delivery without mention of bleeding or complications."
+        ],
+        [
+          "Fetal distress requiring intervention",
+          "Infant had excellent APGAR scores indicating good transition to extrauterine life."
+        ],
+        [
+          "Chorioamnionitis",
+          "No fever, maternal symptoms, or fetal complications mentioned in the clinical course."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Spontaneous rupture of membranes at term",
+            "Patient at 40 weeks gestation presenting with sudden gush of fluid is classic for term rupture of membranes."
+          ],
+          [
+            "Urinary incontinence",
+            "Sudden fluid loss in pregnancy can be urine, though the \"gush\" description makes membrane rupture more likely."
+          ],
+          [
+            "Increased vaginal discharge",
+            "Physiologic discharge can increase near term, though usually not described as a sudden gush."
+          ],
+          [
+            "Rupture of membranes with occult umbilical cord prolapse",
+            "Membrane rupture can be complicated by cord prolapse requiring urgent evaluation."
+          ],
+          [
+            "Rupture of membranes with chorioamnionitis",
+            "Ruptured membranes increase infection risk, though typically signs develop over time rather than immediately."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Spontaneous rupture of membranes at term in active labor",
+            "Patient at 40 weeks with gush of fluid, 4 cm dilated, and 80% effaced consistent with normal labor progression."
+          ],
+          [
+            "Premature rupture of membranes at term with early labor",
+            "Membrane rupture may have preceded cervical changes, though current examination shows active labor has begun."
+          ],
+          [
+            "Chorioamnionitis",
+            "Ruptured membranes create risk for ascending infection, though reassuring fetal heart tracing makes this less likely at present."
+          ],
+          [
+            "Placental abruption with concurrent labor",
+            "Sudden gush could represent bleeding mixed with amniotic fluid, though reassuring fetal status makes significant abruption unlikely."
+          ],
+          [
+            "Vasa previa with rupture",
+            "Rare condition where fetal vessels rupture with membranes, though normal fetal heart rate and variability make this very unlikely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Preterm labor",
+            "Patient is at 40 weeks gestation, which is term."
+          ],
+          [
+            "Urinary incontinence",
+            "Cervical examination findings of 4 cm dilation and 80% effacement with gush of fluid confirm ruptured membranes rather than incontinence."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Normal spontaneous vaginal delivery",
+            "Patient at term gestation with spontaneous rupture of membranes, normal labor progression, and delivery of healthy infant with reassuring APGAR scores."
+          ],
+          [
+            "Postpartum hemorrhage",
+            "Common complication following any delivery that must be monitored for in the immediate postpartum period."
+          ],
+          [
+            "Perineal laceration",
+            "Vaginal delivery of a nearly 7-pound infant carries risk of perineal trauma requiring assessment."
+          ],
+          [
+            "Retained placenta",
+            "Must be ruled out following any delivery as failure of complete placental expulsion can occur."
+          ],
+          [
+            "Postpartum endometritis",
+            "Risk of uterine infection exists following any delivery, particularly after prolonged rupture of membranes and 12-hour labor."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fetal distress",
+            "Normal fetal heart tracing during labor and excellent APGAR scores at delivery indicate healthy infant without distress."
+          ],
+          [
+            "Placental abruption",
+            "Normal fetal heart tracing and successful vaginal delivery with healthy infant make this unlikely."
+          ],
+          [
+            "Cord prolapse",
+            "Normal fetal heart rate pattern and successful delivery with good neonatal outcome rule this out."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Normal spontaneous vaginal delivery",
+            "Patient had uncomplicated labor at term with normal fetal heart tracing, appropriate cervical dilation, and healthy newborn with good APGAR scores."
+          ],
+          [
+            "Prolonged first stage of labor",
+            "Labor duration of approximately 12 hours from 4 cm dilation to delivery may represent slightly prolonged first stage for a multiparous patient."
+          ],
+          [
+            "Prelabor rupture of membranes at term",
+            "Initial presentation was sudden gush of fluid at 40 weeks before documented cervical change, consistent with membrane rupture prior to active labor."
+          ],
+          [
+            "Occult chorioamnionitis",
+            "Prolonged duration from membrane rupture to delivery (>12 hours) increases infection risk despite lack of documented maternal or fetal signs."
+          ],
+          [
+            "Undiagnosed gestational diabetes",
+            "Baby weight of 6 lb 15 oz is appropriate for gestational age but borderline, and condition could have been unscreened in otherwise normal pregnancy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Placental abnormalities (placenta previa, placental abruption, retained placenta)",
+            "Postpartum examination of placenta and umbilical cord was unremarkable."
+          ],
+          [
+            "Fetal distress",
+            "Fetal heart tracing showed normal rate with good variability and no decelerations throughout labor."
+          ],
+          [
+            "Congenital anomalies",
+            "Good APGAR scores, no documented risk factors, and unremarkable prenatal history make significant anomalies unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_033_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The fetal heart tracing shows a heart rate of 130 bpm with good variability and no decelerations, which argues against fetal distress often associated with Sertoli cell tumors."
+    }
+  ]
+}

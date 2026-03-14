@@ -1,0 +1,25 @@
+{
+  "case_id": "case_050",
+  "source": "MedQA-USMLE",
+  "original_question": "A 26-year-old G1P0 woman at 32-weeks gestation presents for follow-up ultrasound. She was diagnosed with gestational diabetes during her second trimester, but admits to poor glucose control and non-adherence to insulin therapy. Fetal ultrasound reveals an asymmetric, enlarged interventricular septum, left ventricular outflow tract obstruction, and significantly reduced ejection fraction. Which of the following is the most appropriate step in management after delivery?",
+  "ground_truth": "Hypertrophic cardiomyopathy",
+  "base": {
+    "stage_1": "A 26-year-old woman, G1P0 at 32 weeks gestation, presents for a routine follow-up ultrasound.",
+    "stage_2": "The patient's vital signs are stable. Physical exam is unremarkable. The patient was diagnosed with gestational diabetes during her second trimester and admits to poor glucose control and non-adherence to insulin therapy.",
+    "stage_3": "Fetal ultrasound reveals an asymmetric, enlarged interventricular septum, left ventricular outflow tract obstruction, and significantly reduced ejection fraction.",
+    "stage_4": "Postnatal echocardiogram confirms the diagnosis of hypertrophic cardiomyopathy in the neonate. Genetic testing reveals a mutation associated with familial hypertrophic cardiomyopathy."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports regular episodes of chest pain that are relieved with nitroglycerin, which argues against hypertrophic cardiomyopathy as exertional chest pain is not typically relieved by nitroglycerin in HCM.",
+      "rules_out": "Hypertrophic cardiomyopathy",
+      "stage_1": "A 26-year-old woman, G1P0 at 32 weeks gestation, presents for a routine follow-up ultrasound.",
+      "stage_2": "The patient's vital signs are stable. Physical exam is unremarkable. The patient was diagnosed with gestational diabetes during her second trimester and admits to poor glucose control and non-adherence to insulin therapy. She reports regular episodes of chest pain that are relieved with nitroglycerin.",
+      "stage_3": "Fetal ultrasound reveals an asymmetric, enlarged interventricular septum, left ventricular outflow tract obstruction, and significantly reduced ejection fraction.",
+      "stage_4": "Postnatal echocardiogram confirms the diagnosis of hypertrophic cardiomyopathy in the neonate. Genetic testing reveals a mutation associated with familial hypertrophic cardiomyopathy.",
+      "cf_id": "case_050_cf_a"
+    }
+  ]
+}

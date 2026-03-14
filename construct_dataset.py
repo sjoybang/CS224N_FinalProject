@@ -9,9 +9,9 @@ filters for clinical vignette cases, then uses an LLM to:
 Output: one JSON file per case in data/staged/ and data/counterfactuals/
 
 Usage:
-    python pipeline/construct_dataset.py \
+    python construct_dataset.py \
         --n_cases 60 \
-        --api_key YOUR_ANTHROPIC_KEY \
+        --project YOUR_GCP_PROJECT_ID \
         --output_dir data/staged
 """
 
@@ -23,7 +23,8 @@ import re
 from pathlib import Path
 from typing import Optional
 
-import anthropic
+from google import genai
+from google.genai import types
 
 # ── HuggingFace dataset loading ──────────────────────────────────────────────
 
@@ -107,12 +108,12 @@ def _normalize_record(item: dict) -> dict:
 
 # ── LLM Calls ────────────────────────────────────────────────────────────────
 
-def make_client(api_key: str) -> anthropic.Anthropic:
-    return anthropic.Anthropic(api_key=api_key)
+def make_client(project: str, location: str = "us-central1") -> genai.Client:
+    return genai.Client(vertexai=True, project=project, location=location)
 
 
-DECOMPOSE_SYSTEM = """You are a medical education expert. Your job is to take a USMLE-style 
-clinical vignette and restructure it into 4 sequential evidence stages that simulate how 
+DECOMPOSE_SYSTEM = """You are a medical education expert. Your job is to take a USMLE-style
+clinical vignette and restructure it into 4 sequential evidence stages that simulate how
 a clinician would receive information over time in a real encounter.
 
 Rules:
@@ -120,7 +121,7 @@ Rules:
 - Stage 2: Vital signs and physical examination findings.
 - Stage 3: Laboratory results and/or imaging findings.
 - Stage 4: Any final/confirmatory information (e.g. culture result, biopsy, specialist finding).
-  If the original question has no stage-4 info, synthesize a clinically plausible one consistent 
+  If the original question has no stage-4 info, synthesize a clinically plausible one consistent
   with the ground truth diagnosis.
 - Each stage must be a self-contained clinical narrative paragraph (not a list).
 - Do NOT reveal the diagnosis in any stage. Only provide findings.
@@ -136,18 +137,18 @@ Respond ONLY with valid JSON. No markdown fences. No preamble. Schema:
 }"""
 
 
-COUNTERFACTUAL_SYSTEM = """You are a medical education expert designing counterfactual clinical cases 
+COUNTERFACTUAL_SYSTEM = """You are a medical education expert designing counterfactual clinical cases
 for evaluating AI diagnostic reasoning.
 
-Given a staged clinical vignette and its ground truth diagnosis, you will generate ONE counterfactual 
-variant. A counterfactual introduces a single discriminative finding at Stage 2 or Stage 3 that 
-strongly argues AGAINST the ground truth diagnosis, while keeping all other stages as close to the 
+Given a staged clinical vignette and its ground truth diagnosis, you will generate ONE counterfactual
+variant. A counterfactual introduces a single discriminative finding at Stage 2 or Stage 3 that
+strongly argues AGAINST the ground truth diagnosis, while keeping all other stages as close to the
 original as possible.
 
 Requirements:
 - Change only ONE stage (either stage_2 or stage_3).
 - The changed finding must be clinically plausible and meaningfully discriminative.
-- The change should cause a competent clinician to move the ground truth diagnosis DOWN in their 
+- The change should cause a competent clinician to move the ground truth diagnosis DOWN in their
   differential — ideally off the list entirely.
 - Stages not being changed should remain identical to the original.
 - altered_stage: the stage number being changed (2 or 3).
@@ -167,9 +168,9 @@ Respond ONLY with valid JSON. No markdown fences. No preamble. Schema:
 }"""
 
 
-def decompose_vignette(client: anthropic.Anthropic, record: dict) -> Optional[dict]:
+def decompose_vignette(client: genai.Client, record: dict) -> Optional[dict]:
     """
-    Call Claude to decompose a raw MedQA record into 4 staged clinical reveals.
+    Call Gemini on Vertex AI to decompose a raw MedQA record into 4 staged clinical reveals.
     Returns parsed JSON dict or None on failure.
     """
     user_prompt = f"""Please decompose this USMLE clinical vignette into 4 sequential stages.
@@ -184,30 +185,31 @@ Correct answer: {record['answer']}
 """
 
     try:
-        response = client.messages.create(
-            model="claude-opus-4-5-20251101",
-            max_tokens=1500,
-            system=DECOMPOSE_SYSTEM,
-            messages=[{"role": "user", "content": user_prompt}]
+        response = client.models.generate_content(
+            model="gemini-2.0-flash-001",
+            contents=user_prompt,
+            config=types.GenerateContentConfig(
+                system_instruction=DECOMPOSE_SYSTEM,
+                temperature=0,
+            ),
         )
-        raw = response.content[0].text.strip()
-        # Strip any accidental markdown fences
+        raw = response.text.strip()
         raw = re.sub(r"^```json\s*", "", raw)
         raw = re.sub(r"```$", "", raw).strip()
         return json.loads(raw)
-    except (json.JSONDecodeError, IndexError, anthropic.APIError) as e:
+    except (json.JSONDecodeError, IndexError, Exception) as e:
         print(f"  [decompose] Error: {e}")
         return None
 
 
 def generate_counterfactual(
-    client: anthropic.Anthropic,
+    client: genai.Client,
     case_id: str,
     base: dict,
     cf_index: int = 0
 ) -> Optional[dict]:
     """
-    Call Claude to generate one counterfactual variant for a staged base case.
+    Call Gemini on Vertex AI to generate one counterfactual variant for a staged base case.
     cf_index: 0 → alter stage 2, 1 → alter stage 3 (for second CF if needed)
     """
     preferred_stage = 2 if cf_index == 0 else 3
@@ -221,24 +223,26 @@ Stage 2: {base['stage_2']}
 Stage 3: {base['stage_3']}
 Stage 4: {base['stage_4']}
 
-Please generate one counterfactual variant. Prefer to alter Stage {preferred_stage} unless 
+Please generate one counterfactual variant. Prefer to alter Stage {preferred_stage} unless
 Stage {preferred_stage} has no clearly discriminative finding, in which case alter the other stage.
 """
 
     try:
-        response = client.messages.create(
-            model="claude-opus-4-5-20251101",
-            max_tokens=1500,
-            system=COUNTERFACTUAL_SYSTEM,
-            messages=[{"role": "user", "content": user_prompt}]
+        response = client.models.generate_content(
+            model="gemini-2.0-flash-001",
+            contents=user_prompt,
+            config=types.GenerateContentConfig(
+                system_instruction=COUNTERFACTUAL_SYSTEM,
+                temperature=0,
+            ),
         )
-        raw = response.content[0].text.strip()
+        raw = response.text.strip()
         raw = re.sub(r"^```json\s*", "", raw)
         raw = re.sub(r"```$", "", raw).strip()
         cf = json.loads(raw)
         cf["cf_id"] = f"{case_id}_cf_{cf.get('cf_id_suffix', chr(97 + cf_index))}"
         return cf
-    except (json.JSONDecodeError, IndexError, anthropic.APIError) as e:
+    except (json.JSONDecodeError, IndexError, Exception) as e:
         print(f"  [counterfactual] Error: {e}")
         return None
 
@@ -247,8 +251,9 @@ Stage {preferred_stage} has no clearly discriminative finding, in which case alt
 
 def build_dataset(
     n_cases: int,
-    api_key: str,
+    project: str,
     output_dir: str,
+    location: str = "us-central1",
     n_counterfactuals: int = 1,
     delay: float = 1.0,
 ):
@@ -262,7 +267,7 @@ def build_dataset(
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 
-    client = make_client(api_key)
+    client = make_client(project, location)
     raw_cases = load_medqa(n_cases * 3)  # load extra to account for filter failures
 
     success = 0
@@ -334,21 +339,24 @@ if __name__ == "__main__":
                         help="Number of base cases to construct (default: 60)")
     parser.add_argument("--n_counterfactuals", type=int, default=1,
                         help="Number of CF variants per case (default: 1, max recommended: 2)")
-    parser.add_argument("--api_key", type=str, default=os.environ.get("ANTHROPIC_API_KEY"),
-                        help="Anthropic API key (or set ANTHROPIC_API_KEY env var)")
+    parser.add_argument("--project", type=str, default=os.environ.get("GOOGLE_CLOUD_PROJECT"),
+                        help="GCP project ID (or set GOOGLE_CLOUD_PROJECT env var)")
+    parser.add_argument("--location", type=str, default="us-central1",
+                        help="Vertex AI region (default: us-central1)")
     parser.add_argument("--output_dir", type=str, default="data/staged",
                         help="Output directory for JSON case files")
     parser.add_argument("--delay", type=float, default=1.0,
                         help="Seconds to sleep between API calls (default: 1.0)")
     args = parser.parse_args()
 
-    if not args.api_key:
-        raise ValueError("No API key provided. Use --api_key or set ANTHROPIC_API_KEY.")
+    if not args.project:
+        raise ValueError("No GCP project provided. Use --project or set GOOGLE_CLOUD_PROJECT.")
 
     build_dataset(
         n_cases=args.n_cases,
-        api_key=args.api_key,
+        project=args.project,
         output_dir=args.output_dir,
+        location=args.location,
         n_counterfactuals=args.n_counterfactuals,
         delay=args.delay,
     )

@@ -1,0 +1,278 @@
+{
+  "case_id": "case_005",
+  "model": "claude",
+  "ground_truth": "Preeclampsia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Physiologic edema of pregnancy",
+          "Lower extremity swelling is common in third trimester due to increased venous pressure and fluid retention, especially at 34 weeks."
+        ],
+        [
+          "Preeclampsia",
+          "New-onset edema in third trimester may indicate preeclampsia, which requires blood pressure and proteinuria assessment."
+        ],
+        [
+          "Gestational hypertension",
+          "Hypertension developing after 20 weeks can present with edema, though typically less severe than preeclampsia."
+        ],
+        [
+          "Deep vein thrombosis",
+          "Pregnancy is a hypercoagulable state and unilateral leg swelling could indicate DVT, though bilateral shoe tightness is less typical."
+        ],
+        [
+          "Peripartum cardiomyopathy",
+          "Though rare, heart failure can present in late pregnancy with peripheral edema and requires cardiac evaluation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses without further clinical data including vital signs, examination findings, and laboratory results."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Preeclampsia",
+          "New-onset hypertension (BP >140/90) after 20 weeks gestation with significant edema and rapid weight gain (15 lbs in 3 weeks) in a primigravida at 34 weeks."
+        ],
+        [
+          "Gestational hypertension",
+          "Elevated blood pressure after 20 weeks gestation without confirmed proteinuria or end-organ damage yet documented."
+        ],
+        [
+          "Chronic hypertension with superimposed preeclampsia",
+          "Hypertension may have preceded pregnancy with acute worsening and new edema/weight gain suggesting superimposed preeclampsia."
+        ],
+        [
+          "HELLP syndrome",
+          "Severe variant of preeclampsia that could present with hypertension and edema, though hemolysis, elevated liver enzymes, and low platelets not yet documented."
+        ],
+        [
+          "Nephrotic syndrome",
+          "Could explain severe edema and rapid weight gain with potential secondary hypertension, though timing and presentation favor preeclampsia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Physiologic edema of pregnancy",
+          "The severity of edema (2+ pitting), 15-pound weight gain in 3 weeks, and concurrent hypertension exceed normal pregnancy changes."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Gestational hypertension",
+          "New-onset hypertension at 34 weeks with only 1+ proteinuria and normal labs suggests hypertension without severe preeclampsia features."
+        ],
+        [
+          "Mild preeclampsia",
+          "New-onset hypertension after 20 weeks with proteinuria (1+) meets diagnostic criteria, though labs are reassuringly normal."
+        ],
+        [
+          "Chronic hypertension (undiagnosed)",
+          "Blood pressure elevation could represent previously unrecognized chronic hypertension unmasked by pregnancy."
+        ],
+        [
+          "Preeclampsia superimposed on chronic hypertension",
+          "Although no prior hypertension documented, new proteinuria in late pregnancy could indicate superimposed preeclampsia."
+        ],
+        [
+          "Physiologic edema of pregnancy",
+          "While the edema and weight gain are prominent, they could be within normal pregnancy changes if blood pressure normalizes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Severe preeclampsia",
+          "Normal platelet count, liver enzymes, and creatinine argue against severe features despite hypertension and proteinuria."
+        ],
+        [
+          "HELLP syndrome",
+          "Normal complete blood count, platelet count, and liver function tests exclude this diagnosis."
+        ],
+        [
+          "Acute kidney injury",
+          "Normal basic metabolic panel including creatinine rules out significant renal dysfunction."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Gestational hypertension",
+          "New-onset hypertension after 20 weeks with proteinuria <300 mg/24h (350 mg is borderline) and no severe features meets criteria for gestational hypertension rather than preeclampsia."
+        ],
+        [
+          "Preeclampsia without severe features",
+          "Blood pressure \u2265140/90 after 20 weeks with proteinuria (350 mg/24h approaches diagnostic threshold of 300 mg) and significant edema in a primigravida at 34 weeks."
+        ],
+        [
+          "Chronic hypertension",
+          "Elevated blood pressures could represent previously undiagnosed chronic hypertension that is now being detected during prenatal care, though lack of prior documentation makes this less likely."
+        ],
+        [
+          "Preeclampsia with severe features",
+          "The significant weight gain and edema raise concern for evolving severe disease, though current labs show no end-organ damage and proteinuria is minimal."
+        ],
+        [
+          "Superimposed preeclampsia on chronic hypertension",
+          "New-onset proteinuria in setting of hypertension could represent superimposed preeclampsia, though no documented history of chronic hypertension exists."
+        ]
+      ],
+      "eliminated": [
+        [
+          "HELLP syndrome",
+          "Normal liver function tests and complete blood count rule out hemolysis, elevated liver enzymes, and low platelets."
+        ],
+        [
+          "Acute kidney injury",
+          "Normal basic metabolic panel excludes significant renal dysfunction."
+        ],
+        [
+          "Nephrotic syndrome",
+          "Proteinuria of 350 mg/24h is far below the nephrotic range (>3.5 g/24h)."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Physiologic edema of pregnancy",
+            "Lower extremity swelling is common in the third trimester due to increased venous pressure and fluid retention."
+          ],
+          [
+            "Preeclampsia",
+            "New-onset edema after 20 weeks gestation may indicate preeclampsia, especially in a primigravida at 34 weeks."
+          ],
+          [
+            "Gestational hypertension",
+            "Fluid retention and edema can occur with pregnancy-related hypertensive disorders even without proteinuria."
+          ],
+          [
+            "Deep vein thrombosis",
+            "Pregnancy is a hypercoagulable state with increased risk of DVT, which can present with unilateral or bilateral leg swelling."
+          ],
+          [
+            "Peripartum cardiomyopathy",
+            "Though rare, heart failure in late pregnancy can present with peripheral edema and volume overload."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Preeclampsia without severe features",
+            "Significant weight gain (15 lbs in 3 weeks), new-onset edema at 34 weeks, though blood pressure remains normal at this time."
+          ],
+          [
+            "Physiologic edema of pregnancy",
+            "Lower extremity pitting edema is common in late third trimester, though the rapid weight gain is concerning."
+          ],
+          [
+            "Gestational hypertension",
+            "At risk given the constellation of findings, though current blood pressure readings do not meet diagnostic criteria yet."
+          ],
+          [
+            "Nephrotic syndrome",
+            "Rapid weight gain and bilateral pitting edema could indicate significant proteinuria and hypoalbuminemia."
+          ],
+          [
+            "Acute kidney injury in pregnancy",
+            "Sudden fluid retention and edema may indicate declining renal function, though vital signs are currently stable."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Additional laboratory studies (particularly urinalysis for proteinuria and complete metabolic panel) are needed to definitively rule out any conditions at this stage."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Gestational proteinuria",
+            "Isolated 1+ proteinuria with normal blood pressure, liver function, and blood counts suggests benign proteinuria of pregnancy without preeclampsia features."
+          ],
+          [
+            "Early/mild preeclampsia",
+            "Although blood pressure is currently normal, the significant weight gain, edema, and proteinuria warrant concern for evolving preeclampsia that requires close monitoring."
+          ],
+          [
+            "Physiologic edema of pregnancy",
+            "The 2+ lower extremity edema and weight gain could represent normal third-trimester fluid retention, though the proteinuria is concerning."
+          ],
+          [
+            "Chronic kidney disease",
+            "Proteinuria in pregnancy could unmask underlying renal disease, though the normal metabolic panel makes significant kidney dysfunction less likely."
+          ],
+          [
+            "Nephrotic syndrome",
+            "The significant weight gain and proteinuria could suggest nephrotic-range proteinuria, though 1+ protein and absence of hypoalbuminemia make this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "HELLP syndrome",
+            "Normal liver function tests, normal platelet count, and absence of hemolysis rule out this diagnosis."
+          ],
+          [
+            "Acute fatty liver of pregnancy",
+            "Normal liver function tests exclude this condition."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Gestational edema (physiologic edema of pregnancy)",
+            "24-hour urine protein of 350 mg is below the 300 mg threshold for significant proteinuria, blood pressure is normal, and isolated edema is common in late pregnancy."
+          ],
+          [
+            "Preeclampsia without severe features",
+            "Patient has new-onset edema, significant weight gain, and trace proteinuria at 34 weeks, though proteinuria of 350 mg/24hr is borderline and blood pressure remains normal."
+          ],
+          [
+            "Chronic kidney disease",
+            "Persistent low-grade proteinuria could indicate underlying renal pathology, though normal BMP and lack of prior history make this less likely."
+          ],
+          [
+            "Nephrotic syndrome",
+            "Significant edema and proteinuria are present, though the degree of proteinuria (350 mg) is far below nephrotic range (>3500 mg/24hr) and there are no other features."
+          ],
+          [
+            "Heart failure",
+            "Bilateral lower extremity edema and rapid weight gain could suggest volume overload, though normal vital signs and lack of cardiopulmonary symptoms make this unlikely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Preeclampsia with severe features",
+            "Blood pressure remains normal (<140/90) and proteinuria is minimal (<500 mg/24hr), with normal labs including liver function tests and platelet count."
+          ],
+          [
+            "Deep vein thrombosis",
+            "Bilateral symmetric edema rather than unilateral, and lacks pain, erythema, or warmth typical of DVT."
+          ]
+        ]
+      },
+      "cf_id": "case_005_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood pressure is normal, which argues against preeclampsia."
+    }
+  ]
+}

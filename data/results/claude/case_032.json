@@ -1,0 +1,285 @@
+{
+  "case_id": "case_032",
+  "model": "claude",
+  "ground_truth": "Poliomyelitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Malaria",
+          "Recent emigration from endemic region (Pakistan) with fever and muscle pain is highly suggestive of malaria."
+        ],
+        [
+          "Dengue fever",
+          "Common mosquito-borne illness in Pakistan presenting with fever, myalgia, and weakness."
+        ],
+        [
+          "Typhoid fever",
+          "Endemic in Pakistan with characteristic fever and systemic symptoms including muscle pain and weakness."
+        ],
+        [
+          "Brucellosis",
+          "Endemic zoonotic infection in Pakistan causing undulant fever, myalgia, and generalized weakness."
+        ],
+        [
+          "Acute viral myositis",
+          "Fever with prominent muscle pain and weakness could indicate viral infection affecting muscles directly."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "Unvaccinated child from endemic region presenting with fever, flaccid paralysis, and fasciculations affecting lower limbs is classic for acute polio."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "Acute flaccid paralysis with muscle weakness can present similarly, though fasciculations are less typical and fever is uncommon."
+        ],
+        [
+          "Acute transverse myelitis",
+          "Can cause flaccid paralysis and fever, though fasciculations would be less prominent and bilateral lower limb involvement would be symmetric."
+        ],
+        [
+          "West Nile virus neuroinvasive disease",
+          "Can cause acute flaccid paralysis with fasciculations and fever, though less common in this age group."
+        ],
+        [
+          "Enterovirus D68 associated acute flaccid myelitis",
+          "Causes acute flaccid paralysis similar to polio with fever, though less common than polio in unvaccinated patients from endemic areas."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Botulism",
+          "Typically presents with descending paralysis starting with cranial nerves, not ascending from lower limbs, and fasciculations are not characteristic."
+        ],
+        [
+          "Tick paralysis",
+          "Ascending flaccid paralysis without fever or fasciculations, and would require tick exposure history."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "Unvaccinated child from endemic area with flaccid paralysis, fasciculations, fever, and CSF lymphocytosis with normal glucose/protein is classic for polio."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "Acute flaccid paralysis with CSF lymphocytosis can occur in GBS, though typically shows albuminocytologic dissociation with elevated protein."
+        ],
+        [
+          "Enterovirus 71 infection",
+          "Non-polio enterovirus can cause acute flaccid paralysis with similar CSF findings and fever in children."
+        ],
+        [
+          "West Nile virus neuroinvasive disease",
+          "Can present with acute flaccid paralysis, fever, and lymphocytic pleocytosis, though less common in this age group."
+        ],
+        [
+          "Acute transverse myelitis",
+          "Can cause acute flaccid paralysis and fever with lymphocytic CSF, though fasciculations are less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Botulism",
+          "Would not cause fever, fasciculations, or CSF lymphocytosis; typically presents with descending paralysis and normal CSF."
+        ],
+        [
+          "Tick paralysis",
+          "Ascending paralysis without fever or CSF abnormalities; removal of tick leads to rapid improvement."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Poliomyelitis (Acute flaccid paralysis due to poliovirus)",
+          "Confirmed poliovirus on throat swab culture, unvaccinated patient from endemic area with characteristic flaccid paralysis, fever, and EMG showing acute denervation."
+        ],
+        [
+          "Vaccine-derived poliovirus infection",
+          "Though patient is unvaccinated, exposure to vaccine-derived poliovirus strains is possible in endemic regions and presents identically to wild-type poliomyelitis."
+        ],
+        [
+          "Poliovirus infection with concurrent enteroviral coinfection",
+          "Poliovirus confirmed but other enteroviruses could contribute to the clinical picture given similar transmission patterns."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome triggered by poliovirus",
+          "Poliovirus can trigger autoimmune demyelinating processes, though EMG findings of denervation rather than demyelination make this less likely."
+        ],
+        [
+          "West Nile virus neuroinvasive disease with incidental poliovirus detection",
+          "Could cause similar acute flaccid paralysis and CSF findings, though confirmed poliovirus makes this diagnosis of lower probability."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pure Guillain-Barr\u00e9 syndrome",
+          "EMG shows acute denervation rather than demyelination, and poliovirus was directly isolated"
+        ],
+        [
+          "Enterovirus D68 acute flaccid myelitis",
+          "Poliovirus specifically confirmed on culture"
+        ],
+        [
+          "Transverse myelitis",
+          "CSF protein would typically be elevated, and poliovirus was confirmed"
+        ],
+        [
+          "Botulism",
+          "Would not cause fever, lymphocytic CSF pleocytosis, or positive poliovirus culture"
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Malaria",
+            "Recent emigration from Pakistan (endemic area) with fever and muscle pain is highly suggestive of this parasitic infection."
+          ],
+          [
+            "Typhoid fever",
+            "Common in Pakistan with presentation of fever and constitutional symptoms including myalgia and weakness."
+          ],
+          [
+            "Dengue fever",
+            "Endemic in Pakistan and presents with fever, severe myalgia, and weakness during acute phase."
+          ],
+          [
+            "Brucellosis",
+            "Endemic in Pakistan from unpasteurized dairy, causing undulating fever with myalgia and profound weakness."
+          ],
+          [
+            "Acute viral myositis",
+            "Fever with muscle pain and weakness could represent influenza or other viral infection causing muscle inflammation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute flaccid myelitis (AFM)",
+            "Recent viral prodrome with fever and weakness, though hyperreflexia suggests upper motor neuron involvement rather than typical flaccid paralysis."
+          ],
+          [
+            "Poliomyelitis",
+            "Unvaccinated child from endemic region (Pakistan) presenting with fever and paralysis, though spastic rather than typical flaccid paralysis is atypical."
+          ],
+          [
+            "Transverse myelitis",
+            "Acute spinal cord inflammation can cause fever, weakness, and hyperreflexia with spastic paralysis affecting lower limbs."
+          ],
+          [
+            "Spinal cord compression",
+            "Progressive weakness with upper motor neuron signs (hyperreflexia, spasticity), though fever suggests infectious or inflammatory etiology more likely."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome with cerebral involvement",
+            "Acute weakness with areflexia expected, but variant forms or concurrent CNS involvement could explain hyperreflexia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Botulism",
+            "Would present with flaccid paralysis and hyporeflexia, not spastic paralysis and hyperreflexia."
+          ],
+          [
+            "Myasthenia gravis",
+            "Presents with fatigable weakness without fever, spasticity, or hyperreflexia."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Poliomyelitis",
+            "Unvaccinated child from endemic area with fever, spastic paralysis, hyperreflexia, and lymphocytic CSF with normal glucose/protein is classic for poliovirus."
+          ],
+          [
+            "Acute flaccid myelitis (non-polio enterovirus)",
+            "Enterovirus D68 or other enteroviruses can cause similar limb weakness and CSF lymphocytosis in children."
+          ],
+          [
+            "Transverse myelitis",
+            "Inflammatory spinal cord disease presents with bilateral weakness, hyperreflexia, and lymphocytic CSF, though typically has elevated protein."
+          ],
+          [
+            "Japanese encephalitis",
+            "Mosquito-borne flavivirus endemic to Asia causing fever, paralysis, and lymphocytic CSF, though usually has more prominent encephalitic features."
+          ],
+          [
+            "West Nile virus neuroinvasive disease",
+            "Arboviral infection causing acute flaccid paralysis and lymphocytic CSF, though less common in this age group and geography."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "CSF shows albuminocytologic dissociation (elevated protein, normal cells), not lymphocytosis."
+          ],
+          [
+            "Bacterial meningitis",
+            "Would show elevated CSF protein and decreased glucose with neutrophilic pleocytosis."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Poliomyelitis (Paralytic Poliomyelitis)",
+            "Confirmed poliovirus in throat swab, unvaccinated patient from endemic region, with fever, spastic paralysis, hyperreflexia, and EMG showing acute denervation."
+          ],
+          [
+            "Post-polio syndrome with concurrent infection",
+            "Although typically occurs years after initial infection, the confirmed poliovirus and neurological findings support active polio rather than late sequelae."
+          ],
+          [
+            "Acute flaccid myelitis due to enterovirus",
+            "While poliovirus (an enterovirus) is confirmed, the clinical presentation with spasticity is atypical for classic flaccid paralysis patterns."
+          ],
+          [
+            "Poliovirus infection with concurrent transverse myelitis",
+            "The spasticity and hyperreflexia suggest possible upper motor neuron involvement beyond typical polio anterior horn cell disease."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome triggered by poliovirus",
+            "Though poliovirus is confirmed, GBS could theoretically be triggered by the infection, though hyperreflexia argues against this diagnosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Aseptic meningitis (non-polio viral)",
+            "Poliovirus specifically identified on throat culture, and EMG changes indicate motor neuron involvement beyond meningeal inflammation."
+          ],
+          [
+            "Bacterial meningitis",
+            "CSF shows lymphocytic predominance with normal glucose, and poliovirus confirmed."
+          ],
+          [
+            "Tuberculous meningitis",
+            "Normal CSF glucose and protein exclude this, and poliovirus identified."
+          ]
+        ]
+      },
+      "cf_id": "case_032_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The physical exam now reveals hyperreflexia and spastic paralysis, findings that are inconsistent with the flaccid paralysis seen in poliomyelitis."
+    }
+  ]
+}

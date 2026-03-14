@@ -1,0 +1,251 @@
+{
+  "case_id": "case_037",
+  "model": "gpt4",
+  "ground_truth": "Voice pitch limitation",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Hypothyroidism",
+          "The patient may develop hypothyroidism following hemithyroidectomy due to reduced thyroid tissue."
+        ],
+        [
+          "Recurrent Papillary Thyroid Carcinoma",
+          "There is a risk of recurrence after initial surgical treatment of thyroid cancer."
+        ],
+        [
+          "Post-surgical Hypoparathyroidism",
+          "Although less common with hemithyroidectomy, there is a potential risk of parathyroid gland damage."
+        ],
+        [
+          "Thyroid Nodule",
+          "Remaining thyroid tissue may develop new nodules, which could be benign or malignant."
+        ],
+        [
+          "Surgical Site Infection",
+          "Post-operative infections are a possible complication following any surgical procedure."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hyperthyroidism",
+          "Unlikely following hemithyroidectomy, as the procedure typically reduces thyroid hormone production."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Vocal cord paralysis",
+          "The patient's voice changes following thyroid surgery suggest possible recurrent laryngeal nerve injury."
+        ],
+        [
+          "Laryngeal edema",
+          "Post-surgical inflammation could cause temporary changes in voice quality."
+        ],
+        [
+          "Granuloma formation",
+          "Surgical trauma may lead to granuloma formation affecting vocal cord function."
+        ],
+        [
+          "Muscle tension dysphonia",
+          "Compensatory muscle tension following surgery could alter voice."
+        ],
+        [
+          "Psychological stress",
+          "Anxiety related to cancer diagnosis and surgery might contribute to voice changes."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Vocal cord paralysis",
+          "The patient's voice changes post-thyroid surgery suggest possible recurrent laryngeal nerve injury."
+        ],
+        [
+          "Laryngeal edema",
+          "Post-surgical inflammation could cause temporary voice changes."
+        ],
+        [
+          "Granuloma formation",
+          "Surgical trauma may lead to granuloma formation affecting the vocal cords."
+        ],
+        [
+          "Muscle tension dysphonia",
+          "Compensatory muscle tension due to voice changes post-surgery could alter voice quality."
+        ],
+        [
+          "Psychological stress",
+          "Anxiety related to cancer diagnosis and surgery might contribute to perceived voice changes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypocalcemia",
+          "Normal calcium levels rule out hypocalcemia as a cause of symptoms."
+        ],
+        [
+          "Hypothyroidism",
+          "Normal TSH levels indicate euthyroid status, ruling out hypothyroidism."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Vocal cord paralysis",
+          "The unilateral paralysis of the superior laryngeal nerve and hoarseness are consistent with vocal cord paralysis."
+        ],
+        [
+          "Superior laryngeal nerve injury",
+          "The surgery and subsequent laryngoscopy findings suggest injury to the superior laryngeal nerve."
+        ],
+        [
+          "Post-surgical nerve damage",
+          "The timing of voice changes post-surgery and laryngoscopy findings indicate possible nerve damage during the procedure."
+        ],
+        [
+          "Laryngeal nerve neuropathy",
+          "The unilateral paralysis and voice changes could be due to neuropathy affecting the laryngeal nerve."
+        ],
+        [
+          "Functional voice disorder",
+          "Although less likely, the voice changes could be functional, exacerbated by the stress of surgery."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypocalcemia",
+          "Normal calcium levels rule out hypocalcemia as a cause of voice changes."
+        ],
+        [
+          "Recurrent laryngeal nerve injury",
+          "The specific finding of superior laryngeal nerve paralysis makes recurrent laryngeal nerve injury less likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Hypothyroidism",
+            "The patient may develop hypothyroidism following hemithyroidectomy due to reduced thyroid tissue."
+          ],
+          [
+            "Recurrent thyroid cancer",
+            "There is a risk of recurrence or metastasis after initial treatment for papillary thyroid carcinoma."
+          ],
+          [
+            "Hypoparathyroidism",
+            "Although less common with hemithyroidectomy, there is a potential risk of parathyroid gland damage leading to hypoparathyroidism."
+          ],
+          [
+            "Post-surgical complications",
+            "The patient may experience complications such as infection or hematoma following surgery."
+          ],
+          [
+            "Thyroid hormone imbalance",
+            "The surgery may lead to an imbalance in thyroid hormone levels, requiring monitoring and adjustment."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Recurrent papillary thyroid carcinoma",
+            "The patient has a history of papillary thyroid carcinoma, which can recur even after surgical intervention."
+          ],
+          [
+            "Hypothyroidism",
+            "Post-thyroidectomy patients are at risk for hypothyroidism due to reduced thyroid tissue."
+          ],
+          [
+            "Surgical site infection",
+            "Although the scar is well-healed, infections can occur post-operatively and may not always be immediately apparent."
+          ],
+          [
+            "Hypoparathyroidism",
+            "This can occur after thyroid surgery due to potential damage or removal of parathyroid glands."
+          ],
+          [
+            "Vocal cord paralysis",
+            "Although the patient reports no voice changes, this is a known complication of thyroid surgery and cannot be ruled out without laryngoscopy."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Hypoparathyroidism",
+            "Despite normal calcium levels, this condition is a common concern post-thyroid surgery and should be monitored."
+          ],
+          [
+            "Recurrent laryngeal nerve injury",
+            "Although the patient reports no voice changes, this is a potential complication of thyroid surgery."
+          ],
+          [
+            "Hypothyroidism",
+            "Normal TSH levels currently rule this out, but it remains a potential long-term concern post-thyroidectomy."
+          ],
+          [
+            "Surgical site infection",
+            "The well-healed scar makes this unlikely, but it is a standard consideration post-surgery."
+          ],
+          [
+            "Papillary thyroid carcinoma recurrence",
+            "Complete resection with clear margins reduces the likelihood, but recurrence is always a consideration."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hyperthyroidism",
+            "Normal TSH levels and the nature of the surgery make this unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Superior laryngeal nerve injury",
+            "The unilateral paralysis of the superior laryngeal nerve and hoarseness are consistent with nerve injury, likely related to the recent thyroid surgery."
+          ],
+          [
+            "Vocal cord paralysis",
+            "The hoarseness and difficulty with pitch modulation suggest possible vocal cord involvement, which can occur with nerve injury."
+          ],
+          [
+            "Post-surgical edema",
+            "Swelling after surgery could contribute to voice changes, although it typically resolves over time."
+          ],
+          [
+            "Laryngeal nerve neuropraxia",
+            "Temporary nerve dysfunction post-surgery could explain the unilateral paralysis and voice symptoms."
+          ],
+          [
+            "Recurrent laryngeal nerve injury",
+            "Although less likely given the specific nerve identified, recurrent laryngeal nerve injury can also cause hoarseness and voice changes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypocalcemia",
+            "Normal calcium levels rule out hypocalcemia as a cause of the symptoms."
+          ],
+          [
+            "Hypothyroidism",
+            "Normal TSH levels make hypothyroidism unlikely as a cause of the voice changes."
+          ]
+        ]
+      },
+      "cf_id": "case_037_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports no voice changes since surgery, which argues against voice pitch limitation."
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "case_id": "case_007",
+  "model": "gemini_pro",
+  "ground_truth": "Rhinitis medicamentosa",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Allergic Rhinitis",
+          "This diagnosis directly corresponds to the patient's complaint of symptoms that recur with specific seasons."
+        ],
+        [
+          "Perennial Allergic Rhinitis",
+          "The patient may have year-round allergies to indoor allergens with seasonal exacerbations that are perceived as a purely seasonal problem."
+        ],
+        [
+          "Non-allergic Rhinitis",
+          "Rhinitis symptoms can be triggered by seasonal environmental changes such as temperature and humidity, mimicking an allergic pattern."
+        ],
+        [
+          "Chronic Rhinosinusitis",
+          "This condition causes persistent nasal congestion and drainage which can be exacerbated by seasonal factors like viral infections or allergens."
+        ],
+        [
+          "Recurrent Viral Upper Respiratory Infection",
+          "The patient may be experiencing a pattern of frequent common colds that occur during seasons when certain viruses are more prevalent."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anaphylaxis",
+          "The non-emergent primary care setting for a recurring complaint is inconsistent with this acute, life-threatening systemic reaction."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Rhinitis Medicamentosa",
+          "The patient's prolonged, frequent use of intranasal decongestants is the classic cause of rebound nasal congestion."
+        ],
+        [
+          "Allergic Rhinitis",
+          "This aligns with the patient's initial complaint of seasonal allergies and is a very common cause of chronic nasal congestion."
+        ],
+        [
+          "Non-allergic Rhinitis",
+          "This diagnosis accounts for chronic nasal congestion in the absence of a specific allergic trigger or infectious cause."
+        ],
+        [
+          "Chronic Rhinosinusitis",
+          "Persistent nasal congestion is a cardinal symptom of chronic sinus inflammation, which can last for many weeks."
+        ],
+        [
+          "Nasal Structural Abnormality",
+          "An underlying structural issue, such as a deviated septum, could be contributing to the patient's significant congestion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Viral Rhinitis",
+          "The duration of symptoms for \"several weeks\" is inconsistent with a self-limited common cold."
+        ],
+        [
+          "Acute Bacterial Rhinosinusitis",
+          "The absence of other acute findings such as fever or purulent discharge makes an acute bacterial infection unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Rhinitis Medicamentosa",
+          "The patient's rebound nasal congestion and mucosal edema are classic consequences of prolonged daily use of intranasal decongestants."
+        ],
+        [
+          "Allergic Rhinitis",
+          "This is the likely underlying condition, as suggested by the patient's initial complaint of seasonal allergies, which prompted the use of decongestants."
+        ],
+        [
+          "Chronic Rhinosinusitis without Nasal Polyps",
+          "The persistent nasal congestion and endoscopic findings of mucosal inflammation are consistent with this diagnosis, which involves inflammation of the nose and sinuses for over 12 weeks."
+        ],
+        [
+          "Non-allergic Rhinitis",
+          "This diagnosis accounts for chronic nasal congestion and mucosal edema in the absence of a specific allergic trigger, representing an alternative underlying cause to allergic rhinitis."
+        ],
+        [
+          "Environmental Irritant Rhinitis",
+          "Chronic exposure to a non-allergic irritant (e.g., smoke, chemicals) could cause the observed mucosal inflammation and congestion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Bacterial Rhinosinusitis",
+          "Nasal endoscopy showed no evidence of purulent infection."
+        ],
+        [
+          "Nasal Polyposis",
+          "Endoscopy did not reveal the presence of nasal polyps."
+        ],
+        [
+          "Nasal Structural Abnormality",
+          "The endoscopy explicitly ruled out a significant structural cause for the symptoms."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rhinitis Medicamentosa",
+          "The patient's rebound nasal congestion and mucosal edema resolved upon cessation of prolonged intranasal decongestant use."
+        ],
+        [
+          "Allergic Rhinitis",
+          "This was the patient's initial complaint and the likely underlying reason for initiating decongestant use."
+        ],
+        [
+          "Non-allergic Rhinitis",
+          "The patient's symptoms of congestion could be due to non-allergic triggers, which prompted the medication use that led to rebound congestion."
+        ],
+        [
+          "Chronic Rhinosinusitis",
+          "Persistent mucosal inflammation could account for the initial congestion, although the rapid improvement after stopping the spray makes this less likely as the sole cause."
+        ],
+        [
+          "Acute Viral Rhinosinusitis",
+          "A preceding viral infection could have been the initial trigger for the patient to start using the decongestant spray."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Bacterial Rhinosinusitis",
+          "Nasal endoscopy showed no evidence of infection, such as purulent discharge."
+        ],
+        [
+          "Nasal Polyposis",
+          "The nasal endoscopy revealed no structural abnormalities like polyps."
+        ],
+        [
+          "Nasal Tumor",
+          "Endoscopy did not identify any masses or structural abnormalities concerning for a tumor."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Allergic Rhinitis",
+            "This diagnosis directly corresponds to the patient's complaint of symptoms that recur with specific seasons."
+          ],
+          [
+            "Perennial Allergic Rhinitis",
+            "The patient may have year-round allergies to indoor allergens with seasonal exacerbations that are perceived as a purely seasonal problem."
+          ],
+          [
+            "Non-allergic Rhinitis",
+            "Rhinitis symptoms can be triggered by seasonal environmental changes such as temperature and humidity, mimicking an allergic pattern."
+          ],
+          [
+            "Chronic Rhinosinusitis",
+            "This condition causes persistent nasal congestion and drainage which can be exacerbated by seasonal factors like viral infections or allergens."
+          ],
+          [
+            "Recurrent Viral Upper Respiratory Infection",
+            "The patient may be experiencing a pattern of frequent common colds that occur during seasons when certain viruses are more prevalent."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anaphylaxis",
+            "The non-emergent primary care setting for a recurring complaint is inconsistent with this acute, life-threatening systemic reaction."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Allergic Rhinitis",
+            "The patient's complaint of seasonal allergies is the most direct explanation for his primary symptom of nasal congestion."
+          ],
+          [
+            "Non-allergic Rhinitis",
+            "This condition presents with nasal congestion identical to allergic rhinitis but is caused by non-allergic triggers."
+          ],
+          [
+            "Rhinitis Medicamentosa",
+            "The patient's use of intranasal decongestants is a direct cause of rebound nasal congestion, which is a prominent finding."
+          ],
+          [
+            "Acute Viral Rhinosinusitis",
+            "A common viral upper respiratory infection is a frequent cause of acute nasal congestion."
+          ],
+          [
+            "Chronic Rhinosinusitis",
+            "A long-standing history of symptoms perceived as \"allergies\" could represent underlying chronic inflammation of the nasal and sinus passages."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Bacterial Rhinosinusitis",
+            "The absence of purulent discharge, fever, or facial pain makes a bacterial infection unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [],
+        "eliminated": []
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rhinitis Medicamentosa",
+            "The patient's significant nasal congestion, mucosal edema, and erythema resolved completely upon cessation of intranasal decongestant use."
+          ],
+          [
+            "Allergic Rhinitis",
+            "This was the patient's initial complaint and is a common underlying condition that leads to the use of decongestants."
+          ],
+          [
+            "Mixed Rhinitis",
+            "The patient may have a combination of allergic rhinitis and non-allergic triggers, leading to chronic symptoms and subsequent decongestant overuse."
+          ],
+          [
+            "Non-allergic Rhinitis",
+            "The patient's congestion could be from a primary non-allergic, non-infectious trigger, with rhinitis medicamentosa developing as a secondary complication."
+          ],
+          [
+            "Chronic Rhinosinusitis without Nasal Polyps",
+            "The endoscopic findings of mucosal edema and erythema are consistent with this diagnosis, although the rapid resolution makes it less likely as the sole cause."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Infectious Rhinosinusitis",
+            "Nasal endoscopy showed no evidence of infection, such as purulent discharge."
+          ],
+          [
+            "Nasal Polyposis",
+            "The nasal endoscopy revealed no structural abnormalities, which would include polyps."
+          ],
+          [
+            "Significant Anatomical Abnormality",
+            "Nasal endoscopy ruled out structural issues like a severely deviated septum as the primary cause of obstruction."
+          ]
+        ]
+      },
+      "cf_id": "case_007_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports using intranasal decongestants as needed for only 2-3 days, which makes rhinitis medicamentosa less likely."
+    }
+  ]
+}

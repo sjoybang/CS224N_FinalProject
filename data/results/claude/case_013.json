@@ -1,0 +1,290 @@
+{
+  "case_id": "case_013",
+  "model": "claude",
+  "ground_truth": "Benign prostatic hyperplasia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Benign prostatic hyperplasia (BPH)",
+          "Most common cause of nocturia and urinary frequency in elderly men, particularly African American men who have higher prevalence."
+        ],
+        [
+          "Prostate cancer",
+          "African American men have higher risk, and lower urinary tract symptoms with nocturia can be presenting features of prostate malignancy."
+        ],
+        [
+          "Diabetes mellitus (type 2)",
+          "Undiagnosed or poorly controlled diabetes causes polyuria and nocturia due to osmotic diuresis."
+        ],
+        [
+          "Congestive heart failure",
+          "Nocturnal fluid mobilization from dependent edema leads to nocturia in elderly patients with cardiac dysfunction."
+        ],
+        [
+          "Obstructive sleep apnea",
+          "Causes increased atrial natriuretic peptide release and nocturia, common in elderly male patients."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Benign prostatic hyperplasia (BPH)",
+          "Enlarged, smooth, non-tender prostate on DRE with nocturia in a 76-year-old man is classic for BPH."
+        ],
+        [
+          "Prostate cancer",
+          "Age and race are significant risk factors, though the smooth, non-tender prostate makes this less likely than BPH."
+        ],
+        [
+          "Overactive bladder",
+          "Urinary frequency and nocturia could reflect detrusor instability independent of prostatic obstruction."
+        ],
+        [
+          "Nocturnal polyuria",
+          "Increased nighttime urine production from various causes could explain nocturia without prostatic pathology being primary."
+        ],
+        [
+          "Bladder outlet obstruction from urethral stricture",
+          "Could cause similar obstructive symptoms, though prostatic enlargement is the more obvious anatomic finding."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute prostatitis",
+          "Non-tender prostate and absence of acute symptoms rule this out."
+        ],
+        [
+          "Urinary tract infection",
+          "Normal vital signs and absence of acute urinary symptoms make this unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Benign prostatic hyperplasia (BPH)",
+          "Enlarged smooth prostate on exam with nocturia, elevated postvoid residual, and normal PSA in older male strongly suggests BPH."
+        ],
+        [
+          "Bladder outlet obstruction due to BPH",
+          "Elevated postvoid residual of 180 mL indicates incomplete bladder emptying consistent with prostatic obstruction."
+        ],
+        [
+          "Detrusor underactivity",
+          "Elevated postvoid residual could reflect impaired bladder contractility rather than solely outlet obstruction in elderly patient."
+        ],
+        [
+          "Nocturnal polyuria",
+          "Age-related changes in antidiuretic hormone secretion could contribute to increased nighttime urine production causing nocturia."
+        ],
+        [
+          "Overactive bladder",
+          "Urinary frequency and nocturia could represent detrusor overactivity, though elevated postvoid residual makes this less likely as primary diagnosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Prostate cancer",
+          "Smooth non-tender prostate, normal PSA for age, and absence of nodularity make malignancy unlikely."
+        ],
+        [
+          "Urinary tract infection",
+          "Negative urinalysis rules out infectious etiology."
+        ],
+        [
+          "Bladder cancer",
+          "Absence of hematuria on urinalysis makes this diagnosis very unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Benign prostatic hyperplasia (BPH)",
+          "Enlarged smooth prostate on exam, nocturia, elevated postvoid residual, and urodynamic evidence of bladder outlet obstruction with normal PSA all strongly support BPH."
+        ],
+        [
+          "Bladder neck contracture",
+          "Urodynamic studies showing bladder outlet obstruction could represent bladder neck pathology, though prostatic enlargement makes this less likely as primary diagnosis."
+        ],
+        [
+          "Detrusor underactivity",
+          "Elevated postvoid residual and urinary symptoms could reflect impaired bladder contractility, though urodynamics showing increased outlet resistance favor obstructive rather than primary bladder dysfunction."
+        ],
+        [
+          "Urethral stricture",
+          "Bladder outlet obstruction on urodynamics could indicate urethral narrowing, though smooth enlarged prostate and patient demographics favor BPH."
+        ],
+        [
+          "Prostate cancer",
+          "Age, race, and prostatic enlargement raise concern, though smooth non-tender gland and PSA of 3.2 ng/mL make this less likely than BPH."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary tract infection",
+          "Urinalysis negative for infection."
+        ],
+        [
+          "Bladder cancer",
+          "Urinalysis negative for hematuria and clinical presentation more consistent with outlet obstruction."
+        ],
+        [
+          "Neurogenic bladder",
+          "No neurological symptoms reported and urodynamics demonstrate mechanical obstruction rather than neurogenic dysfunction."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Benign prostatic hyperplasia (BPH)",
+            "Most common cause of nocturia and urinary frequency in elderly men, particularly in African American population with higher prevalence."
+          ],
+          [
+            "Overactive bladder syndrome",
+            "Can present with urinary frequency and nocturia without anatomical obstruction in elderly patients."
+          ],
+          [
+            "Diabetes mellitus",
+            "Polyuria from hyperglycemia causes nocturia and increased urinary frequency, common in this age and demographic group."
+          ],
+          [
+            "Chronic kidney disease",
+            "Can cause nocturia due to impaired urinary concentrating ability, increasingly prevalent in elderly African Americans."
+          ],
+          [
+            "Prostate cancer",
+            "African American men over 75 have increased risk, and lower urinary tract symptoms may be presenting feature of locally advanced disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Prostate cancer",
+            "Elderly African American man with enlarged prostate and palpable nodule on DRE, which is highly suspicious for malignancy in this high-risk demographic."
+          ],
+          [
+            "Benign prostatic hyperplasia with concurrent prostate cancer",
+            "Nocturia and age suggest BPH, but the distinct palpable nodule raises concern for coexisting malignancy."
+          ],
+          [
+            "Benign prostatic hyperplasia",
+            "Age-related prostatic enlargement commonly causes nocturia and urinary frequency, though nodule is atypical for pure BPH."
+          ],
+          [
+            "Prostatic abscess",
+            "Palpable nodule could represent an abscess, though absence of fever or systemic symptoms makes this less likely."
+          ],
+          [
+            "Chronic prostatitis with nodular changes",
+            "Chronic inflammation can cause prostatic nodules and urinary symptoms, though typically presents with pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary tract infection",
+            "No fever, dysuria, or systemic symptoms reported to support acute infection."
+          ],
+          [
+            "Bladder cancer",
+            "While possible with urinary frequency, palpable prostatic nodule on DRE points more directly to prostatic pathology."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Prostate cancer",
+            "Palpable prostatic nodule on DRE in elderly African American male with urinary symptoms raises strong suspicion despite relatively normal PSA."
+          ],
+          [
+            "Benign prostatic hyperplasia with nodular changes",
+            "Enlarged prostate with nocturia and elevated postvoid residual could represent BPH with focal nodularity rather than malignancy."
+          ],
+          [
+            "Prostatic calculi",
+            "Calcified stones within the prostate can present as palpable nodules and cause obstructive urinary symptoms."
+          ],
+          [
+            "Chronic prostatitis with focal induration",
+            "Chronic inflammation can create palpable firmness or nodularity on DRE and contribute to urinary frequency."
+          ],
+          [
+            "Bladder outlet obstruction from prostatic enlargement",
+            "Elevated postvoid residual and nocturia indicate functional obstruction, potentially from benign or malignant prostatic disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary tract infection",
+            "Urinalysis is negative for infection."
+          ],
+          [
+            "Bladder cancer with hematuria",
+            "Urinalysis shows no hematuria."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Benign prostatic hyperplasia (BPH)",
+            "Enlarged prostate with bladder outlet obstruction on urodynamic studies and nocturia in elderly male is classic presentation."
+          ],
+          [
+            "Prostate cancer",
+            "Palpable prostatic nodule on DRE raises concern for malignancy despite relatively low PSA of 3.2 ng/mL in this demographic."
+          ],
+          [
+            "Bladder neck contracture",
+            "Can cause bladder outlet obstruction with similar urodynamic findings, though less likely without history of prior instrumentation or surgery."
+          ],
+          [
+            "Urethral stricture",
+            "Could produce bladder outlet obstruction and decreased flow rate, though typically associated with history of trauma or instrumentation."
+          ],
+          [
+            "Neurogenic bladder",
+            "Elevated postvoid residual and obstructive pattern could indicate detrusor underactivity, though prostatic findings make this less likely as primary cause."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary tract infection",
+            "Urinalysis negative for infection"
+          ],
+          [
+            "Bladder stones",
+            "Would typically show hematuria on urinalysis and different urodynamic pattern"
+          ],
+          [
+            "Acute urinary retention",
+            "Patient has chronic symptoms with partial obstruction, not complete retention"
+          ]
+        ]
+      },
+      "cf_id": "case_013_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The digital rectal exam reveals a nodule on the prostate, which raises concern for prostate cancer and argues against benign prostatic hyperplasia."
+    }
+  ]
+}

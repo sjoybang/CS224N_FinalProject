@@ -1,0 +1,126 @@
+{
+  "case_id": "case_049",
+  "model": "biogpt",
+  "ground_truth": "Diffuse large B-cell lymphoma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a non-tender, enlarged, and fixed supraclavicular lymph node. Splenomegaly is also noted upon abdominal palpation. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a non-tender, enlarged, and fixed supraclavicular lymph node. Splenomegaly is also noted upon abdominal palpation. [Stage 3] A CT scan of the thorax and abdomen reveals massively enlarged axillary, mediastinal, and cervical lymph nodes. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a non-tender, enlarged, and fixed supraclavicular lymph node. Splenomegaly is also noted upon abdominal palpation. [Stage 3] A CT scan of the thorax and abdomen reveals massively enlarged axillary, mediastinal, and cervical lymph nodes. [Stage 4] Analysis of an excised cervical lymph node demonstrates lymphocytes with a high proliferative index. Immunohistochemical staining of the lymphocytes is positive for CD20. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a tender, enlarged, and rubbery supraclavicular lymph node. Splenomegaly is also noted upon abdominal palpation. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a tender, enlarged, and rubbery supraclavicular lymph node. Splenomegaly is also noted upon abdominal palpation. [Stage 3] A CT scan of the thorax and abdomen reveals massively enlarged axillary, mediastinal, and cervical lymph nodes. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a tender, enlarged, and rubbery supraclavicular lymph node. Splenomegaly is also noted upon abdominal palpation. [Stage 3] A CT scan of the thorax and abdomen reveals massively enlarged axillary, mediastinal, and cervical lymph nodes. [Stage 4] Analysis of an excised cervical lymph node demonstrates lymphocytes with a high proliferative index. Immunohistochemical staining of the lymphocytes is positive for CD20. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_049_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a painful, enlarged, and rubbery supraclavicular lymph node, which is more consistent with an inflammatory process than lymphoma."
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "case_id": "case_020",
+  "model": "gemini",
+  "ground_truth": "Porphyria cutanea tarda",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Allergic contact dermatitis",
+          "The blistering rash and distribution on sun-exposed areas are consistent with an allergic reaction to a contactant."
+        ],
+        [
+          "Photodermatitis",
+          "The rash on sun-exposed areas suggests a possible reaction to sunlight."
+        ],
+        [
+          "Bullous pemphigoid",
+          "This autoimmune blistering disease can present with a widespread rash, though it is less common in this age group."
+        ],
+        [
+          "Porphyria cutanea tarda",
+          "This metabolic disorder can cause blistering in sun-exposed areas, especially on the hands and face."
+        ],
+        [
+          "Herpes simplex virus infection",
+          "Although less likely given the duration, HSV can cause blistering lesions, especially if eczema is present."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Porphyria cutanea tarda",
+          "The presence of blistering rash on sun-exposed areas, hyperpigmentation, and scarring suggests this porphyria."
+        ],
+        [
+          "Bullous pemphigoid",
+          "This autoimmune blistering disease can present with tense bullae and erosions, although scarring is less typical."
+        ],
+        [
+          "Pemphigus vulgaris",
+          "This autoimmune blistering disease can cause fragile blisters and erosions, potentially leading to scarring."
+        ],
+        [
+          "Erythema multiforme",
+          "This condition can cause target-like lesions and blisters, although the chronic nature and scarring are less typical."
+        ],
+        [
+          "Allergic contact dermatitis",
+          "While less likely given the chronic nature, a severe reaction could cause blistering and erosions."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Porphyria cutanea tarda",
+          "The presence of blistering rash on sun-exposed areas, hyperpigmentation, dark urine, and family history suggests this diagnosis."
+        ],
+        [
+          "Pseudoporphyria",
+          "The blistering rash in sun-exposed areas could be caused by medications or other factors mimicking porphyria cutanea tarda, though normal ferritin makes this less likely."
+        ],
+        [
+          "Bullous pemphigoid",
+          "This autoimmune blistering disease can present with tense bullae and erosions, although it typically affects older individuals and spares the face."
+        ],
+        [
+          "Epidermolysis bullosa acquisita",
+          "This acquired blistering disease can present with skin fragility and blistering in trauma-prone areas, and may be associated with other autoimmune conditions."
+        ],
+        [
+          "Dermatitis herpetiformis",
+          "This chronic blistering skin condition is associated with celiac disease and presents with intensely itchy papules and vesicles, although the distribution is less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Coats disease",
+          "Successfully treated 20 years ago and unrelated to current skin findings."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Porphyria cutanea tarda",
+          "Elevated urine porphyrins and blistering rash in sun-exposed areas, along with family history, strongly suggest this diagnosis."
+        ],
+        [
+          "Variegate porphyria",
+          "Blistering skin lesions and elevated porphyrins could indicate this type of porphyria, although neurological symptoms are not mentioned."
+        ],
+        [
+          "Erythropoietic protoporphyria",
+          "While typically presenting in childhood, the blistering rash and elevated porphyrins could suggest this, though it's less likely given the later onset."
+        ],
+        [
+          "Bullous pemphigoid",
+          "This autoimmune blistering disease can present with similar skin findings, but the elevated porphyrins make it less likely."
+        ],
+        [
+          "Epidermolysis bullosa acquisita",
+          "This acquired blistering disorder could be considered, but the porphyrin levels are more indicative of porphyria."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Coats disease",
+          "Successfully treated 20 years ago and unrelated to current skin findings."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Allergic contact dermatitis",
+            "The blistering rash and distribution on sun-exposed areas are consistent with an allergic reaction to a contactant."
+          ],
+          [
+            "Photodermatitis",
+            "The rash on sun-exposed areas suggests a possible reaction to sunlight."
+          ],
+          [
+            "Bullous pemphigoid",
+            "This autoimmune blistering disease can present with a widespread rash, though it is less common in this age group."
+          ],
+          [
+            "Porphyria cutanea tarda",
+            "This metabolic disorder can cause blistering in sun-exposed areas, especially on the hands and face."
+          ],
+          [
+            "Herpes simplex virus infection",
+            "Although less likely given the duration, HSV can cause blistering lesions, especially if eczema is present."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Porphyria cutanea tarda",
+            "The presence of blistering rash, hyperpigmentation, and scarring in sun-exposed areas is suggestive of this condition."
+          ],
+          [
+            "Bullous pemphigoid",
+            "This autoimmune blistering disease can present with tense bullae and subsequent scarring, although the absence of active blisters makes it less likely."
+          ],
+          [
+            "Epidermolysis bullosa acquisita",
+            "This acquired blistering disease is associated with trauma and can lead to scarring and hyperpigmentation."
+          ],
+          [
+            "Lichen planus",
+            "Hyperpigmentation and scarring, especially with alopecia, can be seen in lichen planus, although blistering is less common."
+          ],
+          [
+            "Allergic contact dermatitis",
+            "Chronic exposure to an allergen can cause a rash with hyperpigmentation and lichenification, although blistering is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Impetigo",
+            "The absence of fluid-filled blisters or oozing erosions makes impetigo unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Porphyria cutanea tarda",
+            "The presence of blistering rash, hyperpigmentation, dark urine, and family history suggests this diagnosis."
+          ],
+          [
+            "Pseudoporphyria",
+            "The blistering rash and scarring could be due to medications or other underlying conditions mimicking porphyria cutanea tarda."
+          ],
+          [
+            "Bullous pemphigoid",
+            "Although less likely without tense bullae, it can present with blistering and scarring, especially in older individuals."
+          ],
+          [
+            "Epidermolysis bullosa acquisita",
+            "This autoimmune blistering disease can present with skin fragility, blisters, and scarring, although it is less likely given the normal serum ferritin."
+          ],
+          [
+            "Drug-induced photosensitivity",
+            "Hormonal replacement therapy could be a potential trigger for a photosensitive reaction leading to blistering and hyperpigmentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Coats disease",
+            "This is a retinal disease and does not explain the skin findings."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Porphyria cutanea tarda",
+            "Elevated urine porphyrins and blistering rash in sun-exposed areas, along with family history, strongly suggest this diagnosis."
+          ],
+          [
+            "Variegate porphyria",
+            "Similar skin findings to PCT, but can also present with neuropsychiatric symptoms, which haven't been ruled out."
+          ],
+          [
+            "Erythropoietic protoporphyria",
+            "While typically presenting in childhood, late-onset cases can occur, and the photosensitivity aligns with the rash location."
+          ],
+          [
+            "Pseudoporphyria",
+            "Although less likely given the elevated porphyrins, it should be considered if porphyrin testing is inaccurate or confounded by other factors."
+          ],
+          [
+            "Bullous pemphigoid",
+            "This autoimmune blistering disease can present with similar skin findings, although the family history and dark urine make it less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Coats disease",
+            "Successfully treated 20 years ago and unrelated to current skin findings."
+          ]
+        ]
+      },
+      "cf_id": "case_020_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of blisters and erosions on sun-exposed areas argues against porphyria cutanea tarda, which typically presents with these skin findings."
+    }
+  ]
+}

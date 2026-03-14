@@ -1,0 +1,278 @@
+{
+  "case_id": "case_050",
+  "model": "claude",
+  "ground_truth": "Hypertrophic cardiomyopathy",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Normal pregnancy",
+          "Routine follow-up ultrasound at 32 weeks is standard prenatal care without symptoms suggesting pathology."
+        ],
+        [
+          "Gestational diabetes",
+          "Common screening target in third trimester that may prompt closer ultrasound monitoring."
+        ],
+        [
+          "Fetal growth restriction",
+          "Third trimester ultrasounds routinely assess fetal size and may detect growth abnormalities."
+        ],
+        [
+          "Placental abnormalities",
+          "Routine ultrasounds at this gestational age evaluate placental position and function."
+        ],
+        [
+          "Polyhydramnios or oligohydramnios",
+          "Amniotic fluid volume assessment is a standard component of third trimester ultrasound evaluation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient clinical information provided to eliminate any diagnoses at this stage."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Fetal macrosomia",
+          "Poor glycemic control in gestational diabetes is the primary risk factor for excessive fetal growth."
+        ],
+        [
+          "Polyhydramnios",
+          "Poorly controlled gestational diabetes commonly causes increased amniotic fluid due to fetal polyuria from hyperglycemia."
+        ],
+        [
+          "Intrauterine growth restriction",
+          "Although less common with diabetes, placental insufficiency can occur and should be assessed on routine ultrasound."
+        ],
+        [
+          "Preeclampsia",
+          "Gestational diabetes increases the risk of developing hypertensive disorders of pregnancy including preeclampsia."
+        ],
+        [
+          "Normal pregnancy",
+          "Despite poor glucose control, the patient may have no current complications detectable at this routine 32-week ultrasound."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out specific diagnoses without ultrasound findings."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Fetal hypertrophic cardiomyopathy secondary to maternal gestational diabetes",
+          "Poorly controlled maternal hyperglycemia commonly causes asymmetric septal hypertrophy and LVOT obstruction in fetuses."
+        ],
+        [
+          "Noonan syndrome",
+          "This genetic disorder presents with hypertrophic cardiomyopathy, often with asymmetric septal hypertrophy and LVOT obstruction."
+        ],
+        [
+          "Pompe disease (infantile glycogen storage disease type II)",
+          "Deficiency of acid alpha-glucosidase causes glycogen accumulation leading to severe hypertrophic cardiomyopathy with reduced ejection fraction."
+        ],
+        [
+          "Cardiofaciocutaneous syndrome",
+          "This RASopathy can present with fetal hypertrophic cardiomyopathy and septal thickening."
+        ],
+        [
+          "Familial hypertrophic cardiomyopathy",
+          "Autosomal dominant sarcomeric protein mutations can cause fetal-onset hypertrophic cardiomyopathy with septal hypertrophy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Dilated cardiomyopathy",
+          "The ultrasound shows hypertrophic features (enlarged septum) rather than chamber dilation."
+        ],
+        [
+          "Tetralogy of Fallot",
+          "This cyanotic heart disease does not typically present with isolated septal hypertrophy and preserved structure."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Familial hypertrophic cardiomyopathy",
+          "Genetic testing confirmed a mutation associated with familial hypertrophic cardiomyopathy, establishing this as the primary diagnosis."
+        ],
+        [
+          "Diabetic embryopathy with hypertrophic cardiomyopathy",
+          "Maternal gestational diabetes with poor control can cause transient neonatal septal hypertrophy, though genetic mutation suggests primary familial form."
+        ],
+        [
+          "Noonan syndrome",
+          "This RASopathy commonly presents with hypertrophic cardiomyopathy and can have genetic mutations, though typically includes dysmorphic features."
+        ],
+        [
+          "LEOPARD syndrome (Noonan syndrome with multiple lentigines)",
+          "This syndrome features hypertrophic cardiomyopathy with autosomal dominant inheritance and specific genetic mutations."
+        ],
+        [
+          "Pompe disease (infantile form)",
+          "Glycogen storage disease type II can present with hypertrophic cardiomyopathy in neonates, though typically with more generalized findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Transient hypertrophic cardiomyopathy of infancy",
+          "The presence of confirmed genetic mutation and familial pattern excludes this typically self-limited condition."
+        ],
+        [
+          "Physiologic septal hypertrophy",
+          "The presence of LVOT obstruction, reduced ejection fraction, and genetic mutation rule out normal variant."
+        ],
+        [
+          "Friedreich ataxia",
+          "Presents with dilated cardiomyopathy in adolescence/adulthood, not neonatal hypertrophic cardiomyopathy."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Normal pregnancy",
+            "Routine follow-up ultrasound at 32 weeks with no symptoms or complications mentioned suggests normal gestational progression."
+          ],
+          [
+            "Gestational diabetes mellitus",
+            "Common condition screened during third trimester that may prompt additional ultrasound monitoring for fetal growth assessment."
+          ],
+          [
+            "Fetal growth restriction",
+            "Third trimester ultrasounds routinely assess fetal size and may detect abnormal growth patterns requiring monitoring."
+          ],
+          [
+            "Placental abnormalities",
+            "Routine ultrasounds at this gestational age evaluate placental location and function which may reveal incidental findings."
+          ],
+          [
+            "Polyhydramnios or oligohydramnios",
+            "Amniotic fluid volume abnormalities are commonly detected on routine third trimester ultrasounds."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient clinical information at this stage to rule out any specific diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Fetal macrosomia",
+            "Poorly controlled gestational diabetes is strongly associated with excessive fetal growth due to fetal hyperinsulinemia."
+          ],
+          [
+            "Polyhydramnios",
+            "Gestational diabetes with poor glycemic control increases risk of excess amniotic fluid accumulation."
+          ],
+          [
+            "Preeclampsia",
+            "Gestational diabetes increases the risk of preeclampsia, though vital signs are currently stable."
+          ],
+          [
+            "Coronary artery disease",
+            "Recurrent chest pain relieved by nitroglycerin in a young pregnant woman suggests cardiac ischemia, though unusual at this age."
+          ],
+          [
+            "Fetal growth restriction",
+            "Despite diabetes typically causing macrosomia, placental insufficiency from vascular disease could cause poor fetal growth."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Normal pregnancy",
+            "The presence of poorly controlled gestational diabetes and cardiac symptoms requiring nitroglycerin excludes normal pregnancy progression."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Fetal hypertrophic cardiomyopathy secondary to maternal gestational diabetes",
+            "Poor maternal glucose control is strongly associated with fetal septal hypertrophy and cardiac dysfunction."
+          ],
+          [
+            "Fetal hypertrophic obstructive cardiomyopathy (HOCM)",
+            "The asymmetric septal hypertrophy with LVOT obstruction is the classic presentation of this genetic or acquired condition."
+          ],
+          [
+            "Fetal dilated cardiomyopathy",
+            "Reduced ejection fraction could indicate primary dilated cardiomyopathy, though septal hypertrophy is less typical."
+          ],
+          [
+            "Fetal myocarditis",
+            "Viral or other infectious myocarditis can cause reduced ejection fraction and secondary myocardial changes including hypertrophy."
+          ],
+          [
+            "Noonan syndrome",
+            "This genetic syndrome can present with hypertrophic cardiomyopathy and septal defects in the fetus."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Tetralogy of Fallot",
+            "This cyanotic heart disease does not typically present with septal hypertrophy and reduced ejection fraction as primary features."
+          ],
+          [
+            "Fetal arrhythmia",
+            "The ultrasound findings indicate structural abnormalities rather than rhythm disturbances."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Familial hypertrophic cardiomyopathy",
+            "Genetic testing confirmed a mutation associated with familial HCM, establishing this as the primary diagnosis in the neonate."
+          ],
+          [
+            "Diabetic fetopathy with cardiac hypertrophy",
+            "Maternal gestational diabetes with poor glucose control can cause transient septal hypertrophy, though the genetic mutation suggests this is a contributing factor rather than sole cause."
+          ],
+          [
+            "Noonan syndrome",
+            "This genetic disorder can present with hypertrophic cardiomyopathy and should be considered given the confirmed genetic basis of the cardiac disease."
+          ],
+          [
+            "LEOPARD syndrome",
+            "A RASopathy that causes hypertrophic cardiomyopathy and could be confirmed by the genetic testing performed."
+          ],
+          [
+            "Friedreich ataxia",
+            "Although typically presenting later in childhood, this genetic condition can cause hypertrophic cardiomyopathy and should be considered with genetic mutation identified."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Transient hypertrophic cardiomyopathy of infancy",
+            "Genetic mutation confirms this is not a transient condition but rather inherited familial HCM."
+          ],
+          [
+            "Glycogen storage disease (Pompe disease)",
+            "The genetic testing identified familial HCM mutation rather than acid maltase deficiency."
+          ],
+          [
+            "Maternal medication effect (beta-agonist exposure)",
+            "No history of tocolytic therapy and genetic mutation confirms inherited cause."
+          ]
+        ]
+      },
+      "cf_id": "case_050_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports regular episodes of chest pain that are relieved with nitroglycerin, which argues against hypertrophic cardiomyopathy as exertional chest pain is not typically relieved by nitroglycerin in HCM."
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "case_id": "case_027",
+  "model": "gemini",
+  "ground_truth": "Cyclophosphamide-induced cystitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Bladder cancer",
+          "Hematuria and lower abdominal pain are common symptoms of bladder cancer, especially in older men."
+        ],
+        [
+          "Benign prostatic hyperplasia",
+          "BPH can cause hematuria and lower abdominal discomfort due to prostatic enlargement and potential urinary retention."
+        ],
+        [
+          "Urinary tract infection",
+          "UTI can present with hematuria and lower abdominal pain, although it is less common in men without other risk factors."
+        ],
+        [
+          "Kidney stones",
+          "Nephrolithiasis can cause hematuria and flank pain that may radiate to the lower abdomen."
+        ],
+        [
+          "Prostatitis",
+          "Inflammation of the prostate can cause lower abdominal pain and hematuria."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Bladder cancer",
+          "Hematuria and suprapubic pain in an older male are concerning for bladder cancer."
+        ],
+        [
+          "Urinary tract infection",
+          "While CVA tenderness is absent, UTI can still present with hematuria and suprapubic pain."
+        ],
+        [
+          "Benign prostatic hyperplasia",
+          "BPH can cause hematuria and lower abdominal discomfort in older men."
+        ],
+        [
+          "Urolithiasis",
+          "Kidney stones can cause hematuria and abdominal pain, although CVA tenderness is more typical."
+        ],
+        [
+          "Prostatitis",
+          "Prostatitis can cause suprapubic pain and hematuria, although it is less common in older men."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "Absence of CVA tenderness makes pyelonephritis less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Bladder cancer",
+          "The presence of hematuria, lower abdominal pain, and bladder wall thickening on CT scan are suggestive of bladder cancer."
+        ],
+        [
+          "Chemotherapy-induced cystitis",
+          "Recent chemotherapy treatment could cause bladder inflammation and hematuria."
+        ],
+        [
+          "Urinary tract infection",
+          "While no fever is reported, hematuria and abdominal pain could still indicate a UTI, especially with pending urine culture results."
+        ],
+        [
+          "Radiation cystitis",
+          "Although radiation history is not explicitly mentioned, it remains a possibility given the bladder wall thickening and hematuria."
+        ],
+        [
+          "Renal cell carcinoma",
+          "Although there is no hydronephrosis, hematuria can be a symptom of renal cell carcinoma."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Nephrolithiasis",
+          "No stones were observed on the CT scan."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cyclophosphamide-induced cystitis",
+          "Recent cyclophosphamide use is a known cause of hemorrhagic cystitis."
+        ],
+        [
+          "Urothelial carcinoma",
+          "Bladder wall thickening and hematuria raise suspicion, even with negative biopsy."
+        ],
+        [
+          "Radiation cystitis",
+          "Although no radiation history is mentioned, it remains a possibility given prior cancer treatment."
+        ],
+        [
+          "Bacterial cystitis",
+          "Hematuria and abdominal pain can be caused by a bacterial infection, though RBC casts are less typical."
+        ],
+        [
+          "Viral cystitis",
+          "Viral infections can cause hemorrhagic cystitis, although less common in this age group."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Nephrolithiasis",
+          "No hydronephrosis or stones were seen on CT scan."
+        ],
+        [
+          "Pyelonephritis",
+          "No CVA tenderness or hydronephrosis was noted."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Bladder cancer",
+            "Hematuria and lower abdominal pain in an elderly male are concerning for bladder cancer."
+          ],
+          [
+            "Benign prostatic hyperplasia",
+            "BPH can cause hematuria and lower abdominal pain due to urinary retention and potential infection."
+          ],
+          [
+            "Urinary tract infection",
+            "UTI can present with hematuria and lower abdominal pain, especially in the setting of potential urinary retention from BPH."
+          ],
+          [
+            "Kidney stones",
+            "Nephrolithiasis can cause hematuria and abdominal pain as the stone passes through the urinary tract."
+          ],
+          [
+            "Prostatitis",
+            "Inflammation of the prostate can cause lower abdominal pain and hematuria."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Bladder cancer",
+            "Hematuria is the most common presenting symptom, and while the physical exam is unremarkable, this doesn't rule it out."
+          ],
+          [
+            "Benign prostatic hyperplasia",
+            "Can cause hematuria and lower abdominal pain in older men."
+          ],
+          [
+            "Urinary tract infection",
+            "Can present with hematuria and lower abdominal pain, although the lack of CVA tenderness makes pyelonephritis less likely."
+          ],
+          [
+            "Urolithiasis",
+            "Kidney stones can cause hematuria and abdominal pain, even without CVA tenderness."
+          ],
+          [
+            "Prostatitis",
+            "Inflammation of the prostate can cause lower abdominal pain and hematuria."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pyelonephritis",
+            "No CVA tenderness makes this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Bladder cancer",
+            "Bladder wall thickening on CT scan and hematuria are highly suggestive, especially in an older male."
+          ],
+          [
+            "Chemotherapy-induced cystitis",
+            "Recent chemotherapy could cause bladder inflammation and hematuria."
+          ],
+          [
+            "Urinary tract infection",
+            "Hematuria can be present in UTIs, although the absence of pyuria and pending culture make this less likely."
+          ],
+          [
+            "Glomerulonephritis",
+            "The presence of red blood cell casts suggests a glomerular source of hematuria."
+          ],
+          [
+            "Radiation cystitis",
+            "Although the patient history does not mention radiation, it remains a possibility if radiation was part of the lymphoma treatment."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Nephrolithiasis",
+            "CT scan ruled out stones."
+          ],
+          [
+            "Pyelonephritis",
+            "Absence of CVA tenderness and no hydronephrosis on CT make this less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Cyclophosphamide-induced cystitis",
+            "Recent cyclophosphamide treatment and hemorrhagic cystitis findings on cystoscopy strongly suggest this diagnosis."
+          ],
+          [
+            "Radiation cystitis",
+            "Although no history of radiation is mentioned, prior lymphoma treatment could have included radiation, leading to this possibility."
+          ],
+          [
+            "Bacterial cystitis",
+            "Hematuria and abdominal pain could indicate a bacterial infection, although the pending urine culture will help confirm or exclude this."
+          ],
+          [
+            "Viral cystitis",
+            "While less common, viral infections can cause hemorrhagic cystitis, especially in immunocompromised individuals."
+          ],
+          [
+            "Bladder cancer",
+            "Although the biopsy was negative for malignancy, the initial bladder wall thickening warrants keeping this in the differential until further follow-up."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Nephrolithiasis",
+            "No stones were seen on CT scan."
+          ],
+          [
+            "Pyelonephritis",
+            "No CVA tenderness or hydronephrosis was noted."
+          ]
+        ]
+      },
+      "cf_id": "case_027_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of suprapubic tenderness makes cyclophosphamide-induced cystitis less likely, as it is typically associated with bladder irritation and inflammation."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "case_id": "case_008",
+  "model": "biogpt",
+  "ground_truth": "Glycosaminoglycan accumulation in the orbit",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 46-year-old woman presents to the clinic complaining of double vision and eye pain that worsens when reading. She also reports a cessation of menses for the past 3 months, accompanied by hot flashes and increased sweating. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 46-year-old woman presents to the clinic complaining of double vision and eye pain that worsens when reading. She also reports a cessation of menses for the past 3 months, accompanied by hot flashes and increased sweating. [Stage 2] The patient's pulse is 110 / min and blood pressure is 148 / 98 mm Hg. Physical examination reveals moist palms and a diffusely enlarged, non-tender thyroid gland. Ophthalmologic examination demonstrates proptosis, bilateral lid retraction, conjunctival injection, and impaired convergence. There is no pain with extraocular movements. Visual acuity is 20 / 20 bilaterally. Neurologic examination reveals a fine resting tremor of the hands and 3 + deep tendon reflexes with a shortened relaxation phase. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 46-year-old woman presents to the clinic complaining of double vision and eye pain that worsens when reading. She also reports a cessation of menses for the past 3 months, accompanied by hot flashes and increased sweating. [Stage 2] The patient's pulse is 110 / min and blood pressure is 148 / 98 mm Hg. Physical examination reveals moist palms and a diffusely enlarged, non-tender thyroid gland. Ophthalmologic examination demonstrates proptosis, bilateral lid retraction, conjunctival injection, and impaired convergence. There is no pain with extraocular movements. Visual acuity is 20 / 20 bilaterally. Neurologic examination reveals a fine resting tremor of the hands and 3 + deep tendon reflexes with a shortened relaxation phase. [Stage 3] Laboratory studies reveal a suppressed TSH and elevated free T4. An MRI of the orbits shows enlargement of the extraocular muscles, particularly the inferior and medial rectus muscles, with sparing of the tendons. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 46-year-old woman presents to the clinic complaining of double vision and eye pain that worsens when reading. She also reports a cessation of menses for the past 3 months, accompanied by hot flashes and increased sweating. [Stage 2] The patient's pulse is 110 / min and blood pressure is 148 / 98 mm Hg. Physical examination reveals moist palms and a diffusely enlarged, non-tender thyroid gland. Ophthalmologic examination demonstrates proptosis, bilateral lid retraction, conjunctival injection, and impaired convergence. There is no pain with extraocular movements. Visual acuity is 20 / 20 bilaterally. Neurologic examination reveals a fine resting tremor of the hands and 3 + deep tendon reflexes with a shortened relaxation phase. [Stage 3] Laboratory studies reveal a suppressed TSH and elevated free T4. An MRI of the orbits shows enlargement of the extraocular muscles, particularly the inferior and medial rectus muscles, with sparing of the tendons. [Stage 4] An orbital biopsy reveals infiltration of orbital tissues with lymphocytes and increased deposition of glycosaminoglycans. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 46-year-old woman presents to the clinic complaining of double vision and eye pain that worsens when reading. She also reports a cessation of menses for the past 3 months, accompanied by hot flashes and increased sweating. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 46-year-old woman presents to the clinic complaining of double vision and eye pain that worsens when reading. She also reports a cessation of menses for the past 3 months, accompanied by hot flashes and increased sweating. [Stage 2] The patient's pulse is 110 / min and blood pressure is 148 / 98 mm Hg. Physical examination reveals moist palms and a diffusely enlarged, non-tender thyroid gland. Ophthalmologic examination demonstrates conjunctival injection and impaired convergence. There is no proptosis or lid retraction. Visual acuity is 20 / 20 bilaterally. Neurologic examination reveals a fine resting tremor of the hands and 3 + deep tendon reflexes with a shortened relaxation phase. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 46-year-old woman presents to the clinic complaining of double vision and eye pain that worsens when reading. She also reports a cessation of menses for the past 3 months, accompanied by hot flashes and increased sweating. [Stage 2] The patient's pulse is 110 / min and blood pressure is 148 / 98 mm Hg. Physical examination reveals moist palms and a diffusely enlarged, non-tender thyroid gland. Ophthalmologic examination demonstrates conjunctival injection and impaired convergence. There is no proptosis or lid retraction. Visual acuity is 20 / 20 bilaterally. Neurologic examination reveals a fine resting tremor of the hands and 3 + deep tendon reflexes with a shortened relaxation phase. [Stage 3] Laboratory studies reveal a suppressed TSH and elevated free T4. An MRI of the orbits shows enlargement of the extraocular muscles, particularly the inferior and medial rectus muscles, with sparing of the tendons. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 46-year-old woman presents to the clinic complaining of double vision and eye pain that worsens when reading. She also reports a cessation of menses for the past 3 months, accompanied by hot flashes and increased sweating. [Stage 2] The patient's pulse is 110 / min and blood pressure is 148 / 98 mm Hg. Physical examination reveals moist palms and a diffusely enlarged, non-tender thyroid gland. Ophthalmologic examination demonstrates conjunctival injection and impaired convergence. There is no proptosis or lid retraction. Visual acuity is 20 / 20 bilaterally. Neurologic examination reveals a fine resting tremor of the hands and 3 + deep tendon reflexes with a shortened relaxation phase. [Stage 3] Laboratory studies reveal a suppressed TSH and elevated free T4. An MRI of the orbits shows enlargement of the extraocular muscles, particularly the inferior and medial rectus muscles, with sparing of the tendons. [Stage 4] An orbital biopsy reveals infiltration of orbital tissues with lymphocytes and increased deposition of glycosaminoglycans. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_008_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of proptosis and lid retraction argues against glycosaminoglycan accumulation in the orbit, which typically causes these findings due to orbital tissue expansion."
+    }
+  ]
+}

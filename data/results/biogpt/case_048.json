@@ -1,0 +1,126 @@
+{
+  "case_id": "case_048",
+  "model": "biogpt",
+  "ground_truth": "Poxvirus",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat. [Stage 2] The patient's physical examination reveals multiple skin-colored papules with a dimpled center distributed over his face and neck. Cervical lymphadenopathy is also noted. He is 175 cm tall, weighs 58 kg, and has a BMI of 18.8 kg / m2. Vital signs are within normal limits. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat. [Stage 2] The patient's physical examination reveals multiple skin-colored papules with a dimpled center distributed over his face and neck. Cervical lymphadenopathy is also noted. He is 175 cm tall, weighs 58 kg, and has a BMI of 18.8 kg / m2. Vital signs are within normal limits. [Stage 3] Laboratory investigations reveal a hemoglobin concentration of 12.1 g / dL, a leukocyte count of 4,900 / mm3, and a platelet count of 143,000 / mm3. Serum studies and urinalysis show no abnormalities. His CD4 + T-lymphocyte count is 312 / mm3. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat. [Stage 2] The patient's physical examination reveals multiple skin-colored papules with a dimpled center distributed over his face and neck. Cervical lymphadenopathy is also noted. He is 175 cm tall, weighs 58 kg, and has a BMI of 18.8 kg / m2. Vital signs are within normal limits. [Stage 3] Laboratory investigations reveal a hemoglobin concentration of 12.1 g / dL, a leukocyte count of 4,900 / mm3, and a platelet count of 143,000 / mm3. Serum studies and urinalysis show no abnormalities. His CD4 + T-lymphocyte count is 312 / mm3. [Stage 4] A biopsy of one of the skin lesions reveals intracytoplasmic inclusion bodies on histopathological examination. Electron microscopy confirms the presence of poxvirus particles. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat. [Stage 2] The patient's physical examination reveals multiple vesicles with a dimpled center distributed over his face and neck. Cervical lymphadenopathy is also noted. He is 175 cm tall, weighs 58 kg, and has a BMI of 18.8 kg / m2. Vital signs are within normal limits. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat. [Stage 2] The patient's physical examination reveals multiple vesicles with a dimpled center distributed over his face and neck. Cervical lymphadenopathy is also noted. He is 175 cm tall, weighs 58 kg, and has a BMI of 18.8 kg / m2. Vital signs are within normal limits. [Stage 3] Laboratory investigations reveal a hemoglobin concentration of 12.1 g / dL, a leukocyte count of 4,900 / mm3, and a platelet count of 143,000 / mm3. Serum studies and urinalysis show no abnormalities. His CD4 + T-lymphocyte count is 312 / mm3. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat. [Stage 2] The patient's physical examination reveals multiple vesicles with a dimpled center distributed over his face and neck. Cervical lymphadenopathy is also noted. He is 175 cm tall, weighs 58 kg, and has a BMI of 18.8 kg / m2. Vital signs are within normal limits. [Stage 3] Laboratory investigations reveal a hemoglobin concentration of 12.1 g / dL, a leukocyte count of 4,900 / mm3, and a platelet count of 143,000 / mm3. Serum studies and urinalysis show no abnormalities. His CD4 + T-lymphocyte count is 312 / mm3. [Stage 4] A biopsy of one of the skin lesions reveals intracytoplasmic inclusion bodies on histopathological examination. Electron microscopy confirms the presence of poxvirus particles. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_048_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of vesicles instead of papules argues against Poxvirus, which typically presents with papules or nodules."
+    }
+  ]
+}

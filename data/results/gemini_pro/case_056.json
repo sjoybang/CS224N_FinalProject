@@ -1,0 +1,277 @@
+{
+  "case_id": "case_056",
+  "model": "gemini_pro",
+  "ground_truth": "Thrombotic thrombocytopenic purpura (TTP)",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral Gastroenteritis",
+          "The combination of acute onset nausea, vomiting, diarrhea, and malaise is a classic presentation for this common self-limiting illness."
+        ],
+        [
+          "Food Poisoning",
+          "These symptoms are highly suggestive of ingesting a preformed toxin or microbe, often with a rapid onset after a suspect meal."
+        ],
+        [
+          "COVID-19",
+          "The SARS-CoV-2 virus frequently presents with systemic symptoms including malaise, headache, and significant gastrointestinal distress."
+        ],
+        [
+          "Influenza",
+          "Acute onset of malaise, weakness, and headache are hallmark symptoms of influenza, which can also be accompanied by gastrointestinal upset."
+        ],
+        [
+          "Bacterial Gastroenteritis",
+          "This is a consideration given the prominent GI symptoms, which can be caused by organisms like Salmonella, Campylobacter, or E. coli."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Appendicitis",
+          "The absence of abdominal pain makes this diagnosis highly unlikely, as it is the cardinal symptom."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Meningitis/Meningoencephalitis",
+          "The combination of fever, headache, and altered mental status (drowsiness) is highly concerning for a central nervous system infection."
+        ],
+        [
+          "Sepsis secondary to gastroenteritis",
+          "The patient's initial gastrointestinal symptoms may have been the source of a bacterial infection leading to a systemic inflammatory response, causing fever, tachycardia, and drowsiness."
+        ],
+        [
+          "Severe Viral Gastroenteritis",
+          "A severe viral infection can cause all the patient's symptoms, including fever and drowsiness, due to significant dehydration, electrolyte imbalance, and systemic effects."
+        ],
+        [
+          "Systemic Viral Infection (e.g., Influenza)",
+          "Influenza and other systemic viruses can present with fever, headache, malaise, and prominent gastrointestinal symptoms."
+        ],
+        [
+          "Toxin-mediated food poisoning",
+          "Ingestion of bacterial toxins can cause acute, severe gastrointestinal distress, with systemic symptoms like weakness and drowsiness resulting from dehydration and toxemia."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Thrombotic Thrombocytopenic Purpura (TTP)",
+          "The patient has the classic pentad of fever, neurologic symptoms (drowsiness), acute kidney injury, thrombocytopenia, and microangiopathic hemolytic anemia."
+        ],
+        [
+          "Shiga toxin-associated Hemolytic Uremic Syndrome (STEC-HUS)",
+          "The preceding diarrheal illness strongly suggests this diagnosis, which classically presents with the triad of microangiopathic hemolytic anemia, thrombocytopenia, and acute kidney injury."
+        ],
+        [
+          "Disseminated Intravascular Coagulation (DIC)",
+          "The presentation with fever and systemic illness could represent sepsis, a common trigger for DIC, which consumes platelets and clotting factors, leading to microthrombi, hemolysis, and end-organ damage."
+        ],
+        [
+          "Atypical Hemolytic Uremic Syndrome (aHUS)",
+          "This diagnosis fits the clinical picture of thrombotic microangiopathy and is considered when TTP and STEC-HUS are less likely or have been excluded."
+        ],
+        [
+          "Catastrophic Antiphospholipid Syndrome (CAPS)",
+          "This is a rare but severe consideration that can cause widespread microvascular thrombosis, multi-organ failure, and the observed laboratory findings of thrombotic microangiopathy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Simple gastroenteritis",
+          "This is ruled out by the severe systemic findings of acute kidney injury, thrombocytopenia, and microangiopathic hemolytic anemia."
+        ],
+        [
+          "Immune Thrombocytopenic Purpura (ITP)",
+          "This condition causes isolated thrombocytopenia and would not explain the patient's anemia, schistocytes, or renal failure."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Thrombotic Thrombocytopenic Purpura (TTP)",
+          "The pentad of fever, microangiopathic hemolytic anemia, thrombocytopenia, renal injury, and neurologic symptoms is strongly suggested, and the diagnosis is confirmed by severely deficient ADAMTS13 activity."
+        ],
+        [
+          "Disseminated Intravascular Coagulation (DIC)",
+          "This condition can cause microangiopathic hemolytic anemia and thrombocytopenia, but it is less likely as coagulation studies are typically abnormal and the ADAMTS13 deficiency is specific for TTP."
+        ],
+        [
+          "Malignancy-associated Thrombotic Microangiopathy",
+          "Certain cancers can precipitate a TMA, but this is less common and the profound ADAMTS13 deficiency makes acquired TTP the primary diagnosis."
+        ],
+        [
+          "Catastrophic Antiphospholipid Syndrome (CAPS)",
+          "This can mimic TTP with multi-organ thrombosis and failure, but it is not associated with severe ADAMTS13 deficiency."
+        ],
+        [
+          "Drug-induced Thrombotic Microangiopathy",
+          "Various medications can trigger a TMA, but the presentation is not typically associated with severely deficient ADAMTS13 activity."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Atypical Hemolytic Uremic Syndrome (aHUS)",
+          "This diagnosis is ruled out by the severely deficient ADAMTS13 activity, as aHUS is characterized by normal or near-normal levels."
+        ],
+        [
+          "Shiga-toxin associated Hemolytic Uremic Syndrome (STEC-HUS)",
+          "This is ruled out because severe ADAMTS13 deficiency is not a feature, despite the preceding diarrheal illness."
+        ],
+        [
+          "Evans Syndrome",
+          "The presence of schistocytes indicates a microangiopathic process, which is inconsistent with the non-fragmentation hemolysis seen in Evans syndrome."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Viral Gastroenteritis",
+            "The combination of acute onset nausea, vomiting, diarrhea, and malaise is a classic presentation for this common self-limiting illness."
+          ],
+          [
+            "Food Poisoning",
+            "These symptoms are highly suggestive of ingesting a preformed toxin or microbe, often with a rapid onset after a suspect meal."
+          ],
+          [
+            "COVID-19",
+            "The SARS-CoV-2 virus frequently presents with systemic symptoms including malaise, headache, and significant gastrointestinal distress."
+          ],
+          [
+            "Influenza",
+            "Acute onset of malaise, weakness, and headache are hallmark symptoms of influenza, which can also be accompanied by gastrointestinal upset."
+          ],
+          [
+            "Bacterial Gastroenteritis",
+            "This is a consideration given the prominent GI symptoms, which can be caused by organisms like Salmonella, Campylobacter, or E. coli."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Appendicitis",
+            "The absence of abdominal pain makes this diagnosis highly unlikely, as it is the cardinal symptom."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Viral Gastroenteritis",
+            "The acute onset of nausea, vomiting, diarrhea, and constitutional symptoms is a classic presentation for this common illness."
+          ],
+          [
+            "Food Poisoning",
+            "This diagnosis is highly likely given the acute gastrointestinal and systemic symptoms, which could be caused by various foodborne pathogens."
+          ],
+          [
+            "COVID-19",
+            "The patient's symptoms of malaise, headache, and significant gastrointestinal upset are a well-recognized presentation of SARS-CoV-2 infection."
+          ],
+          [
+            "Early Pregnancy",
+            "Nausea, vomiting, malaise, and headache are common symptoms in early pregnancy for a woman of childbearing age."
+          ],
+          [
+            "Influenza",
+            "Influenza can present with prominent gastrointestinal symptoms, headache, and malaise, even in the absence of fever or respiratory complaints."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sepsis",
+            "The patient is afebrile and hemodynamically stable, which is inconsistent with a diagnosis of sepsis."
+          ],
+          [
+            "Meningitis",
+            "The normal neurological exam and lack of fever make meningitis highly unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Shiga toxin-producing E. coli Hemolytic Uremic Syndrome (STEC-HUS)",
+            "The patient's presentation of microangiopathic hemolytic anemia, thrombocytopenia, and acute kidney injury following a diarrheal prodrome is classic for STEC-HUS."
+          ],
+          [
+            "Thrombotic Thrombocytopenic Purpura (TTP)",
+            "This diagnosis is strongly suggested by the triad of microangiopathic hemolytic anemia, thrombocytopenia, and organ injury (renal), which are key features of this medical emergency."
+          ],
+          [
+            "Disseminated Intravascular Coagulation (DIC)",
+            "The initial infectious prodrome could have progressed to sepsis, triggering DIC, which can also cause microangiopathic hemolysis, consumptive thrombocytopenia, and acute kidney injury."
+          ],
+          [
+            "Atypical Hemolytic Uremic Syndrome (aHUS)",
+            "This diagnosis must be considered as it presents identically to other thrombotic microangiopathies but is caused by dysregulation of the alternative complement pathway."
+          ],
+          [
+            "HELLP Syndrome",
+            "In a woman of childbearing age, the combination of hemolysis (schistocytes, anemia) and low platelets (thrombocytopenia) requires ruling out this life-threatening complication of pregnancy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Uncomplicated gastroenteritis",
+            "This is ruled out by the presence of severe systemic findings, including microangiopathic hemolytic anemia, thrombocytopenia, and acute kidney injury."
+          ],
+          [
+            "Pre-renal acute kidney injury",
+            "While dehydration from vomiting and diarrhea may contribute, it is not the primary cause of the renal failure given the clear evidence of a thrombotic microangiopathy."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Thrombotic Thrombocytopenic Purpura (TTP)",
+            "The combination of microangiopathic hemolytic anemia, thrombocytopenia, and end-organ injury is confirmed as TTP by the severely deficient ADAMTS13 activity level."
+          ],
+          [
+            "Atypical Hemolytic Uremic Syndrome (aHUS)",
+            "This condition presents with a clinically identical triad of MAHA, thrombocytopenia, and acute kidney injury, but is caused by complement dysregulation."
+          ],
+          [
+            "Shiga toxin-associated Hemolytic Uremic Syndrome (STEC-HUS)",
+            "The prodrome of diarrhea makes this a consideration, as it also causes a thrombotic microangiopathy, although typically with more severe renal failure."
+          ],
+          [
+            "Catastrophic Antiphospholipid Syndrome (CAPS)",
+            "This rare autoimmune disorder can cause a severe thrombotic microangiopathy with multi-organ failure, mimicking TTP's clinical presentation."
+          ],
+          [
+            "Disseminated Intravascular Coagulation (DIC)",
+            "This diagnosis is considered for any patient with MAHA and thrombocytopenia, though it is typically associated with an underlying severe illness and abnormal coagulation studies."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Atypical Hemolytic Uremic Syndrome (aHUS)",
+            "This diagnosis is excluded by the finding of severe ADAMTS13 deficiency, as ADAMTS13 activity is normal in aHUS."
+          ],
+          [
+            "Shiga toxin-associated Hemolytic Uremic Syndrome (STEC-HUS)",
+            "This diagnosis is excluded because severe ADAMTS13 deficiency is not a feature of this condition."
+          ],
+          [
+            "Disseminated Intravascular Coagulation (DIC)",
+            "This is ruled out as the primary diagnosis because DIC does not lead to severe ADAMTS13 deficiency."
+          ]
+        ]
+      },
+      "cf_id": "case_056_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is alert and oriented with a normal neurological exam, which argues against the neurological involvement typically seen in TTP."
+    }
+  ]
+}

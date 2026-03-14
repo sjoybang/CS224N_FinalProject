@@ -1,0 +1,126 @@
+{
+  "case_id": "case_042",
+  "model": "biogpt",
+  "ground_truth": "Chromosomal abnormalities",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps. [Stage 2] The patient reports feeling dizzy and weak. Her blood pressure is 100 / 60 mm Hg, pulse is 100 / min, and respiration rate is 15 / min. She reports light spotting for 3 days, now with increased bleeding and passage of clots, changing three pads this morning. She also notes that her pregnancy-related nausea has subsided. Examination reveals an open cervical os with blood pooling in the vagina. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps. [Stage 2] The patient reports feeling dizzy and weak. Her blood pressure is 100 / 60 mm Hg, pulse is 100 / min, and respiration rate is 15 / min. She reports light spotting for 3 days, now with increased bleeding and passage of clots, changing three pads this morning. She also notes that her pregnancy-related nausea has subsided. Examination reveals an open cervical os with blood pooling in the vagina. [Stage 3] Visualization of the cervical os reveals products of conception. A quantitative beta-hCG level is markedly lower than expected for gestational age. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps. [Stage 2] The patient reports feeling dizzy and weak. Her blood pressure is 100 / 60 mm Hg, pulse is 100 / min, and respiration rate is 15 / min. She reports light spotting for 3 days, now with increased bleeding and passage of clots, changing three pads this morning. She also notes that her pregnancy-related nausea has subsided. Examination reveals an open cervical os with blood pooling in the vagina. [Stage 3] Visualization of the cervical os reveals products of conception. A quantitative beta-hCG level is markedly lower than expected for gestational age. [Stage 4] Cytogenetic analysis of the products of conception reveals trisomy 16. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps. [Stage 2] The patient reports feeling a severe headache. Her blood pressure is 160 / 110 mm Hg, pulse is 100 / min, and respiration rate is 15 / min. She reports light spotting for 3 days, now with increased bleeding and passage of clots, changing three pads this morning. She also notes that her pregnancy-related nausea has subsided. Examination reveals an open cervical os with blood pooling in the vagina. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps. [Stage 2] The patient reports feeling a severe headache. Her blood pressure is 160 / 110 mm Hg, pulse is 100 / min, and respiration rate is 15 / min. She reports light spotting for 3 days, now with increased bleeding and passage of clots, changing three pads this morning. She also notes that her pregnancy-related nausea has subsided. Examination reveals an open cervical os with blood pooling in the vagina. [Stage 3] Visualization of the cervical os reveals products of conception. A quantitative beta-hCG level is markedly lower than expected for gestational age. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps. [Stage 2] The patient reports feeling a severe headache. Her blood pressure is 160 / 110 mm Hg, pulse is 100 / min, and respiration rate is 15 / min. She reports light spotting for 3 days, now with increased bleeding and passage of clots, changing three pads this morning. She also notes that her pregnancy-related nausea has subsided. Examination reveals an open cervical os with blood pooling in the vagina. [Stage 3] Visualization of the cervical os reveals products of conception. A quantitative beta-hCG level is markedly lower than expected for gestational age. [Stage 4] Cytogenetic analysis of the products of conception reveals trisomy 16. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_042_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood pressure is elevated and she reports a severe headache, suggesting preeclampsia which would argue against chromosomal abnormalities as the primary cause of bleeding."
+    }
+  ]
+}

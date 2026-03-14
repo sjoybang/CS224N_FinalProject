@@ -1,0 +1,256 @@
+{
+  "case_id": "case_039",
+  "model": "gpt4",
+  "ground_truth": "Penetrating neck trauma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Penetrating neck injury",
+          "The patient has sustained a stab wound, which is a common cause of penetrating neck injuries."
+        ],
+        [
+          "Vascular injury",
+          "Stab wounds to the neck can damage major blood vessels, leading to vascular injury."
+        ],
+        [
+          "Tracheal injury",
+          "The neck contains the trachea, which can be injured by penetrating trauma."
+        ],
+        [
+          "Esophageal injury",
+          "Penetrating trauma to the neck can also affect the esophagus, leading to potential injury."
+        ],
+        [
+          "Nerve injury",
+          "The neck contains several important nerves that could be damaged by a stab wound."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Vascular injury",
+          "The location of the stab wound near major neck vessels raises concern for potential vascular injury."
+        ],
+        [
+          "Cervical spine injury",
+          "The mechanism of injury and neck pain suggest possible cervical spine involvement."
+        ],
+        [
+          "Soft tissue injury",
+          "The laceration and localized pain could indicate damage to soft tissues in the neck."
+        ],
+        [
+          "Nerve injury",
+          "The proximity to the mastoid process raises the possibility of injury to nearby cranial nerves."
+        ],
+        [
+          "Infection",
+          "Although the patient is afebrile, the open wound poses a risk for infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "Clear breath sounds bilaterally and normal oxygen saturation make pneumothorax unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Vascular injury",
+          "The location of the stab wound near major neck vessels raises concern for potential vascular injury despite normal vital signs."
+        ],
+        [
+          "Soft tissue injury",
+          "The stab wound could have caused localized soft tissue damage, explaining the neck pain without systemic signs."
+        ],
+        [
+          "Nerve injury",
+          "The proximity of the wound to the mastoid process suggests possible injury to nearby nerves, which could cause pain."
+        ],
+        [
+          "Musculoskeletal injury",
+          "The trauma could have resulted in musculoskeletal injury, such as muscle strain or ligament damage, causing neck pain."
+        ],
+        [
+          "Infection",
+          "Although the patient is afebrile, the open wound poses a risk for infection, which could develop over time."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "The chest x-ray does not show any evidence of pneumothorax."
+        ],
+        [
+          "Mediastinal injury",
+          "The absence of mediastinal widening on the chest x-ray makes significant mediastinal injury unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Vertebral artery injury",
+          "The CT angiography confirms an injury to the vertebral artery, which aligns with the location of the stab wound."
+        ],
+        [
+          "Traumatic neck injury",
+          "The stab wound near the mastoid process suggests a traumatic injury to the neck structures."
+        ],
+        [
+          "Hemorrhage",
+          "The potential for bleeding from the vertebral artery injury is a concern, although vital signs are stable."
+        ],
+        [
+          "Cervical spine injury",
+          "The mechanism of injury raises suspicion for possible cervical spine involvement, despite no neurological deficits reported."
+        ],
+        [
+          "Soft tissue injury",
+          "The laceration and surrounding tissue damage could involve soft tissue structures in the neck."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "The chest x-ray did not reveal any pneumothorax."
+        ],
+        [
+          "Mediastinal injury",
+          "The chest x-ray did not show mediastinal widening, reducing the likelihood of significant mediastinal injury."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Penetrating neck trauma",
+            "The patient has sustained a stab wound, which is a classic cause of penetrating neck trauma."
+          ],
+          [
+            "Vascular injury",
+            "Stab wounds to the neck can damage major blood vessels, leading to vascular injury."
+          ],
+          [
+            "Nerve injury",
+            "The neck contains several important nerves that could be injured by a stab wound."
+          ],
+          [
+            "Airway injury",
+            "A stab wound to the neck raises concern for potential airway compromise or injury."
+          ],
+          [
+            "Esophageal injury",
+            "Penetrating trauma to the neck can result in damage to the esophagus."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pneumothorax",
+            "The presence of subcutaneous emphysema suggests possible air leakage into the subcutaneous tissue, which can occur with pneumothorax."
+          ],
+          [
+            "Tracheal injury",
+            "Subcutaneous emphysema and the location of the wound near the neck raise suspicion for tracheal injury."
+          ],
+          [
+            "Esophageal injury",
+            "The proximity of the wound to the esophagus and subcutaneous emphysema could indicate esophageal perforation."
+          ],
+          [
+            "Vascular injury",
+            "The neck wound could involve vascular structures, potentially leading to subcutaneous emphysema if air is introduced into the vascular space."
+          ],
+          [
+            "Soft tissue infection",
+            "Although the patient is afebrile, the presence of a wound and subcutaneous emphysema could predispose to infection."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Respiratory distress",
+            "The patient has no stridor or apparent respiratory distress, and oxygen saturation is normal."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Tracheal injury",
+            "The presence of subcutaneous emphysema around the neck wound suggests possible air leakage from the trachea."
+          ],
+          [
+            "Esophageal injury",
+            "Subcutaneous emphysema can also result from an esophageal perforation, especially with a penetrating neck injury."
+          ],
+          [
+            "Vascular injury",
+            "The location of the wound near major neck vessels raises concern for vascular injury, despite normal vital signs."
+          ],
+          [
+            "Laryngeal injury",
+            "The proximity of the wound to the larynx and presence of subcutaneous emphysema could indicate laryngeal trauma."
+          ],
+          [
+            "Soft tissue infection",
+            "Although less likely given the acute presentation, the wound could lead to infection, which might initially present with subcutaneous emphysema."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumothorax",
+            "The chest x-ray does not show any evidence of pneumothorax."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Vertebral artery injury",
+            "CT angiography confirms injury to the vertebral artery, consistent with the mechanism of trauma."
+          ],
+          [
+            "Subcutaneous emphysema",
+            "Palpation around the wound reveals subcutaneous emphysema, likely due to air tracking from the neck wound."
+          ],
+          [
+            "Traumatic neck injury",
+            "The stab wound near the mastoid process suggests a traumatic neck injury, which is consistent with the clinical presentation."
+          ],
+          [
+            "Vascular injury",
+            "The presence of a vertebral artery injury indicates a vascular injury, which is a common concern with penetrating neck trauma."
+          ],
+          [
+            "Soft tissue injury",
+            "The laceration and subcutaneous emphysema suggest an associated soft tissue injury in the neck region."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumothorax",
+            "Chest x-ray does not reveal any pneumothorax, ruling out this condition."
+          ],
+          [
+            "Mediastinal injury",
+            "Absence of mediastinal widening on chest x-ray makes significant mediastinal injury unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_039_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of subcutaneous emphysema on exam argues against isolated vascular injury and raises concern for esophageal or tracheal injury."
+    }
+  ]
+}

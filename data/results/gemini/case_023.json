@@ -1,0 +1,254 @@
+{
+  "case_id": "case_023",
+  "model": "gemini",
+  "ground_truth": "Acting out",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Depression",
+          "Recent behavioral changes, especially in a teenager, can indicate depression."
+        ],
+        [
+          "Anxiety Disorder",
+          "Behavioral changes can manifest as anxiety, especially in a stressful period of development."
+        ],
+        [
+          "Adjustment Disorder",
+          "The behavioral changes could be a maladaptive response to an identifiable stressor."
+        ],
+        [
+          "Autism Spectrum Disorder",
+          "New behavioral changes in a teenager could represent a later presentation or increased awareness of underlying autistic traits."
+        ],
+        [
+          "Substance Use Disorder",
+          "Behavioral changes can be indicative of experimentation with or dependence on substances."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No information yet rules out any potential diagnosis."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Conduct Disorder",
+          "The patient exhibits multiple instances of rule-breaking behavior, aggression, and disregard for others' rights, aligning with the diagnostic criteria."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "The patient's repeated suspensions for bullying and aggressive behavior, along with skipping classes, suggest a pattern of defiance and hostility."
+        ],
+        [
+          "Substance Use Disorder",
+          "The reported cigarette smoking suggests possible substance use, which can contribute to behavioral changes."
+        ],
+        [
+          "Adjustment Disorder with Disturbance of Conduct",
+          "Recent expulsion and suspensions indicate a possible maladaptive response to stressors, manifesting as behavioral changes."
+        ],
+        [
+          "Intermittent Explosive Disorder",
+          "The reported aggressive behavior towards peers and teachers could indicate episodes of disproportionate anger and aggression."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses can be definitively ruled out at this stage."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Adjustment Disorder with Disturbance of Conduct",
+          "The behavioral changes, including aggression and truancy, began after a significant stressor (father leaving)."
+        ],
+        [
+          "Conduct Disorder",
+          "The patient exhibits bullying, aggression, and rule violations, which are characteristic of conduct disorder."
+        ],
+        [
+          "Major Depressive Disorder",
+          "While suicidal ideation is absent, depression can manifest as irritability and behavioral changes, especially in adolescents following a family disruption."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "The patient's defiance, aggression, and rule-breaking behavior could indicate ODD."
+        ],
+        [
+          "Unspecified Disruptive, Impulse-Control, and Conduct Disorder",
+          "If the full criteria for a specific disruptive disorder are not yet met, this provides a broader classification."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Substance Use Disorder",
+          "Urine drug screen is negative."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Adjustment Disorder with Disturbance of Conduct",
+          "The behavioral changes, including aggression, defiance, and academic decline, began after an identifiable stressor (parental separation)."
+        ],
+        [
+          "Conduct Disorder",
+          "The patient exhibits repetitive and persistent patterns of behavior that violate the rights of others, such as bullying and aggression."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "The patient displays a pattern of angry/irritable mood, argumentative/defiant behavior, and vindictiveness, as evidenced by defiance and verbal altercations."
+        ],
+        [
+          "Major Depressive Disorder",
+          "While suicidal ideation is absent, depression can manifest as irritability and behavioral changes, especially in adolescents experiencing family disruption."
+        ],
+        [
+          "Unspecified Disruptive, Impulse-Control, and Conduct Disorder",
+          "This is a reasonable consideration if the full criteria for a specific disruptive disorder are not yet met, but significant behavioral issues are present."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Substance Use Disorder",
+          "Urine drug screen is negative."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Depression",
+            "Recent behavioral changes, especially in a teenager, can indicate depression."
+          ],
+          [
+            "Anxiety Disorder",
+            "Behavioral changes can manifest as anxiety, especially in a stressful period of development."
+          ],
+          [
+            "Adjustment Disorder",
+            "The behavioral changes could be a maladaptive response to an identifiable stressor."
+          ],
+          [
+            "Autism Spectrum Disorder",
+            "New behavioral changes in a teenager could represent a later presentation or increased awareness of underlying autistic traits."
+          ],
+          [
+            "Substance Use Disorder",
+            "Behavioral changes can be indicative of experimentation with or dependence on substances."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No information yet rules out any potential diagnosis."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Schizophrenia",
+            "The presence of auditory hallucinations and behavioral changes, including aggression and school expulsion, raises strong suspicion for schizophrenia."
+          ],
+          [
+            "Bipolar disorder",
+            "The aggressive behavior and school expulsion could indicate a manic episode, especially in the context of a mood disorder."
+          ],
+          [
+            "Conduct disorder",
+            "The bullying, aggressive behavior, and skipping classes are consistent with conduct disorder."
+          ],
+          [
+            "Substance use disorder",
+            "Smoking cigarettes and potential use of other substances could contribute to behavioral changes and school expulsion."
+          ],
+          [
+            "Major depressive disorder",
+            "While less prominent, the reported auditory hallucinations of worthlessness could be associated with severe depression."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out at this stage."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Adjustment Disorder with Mixed Disturbance of Emotions and Conduct",
+            "The behavioral changes coinciding with the father's departure and family stress strongly suggest this diagnosis."
+          ],
+          [
+            "Major Depressive Disorder",
+            "The reported auditory hallucinations of worthlessness, along with behavioral changes, could indicate a mood disorder."
+          ],
+          [
+            "Conduct Disorder",
+            "The bullying, aggression, and skipping school are consistent with conduct disorder, though the sudden onset is less typical."
+          ],
+          [
+            "Schizophrenia",
+            "Auditory hallucinations, though not fully characterized, raise the possibility of a psychotic disorder."
+          ],
+          [
+            "Brief Psychotic Disorder",
+            "The sudden onset of psychotic symptoms in the context of significant stress could indicate a brief psychotic episode."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Substance-Induced Psychotic Disorder",
+            "Urine drug screen is negative."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Adjustment Disorder with Mixed Disturbance of Emotions and Conduct",
+            "The behavioral changes, academic decline, and emotional distress following the parental separation strongly suggest this diagnosis."
+          ],
+          [
+            "Conduct Disorder",
+            "The bullying, aggression, and defiance towards authority figures are consistent with conduct disorder."
+          ],
+          [
+            "Major Depressive Disorder",
+            "The reported auditory hallucinations indicating worthlessness, along with behavioral changes and academic decline, could indicate depression."
+          ],
+          [
+            "Schizophrenia",
+            "Although less likely given the recent onset and clear stressor, the auditory hallucinations warrant consideration of a psychotic disorder."
+          ],
+          [
+            "Unspecified Trauma- and Stressor-Related Disorder",
+            "The significant life stressor of parental separation could be contributing to a broader stress-related disorder beyond just adjustment disorder."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Substance Use Disorder",
+            "Urine drug screen was negative."
+          ]
+        ]
+      },
+      "cf_id": "case_023_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports auditory hallucinations, which argues against acting out."
+    }
+  ]
+}

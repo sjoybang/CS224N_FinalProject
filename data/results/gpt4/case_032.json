@@ -1,0 +1,252 @@
+{
+  "case_id": "case_032",
+  "model": "gpt4",
+  "ground_truth": "Poliomyelitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Dengue Fever",
+          "The symptoms of fever, muscle pain, and weakness are consistent with dengue fever, which is endemic in Pakistan."
+        ],
+        [
+          "Malaria",
+          "Given the recent emigration from Pakistan, malaria is a possibility due to the presence of fever and muscle pain."
+        ],
+        [
+          "Typhoid Fever",
+          "The combination of fever and weakness in a child from Pakistan suggests typhoid fever, which is prevalent in that region."
+        ],
+        [
+          "Influenza",
+          "The symptoms of fever, muscle pain, and weakness are common in influenza, which can occur globally."
+        ],
+        [
+          "Leptospirosis",
+          "The presentation of fever, muscle pain, and weakness could indicate leptospirosis, especially if there was exposure to contaminated water."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "The combination of fever, muscle pain, weakness, flaccid paralysis, and lack of vaccination is highly suggestive of poliomyelitis, especially given the patient's recent emigration from a region where polio may still be endemic."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "The acute onset of flaccid paralysis and muscle weakness could indicate Guillain-Barr\u00e9 syndrome, although the presence of fever is less typical."
+        ],
+        [
+          "Acute Flaccid Myelitis",
+          "The presentation of acute flaccid paralysis in a child with fever could suggest acute flaccid myelitis, a condition that can mimic poliomyelitis."
+        ],
+        [
+          "Enterovirus Infection",
+          "Enteroviruses can cause fever, muscle pain, and neurological symptoms, including paralysis, particularly in unvaccinated individuals."
+        ],
+        [
+          "Botulism",
+          "Although less likely due to the presence of fever, botulism can cause muscle weakness and paralysis, and should be considered given the neurological symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Tetanus",
+          "The presence of flaccid paralysis rather than spastic paralysis makes tetanus unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "The combination of fever, flaccid paralysis, and lymphocytic pleocytosis in the CSF is highly suggestive of poliovirus infection, especially in an unvaccinated child from a region where polio is endemic."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "Although less likely due to the presence of fever and lymphocytosis, the flaccid paralysis could suggest an acute inflammatory demyelinating polyneuropathy."
+        ],
+        [
+          "Enterovirus infection",
+          "Other enteroviruses can cause similar symptoms, including fever and neurological involvement, with lymphocytic pleocytosis in the CSF."
+        ],
+        [
+          "West Nile Virus",
+          "This can cause fever, muscle weakness, and neurological symptoms, with CSF findings of lymphocytosis, although it is less common in this age group and region."
+        ],
+        [
+          "Acute Flaccid Myelitis",
+          "This condition presents with sudden onset of limb weakness and can be associated with viral infections, showing similar CSF findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial Meningitis",
+          "The normal glucose and protein levels in the CSF make bacterial meningitis unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "The confirmed presence of poliovirus in the throat swab and the clinical presentation of flaccid paralysis and fever strongly suggest poliomyelitis."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "Although less likely due to the confirmed poliovirus, the symptoms of weakness and paralysis could also be consistent with Guillain-Barr\u00e9 Syndrome."
+        ],
+        [
+          "Acute Flaccid Myelitis",
+          "The acute onset of flaccid paralysis and the EMG findings could suggest acute flaccid myelitis, although the confirmed poliovirus makes this less likely."
+        ],
+        [
+          "Enterovirus Infection",
+          "Other enteroviruses can cause similar symptoms, but the specific identification of poliovirus makes this less likely."
+        ],
+        [
+          "Transverse Myelitis",
+          "The presentation of paralysis and fever could suggest transverse myelitis, but the confirmed poliovirus and EMG findings make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Botulism",
+          "The presence of poliovirus and the specific neurological findings are inconsistent with botulism."
+        ],
+        [
+          "Multiple Sclerosis",
+          "The age of the patient and acute presentation with confirmed poliovirus make multiple sclerosis unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Dengue Fever",
+            "The symptoms of fever, muscle pain, and weakness are consistent with dengue fever, which is endemic in Pakistan."
+          ],
+          [
+            "Malaria",
+            "Given the recent emigration from Pakistan, malaria is a possibility due to its prevalence in the region and the symptoms presented."
+          ],
+          [
+            "Typhoid Fever",
+            "The combination of fever and weakness aligns with typhoid fever, which is common in South Asia."
+          ],
+          [
+            "Influenza",
+            "The symptoms of fever, muscle pain, and weakness are also typical of influenza, which can occur globally."
+          ],
+          [
+            "Leptospirosis",
+            "This condition can cause fever, muscle pain, and weakness, and may be considered due to potential exposure in different environments."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Poliomyelitis",
+            "The combination of fever, muscle weakness, and spastic paralysis in an unvaccinated child from Pakistan is highly suggestive of poliomyelitis."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "Although less common, Guillain-Barr\u00e9 Syndrome can present with muscle weakness and paralysis, but typically with hyporeflexia rather than hyperreflexia."
+          ],
+          [
+            "Acute Transverse Myelitis",
+            "This condition can cause fever, muscle weakness, and spastic paralysis due to inflammation of the spinal cord."
+          ],
+          [
+            "Multiple Sclerosis",
+            "While rare in this age group, multiple sclerosis can present with spastic paralysis and hyperreflexia."
+          ],
+          [
+            "Spinal Cord Tumor",
+            "A spinal cord tumor could cause spastic paralysis and hyperreflexia, though fever is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Tetanus",
+            "The presence of spastic paralysis and hyperreflexia without muscle spasms or lockjaw makes tetanus less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Poliomyelitis",
+            "The combination of fever, muscle weakness, spastic paralysis, hyperreflexia, and lymphocytic pleocytosis in the CSF is consistent with poliovirus infection, especially in an unvaccinated child from a region where polio may still be endemic."
+          ],
+          [
+            "Acute disseminated encephalomyelitis (ADEM)",
+            "The presentation of fever, neurological symptoms, and CSF lymphocytosis could suggest ADEM, particularly following viral infections, although the lack of preceding infection history makes it less likely."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome (GBS)",
+            "While GBS typically presents with areflexia, the presence of weakness and recent infection history could suggest a variant, though the CSF findings are not classic for GBS."
+          ],
+          [
+            "Transverse myelitis",
+            "The symptoms of paralysis and hyperreflexia with CSF lymphocytosis could indicate transverse myelitis, although the normal protein level is atypical."
+          ],
+          [
+            "Viral meningitis",
+            "The fever, CSF lymphocytosis, and neurological symptoms could suggest viral meningitis, though the specific presentation of paralysis and hyperreflexia is unusual."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial meningitis",
+            "The normal glucose and protein levels in the CSF make bacterial meningitis unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Poliomyelitis",
+            "The confirmed presence of poliovirus in the throat swab and EMG findings of acute denervation align with poliomyelitis, especially given the patient's unvaccinated status."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "Although less likely due to the confirmed poliovirus, the symptoms of weakness and paralysis could initially suggest this condition."
+          ],
+          [
+            "Acute Flaccid Myelitis",
+            "The presentation of paralysis and recent viral infection could suggest this, but the confirmed poliovirus makes it less likely."
+          ],
+          [
+            "Transverse Myelitis",
+            "The neurological symptoms could suggest this, but the confirmed poliovirus and EMG findings make it less likely."
+          ],
+          [
+            "Viral Meningitis",
+            "The CSF findings of lymphocytosis with normal glucose and protein levels could suggest this, but the specific identification of poliovirus points more towards poliomyelitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Meningitis",
+            "The normal glucose and protein levels in the CSF make bacterial meningitis unlikely."
+          ],
+          [
+            "Multiple Sclerosis",
+            "The age and acute presentation, along with the confirmed poliovirus, make this diagnosis unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_032_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The physical exam now reveals hyperreflexia and spastic paralysis, findings that are inconsistent with the flaccid paralysis seen in poliomyelitis."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "case_012",
+  "source": "MedQA-USMLE",
+  "original_question": "A 68-year-old man presents to the emergency department with leg pain. He states that the pain started suddenly while he was walking outside. The patient has a past medical history of diabetes, hypertension, obesity, and atrial fibrillation. His temperature is 99.3\u00b0F (37.4\u00b0C), blood pressure is 152/98 mmHg, pulse is 97/min, respirations are 15/min, and oxygen saturation is 99% on room air. Physical exam is notable for a cold and pale left leg. The patient\u2019s sensation is markedly diminished in the left leg when compared to the right, and his muscle strength is 1/5 in his left leg. Which of the following is the best next step in management?",
+  "ground_truth": "Acute arterial occlusion",
+  "base": {
+    "stage_1": "A 68-year-old man with a history of diabetes, hypertension, obesity, and atrial fibrillation presents to the emergency department complaining of sudden onset leg pain that began while walking.",
+    "stage_2": "The patient's temperature is 99.3\u00b0F, blood pressure is 152/98 mmHg, pulse is 97/min, respirations are 15/min, and oxygen saturation is 99% on room air. Examination of the left leg reveals it is cold and pale. Sensation is markedly diminished compared to the right leg, and muscle strength is 1/5.",
+    "stage_3": "Labs are drawn and sent to the lab. A CTA of the lower extremities reveals an occlusion of the left common femoral artery.",
+    "stage_4": "The vascular surgery team confirms the CTA findings and recommends immediate anticoagulation to prevent further thrombus propagation while preparing the patient for definitive intervention."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of palpable pulses in the affected leg argues against acute arterial occlusion.",
+      "rules_out": "Acute arterial occlusion",
+      "stage_1": "A 68-year-old man with a history of diabetes, hypertension, obesity, and atrial fibrillation presents to the emergency department complaining of sudden onset leg pain that began while walking.",
+      "stage_2": "The patient's temperature is 99.3\u00b0F, blood pressure is 152/98 mmHg, pulse is 97/min, respirations are 15/min, and oxygen saturation is 99% on room air. Examination of the left leg reveals it is cold and pale. Sensation is markedly diminished compared to the right leg, and muscle strength is 1/5. However, the dorsalis pedis and posterior tibial pulses are 2+ and easily palpable.",
+      "stage_3": "Labs are drawn and sent to the lab. A CTA of the lower extremities reveals an occlusion of the left common femoral artery.",
+      "stage_4": "The vascular surgery team confirms the CTA findings and recommends immediate anticoagulation to prevent further thrombus propagation while preparing the patient for definitive intervention.",
+      "cf_id": "case_012_cf_a"
+    }
+  ]
+}

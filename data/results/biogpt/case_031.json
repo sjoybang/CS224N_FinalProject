@@ -1,0 +1,126 @@
+{
+  "case_id": "case_031",
+  "model": "biogpt",
+  "ground_truth": "Diphtheria",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 6-year-old male, recent immigrant from Asia, presents to the emergency department with dyspnea. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 6-year-old male, recent immigrant from Asia, presents to the emergency department with dyspnea. [Stage 2] On physical examination, a gray pseudomembrane is noted in the patient's oropharynx. Cervical lymphadenopathy is also present. Vital signs show elevated heart rate and respiratory rate. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 6-year-old male, recent immigrant from Asia, presents to the emergency department with dyspnea. [Stage 2] On physical examination, a gray pseudomembrane is noted in the patient's oropharynx. Cervical lymphadenopathy is also present. Vital signs show elevated heart rate and respiratory rate. [Stage 3] Laboratory studies reveal elevated inflammatory markers. An EKG shows evidence of myocarditis. Chest X-ray is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 6-year-old male, recent immigrant from Asia, presents to the emergency department with dyspnea. [Stage 2] On physical examination, a gray pseudomembrane is noted in the patient's oropharynx. Cervical lymphadenopathy is also present. Vital signs show elevated heart rate and respiratory rate. [Stage 3] Laboratory studies reveal elevated inflammatory markers. An EKG shows evidence of myocarditis. Chest X-ray is unremarkable. [Stage 4] Culture of the oropharyngeal membrane grows Corynebacterium diphtheriae. Toxin assay is positive for diphtheria toxin. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 6-year-old male, recent immigrant from Asia, presents to the emergency department with dyspnea. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 6-year-old male, recent immigrant from Asia, presents to the emergency department with dyspnea. [Stage 2] On physical examination, the oropharynx appears normal without any pseudomembrane. Cervical lymphadenopathy is also present. Vital signs show elevated heart rate and respiratory rate. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 6-year-old male, recent immigrant from Asia, presents to the emergency department with dyspnea. [Stage 2] On physical examination, the oropharynx appears normal without any pseudomembrane. Cervical lymphadenopathy is also present. Vital signs show elevated heart rate and respiratory rate. [Stage 3] Laboratory studies reveal elevated inflammatory markers. An EKG shows evidence of myocarditis. Chest X-ray is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 6-year-old male, recent immigrant from Asia, presents to the emergency department with dyspnea. [Stage 2] On physical examination, the oropharynx appears normal without any pseudomembrane. Cervical lymphadenopathy is also present. Vital signs show elevated heart rate and respiratory rate. [Stage 3] Laboratory studies reveal elevated inflammatory markers. An EKG shows evidence of myocarditis. Chest X-ray is unremarkable. [Stage 4] Culture of the oropharyngeal membrane grows Corynebacterium diphtheriae. Toxin assay is positive for diphtheria toxin. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_031_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a pseudomembrane in the oropharynx makes diphtheria much less likely."
+    }
+  ]
+}

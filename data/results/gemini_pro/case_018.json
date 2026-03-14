@@ -1,0 +1,278 @@
+{
+  "case_id": "case_018",
+  "model": "gemini_pro",
+  "ground_truth": "Unregulated expression of the ABL1 gene",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Anemia",
+          "A very common cause of fatigue due to reduced oxygen-carrying capacity of the blood, particularly in women."
+        ],
+        [
+          "Hypothyroidism",
+          "This condition is prevalent in middle-aged women and causes a generalized slowing of metabolism, leading to fatigue."
+        ],
+        [
+          "Major Depressive Disorder",
+          "Fatigue is a core neurovegetative symptom of depression, which is a common cause of chronic constitutional symptoms."
+        ],
+        [
+          "Obstructive Sleep Apnea",
+          "Fragmented sleep and intermittent hypoxia result in non-restorative sleep and significant daytime fatigue."
+        ],
+        [
+          "Diabetes Mellitus Type 2",
+          "The insidious onset of hyperglycemia and metabolic dysfunction can manifest as persistent fatigue."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute viral infection",
+          "The 6-month duration of symptoms is inconsistent with an acute, self-limiting illness."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic Myeloid Leukemia (CML)",
+          "This myeloproliferative neoplasm classically presents in middle age with fatigue, splenomegaly, and anemia."
+        ],
+        [
+          "Primary Myelofibrosis",
+          "This condition causes bone marrow fibrosis, leading to extramedullary hematopoiesis in the spleen (splenomegaly), anemia (pallor/fatigue), and constitutional symptoms like fever."
+        ],
+        [
+          "Hairy Cell Leukemia",
+          "This chronic B-cell leukemia is characterized by pancytopenia (causing fatigue and pallor) and significant splenomegaly."
+        ],
+        [
+          "Non-Hodgkin Lymphoma",
+          "Certain types of lymphoma can infiltrate the spleen, causing splenomegaly along with B symptoms such as fever and fatigue."
+        ],
+        [
+          "Subacute Bacterial Endocarditis",
+          "This chronic infection can present with low-grade fevers, anemia of chronic disease, and splenomegaly due to immune complex deposition."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Leukemia",
+          "The chronic 6-month duration of fatigue makes an acute process, which typically has a more rapid and severe onset, much less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Myeloid Leukemia (CML)",
+          "The combination of marked leukocytosis with a left shift, basophilia, splenomegaly, and a low leukocyte alkaline phosphatase score is classic for CML."
+        ],
+        [
+          "Atypical Chronic Myeloid Leukemia (aCML)",
+          "This myelodysplastic/myeloproliferative neoplasm can mimic CML but is defined by the absence of the BCR-ABL1 fusion gene."
+        ],
+        [
+          "Chronic Neutrophilic Leukemia (CNL)",
+          "This is a rare myeloproliferative neoplasm causing high neutrophil counts, but it typically lacks significant basophilia and has a high LAP score."
+        ],
+        [
+          "Primary Myelofibrosis (prefibrotic stage)",
+          "This myeloproliferative neoplasm can present with leukocytosis and splenomegaly, but the LAP score is usually normal to high."
+        ],
+        [
+          "Leukemoid Reaction",
+          "This is a severe reactive leukocytosis that can mimic CML, but it is strongly argued against by the chronicity of symptoms and the low LAP score."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Myeloid Leukemia (AML)",
+          "The peripheral smear shows a spectrum of maturing granulocytes rather than a predominance of blasts (>20%)."
+        ],
+        [
+          "Chronic Lymphocytic Leukemia (CLL)",
+          "The leukocytosis is of the myeloid/granulocytic lineage, not the lymphoid lineage."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic Myeloid Leukemia (CML)",
+          "The patient's presentation of splenomegaly, marked leukocytosis with basophilia, and low LAP score is definitively confirmed by the pathognomonic Philadelphia chromosome."
+        ],
+        [
+          "Leukemoid Reaction",
+          "This reactive process can cause marked leukocytosis with a left shift but is ruled out by the low leukocyte alkaline phosphatase score and the presence of the clonal Philadelphia chromosome."
+        ],
+        [
+          "Chronic Myelomonocytic Leukemia (CMML)",
+          "This myelodysplastic/myeloproliferative neoplasm can present with splenomegaly and leukocytosis but is characterized by significant monocytosis and lacks the Philadelphia chromosome."
+        ],
+        [
+          "Atypical Chronic Myeloid Leukemia (aCML)",
+          "This diagnosis is reserved for CML-like presentations that are, by definition, negative for the Philadelphia chromosome and BCR-ABL1 fusion gene."
+        ],
+        [
+          "Primary Myelofibrosis",
+          "While this myeloproliferative neoplasm causes splenomegaly and anemia, the blood smear findings are more classic for CML, and it is excluded by the presence of the Philadelphia chromosome."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Myeloid Leukemia (AML)",
+          "The peripheral smear shows a spectrum of granulocyte maturation, not a predominance of blasts (>20%)."
+        ],
+        [
+          "Chronic Lymphocytic Leukemia (CLL)",
+          "The leukocytosis is of the granulocytic lineage, not the mature lymphocytic lineage seen in CLL."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Anemia",
+            "Iron deficiency anemia is a very common cause of fatigue in women, particularly in the perimenopausal age range."
+          ],
+          [
+            "Hypothyroidism",
+            "This endocrine disorder commonly presents with fatigue and is most prevalent in middle-aged women."
+          ],
+          [
+            "Depression",
+            "Fatigue is a core somatic symptom of major depressive disorder, which is a common condition."
+          ],
+          [
+            "Menopause",
+            "Hormonal fluctuations during the menopausal transition are a frequent physiological cause of fatigue and sleep disturbance in women of this age."
+          ],
+          [
+            "Obstructive Sleep Apnea",
+            "Unrestorative sleep due to intermittent airway obstruction is a common and often overlooked cause of significant daytime fatigue."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Viral Syndrome",
+            "The 6-month duration of symptoms is inconsistent with an acute, self-limited infection."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Lymphoma",
+            "This malignancy is a primary consideration given the presence of a B symptom (fever), chronic fatigue, and pallor suggesting anemia."
+          ],
+          [
+            "Tuberculosis",
+            "This chronic infection classically presents with an insidious onset of fatigue, low-grade fevers, and anemia of chronic disease."
+          ],
+          [
+            "Systemic Lupus Erythematosus",
+            "This autoimmune disease is common in this demographic and can manifest with constitutional symptoms like fatigue, fever, and hematologic abnormalities."
+          ],
+          [
+            "Occult Malignancy",
+            "A solid tumor, such as renal cell carcinoma, can cause a paraneoplastic syndrome with fever, fatigue, and anemia."
+          ],
+          [
+            "Subacute Bacterial Endocarditis",
+            "This indolent infection can cause prolonged low-grade fevers, fatigue, and pallor from anemia of chronic inflammation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic Myeloid Leukemia",
+            "The absence of splenomegaly makes this diagnosis highly unlikely."
+          ],
+          [
+            "Hypothyroidism",
+            "This condition does not account for the patient's intermittent fevers."
+          ],
+          [
+            "Chronic Fatigue Syndrome",
+            "The presence of objective findings like pallor and fever points towards an organic disease process."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic Myeloid Leukemia (CML)",
+            "The combination of marked leukocytosis with a left shift, basophilia, and a low leukocyte alkaline phosphatase score is classic for CML."
+          ],
+          [
+            "Leukemoid Reaction",
+            "This reactive process can cause marked leukocytosis and a left shift, but it is typically associated with a high LAP score, making it less likely."
+          ],
+          [
+            "Atypical Chronic Myeloid Leukemia (aCML)",
+            "This myelodysplastic/myeloproliferative neoplasm can present similarly to CML but is defined by the absence of the Philadelphia chromosome (BCR-ABL1)."
+          ],
+          [
+            "Chronic Myelomonocytic Leukemia (CMML)",
+            "This is a consideration in the myelodysplastic/myeloproliferative category, characterized by persistent monocytosis, which can also present with leukocytosis and anemia."
+          ],
+          [
+            "Chronic Neutrophilic Leukemia (CNL)",
+            "This rare myeloproliferative neoplasm causes high neutrophil counts, but typically lacks the significant left shift and basophilia seen here and usually has a high LAP score."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Myeloid Leukemia (AML)",
+            "The peripheral smear shows a spectrum of maturing granulocytes rather than a predominance of blasts (>20%), and the 6-month history suggests a chronic process."
+          ],
+          [
+            "Chronic Lymphocytic Leukemia (CLL)",
+            "The leukocytosis is due to granulocytes (myelocytes, metamyelocytes), not a proliferation of mature lymphocytes."
+          ],
+          [
+            "Aplastic Anemia",
+            "This condition is characterized by pancytopenia, which is inconsistent with the patient's profound leukocytosis."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic Myeloid Leukemia (CML)",
+            "The presence of the Philadelphia chromosome is pathognomonic for CML, which perfectly explains the marked leukocytosis, left-shifted smear, basophilia, and low LAP score."
+          ],
+          [
+            "Leukemoid Reaction",
+            "This reactive process can cause marked leukocytosis and a left shift, but it is typically associated with a high LAP score and lacks the Philadelphia chromosome."
+          ],
+          [
+            "Chronic Neutrophilic Leukemia (CNL)",
+            "This is a rare myeloproliferative neoplasm causing high neutrophil counts, but it lacks the significant basophilia and the Philadelphia chromosome seen in this case."
+          ],
+          [
+            "Atypical Chronic Myeloid Leukemia (aCML)",
+            "This myelodysplastic/myeloproliferative neoplasm can mimic CML but is defined by the absence of the Philadelphia chromosome."
+          ],
+          [
+            "Chronic Myelomonocytic Leukemia (CMML)",
+            "This condition can cause leukocytosis and constitutional symptoms, but it is characterized by monocytosis rather than the granulocytic proliferation seen here and is Philadelphia chromosome-negative."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Leukemoid Reaction",
+            "This is ruled out by the low leukocyte alkaline phosphatase (LAP) score and the definitive presence of the Philadelphia chromosome, which confirms a clonal malignancy."
+          ]
+        ]
+      },
+      "cf_id": "case_018_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of splenomegaly makes CML less likely, as it is a common finding due to extramedullary hematopoiesis."
+    }
+  ]
+}

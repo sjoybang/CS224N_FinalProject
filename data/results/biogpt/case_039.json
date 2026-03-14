@@ -1,0 +1,126 @@
+{
+  "case_id": "case_039",
+  "model": "biogpt",
+  "ground_truth": "Penetrating neck trauma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound. [Stage 2] The patient is afebrile with a blood pressure of 120 / 84 mmHg, a pulse of 90 / min, respirations of 15 / min, and an oxygen saturation of 98% on room air. Examination reveals a 3 cm laceration 1 cm inferior to the right mastoid process. Breath sounds are clear bilaterally. The patient is protecting his airway, but there is no stridor or apparent respiratory distress. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound. [Stage 2] The patient is afebrile with a blood pressure of 120 / 84 mmHg, a pulse of 90 / min, respirations of 15 / min, and an oxygen saturation of 98% on room air. Examination reveals a 3 cm laceration 1 cm inferior to the right mastoid process. Breath sounds are clear bilaterally. The patient is protecting his airway, but there is no stridor or apparent respiratory distress. [Stage 3] Initial laboratory results including a complete blood count and basic metabolic panel are within normal limits. A chest x-ray does not reveal any pneumothorax or mediastinal widening. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound. [Stage 2] The patient is afebrile with a blood pressure of 120 / 84 mmHg, a pulse of 90 / min, respirations of 15 / min, and an oxygen saturation of 98% on room air. Examination reveals a 3 cm laceration 1 cm inferior to the right mastoid process. Breath sounds are clear bilaterally. The patient is protecting his airway, but there is no stridor or apparent respiratory distress. [Stage 3] Initial laboratory results including a complete blood count and basic metabolic panel are within normal limits. A chest x-ray does not reveal any pneumothorax or mediastinal widening. [Stage 4] CT angiography reveals injury to the vertebral artery. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound. [Stage 2] The patient is afebrile with a blood pressure of 120 / 84 mmHg, a pulse of 90 / min, respirations of 15 / min, and an oxygen saturation of 98% on room air. Examination reveals a 3 cm laceration 1 cm inferior to the right mastoid process. Breath sounds are clear bilaterally. The patient is protecting his airway, but there is no stridor or apparent respiratory distress. Subcutaneous emphysema is palpated around the wound. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound. [Stage 2] The patient is afebrile with a blood pressure of 120 / 84 mmHg, a pulse of 90 / min, respirations of 15 / min, and an oxygen saturation of 98% on room air. Examination reveals a 3 cm laceration 1 cm inferior to the right mastoid process. Breath sounds are clear bilaterally. The patient is protecting his airway, but there is no stridor or apparent respiratory distress. Subcutaneous emphysema is palpated around the wound. [Stage 3] Initial laboratory results including a complete blood count and basic metabolic panel are within normal limits. A chest x-ray does not reveal any pneumothorax or mediastinal widening. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound. [Stage 2] The patient is afebrile with a blood pressure of 120 / 84 mmHg, a pulse of 90 / min, respirations of 15 / min, and an oxygen saturation of 98% on room air. Examination reveals a 3 cm laceration 1 cm inferior to the right mastoid process. Breath sounds are clear bilaterally. The patient is protecting his airway, but there is no stridor or apparent respiratory distress. Subcutaneous emphysema is palpated around the wound. [Stage 3] Initial laboratory results including a complete blood count and basic metabolic panel are within normal limits. A chest x-ray does not reveal any pneumothorax or mediastinal widening. [Stage 4] CT angiography reveals injury to the vertebral artery. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_039_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of subcutaneous emphysema on exam argues against isolated vascular injury and raises concern for esophageal or tracheal injury."
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "case_id": "case_052",
+  "model": "gpt4",
+  "ground_truth": "Medial collateral ligament",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Meniscal tear",
+          "The mechanism of injury during basketball and localized knee pain suggest a possible meniscal injury."
+        ],
+        [
+          "Anterior cruciate ligament (ACL) tear",
+          "The acute knee pain following a sports-related injury is consistent with an ACL tear."
+        ],
+        [
+          "Medial collateral ligament (MCL) sprain",
+          "Knee pain after a sports injury could indicate an MCL sprain, especially if there was a valgus force."
+        ],
+        [
+          "Patellar dislocation",
+          "Sudden knee pain during sports can be due to a patellar dislocation, particularly in young athletes."
+        ],
+        [
+          "Knee contusion",
+          "Direct trauma to the knee during basketball could result in a contusion, causing localized pain."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Medial Collateral Ligament (MCL) Sprain",
+          "The valgus stress test demonstrating laxity suggests injury to the MCL."
+        ],
+        [
+          "Lateral Meniscus Tear",
+          "The mechanism of injury and knee pain could indicate a lateral meniscus tear, although there is no swelling."
+        ],
+        [
+          "Patellar Subluxation",
+          "The lateral impact could have caused transient patellar subluxation, though no current instability is noted."
+        ],
+        [
+          "Bone Contusion",
+          "Direct impact trauma could result in a bone contusion, explaining the pain without swelling."
+        ],
+        [
+          "Iliotibial Band Syndrome",
+          "Although less likely, lateral knee pain could be due to iliotibial band irritation from the impact."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior Cruciate Ligament (ACL) Tear",
+          "Lachman's test is negative with a firm endpoint, ruling out ACL tear."
+        ],
+        [
+          "Posterior Cruciate Ligament (PCL) Tear",
+          "The posterior drawer test is negative with a firm endpoint, ruling out PCL tear."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Medial Collateral Ligament (MCL) Sprain",
+          "The MRI shows hyperintensity along the MCL, indicating a sprain, and the valgus stress test demonstrates laxity, which is consistent with MCL injury."
+        ],
+        [
+          "Meniscal Tear",
+          "Although not directly indicated by the MRI findings, meniscal tears can occur with knee trauma and may not always show immediate swelling."
+        ],
+        [
+          "Bone Contusion",
+          "The collision during the basketball game could have caused a bone bruise, which might not show immediate swelling but can cause pain."
+        ],
+        [
+          "Patellar Subluxation",
+          "The mechanism of injury and knee pain could suggest patellar subluxation, although the MRI does not show specific findings for this."
+        ],
+        [
+          "Iliotibial Band Syndrome",
+          "While less likely given the acute nature of the injury, lateral knee pain could be related to iliotibial band issues exacerbated by trauma."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior Cruciate Ligament (ACL) Tear",
+          "The MRI shows no disruption of the ACL, and Lachman's test is negative with a firm endpoint."
+        ],
+        [
+          "Posterior Cruciate Ligament (PCL) Tear",
+          "The MRI shows no disruption of the PCL, and the posterior drawer test is negative with a firm endpoint."
+        ],
+        [
+          "Lateral Collateral Ligament (LCL) Injury",
+          "The MRI shows no disruption of the LCL, and the varus stress test is negative."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Medial Collateral Ligament Sprain",
+          "The valgus stress test shows laxity, and MRI confirms hyperintensity along the medial collateral ligament, consistent with a sprain."
+        ],
+        [
+          "Meniscal Tear",
+          "Although less likely due to the absence of joint line tenderness or locking, meniscal injury can occur with knee trauma."
+        ],
+        [
+          "Patellar Subluxation",
+          "Trauma to the knee can cause patellar instability, though the lack of swelling and specific patellar tests makes this less likely."
+        ],
+        [
+          "Bone Contusion",
+          "Direct impact to the knee could cause a bone bruise, but MRI findings do not support this."
+        ],
+        [
+          "Lateral Collateral Ligament Sprain",
+          "While the varus stress test is negative, lateral knee trauma could still cause a mild sprain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior Cruciate Ligament Tear",
+          "Lachman's test is negative with a firm endpoint, and MRI shows no disruption."
+        ],
+        [
+          "Posterior Cruciate Ligament Tear",
+          "The posterior drawer test is negative with a firm endpoint, and MRI shows no disruption."
+        ],
+        [
+          "Lateral Collateral Ligament Tear",
+          "MRI shows no disruption, and the varus stress test is negative."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meniscal tear",
+            "The mechanism of injury during basketball and localized knee pain suggest a possible meniscal tear."
+          ],
+          [
+            "Anterior cruciate ligament (ACL) injury",
+            "The acute knee pain following a sports-related incident is consistent with an ACL injury."
+          ],
+          [
+            "Medial collateral ligament (MCL) sprain",
+            "Knee pain after a sports injury could indicate an MCL sprain, especially if there was a valgus force."
+          ],
+          [
+            "Patellar dislocation",
+            "Sudden knee pain during sports can be due to a patellar dislocation, particularly in young athletes."
+          ],
+          [
+            "Knee contusion",
+            "Direct trauma to the knee during basketball could result in a contusion, causing localized pain."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Medial Collateral Ligament (MCL) Sprain",
+            "The valgus stress test demonstrating laxity suggests injury to the MCL."
+          ],
+          [
+            "Lateral Meniscus Tear",
+            "The mechanism of injury and presence of effusion could indicate a meniscal tear."
+          ],
+          [
+            "Anterior Cruciate Ligament (ACL) Sprain",
+            "Although Lachman's test is negative, ACL injury can still be considered due to the knee effusion."
+          ],
+          [
+            "Bone Contusion",
+            "The direct impact to the knee could have caused a bone bruise, contributing to pain and effusion."
+          ],
+          [
+            "Patellar Subluxation",
+            "The trauma and effusion could be consistent with a transient patellar subluxation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Lateral Collateral Ligament (LCL) Sprain",
+            "The negative varus stress test rules out significant LCL injury."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Medial Collateral Ligament (MCL) Sprain",
+            "The MRI shows hyperintensity along the MCL, indicating a sprain, and the valgus stress test demonstrates laxity, which is consistent with MCL injury."
+          ],
+          [
+            "Knee Effusion",
+            "The large effusion noted on examination is consistent with trauma-induced fluid accumulation in the knee joint."
+          ],
+          [
+            "Bone Contusion",
+            "The collision during the basketball game could have caused a bone bruise, which may not be visible on MRI but can contribute to pain and effusion."
+          ],
+          [
+            "Meniscal Tear",
+            "Although not directly indicated by the MRI, meniscal tears can occur with knee trauma and present with effusion and pain."
+          ],
+          [
+            "Patellar Subluxation",
+            "The mechanism of injury and knee effusion could suggest transient patellar subluxation, although less likely given the specific findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anterior Cruciate Ligament (ACL) Tear",
+            "The MRI shows no disruption of the ACL, and Lachman's test is negative with a firm endpoint."
+          ],
+          [
+            "Posterior Cruciate Ligament (PCL) Tear",
+            "The MRI shows no disruption of the PCL, and the posterior drawer test is negative with a firm endpoint."
+          ],
+          [
+            "Lateral Collateral Ligament (LCL) Injury",
+            "The MRI shows no disruption of the LCL, and the varus stress test is negative."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Medial Collateral Ligament Sprain",
+            "The MRI shows hyperintensity along the medial collateral ligament, and the valgus stress test demonstrates laxity, consistent with a sprain."
+          ],
+          [
+            "Meniscal Tear",
+            "Knee effusion and trauma history could suggest a meniscal injury, although MRI findings do not confirm this."
+          ],
+          [
+            "Patellar Subluxation",
+            "The mechanism of injury and knee effusion could suggest patellar instability, though not confirmed by MRI."
+          ],
+          [
+            "Bone Contusion",
+            "Trauma from collision could cause bone bruising, which might not be evident on initial MRI."
+          ],
+          [
+            "Anterior Cruciate Ligament Sprain",
+            "Despite negative Lachman's test, ACL sprain could be considered due to knee trauma, though MRI shows no disruption."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Lateral Collateral Ligament Injury",
+            "MRI and clinical tests show no involvement of the lateral collateral ligament."
+          ],
+          [
+            "Posterior Cruciate Ligament Injury",
+            "Negative posterior drawer test and MRI findings rule out PCL injury."
+          ]
+        ]
+      },
+      "cf_id": "case_052_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of a large effusion argues against an isolated MCL injury, which typically presents with minimal to no effusion."
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "case_id": "case_019",
+  "model": "gemini_pro",
+  "ground_truth": "Delirium tremens",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Pulmonary Embolism",
+          "Recent surgery is a major risk factor for this life-threatening condition, which often presents with tachycardia."
+        ],
+        [
+          "Hypovolemia",
+          "Post-surgical hemorrhage is a potential complication that can cause a compensatory tachycardia due to blood loss."
+        ],
+        [
+          "Post-operative Atrial Fibrillation",
+          "Surgery is a common trigger for new-onset atrial fibrillation, which is perceived as a racing heart."
+        ],
+        [
+          "Inadequate Pain Control",
+          "Uncontrolled post-operative pain is a potent sympathetic stimulus that frequently causes tachycardia."
+        ],
+        [
+          "Anxiety",
+          "The stress of surgery and hospitalization is a common cause of anxiety-induced tachycardia."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Sepsis",
+          "The patient's fever, tachycardia, tachypnea, and altered mental status in the context of a recent intra-abdominal infection and surgery are highly suggestive of sepsis."
+        ],
+        [
+          "Alcohol Withdrawal Syndrome",
+          "The constellation of autonomic hyperactivity (tachycardia, hypertension, fever, sweating) and agitated delirium is classic for delirium tremens, which typically occurs 2-4 days after alcohol cessation."
+        ],
+        [
+          "Pulmonary Embolism",
+          "Recent surgery is a major risk factor for pulmonary embolism, which can present acutely with tachycardia, tachypnea, and distress."
+        ],
+        [
+          "Drug-induced delirium",
+          "The patient's altered mental status could be a neurotoxic side effect of medications, particularly the IV piperacillin-tazobactam she is receiving."
+        ],
+        [
+          "Uncontrolled Pain/Anxiety",
+          "Severe post-operative pain or anxiety can cause a hyperadrenergic state with tachycardia, hypertension, and agitation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Malignant Hyperthermia",
+          "This is an anesthetic complication that occurs intra-operatively or immediately post-operatively, not three days later."
+        ],
+        [
+          "Acute Cholecystitis",
+          "The patient is post-cholecystectomy, meaning her gallbladder has been removed."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Alcohol withdrawal",
+          "The patient's autonomic hyperactivity (tachycardia, hypertension, fever, diaphoresis) and neurologic signs (agitation, disorientation) are classic for withdrawal, which is common 3 days after hospital admission and surgical stress."
+        ],
+        [
+          "Sepsis",
+          "The patient has multiple risk factors (recent surgery, cholangitis, IV line) and presents with fever, tachycardia, tachypnea, and altered mental status, which are all signs of a systemic inflammatory response to infection."
+        ],
+        [
+          "Pulmonary embolism",
+          "Post-operative immobility is a major risk factor, and the acute onset of tachycardia, tachypnea, and distress are classic symptoms."
+        ],
+        [
+          "Thyroid storm",
+          "The combination of high fever, tachycardia, hypertension, and agitated delirium is a textbook presentation for this endocrine emergency, which can be precipitated by surgery or infection."
+        ],
+        [
+          "Adverse drug reaction",
+          "The patient's encephalopathy and agitation could be a neurotoxic side effect of her piperacillin-tazobactam therapy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Intra-abdominal surgical complication",
+          "A CT scan of the abdomen showed no signs of abscess, leak, or other surgical complications."
+        ],
+        [
+          "Hypoglycemia",
+          "A normal comprehensive metabolic panel rules out low blood sugar as the cause."
+        ],
+        [
+          "Significant electrolyte imbalance",
+          "A normal comprehensive metabolic panel rules out major electrolyte abnormalities."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Alcohol withdrawal delirium",
+          "The patient's abrupt cessation of heavy daily alcohol use three days prior perfectly explains the autonomic hyperactivity and delirium."
+        ],
+        [
+          "Sepsis",
+          "The patient's recent surgery for cholangitis, fever, tachycardia, and altered mental status are concerning for an ongoing or new infection despite a normal WBC and CT."
+        ],
+        [
+          "Pulmonary Embolism",
+          "The post-operative state is a significant risk factor for PE, which can present with acute tachycardia and distress."
+        ],
+        [
+          "Thyroid storm",
+          "This condition can mimic the patient's presentation of hyperthermia, tachycardia, hypertension, and altered mental status."
+        ],
+        [
+          "Drug-induced reaction",
+          "The patient's symptoms of fever and encephalopathy could be an adverse reaction to her current piperacillin-tazobactam therapy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Post-operative intra-abdominal abscess/bile leak",
+          "The CT scan of the abdomen showed no signs of surgical complications."
+        ],
+        [
+          "Anemia",
+          "The complete blood count was normal."
+        ],
+        [
+          "Electrolyte abnormality",
+          "The comprehensive metabolic panel was normal."
+        ],
+        [
+          "Hypovolemia",
+          "The patient is hypertensive, not hypotensive."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Pulmonary Embolism",
+            "Surgery is a major risk factor for venous thromboembolism, and tachycardia is a common presenting sign."
+          ],
+          [
+            "Post-operative Hemorrhage",
+            "Internal bleeding is a potential complication of cholecystectomy that causes hypovolemia and compensatory tachycardia."
+          ],
+          [
+            "Sepsis",
+            "Post-operative infection can lead to a systemic inflammatory response, of which tachycardia is a key diagnostic criterion."
+          ],
+          [
+            "Atrial Fibrillation",
+            "The physiologic stress of surgery can precipitate new-onset atrial fibrillation, which is often perceived as a racing heart."
+          ],
+          [
+            "Anxiety/Pain Reaction",
+            "Inadequately controlled pain or psychological stress are very common in the post-operative setting and cause tachycardia via sympathetic activation."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Sepsis",
+            "The patient has fever, tachycardia, tachypnea, and altered mental status in the context of a recent surgery for cholangitis."
+          ],
+          [
+            "Opioid Toxicity",
+            "The patient is post-operative and presents with somnolence and constricted pupils, two key features of opioid-induced CNS depression."
+          ],
+          [
+            "Alcohol Withdrawal Syndrome",
+            "The presentation of autonomic hyperactivity (tachycardia, hypertension, fever, diaphoresis) and altered mental status is classic for withdrawal in a post-operative patient."
+          ],
+          [
+            "Pulmonary Embolism",
+            "Post-operative status is a major risk factor for this condition, which can present with acute tachycardia, tachypnea, and altered mental status from hypoxia."
+          ],
+          [
+            "Drug-induced Serotonin Syndrome",
+            "The combination of autonomic instability and altered mental status is consistent with this syndrome, which could be precipitated by hospital-administered medications."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anaphylaxis",
+            "This diagnosis is unlikely as the patient is hypertensive, whereas anaphylaxis typically causes profound hypotension."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Serotonin Syndrome",
+            "The patient exhibits a triad of autonomic hyperactivity (fever, tachycardia, hypertension), altered mental status, and miosis while on piperacillin-tazobactam, a potential precipitant."
+          ],
+          [
+            "Sepsis with Encephalopathy",
+            "Fever, tachycardia, tachypnea, and altered mental status in a post-operative patient are hallmark signs of sepsis, even with a normal white blood cell count."
+          ],
+          [
+            "Piperacillin-tazobactam-induced encephalopathy",
+            "The patient's altered mental status developed after initiating the antibiotic, which is a known cause of neurotoxicity independent of serotonin syndrome."
+          ],
+          [
+            "Opioid Intoxication",
+            "Somnolence and constricted pupils are classic signs of opioid toxicity, which is common in post-operative patients, though the concurrent autonomic hyperactivity is atypical."
+          ],
+          [
+            "Neuroleptic Malignant Syndrome",
+            "This diagnosis is considered for the combination of fever, autonomic instability, and altered mental status, possibly triggered by unlisted post-operative antiemetics or antipsychotics."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Intra-abdominal abscess or bile leak",
+            "A normal post-operative abdominal CT scan makes a significant surgical complication unlikely."
+          ],
+          [
+            "Malignant Hyperthermia",
+            "The onset 3 days post-operatively is outside the typical time frame for this anesthetic complication."
+          ],
+          [
+            "Alcohol or Opioid Withdrawal",
+            "The patient's constricted pupils are inconsistent with the mydriasis typically seen in these withdrawal states."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Alcohol Withdrawal Delirium",
+            "The patient's abrupt cessation of heavy daily alcohol use three days prior perfectly explains the timing and constellation of autonomic hyperactivity and altered mental status."
+          ],
+          [
+            "Sepsis",
+            "The patient's recent surgery for cholangitis, fever, tachycardia, and altered mental status are concerning for an ongoing or new infection."
+          ],
+          [
+            "Pulmonary Embolism",
+            "Tachycardia and altered mental status in a post-operative patient are concerning for a pulmonary embolism, a major post-surgical complication."
+          ],
+          [
+            "Hepatic Encephalopathy",
+            "The history of heavy alcohol use and transaminitis raises the possibility of underlying liver dysfunction causing altered mental status."
+          ],
+          [
+            "Drug-induced delirium",
+            "The patient's altered mental status could be an adverse neurotoxic effect of her piperacillin-tazobactam or other hospital medications."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Intra-abdominal surgical complication",
+            "The normal abdominal CT scan effectively rules out a significant abscess or bile leak."
+          ],
+          [
+            "Hypoglycemia",
+            "A normal comprehensive metabolic panel rules out low blood sugar as the cause."
+          ]
+        ]
+      },
+      "cf_id": "case_019_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are now noted to be constricted and she is somnolent, findings that argue against delirium tremens."
+    }
+  ]
+}

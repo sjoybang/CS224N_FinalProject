@@ -1,0 +1,272 @@
+{
+  "case_id": "case_023",
+  "model": "gemini_pro",
+  "ground_truth": "Acting out",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Substance Use Disorder",
+          "Behavioral changes are a hallmark presentation in adolescents, and substance use is highly prevalent in this age group."
+        ],
+        [
+          "Major Depressive Disorder",
+          "Irritability, social withdrawal, and academic decline are common depressive equivalents in adolescents presenting as behavioral changes."
+        ],
+        [
+          "Schizophrenia",
+          "The patient's age is classic for the prodromal phase or first episode of schizophrenia, which often begins with non-specific behavioral changes and functional decline."
+        ],
+        [
+          "Anxiety Disorder",
+          "Social withdrawal, avoidance, and irritability can be manifestations of an underlying anxiety disorder, which is common in teenagers."
+        ],
+        [
+          "Adjustment Disorder",
+          "The behavioral changes may represent a maladaptive response to an identifiable psychosocial stressor, which is common during adolescence."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Conduct Disorder",
+          "The patient's pattern of aggression, bullying, and serious rule violations (truancy) are hallmark features of this diagnosis."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "His defiant and aggressive behavior towards peers and teachers aligns with ODD, which often precedes or co-occurs with conduct disorder."
+        ],
+        [
+          "Substance Use Disorder",
+          "The confirmed cigarette smoking raises suspicion that other substance use could be driving the behavioral changes, aggression, and school expulsion."
+        ],
+        [
+          "Major Depressive Disorder",
+          "Irritability, social conflict, and school refusal can be the primary manifestations of depression in adolescent males."
+        ],
+        [
+          "Adjustment Disorder with disturbance of conduct",
+          "The recent onset of these behaviors could represent a maladaptive response to an identifiable psychosocial stressor."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Autism Spectrum Disorder",
+          "The report of recent behavioral changes is inconsistent with the lifelong pattern of deficits required for this diagnosis."
+        ],
+        [
+          "Intellectual Disability",
+          "This is a neurodevelopmental disorder with onset in childhood and would not present as an acute behavioral change."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Adjustment Disorder with Disturbance of Conduct",
+          "The patient's behavioral problems have a clear onset within three months of an identifiable psychosocial stressor, the parental separation."
+        ],
+        [
+          "Conduct Disorder",
+          "The patient's pattern of bullying, aggression, and serious rule violations (truancy) meets the core criteria for this diagnosis."
+        ],
+        [
+          "Major Depressive Disorder",
+          "The patient's irritability, decline in academic performance, and loss of interest in prior activities are common manifestations of depression in adolescents."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "The patient exhibits a pattern of defiant and aggressive behavior towards peers and authority figures like teachers."
+        ],
+        [
+          "Substance Use Disorder",
+          "The patient's abrupt behavioral changes and confirmed cigarette smoking are concerning for a developing substance use issue, despite a negative urine drug screen."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Attention-Deficit/Hyperactivity Disorder",
+          "The symptoms have an acute onset at age 16, which is inconsistent with the required onset before age 12 for a primary ADHD diagnosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Adjustment Disorder with Disturbance of Conduct",
+          "The patient's behavioral problems began acutely within three months of an identifiable psychosocial stressor (parental separation)."
+        ],
+        [
+          "Conduct Disorder",
+          "The patient displays a pattern of aggression, bullying, and serious rule violations that infringe on the rights of others."
+        ],
+        [
+          "Major Depressive Disorder",
+          "The patient's irritability, social withdrawal, and academic decline are common manifestations of depression in adolescent males."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "The patient exhibits defiant and argumentative behavior towards authority figures, which are hallmark symptoms of this disorder."
+        ],
+        [
+          "Substance Use Disorder",
+          "The new onset of smoking and possibility of other non-screened substance use could be driving the behavioral and academic decline."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Attention-Deficit/Hyperactivity Disorder",
+          "The symptoms are of acute onset, whereas ADHD is a neurodevelopmental disorder with symptoms present before age 12."
+        ],
+        [
+          "Bipolar Disorder",
+          "There is no evidence of a distinct manic or hypomanic episode, such as elevated mood or decreased need for sleep."
+        ],
+        [
+          "Schizophrenia",
+          "The clinical picture lacks any psychotic symptoms like hallucinations, delusions, or disorganized thought processes."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Substance Use Disorder",
+            "The onset of substance use is common in adolescence and can directly cause a wide range of behavioral changes."
+          ],
+          [
+            "Major Depressive Disorder",
+            "Depression in adolescents often presents with irritability, social withdrawal, and a decline in functioning rather than overt sadness."
+          ],
+          [
+            "Schizophrenia",
+            "The patient's age is typical for the onset of prodromal symptoms in males, which can manifest as social withdrawal and unusual behaviors."
+          ],
+          [
+            "Bipolar Disorder",
+            "The \"behavioral changes\" could represent a first manic or depressive episode, as the peak age of onset is in late adolescence."
+          ],
+          [
+            "Adjustment Disorder",
+            "Significant life stressors common in adolescence can precipitate maladaptive behavioral or emotional symptoms."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Schizophrenia",
+            "The patient's age, functional decline at school, and auditory hallucinations are classic features for an initial psychotic episode."
+          ],
+          [
+            "Major Depressive Disorder with Psychotic Features",
+            "The content of the auditory hallucinations (\"worthless\") is mood-congruent with depression, which can also present with irritability and aggression in adolescents."
+          ],
+          [
+            "Bipolar Disorder",
+            "The combination of aggression, poor judgment leading to school expulsion, and psychotic symptoms can be manifestations of a manic or mixed episode in an adolescent."
+          ],
+          [
+            "Substance-Induced Psychotic Disorder",
+            "The patient's use of cigarettes raises suspicion for other substance use (e.g., cannabis, stimulants) which can cause both psychosis and behavioral dysregulation."
+          ],
+          [
+            "Conduct Disorder",
+            "The persistent pattern of aggression, bullying, and truancy meets criteria for this diagnosis, although it does not by itself explain the auditory hallucinations."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Oppositional Defiant Disorder",
+            "The patient's behaviors, such as bullying and aggression, violate the rights of others, which is more severe than the typical pattern of ODD."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Adjustment Disorder with Mixed Disturbance of Emotions and Conduct",
+            "The emotional and behavioral symptoms developed within three months of a clear psychosocial stressor and are in excess of an expected reaction."
+          ],
+          [
+            "Major Depressive Disorder with Psychotic Features",
+            "The patient exhibits a decline in functioning, behavioral changes consistent with adolescent depression, and mood-congruent auditory hallucinations of worthlessness."
+          ],
+          [
+            "Schizophreniform Disorder",
+            "The patient has experienced psychotic symptoms and a decline in functioning for three months, which fits the 1-to-6-month duration required for this diagnosis."
+          ],
+          [
+            "Conduct Disorder",
+            "The patient's aggression, bullying, and rule-breaking meet criteria for this diagnosis, though it doesn't fully explain the auditory hallucinations."
+          ],
+          [
+            "Brief Psychotic Disorder",
+            "The psychotic symptoms appeared after a significant stressor, but the three-month duration of symptoms makes this less likely as the disorder should resolve within one month."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Substance-Induced Psychotic Disorder",
+            "The patient's urine drug screen was negative."
+          ],
+          [
+            "Schizophrenia",
+            "The duration of symptoms (3 months) is less than the 6 months required for this diagnosis."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Schizophreniform Disorder",
+            "The patient presents with auditory hallucinations and significant functional decline lasting for three months, which fits the diagnostic criteria for this disorder."
+          ],
+          [
+            "Major Depressive Disorder with Psychotic Features",
+            "The content of the auditory hallucinations (\"worthless\") is mood-congruent, and the patient exhibits social withdrawal and academic decline consistent with depression."
+          ],
+          [
+            "Bipolar I Disorder",
+            "The patient's aggression, irritability, and behavioral dyscontrol could represent a manic or mixed episode, which can be accompanied by psychotic symptoms in adolescents."
+          ],
+          [
+            "Adjustment Disorder with Mixed Disturbance of Emotions and Conduct",
+            "The onset of behavioral and emotional symptoms is directly linked to a significant psychosocial stressor (parental separation) within the last three months."
+          ],
+          [
+            "Conduct Disorder",
+            "The patient's pattern of bullying, aggression, and truancy meets criteria for a disturbance of conduct, although this diagnosis does not fully explain the psychotic symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Substance-Induced Psychotic Disorder",
+            "The patient's urine drug screen was negative."
+          ],
+          [
+            "Schizophrenia",
+            "The duration of symptoms is three months, which is less than the six months required for this diagnosis."
+          ],
+          [
+            "Oppositional Defiant Disorder",
+            "The patient's behaviors include aggression and bullying, which are more severe than the typical symptoms of ODD and better fit Conduct Disorder."
+          ],
+          [
+            "Psychotic Disorder Due to Another Medical Condition",
+            "No evidence of a general medical condition causing the psychotic symptoms has been presented."
+          ]
+        ]
+      },
+      "cf_id": "case_023_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports auditory hallucinations, which argues against acting out."
+    }
+  ]
+}

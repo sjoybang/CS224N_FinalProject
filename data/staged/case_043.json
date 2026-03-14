@@ -1,0 +1,25 @@
+{
+  "case_id": "case_043",
+  "source": "MedQA-USMLE",
+  "original_question": "A 60-year-old man seeks evaluation at a medical office due to leg pain while walking. He says the pain starts in his buttocks and extends to his thighs and down to his calves. Previously, the pain resolved with rest, but the pain now persists in his feet, even during rest. His past medical history is significant for diabetes mellitus, hypertension, and cigarette smoking. The vital signs are within normal limits. The physical examination shows an atrophied leg with bilateral loss of hair. Which of the following is the most likely cause of this patient\u2019s condition?",
+  "ground_truth": "Narrowing and calcification of vessels",
+  "base": {
+    "stage_1": "A 60-year-old man presents to the clinic complaining of leg pain that occurs when he walks.",
+    "stage_2": "The patient states the pain starts in his buttocks and extends down his thighs and calves. Initially, the pain resolved with rest, but now it persists in his feet even at rest. His vital signs are within normal limits. Physical examination reveals an atrophied leg with bilateral hair loss.",
+    "stage_3": "An ankle-brachial index (ABI) is performed, revealing a significantly reduced ratio of 0.5 in the affected leg. Doppler ultrasound shows evidence of arterial stenosis and calcification in the lower extremities.",
+    "stage_4": "Angiography confirms significant stenosis and calcification of the iliac and femoral arteries. A vascular surgery consult recommends endovascular intervention."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that the pain is relieved when he leans forward or squats, suggesting spinal stenosis rather than vascular disease.",
+      "rules_out": "Narrowing and calcification of vessels",
+      "stage_1": "A 60-year-old man presents to the clinic complaining of leg pain that occurs when he walks.",
+      "stage_2": "The patient states the pain starts in his buttocks and extends down his thighs and calves. Initially, the pain resolved with rest, but now it persists in his feet even at rest. He reports that the pain is relieved when he leans forward or squats. His vital signs are within normal limits. Physical examination reveals an atrophied leg with bilateral hair loss.",
+      "stage_3": "An ankle-brachial index (ABI) is performed, revealing a significantly reduced ratio of 0.5 in the affected leg. Doppler ultrasound shows evidence of arterial stenosis and calcification in the lower extremities.",
+      "stage_4": "Angiography confirms significant stenosis and calcification of the iliac and femoral arteries. A vascular surgery consult recommends endovascular intervention.",
+      "cf_id": "case_043_cf_a"
+    }
+  ]
+}

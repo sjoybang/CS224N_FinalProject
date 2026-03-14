@@ -1,0 +1,248 @@
+{
+  "case_id": "case_033",
+  "model": "gpt4",
+  "ground_truth": "Sertoli cells",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Spontaneous Rupture of Membranes",
+          "The sudden gush of fluid at term suggests rupture of the amniotic sac."
+        ],
+        [
+          "Urinary Incontinence",
+          "The fluid could be urine, especially in late pregnancy due to increased pressure on the bladder."
+        ],
+        [
+          "Vaginal Discharge",
+          "Increased vaginal secretions can occur at term and may be mistaken for amniotic fluid."
+        ],
+        [
+          "Amniotic Fluid Leak",
+          "A small tear in the amniotic sac could cause a leak rather than a full rupture."
+        ],
+        [
+          "Vaginal Infection",
+          "Some infections can cause increased discharge, though less likely to present as a sudden gush."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Premature Rupture of Membranes (PROM)",
+          "The sudden gush of fluid suggests rupture of membranes at term."
+        ],
+        [
+          "Variable Decelerations",
+          "The fetal heart tracing shows variable decelerations, indicating possible umbilical cord compression."
+        ],
+        [
+          "Normal Labor",
+          "The patient is 4 cm dilated and 80% effaced, consistent with active labor at term."
+        ],
+        [
+          "Oligohydramnios",
+          "The rupture of membranes could lead to reduced amniotic fluid volume, causing variable decelerations."
+        ],
+        [
+          "Chorioamnionitis",
+          "Although less likely without fever or uterine tenderness, infection could cause fetal heart rate changes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Preterm Labor",
+          "The patient is at 40 weeks gestation, ruling out preterm labor."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Normal labor and delivery",
+          "The patient delivered a healthy baby after a typical labor duration with good APGAR scores."
+        ],
+        [
+          "Premature rupture of membranes (PROM)",
+          "The sudden gush of fluid suggests PROM, which is common at term."
+        ],
+        [
+          "Variable decelerations",
+          "The fetal heart tracing showed variable decelerations, which can occur due to umbilical cord compression during labor."
+        ],
+        [
+          "Cephalopelvic disproportion",
+          "Although the delivery was successful, the prolonged labor could suggest a mild form of cephalopelvic disproportion."
+        ],
+        [
+          "Uterine atony",
+          "While not evident in the case, it is a common postpartum concern that could explain potential complications post-delivery."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Fetal distress",
+          "The good APGAR scores indicate that the infant was not in distress at birth."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Normal labor and delivery",
+          "The patient experienced a typical labor progression with spontaneous rupture of membranes and delivered a healthy infant with good APGAR scores."
+        ],
+        [
+          "Premature rupture of membranes (PROM)",
+          "The sudden gush of fluid at term suggests PROM, which is common and consistent with the presentation."
+        ],
+        [
+          "Variable decelerations",
+          "The fetal heart tracing showed variable decelerations, which can occur due to umbilical cord compression during labor."
+        ],
+        [
+          "Cephalopelvic disproportion",
+          "Although unlikely given the successful vaginal delivery, it is a consideration in prolonged labor cases."
+        ],
+        [
+          "Uterine atony",
+          "While not indicated by the case details, it is a common postpartum concern that could be considered if there were issues with bleeding."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Congenital anomaly",
+          "The prenatal history and postpartum examination revealed no risk factors or findings suggestive of congenital anomalies."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Spontaneous Rupture of Membranes",
+            "The sudden gush of fluid at term suggests rupture of the amniotic sac."
+          ],
+          [
+            "Urinary Incontinence",
+            "The fluid could be urine, especially in late pregnancy due to increased pressure on the bladder."
+          ],
+          [
+            "Vaginal Discharge",
+            "Increased vaginal secretions can occur at term and may be mistaken for amniotic fluid."
+          ],
+          [
+            "Amniotic Fluid Leak",
+            "A small tear in the amniotic sac could cause a leak rather than a full rupture."
+          ],
+          [
+            "Hydrorrhea of Pregnancy",
+            "Excessive watery discharge can occur due to hormonal changes in pregnancy."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Spontaneous rupture of membranes (SROM)",
+            "The sudden gush of fluid is characteristic of SROM, especially at full term."
+          ],
+          [
+            "Normal labor",
+            "The cervical dilation and effacement indicate active labor, which is expected at 40 weeks gestation."
+          ],
+          [
+            "Prelabor rupture of membranes (PROM)",
+            "The gush of fluid could indicate PROM, which occurs before the onset of labor contractions."
+          ],
+          [
+            "Amniotic fluid leak",
+            "A small leak of amniotic fluid can present similarly to a gush, especially if the membranes are not fully ruptured."
+          ],
+          [
+            "Urinary incontinence",
+            "Although less likely, stress incontinence can occur during pregnancy and mimic a gush of fluid."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fetal distress",
+            "The fetal heart rate is normal with good variability and no decelerations, ruling out fetal distress."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Normal labor and delivery",
+            "The patient progressed through labor and delivered a healthy baby with normal APGAR scores."
+          ],
+          [
+            "Premature rupture of membranes (PROM)",
+            "The sudden gush of fluid suggests rupture of membranes prior to labor onset."
+          ],
+          [
+            "Cephalopelvic disproportion",
+            "Although unlikely given the successful delivery, it is a consideration in prolonged labor."
+          ],
+          [
+            "Uterine atony",
+            "A potential concern postpartum, but not indicated by current information."
+          ],
+          [
+            "Chorioamnionitis",
+            "Possible with prolonged labor after membrane rupture, though no signs of infection are noted."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fetal distress",
+            "The fetal heart tracing showed good variability and no decelerations, indicating no distress."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Normal labor and delivery",
+            "The patient experienced a typical labor and delivery process with no complications noted in the prenatal history or during delivery."
+          ],
+          [
+            "Premature rupture of membranes (PROM)",
+            "The sudden gush of fluid at the onset of labor suggests PROM, which is common and often leads to spontaneous labor."
+          ],
+          [
+            "Cephalic presentation",
+            "The delivery of a healthy baby with good APGAR scores and no complications suggests a normal cephalic presentation."
+          ],
+          [
+            "Term pregnancy",
+            "The patient delivered at 40 weeks gestation, which is considered full term, aligning with the normal course of pregnancy."
+          ],
+          [
+            "Spontaneous vaginal delivery",
+            "The patient delivered vaginally without any noted interventions, indicating a spontaneous vaginal delivery."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Breech presentation",
+            "The delivery was uncomplicated, and the infant's condition was stable, suggesting a cephalic rather than breech presentation."
+          ],
+          [
+            "Fetal distress",
+            "The fetal heart tracing showed good variability with no decelerations, ruling out fetal distress."
+          ]
+        ]
+      },
+      "cf_id": "case_033_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The fetal heart tracing shows a heart rate of 130 bpm with good variability and no decelerations, which argues against fetal distress often associated with Sertoli cell tumors."
+    }
+  ]
+}

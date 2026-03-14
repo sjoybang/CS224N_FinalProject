@@ -1,0 +1,290 @@
+{
+  "case_id": "case_050",
+  "model": "gemini_pro",
+  "ground_truth": "Hypertrophic cardiomyopathy",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Intrauterine Growth Restriction (IUGR)",
+          "A routine ultrasound is the primary method for assessing fetal growth, and poor growth is a common finding at this gestational age."
+        ],
+        [
+          "Oligohydramnios",
+          "Amniotic fluid volume is a standard component of a third-trimester ultrasound and a key indicator of fetal well-being."
+        ],
+        [
+          "Polyhydramnios",
+          "An ultrasound may reveal excessive amniotic fluid, which can be an isolated finding or associated with underlying maternal or fetal conditions."
+        ],
+        [
+          "Fetal Macrosomia",
+          "Fetal biometry on ultrasound may identify a fetus that is large for gestational age, which has implications for delivery."
+        ],
+        [
+          "Placenta Previa",
+          "This ultrasound may be a scheduled follow-up to assess the location of a previously identified low-lying placenta."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Placental Abruption",
+          "This condition typically presents with acute symptoms such as vaginal bleeding and abdominal pain, which are absent."
+        ],
+        [
+          "Preterm Labor",
+          "The patient is presenting for a routine appointment and is asymptomatic, whereas preterm labor involves symptomatic uterine contractions."
+        ],
+        [
+          "Preeclampsia",
+          "This is a clinical diagnosis requiring hypertension and other systemic findings, not an incidental finding on a routine ultrasound in an asymptomatic patient."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Fetal Macrosomia",
+          "Maternal hyperglycemia leads to fetal hyperinsulinemia and excessive somatic growth."
+        ],
+        [
+          "Polyhydramnios",
+          "Fetal hyperglycemia causes osmotic diuresis, leading to increased amniotic fluid production."
+        ],
+        [
+          "Fetal Hypertrophic Cardiomyopathy",
+          "Fetal hyperinsulinemia acts as a growth factor on the myocardium, particularly the interventricular septum."
+        ],
+        [
+          "Intrauterine Growth Restriction",
+          "Poorly controlled diabetes can cause placental vascular disease and insufficiency, leading to restricted fetal growth."
+        ],
+        [
+          "Congenital Anomaly",
+          "Poor glycemic control is a known teratogen that increases the risk for structural defects, especially of the heart."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Preeclampsia",
+          "The patient is normotensive with an unremarkable physical exam."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Fetal Hypertrophic Cardiomyopathy secondary to maternal diabetes",
+          "The mother's poorly controlled gestational diabetes is a direct cause of fetal hyperinsulinemia, which stimulates myocardial growth and leads to asymmetric septal hypertrophy."
+        ],
+        [
+          "Noonan Syndrome",
+          "This is the most common genetic syndrome associated with hypertrophic cardiomyopathy, which can present with asymmetric septal hypertrophy and outflow obstruction."
+        ],
+        [
+          "Critical Aortic Stenosis",
+          "Severe obstruction of the aortic valve causes significant pressure overload on the left ventricle, leading to secondary hypertrophy, outflow obstruction, and eventual systolic failure."
+        ],
+        [
+          "Pompe Disease",
+          "This is an inherited metabolic disorder that causes glycogen accumulation within cardiac muscle, resulting in severe, progressive hypertrophic cardiomyopathy and dysfunction."
+        ],
+        [
+          "Costello Syndrome",
+          "This is a rare genetic RASopathy that is a known cause of fetal hypertrophic cardiomyopathy and can present with the observed ultrasound findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypoplastic Left Heart Syndrome",
+          "The ultrasound shows left ventricular hypertrophy, which is inconsistent with the underdeveloped left-sided structures characteristic of HLHS."
+        ],
+        [
+          "Tetralogy of Fallot",
+          "The findings are specific to left ventricular hypertrophy and outflow obstruction, not the combination of a VSD, overriding aorta, and pulmonary stenosis seen in TOF."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Familial Hypertrophic Cardiomyopathy",
+          "This diagnosis is confirmed by postnatal genetic testing revealing a causative mutation in the setting of classic echocardiographic findings."
+        ],
+        [
+          "Infant of Diabetic Mother Cardiomyopathy",
+          "Poorly controlled maternal diabetes is a well-known cause of transient myocardial hypertrophy in the neonate due to fetal hyperinsulinemia."
+        ],
+        [
+          "Noonan Syndrome",
+          "This is a common genetic syndrome that frequently presents with congenital heart defects, most notably pulmonary stenosis and hypertrophic cardiomyopathy."
+        ],
+        [
+          "Pompe Disease (Infantile-onset)",
+          "This glycogen storage disease causes massive glycogen accumulation in cardiac muscle, leading to severe, rapidly progressive hypertrophic cardiomyopathy."
+        ],
+        [
+          "Costello Syndrome",
+          "This is a genetic disorder (a RASopathy) that is a recognized cause of hypertrophic cardiomyopathy in the neonatal period."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Transient Hypertrophic Cardiomyopathy",
+          "The positive genetic test for a familial mutation confirms a permanent genetic etiology, ruling out a purely transient, self-resolving condition."
+        ],
+        [
+          "Ventricular Septal Defect",
+          "Ultrasound revealed an enlarged, intact interventricular septum, not a defect or communication between the ventricles."
+        ],
+        [
+          "Congenital Aortic Stenosis",
+          "The primary pathology is asymmetric septal hypertrophy causing dynamic outflow tract obstruction, not a fixed valvular lesion causing secondary concentric hypertrophy."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Fetal Growth Restriction",
+            "A routine follow-up ultrasound at this gestation is frequently performed to monitor fetal growth, especially if a previous measurement was concerning."
+          ],
+          [
+            "Placenta Previa",
+            "This follow-up could be to re-evaluate the placental position, as a low-lying placenta identified on an earlier scan requires reassessment for persistence."
+          ],
+          [
+            "Abnormal Amniotic Fluid Volume",
+            "Assessment of amniotic fluid is a standard component of a third-trimester ultrasound, and abnormalities are a common indication for surveillance."
+          ],
+          [
+            "Fetal Macrosomia",
+            "The ultrasound may be intended to assess for an excessively large fetus, a common concern in pregnancies with risk factors like gestational diabetes."
+          ],
+          [
+            "Unidentified Fetal Anomaly",
+            "A follow-up ultrasound may be scheduled to re-evaluate a structure that was poorly visualized or borderline abnormal on a prior scan."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Ectopic Pregnancy",
+            "The patient is at 32 weeks gestation, which definitively rules out an extrauterine pregnancy."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Stable Angina",
+            "Poorly controlled diabetes is a significant risk factor for accelerated atherosclerosis, and the chest pain's relief with nitroglycerin is characteristic of cardiac ischemia."
+          ],
+          [
+            "Coronary Artery Spasm",
+            "The patient's age and episodic chest pain relieved by nitroglycerin are classic for vasospastic angina, which can be triggered by pregnancy."
+          ],
+          [
+            "Esophageal Spasm",
+            "This is a classic non-cardiac mimic of angina that also responds to nitroglycerin due to smooth muscle relaxation in the esophagus."
+          ],
+          [
+            "Pulmonary Embolism",
+            "Pregnancy is a hypercoagulable state, making this a life-threatening and necessary consideration for any pregnant patient with chest pain."
+          ],
+          [
+            "Peripartum Cardiomyopathy",
+            "This is a pregnancy-specific cause of heart failure that can present with chest pain, and must be considered in the peripartum period."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Musculoskeletal chest pain",
+            "This type of pain would not be expected to be relieved by nitroglycerin."
+          ],
+          [
+            "Aortic Dissection",
+            "The patient's stable vital signs and relief of pain with nitroglycerin make this diagnosis highly unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Hypertrophic cardiomyopathy secondary to maternal diabetes",
+            "The combination of poorly controlled maternal gestational diabetes and fetal asymmetric septal hypertrophy is classic for this diagnosis."
+          ],
+          [
+            "Genetic hypertrophic cardiomyopathy",
+            "This is the most common inherited cardiac disease and presents with identical morphological findings of asymmetric septal hypertrophy and outflow obstruction."
+          ],
+          [
+            "Noonan syndrome",
+            "This genetic syndrome is a well-known cause of congenital hypertrophic cardiomyopathy and pulmonary stenosis."
+          ],
+          [
+            "Critical aortic stenosis",
+            "Severe obstruction at the aortic valve can cause significant secondary left ventricular hypertrophy and systolic dysfunction due to extreme pressure overload."
+          ],
+          [
+            "Glycogen storage disease (e.g., Pompe disease)",
+            "These rare metabolic disorders can cause infiltration and massive thickening of the myocardium, leading to severe cardiomyopathy and heart failure."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Ventricular septal defect",
+            "Ultrasound shows a thickened, intact septum, not a defect within it."
+          ],
+          [
+            "Tetralogy of Fallot",
+            "The findings are inconsistent with the four classic features of this diagnosis (VSD, pulmonary stenosis, overriding aorta, RVH)."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Familial Hypertrophic Cardiomyopathy",
+            "This diagnosis is confirmed by postnatal genetic testing that revealed a causative mutation."
+          ],
+          [
+            "Hypertrophic Cardiomyopathy of the Infant of a Diabetic Mother",
+            "The mother's poorly controlled gestational diabetes is a strong risk factor for transient neonatal hypertrophic cardiomyopathy."
+          ],
+          [
+            "Noonan Syndrome",
+            "This is a common genetic syndrome that frequently presents with congenital heart defects, including hypertrophic cardiomyopathy."
+          ],
+          [
+            "Pompe Disease",
+            "This glycogen storage disease leads to massive glycogen accumulation in cardiac muscle, causing severe hypertrophic cardiomyopathy in infants."
+          ],
+          [
+            "Friedreich Ataxia",
+            "This is a known genetic cause of hypertrophic cardiomyopathy, although it typically presents later in childhood."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Valvular Aortic Stenosis",
+            "The asymmetric nature of the septal hypertrophy is characteristic of a primary cardiomyopathy rather than pressure overload from a valvular lesion."
+          ],
+          [
+            "Cardiac Rhabdomyoma",
+            "Echocardiography would differentiate a discrete tumor from the diffuse myocardial thickening seen, and the genetic finding confirms a myopathy."
+          ],
+          [
+            "Ventricular Septal Defect",
+            "The specific findings of asymmetric septal hypertrophy and left ventricular outflow tract obstruction are not explained by a VSD."
+          ]
+        ]
+      },
+      "cf_id": "case_050_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports regular episodes of chest pain that are relieved with nitroglycerin, which argues against hypertrophic cardiomyopathy as exertional chest pain is not typically relieved by nitroglycerin in HCM."
+    }
+  ]
+}

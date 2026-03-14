@@ -1,0 +1,294 @@
+{
+  "case_id": "case_031",
+  "model": "claude",
+  "ground_truth": "Diphtheria",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Tuberculosis",
+          "Recent immigrant from Asia where TB is endemic, presenting with respiratory symptoms."
+        ],
+        [
+          "Pneumonia (bacterial or viral)",
+          "Common cause of dyspnea in children, can affect recent immigrants with potential exposure differences."
+        ],
+        [
+          "Asthma exacerbation",
+          "Very common cause of acute dyspnea in the pediatric age group."
+        ],
+        [
+          "Foreign body aspiration",
+          "Age-appropriate consideration for acute dyspnea in a 6-year-old child."
+        ],
+        [
+          "Congenital heart disease",
+          "May present with dyspnea in childhood, possibly undiagnosed prior to immigration."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Diphtheria",
+          "Gray pseudomembrane in oropharynx with cervical lymphadenopathy in an unvaccinated recent immigrant from Asia is pathognomonic for diphtheria."
+        ],
+        [
+          "Infectious mononucleosis",
+          "Can present with tonsillar exudates, cervical lymphadenopathy, and respiratory symptoms, though membrane is typically white rather than gray."
+        ],
+        [
+          "Streptococcal pharyngitis with severe exudate",
+          "Can cause tonsillar exudates and cervical lymphadenopathy, but the gray pseudomembrane is more consistent with diphtheria."
+        ],
+        [
+          "Vincent's angina (acute necrotizing ulcerative gingivitis)",
+          "Can produce grayish pseudomembrane and cervical lymphadenopathy, though typically involves gingiva and has characteristic fetid breath."
+        ],
+        [
+          "Peritonsillar abscess",
+          "Can cause pharyngeal abnormalities, dyspnea, and cervical lymphadenopathy, but gray adherent pseudomembrane is unusual."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Epiglottitis",
+          "Would present with dyspnea but does not cause gray pharyngeal pseudomembrane or significant cervical lymphadenopathy."
+        ],
+        [
+          "Retropharyngeal abscess",
+          "Would cause dyspnea and neck swelling but not a visible gray pseudomembrane in the oropharynx."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Diphtheria",
+          "Gray pseudomembrane in oropharynx with cervical lymphadenopathy (\"bull neck\"), myocarditis, and recent immigration from endemic area is pathognomonic for Corynebacterium diphtheriae infection."
+        ],
+        [
+          "Epstein-Barr virus infection with secondary myocarditis",
+          "EBV can cause pharyngeal exudates, cervical lymphadenopathy, and rarely myocarditis, though the gray pseudomembrane is more typical of diphtheria."
+        ],
+        [
+          "Streptococcal pharyngitis with rheumatic carditis",
+          "Group A Streptococcus can cause exudative pharyngitis and lymphadenopathy with cardiac involvement, but the gray pseudomembrane is atypical."
+        ],
+        [
+          "Vincent angina (acute necrotizing ulcerative gingivitis)",
+          "This anaerobic infection can produce a gray pseudomembrane and lymphadenopathy, though myocarditis is uncommon."
+        ],
+        [
+          "Infectious mononucleosis with myocarditis",
+          "Can present with pharyngeal exudate, lymphadenopathy, and rare cardiac complications, but the classic gray adherent pseudomembrane is not characteristic."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Epiglottitis",
+          "Unremarkable chest X-ray and visualization of oropharyngeal pseudomembrane makes supraglottic obstruction unlikely."
+        ],
+        [
+          "Bacterial tracheitis",
+          "Normal chest X-ray and primary oropharyngeal findings rather than tracheal involvement make this less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Diphtheria",
+          "Culture-confirmed Corynebacterium diphtheriae with positive toxin assay, gray pseudomembrane, cervical lymphadenopathy, and myocarditis are pathognomonic for diphtheria."
+        ],
+        [
+          "Diphtheria with myocardial toxicity",
+          "The positive diphtheria toxin assay and EKG evidence of myocarditis indicate cardiac involvement, a known severe complication of diphtheria."
+        ],
+        [
+          "Diphtheria with respiratory complications",
+          "The dyspnea and pseudomembrane suggest airway obstruction from diphtheritic membrane extension, a life-threatening complication."
+        ],
+        [
+          "Diphtheria with systemic toxemia",
+          "Elevated inflammatory markers and multi-organ involvement (cardiac and respiratory) indicate systemic absorption of diphtheria exotoxin."
+        ],
+        [
+          "Complicated diphtheria",
+          "The constellation of respiratory distress, myocarditis, and positive toxin assay represents advanced diphtheria with multiple organ system involvement."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Epiglottitis",
+          "Culture confirmed diphtheria with characteristic pseudomembrane and toxin production."
+        ],
+        [
+          "Infectious mononucleosis",
+          "Positive culture for C. diphtheriae rules out viral etiology."
+        ],
+        [
+          "Group A Streptococcal pharyngitis",
+          "Culture grew C. diphtheriae, not Streptococcus pyogenes."
+        ],
+        [
+          "Retropharyngeal abscess",
+          "Pseudomembrane and positive diphtheria culture are inconsistent with abscess."
+        ],
+        [
+          "Viral myocarditis",
+          "Myocarditis is secondary to confirmed diphtheria toxin, not primary viral infection."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Tuberculosis",
+            "Recent immigrant from Asia (endemic area) presenting with respiratory symptoms is high-risk for pulmonary TB."
+          ],
+          [
+            "Pneumonia (bacterial)",
+            "Common cause of acute dyspnea in children, particularly in this age group."
+          ],
+          [
+            "Asthma exacerbation",
+            "Very common pediatric respiratory condition that presents with acute dyspnea."
+          ],
+          [
+            "Foreign body aspiration",
+            "Age-appropriate concern in a 6-year-old presenting with acute onset dyspnea."
+          ],
+          [
+            "Congenital heart disease",
+            "May be previously undiagnosed in recent immigrant with limited prior healthcare access."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Tuberculosis (TB) lymphadenitis",
+            "Recent immigrant from TB-endemic region with cervical lymphadenopathy and respiratory symptoms suggests possible TB infection."
+          ],
+          [
+            "Acute lymphoblastic leukemia (ALL)",
+            "Cervical lymphadenopathy with dyspnea and tachycardia in a 6-year-old could indicate mediastinal mass causing respiratory compromise."
+          ],
+          [
+            "Infectious mononucleosis (EBV)",
+            "Cervical lymphadenopathy with systemic symptoms including dyspnea and elevated vital signs is consistent with EBV infection."
+          ],
+          [
+            "Bacterial pneumonia with reactive adenopathy",
+            "Dyspnea with tachypnea, tachycardia, and cervical lymphadenopathy suggests lower respiratory infection with nodal reaction."
+          ],
+          [
+            "Non-Hodgkin lymphoma",
+            "Cervical lymphadenopathy with potential mediastinal involvement causing dyspnea fits lymphoma presentation in this age group."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diphtheria",
+            "Normal oropharynx without pseudomembrane effectively rules out this diagnosis despite immigration history."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Diphtheria",
+            "Recent Asian immigrant with cervical lymphadenopathy and myocarditis despite normal oropharynx (toxin-mediated cardiac involvement can occur without classic membrane)."
+          ],
+          [
+            "Viral myocarditis",
+            "Myocarditis with elevated inflammatory markers and dyspnea in a child, though cervical lymphadenopathy is less typical."
+          ],
+          [
+            "Acute rheumatic fever",
+            "Carditis with elevated inflammatory markers and lymphadenopathy following potential streptococcal infection in an at-risk immigrant population."
+          ],
+          [
+            "Kawasaki disease",
+            "Cervical lymphadenopathy, elevated inflammatory markers, and cardiac involvement (myocarditis) in a 6-year-old child."
+          ],
+          [
+            "Tuberculosis with cardiac involvement",
+            "Recent Asian immigrant with cervical lymphadenopathy, elevated inflammatory markers, and cardiac manifestations (though chest X-ray unremarkable)."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Epiglottitis",
+            "Normal oropharyngeal examination makes supraglottic pathology unlikely."
+          ],
+          [
+            "Retropharyngeal abscess",
+            "Normal oropharyngeal examination without pseudomembrane or visible abnormality."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Diphtheria with myocarditis",
+            "Culture confirmed Corynebacterium diphtheriae with positive toxin assay, and EKG shows myocarditis, a classic complication of diphtheria toxin."
+          ],
+          [
+            "Diphtheria with secondary bacterial superinfection",
+            "Confirmed diphtheria may be complicated by secondary respiratory infections contributing to dyspnea and elevated inflammatory markers."
+          ],
+          [
+            "Diphtheria with airway obstruction",
+            "Pharyngeal diphtheria can cause pseudomembrane formation leading to mechanical airway obstruction and respiratory compromise."
+          ],
+          [
+            "Diphtheria with polyneuropathy",
+            "Diphtheria toxin can cause neurological complications including cranial and peripheral neuropathies, though respiratory symptoms may be prominent initially."
+          ],
+          [
+            "Diphtheria with septic shock",
+            "Severe diphtheria with toxin-mediated systemic effects could progress to shock with elevated heart rate and respiratory distress."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral myocarditis",
+            "Culture positively identified bacterial pathogen Corynebacterium diphtheriae rather than viral etiology."
+          ],
+          [
+            "Streptococcal pharyngitis",
+            "Culture grew Corynebacterium diphtheriae, not Streptococcus species."
+          ],
+          [
+            "Infectious mononucleosis",
+            "Positive culture for C. diphtheriae rules out EBV as primary pathogen."
+          ],
+          [
+            "Retropharyngeal abscess",
+            "Normal oropharynx without pseudomembrane and unremarkable chest X-ray make this unlikely despite cervical lymphadenopathy."
+          ]
+        ]
+      },
+      "cf_id": "case_031_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a pseudomembrane in the oropharynx makes diphtheria much less likely."
+    }
+  ]
+}

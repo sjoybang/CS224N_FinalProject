@@ -1,0 +1,259 @@
+{
+  "case_id": "case_049",
+  "model": "gpt4",
+  "ground_truth": "Diffuse large B-cell lymphoma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Chronic Myeloid Leukemia",
+          "The combination of fatigue, night sweats, and unintentional weight loss is suggestive of a hematologic malignancy."
+        ],
+        [
+          "Lymphoma",
+          "The symptoms of night sweats, weight loss, and abdominal pain could indicate lymphadenopathy or organ involvement."
+        ],
+        [
+          "Pancreatic Cancer",
+          "Abdominal pain and weight loss are common symptoms, and night sweats can occur with malignancy."
+        ],
+        [
+          "Tuberculosis",
+          "Night sweats, weight loss, and abdominal pain can be indicative of extrapulmonary tuberculosis."
+        ],
+        [
+          "Hepatocellular Carcinoma",
+          "Abdominal pain and weight loss, along with systemic symptoms like night sweats, suggest possible liver involvement."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Lymphoma",
+          "The presence of an enlarged, fixed supraclavicular lymph node and splenomegaly, along with systemic symptoms like night sweats and weight loss, are suggestive of lymphoma."
+        ],
+        [
+          "Chronic Myeloid Leukemia (CML)",
+          "Splenomegaly and systemic symptoms such as fatigue and weight loss can be indicative of CML, especially in the context of a middle-aged patient."
+        ],
+        [
+          "Tuberculosis",
+          "The systemic symptoms and lymphadenopathy, particularly in the supraclavicular region, could suggest extrapulmonary tuberculosis."
+        ],
+        [
+          "Metastatic Cancer",
+          "The fixed nature of the lymph node and systemic symptoms raise suspicion for metastatic cancer, possibly from a primary site such as the lung or gastrointestinal tract."
+        ],
+        [
+          "Sarcoidosis",
+          "Although less common, sarcoidosis can present with lymphadenopathy and systemic symptoms, though the fixed nature of the lymph node is less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Infectious Mononucleosis",
+          "The patient's age and the chronicity of symptoms make this less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Non-Hodgkin Lymphoma",
+          "The presence of systemic symptoms, such as night sweats and weight loss, along with widespread lymphadenopathy and splenomegaly, is highly suggestive of this condition."
+        ],
+        [
+          "Hodgkin Lymphoma",
+          "The combination of systemic symptoms and the pattern of lymph node enlargement, including supraclavicular nodes, aligns with this diagnosis."
+        ],
+        [
+          "Chronic Lymphocytic Leukemia",
+          "The patient's age, systemic symptoms, and lymphadenopathy could indicate this type of leukemia, which often presents with similar findings."
+        ],
+        [
+          "Metastatic Cancer",
+          "The fixed nature of the lymph node and widespread lymphadenopathy could suggest metastatic spread from an unknown primary tumor."
+        ],
+        [
+          "Sarcoidosis",
+          "Although less likely, the presence of mediastinal lymphadenopathy and systemic symptoms could be indicative of this granulomatous disease."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Infectious Mononucleosis",
+          "The chronicity and pattern of lymphadenopathy, along with the patient's age, make this less likely."
+        ],
+        [
+          "Tuberculosis",
+          "The absence of respiratory symptoms and the pattern of lymph node involvement make this less probable."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Diffuse Large B-Cell Lymphoma (DLBCL)",
+          "The presence of CD20-positive lymphocytes with a high proliferative index and systemic symptoms like weight loss and night sweats suggest an aggressive B-cell lymphoma."
+        ],
+        [
+          "Follicular Lymphoma",
+          "CD20 positivity and lymphadenopathy with splenomegaly are consistent with this indolent B-cell lymphoma, although the high proliferative index is less typical."
+        ],
+        [
+          "Chronic Lymphocytic Leukemia (CLL)",
+          "CD20 positivity and lymphadenopathy could indicate CLL, but the high proliferative index is atypical for this usually indolent disease."
+        ],
+        [
+          "Mantle Cell Lymphoma",
+          "CD20 positivity and the aggressive nature of the symptoms align with this type of lymphoma, although specific markers like cyclin D1 would be more definitive."
+        ],
+        [
+          "Hodgkin Lymphoma",
+          "While CD20 positivity is less common, the systemic symptoms and lymphadenopathy could suggest a variant of Hodgkin lymphoma."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Infectious mononucleosis",
+          "The chronicity and lymph node biopsy findings are inconsistent with a viral infection."
+        ],
+        [
+          "Tuberculosis",
+          "The lack of respiratory symptoms and specific histological findings make TB unlikely."
+        ],
+        [
+          "Sarcoidosis",
+          "The presence of CD20-positive lymphocytes and high proliferative index are not typical for sarcoidosis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Chronic Myeloid Leukemia",
+            "The combination of fatigue, night sweats, and unintentional weight loss is suggestive of a hematologic malignancy."
+          ],
+          [
+            "Lymphoma",
+            "The symptoms of night sweats, weight loss, and abdominal pain could indicate lymphadenopathy or organ involvement."
+          ],
+          [
+            "Pancreatic Cancer",
+            "Abdominal pain and weight loss are common symptoms, and night sweats can occur with malignancy."
+          ],
+          [
+            "Tuberculosis",
+            "Night sweats, weight loss, and abdominal pain can be indicative of extrapulmonary tuberculosis."
+          ],
+          [
+            "Hepatocellular Carcinoma",
+            "Abdominal pain and weight loss, along with systemic symptoms like night sweats, could suggest liver cancer."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Lymphoma",
+            "The presence of a rubbery supraclavicular lymph node and splenomegaly, along with systemic symptoms like night sweats and weight loss, are suggestive of lymphoma."
+          ],
+          [
+            "Chronic Myeloid Leukemia (CML)",
+            "Splenomegaly and systemic symptoms such as fatigue and weight loss can be indicative of CML, especially in the presence of lymphadenopathy."
+          ],
+          [
+            "Tuberculosis",
+            "The combination of night sweats, weight loss, and lymphadenopathy could suggest extrapulmonary tuberculosis, particularly involving lymph nodes."
+          ],
+          [
+            "Metastatic Cancer",
+            "The supraclavicular lymphadenopathy and systemic symptoms raise suspicion for metastatic cancer, possibly from a primary site such as the lung or gastrointestinal tract."
+          ],
+          [
+            "Infectious Mononucleosis",
+            "Although less common in this age group, the combination of lymphadenopathy, splenomegaly, and systemic symptoms could be consistent with infectious mononucleosis."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Non-Hodgkin Lymphoma",
+            "The presence of systemic symptoms, such as night sweats and weight loss, along with widespread lymphadenopathy and splenomegaly, is highly suggestive of this condition."
+          ],
+          [
+            "Hodgkin Lymphoma",
+            "The combination of systemic symptoms and the characteristic rubbery lymphadenopathy, particularly in the supraclavicular region, aligns with this diagnosis."
+          ],
+          [
+            "Chronic Lymphocytic Leukemia",
+            "The patient's age, systemic symptoms, and lymphadenopathy could indicate this type of leukemia, which often presents with similar findings."
+          ],
+          [
+            "Sarcoidosis",
+            "Although less common, sarcoidosis can present with lymphadenopathy and systemic symptoms, but the massive lymph node enlargement makes it less likely."
+          ],
+          [
+            "Metastatic Cancer",
+            "The widespread lymphadenopathy and systemic symptoms could be due to metastatic spread from an unknown primary malignancy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infectious Mononucleosis",
+            "The patient's age and the chronicity of symptoms make this less likely."
+          ],
+          [
+            "Tuberculosis",
+            "The absence of respiratory symptoms and normal vital signs make active TB less probable."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Non-Hodgkin Lymphoma",
+            "The presence of CD20-positive lymphocytes with a high proliferative index and widespread lymphadenopathy is highly suggestive of Non-Hodgkin Lymphoma."
+          ],
+          [
+            "Chronic Lymphocytic Leukemia",
+            "CD20 positivity and lymphadenopathy, along with systemic symptoms, could indicate Chronic Lymphocytic Leukemia, although the high proliferative index is less typical."
+          ],
+          [
+            "Diffuse Large B-Cell Lymphoma",
+            "The aggressive nature suggested by the high proliferative index and CD20 positivity aligns with Diffuse Large B-Cell Lymphoma."
+          ],
+          [
+            "Hodgkin Lymphoma",
+            "Although less likely due to CD20 positivity, Hodgkin Lymphoma can present with similar systemic symptoms and lymphadenopathy."
+          ],
+          [
+            "Mantle Cell Lymphoma",
+            "CD20 positivity and the aggressive clinical presentation could also suggest Mantle Cell Lymphoma, though it is less common."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infectious Mononucleosis",
+            "The high proliferative index and CD20 positivity are not typical for infectious causes like mononucleosis."
+          ],
+          [
+            "Sarcoidosis",
+            "The presence of CD20-positive lymphocytes and high proliferative index is inconsistent with sarcoidosis, which typically shows non-caseating granulomas."
+          ]
+        ]
+      },
+      "cf_id": "case_049_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a painful, enlarged, and rubbery supraclavicular lymph node, which is more consistent with an inflammatory process than lymphoma."
+    }
+  ]
+}

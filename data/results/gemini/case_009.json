@@ -1,0 +1,249 @@
+{
+  "case_id": "case_009",
+  "model": "gemini",
+  "ground_truth": "Infant botulism",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Encephalitis",
+          "Altered mental status and progressive weakness in a young child could indicate an infectious process affecting the brain."
+        ],
+        [
+          "Meningitis",
+          "Similar to encephalitis, meningitis can present with altered mental status and weakness, especially in young children."
+        ],
+        [
+          "Hypoglycemia",
+          "Sudden onset of weakness and altered behavior in a child can be caused by low blood sugar."
+        ],
+        [
+          "Electrolyte Imbalance",
+          "Electrolyte abnormalities can cause neurological symptoms and weakness."
+        ],
+        [
+          "Intracranial Hemorrhage",
+          "Although less likely, sudden onset of neurological symptoms could be due to bleeding in the brain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Infant botulism",
+          "The descending paralysis, ptosis, weak suck/gag, constipation, and dry diaper are highly suggestive of botulism."
+        ],
+        [
+          "Myasthenia gravis",
+          "While less common in infants, the ptosis, weakness, and bulbar symptoms could indicate myasthenia gravis."
+        ],
+        [
+          "Spinal muscular atrophy type 1",
+          "The progressive weakness, bulbar involvement, and decreased movement are consistent with SMA type 1."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "Though rare in infants, GBS can present with ascending paralysis and bulbar dysfunction."
+        ],
+        [
+          "Mitochondrial disorder",
+          "Certain mitochondrial disorders can present with hypotonia, weakness, ophthalmoplegia, and bulbar dysfunction in infancy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sepsis",
+          "No fever or signs of infection are reported."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Infant botulism",
+          "The patient's age, descending paralysis (ptosis, weak suck/gag, respiratory compromise, limb weakness), constipation, and normal labs are highly suggestive of infant botulism."
+        ],
+        [
+          "Myasthenia gravis",
+          "While less common in infants, myasthenia gravis can present with ptosis, bulbar weakness, and generalized weakness, though constipation is less typical."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "GBS can present with ascending paralysis and bulbar involvement, but is less likely given the patient's age and constipation."
+        ],
+        [
+          "Spinal muscular atrophy type 1",
+          "This presents with progressive weakness, hypotonia, and bulbar involvement, but typically presents earlier than 1 year of age."
+        ],
+        [
+          "Mitochondrial disorder",
+          "Certain mitochondrial disorders can present with hypotonia, weakness, ophthalmoplegia, and gastrointestinal dysmotility, though normal labs make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Electrolyte imbalance",
+          "Comprehensive metabolic panel was normal."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Infant botulism",
+          "The presence of Clostridium botulinum spores and toxin in the stool confirms infant botulism."
+        ],
+        [
+          "Myasthenia gravis",
+          "While less likely given the stool sample results, myasthenia gravis can present with similar neuromuscular weakness and bulbar symptoms."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "GBS can cause ascending paralysis and bulbar dysfunction, though the stool sample makes this less likely."
+        ],
+        [
+          "Spinal muscular atrophy",
+          "SMA can present with progressive weakness, but the acute onset and stool sample findings make it less likely."
+        ],
+        [
+          "Tick paralysis",
+          "Tick paralysis can cause rapidly progressive paralysis, but the stool sample makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Electrolyte imbalance",
+          "CMP was normal."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Encephalitis",
+            "Rapidly progressive weakness and altered mental status in a young child could indicate an infectious process affecting the brain."
+          ],
+          [
+            "Meningitis",
+            "Similar to encephalitis, meningitis can present with rapid onset of weakness and altered mental status in a young child."
+          ],
+          [
+            "Hypoglycemia",
+            "Sudden weakness and behavioral changes can be caused by low blood sugar, especially in a young child."
+          ],
+          [
+            "Electrolyte Imbalance",
+            "Rapidly developing weakness can be associated with electrolyte abnormalities."
+          ],
+          [
+            "Intracranial Hemorrhage",
+            "Although less likely, sudden onset of neurological symptoms could be due to bleeding in the brain."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Infant botulism",
+            "The descending paralysis, ptosis, weak suck/gag, constipation, and dry diaper are highly suggestive of botulism."
+          ],
+          [
+            "Myasthenia gravis",
+            "While less common in infants, the ptosis, weakness, and bulbar symptoms could indicate myasthenia gravis."
+          ],
+          [
+            "Spinal muscular atrophy",
+            "The progressive weakness, bulbar involvement, and hyperreflexia/clonus could point to a severe form of SMA."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "Though rare in infants, the ascending paralysis and areflexia could be GBS variant."
+          ],
+          [
+            "Acute encephalitis",
+            "The change in behavior, weakness, and neurological findings could be due to an infectious or inflammatory process in the brain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sepsis",
+            "No fever or signs of infection are reported."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Infant botulism",
+            "The descending paralysis, constipation, and bulbar symptoms are highly suggestive of botulism."
+          ],
+          [
+            "Spinal muscular atrophy",
+            "While typically presenting earlier, the progressive weakness, bulbar involvement, and hyperreflexia could indicate a later-onset form."
+          ],
+          [
+            "Myasthenia gravis",
+            "Although rare in infants, the ptosis, weakness, and bulbar symptoms could be consistent with myasthenia gravis."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "The ascending paralysis, bulbar involvement, and areflexia could point towards GBS, although hyperreflexia is atypical."
+          ],
+          [
+            "Acute transverse myelitis",
+            "The rapid onset of weakness, bowel and bladder dysfunction, and hyperreflexia could indicate transverse myelitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Electrolyte imbalance",
+            "Comprehensive metabolic panel was normal."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Infant botulism",
+            "The presence of Clostridium botulinum spores and toxin in the stool confirms infant botulism."
+          ],
+          [
+            "Myasthenia gravis",
+            "While less likely given the stool sample results, myasthenia gravis can present with similar neuromuscular weakness and bulbar symptoms."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "GBS can cause ascending paralysis and areflexia, but the hyperreflexia and stool sample make it less likely."
+          ],
+          [
+            "Spinal muscular atrophy",
+            "SMA can present with hypotonia and weakness, but the acute onset and stool sample make it less likely."
+          ],
+          [
+            "Tick paralysis",
+            "Tick paralysis can cause rapidly progressive paralysis, but the stool sample makes it less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Electrolyte imbalance",
+            "CMP was normal."
+          ]
+        ]
+      },
+      "cf_id": "case_009_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals hyperreflexia and clonus, findings that would argue against infant botulism, which typically presents with hypotonia and diminished reflexes."
+    }
+  ]
+}

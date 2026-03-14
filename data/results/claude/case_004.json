@@ -1,0 +1,270 @@
+{
+  "case_id": "case_004",
+  "model": "claude",
+  "ground_truth": "Scorpion sting",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute pancreatitis",
+          "Severe epigastric pain radiating to the back with nausea is the classic presentation of pancreatic inflammation."
+        ],
+        [
+          "Peptic ulcer disease with posterior penetration",
+          "Posterior duodenal or gastric ulcers can cause epigastric pain radiating to the back with gradual onset."
+        ],
+        [
+          "Cholecystitis or choledocholithiasis",
+          "Biliary pathology commonly causes right upper quadrant/epigastric pain that may radiate to the back with associated nausea."
+        ],
+        [
+          "Nephrolithiasis",
+          "Kidney stones can cause severe flank pain radiating to the back and abdomen with nausea, though typically more acute in onset."
+        ],
+        [
+          "Mesenteric ischemia",
+          "Abdominal pain out of proportion to exam with gradual worsening over days can indicate vascular compromise, though less common at this age."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute pancreatitis",
+          "Severe epigastric pain radiating to back with nausea in an obese patient is classic presentation, and tachycardia with relative hypotension suggest systemic inflammatory response."
+        ],
+        [
+          "Perforated peptic ulcer",
+          "Severe abdominal pain radiating to back with systemic signs (tachycardia, hypotension) could indicate perforation, though typically presents more acutely."
+        ],
+        [
+          "Mesenteric ischemia",
+          "Abdominal pain out of proportion to exam with weak pulses and hemodynamic changes raises concern for vascular compromise."
+        ],
+        [
+          "Abdominal aortic aneurysm rupture",
+          "Back and abdominal pain with hypotension and weak pulses are concerning for rupture, though patient is younger than typical demographic."
+        ],
+        [
+          "Septic arthritis with sepsis",
+          "The acute monoarticular ankle arthritis with systemic signs (tachycardia, hypotension) could indicate septic joint with bacteremia causing abdominal symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively eliminate diagnoses, as laboratory values and imaging have not yet been provided."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Hypertriglyceridemia-induced pancreatitis",
+          "Oral contraceptive pills can cause severe hypertriglyceridemia leading to acute pancreatitis, especially in obese patients."
+        ],
+        [
+          "Gallstone pancreatitis",
+          "Most common cause of acute pancreatitis in women, and obesity is a risk factor for cholelithiasis."
+        ],
+        [
+          "Drug-induced pancreatitis",
+          "Aspirin and oral contraceptive pills are both associated with pancreatitis as potential adverse effects."
+        ],
+        [
+          "Scorpion envenomation-related pancreatitis",
+          "Certain scorpion venoms can cause acute pancreatitis through direct pancreatic toxicity and excessive cholinergic stimulation."
+        ],
+        [
+          "Idiopathic pancreatitis",
+          "No clear etiology identified yet, though further workup may reveal underlying cause."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Alcoholic pancreatitis",
+          "No history of alcohol use mentioned in the case presentation."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Scorpion venom-induced pancreatitis",
+          "Tityus scorpion envenomation confirmed with detected venom in serum and markedly elevated pancreatic enzymes consistent with acute pancreatitis."
+        ],
+        [
+          "Hypertriglyceridemia-induced pancreatitis",
+          "Oral contraceptive use can cause hypertriglyceridemia leading to pancreatitis, though scorpion venom is the more direct cause here."
+        ],
+        [
+          "Drug-induced pancreatitis",
+          "Aspirin and oral contraceptives are known to rarely cause pancreatitis, though timing and venom detection make this less likely primary etiology."
+        ],
+        [
+          "Scorpion venom-induced myocarditis",
+          "Tityus venom can cause cardiac toxicity with weak pulses and tachycardia suggesting possible myocardial involvement."
+        ],
+        [
+          "Gout or pseudogout",
+          "Acute monoarticular ankle arthritis presentation could represent crystal arthropathy, possibly exacerbated by systemic inflammation from envenomation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Gallstone pancreatitis",
+          "No gallstones mentioned on CT and scorpion venom confirmed as etiology."
+        ],
+        [
+          "Alcoholic pancreatitis",
+          "No history of alcohol use mentioned and alternative confirmed cause identified."
+        ],
+        [
+          "Septic arthritis",
+          "Ankle inflammation more consistent with gout/pseudogout given scorpion envenomation context and no fever."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute pancreatitis",
+            "Severe epigastric pain radiating to the back with nausea is classic for pancreatic inflammation."
+          ],
+          [
+            "Penetrating peptic ulcer",
+            "Posterior ulcer penetration can cause epigastric pain with back radiation and progressive worsening over days."
+          ],
+          [
+            "Cholecystitis with biliary colic",
+            "Gallbladder inflammation can present with severe abdominal pain, nausea, and occasionally back radiation."
+          ],
+          [
+            "Nephrolithiasis",
+            "Kidney stones can cause severe abdominal pain radiating to the back with associated nausea."
+          ],
+          [
+            "Mesenteric ischemia",
+            "Progressive abdominal pain over 2 days with nausea could indicate intestinal vascular compromise, though typically pain is more severe than exam findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute pancreatitis",
+            "Severe epigastric pain radiating to the back with nausea in an obese patient is classic presentation, with hemodynamic changes suggesting systemic inflammation."
+          ],
+          [
+            "Perforated peptic ulcer",
+            "Severe abdominal pain radiating to the back with tachycardia and weak pulses could indicate perforation with early shock."
+          ],
+          [
+            "Mesenteric ischemia",
+            "Weak radial pulses with severe abdominal pain and gradual onset over 2 days suggests possible vascular compromise with systemic hypoperfusion."
+          ],
+          [
+            "Acute cholecystitis",
+            "Obesity is a risk factor, and severe abdominal pain with nausea fits, though back radiation is less typical."
+          ],
+          [
+            "Ruptured abdominal aortic aneurysm",
+            "Severe abdominal and back pain with weak pulses and borderline low blood pressure raises concern for vascular catastrophe."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Envenomation/sting reaction",
+            "No local signs of erythema, swelling, or pain at the reported sting site despite zookeeper occupation."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Gallstone pancreatitis",
+            "Obesity and oral contraceptive use are risk factors for cholelithiasis, the most common cause of acute pancreatitis in women."
+          ],
+          [
+            "Hypertriglyceridemia-induced pancreatitis",
+            "Oral contraceptive pills can elevate triglyceride levels sufficiently to cause pancreatitis, especially in obese patients."
+          ],
+          [
+            "Drug-induced pancreatitis",
+            "Aspirin is a known cause of drug-induced pancreatitis, though less common than other etiologies."
+          ],
+          [
+            "Scorpion venom-induced pancreatitis",
+            "Certain scorpion species produce venom containing toxins that can cause acute pancreatitis through parasympathetic stimulation."
+          ],
+          [
+            "Idiopathic pancreatitis",
+            "After excluding common causes, approximately 10-30% of pancreatitis cases remain without identified etiology."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Peptic ulcer disease",
+            "CT imaging confirmed acute pancreatitis rather than peptic ulcer as the source of abdominal pain."
+          ],
+          [
+            "Acute mesenteric ischemia",
+            "Patient is hemodynamically stable with weak but symmetric pulses and CT findings consistent with pancreatitis, not bowel ischemia."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Scorpion venom-induced pancreatitis",
+            "Tityus scorpion sting with confirmed venom detection in serum and markedly elevated pancreatic enzymes directly explains the acute pancreatitis."
+          ],
+          [
+            "Drug-induced pancreatitis",
+            "Chronic aspirin and oral contraceptive use are known risk factors for pancreatitis, potentially contributing alongside scorpion envenomation."
+          ],
+          [
+            "Hypertriglyceridemia-induced pancreatitis",
+            "Obesity and oral contraceptive use increase risk for hypertriglyceridemia, a known cause of acute pancreatitis."
+          ],
+          [
+            "Gallstone pancreatitis",
+            "Obesity is a major risk factor for cholelithiasis, which remains the most common cause of acute pancreatitis overall."
+          ],
+          [
+            "Idiopathic pancreatitis",
+            "Though scorpion venom is detected, approximately 10-30% of pancreatitis cases have no identifiable cause beyond the acute trigger."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pancreatic malignancy",
+            "Acute presentation over 2 days with confirmed scorpion envenomation makes chronic malignant process unlikely as primary etiology."
+          ],
+          [
+            "Autoimmune pancreatitis",
+            "No mentioned features of IgG4-related disease and acute presentation with identified toxin exposure argues against this diagnosis."
+          ]
+        ]
+      },
+      "cf_id": "case_004_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of local findings at the sting site argues against scorpion envenomation."
+    }
+  ]
+}

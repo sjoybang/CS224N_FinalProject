@@ -1,0 +1,310 @@
+{
+  "case_id": "case_033",
+  "model": "gemini_pro",
+  "ground_truth": "Sertoli cells",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Spontaneous Rupture of Membranes (SROM)",
+          "A sudden gush of fluid is the classic presentation for the amniotic sac breaking in a term pregnancy."
+        ],
+        [
+          "Urinary Incontinence",
+          "The gravid uterus at 40 weeks puts significant pressure on the bladder, which can lead to a sudden, involuntary loss of urine."
+        ],
+        [
+          "Physiologic Vaginal Discharge",
+          "Increased, watery leukorrhea of pregnancy is common and can accumulate before being released in a manner perceived as a gush."
+        ],
+        [
+          "Loss of Mucus Plug",
+          "Expulsion of the cervical mucus plug can be accompanied by a watery discharge as the cervix begins to change in preparation for labor."
+        ],
+        [
+          "Bacterial Vaginosis",
+          "This infection can cause a profuse, thin, watery discharge that could be perceived as a gush of fluid."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Placental Abruption",
+          "This condition typically presents with painful vaginal bleeding, not an isolated gush of fluid."
+        ],
+        [
+          "Placenta Previa",
+          "This condition typically presents with painless vaginal bleeding, not a gush of non-bloody fluid."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Oligohydramnios",
+          "The rupture of membranes has reduced the amniotic fluid cushion, making umbilical cord compression more likely."
+        ],
+        [
+          "Nuchal cord",
+          "The umbilical cord may be wrapped around the fetal neck, causing compression as the fetus descends during labor."
+        ],
+        [
+          "Umbilical cord prolapse",
+          "The gush of fluid may have allowed the umbilical cord to slip down ahead of the fetus, causing life-threatening compression."
+        ],
+        [
+          "Occult cord prolapse",
+          "The umbilical cord may be compressed alongside the presenting part, which is a less obvious form of cord prolapse."
+        ],
+        [
+          "Fetal descent",
+          "The normal process of the fetus moving through the birth canal can cause intermittent compression of an otherwise normal umbilical cord."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Preterm labor",
+          "The patient is at 40 weeks gestation, which is defined as full term."
+        ],
+        [
+          "Braxton Hicks contractions",
+          "The patient is 4 cm dilated, which is consistent with active labor, not false labor."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Umbilical cord compression",
+          "Variable decelerations are the classic fetal heart rate pattern associated with transient compression of the umbilical cord during contractions."
+        ],
+        [
+          "Nuchal cord",
+          "A common cause of umbilical cord compression, this occurs when the cord is wrapped around the fetal neck, leading to decelerations with fetal descent."
+        ],
+        [
+          "Oligohydramnios",
+          "The patient's reported gush of fluid indicates ruptured membranes, which reduces amniotic fluid volume and cushioning, predisposing to cord compression."
+        ],
+        [
+          "True knot in umbilical cord",
+          "This is a less common but specific cause of cord compression that can lead to variable decelerations as the knot tightens during labor."
+        ],
+        [
+          "Occult cord prolapse",
+          "The umbilical cord being trapped alongside the presenting part could cause intermittent compression and variable decelerations without progressing to a frank prolapse."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Fetal distress",
+          "The excellent APGAR scores of 8 and 9 at delivery rule out a state of significant fetal compromise or acidosis at birth."
+        ],
+        [
+          "Frank cord prolapse",
+          "This obstetric emergency would have caused severe, persistent fetal bradycardia requiring immediate delivery, which is inconsistent with the 12-hour labor course."
+        ],
+        [
+          "Placental abruption",
+          "The absence of reported painful bleeding, uterine hypertonus, and the good fetal outcome make this diagnosis highly unlikely."
+        ],
+        [
+          "Uterine rupture",
+          "This catastrophic event is inconsistent with the stable labor progression and excellent maternal and fetal outcomes."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Nuchal Cord",
+          "This is a very common cause of variable decelerations due to intermittent compression of the umbilical cord around the fetal neck during contractions and descent."
+        ],
+        [
+          "Oligohydramnios-induced Cord Compression",
+          "The patient's rupture of membranes led to decreased amniotic fluid, reducing the protective cushioning around the cord and making it susceptible to compression."
+        ],
+        [
+          "Occult Cord Prolapse",
+          "The umbilical cord may have descended alongside the fetal head, causing intermittent compression during contractions which manifests as variable decelerations."
+        ],
+        [
+          "Fetal Head Compression",
+          "A strong vagal response from compression of the fetal head during descent can cause abrupt, variable-appearing decelerations in heart rate."
+        ],
+        [
+          "Uterine Tachysystole",
+          "Overly frequent or strong uterine contractions, although not explicitly stated, can cause transient umbilical cord compression leading to variable decelerations."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Vasa Previa",
+          "This would have caused significant fetal bleeding and profound distress or demise upon rupture of membranes, which did not occur."
+        ],
+        [
+          "Placental Abruption",
+          "This diagnosis is unlikely given the absence of reported vaginal bleeding, uterine tenderness, and the unremarkable postpartum placental examination."
+        ],
+        [
+          "Uterine Rupture",
+          "This catastrophic event would present with severe maternal pain and profound, sustained fetal bradycardia, none of which were reported."
+        ],
+        [
+          "Overt Cord Prolapse",
+          "This is ruled out as the umbilical cord was not noted to be protruding through the cervix, which would have constituted an obstetric emergency."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Spontaneous rupture of membranes",
+            "A sudden gush of vaginal fluid at term is the classic presentation for the amniotic sac breaking."
+          ],
+          [
+            "Urinary incontinence",
+            "The gravid uterus at term places significant pressure on the bladder, which can lead to an involuntary gush of urine."
+          ],
+          [
+            "Physiologic vaginal discharge",
+            "Increased leukorrhea is common in the third trimester and a large amount could be perceived as a gush of fluid."
+          ],
+          [
+            "Loss of mucus plug",
+            "Expulsion of the cervical mucus plug can be associated with a release of watery fluid as the cervix begins to change."
+          ],
+          [
+            "Infectious vaginitis",
+            "Certain vaginal infections can cause a copious, watery discharge that may be mistaken for ruptured membranes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Preterm premature rupture of membranes",
+            "This is ruled out by the patient's gestational age of 40 weeks, which is considered term."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Spontaneous Rupture of Membranes in Active Labor",
+            "The patient reports a gush of fluid at term and is found to be 4 cm dilated, which is consistent with membrane rupture during the active phase of labor."
+          ],
+          [
+            "Prelabor Rupture of Membranes (PROM)",
+            "The patient's reported gush of fluid may have occurred prior to the onset of active labor, which is defined as PROM at term."
+          ],
+          [
+            "Urinary Incontinence",
+            "A sudden loss of urine is common in late pregnancy and can be mistaken for ruptured membranes."
+          ],
+          [
+            "Expulsion of Mucus Plug",
+            "Dilation of the cervix can lead to the passage of the mucus plug, which can be perceived as a gush of fluid, although it is typically thicker and less volume."
+          ],
+          [
+            "Vasa Previa with Rupture",
+            "This is a rare but critical possibility where fetal vessels rupture with the membranes, and must be considered despite the currently reassuring fetal heart tracing."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Preterm Prelabor Rupture of Membranes (PPROM)",
+            "The patient is at 40 weeks gestation, which is full term."
+          ],
+          [
+            "Placental Abruption",
+            "The primary symptom is a gush of fluid, not the typical painful vaginal bleeding and uterine tenderness associated with abruption."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Postpartum Hemorrhage",
+            "This is the most common life-threatening complication in the immediate period following delivery."
+          ],
+          [
+            "Retained Placenta",
+            "The delivery of the placenta has not yet been described, and its retention is a primary cause of postpartum hemorrhage."
+          ],
+          [
+            "Genital Tract Laceration",
+            "Trauma to the perineum, vagina, or cervix is very common during vaginal delivery and can be a source of significant bleeding."
+          ],
+          [
+            "Amniotic Fluid Embolism",
+            "This is a rare but catastrophic complication that can present with sudden cardiorespiratory collapse in the period immediately following delivery."
+          ],
+          [
+            "Uterine Inversion",
+            "This is a rare obstetric emergency that can occur during the third stage of labor, leading to severe hemorrhage and shock."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fetal Distress",
+            "The reassuring fetal heart tracing and high APGAR scores at birth rule this out."
+          ],
+          [
+            "Placental Abruption",
+            "This is unlikely given the presentation of fluid gush without painful bleeding and the reassuring fetal status throughout labor."
+          ],
+          [
+            "Labor Dystocia",
+            "The patient progressed to a successful vaginal delivery within a normal timeframe for a multiparous woman."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Normal Spontaneous Vaginal Delivery",
+            "The patient experienced an uncomplicated, unassisted vaginal birth at 40 weeks gestation."
+          ],
+          [
+            "Term Pregnancy",
+            "The patient's gestation of 40 weeks is defined as a full-term pregnancy."
+          ],
+          [
+            "Spontaneous Rupture of Membranes at Term",
+            "The patient's presenting complaint was a gush of fluid at 40 weeks gestation, indicating membrane rupture."
+          ],
+          [
+            "Reassuring Fetal Status",
+            "The fetal heart tracing was normal throughout labor and the infant had excellent APGAR scores."
+          ],
+          [
+            "Uncomplicated Postpartum Period",
+            "The postpartum examination of the placenta and umbilical cord was unremarkable, and no complications were noted."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fetal Distress",
+            "Reassuring fetal heart tracing and high APGAR scores rule this out."
+          ],
+          [
+            "Preterm Labor",
+            "The patient delivered at 40 weeks gestation, which is full term."
+          ],
+          [
+            "Placental Abruption",
+            "The absence of bleeding or fetal distress and a normal-appearing placenta make this diagnosis extremely unlikely."
+          ],
+          [
+            "Intrauterine Growth Restriction",
+            "The infant's birth weight of 6 lb 15 oz is appropriate for gestational age."
+          ]
+        ]
+      },
+      "cf_id": "case_033_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The fetal heart tracing shows a heart rate of 130 bpm with good variability and no decelerations, which argues against fetal distress often associated with Sertoli cell tumors."
+    }
+  ]
+}

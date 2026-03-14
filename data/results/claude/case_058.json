@@ -1,0 +1,282 @@
+{
+  "case_id": "case_058",
+  "model": "claude",
+  "ground_truth": "Barrett's esophagus",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Gastroesophageal reflux disease (GERD)",
+          "Chronic retrosternal chest pain is a classic presentation of acid reflux causing esophageal irritation."
+        ],
+        [
+          "Stable angina pectoris",
+          "Chronic chest pain in a 57-year-old man raises concern for coronary artery disease with exertional symptoms."
+        ],
+        [
+          "Esophageal motility disorder",
+          "Conditions like achalasia or diffuse esophageal spasm can cause chronic retrosternal chest pain."
+        ],
+        [
+          "Peptic ulcer disease",
+          "Gastric or duodenal ulcers can present with chronic retrosternal or epigastric discomfort."
+        ],
+        [
+          "Costochondritis",
+          "Chronic inflammation of the costochondral junctions can cause persistent retrosternal chest wall pain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Achalasia",
+          "Retrosternal pain worse after meals that fails to respond to PPI therapy suggests a motility disorder rather than acid-related disease."
+        ],
+        [
+          "Esophageal spasm",
+          "Retrosternal chest pain unresponsive to pantoprazole can indicate an esophageal motility disorder with spastic contractions."
+        ],
+        [
+          "Eosinophilic esophagitis",
+          "Chronic retrosternal pain refractory to PPI treatment is characteristic, particularly in middle-aged adults."
+        ],
+        [
+          "Coronary artery disease",
+          "Retrosternal chest pain in a 57-year-old man warrants consideration of cardiac ischemia despite atypical features of nocturnal and postprandial worsening."
+        ],
+        [
+          "Esophageal stricture or ring",
+          "Retrosternal pain after heavy meals suggests possible mechanical obstruction that would not respond to acid suppression."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Gastroesophageal reflux disease (GERD)",
+          "Lack of response to pantoprazole makes uncomplicated GERD unlikely as the primary diagnosis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Barrett's esophagus with erosive esophagitis",
+          "EGD findings of distal esophageal ulcerations and proximally displaced Z-line suggest metaplastic changes from chronic reflux despite PPI therapy."
+        ],
+        [
+          "Gastroesophageal reflux disease (GERD) refractory to PPI",
+          "Retrosternal pain worse at night and after meals with endoscopic evidence of esophagitis despite pantoprazole treatment."
+        ],
+        [
+          "Eosinophilic esophagitis",
+          "Can present with PPI-refractory symptoms and esophageal ulcerations, though typically shows rings or furrows on endoscopy."
+        ],
+        [
+          "Pill esophagitis",
+          "Distal esophageal ulcerations can result from medication-induced injury, though the proximally displaced Z-line suggests chronic reflux pathology."
+        ],
+        [
+          "Infectious esophagitis",
+          "Esophageal ulcerations could represent viral, fungal, or bacterial infection, though less likely without immunocompromise or dysphagia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Simple uncomplicated GERD",
+          "EGD demonstrates significant pathology including ulcerations and Z-line displacement, indicating complicated disease."
+        ],
+        [
+          "Functional chest pain",
+          "Objective endoscopic findings rule out a purely functional disorder."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Barrett's esophagus",
+          "Biopsy confirming columnar epithelium with goblet cells (intestinal metaplasia) in the distal esophagus is pathognomonic for this diagnosis."
+        ],
+        [
+          "Erosive esophagitis with Barrett's esophagus",
+          "The ulcerations seen on EGD represent severe erosive changes coexisting with the confirmed Barrett's metaplasia."
+        ],
+        [
+          "Esophageal adenocarcinoma",
+          "Barrett's esophagus is a premalignant condition and ulcerations could represent early malignant transformation requiring careful histologic review."
+        ],
+        [
+          "Gastroesophageal reflux disease with Barrett's esophagus",
+          "The underlying GERD symptoms and hiatal hernia (displaced Z-line) led to the development of Barrett's metaplasia."
+        ],
+        [
+          "Sliding hiatal hernia with Barrett's esophagus",
+          "The proximally dislocated Z-line indicates hiatal hernia, which predisposes to reflux and Barrett's development."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Non-erosive reflux disease",
+          "EGD demonstrated ulcerations, ruling out non-erosive disease."
+        ],
+        [
+          "Eosinophilic esophagitis",
+          "Biopsy showed intestinal metaplasia with goblet cells, not eosinophilic infiltration."
+        ],
+        [
+          "Infectious esophagitis",
+          "Clinical presentation and biopsy findings are inconsistent with infectious etiology."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Gastroesophageal reflux disease (GERD)",
+            "Chronic retrosternal chest pain is a classic presentation of acid reflux causing esophageal irritation."
+          ],
+          [
+            "Stable angina pectoris",
+            "Chronic retrosternal chest pain in a 57-year-old man raises concern for coronary artery disease with exertional symptoms."
+          ],
+          [
+            "Esophageal motility disorder",
+            "Dysmotility conditions like achalasia or diffuse esophageal spasm can cause chronic retrosternal chest pain."
+          ],
+          [
+            "Costochondritis",
+            "Inflammation of costochondral junctions can produce chronic retrosternal chest pain, though typically reproducible on palpation."
+          ],
+          [
+            "Peptic ulcer disease",
+            "Gastric or duodenal ulcers can cause chronic retrosternal discomfort, especially when located near the gastroesophageal junction."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Gastroesophageal reflux disease (GERD)",
+            "Retrosternal pain worse at night and after meals with partial response to antacids is classic for GERD, though PPI resistance suggests complicated or refractory disease."
+          ],
+          [
+            "Peptic ulcer disease",
+            "Epigastric/retrosternal pain relieved by antacids and worsening after meals fits with peptic ulcer, particularly gastric ulcer."
+          ],
+          [
+            "Functional dyspepsia",
+            "Chronic retrosternal discomfort with inconsistent response to acid suppression and no alarm features could represent functional disorder."
+          ],
+          [
+            "Esophageal motility disorder (achalasia or diffuse esophageal spasm)",
+            "Retrosternal chest pain worse at night and after meals can occur with motility disorders, though antacid response is atypical."
+          ],
+          [
+            "Stable angina pectoris",
+            "Retrosternal chest pain in a 57-year-old man warrants cardiac consideration despite unremarkable exam and some response to antacids."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute coronary syndrome",
+            "Chronic, stable symptoms over time without acute progression make ACS unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Gastroesophageal reflux disease (GERD) with erosive esophagitis",
+            "EGD findings of distal esophageal ulcerations and displaced Z-line are classic for severe GERD despite incomplete response to PPI monotherapy."
+          ],
+          [
+            "Barrett's esophagus",
+            "Proximal displacement of the Z-line suggests intestinal metaplasia of the esophageal mucosa from chronic acid exposure."
+          ],
+          [
+            "Zollinger-Ellison syndrome",
+            "PPI failure with continued ulcerations raises concern for gastrinoma causing excessive acid production and refractory peptic disease."
+          ],
+          [
+            "Pill esophagitis",
+            "Distal esophageal ulcerations can result from medication-induced injury, though the displaced Z-line suggests chronic reflux as more likely."
+          ],
+          [
+            "Eosinophilic esophagitis",
+            "Can present with retrosternal pain and esophageal ulcerations, though nocturnal symptoms and meal-related pattern favor reflux disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Achalasia",
+            "EGD would typically show retained food and dilated esophagus rather than ulcerations and displaced Z-line"
+          ],
+          [
+            "Esophageal carcinoma",
+            "Would expect mass lesion or stricture rather than ulcerations alone in this presentation"
+          ],
+          [
+            "Cardiac ischemia",
+            "Antacid relief and EGD findings of esophageal pathology exclude cardiac etiology"
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Barrett's esophagus",
+            "Biopsy confirmed columnar epithelium with goblet cells (intestinal metaplasia) in the distal esophagus, which is pathognomonic for Barrett's esophagus."
+          ],
+          [
+            "Gastroesophageal reflux disease (GERD)",
+            "The underlying chronic acid reflux causing nocturnal and postprandial symptoms has led to the metaplastic changes seen in Barrett's esophagus."
+          ],
+          [
+            "Erosive esophagitis",
+            "EGD demonstrated ulcerations in the distal esophagus, indicating active erosive injury from chronic acid exposure."
+          ],
+          [
+            "Esophageal adenocarcinoma",
+            "Barrett's esophagus with intestinal metaplasia is a premalignant condition that must be monitored for malignant transformation."
+          ],
+          [
+            "Hiatal hernia",
+            "Proximally dislocated Z-line suggests anatomic disruption of the gastroesophageal junction, commonly associated with hiatal hernia predisposing to reflux."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Functional dyspepsia",
+            "Biopsy showed definitive pathologic changes (intestinal metaplasia) rather than functional disorder."
+          ],
+          [
+            "Infectious esophagitis",
+            "No clinical or endoscopic findings suggesting viral, fungal, or bacterial infection."
+          ],
+          [
+            "Eosinophilic esophagitis",
+            "Biopsy confirmed intestinal metaplasia with goblet cells, not eosinophilic infiltration."
+          ]
+        ]
+      },
+      "cf_id": "case_058_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that the pain is relieved with antacids, which argues against Barrett's esophagus as it suggests typical GERD symptoms."
+    }
+  ]
+}

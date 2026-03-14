@@ -1,0 +1,278 @@
+{
+  "case_id": "case_001",
+  "model": "claude",
+  "ground_truth": "Cystitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute cystitis (uncomplicated urinary tract infection)",
+          "Dysuria is the classic presenting symptom of bladder infection, which is common in pregnancy due to physiologic urinary stasis."
+        ],
+        [
+          "Asymptomatic bacteriuria (progressing to symptomatic)",
+          "Pregnant women have higher rates of asymptomatic bacteriuria that can become symptomatic, presenting initially with dysuria alone."
+        ],
+        [
+          "Urethritis (infectious)",
+          "Urethral inflammation from pathogens such as Chlamydia trachomatis or Neisseria gonorrhoeae can cause isolated dysuria."
+        ],
+        [
+          "Vulvovaginitis (candidal or bacterial)",
+          "Vaginal infections are common in pregnancy and can cause external dysuria when urine contacts inflamed vulvar tissue."
+        ],
+        [
+          "Pyelonephritis (early)",
+          "Upper urinary tract infection may present initially with dysuria before systemic symptoms develop, and pregnancy increases this risk."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute cystitis",
+          "Dysuria in a pregnant woman without fever or CVA tenderness is most consistent with uncomplicated lower urinary tract infection."
+        ],
+        [
+          "Asymptomatic bacteriuria (progressing)",
+          "Pregnant women are at high risk for bacteriuria that can become symptomatic, presenting with isolated dysuria."
+        ],
+        [
+          "Urethritis (infectious)",
+          "Burning on urination could represent urethral inflammation from pathogens like Chlamydia or Gonorrhea without systemic signs."
+        ],
+        [
+          "Vaginal candidiasis",
+          "Pregnancy increases risk of yeast infections which can cause external dysuria and burning without systemic symptoms."
+        ],
+        [
+          "Urethritis (chemical/irritant)",
+          "Contact irritation from soaps, hygiene products, or increased vaginal discharge in pregnancy can cause dysuria without infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "Absence of fever, flank pain, and costovertebral angle tenderness makes upper urinary tract infection unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute cystitis",
+          "Urinalysis shows pyuria (>100 WBCs/hpf), bacteriuria, positive leukocyte esterase and nitrites with dysuria, consistent with uncomplicated lower urinary tract infection."
+        ],
+        [
+          "Asymptomatic bacteriuria progressing to cystitis",
+          "Pregnancy increases risk of asymptomatic bacteriuria that can progress to symptomatic infection, though the dysuria indicates current symptoms."
+        ],
+        [
+          "Acute pyelonephritis",
+          "Despite absent CVA tenderness and fever, early pyelonephritis could present with pyuria and bacteriuria, though clinical findings make this less likely."
+        ],
+        [
+          "Urethritis (bacterial)",
+          "Dysuria with pyuria could indicate urethral infection, though the degree of pyuria and positive nitrites favor cystitis."
+        ],
+        [
+          "Cervicitis with urinary contamination",
+          "Pregnancy-related cervical changes could cause symptoms, though the marked pyuria and positive nitrites strongly suggest primary urinary infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Physiologic hydronephrosis of pregnancy",
+          "Would not cause dysuria, pyuria, or positive markers of infection on urinalysis."
+        ],
+        [
+          "Preterm labor",
+          "No contractions mentioned and urinalysis findings clearly indicate infection rather than obstetric pathology."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Acute cystitis in pregnancy",
+          "Positive urine culture with >100,000 CFU/mL E. coli, dysuria, pyuria, and absence of systemic symptoms or CVA tenderness confirm uncomplicated lower UTI."
+        ],
+        [
+          "Asymptomatic bacteriuria progressing to cystitis",
+          "Pregnant patient with significant bacteriuria and E. coli growth, though symptoms only recently developed suggesting progression from asymptomatic colonization."
+        ],
+        [
+          "Acute pyelonephritis (early/mild)",
+          "E. coli UTI in pregnancy with pyuria, though absence of fever, flank pain, and CVA tenderness makes this less likely at present."
+        ],
+        [
+          "Urethritis with coincidental bacteriuria",
+          "Dysuria could represent urethral inflammation, though the marked pyuria (>100 WBCs/hpf) and positive culture strongly favor true cystitis."
+        ],
+        [
+          "Complicated UTI due to pregnancy-related anatomic changes",
+          "Physiologic hydronephrosis and urinary stasis in pregnancy may contribute to UTI, though clinical picture suggests uncomplicated cystitis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Asymptomatic bacteriuria",
+          "Patient has symptomatic dysuria, eliminating asymptomatic presentation."
+        ],
+        [
+          "Contaminated urine specimen",
+          "High CFU count (>100,000), significant pyuria, positive nitrites, and leukocyte esterase confirm true infection rather than contamination."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute cystitis (uncomplicated urinary tract infection)",
+            "Dysuria is the classic presenting symptom of bacterial cystitis, which is common in pregnancy due to physiologic urinary stasis."
+          ],
+          [
+            "Asymptomatic bacteriuria progressing to symptomatic infection",
+            "Pregnant women have higher rates of asymptomatic bacteriuria that can develop into symptomatic UTI with dysuria."
+          ],
+          [
+            "Urethritis (gonococcal or chlamydial)",
+            "Sexually transmitted infections causing urethral inflammation present with dysuria and occur in this age group."
+          ],
+          [
+            "Pyelonephritis (early)",
+            "Upper urinary tract infection can initially present with dysuria before systemic symptoms develop, and pregnancy increases risk."
+          ],
+          [
+            "Vulvovaginitis (candidal or bacterial vaginosis)",
+            "Vaginal infections can cause external dysuria and are common in pregnancy due to hormonal changes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute pyelonephritis",
+            "Right costovertebral angle tenderness with dysuria in a pregnant patient strongly suggests ascending urinary tract infection to the kidney."
+          ],
+          [
+            "Nephrolithiasis",
+            "Costovertebral angle tenderness could indicate renal colic, though the dysuria and pregnancy make infection more likely."
+          ],
+          [
+            "Urinary tract infection (cystitis)",
+            "Dysuria is the primary symptom, though isolated cystitis typically lacks costovertebral angle tenderness."
+          ],
+          [
+            "Musculoskeletal back pain",
+            "Costovertebral tenderness could represent musculoskeletal strain, though this would not explain the dysuria."
+          ],
+          [
+            "Appendicitis (retrocecal)",
+            "Atypical presentation with right-sided pain in pregnancy, though the dysuria and specific CVA tenderness make this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Preterm labor",
+            "Normal vital signs, no contractions reported, and symptoms localized to urinary tract rather than uterine activity."
+          ],
+          [
+            "Preeclampsia",
+            "Blood pressure is normal and no proteinuria or other systemic signs mentioned at 22 weeks gestation."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute pyelonephritis",
+            "Positive costovertebral angle tenderness, pyuria with leukocyte esterase, nitrites, and bacteria strongly indicate upper urinary tract infection in pregnancy."
+          ],
+          [
+            "Complicated urinary tract infection",
+            "Pregnancy status with significant pyuria and bacteriuria suggests UTI with potential for complications despite lack of systemic fever."
+          ],
+          [
+            "Acute cystitis with referred pain",
+            "Dysuria with positive urinalysis findings may represent lower UTI, though costovertebral angle tenderness is atypical for uncomplicated cystitis."
+          ],
+          [
+            "Ureterolithiasis with secondary infection",
+            "Flank tenderness could indicate kidney stone with superimposed infection given positive urine studies, though dysuria is the primary complaint."
+          ],
+          [
+            "Acute bacterial nephritis (focal)",
+            "Localized renal parenchymal infection could explain unilateral costovertebral angle tenderness with significant pyuria and bacteriuria."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Asymptomatic bacteriuria",
+            "Patient has symptoms (dysuria, costovertebral angle tenderness) making this diagnosis inappropriate."
+          ],
+          [
+            "Uncomplicated cystitis",
+            "Presence of costovertebral angle tenderness indicates upper urinary tract involvement, excluding simple cystitis."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Acute pyelonephritis",
+            "Costovertebral angle tenderness, pyuria, bacteriuria, and positive E. coli culture with >100,000 CFU/mL confirm upper urinary tract infection."
+          ],
+          [
+            "Complicated urinary tract infection",
+            "Pregnancy status makes any UTI \"complicated,\" with confirmed E. coli bacteriuria and systemic features including flank tenderness."
+          ],
+          [
+            "Acute cystitis with pyelonephritis",
+            "Initial dysuria suggests bladder involvement that has ascended to cause kidney infection as evidenced by CVA tenderness."
+          ],
+          [
+            "Urinary tract infection with ureterolithiasis",
+            "Though less likely given positive culture, concurrent nephrolithiasis could contribute to flank pain and predispose to infection."
+          ],
+          [
+            "Acute bacterial cystitis alone",
+            "While culture confirms infection, the isolated lower tract symptoms of dysuria could represent cystitis, though CVA tenderness argues against this being isolated."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Asymptomatic bacteriuria",
+            "Patient has symptomatic dysuria and costovertebral angle tenderness, not asymptomatic."
+          ],
+          [
+            "Urethritis (non-bacterial)",
+            "Urine culture grew >100,000 CFU/mL E. coli, confirming bacterial UTI rather than non-bacterial urethritis."
+          ],
+          [
+            "Sterile pyuria",
+            "Urine culture is positive for E. coli, ruling out sterile inflammation."
+          ]
+        ]
+      },
+      "cf_id": "case_001_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has marked CVA tenderness, which argues against uncomplicated cystitis."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "case_045",
+  "source": "MedQA-USMLE",
+  "original_question": "A 28-year-old woman is brought to the hospital by her boyfriend. She has had three days of fever and headache followed by one day of worsening confusion and hallucinations. She also becomes agitated when offered water. Her temperature is 101\u00b0F (38.3\u00b0C). Two months prior to presentation, the couple was camping and encountered bats in their cabin. In addition to an injection shortly after exposure, what would have been the most effective treatment for this patient?",
+  "ground_truth": "Rabies",
+  "base": {
+    "stage_1": "A 28-year-old woman is brought to the hospital by her boyfriend due to a three-day history of fever and headache.",
+    "stage_2": "On examination, the patient's temperature is 101\u00b0F (38.3\u00b0C). Her boyfriend reports that over the past day, she has developed worsening confusion and hallucinations. He also notes that she becomes agitated when offered water.",
+    "stage_3": "Laboratory studies are ordered, including a complete blood count, comprehensive metabolic panel, and urinalysis. A CT scan of the head is performed and shows no acute abnormalities. Given the patient's altered mental status, a lumbar puncture is performed. CSF analysis reveals a normal glucose and protein, with a mild lymphocytic pleocytosis.",
+    "stage_4": "Further history reveals that two months prior to presentation, the couple was camping and encountered bats in their cabin. The state health department reports that the CSF sample tested positive for rabies virus RNA via PCR."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is noted to have full range of motion of her extremities and no cranial nerve deficits, which argues against rabies.",
+      "rules_out": "Rabies",
+      "stage_1": "A 28-year-old woman is brought to the hospital by her boyfriend due to a three-day history of fever and headache.",
+      "stage_2": "On examination, the patient's temperature is 101\u00b0F (38.3\u00b0C). Her boyfriend reports that over the past day, she has developed worsening confusion and hallucinations. He also notes that she becomes agitated when offered water. The patient is noted to have full range of motion of her extremities and no cranial nerve deficits.",
+      "stage_3": "Laboratory studies are ordered, including a complete blood count, comprehensive metabolic panel, and urinalysis. A CT scan of the head is performed and shows no acute abnormalities. Given the patient's altered mental status, a lumbar puncture is performed. CSF analysis reveals a normal glucose and protein, with a mild lymphocytic pleocytosis.",
+      "stage_4": "Further history reveals that two months prior to presentation, the couple was camping and encountered bats in their cabin. The state health department reports that the CSF sample tested positive for rabies virus RNA via PCR.",
+      "cf_id": "case_045_cf_a"
+    }
+  ]
+}

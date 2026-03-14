@@ -1,0 +1,286 @@
+{
+  "case_id": "case_015",
+  "model": "claude",
+  "ground_truth": "Vitamin K deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Chronic obstructive pulmonary disease (COPD)",
+          "Young patient with chronic bronchitis, which is one of the two main forms of COPD, though unusual at this age without smoking history."
+        ],
+        [
+          "Asthma",
+          "Can present with chronic respiratory symptoms and bronchial inflammation that may be characterized as chronic bronchitis by the patient."
+        ],
+        [
+          "Bronchiectasis",
+          "Causes chronic productive cough and recurrent bronchial infections that could be described as chronic bronchitis."
+        ],
+        [
+          "Cystic fibrosis",
+          "Should be considered in a young adult with chronic bronchitis, as it causes chronic pulmonary disease with recurrent infections."
+        ],
+        [
+          "Alpha-1 antitrypsin deficiency",
+          "Rare genetic cause of early-onset COPD/chronic bronchitis in young non-smokers or minimal smokers."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses without further history, examination findings, or diagnostic testing."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic bronchitis",
+          "History of chronic bronchitis with mild rhonchi on exam is consistent with ongoing airway inflammation and mucus production."
+        ],
+        [
+          "Asthma",
+          "Chronic airway inflammation can present with rhonchi and may have been previously misdiagnosed as chronic bronchitis in a young patient."
+        ],
+        [
+          "Bronchiectasis",
+          "Can present with chronic productive cough and rhonchi, often develops secondary to recurrent infections or inflammation."
+        ],
+        [
+          "Gastroesophageal reflux disease (GERD)",
+          "Can cause chronic respiratory symptoms and bronchitis-like presentation through microaspiration and vagal irritation."
+        ],
+        [
+          "Post-infectious bronchial hyperreactivity",
+          "May cause persistent rhonchi and bronchitis symptoms following respiratory infection in an otherwise healthy young adult."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute bronchitis",
+          "Normal vital signs and routine checkup context suggest chronic rather than acute process."
+        ],
+        [
+          "Pneumonia",
+          "Absence of fever, normal vital signs, and only mild scattered rhonchi make acute infection unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic bronchitis with vitamin K deficiency",
+          "Young patient with confirmed chronic bronchitis and isolated PT prolongation suggesting vitamin K deficiency from malabsorption or poor nutrition."
+        ],
+        [
+          "Cystic fibrosis",
+          "Chronic bronchitis in young adult with bronchial thickening on imaging and prolonged PT from fat-malabsorption causing vitamin K deficiency."
+        ],
+        [
+          "Primary ciliary dyskinesia",
+          "Chronic respiratory symptoms from childhood with bronchial thickening, though PT prolongation would require concurrent nutritional deficiency."
+        ],
+        [
+          "Chronic obstructive pulmonary disease (COPD)",
+          "Chronic bronchitis with radiographic changes, though unusual age for COPD unless alpha-1 antitrypsin deficiency present."
+        ],
+        [
+          "Occult liver disease",
+          "Prolonged PT from hepatic synthetic dysfunction with chronic bronchitis as separate or related condition (e.g., alpha-1 antitrypsin deficiency)."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute bronchitis",
+          "History indicates chronic rather than acute condition with structural changes on chest x-ray."
+        ],
+        [
+          "Warfarin use/anticoagulation",
+          "No mention of anticoagulant therapy in history and patient presents for routine checkup."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cystic fibrosis",
+          "Confirmed by genetic testing with classic features of chronic bronchitis, fat malabsorption (steatorrhea), and vitamin K deficiency causing prolonged PT."
+        ],
+        [
+          "Pancreatic insufficiency secondary to cystic fibrosis",
+          "The steatorrhea and fat-soluble vitamin deficiency directly indicate exocrine pancreatic dysfunction from CF."
+        ],
+        [
+          "Chronic pancreatitis",
+          "Could cause fat malabsorption and vitamin K deficiency with steatorrhea, though less likely given genetic confirmation of CF and young age."
+        ],
+        [
+          "Celiac disease",
+          "Can cause fat malabsorption and vitamin K deficiency, but genetic testing confirmed CF as the underlying cause."
+        ],
+        [
+          "Primary biliary cholangitis",
+          "Could theoretically cause fat malabsorption and vitamin K deficiency, but extremely unlikely given age, genetic CF diagnosis, and lack of cholestatic features."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Warfarin use/coagulopathy of other cause",
+          "Prolonged PT explained by vitamin K deficiency from fat malabsorption, not primary coagulation disorder."
+        ],
+        [
+          "Isolated vitamin K deficiency from dietary causes",
+          "The multisystem involvement with bronchitis, steatorrhea, and genetic confirmation points to CF as the underlying cause."
+        ],
+        [
+          "Simple chronic bronchitis",
+          "The combination of pulmonary disease, pancreatic insufficiency, and genetic testing confirms this is manifestation of CF, not isolated bronchitis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Chronic bronchitis secondary to smoking",
+            "Most common cause of chronic bronchitis in young adults is cigarette smoking."
+          ],
+          [
+            "Asthma with chronic bronchitic component",
+            "Young female with chronic airway inflammation may have underlying asthma presenting as chronic bronchitis."
+          ],
+          [
+            "Chronic bronchitis secondary to occupational/environmental exposure",
+            "Prolonged exposure to dust, fumes, or pollutants can cause chronic bronchitis in young adults."
+          ],
+          [
+            "Bronchiectasis",
+            "Chronic productive cough and recurrent infections may indicate underlying bronchiectasis causing bronchitic symptoms."
+          ],
+          [
+            "Cystic fibrosis (mild variant)",
+            "Young adult with chronic bronchitis should be evaluated for underlying CF, particularly if incompletely diagnosed previously."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Immune thrombocytopenic purpura (ITP)",
+            "Young female with petechiae and bruising suggesting isolated thrombocytopenia without other systemic findings."
+          ],
+          [
+            "Acute leukemia",
+            "Petechiae and bruising from thrombocytopenia with possible bone marrow infiltration, though lack of other systemic symptoms is atypical."
+          ],
+          [
+            "Aplastic anemia",
+            "Petechiae and bruising from pancytopenia, though isolated thrombocytopenia more common initially."
+          ],
+          [
+            "Thrombotic thrombocytopenic purpura (TTP)",
+            "Petechiae and bruising from microangiopathic process, though lack of fever, neurologic symptoms, or renal dysfunction is unusual."
+          ],
+          [
+            "Medication-induced thrombocytopenia",
+            "Petechiae and bruising from drug effect, possibly related to medications for chronic bronchitis or other unmentioned drugs."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic bronchitis exacerbation",
+            "Lung auscultation is clear with no respiratory symptoms reported at this visit."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Vitamin K deficiency",
+            "Prolonged PT with bruising and petechiae suggests impaired synthesis of vitamin K-dependent clotting factors (II, VII, IX, X)."
+          ],
+          [
+            "Liver disease/cirrhosis",
+            "Hepatic dysfunction can cause prolonged PT due to decreased synthesis of clotting factors and manifest with easy bruising."
+          ],
+          [
+            "Warfarin/anticoagulant use",
+            "Prolonged PT with bleeding manifestations (bruising, petechiae) is classic for warfarin therapy or surreptitious anticoagulant ingestion."
+          ],
+          [
+            "Disseminated intravascular coagulation (DIC)",
+            "Can present with prolonged PT and bleeding manifestations, though typically more acute and severe than described here."
+          ],
+          [
+            "Factor VII deficiency",
+            "Isolated factor VII deficiency causes isolated PT prolongation with bleeding tendency (bruising and petechiae)."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Immune thrombocytopenic purpura (ITP)",
+            "Would not cause prolonged PT; affects platelet count and PTT typically remains normal."
+          ],
+          [
+            "Hemophilia A or B",
+            "These cause prolonged PTT, not PT, and are X-linked conditions rarely symptomatic in females."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Cystic fibrosis",
+            "Genetic testing confirms the diagnosis, explaining chronic bronchitis, malabsorption with steatorrhea, and vitamin K deficiency causing coagulopathy and bleeding manifestations."
+          ],
+          [
+            "Pancreatic insufficiency secondary to cystic fibrosis",
+            "Steatorrhea and fat-soluble vitamin malabsorption directly result from exocrine pancreatic dysfunction, a major complication of cystic fibrosis."
+          ],
+          [
+            "Vitamin K deficiency coagulopathy",
+            "Prolonged PT, bruising, and petechiae are directly caused by documented vitamin K deficiency from fat malabsorption in cystic fibrosis."
+          ],
+          [
+            "Chronic pancreatitis",
+            "Could cause similar malabsorption and steatorrhea, though genetic confirmation of cystic fibrosis makes this a secondary or related process rather than primary diagnosis."
+          ],
+          [
+            "Malabsorption syndrome",
+            "While cystic fibrosis is the underlying cause, this describes the clinical syndrome of fat malabsorption manifesting as steatorrhea and vitamin deficiencies."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary coagulation disorder (e.g., hemophilia, von Willebrand disease)",
+            "Normal aPTT expected and isolated PT prolongation with low vitamin K explains the coagulopathy."
+          ],
+          [
+            "Liver disease",
+            "Normal metabolic function and selective vitamin K deficiency without other liver dysfunction markers makes this unlikely."
+          ],
+          [
+            "Celiac disease",
+            "Genetic testing confirmed cystic fibrosis as the cause of malabsorption."
+          ],
+          [
+            "Inflammatory bowel disease",
+            "Steatorrhea pattern and confirmed cystic fibrosis explain the gastrointestinal symptoms."
+          ]
+        ]
+      },
+      "cf_id": "case_015_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The physical exam reveals multiple bruises and petechiae, which argues against chronic Vitamin K deficiency, which would not typically present without a clear bleeding diathesis."
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "case_id": "case_040",
+  "model": "claude",
+  "ground_truth": "Cyst formation in a persistent thyroglossal duct",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "Most common congenital midline neck mass in children, typically presents as a painless anterior neck lump that moves with swallowing."
+        ],
+        [
+          "Thyroid nodule",
+          "Solitary or dominant thyroid nodule can present as anterior neck mass in adolescents, more common in females."
+        ],
+        [
+          "Dermoid cyst",
+          "Congenital midline lesion that can occur in the anterior neck, typically painless and slow-growing."
+        ],
+        [
+          "Goiter (diffuse thyroid enlargement)",
+          "Thyroid enlargement from various causes (iodine deficiency, autoimmune thyroiditis) presents as anterior neck swelling in adolescents."
+        ],
+        [
+          "Lymphadenopathy",
+          "Enlarged anterior cervical or supraclavicular lymph nodes from infectious or other causes can present as anterior neck mass."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "Midline neck mass that moves with swallowing, located between hyoid and mandible, is the classic presentation of this congenital remnant."
+        ],
+        [
+          "Dermoid cyst",
+          "Midline location superior to hyoid with fluctuance is consistent with this congenital inclusion cyst, though less likely to move with swallowing."
+        ],
+        [
+          "Ectopic thyroid tissue",
+          "Midline neck mass that moves with swallowing could represent thyroid tissue along the path of embryologic descent."
+        ],
+        [
+          "Submental lymphadenopathy",
+          "Midline location inferior to mandible could represent enlarged lymph nodes, though lack of pain and fever makes reactive causes less likely."
+        ],
+        [
+          "Epidermoid cyst",
+          "Fluctuant superficial midline mass is possible, though movement with swallowing would be atypical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute thyroiditis",
+          "Patient is afebrile with no pain or erythema."
+        ],
+        [
+          "Abscess",
+          "Absence of erythema, pain, and fever makes infection unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "Midline neck mass superior to hyoid that moves with swallowing, most common congenital midline neck mass in children, normal thyroid function."
+        ],
+        [
+          "Dermoid cyst",
+          "Midline location and fluctuant quality fit, though typically does not move with swallowing as consistently as thyroglossal duct cyst."
+        ],
+        [
+          "Submental lymphadenopathy",
+          "Midline location inferior to mandible could represent enlarged submental lymph nodes, though typically firmer and less fluctuant."
+        ],
+        [
+          "Ectopic thyroid tissue",
+          "Midline mass that moves with swallowing could represent ectopic thyroid, though normal thyroid function makes this less likely."
+        ],
+        [
+          "Epidermoid cyst",
+          "Fluctuant midline mass is consistent, though lack of movement with swallowing would be more typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute thyroiditis",
+          "Normal thyroid function tests, afebrile, and no erythema or pain make this unlikely."
+        ],
+        [
+          "Thyroid nodule",
+          "Mass is located superior to hyoid bone, above the typical thyroid location."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Thyroglossal duct cyst",
+          "Confirmed by ultrasound showing midline cystic structure with tract to tongue base and pathologic diagnosis after surgical excision."
+        ],
+        [
+          "Dermoid cyst",
+          "Midline neck mass in young patient that can be cystic and fluctuant, though typically does not have a tract to the tongue base."
+        ],
+        [
+          "Epidermoid cyst",
+          "Can present as a midline neck mass with fluctuant quality, though less likely given the demonstrated connection to the tongue base."
+        ],
+        [
+          "Ectopic thyroid tissue",
+          "Can occur along the thyroglossal duct pathway and present as midline neck mass, though imaging and pathology confirmed cystic rather than solid thyroid tissue."
+        ],
+        [
+          "Thyroid nodule/goiter",
+          "Midline neck mass that moves with swallowing, though typically located lower near the thyroid gland and ruled out by normal thyroid function and pathology."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Lymphadenopathy",
+          "Normal CBC and imaging showed cystic structure rather than lymph node pathology."
+        ],
+        [
+          "Thyroid malignancy",
+          "Pathology confirmed benign thyroglossal duct cyst, not malignant tissue."
+        ],
+        [
+          "Abscess/infection",
+          "Patient afebrile, no erythema, no pain, and pathology confirmed cystic developmental anomaly rather than infectious process."
+        ],
+        [
+          "Branchial cleft cyst",
+          "Typically located laterally rather than midline, and imaging/pathology confirmed thyroglossal origin."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Thyroglossal duct cyst",
+            "Most common congenital midline neck mass in children, typically presents as anterior neck lump that moves with swallowing."
+          ],
+          [
+            "Thyroid nodule",
+            "Can present as anterior neck mass in adolescents, may be solitary or part of thyroid enlargement."
+          ],
+          [
+            "Dermoid cyst",
+            "Congenital midline cystic lesion that commonly occurs in the anterior neck region in children and adolescents."
+          ],
+          [
+            "Lymphadenopathy",
+            "Enlarged anterior cervical or supraclavicular lymph nodes from infection or other causes can present as neck lump."
+          ],
+          [
+            "Thyroid goiter (diffuse)",
+            "Generalized thyroid enlargement presenting as anterior neck swelling, can occur in adolescents due to various causes including autoimmune thyroiditis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Infected thyroglossal duct cyst",
+            "Midline neck mass that moves with swallowing, superior to hyoid, with tenderness and erythema suggests infected congenital cyst along thyroglossal duct pathway."
+          ],
+          [
+            "Thyroglossal duct cyst (non-infected)",
+            "Midline location, movement with swallowing, and fluctuance are classic features, though tenderness and erythema are atypical for uncomplicated cyst."
+          ],
+          [
+            "Infected dermoid cyst",
+            "Midline congenital cyst can present with tenderness, erythema, and fluctuance when infected, though less commonly moves with swallowing."
+          ],
+          [
+            "Submental lymphadenitis",
+            "Infected lymph node in submental space can present with midline tenderness and erythema, though typically less fluctuant and doesn't move with swallowing."
+          ],
+          [
+            "Thyroid nodule with thyroiditis",
+            "Midline mass moving with swallowing suggests thyroid origin, with tenderness and erythema indicating inflammatory component, though location superior to hyoid is unusual."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple thyroglossal duct cyst (uncomplicated)",
+            "The presence of tenderness and erythema indicates infection/inflammation rather than simple cyst."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Infected thyroglossal duct cyst",
+            "Midline neck mass above hyoid that moves with swallowing, with tenderness and erythema indicating superimposed infection despite normal CBC."
+          ],
+          [
+            "Thyroglossal duct cyst (non-infected)",
+            "Classic midline location above hyoid with movement on swallowing, though tenderness and erythema are atypical for uncomplicated cyst."
+          ],
+          [
+            "Infected dermoid cyst",
+            "Midline location and fluctuance with overlying erythema and tenderness suggest infection, though movement with swallowing is less typical."
+          ],
+          [
+            "Submental lymphadenitis",
+            "Midline submental location with tenderness and erythema, though movement with swallowing and fluctuance make this less likely."
+          ],
+          [
+            "Infected median raphe cyst",
+            "Midline location with signs of infection (tenderness, erythema), though less common than thyroglossal duct cyst in this age group."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Thyroid nodule/goiter",
+            "Normal thyroid function tests make primary thyroid pathology less likely, and location is superior to hyoid rather than at thyroid level."
+          ],
+          [
+            "Simple ranula",
+            "Location is superior to hyoid rather than in floor of mouth, and erythema/tenderness suggest infection rather than simple mucocele."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Infected thyroglossal duct cyst",
+            "Midline neck mass superior to hyoid that moves with swallowing, with tenderness and erythema indicating superimposed infection, confirmed by ultrasound showing cystic structure with tract to tongue base."
+          ],
+          [
+            "Thyroglossal duct cyst (non-infected)",
+            "The ultrasound and pathology definitively confirm this congenital midline neck lesion connected to the base of the tongue via a persistent embryologic tract."
+          ],
+          [
+            "Dermoid cyst with inflammation",
+            "Midline congenital cystic lesion that can occur in the submental region, though the connection to tongue base and surgical pathology make this less likely."
+          ],
+          [
+            "Ectopic thyroid tissue",
+            "Can present as midline neck mass along thyroglossal duct pathway, though the cystic nature and pathology confirmation make this diagnosis unlikely."
+          ],
+          [
+            "Lymphadenitis of submental lymph node",
+            "Tender, erythematous midline neck mass could represent infected lymph node, but the cystic nature on ultrasound and tract to tongue base exclude this."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Thyroid nodule",
+            "Located superior to hyoid bone rather than in thyroid bed, and ultrasound showed cystic structure with tract rather than thyroid parenchymal lesion."
+          ],
+          [
+            "Branchial cleft cyst",
+            "Typically lateral neck masses, not midline, and pathology confirmed thyroglossal duct cyst."
+          ],
+          [
+            "Ranula",
+            "Located in floor of mouth/sublingual space rather than anterior neck, and pathology confirmed different entity."
+          ]
+        ]
+      },
+      "cf_id": "case_040_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of significant tenderness and erythema suggests an infectious process, making a thyroglossal duct cyst less likely."
+    }
+  ]
+}

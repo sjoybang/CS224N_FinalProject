@@ -1,0 +1,25 @@
+{
+  "case_id": "case_039",
+  "source": "MedQA-USMLE",
+  "original_question": "A 21-year-old man presents to the emergency department after sustaining a stab wound to the neck at a local farmer's market. The patient is otherwise healthy and is complaining of pain. The patient is able to offer the history himself. His temperature is 97.6\u00b0F (36.4\u00b0C), blood pressure is 120/84 mmHg, pulse is 90/min, respirations are 15/min, and oxygen saturation is 98% on room air. Physical exam demonstrates a 3 cm laceration 1 cm inferior to the mastoid process on the right side. The patient's breath sounds are clear and he is protecting his airway. No stridor or difficulty breathing is noted. Which of the following is the most appropriate next step in the management of this patient?",
+  "ground_truth": "Penetrating neck trauma",
+  "base": {
+    "stage_1": "A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound.",
+    "stage_2": "The patient is afebrile with a blood pressure of 120/84 mmHg, a pulse of 90/min, respirations of 15/min, and an oxygen saturation of 98% on room air. Examination reveals a 3 cm laceration 1 cm inferior to the right mastoid process. Breath sounds are clear bilaterally. The patient is protecting his airway, but there is no stridor or apparent respiratory distress.",
+    "stage_3": "Initial laboratory results including a complete blood count and basic metabolic panel are within normal limits. A chest x-ray does not reveal any pneumothorax or mediastinal widening.",
+    "stage_4": "CT angiography reveals injury to the vertebral artery."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of subcutaneous emphysema on exam argues against isolated vascular injury and raises concern for esophageal or tracheal injury.",
+      "rules_out": "Penetrating neck trauma",
+      "stage_1": "A 21-year-old male presents to the emergency department complaining of neck pain after sustaining a stab wound.",
+      "stage_2": "The patient is afebrile with a blood pressure of 120/84 mmHg, a pulse of 90/min, respirations of 15/min, and an oxygen saturation of 98% on room air. Examination reveals a 3 cm laceration 1 cm inferior to the right mastoid process. Breath sounds are clear bilaterally. The patient is protecting his airway, but there is no stridor or apparent respiratory distress. Subcutaneous emphysema is palpated around the wound.",
+      "stage_3": "Initial laboratory results including a complete blood count and basic metabolic panel are within normal limits. A chest x-ray does not reveal any pneumothorax or mediastinal widening.",
+      "stage_4": "CT angiography reveals injury to the vertebral artery.",
+      "cf_id": "case_039_cf_a"
+    }
+  ]
+}

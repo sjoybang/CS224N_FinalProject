@@ -1,0 +1,234 @@
+{
+  "case_id": "case_019",
+  "model": "gemini",
+  "ground_truth": "Delirium tremens",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Supraventricular Tachycardia",
+          "Palpitations are a key symptom, and post-operative stress can trigger SVT."
+        ],
+        [
+          "Atrial Fibrillation",
+          "Post-operative state and potential electrolyte imbalances could precipitate new-onset atrial fibrillation."
+        ],
+        [
+          "Sinus Tachycardia",
+          "Pain, anxiety, or dehydration post-cholecystectomy could lead to sinus tachycardia."
+        ],
+        [
+          "Pulmonary Embolism",
+          "Although less likely initially, post-operative patients are at risk for PE, which can present with tachycardia."
+        ],
+        [
+          "Anemia",
+          "Post-operative blood loss could cause anemia, leading to compensatory tachycardia."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Sepsis",
+          "Post-operative cholangitis treated with antibiotics raises concern for possible sepsis given fever, tachycardia, and altered mental status."
+        ],
+        [
+          "Postoperative pain",
+          "Pain following surgery can cause tachycardia, hypertension, and distress."
+        ],
+        [
+          "Anxiety",
+          "The patient's distress, restlessness, and disorientation could be related to anxiety."
+        ],
+        [
+          "Medication side effect",
+          "Piperacillin-tazobactam could be causing tachycardia or other adverse effects."
+        ],
+        [
+          "Pulmonary embolism",
+          "Post-operative patients are at risk for pulmonary embolism, which can present with tachycardia, shortness of breath, and anxiety."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Sepsis",
+          "Post-operative fever, tachycardia, and altered mental status in the setting of recent cholangitis treatment raise concern for possible sepsis despite normal CBC."
+        ],
+        [
+          "Postoperative pain",
+          "While abdominal palpation is unremarkable, postoperative pain can still cause tachycardia, hypertension, and distress."
+        ],
+        [
+          "Medication reaction",
+          "Piperacillin-tazobactam could be causing an adverse reaction manifesting as tachycardia, hypertension, and altered mental status."
+        ],
+        [
+          "Anxiety disorder",
+          "The patient's distress, inability to remain still, and disorientation could be related to an underlying anxiety disorder exacerbated by the postoperative setting."
+        ],
+        [
+          "Pulmonary embolism",
+          "Although less likely given the normal respiratory rate, postoperative patients are at risk for pulmonary embolism, which can present with tachycardia and anxiety."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Surgical complication",
+          "CT scan of the abdomen shows no signs of surgical complications."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Alcohol withdrawal",
+          "The patient's history of heavy alcohol use and abrupt cessation prior to surgery, coupled with tachycardia, hypertension, diaphoresis, and disorientation, strongly suggest alcohol withdrawal."
+        ],
+        [
+          "Postoperative pain",
+          "While abdominal palpation is unremarkable, postoperative pain can still contribute to tachycardia, hypertension, and restlessness."
+        ],
+        [
+          "Sepsis",
+          "Although the CBC is normal, the patient's recent cholangitis, elevated temperature, and tachycardia could indicate a persistent or recurrent infection."
+        ],
+        [
+          "Anxiety disorder",
+          "The patient's distress, restlessness, and disorientation could be related to an underlying anxiety disorder exacerbated by the postoperative setting."
+        ],
+        [
+          "Medication side effect",
+          "Piperacillin-tazobactam or other medications could be contributing to the patient's symptoms, although less likely given the other factors."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Surgical complications",
+          "CT scan of the abdomen shows no signs of surgical complications."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Supraventricular Tachycardia",
+            "Palpitations are a key symptom, and post-operative stress can trigger SVT."
+          ],
+          [
+            "Atrial Fibrillation",
+            "Post-operative state and potential electrolyte imbalances could precipitate new-onset atrial fibrillation."
+          ],
+          [
+            "Sinus Tachycardia",
+            "Pain or anxiety following surgery could lead to a normal but elevated heart rate."
+          ],
+          [
+            "Pulmonary Embolism",
+            "Post-operative patients are at increased risk for PE, which can present with tachycardia."
+          ],
+          [
+            "Anemia",
+            "Blood loss during surgery could result in anemia, causing the heart to beat faster to compensate."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Sepsis",
+            "Given the recent cholangitis, elevated temperature, tachycardia, and altered mental status, sepsis is a strong possibility."
+          ],
+          [
+            "Opioid Toxicity",
+            "The patient's somnolence and constricted pupils, combined with post-operative status, suggest possible opioid toxicity."
+          ],
+          [
+            "Postoperative Pain",
+            "While abdominal palpation is unremarkable, postoperative pain could still contribute to tachycardia and hypertension."
+          ],
+          [
+            "Medication Reaction",
+            "The patient's symptoms could be related to an adverse reaction to piperacillin-tazobactam or another medication."
+          ],
+          [
+            "Pulmonary Embolism",
+            "Postoperative patients are at risk for pulmonary embolism, which can present with tachycardia, shortness of breath, and altered mental status."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Sepsis",
+            "Although the CBC is normal, the patient's tachycardia, fever, somnolence, and recent cholangitis history suggest possible sepsis."
+          ],
+          [
+            "Opioid Toxicity",
+            "The patient's somnolence and constricted pupils, combined with post-operative pain management, raise concern for opioid toxicity."
+          ],
+          [
+            "Medication Reaction",
+            "The patient's symptoms could be related to an adverse reaction to piperacillin-tazobactam or another medication."
+          ],
+          [
+            "Postoperative Pain",
+            "Inadequate pain control could contribute to tachycardia and elevated blood pressure, even with unremarkable abdominal palpation."
+          ],
+          [
+            "Delirium",
+            "Postoperative state, infection history, and altered mental status could indicate delirium."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Surgical Complications",
+            "CT scan of the abdomen shows no signs of surgical complications."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Alcohol withdrawal",
+            "Given the history of heavy alcohol use and abrupt cessation, tachycardia, hypertension, diaphoresis, altered mental status, and somnolence are consistent with alcohol withdrawal."
+          ],
+          [
+            "Postoperative infection",
+            "Although the CBC is normal and abdominal CT is negative, postoperative infections can still occur and present with fever, tachycardia, and altered mental status."
+          ],
+          [
+            "Delirium tremens",
+            "This is a severe form of alcohol withdrawal that can cause altered mental status, tachycardia, and hypertension."
+          ],
+          [
+            "Medication side effect",
+            "Piperacillin-tazobactam or other medications could be contributing to the patient's symptoms, although less likely given the alcohol history."
+          ],
+          [
+            "Pain",
+            "Postoperative pain could contribute to tachycardia and hypertension, although it does not fully explain the altered mental status."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Surgical complications",
+            "CT scan of the abdomen showed no signs of surgical complications."
+          ]
+        ]
+      },
+      "cf_id": "case_019_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are now noted to be constricted and she is somnolent, findings that argue against delirium tremens."
+    }
+  ]
+}

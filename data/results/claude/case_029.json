@@ -1,0 +1,290 @@
+{
+  "case_id": "case_029",
+  "model": "claude",
+  "ground_truth": "Neuroleptic malignant syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Anti-NMDA receptor encephalitis",
+          "Young woman with acute psychiatric symptoms, delusions, and behavioral changes without fever, classic presentation for autoimmune encephalitis."
+        ],
+        [
+          "First-episode psychosis/Schizophreniform disorder",
+          "Age-appropriate presentation with delusions, abnormal behavior, and aggression in a young adult without prior psychiatric history."
+        ],
+        [
+          "Substance-induced psychotic disorder",
+          "Acute onset of psychosis with aggression despite denial of drug use, which may be unreliable in this context."
+        ],
+        [
+          "Acute intermittent porphyria",
+          "Can present with psychiatric symptoms, behavioral changes, and aggression in young women without initial neurological signs."
+        ],
+        [
+          "Neuroleptic malignant syndrome (early)",
+          "Recently started on risperidone, presenting with behavioral changes and aggression, though fever is typically present."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Infectious encephalitis (viral/bacterial)",
+          "Patient denies fever and no mention of seizures or clear infectious prodrome makes this less likely at this stage."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Neuroleptic malignant syndrome",
+          "Recent risperidone initiation followed by fever, rigidity, diaphoresis, altered mental status, and autonomic instability is the classic presentation."
+        ],
+        [
+          "Anti-NMDA receptor encephalitis",
+          "Young woman with psychiatric symptoms, behavioral changes, confusion, and fever, though rigidity is less typical than dyskinesias."
+        ],
+        [
+          "Serotonin syndrome",
+          "Altered mental status, hyperthermia, diaphoresis, and rigidity could occur if risperidone was combined with serotonergic agents."
+        ],
+        [
+          "Malignant catatonia",
+          "Catatonic features (mutism, staring, rigidity), fever, and autonomic instability in context of acute psychosis fits this diagnosis."
+        ],
+        [
+          "CNS infection (encephalitis/meningitis)",
+          "Fever, altered mental status, and confusion require consideration of infectious etiology despite week-long psychiatric prodrome."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Drug intoxication",
+          "Patient denies illicit drug use and clinical picture with antipsychotic exposure better explains neuroleptic syndrome."
+        ],
+        [
+          "Heat stroke",
+          "No environmental exposure history and symptom onset temporally related to medication initiation."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Neuroleptic malignant syndrome",
+          "Recent risperidone initiation followed by fever, rigidity, altered mental status, markedly elevated CK (9800), and autonomic instability are pathognomonic."
+        ],
+        [
+          "Serotonin syndrome",
+          "Presents with hyperthermia, rigidity, altered mental status, and autonomic dysfunction, though less likely without serotonergic agent exposure."
+        ],
+        [
+          "Anti-NMDA receptor encephalitis",
+          "Young woman with behavioral changes, psychosis, and autonomic instability, though the temporal relationship to risperidone and extreme rigidity favor NMS."
+        ],
+        [
+          "Acute disseminated encephalomyelitis",
+          "Could explain psychiatric symptoms and encephalopathy, but lack of seizures and typical NMS presentation after antipsychotic make this less likely."
+        ],
+        [
+          "CNS infection (encephalitis/meningoencephalitis)",
+          "Fever, confusion, and leukocytosis could suggest infection, but extreme CK elevation and rigidity with recent neuroleptic use point elsewhere."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Malignant hyperthermia",
+          "No exposure to volatile anesthetics or succinylcholine triggering agents."
+        ],
+        [
+          "Rhabdomyolysis (primary)",
+          "The rhabdomyolysis is present but secondary to the underlying syndrome causing rigidity, not a primary diagnosis."
+        ],
+        [
+          "Sepsis",
+          "No clear infectious source, and clinical presentation with marked rigidity and temporal relationship to risperidone better explained by NMS."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Neuroleptic malignant syndrome",
+          "Recent risperidone use, fever, rigidity, altered mental status, elevated CK, and clinical improvement after antipsychotic discontinuation are pathognomonic."
+        ],
+        [
+          "Anti-NMDA receptor encephalitis",
+          "Young woman with acute psychiatric symptoms, behavioral changes, and altered consciousness, though dramatic response to risperidone discontinuation makes this less likely."
+        ],
+        [
+          "Acute psychotic disorder with catatonia",
+          "Initial presentation of delusions and abnormal behavior could represent primary psychosis with catatonic features causing rigidity and autonomic instability."
+        ],
+        [
+          "Serotonin syndrome",
+          "Rigidity, hyperthermia, altered mental status, and autonomic dysfunction are consistent, though requires exposure to serotonergic agents beyond risperidone alone."
+        ],
+        [
+          "Viral encephalitis",
+          "Acute behavioral changes, fever, and confusion in a young patient could suggest encephalitis, though lack of seizures and rapid recovery after risperidone cessation argue against this."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sepsis",
+          "Leukocytosis and fever present but lack of clear infectious source, normal vital signs stability, and resolution with supportive care alone make this unlikely."
+        ],
+        [
+          "Rhabdomyolysis (primary)",
+          "This is a consequence of NMS rather than the primary diagnosis; the constellation of symptoms points to an underlying cause."
+        ],
+        [
+          "Heat stroke",
+          "No history of heat exposure and rigidity pattern more consistent with medication effect."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Anti-NMDA receptor encephalitis",
+            "Young woman with acute psychiatric symptoms, behavioral changes, and delusions without psychiatric family history suggests autoimmune encephalitis."
+          ],
+          [
+            "First-episode psychosis/Schizophreniform disorder",
+            "Acute onset of delusions and behavioral changes in a young adult fits the typical presentation of primary psychotic disorder."
+          ],
+          [
+            "Neuroleptic malignant syndrome",
+            "Recent risperidone initiation with behavioral changes and aggression could represent early NMS, though fever is notably absent."
+          ],
+          [
+            "Drug-induced psychosis",
+            "Despite denial of illicit drug use, substances like synthetic cannabinoids or stimulants could cause acute psychotic symptoms in this age group."
+          ],
+          [
+            "Viral encephalitis (HSV, other)",
+            "Acute behavioral changes and aggression can occur in encephalitis even without documented fever at presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses; fever absence makes some infectious/inflammatory causes less likely but doesn't eliminate them."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Neuroleptic malignant syndrome",
+            "Recent risperidone initiation with characteristic features of rigidity, altered mental status, diaphoresis, and tachycardia."
+          ],
+          [
+            "Anti-NMDA receptor encephalitis",
+            "Young woman with subacute behavioral changes, delusions, aggression, and progressive decline to catatonic-like state."
+          ],
+          [
+            "Serotonin syndrome",
+            "Altered mental status, autonomic instability (diaphoresis, tachycardia), and rigidity could suggest serotonergic toxicity if other medications involved."
+          ],
+          [
+            "Autoimmune encephalitis (non-NMDA)",
+            "Acute psychiatric presentation with rapid neurological deterioration in young woman without prior psychiatric history."
+          ],
+          [
+            "Catatonia",
+            "Mutism, staring, rigidity, and lack of responsiveness in context of acute psychotic symptoms could represent primary or secondary catatonia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infectious encephalitis",
+            "Afebrile presentation makes infectious etiology less likely."
+          ],
+          [
+            "Drug intoxication",
+            "Patient denies illicit drug use and clinical picture more consistent with medication reaction."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Neuroleptic malignant syndrome",
+            "Recent risperidone initiation with classic tetrad of altered mental status, rigidity, autonomic instability (diaphoresis, tachycardia), and markedly elevated CK (9800 U/L)."
+          ],
+          [
+            "Serotonin syndrome",
+            "Altered mental status, rigidity, diaphoresis, and tachycardia could represent serotonin toxicity, though no clear serotonergic agent mentioned."
+          ],
+          [
+            "Autoimmune encephalitis",
+            "Young woman with acute psychiatric symptoms, behavioral changes, and confusion; elevated WBC and protein in urine may suggest inflammatory process."
+          ],
+          [
+            "Acute rhabdomyolysis with underlying encephalitis",
+            "Extremely elevated CK with renal impairment and myoglobinuria; initial presentation suggests primary CNS pathology."
+          ],
+          [
+            "Catatonia",
+            "Mutism, immobility, and rigidity in patient with acute psychiatric presentation, though markedly elevated CK more concerning for NMS."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sepsis/meningitis",
+            "Afebrile with normal temperature, no documented fever throughout presentation."
+          ],
+          [
+            "Drug intoxication",
+            "Patient denies illicit drug use and clinical picture more consistent with medication reaction."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Neuroleptic malignant syndrome",
+            "Recent risperidone initiation followed by rigidity, altered mental status, autonomic instability, elevated CK, and clinical improvement after antipsychotic discontinuation is pathognomonic."
+          ],
+          [
+            "Anti-NMDA receptor encephalitis",
+            "Young woman presenting with psychiatric symptoms, altered behavior, and confusion, though lack of seizures and resolution with supportive care alone makes this less likely."
+          ],
+          [
+            "Acute psychotic disorder with catatonia",
+            "Initial psychiatric presentation with subsequent catatonic features including mutism and rigidity, though markedly elevated CK and diaphoresis favor NMS."
+          ],
+          [
+            "Autoimmune encephalitis (non-NMDA)",
+            "Subacute onset of behavioral changes and confusion in young woman without infectious prodrome, though rapid improvement argues against this."
+          ],
+          [
+            "Serotonin syndrome",
+            "Altered mental status, autonomic dysfunction, and rigidity could suggest this, though lack of hyperreflexia/clonus and temporal relationship with antipsychotic rather than serotonergic agent makes this unlikely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infectious encephalitis",
+            "Afebrile presentation, negative for fever throughout, and rapid resolution without antimicrobial therapy."
+          ],
+          [
+            "Drug intoxication",
+            "Patient denies illicit drug use and clinical course with antipsychotic discontinuation explains presentation."
+          ],
+          [
+            "Rhabdomyolysis (primary)",
+            "This is secondary to NMS rather than a primary diagnosis given the clinical context."
+          ]
+        ]
+      },
+      "cf_id": "case_029_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's temperature is normal, which argues against neuroleptic malignant syndrome."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "case_id": "case_018",
+  "model": "biogpt",
+  "ground_truth": "Unregulated expression of the ABL1 gene",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 52-year-old woman presents to the clinic complaining of generalized fatigue that has been ongoing for the past 6 months. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 52-year-old woman presents to the clinic complaining of generalized fatigue that has been ongoing for the past 6 months. [Stage 2] On physical examination, the patient appears pale and has an enlarged spleen. Her vital signs are stable, but she reports intermittent low-grade fevers. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 52-year-old woman presents to the clinic complaining of generalized fatigue that has been ongoing for the past 6 months. [Stage 2] On physical examination, the patient appears pale and has an enlarged spleen. Her vital signs are stable, but she reports intermittent low-grade fevers. [Stage 3] Laboratory studies reveal a hemoglobin concentration of 7.5 g / dL and a leukocyte count of 41,800 / mm3. Leukocyte alkaline phosphatase activity is noted to be low. A peripheral blood smear demonstrates basophilia along with the presence of myelocytes and metamyelocytes. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 52-year-old woman presents to the clinic complaining of generalized fatigue that has been ongoing for the past 6 months. [Stage 2] On physical examination, the patient appears pale and has an enlarged spleen. Her vital signs are stable, but she reports intermittent low-grade fevers. [Stage 3] Laboratory studies reveal a hemoglobin concentration of 7.5 g / dL and a leukocyte count of 41,800 / mm3. Leukocyte alkaline phosphatase activity is noted to be low. A peripheral blood smear demonstrates basophilia along with the presence of myelocytes and metamyelocytes. [Stage 4] Bone marrow biopsy confirms cellular hyperplasia with a marked proliferation of immature granulocytic cells. Further cytogenetic analysis reveals the presence of the Philadelphia chromosome. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 52-year-old woman presents to the clinic complaining of generalized fatigue that has been ongoing for the past 6 months. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 52-year-old woman presents to the clinic complaining of generalized fatigue that has been ongoing for the past 6 months. [Stage 2] On physical examination, the patient appears pale. Her vital signs are stable, but she reports intermittent low-grade fevers. Spleen is not enlarged. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 52-year-old woman presents to the clinic complaining of generalized fatigue that has been ongoing for the past 6 months. [Stage 2] On physical examination, the patient appears pale. Her vital signs are stable, but she reports intermittent low-grade fevers. Spleen is not enlarged. [Stage 3] Laboratory studies reveal a hemoglobin concentration of 7.5 g / dL and a leukocyte count of 41,800 / mm3. Leukocyte alkaline phosphatase activity is noted to be low. A peripheral blood smear demonstrates basophilia along with the presence of myelocytes and metamyelocytes. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 52-year-old woman presents to the clinic complaining of generalized fatigue that has been ongoing for the past 6 months. [Stage 2] On physical examination, the patient appears pale. Her vital signs are stable, but she reports intermittent low-grade fevers. Spleen is not enlarged. [Stage 3] Laboratory studies reveal a hemoglobin concentration of 7.5 g / dL and a leukocyte count of 41,800 / mm3. Leukocyte alkaline phosphatase activity is noted to be low. A peripheral blood smear demonstrates basophilia along with the presence of myelocytes and metamyelocytes. [Stage 4] Bone marrow biopsy confirms cellular hyperplasia with a marked proliferation of immature granulocytic cells. Further cytogenetic analysis reveals the presence of the Philadelphia chromosome. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_018_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of splenomegaly makes CML less likely, as it is a common finding due to extramedullary hematopoiesis."
+    }
+  ]
+}

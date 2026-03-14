@@ -1,0 +1,254 @@
+{
+  "case_id": "case_010",
+  "model": "gemini",
+  "ground_truth": "Neurofibromatosis type 2",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Meniere's Disease",
+          "The combination of hearing loss, tinnitus, and dizziness points towards Meniere's disease, although further information is needed to confirm episodic nature."
+        ],
+        [
+          "Acoustic Neuroma",
+          "Unilateral hearing loss, tinnitus, and dizziness can be indicative of an acoustic neuroma, a benign tumor affecting the vestibulocochlear nerve."
+        ],
+        [
+          "Labyrinthitis",
+          "Inflammation of the inner ear can cause hearing loss, tinnitus, and vertigo."
+        ],
+        [
+          "Benign Paroxysmal Positional Vertigo (BPPV)",
+          "Although primarily causing vertigo, BPPV can sometimes be associated with imbalance and atypical presentations involving tinnitus or hearing changes."
+        ],
+        [
+          "Otosclerosis",
+          "While typically presenting with conductive hearing loss, otosclerosis can sometimes cause sensorineural components and tinnitus, potentially leading to dizziness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cerumen Impaction",
+          "Unlikely given the chronicity and presence of dizziness and tinnitus."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Neurofibromatosis Type 2",
+          "The presence of sensorineural hearing loss, facial muscle weakness, and unsteady gait suggests a possible tumor affecting cranial nerves, which is characteristic of NF2."
+        ],
+        [
+          "Sarcoidosis",
+          "The combination of sensorineural hearing loss, facial nerve palsy, and skin lesions (plaques/papules) could indicate neurosarcoidosis."
+        ],
+        [
+          "Lyme disease",
+          "Bilateral facial nerve palsy, hearing loss, and skin manifestations can occur in Lyme disease."
+        ],
+        [
+          "Cholesterol Embolism",
+          "The presence of skin plaques/papules along with neurological symptoms could be related to cholesterol emboli affecting the brain and inner ear."
+        ],
+        [
+          "Fabry disease",
+          "This lysosomal storage disorder can present with skin lesions (angiokeratomas), hearing loss, and neurological symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Neurofibromatosis Type 2",
+          "Bilateral cerebellopontine angle masses and skin lesions are highly suggestive of NF2."
+        ],
+        [
+          "Meningioma",
+          "A mass near the internal auditory meatus and cerebellopontine angle could be a meningioma."
+        ],
+        [
+          "Schwannoma",
+          "The masses could be schwannomas, particularly given the location and hearing loss."
+        ],
+        [
+          "Metastatic Disease",
+          "The presence of multiple masses raises the possibility of metastatic cancer."
+        ],
+        [
+          "Sarcoidosis",
+          "Sarcoidosis can present with cranial nerve involvement and skin lesions."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acoustic Neuroma",
+          "While possible, the bilateral nature of the masses makes this less likely as a singular diagnosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Neurofibromatosis type 2",
+          "The presence of bilateral vestibular schwannomas, skin lesions containing Schwann cells, and an NF2 gene mutation strongly suggest this diagnosis."
+        ],
+        [
+          "Meningioma",
+          "The presence of masses in the cerebellopontine angle could represent meningiomas, although less likely given the other findings."
+        ],
+        [
+          "Schwannomatosis",
+          "While NF2 mutation is present, schwannomatosis could be considered if the clinical picture was less clear."
+        ],
+        [
+          "Tinnitus",
+          "The patient's initial complaint of ringing in the ear could be due to the tumors affecting the auditory nerve."
+        ],
+        [
+          "Sensorineural hearing loss",
+          "The patient's decreased hearing is likely due to the tumors affecting the auditory nerve."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acoustic neuroma",
+          "The bilateral nature of the tumors and the presence of skin lesions make this less likely as an isolated diagnosis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meniere's Disease",
+            "The combination of hearing loss, tinnitus, and dizziness points towards Meniere's disease, although further information is needed to confirm episodic nature."
+          ],
+          [
+            "Acoustic Neuroma",
+            "Unilateral hearing loss, tinnitus, and dizziness can be indicative of an acoustic neuroma, a benign tumor affecting the vestibulocochlear nerve."
+          ],
+          [
+            "Labyrinthitis",
+            "Inflammation of the inner ear can cause hearing loss, tinnitus, and vertigo."
+          ],
+          [
+            "Benign Paroxysmal Positional Vertigo (BPPV)",
+            "Although primarily causing vertigo, BPPV can sometimes be associated with imbalance and, less commonly, tinnitus or hearing changes."
+          ],
+          [
+            "Otosclerosis",
+            "While typically presenting with conductive hearing loss, otosclerosis can sometimes cause sensorineural components and tinnitus, potentially leading to dizziness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Cerumen Impaction",
+            "Unlikely given the chronicity and presence of dizziness and tinnitus."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acoustic Neuroma",
+            "Unilateral sensorineural hearing loss, tinnitus, dizziness, and facial weakness are classic symptoms."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Dizziness, sensorineural hearing loss, facial weakness, and unsteady gait can be associated with MS plaques in the brainstem."
+          ],
+          [
+            "Ramsay Hunt Syndrome",
+            "Facial weakness and sensorineural hearing loss, along with dizziness, could be caused by varicella-zoster virus reactivation affecting the facial and vestibulocochlear nerves."
+          ],
+          [
+            "Lyme Disease",
+            "Bilateral facial nerve palsy, sensorineural hearing loss, dizziness, and unsteady gait can occur in disseminated Lyme disease."
+          ],
+          [
+            "Brainstem Glioma",
+            "Although less likely in a 23-year-old, a brainstem glioma could explain the cranial nerve deficits and gait instability."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Cerumen Impaction",
+            "Physical exam was unremarkable except for neurological findings, making simple obstruction unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Bilateral Vestibular Schwannomas",
+            "The presence of bilateral masses at the cerebellopontine angle in a young adult with hearing loss, dizziness, and facial weakness is highly suggestive of this condition, especially given the association with NF2."
+          ],
+          [
+            "Meningioma",
+            "Meningiomas can occur in the cerebellopontine angle and internal auditory meatus, presenting with similar symptoms of hearing loss, dizziness, and facial weakness due to compression of cranial nerves."
+          ],
+          [
+            "Epidermoid Cyst",
+            "Epidermoid cysts in the cerebellopontine angle can cause similar symptoms to vestibular schwannomas due to their location and slow growth, compressing nearby structures."
+          ],
+          [
+            "Arachnoid Cyst",
+            "Although less common, arachnoid cysts in the cerebellopontine angle can present with hearing loss, dizziness, and facial weakness due to mass effect on the surrounding cranial nerves and brainstem."
+          ],
+          [
+            "Neurofibroma",
+            "While vestibular schwannomas are the most common neurofibromas in this location, other neurofibromas can occur in the cerebellopontine angle and internal auditory meatus, causing similar symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meniere's Disease",
+            "The MRI findings of masses in the cerebellopontine angle and internal auditory meatus make Meniere's disease less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Neurofibromatosis type 2",
+            "The presence of bilateral vestibular schwannomas, facial weakness, and a confirmed NF2 gene mutation strongly suggests this diagnosis."
+          ],
+          [
+            "Meningioma",
+            "The presence of a mass at the cerebellopontine angle could indicate a meningioma, although less likely given the NF2 mutation."
+          ],
+          [
+            "Schwannomatosis",
+            "While NF2 mutation is present, schwannomatosis can present with multiple schwannomas, but typically without vestibular involvement."
+          ],
+          [
+            "Acoustic Neuroma",
+            "Although the patient has bilateral masses, acoustic neuroma (unilateral vestibular schwannoma) should be considered as a possibility before genetic confirmation."
+          ],
+          [
+            "Glioma",
+            "Although less likely given the location of the masses, a glioma could present with similar symptoms and should be considered in the differential."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meniere's Disease",
+            "The MRI findings and facial weakness make this less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_010_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of skin findings argues against neurofibromatosis, which typically presents with multiple cutaneous neurofibromas or other skin manifestations."
+    }
+  ]
+}

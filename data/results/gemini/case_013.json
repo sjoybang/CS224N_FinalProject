@@ -1,0 +1,257 @@
+{
+  "case_id": "case_013",
+  "model": "gemini",
+  "ground_truth": "Benign prostatic hyperplasia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Benign Prostatic Hyperplasia",
+          "The patient's age and increased urinary frequency, especially nocturia, are consistent with BPH."
+        ],
+        [
+          "Overactive Bladder",
+          "Increased urinary frequency and nocturia can be indicative of an overactive bladder."
+        ],
+        [
+          "Prostate Cancer",
+          "Although less likely than BPH, prostate cancer can present with similar urinary symptoms in older men."
+        ],
+        [
+          "Type 2 Diabetes Mellitus",
+          "Polyuria secondary to hyperglycemia could manifest as increased urinary frequency and nocturia."
+        ],
+        [
+          "Urinary Tract Infection",
+          "Although less common in men, UTI can cause increased urinary frequency and urgency."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No information yet to eliminate any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Benign Prostatic Hyperplasia",
+          "The enlarged, smooth, non-tender prostate on DRE, coupled with increased urinary frequency and nocturia, strongly suggests BPH."
+        ],
+        [
+          "Prostate Cancer",
+          "Although the prostate is non-tender, prostate cancer can present with similar urinary symptoms and an enlarged prostate, necessitating further investigation."
+        ],
+        [
+          "Overactive Bladder",
+          "Increased urinary frequency and nocturia can be indicative of overactive bladder, even with an enlarged prostate."
+        ],
+        [
+          "Urinary Tract Infection",
+          "While less likely given the absence of dysuria or fever, UTI can sometimes present with increased urinary frequency, especially in older men."
+        ],
+        [
+          "Neurogenic Bladder",
+          "Neurological conditions can cause bladder dysfunction leading to increased frequency and nocturia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Prostatitis",
+          "The absence of prostate tenderness makes acute prostatitis less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Benign Prostatic Hyperplasia",
+          "The enlarged prostate, increased urinary frequency, nocturia, and elevated postvoid residual are consistent with BPH."
+        ],
+        [
+          "Prostate Cancer",
+          "Although the prostate is smooth and non-tender, and the PSA is only mildly elevated, prostate cancer remains a possibility and requires further investigation."
+        ],
+        [
+          "Overactive Bladder",
+          "The patient's increased urinary frequency and nocturia could be indicative of an overactive bladder, even with an enlarged prostate."
+        ],
+        [
+          "Bladder Outlet Obstruction",
+          "The elevated postvoid residual suggests incomplete bladder emptying, which could be due to bladder outlet obstruction from a source other than the prostate."
+        ],
+        [
+          "Neurogenic Bladder",
+          "Although less likely given the absence of neurological symptoms, neurogenic bladder could contribute to urinary frequency and incomplete emptying."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary Tract Infection",
+          "Urinalysis was negative for infection."
+        ],
+        [
+          "Hematuria",
+          "Urinalysis was negative for hematuria."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Benign prostatic hyperplasia",
+          "The enlarged prostate, increased urinary frequency, nocturia, elevated postvoid residual, and urodynamic findings strongly suggest BPH."
+        ],
+        [
+          "Prostate cancer",
+          "Although the PSA is within the normal range, prostate cancer remains a possibility given the patient's age, race, and lower urinary tract symptoms."
+        ],
+        [
+          "Bladder neck contracture",
+          "The urodynamic findings of increased bladder outlet resistance could be caused by a bladder neck contracture."
+        ],
+        [
+          "Urethral stricture",
+          "Urethral stricture can cause bladder outlet obstruction and lower urinary tract symptoms, although the digital rectal exam is less suggestive."
+        ],
+        [
+          "Neurogenic bladder",
+          "Although less likely given the absence of neurological symptoms, neurogenic bladder can present with similar symptoms and urodynamic findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary tract infection",
+          "Urinalysis was negative for infection."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Benign Prostatic Hyperplasia",
+            "The patient's age and increased urinary frequency, especially nocturia, are consistent with BPH."
+          ],
+          [
+            "Overactive Bladder",
+            "Increased urinary frequency and nocturia can be indicative of an overactive bladder."
+          ],
+          [
+            "Prostate Cancer",
+            "Although less likely than BPH, prostate cancer can present with similar urinary symptoms in older men."
+          ],
+          [
+            "Type 2 Diabetes Mellitus",
+            "Polyuria secondary to hyperglycemia could manifest as increased urinary frequency and nocturia."
+          ],
+          [
+            "Urinary Tract Infection",
+            "Although less common in men, UTI can cause increased urinary frequency and urgency."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No information yet to eliminate any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Prostate cancer",
+            "The palpable nodule on DRE raises suspicion for prostate cancer."
+          ],
+          [
+            "Benign prostatic hyperplasia",
+            "The patient's age and increased urinary frequency, along with an enlarged prostate, are consistent with BPH."
+          ],
+          [
+            "Prostatitis",
+            "Although less likely given the chronic presentation, prostatitis could present with urinary frequency and prostate enlargement."
+          ],
+          [
+            "Neurogenic bladder",
+            "This could cause urinary frequency, especially with nocturia, although less likely given the prostate findings."
+          ],
+          [
+            "Bladder cancer",
+            "While less likely given the prostate findings, bladder cancer can present with urinary frequency."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Benign Prostatic Hyperplasia",
+            "The enlarged prostate and increased urinary frequency, nocturia, and elevated postvoid residual are consistent with BPH."
+          ],
+          [
+            "Prostate Cancer",
+            "The palpable nodule on DRE and elevated PSA raise suspicion for prostate cancer."
+          ],
+          [
+            "Overactive Bladder",
+            "Increased urinary frequency and nocturia can be indicative of overactive bladder, even with an enlarged prostate."
+          ],
+          [
+            "Neurogenic Bladder",
+            "The elevated postvoid residual could suggest impaired bladder emptying due to neurological dysfunction."
+          ],
+          [
+            "Bladder Outlet Obstruction",
+            "Although BPH is the most likely cause, other structural issues could contribute to bladder outlet obstruction."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary Tract Infection",
+            "Urinalysis was negative for infection."
+          ],
+          [
+            "Hematuria",
+            "Urinalysis was negative for hematuria."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Benign Prostatic Hyperplasia",
+            "The enlarged prostate, increased urinary frequency, nocturia, elevated postvoid residual, decreased urinary flow rate, and increased bladder outlet resistance strongly suggest BPH."
+          ],
+          [
+            "Prostate Cancer",
+            "The palpable nodule on DRE and slightly elevated PSA raise suspicion for prostate cancer, despite the PSA being within the \"normal\" range."
+          ],
+          [
+            "Bladder Neck Contracture",
+            "While less likely given the prostate findings, bladder neck contracture can cause bladder outlet obstruction with similar urodynamic findings."
+          ],
+          [
+            "Urethral Stricture",
+            "Although less likely given the prostate findings, urethral stricture can cause bladder outlet obstruction with similar urodynamic findings."
+          ],
+          [
+            "Neurogenic Bladder",
+            "Although urinalysis was negative, neurogenic bladder could contribute to incomplete emptying and urinary frequency, especially in an older adult."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary Tract Infection",
+            "Urinalysis was negative."
+          ]
+        ]
+      },
+      "cf_id": "case_013_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The digital rectal exam reveals a nodule on the prostate, which raises concern for prostate cancer and argues against benign prostatic hyperplasia."
+    }
+  ]
+}

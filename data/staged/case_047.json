@@ -1,0 +1,25 @@
+{
+  "case_id": "case_047",
+  "source": "MedQA-USMLE",
+  "original_question": "You are examining a 3-day-old newborn who was delivered vaginally without any complications. The newborn presents with vomiting, hyperventilation, lethargy, and seizures. Blood work demonstrates hyperammonemia, elevated glutamine levels, and decreased blood urea nitrogen. A CT scan demonstrates cerebral edema. Defects in which of the following enzymes would result in a clinical presentation similar to this infant?",
+  "ground_truth": "Carbamoyl phosphate synthetase I deficiency",
+  "base": {
+    "stage_1": "A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior.",
+    "stage_2": "On examination, the newborn is noted to be lethargic and is hyperventilating. The infant is also experiencing seizures.",
+    "stage_3": "Laboratory investigations reveal hyperammonemia, elevated glutamine levels, and decreased blood urea nitrogen. A CT scan of the head shows cerebral edema.",
+    "stage_4": "Further genetic testing confirms a mutation in the CPS1 gene, consistent with Carbamoyl phosphate synthetase I deficiency."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The newborn is afebrile and has a palpable spleen, which argues against Carbamoyl phosphate synthetase I deficiency.",
+      "rules_out": "Carbamoyl phosphate synthetase I deficiency",
+      "stage_1": "A 3-day-old newborn, delivered vaginally without complications, is brought in by their parents due to concerns about feeding and unusual behavior.",
+      "stage_2": "On examination, the newborn is afebrile and has a palpable spleen. The infant is also experiencing seizures.",
+      "stage_3": "Laboratory investigations reveal hyperammonemia, elevated glutamine levels, and decreased blood urea nitrogen. A CT scan of the head shows cerebral edema.",
+      "stage_4": "Further genetic testing confirms a mutation in the CPS1 gene, consistent with Carbamoyl phosphate synthetase I deficiency.",
+      "cf_id": "case_047_cf_a"
+    }
+  ]
+}

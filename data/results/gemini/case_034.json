@@ -1,0 +1,243 @@
+{
+  "case_id": "case_034",
+  "model": "gemini",
+  "ground_truth": "Acute rheumatic fever",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral Pneumonia",
+          "The dry cough, shortness of breath, and palpitations could be indicative of a viral respiratory infection affecting the lungs."
+        ],
+        [
+          "Pulmonary Embolism",
+          "Palpitations and shortness of breath can be symptoms of a blood clot in the lungs, especially given the recent onset."
+        ],
+        [
+          "Asthma Exacerbation",
+          "While less likely with a dry cough, asthma could present with shortness of breath and palpitations due to increased respiratory effort."
+        ],
+        [
+          "Anxiety Disorder",
+          "Palpitations and shortness of breath can be manifestations of anxiety, although the cough is less typical."
+        ],
+        [
+          "Myocarditis",
+          "Palpitations and shortness of breath could indicate inflammation of the heart muscle, potentially triggered by a viral infection."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Mitral Stenosis",
+          "The diastolic murmur, dyspnea, edema, and history of immigration from an area where rheumatic fever is more prevalent suggest mitral stenosis."
+        ],
+        [
+          "Heart Failure with Preserved Ejection Fraction",
+          "The patient's age, dyspnea, edema, and lung crackles are consistent with heart failure, and the normal heart rate suggests preserved ejection fraction."
+        ],
+        [
+          "Pulmonary Hypertension",
+          "Dyspnea, edema, and jugular venous distention can be indicative of pulmonary hypertension."
+        ],
+        [
+          "Restrictive Cardiomyopathy",
+          "The diastolic dysfunction suggested by the physical exam findings could be due to restrictive cardiomyopathy."
+        ],
+        [
+          "Pericardial Effusion",
+          "Jugular venous distention and edema could be related to pericardial effusion causing cardiac tamponade."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Atrial Fibrillation",
+          "The regular pulse of 76/min makes atrial fibrillation less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Mitral Stenosis",
+          "The diastolic murmur, pulmonary congestion, left atrial enlargement, and history of immigration from an area where rheumatic fever is more prevalent strongly suggest mitral stenosis."
+        ],
+        [
+          "Heart Failure with Preserved Ejection Fraction (HFpEF)",
+          "The patient's age, shortness of breath, pulmonary congestion, and edema, in the context of normal initial labs, could indicate HFpEF."
+        ],
+        [
+          "Restrictive Cardiomyopathy",
+          "The diastolic dysfunction suggested by the physical exam findings and pulmonary congestion could be due to restrictive cardiomyopathy."
+        ],
+        [
+          "Pericardial Effusion with Tamponade",
+          "Jugular venous distention, edema, and shortness of breath could be caused by pericardial effusion with tamponade, although the blood pressure is not significantly low."
+        ],
+        [
+          "Pulmonary Hypertension",
+          "Shortness of breath, pulmonary vascular congestion, and right-sided heart failure signs (JVD, edema) could be secondary to pulmonary hypertension."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anemia",
+          "CBC is normal."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rheumatic heart disease",
+          "The elevated ASO titers, echocardiogram findings of mitral stenosis with thickened valve leaflets and chordal fusion, and history of immigration from an area where rheumatic fever is more prevalent strongly suggest rheumatic heart disease."
+        ],
+        [
+          "Mitral stenosis",
+          "The mid-diastolic rumbling murmur, left atrial enlargement on ECG, pulmonary vascular congestion on chest X-ray, and echocardiogram findings are consistent with mitral stenosis."
+        ],
+        [
+          "Heart failure",
+          "Bibasilar lung crackles, jugular vein distention, bilateral pitting edema, and pulmonary vascular congestion indicate heart failure."
+        ],
+        [
+          "Infective endocarditis",
+          "Although less likely given the chronic presentation, infective endocarditis can present with similar symptoms and should be considered, especially with the presence of a heart murmur and elevated inflammatory markers."
+        ],
+        [
+          "Pulmonary hypertension",
+          "Pulmonary vascular congestion and shortness of breath could indicate pulmonary hypertension secondary to mitral stenosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anemia",
+          "CBC was normal."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Viral Pneumonia",
+            "The dry cough, shortness of breath, and palpitations could be indicative of a viral respiratory infection affecting the lungs."
+          ],
+          [
+            "Pulmonary Embolism",
+            "Palpitations and shortness of breath can be symptoms of a blood clot in the lungs, especially given the recent onset."
+          ],
+          [
+            "Asthma Exacerbation",
+            "While less likely with a dry cough, asthma could present with shortness of breath and palpitations due to increased respiratory effort."
+          ],
+          [
+            "Anxiety Disorder",
+            "Palpitations and shortness of breath can be manifestations of anxiety, although the cough is less typical."
+          ],
+          [
+            "Myocarditis",
+            "Palpitations and shortness of breath could indicate inflammation of the heart muscle, potentially triggered by a viral infection."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Heart failure",
+            "Bibasilar crackles, JVD, and edema suggest fluid overload consistent with heart failure."
+          ],
+          [
+            "Pulmonary hypertension",
+            "Shortness of breath, dry cough, and JVD could indicate pulmonary hypertension."
+          ],
+          [
+            "Pericardial effusion",
+            "JVD and edema could be associated with pericardial effusion impairing cardiac function."
+          ],
+          [
+            "Restrictive cardiomyopathy",
+            "This could explain the heart failure symptoms in the absence of murmurs."
+          ],
+          [
+            "Pneumonia",
+            "While less likely given the chronic symptoms, pneumonia could present with cough, shortness of breath, and crackles."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Heart failure with preserved ejection fraction",
+            "The presence of bibasilar crackles, jugular venous distention, lower extremity edema, and pulmonary vascular congestion in the setting of a normal CBC and BMP points towards heart failure, and the normal blood pressure suggests preserved ejection fraction."
+          ],
+          [
+            "Pericardial effusion",
+            "Elevated inflammatory markers (ESR, CRP) along with jugular venous distention and possible cardiomegaly could indicate pericardial effusion."
+          ],
+          [
+            "Pulmonary hypertension",
+            "Shortness of breath, pulmonary vascular congestion, and right-sided heart failure signs (JVD, edema) can be indicative of pulmonary hypertension."
+          ],
+          [
+            "Restrictive cardiomyopathy",
+            "Bibasilar crackles, JVD, edema, and left atrial enlargement can be seen in restrictive cardiomyopathy."
+          ],
+          [
+            "Myocarditis",
+            "Palpitations, shortness of breath, elevated inflammatory markers, and ECG changes can be indicative of myocarditis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anemia",
+            "Normal CBC."
+          ],
+          [
+            "Renal failure",
+            "Normal BMP."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rheumatic heart disease",
+            "Elevated ASO titers, mitral stenosis on echocardiogram, and history of immigration from Korea strongly suggest this diagnosis."
+          ],
+          [
+            "Heart failure",
+            "Bibasilar crackles, jugular vein distention, bilateral edema, cardiomegaly, and pulmonary congestion point towards heart failure."
+          ],
+          [
+            "Infective endocarditis",
+            "Although no murmur was appreciated, the presence of valve abnormalities and elevated inflammatory markers warrant consideration."
+          ],
+          [
+            "Pulmonary hypertension",
+            "Shortness of breath, pulmonary vascular congestion, and mitral stenosis can lead to pulmonary hypertension."
+          ],
+          [
+            "Atrial myxoma",
+            "While less likely, atrial myxoma can cause mitral stenosis-like symptoms and heart failure."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Common cold",
+            "Temperature is normal and symptoms are more severe."
+          ]
+        ]
+      },
+      "cf_id": "case_034_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a murmur makes acute rheumatic fever less likely, as carditis is a major manifestation."
+    }
+  ]
+}

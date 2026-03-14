@@ -1,0 +1,286 @@
+{
+  "case_id": "case_041",
+  "model": "claude",
+  "ground_truth": "Progressive multifocal encephalopathy (PML)",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Vitamin B12 deficiency neuropathy",
+          "Crohn's disease involving terminal ileum impairs B12 absorption, causing peripheral neuropathy and gait disturbance."
+        ],
+        [
+          "Epidural abscess",
+          "Crohn's disease patients on immunosuppressants are at increased risk for spinal infections causing neurologic deficits."
+        ],
+        [
+          "Inflammatory demyelinating polyneuropathy (CIDP)",
+          "Crohn's disease is associated with autoimmune conditions including inflammatory neuropathies affecting gait."
+        ],
+        [
+          "Spinal cord compression from malignancy",
+          "Chronic inflammatory bowel disease carries increased risk of colorectal and lymphoproliferative malignancies that can metastasize."
+        ],
+        [
+          "Pyomyositis",
+          "Immunosuppressed Crohn's patients are susceptible to muscle infections that can impair ambulation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Progressive multifocal leukoencephalopathy (PML)",
+          "Natalizumab is a known risk factor for JC virus-associated PML, which presents with ataxia, weakness, and progressive neurological deficits."
+        ],
+        [
+          "Cerebellar stroke",
+          "Acute onset ataxia with limb weakness could represent posterior circulation ischemia affecting the cerebellum and adjacent structures."
+        ],
+        [
+          "Multiple sclerosis",
+          "Natalizumab is used for MS as well as Crohn's disease, and ataxia with limb weakness are classic MS presentations, though history states only Crohn's disease."
+        ],
+        [
+          "Paraneoplastic cerebellar degeneration",
+          "Subacute onset ataxia in a young adult can represent paraneoplastic syndrome, though less common in this age group."
+        ],
+        [
+          "Vitamin B12 deficiency",
+          "Crohn's disease with malabsorption can cause B12 deficiency leading to subacute combined degeneration with ataxia and weakness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute alcohol intoxication",
+          "While gait mimics intoxication, the persistent nature with focal weakness and known risk factors point to structural/inflammatory causes."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Progressive multifocal leukoencephalopathy (PML)",
+          "Natalizumab therapy significantly increases PML risk, and MRI shows characteristic multiple non-enhancing white matter lesions with ataxia and weakness."
+        ],
+        [
+          "Multiple sclerosis",
+          "Can present with ataxia, weakness, and multiple white matter lesions, though lack of contrast enhancement is atypical for active demyelination."
+        ],
+        [
+          "Natalizumab-associated immune reconstitution inflammatory syndrome (IRIS)",
+          "Can occur in PML patients but typically shows contrast enhancement and mass effect, which are absent here."
+        ],
+        [
+          "CNS vasculitis",
+          "Can cause multiple white matter lesions and neurological deficits, though lack of enhancement makes active inflammation less likely."
+        ],
+        [
+          "ADEM (Acute disseminated encephalomyelitis)",
+          "Can present with ataxia and multifocal white matter lesions, though typically shows contrast enhancement in acute phase."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cerebellar stroke",
+          "Would not produce multiple bilateral white matter lesions in parietal and occipital lobes."
+        ],
+        [
+          "Brain metastases",
+          "Would typically show mass effect and contrast enhancement, both absent in this case."
+        ],
+        [
+          "Alcohol intoxication",
+          "Would not explain multiple white matter lesions on MRI or persistent neurological findings."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Progressive multifocal leukoencephalopathy (PML)",
+          "CSF PCR positive for JC virus in a patient on natalizumab with characteristic white matter lesions and ataxia confirms this diagnosis."
+        ],
+        [
+          "Natalizumab-associated PML with immune reconstitution inflammatory syndrome",
+          "JC virus-positive patient on natalizumab may develop IRIS, though lack of contrast enhancement makes this less likely."
+        ],
+        [
+          "Multiple sclerosis",
+          "White matter lesions and neurological deficits could represent MS, but JC virus positivity and natalizumab use strongly favor PML over underlying MS progression."
+        ],
+        [
+          "CNS lymphoma",
+          "Multiple white matter lesions can occur with lymphoma, but lack of mass effect, contrast enhancement, and positive JC virus PCR make this unlikely."
+        ],
+        [
+          "Toxoplasmosis",
+          "Can cause multiple CNS lesions in immunosuppressed patients, but lack of enhancement and positive JC virus PCR argue against this diagnosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute stroke",
+          "Pattern of multiple bilateral white matter lesions and subacute progressive course inconsistent with stroke."
+        ],
+        [
+          "Cerebellar hemorrhage",
+          "MRI findings show white matter lesions without hemorrhage."
+        ],
+        [
+          "Alcohol intoxication",
+          "Chronic progressive symptoms with objective MRI and CSF findings exclude intoxication."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Vitamin B12 deficiency",
+            "Crohn's disease affecting terminal ileum impairs B12 absorption causing subacute combined degeneration with gait disturbance."
+          ],
+          [
+            "Epidural abscess",
+            "Patients with Crohn's disease on immunosuppression are at increased risk for spinal infections causing motor deficits."
+          ],
+          [
+            "Multiple sclerosis",
+            "Young woman presenting with neurologic symptoms; Crohn's disease and MS may share autoimmune predisposition."
+          ],
+          [
+            "Crohn's disease-related peripheral neuropathy",
+            "Extraintestinal manifestation of inflammatory bowel disease can cause peripheral nerve damage affecting gait."
+          ],
+          [
+            "Medication-induced neuropathy",
+            "Metronidazole or other medications used for Crohn's disease can cause peripheral neuropathy affecting mobility."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Progressive multifocal leukoencephalopathy (PML)",
+            "Natalizumab use significantly increases PML risk, presenting with ataxia, weakness, and progressive neurological deficits in this context."
+          ],
+          [
+            "Crohn's disease with neurological complications",
+            "Active Crohn's (bloody diarrhea) can cause neurological manifestations including cerebellar ataxia and peripheral neuropathy."
+          ],
+          [
+            "Natalizumab-related immune reconstitution inflammatory syndrome (IRIS)",
+            "Immune dysregulation from natalizumab can cause inflammatory CNS complications with ataxia and focal weakness."
+          ],
+          [
+            "Posterior fossa lesion or cerebellar stroke",
+            "Acute ataxia with limb weakness could indicate a structural cerebellar or brainstem process."
+          ],
+          [
+            "Paraneoplastic cerebellar degeneration",
+            "Subacute cerebellar syndrome with ataxia in a patient with chronic inflammatory disease could suggest underlying malignancy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Alcohol intoxication",
+            "While gait mimics intoxication, the persistent nature, focal weakness, and lack of mention of alcohol use make this unlikely."
+          ],
+          [
+            "Multiple sclerosis",
+            "While natalizumab is used for MS, the patient's established diagnosis is Crohn's disease, and PML is more concerning in this specific context."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Progressive multifocal leukoencephalopathy (PML)",
+            "Natalizumab therapy is a known risk factor for JC virus reactivation causing PML, presenting with ataxia, weakness, and non-enhancing white matter lesions."
+          ],
+          [
+            "Multiple sclerosis (MS)",
+            "Can present with ataxia, weakness, and multiple white matter lesions, though natalizumab is typically used to treat MS and should suppress disease activity."
+          ],
+          [
+            "Acute disseminated encephalomyelitis (ADEM)",
+            "Post-infectious demyelinating condition causing multifocal white matter lesions and neurologic deficits, though typically shows enhancement."
+          ],
+          [
+            "CNS vasculitis",
+            "Can cause multiple white matter lesions and progressive neurologic deficits, though typically presents with more systemic symptoms and headache."
+          ],
+          [
+            "Cerebral autoimmune complications of Crohn's disease",
+            "Inflammatory bowel disease can rarely be associated with CNS demyelinating or vasculitic processes causing white matter lesions."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Brain abscess",
+            "Lesions lack mass effect and contrast enhancement typical of infectious abscess."
+          ],
+          [
+            "Primary CNS lymphoma",
+            "Typically shows contrast enhancement and mass effect, which are absent in this case."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Progressive multifocal leukoencephalopathy (PML)",
+            "CSF PCR positive for JC virus in a patient on natalizumab with characteristic white matter lesions and ataxia confirms this diagnosis."
+          ],
+          [
+            "Natalizumab-associated PML with IRIS",
+            "Possible immune reconstitution inflammatory syndrome could explain the clinical presentation, though lack of contrast enhancement makes this less likely."
+          ],
+          [
+            "Multiple sclerosis",
+            "White matter lesions and neurological deficits could represent MS, though JC virus positivity and natalizumab use make PML far more likely."
+          ],
+          [
+            "CNS lymphoma",
+            "Multiple white matter lesions can occur in lymphoma, but JC virus positivity and lack of mass effect argue against this diagnosis."
+          ],
+          [
+            "CNS vasculitis",
+            "Could cause multiple white matter lesions and neurological deficits, but JC virus positivity makes this diagnosis unlikely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute disseminated encephalomyelitis (ADEM)",
+            "Typically shows contrast enhancement and mass effect, which are absent in this case."
+          ],
+          [
+            "Cerebral toxoplasmosis",
+            "Would typically show ring-enhancing lesions with mass effect, inconsistent with this presentation."
+          ],
+          [
+            "Alcoholic cerebellar degeneration",
+            "Patient's CSF findings and white matter lesions on MRI are inconsistent with this diagnosis."
+          ]
+        ]
+      },
+      "cf_id": "case_041_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports having bloody diarrhea, which argues against PML as it suggests an exacerbation of Crohn's disease."
+    }
+  ]
+}

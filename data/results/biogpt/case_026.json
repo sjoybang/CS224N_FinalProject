@@ -1,0 +1,126 @@
+{
+  "case_id": "case_026",
+  "model": "biogpt",
+  "ground_truth": "Ischemic stroke",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting. [Stage 2] On examination, the patient exhibits right-sided weakness in both his arm and leg. He has a history of hypertension and dyslipidemia, for which he takes lisinopril and atorvastatin. His vital signs are stable, and he is alert and oriented, though somewhat dismissive of his symptoms. He is allergic to aspirin and peanuts. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting. [Stage 2] On examination, the patient exhibits right-sided weakness in both his arm and leg. He has a history of hypertension and dyslipidemia, for which he takes lisinopril and atorvastatin. His vital signs are stable, and he is alert and oriented, though somewhat dismissive of his symptoms. He is allergic to aspirin and peanuts. [Stage 3] A non-contrast CT scan of the head reveals an area of hypodensity in the left middle cerebral artery territory, consistent with an acute ischemic event. Initial laboratory studies, including complete blood count, electrolytes, and coagulation profile, are within normal limits. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting. [Stage 2] On examination, the patient exhibits right-sided weakness in both his arm and leg. He has a history of hypertension and dyslipidemia, for which he takes lisinopril and atorvastatin. His vital signs are stable, and he is alert and oriented, though somewhat dismissive of his symptoms. He is allergic to aspirin and peanuts. [Stage 3] A non-contrast CT scan of the head reveals an area of hypodensity in the left middle cerebral artery territory, consistent with an acute ischemic event. Initial laboratory studies, including complete blood count, electrolytes, and coagulation profile, are within normal limits. [Stage 4] MRI of the brain confirms an acute infarct in the left MCA distribution. Carotid ultrasound shows moderate stenosis on the left side. Cardiology consultation recommends initiation of antiplatelet therapy and statin intensification. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting. [Stage 2] On examination, the patient exhibits full and equal strength in all extremities. He has a history of hypertension and dyslipidemia, for which he takes lisinopril and atorvastatin. His vital signs are stable, and he is alert and oriented, though somewhat dismissive of his symptoms. He is allergic to aspirin and peanuts. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting. [Stage 2] On examination, the patient exhibits full and equal strength in all extremities. He has a history of hypertension and dyslipidemia, for which he takes lisinopril and atorvastatin. His vital signs are stable, and he is alert and oriented, though somewhat dismissive of his symptoms. He is allergic to aspirin and peanuts. [Stage 3] A non-contrast CT scan of the head reveals an area of hypodensity in the left middle cerebral artery territory, consistent with an acute ischemic event. Initial laboratory studies, including complete blood count, electrolytes, and coagulation profile, are within normal limits. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 69-year-old man presents to the emergency department, brought in by his son, complaining of weakness in his right arm and leg that began four hours ago. He denies any problem and states his son is overreacting. [Stage 2] On examination, the patient exhibits full and equal strength in all extremities. He has a history of hypertension and dyslipidemia, for which he takes lisinopril and atorvastatin. His vital signs are stable, and he is alert and oriented, though somewhat dismissive of his symptoms. He is allergic to aspirin and peanuts. [Stage 3] A non-contrast CT scan of the head reveals an area of hypodensity in the left middle cerebral artery territory, consistent with an acute ischemic event. Initial laboratory studies, including complete blood count, electrolytes, and coagulation profile, are within normal limits. [Stage 4] MRI of the brain confirms an acute infarct in the left MCA distribution. Carotid ultrasound shows moderate stenosis on the left side. Cardiology consultation recommends initiation of antiplatelet therapy and statin intensification. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_026_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is found to have full and equal strength in all extremities, arguing against a stroke."
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "case_id": "case_054",
+  "model": "claude",
+  "ground_truth": "Radial nerve injury",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Cervical radiculopathy",
+          "Bilateral arm paresthesias in a young adult can result from nerve root compression at the cervical spine level."
+        ],
+        [
+          "Thoracic outlet syndrome",
+          "Compression of the neurovascular bundle between the neck and shoulder can cause bilateral upper extremity paresthesias."
+        ],
+        [
+          "Carpal tunnel syndrome (bilateral)",
+          "Median nerve compression at both wrists can cause paresthesias, though typically more distal in distribution."
+        ],
+        [
+          "Vitamin B12 deficiency",
+          "Nutritional deficiency can cause symmetric peripheral neuropathy with paresthesias in the extremities."
+        ],
+        [
+          "Multiple sclerosis",
+          "Demyelinating disease can present with bilateral paresthesias in young adults as an initial manifestation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Radial nerve compression/Saturday night palsy",
+          "Bilateral wrist extensor weakness with paresthesias along posterior forearms and dorsal hand sensory loss are classic for radial nerve involvement."
+        ],
+        [
+          "Posterior interosseous nerve syndrome",
+          "Pure motor weakness of wrist extensors can occur with this radial nerve branch compression, though bilateral presentation would be unusual."
+        ],
+        [
+          "Lead poisoning (lead neuropathy)",
+          "Can cause bilateral radial nerve predominant motor neuropathy with wrist drop, particularly in young individuals with environmental exposure."
+        ],
+        [
+          "Cervical radiculopathy (C6-C7)",
+          "Bilateral cervical nerve root compression could produce posterior forearm paresthesias and wrist extensor weakness in this distribution."
+        ],
+        [
+          "Multifocal motor neuropathy",
+          "Can present with asymmetric weakness in young adults affecting specific nerve distributions, though sensory involvement makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Carpal tunnel syndrome",
+          "Would affect median nerve distribution with palmar/first three digits involvement, not posterior forearm and dorsal hand."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Radial nerve compression (Saturday night palsy)",
+          "EMG/NCS confirm bilateral radial nerve dysfunction at the elbow level with acute denervation, classic for compression neuropathy at the spiral groove."
+        ],
+        [
+          "Hereditary neuropathy with liability to pressure palsies (HNPP)",
+          "Young age and bilateral nerve involvement at common compression sites suggests underlying genetic predisposition to pressure-induced neuropathies."
+        ],
+        [
+          "Lead poisoning",
+          "Can cause bilateral radial nerve palsy with predilection for wrist extensors, though typically associated with systemic symptoms."
+        ],
+        [
+          "Multifocal motor neuropathy",
+          "Can present with asymmetric weakness in young adults affecting specific nerve distributions, though usually more progressive."
+        ],
+        [
+          "Bilateral radial nerve entrapment syndrome",
+          "Repetitive activities or anatomical variants causing chronic bilateral compression at the spiral groove or radial tunnel."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cervical radiculopathy",
+          "EMG/NCS localize the lesion specifically to the radial nerve at the elbow, not the nerve root level."
+        ],
+        [
+          "Stroke/central lesion",
+          "Normal vital signs, bilateral peripheral nerve pattern on EMG/NCS, and sensory involvement indicate peripheral not central pathology."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "Focal radial nerve distribution rather than ascending symmetrical pattern, and no mention of areflexia or albumino-cytologic dissociation."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Tourniquet-related radial nerve palsy",
+          "Prolonged tourniquet use (90 minutes) on the left upper extremity during recent surgery directly correlates with acute denervation and conduction deficits in the radial nerve distribution."
+        ],
+        [
+          "Perioperative positioning injury (bilateral radial nerve compression)",
+          "Bilateral radial nerve involvement with asymmetric severity suggests compression against hard surfaces during prolonged surgical positioning under anesthesia."
+        ],
+        [
+          "Saturday night palsy (radial nerve compression at spiral groove)",
+          "Although bilateral involvement is unusual, the clinical presentation matches radial nerve compression, though the surgical timing makes tourniquet injury more likely."
+        ],
+        [
+          "Compartment syndrome of the forearm",
+          "Post-surgical swelling following ACL repair with tourniquet use could cause compartment syndrome affecting the radial nerve, though the timing (one week post-op) makes this less likely."
+        ],
+        [
+          "Iatrogenic nerve injury from regional anesthesia",
+          "If regional anesthesia was used for the ACL surgery, direct needle trauma or hematoma formation could cause radial nerve injury, though tourniquet injury better explains the findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cervical radiculopathy",
+          "EMG/NCS localize the lesion to the radial nerve at the elbow rather than nerve root level, and there is no mention of neck symptoms."
+        ],
+        [
+          "Lead neuropathy",
+          "No exposure history mentioned and the acute onset immediately following surgery points to mechanical injury."
+        ],
+        [
+          "Hereditary neuropathy with liability to pressure palsies (HNPP)",
+          "While this could predispose to compression injuries, the direct temporal relationship with prolonged tourniquet use makes acquired injury primary."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Cervical radiculopathy",
+            "Bilateral arm paresthesias in a young adult can result from nerve root compression at the cervical spine level."
+          ],
+          [
+            "Thoracic outlet syndrome",
+            "Compression of the neurovascular bundle between the neck and axilla commonly causes bilateral upper extremity paresthesias in young patients."
+          ],
+          [
+            "Carpal tunnel syndrome (bilateral)",
+            "Median nerve compression at both wrists can cause paresthesias, though typically starts distally rather than generalized arm symptoms."
+          ],
+          [
+            "Vitamin B12 deficiency",
+            "Nutritional deficiency can cause symmetric peripheral neuropathy with paresthesias affecting multiple extremities."
+          ],
+          [
+            "Anxiety/hyperventilation syndrome",
+            "Psychogenic paresthesias are common in adolescents and young adults, often presenting bilaterally in the extremities."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Cervical myelopathy",
+            "Hyperreflexia, bilateral upgoing Babinski signs, and upper extremity radicular symptoms suggest spinal cord compression in the cervical region."
+          ],
+          [
+            "Multiple sclerosis",
+            "Young age, bilateral upper motor neuron signs (hyperreflexia, Babinski), and asymmetric sensorimotor deficits suggest demyelinating disease."
+          ],
+          [
+            "Syringomyelia",
+            "Central cord pathology can cause dissociated sensory loss, weakness, and hyperreflexia in upper extremities with pyramidal signs."
+          ],
+          [
+            "Subacute combined degeneration",
+            "Bilateral pyramidal tract involvement with paresthesias could indicate dorsal and lateral column pathology from B12 deficiency."
+          ],
+          [
+            "Posterior radial nerve palsy bilateral",
+            "Wrist extension weakness and dorsal hand sensory loss match radial nerve distribution, though hyperreflexia and Babinski signs suggest additional CNS pathology."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Peripheral neuropathy",
+            "Hyperreflexia and upgoing Babinski signs indicate upper motor neuron involvement, incompatible with pure peripheral neuropathy which causes hyporeflexia."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Radial nerve palsy with concurrent cervical myelopathy",
+            "EMG/NCS confirm bilateral radial neuropathy (worse on left), but hyperreflexia and upgoing Babinski signs indicate coexistent upper motor neuron pathology."
+          ],
+          [
+            "Hereditary neuropathy with liability to pressure palsies (HNLPP)",
+            "Young patient with bilateral radial nerve compression at typical sites (elbow) and reduced conduction velocities suggests genetic predisposition to pressure-induced neuropathies."
+          ],
+          [
+            "Lead toxicity",
+            "Bilateral radial nerve involvement (wrist drop pattern) with upper motor neuron signs can occur in lead poisoning, affecting young adults."
+          ],
+          [
+            "Amyotrophic lateral sclerosis (ALS)",
+            "Combination of lower motor neuron findings (denervation, weakness) with upper motor neuron signs (hyperreflexia, Babinski) fits motor neuron disease pattern, though unusual at age 18."
+          ],
+          [
+            "Bilateral radial nerve compression with unrelated spinal cord lesion",
+            "EMG/NCS confirm peripheral radial neuropathy from compression (Saturday night palsy), while separate pathology causes myelopathic signs."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pure radial nerve entrapment",
+            "Hyperreflexia and bilateral upgoing Babinski signs cannot be explained by isolated peripheral nerve lesion alone."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "Reflexes would be diminished or absent rather than hyperreflexic (3+)."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Tourniquet-induced radial nerve palsy",
+            "Prolonged tourniquet application (90 minutes) on the left upper extremity during recent ACL surgery directly correlates with the radial nerve dysfunction pattern and timeline."
+          ],
+          [
+            "Bilateral radial nerve compression neuropathy",
+            "EMG/NCS findings of reduced conduction velocity at the elbow bilaterally with acute denervation suggest compression at the spiral groove, though asymmetric severity favors tourniquet injury on left."
+          ],
+          [
+            "Cervical myelopathy with superimposed peripheral nerve injury",
+            "Hyperreflexia, upgoing Babinski signs, and bilateral upper extremity symptoms suggest cervical cord pathology with concurrent radial nerve injury from tourniquet."
+          ],
+          [
+            "Hereditary neuropathy with liability to pressure palsies (HNLPP)",
+            "Bilateral radial nerve involvement with focal compression susceptibility after minor trauma (tourniquet) fits this genetic disorder predisposing to pressure palsies."
+          ],
+          [
+            "Perioperative positioning injury with cervical cord compression",
+            "Combined upper motor neuron signs and radial nerve findings could reflect poor surgical positioning causing both spinal cord and peripheral nerve injury."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Isolated Saturday night palsy",
+            "The bilateral involvement, upper motor neuron signs, and clear tourniquet history make simple radial nerve compression from external pressure unlikely."
+          ],
+          [
+            "Posterior interosseous syndrome",
+            "This would not explain the sensory deficits on dorsum of hand or the upper motor neuron signs."
+          ]
+        ]
+      },
+      "cf_id": "case_054_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of hyperreflexia and upgoing Babinski sign argues against radial nerve injury, which would not cause upper motor neuron signs."
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "case_id": "case_038",
+  "model": "gemini_pro",
+  "ground_truth": "Histoplasmosis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral Gastroenteritis",
+          "This is a highly common infection that presents with the classic triad of fever, nausea, and vomiting."
+        ],
+        [
+          "Food Poisoning",
+          "The patient's acute symptoms are characteristic of an illness caused by ingestion of foodborne pathogens or toxins."
+        ],
+        [
+          "Acute Appendicitis",
+          "This is a critical surgical emergency that often presents with nausea, vomiting, and fever in a young adult."
+        ],
+        [
+          "Acute Pyelonephritis",
+          "A kidney infection can cause systemic symptoms of fever, nausea, and vomiting, even without prominent urinary complaints initially."
+        ],
+        [
+          "Acute Viral Hepatitis",
+          "The prodromal phase of hepatitis often manifests with non-specific systemic symptoms including fever, nausea, and vomiting."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Rabies",
+          "The prodrome followed by acute encephalopathy with agitation, hypersalivation, and autonomic dysfunction is a classic presentation for furious rabies."
+        ],
+        [
+          "Organophosphate poisoning",
+          "This toxidrome explains the combination of altered mental status, generalized muscle twitching, and cholinergic signs like copious oral secretions."
+        ],
+        [
+          "Herpes simplex virus (HSV) encephalitis",
+          "This is a primary consideration for any patient with fever and acute, severe encephalopathy, which can include seizures and autonomic instability."
+        ],
+        [
+          "Bacterial meningoencephalitis",
+          "A fulminant central nervous system infection could account for the high fever, rapid neurologic decline, and progression to shock and respiratory failure."
+        ],
+        [
+          "Tetanus",
+          "This diagnosis is suggested by the presence of generalized muscle excitation and autonomic dysfunction, though key features like trismus have not been described."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Uncomplicated gastroenteritis",
+          "The initial symptoms are now overshadowed by severe neurological decompensation and respiratory failure, which are not features of simple gastroenteritis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Hantavirus Pulmonary Syndrome",
+          "The patient's progression from a viral prodrome to acute respiratory distress syndrome, shock, and pancytopenia is a classic presentation."
+        ],
+        [
+          "Rabies",
+          "The acute onset of agitated delirium with copious oral secretions and muscle twitching is highly characteristic of this diagnosis."
+        ],
+        [
+          "Disseminated Histoplasmosis",
+          "This fungal infection can present as a fulminant illness with diffuse pulmonary infiltrates, pancytopenia from bone marrow involvement, and hepatic dysfunction."
+        ],
+        [
+          "Severe Leptospirosis",
+          "This spirochetal infection can cause a rapidly progressive multi-organ failure syndrome involving the lungs (ARDS), liver, and central nervous system."
+        ],
+        [
+          "Organophosphate Poisoning",
+          "The patient's acute decompensation with altered mental status, muscle twitching, and copious secretions is consistent with a cholinergic toxidrome."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Typical Bacterial Pneumonia",
+          "This diagnosis does not adequately explain the pancytopenia or the specific neurologic findings of agitation and copious secretions."
+        ],
+        [
+          "Malignancy",
+          "The hyperacute clinical deterioration over hours is not characteristic of an underlying hematologic malignancy."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Progressive Disseminated Histoplasmosis",
+          "This diagnosis is confirmed by the BAL fluid stain showing small, oval yeast cells within macrophages and the subsequent positive culture."
+        ],
+        [
+          "Miliary Tuberculosis",
+          "This infection presents with a nearly identical syndrome of fever, pancytopenia, elevated liver enzymes, and diffuse reticulonodular infiltrates on chest x-ray."
+        ],
+        [
+          "Disseminated Blastomycosis",
+          "This endemic dimorphic fungus can also cause a fulminant sepsis-like syndrome with severe pneumonia, ARDS, and multi-organ failure."
+        ],
+        [
+          "Severe Sepsis with ARDS",
+          "The patient's presentation of shock, high fever, respiratory failure, and multi-organ dysfunction fits this broad critical illness syndrome."
+        ],
+        [
+          "Disseminated Coccidioidomycosis",
+          "This fungal infection can also disseminate hematogenously to cause severe pneumonia, a miliary pattern, and a clinical picture mimicking septic shock."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Organophosphate poisoning",
+          "This is ruled out by the 3-day febrile prodrome, pancytopenia, diffuse lung infiltrates, and the definitive positive fungal culture."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute gastroenteritis",
+            "These are the most common symptoms for a viral or bacterial infection of the gastrointestinal tract."
+          ],
+          [
+            "Acute appendicitis",
+            "This common surgical emergency often begins with non-specific symptoms like fever, nausea, and vomiting before pain localizes."
+          ],
+          [
+            "Acute hepatitis",
+            "A viral prodrome including fever, nausea, and vomiting is a typical initial presentation for acute viral hepatitis."
+          ],
+          [
+            "Pyelonephritis",
+            "A kidney infection commonly presents with systemic symptoms of fever, nausea, and vomiting."
+          ],
+          [
+            "Meningitis",
+            "This life-threatening infection must be considered as fever, nausea, and vomiting are common presenting symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "The presenting symptoms are too non-specific to rule out any diagnosis at this stage."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Meningococcemia",
+            "The rapid onset of high fever, altered mental status, shock, and a petechial rash in a young adult is the classic presentation for this life-threatening infection."
+          ],
+          [
+            "Rocky Mountain Spotted Fever",
+            "This tick-borne illness presents with high fever, severe systemic illness, neurological changes, and a petechial rash, mimicking meningococcemia."
+          ],
+          [
+            "Sepsis with Disseminated Intravascular Coagulation (DIC)",
+            "A severe systemic infection from another bacterial source could lead to septic shock, multi-organ dysfunction, and a consumptive coagulopathy causing a petechial rash."
+          ],
+          [
+            "Viral Encephalitis",
+            "This diagnosis is suggested by the high fever, profound neurological dysfunction (disorientation, agitation, twitching), and respiratory compromise, though the petechial rash is less typical."
+          ],
+          [
+            "Rabies",
+            "The combination of agitation, disorientation, and copious oral secretions is highly concerning for rabies, although the petechial rash is not a characteristic feature."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Uncomplicated gastroenteritis",
+            "The initial symptoms are consistent, but the subsequent development of septic shock, neurological compromise, and a petechial rash rules this out."
+          ],
+          [
+            "Organophosphate poisoning",
+            "While this explains muscle twitching and secretions, it does not account for the high fever or petechial rash, and bradycardia would be more typical than the patient's heart rate."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Hantavirus Pulmonary Syndrome",
+            "The patient's presentation of a febrile prodrome followed by rapid progression to ARDS, shock, and pancytopenia is classic for this diagnosis."
+          ],
+          [
+            "Meningococcemia",
+            "This diagnosis is suggested by the fulminant onset of fever, petechial rash, shock, and multi-organ failure consistent with disseminated Neisseria meningitidis infection."
+          ],
+          [
+            "Rocky Mountain Spotted Fever",
+            "This tick-borne illness can cause high fever, a petechial rash, pancytopenia, and severe multi-system disease including ARDS and encephalitis."
+          ],
+          [
+            "Severe Sepsis with Disseminated Intravascular Coagulation (DIC)",
+            "The patient's rapid decline with multi-organ failure, shock, petechiae, and pancytopenia is a hallmark of severe sepsis complicated by DIC from an unidentified pathogen."
+          ],
+          [
+            "Ehrlichiosis/Anaplasmosis",
+            "These tick-borne infections are characterized by fever, pancytopenia, and elevated liver enzymes, and can progress to septic shock and ARDS in severe cases."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Organophosphate poisoning",
+            "The presence of high fever, a petechial rash, and pancytopenia are inconsistent with this toxidrome and strongly favor an infectious etiology."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Progressive Disseminated Histoplasmosis",
+            "The clinical syndrome of fever, pancytopenia, ARDS, and shock is confirmed by the BAL fluid showing intracellular yeasts and culturing *Histoplasma capsulatum*."
+          ],
+          [
+            "Miliary Tuberculosis",
+            "This infection can present identically with fever, multi-organ failure, pancytopenia, and a diffuse reticulonodular pattern on chest imaging."
+          ],
+          [
+            "Sepsis with Disseminated Intravascular Coagulation (DIC)",
+            "The patient's presentation of fever, hypotension, altered mental status, respiratory failure, and petechial rash with pancytopenia is characteristic of severe sepsis with multi-organ failure."
+          ],
+          [
+            "Disseminated Blastomycosis",
+            "This endemic fungus can also cause a severe, rapidly progressive pneumonia with systemic dissemination, mimicking histoplasmosis."
+          ],
+          [
+            "Visceral Leishmaniasis",
+            "This protozoan infection classically causes fever, pancytopenia, and hepatosplenomegaly, and the intracellular amastigotes can resemble Histoplasma on microscopy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Miliary Tuberculosis",
+            "Fungal stains and culture confirmed Histoplasma, not acid-fast bacilli."
+          ],
+          [
+            "Bacterial Sepsis",
+            "The definitive identification of a fungal pathogen as the etiologic agent makes a primary bacterial cause unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_038_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's exam reveals a new petechial rash, arguing against histoplasmosis which does not typically present with petechiae."
+    }
+  ]
+}

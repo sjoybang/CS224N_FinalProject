@@ -1,0 +1,244 @@
+{
+  "case_id": "case_050",
+  "model": "gemini",
+  "ground_truth": "Hypertrophic cardiomyopathy",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Normal pregnancy",
+          "Routine follow-up at 32 weeks gestation suggests a baseline possibility of a healthy pregnancy."
+        ],
+        [
+          "Gestational diabetes",
+          "Routine screening often occurs around this gestational age, making it a possible consideration."
+        ],
+        [
+          "Preeclampsia",
+          "Although no symptoms are present, preeclampsia can develop later in pregnancy and warrants monitoring."
+        ],
+        [
+          "Intrauterine growth restriction",
+          "Ultrasound is being performed, which could be related to concerns about fetal growth."
+        ],
+        [
+          "Preterm labor risk",
+          "While no specific symptoms are mentioned, routine visits often involve assessing risk factors for preterm labor."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Ectopic pregnancy",
+          "Gestation is at 32 weeks, ruling out ectopic pregnancy."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Fetal macrosomia",
+          "Gestational diabetes with poor glucose control is a significant risk factor for fetal macrosomia."
+        ],
+        [
+          "Polyhydramnios",
+          "Poorly controlled gestational diabetes can lead to fetal polyuria, resulting in polyhydramnios."
+        ],
+        [
+          "Preterm labor",
+          "Poor glycemic control and associated complications can increase the risk of preterm labor."
+        ],
+        [
+          "Gestational hypertension",
+          "Gestational diabetes increases the risk of gestational hypertension."
+        ],
+        [
+          "Shoulder dystocia",
+          "Fetal macrosomia increases the risk of shoulder dystocia during delivery."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Eclampsia",
+          "No hypertension or signs of end-organ damage are reported."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Hypertrophic Cardiomyopathy",
+          "Gestational diabetes and poor glucose control can contribute to fetal cardiac hypertrophy, potentially causing asymmetric septal enlargement and outflow obstruction."
+        ],
+        [
+          "Congenital Heart Defect",
+          "Structural heart abnormalities, such as ventricular septal defects or coarctation of the aorta, can manifest with outflow obstruction and reduced ejection fraction."
+        ],
+        [
+          "Fetal Hypoxia",
+          "Maternal diabetes and poor glucose control can lead to fetal hypoxia, which can cause myocardial dysfunction and reduced ejection fraction."
+        ],
+        [
+          "Myocarditis",
+          "Although less common, fetal myocarditis could present with reduced ejection fraction and structural changes."
+        ],
+        [
+          "Endocardial Fibroelastosis",
+          "This condition can cause thickening of the ventricular walls and impaired cardiac function, potentially leading to outflow obstruction."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Normal Fetal Development",
+          "Ultrasound findings are clearly abnormal."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Hypertrophic Cardiomyopathy",
+          "Postnatal echocardiogram and genetic testing confirm the diagnosis."
+        ],
+        [
+          "Congenital Heart Disease",
+          "The ultrasound findings of asymmetric interventricular septum and LVOT obstruction are indicative of a congenital heart defect."
+        ],
+        [
+          "Diabetic Cardiomyopathy",
+          "Gestational diabetes with poor glucose control can lead to fetal cardiac dysfunction."
+        ],
+        [
+          "Noonan Syndrome",
+          "This genetic disorder can present with hypertrophic cardiomyopathy and congenital heart defects."
+        ],
+        [
+          "Barth Syndrome",
+          "This X-linked disorder can cause cardiomyopathy, particularly in male infants."
+        ]
+      ],
+      "eliminated": []
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Normal pregnancy",
+            "The patient is at 32 weeks gestation and presenting for a routine follow-up, suggesting a normal progression."
+          ],
+          [
+            "Gestational diabetes",
+            "Routine follow-up may include screening for gestational diabetes, a common pregnancy complication."
+          ],
+          [
+            "Pre-eclampsia screening",
+            "Routine follow-up may include screening for pre-eclampsia, given the gestational age."
+          ],
+          [
+            "Intrauterine growth restriction",
+            "Routine ultrasound can assess fetal growth, raising the possibility of detecting IUGR."
+          ],
+          [
+            "Preterm labor risk",
+            "While routine, follow-up visits monitor for signs of preterm labor, especially at this gestational age."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Ectopic pregnancy",
+            "Gestational age of 32 weeks rules out ectopic pregnancy."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Fetal Macrosomia",
+            "Gestational diabetes with poor glucose control increases the risk of fetal macrosomia."
+          ],
+          [
+            "Preeclampsia",
+            "Although vital signs are currently stable, gestational diabetes increases the risk of preeclampsia, and further monitoring is warranted."
+          ],
+          [
+            "Gestational Hypertension",
+            "The patient's history of gestational diabetes puts her at higher risk for gestational hypertension."
+          ],
+          [
+            "Coronary Artery Vasospasm",
+            "Chest pain relieved by nitroglycerin suggests possible coronary artery vasospasm, which can occur during pregnancy."
+          ],
+          [
+            "Placental Abruption",
+            "Poorly controlled gestational diabetes and potential vascular issues increase the risk of placental abruption."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Normal Pregnancy",
+            "The presence of gestational diabetes and chest pain make a normal pregnancy less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Hypertrophic Cardiomyopathy",
+            "The asymmetric septal hypertrophy and LVOT obstruction on fetal ultrasound are highly suggestive of HCM, potentially exacerbated by maternal diabetes."
+          ],
+          [
+            "Congenital Heart Disease",
+            "Given the multiple cardiac abnormalities (septal hypertrophy, LVOT obstruction, reduced EF), a broader congenital heart defect should be considered."
+          ],
+          [
+            "Diabetic Cardiomyopathy",
+            "Maternal gestational diabetes with poor control can lead to fetal cardiomyopathy, manifesting as hypertrophy and reduced ejection fraction."
+          ],
+          [
+            "Coarctation of the Aorta",
+            "LVOT obstruction and reduced EF could be secondary to increased afterload from an undetected coarctation."
+          ],
+          [
+            "Endocardial Fibroelastosis",
+            "This condition can cause ventricular dysfunction and thickening, potentially mimicking hypertrophic cardiomyopathy on ultrasound."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Familial Hypertrophic Cardiomyopathy",
+            "Genetic testing confirmed a mutation associated with familial hypertrophic cardiomyopathy, explaining the neonate's condition."
+          ],
+          [
+            "Diabetic Cardiomyopathy",
+            "Maternal gestational diabetes with poor glucose control can lead to fetal cardiac dysfunction and hypertrophy."
+          ],
+          [
+            "Congenital Heart Defect",
+            "While HCM is confirmed, other congenital defects could coexist or mimic some findings on initial ultrasound."
+          ],
+          [
+            "Noonan Syndrome",
+            "This genetic disorder can present with hypertrophic cardiomyopathy and other congenital heart defects."
+          ],
+          [
+            "Maternal Autoimmune Disease",
+            "Maternal autoimmune conditions can sometimes cause cardiac abnormalities in the fetus."
+          ]
+        ],
+        "eliminated": []
+      },
+      "cf_id": "case_050_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports regular episodes of chest pain that are relieved with nitroglycerin, which argues against hypertrophic cardiomyopathy as exertional chest pain is not typically relieved by nitroglycerin in HCM."
+    }
+  ]
+}

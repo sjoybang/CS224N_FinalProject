@@ -1,0 +1,286 @@
+{
+  "case_id": "case_049",
+  "model": "gemini_pro",
+  "ground_truth": "Diffuse large B-cell lymphoma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Lymphoma",
+          "The combination of B symptoms (night sweats, weight loss) with fatigue and abdominal pain is a classic presentation for lymphoma."
+        ],
+        [
+          "Pancreatic cancer",
+          "Worsening abdominal pain with significant unintentional weight loss in this age group is highly suspicious for a pancreatic malignancy."
+        ],
+        [
+          "Disseminated tuberculosis",
+          "This infectious disease is a well-known mimic of malignancy, presenting with chronic constitutional symptoms including night sweats, weight loss, and abdominal pain."
+        ],
+        [
+          "Renal cell carcinoma",
+          "This malignancy can present with paraneoplastic syndromes, including fever, fatigue, and weight loss, in addition to abdominal or flank pain."
+        ],
+        [
+          "Colorectal cancer",
+          "Advanced disease can present with non-specific abdominal pain and constitutional symptoms like weight loss and fatigue due to tumor burden or anemia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Irritable bowel syndrome",
+          "This diagnosis is excluded by the presence of red flag symptoms such as unintentional weight loss and night sweats."
+        ],
+        [
+          "Acute cholecystitis",
+          "The four-week duration of worsening symptoms is not consistent with an acute inflammatory process."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Lymphoma",
+          "The patient presents with the classic triad of B symptoms (night sweats, weight loss, fatigue), generalized lymphadenopathy, and splenomegaly."
+        ],
+        [
+          "Metastatic Gastric Cancer",
+          "A fixed supraclavicular (Virchow's) node is a classic sign of metastasis from an abdominal primary, such as gastric cancer, which also explains the weight loss and abdominal pain."
+        ],
+        [
+          "Chronic Lymphocytic Leukemia",
+          "This common leukemia in older adults typically presents with fatigue, lymphadenopathy, and splenomegaly."
+        ],
+        [
+          "Disseminated Tuberculosis",
+          "This infectious disease can mimic malignancy by causing B symptoms, lymphadenopathy, and splenomegaly."
+        ],
+        [
+          "Metastatic Pancreatic Cancer",
+          "This malignancy can cause abdominal pain, profound weight loss, and can metastasize to the supraclavicular lymph node."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Infectious Mononucleosis",
+          "The patient's age, the 4-week chronicity, and the fixed nature of the lymph node make an acute viral infection highly improbable."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Non-Hodgkin Lymphoma",
+          "The patient's age, B symptoms (fatigue, night sweats, weight loss), splenomegaly, and widespread massive lymphadenopathy are classic for an aggressive lymphoma."
+        ],
+        [
+          "Hodgkin Lymphoma",
+          "This diagnosis is highly likely given the B symptoms and extensive, contiguous-appearing lymph node involvement (cervical, mediastinal, axillary)."
+        ],
+        [
+          "Chronic Lymphocytic Leukemia",
+          "This is a common leukemia in this age group that presents with fatigue, generalized lymphadenopathy, and splenomegaly."
+        ],
+        [
+          "Metastatic Cancer",
+          "A primary solid tumor (e.g., lung, gastrointestinal) can present with B symptoms and extensive lymph node metastasis, including the supraclavicular node."
+        ],
+        [
+          "Tuberculosis (Disseminated)",
+          "This infectious disease is a well-known mimic of lymphoma, capable of causing B symptoms, splenomegaly, and widespread lymphadenopathy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Infectious Mononucleosis",
+          "The patient's age and the chronicity and severity of findings (fixed, massive nodes) are inconsistent with a typical acute viral infection."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Diffuse Large B-cell Lymphoma (DLBCL)",
+          "This is the most common non-Hodgkin lymphoma, and the patient's age, B symptoms, widespread disease, and CD20-positive high-proliferation B-cell histology are all classic features."
+        ],
+        [
+          "Mantle Cell Lymphoma",
+          "This CD20-positive B-cell lymphoma often affects older men and can present in an aggressive fashion with widespread lymphadenopathy and B symptoms."
+        ],
+        [
+          "Follicular Lymphoma, Grade 3",
+          "This represents a higher-grade, aggressive form of a common CD20-positive B-cell lymphoma that can present with B symptoms and rapidly progressive disease."
+        ],
+        [
+          "Burkitt Lymphoma",
+          "This is a very aggressive CD20-positive B-cell lymphoma characterized by a high proliferative index, which is consistent with the biopsy findings."
+        ],
+        [
+          "Richter's Transformation",
+          "This diagnosis accounts for the development of an aggressive high-grade lymphoma (like DLBCL) from a pre-existing, often undiagnosed, low-grade B-cell malignancy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "T-cell Lymphoma",
+          "The positive staining for CD20, a B-cell marker, rules out a T-cell lineage."
+        ],
+        [
+          "Hodgkin Lymphoma",
+          "The diffuse CD20 positivity on lymphocytes is inconsistent with the typical immunophenotype of classic Hodgkin lymphoma."
+        ],
+        [
+          "Metastatic Carcinoma",
+          "The biopsy showed a lymphoproliferative process, not the epithelial cells that would be found in a metastatic carcinoma."
+        ],
+        [
+          "Tuberculosis",
+          "Pathology did not show caseating granulomas and instead revealed a neoplastic process."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Lymphoma",
+            "The combination of B symptoms (night sweats, weight loss) with fatigue and abdominal pain is a classic presentation for lymphoma."
+          ],
+          [
+            "Pancreatic cancer",
+            "This diagnosis is suggested by the patient's age and the constellation of worsening abdominal pain and significant unintentional weight loss."
+          ],
+          [
+            "Colorectal cancer",
+            "This common malignancy in a 55-year-old can present with abdominal pain, fatigue, and constitutional symptoms like weight loss, especially in advanced stages."
+          ],
+          [
+            "Disseminated tuberculosis",
+            "This infectious disease can mimic malignancy, presenting with chronic constitutional symptoms including fatigue, night sweats, weight loss, and abdominal pain."
+          ],
+          [
+            "Renal cell carcinoma",
+            "This malignancy can present with paraneoplastic symptoms including fatigue, weight loss, and sweats, with abdominal pain originating from the primary tumor."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Irritable bowel syndrome",
+            "This is a functional disorder that does not cause alarm symptoms such as unintentional weight loss and night sweats."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Lymphoma",
+            "The combination of B symptoms (fatigue, night sweats, weight loss), rubbery supraclavicular lymphadenopathy, and splenomegaly is a classic presentation for lymphoma."
+          ],
+          [
+            "Metastatic Cancer",
+            "A supraclavicular lymph node can represent metastasis from an unknown primary (e.g., lung, gastrointestinal), which would also explain the constitutional symptoms and abdominal pain."
+          ],
+          [
+            "Chronic Lymphocytic Leukemia (CLL)",
+            "This common leukemia in older adults presents with fatigue, lymphadenopathy, and splenomegaly, closely mimicking lymphoma."
+          ],
+          [
+            "Disseminated Tuberculosis",
+            "This infection can mimic malignancy by causing B symptoms, widespread lymphadenopathy, and splenomegaly."
+          ],
+          [
+            "Infectious Mononucleosis (EBV/CMV)",
+            "A viral infection that can cause profound fatigue, lymphadenopathy, and splenomegaly, although less common in this age group with this severity."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute viral gastroenteritis",
+            "This would not explain the 4-week duration, night sweats, weight loss, supraclavicular lymphadenopathy, or splenomegaly."
+          ],
+          [
+            "Cirrhosis",
+            "While it can cause splenomegaly and fatigue, it does not typically cause night sweats or the prominent, rubbery lymphadenopathy described."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Non-Hodgkin Lymphoma",
+            "This is the most likely diagnosis given the patient's age, B symptoms, splenomegaly, and widespread, massive lymphadenopathy."
+          ],
+          [
+            "Hodgkin Lymphoma",
+            "The presence of B symptoms, splenomegaly, and extensive lymphadenopathy including the mediastinum is classic for this diagnosis."
+          ],
+          [
+            "Chronic Lymphocytic Leukemia / Small Lymphocytic Lymphoma",
+            "This common leukemia in older adults frequently presents with generalized lymphadenopathy, splenomegaly, and constitutional symptoms."
+          ],
+          [
+            "Metastatic Cancer",
+            "Widespread lymphadenopathy can represent metastasis from a solid tumor, such as lung or gastrointestinal cancer, especially with a supraclavicular node present."
+          ],
+          [
+            "Disseminated Tuberculosis",
+            "This infectious disease is a well-known mimic of lymphoma, capable of causing B symptoms, splenomegaly, and extensive lymphadenopathy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute infectious mononucleosis",
+            "The patient's age, 4-week duration of severe symptoms, and massive nodal burden are atypical for a primary EBV infection."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Diffuse Large B-cell Lymphoma (DLBCL)",
+            "This is the most common aggressive non-Hodgkin lymphoma in adults, perfectly matching the B-symptoms, widespread lymphadenopathy, and biopsy showing a high-proliferative CD20-positive B-cell malignancy."
+          ],
+          [
+            "Mantle Cell Lymphoma, blastoid variant",
+            "This aggressive variant of a B-cell lymphoma can present with B-symptoms, extensive disease, and a high proliferative index, and is CD20 positive."
+          ],
+          [
+            "Richter's Transformation",
+            "The patient's acute presentation could represent the transformation of a pre-existing indolent B-cell leukemia/lymphoma (like CLL/SLL) into an aggressive high-grade lymphoma."
+          ],
+          [
+            "High-Grade Follicular Lymphoma",
+            "This diagnosis accounts for a typically indolent B-cell lymphoma presenting in an aggressive fashion with a high proliferative rate, consistent with the clinical picture."
+          ],
+          [
+            "Burkitt Lymphoma",
+            "This is a very aggressive B-cell lymphoma characterized by a very high proliferative index that can present with B-symptoms and widespread disease, although it is less common in this age group."
+          ]
+        ],
+        "eliminated": [
+          [
+            "T-cell Lymphoma",
+            "The malignant lymphocytes are positive for the B-cell marker CD20, ruling out a T-cell origin."
+          ],
+          [
+            "Hodgkin Lymphoma",
+            "The diffuse positivity of the malignant cell population for CD20 is characteristic of B-cell non-Hodgkin lymphoma, not classical Hodgkin lymphoma."
+          ],
+          [
+            "Tuberculosis",
+            "The lymph node biopsy shows a monoclonal lymphocyte proliferation rather than the characteristic caseating granulomas of tuberculosis."
+          ],
+          [
+            "Metastatic Carcinoma",
+            "The biopsy identified a lymphoid malignancy, not epithelial cells characteristic of a carcinoma."
+          ]
+        ]
+      },
+      "cf_id": "case_049_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a painful, enlarged, and rubbery supraclavicular lymph node, which is more consistent with an inflammatory process than lymphoma."
+    }
+  ]
+}

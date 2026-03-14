@@ -1,0 +1,126 @@
+{
+  "case_id": "case_056",
+  "model": "biogpt",
+  "ground_truth": "Thrombotic thrombocytopenic purpura (TTP)",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 37-year-old woman presents to the emergency department complaining of generalized malaise, weakness, headache, nausea, vomiting, and diarrhea, which started approximately two days ago. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 37-year-old woman presents to the emergency department complaining of generalized malaise, weakness, headache, nausea, vomiting, and diarrhea, which started approximately two days ago. [Stage 2] The patient appears ill. Her vital signs include a temperature of 38.0 \u00b0 C, heart rate of 96 beats per minute, blood pressure of 110 / 73 mmHg, and oxygen saturation of 96% on room air. She is drowsy but arousable, and the neurological exam is nonfocal. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 37-year-old woman presents to the emergency department complaining of generalized malaise, weakness, headache, nausea, vomiting, and diarrhea, which started approximately two days ago. [Stage 2] The patient appears ill. Her vital signs include a temperature of 38.0 \u00b0 C, heart rate of 96 beats per minute, blood pressure of 110 / 73 mmHg, and oxygen saturation of 96% on room air. She is drowsy but arousable, and the neurological exam is nonfocal. [Stage 3] Initial laboratory studies reveal a hematocrit of 26%, platelet count of 80,000 / mL, and serum creatinine of 1.5 mg / dL. The peripheral blood smear shows schistocytes. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 37-year-old woman presents to the emergency department complaining of generalized malaise, weakness, headache, nausea, vomiting, and diarrhea, which started approximately two days ago. [Stage 2] The patient appears ill. Her vital signs include a temperature of 38.0 \u00b0 C, heart rate of 96 beats per minute, blood pressure of 110 / 73 mmHg, and oxygen saturation of 96% on room air. She is drowsy but arousable, and the neurological exam is nonfocal. [Stage 3] Initial laboratory studies reveal a hematocrit of 26%, platelet count of 80,000 / mL, and serum creatinine of 1.5 mg / dL. The peripheral blood smear shows schistocytes. [Stage 4] ADAMTS13 activity level is found to be severely deficient at < 5%. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 37-year-old woman presents to the emergency department complaining of generalized malaise, weakness, headache, nausea, vomiting, and diarrhea, which started approximately two days ago. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 37-year-old woman presents to the emergency department complaining of generalized malaise, weakness, headache, nausea, vomiting, and diarrhea, which started approximately two days ago. [Stage 2] The patient appears uncomfortable but is alert and oriented. Her vital signs include a temperature of 37.0 \u00b0 C, heart rate of 88 beats per minute, blood pressure of 118 / 78 mmHg, and oxygen saturation of 98% on room air. Neurological exam is normal. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 37-year-old woman presents to the emergency department complaining of generalized malaise, weakness, headache, nausea, vomiting, and diarrhea, which started approximately two days ago. [Stage 2] The patient appears uncomfortable but is alert and oriented. Her vital signs include a temperature of 37.0 \u00b0 C, heart rate of 88 beats per minute, blood pressure of 118 / 78 mmHg, and oxygen saturation of 98% on room air. Neurological exam is normal. [Stage 3] Initial laboratory studies reveal a hematocrit of 26%, platelet count of 80,000 / mL, and serum creatinine of 1.5 mg / dL. The peripheral blood smear shows schistocytes. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 37-year-old woman presents to the emergency department complaining of generalized malaise, weakness, headache, nausea, vomiting, and diarrhea, which started approximately two days ago. [Stage 2] The patient appears uncomfortable but is alert and oriented. Her vital signs include a temperature of 37.0 \u00b0 C, heart rate of 88 beats per minute, blood pressure of 118 / 78 mmHg, and oxygen saturation of 98% on room air. Neurological exam is normal. [Stage 3] Initial laboratory studies reveal a hematocrit of 26%, platelet count of 80,000 / mL, and serum creatinine of 1.5 mg / dL. The peripheral blood smear shows schistocytes. [Stage 4] ADAMTS13 activity level is found to be severely deficient at < 5%. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_056_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is alert and oriented with a normal neurological exam, which argues against the neurological involvement typically seen in TTP."
+    }
+  ]
+}

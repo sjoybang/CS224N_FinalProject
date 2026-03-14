@@ -1,0 +1,286 @@
+{
+  "case_id": "case_047",
+  "model": "claude",
+  "ground_truth": "Carbamoyl phosphate synthetase I deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Neonatal sepsis",
+          "Early-onset sepsis commonly presents with feeding difficulties and behavioral changes in the first days of life."
+        ],
+        [
+          "Hypoglycemia",
+          "Newborns are susceptible to low blood sugar, which manifests as poor feeding, lethargy, and abnormal behavior."
+        ],
+        [
+          "Neonatal hyperbilirubinemia (kernicterus)",
+          "Day 3 is peak time for physiologic jaundice, and severe cases can cause lethargy and poor feeding."
+        ],
+        [
+          "Inborn errors of metabolism",
+          "Metabolic disorders often present after initial feeding with lethargy, poor feeding, and neurological symptoms in the first week of life."
+        ],
+        [
+          "Congenital heart disease",
+          "Undetected cardiac anomalies can present with feeding difficulties and lethargy as pulmonary pressures change in early neonatal period."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Inborn error of metabolism (urea cycle defect, organic acidemia, or maple syrup urine disease)",
+          "Lethargy, seizures, and hyperventilation in a 3-day-old after initial normal period suggests metabolic decompensation with accumulation of toxic metabolites."
+        ],
+        [
+          "Neonatal sepsis (bacterial meningitis)",
+          "Early-onset or late-onset sepsis can present with lethargy, seizures, and respiratory abnormalities in the first week of life."
+        ],
+        [
+          "Hypoxic-ischemic encephalopathy",
+          "Seizures and lethargy may indicate delayed manifestation of perinatal hypoxia despite reportedly uncomplicated delivery."
+        ],
+        [
+          "Hypoglycemia",
+          "Newborns are vulnerable to hypoglycemia which can cause lethargy, seizures, and compensatory hyperventilation."
+        ],
+        [
+          "Intracranial hemorrhage",
+          "Spontaneous or birth-related hemorrhage can present with seizures and altered consciousness even after apparently normal vaginal delivery."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses, as multiple serious conditions can present similarly in neonates."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Urea cycle disorder (ornithine transcarbamylase deficiency)",
+          "Hyperammonemia with elevated glutamine, decreased BUN, and cerebral edema in a neonate are classic findings of impaired urea cycle function."
+        ],
+        [
+          "Carbamyl phosphate synthetase I deficiency",
+          "This urea cycle defect presents identically with severe hyperammonemia, low BUN, and neurological symptoms in the first days of life."
+        ],
+        [
+          "Citrullinemia (argininosuccinate synthetase deficiency)",
+          "This urea cycle disorder causes neonatal hyperammonemia with elevated glutamine and similar clinical presentation, though typically citrulline levels would be markedly elevated."
+        ],
+        [
+          "Organic acidemia (propionic or methylmalonic acidemia)",
+          "These can present with hyperammonemia and neurological symptoms in neonates, though typically also feature metabolic acidosis and ketosis."
+        ],
+        [
+          "Transient hyperammonemia of the newborn",
+          "This idiopathic condition causes severe hyperammonemia in the first days of life with similar symptoms, though it is less common and a diagnosis of exclusion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Neonatal sepsis",
+          "While sepsis can cause lethargy and seizures, it would not typically cause the specific pattern of hyperammonemia with decreased BUN and elevated glutamine."
+        ],
+        [
+          "Hypoxic-ischemic encephalopathy",
+          "The uncomplicated vaginal delivery and specific metabolic derangements (hyperammonemia with low BUN) make this unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Carbamoyl phosphate synthetase I deficiency",
+          "Genetic testing confirms CPS1 gene mutation, and clinical presentation with neonatal hyperammonemia, seizures, and cerebral edema is pathognomonic."
+        ],
+        [
+          "Ornithine transcarbamylase deficiency",
+          "Presents similarly with neonatal hyperammonemia and elevated glutamine, though genetic testing confirmed CPS1 rather than OTC mutation."
+        ],
+        [
+          "N-acetylglutamate synthase deficiency",
+          "Clinically indistinguishable from CPS1 deficiency with hyperammonemia and low BUN, but genetic testing excludes this diagnosis."
+        ],
+        [
+          "Citrullinemia type I",
+          "Part of urea cycle disorders with similar neonatal presentation, but would show elevated citrulline levels and genetic testing confirmed CPS1 deficiency instead."
+        ],
+        [
+          "Argininosuccinic aciduria",
+          "Another urea cycle disorder presenting with neonatal hyperammonemia, but biochemical profile and confirmed CPS1 mutation distinguish this case."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sepsis",
+          "Would not explain the specific metabolic derangements (hyperammonemia, low BUN, elevated glutamine) or the confirmed CPS1 gene mutation."
+        ],
+        [
+          "Hypoxic-ischemic encephalopathy",
+          "Vaginal delivery without complications and specific metabolic pattern with genetic confirmation rule this out."
+        ],
+        [
+          "Inborn errors of organic acid metabolism",
+          "Would typically show metabolic acidosis and abnormal organic acids rather than isolated hyperammonemia with low BUN."
+        ],
+        [
+          "Transient hyperammonemia of the newborn",
+          "Would resolve spontaneously and would not have an underlying genetic mutation in CPS1."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Neonatal sepsis",
+            "A 3-day-old newborn with feeding difficulties and behavioral changes is at risk for early-onset sepsis, which commonly presents with nonspecific symptoms including poor feeding and lethargy."
+          ],
+          [
+            "Neonatal hypoglycemia",
+            "Feeding difficulties in the first days of life can lead to or result from hypoglycemia, which presents with jitteriness, lethargy, and feeding problems."
+          ],
+          [
+            "Neonatal jaundice with kernicterus risk",
+            "Day 3 of life is peak time for physiologic jaundice, and severe hyperbilirubinemia can cause lethargy, poor feeding, and abnormal behavior."
+          ],
+          [
+            "Inborn errors of metabolism",
+            "Metabolic disorders often present in the first week of life with poor feeding, lethargy, and unusual behavior as toxic metabolites accumulate."
+          ],
+          [
+            "Neonatal hypocalcemia",
+            "Early neonatal hypocalcemia (first 72 hours) can present with jitteriness, irritability, and feeding difficulties."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Congenital TORCH infection (toxoplasmosis, CMV, rubella, HSV)",
+            "Hepatosplenomegaly and neonatal seizures are classic presentations of intrauterine infections affecting the CNS and reticuloendothelial system."
+          ],
+          [
+            "Neonatal sepsis with meningitis",
+            "Early-onset bacterial infection can present with seizures, feeding difficulties, and splenomegaly in the first days of life."
+          ],
+          [
+            "Inborn error of metabolism (galactosemia or organic acidemia)",
+            "Metabolic disorders can present with feeding intolerance, seizures, and hepatosplenomegaly within the first days after milk feeding initiation."
+          ],
+          [
+            "Hypoxic-ischemic encephalopathy",
+            "Birth-related hypoxia can cause neonatal seizures and feeding difficulties, though splenomegaly would be unusual."
+          ],
+          [
+            "Hemolytic disease of the newborn (ABO or Rh incompatibility)",
+            "Significant hemolysis can cause splenomegaly, and severe hyperbilirubinemia with kernicterus can lead to seizures."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Benign neonatal sleep myoclonus",
+            "The presence of splenomegaly and true seizures excludes this benign condition."
+          ],
+          [
+            "Physiologic feeding difficulties",
+            "Splenomegaly and seizures indicate pathologic process beyond normal newborn adjustment."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Urea cycle disorder (ornithine transcarbamylase deficiency)",
+            "Hyperammonemia with elevated glutamine, low BUN, and cerebral edema in a neonate are classic findings of defective urea cycle enzyme function."
+          ],
+          [
+            "Carbonic anhydrase VA deficiency",
+            "This rare disorder causes hyperammonemia with low BUN due to impaired hepatic ureagenesis, though less common than primary urea cycle defects."
+          ],
+          [
+            "Organic acidemia (propionic or methylmalonic acidemia)",
+            "These can cause hyperammonemia and seizures in neonates, though typically associated with metabolic acidosis and ketonuria not mentioned here."
+          ],
+          [
+            "Citrin deficiency (citrullinemia type II)",
+            "This aspartate-glutamate carrier deficiency causes neonatal intrahepatic cholestasis with hyperammonemia and hepatomegaly/splenomegaly."
+          ],
+          [
+            "Transient hyperammonemia of the newborn",
+            "A self-limited condition causing severe hyperammonemia in the first days of life with cerebral edema, though typically without the specific pattern of elevated glutamine and low BUN."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Neonatal sepsis",
+            "The infant is afebrile and the specific metabolic pattern (hyperammonemia, elevated glutamine, low BUN) points to a metabolic rather than infectious etiology."
+          ],
+          [
+            "Hypoxic-ischemic encephalopathy",
+            "The uncomplicated vaginal delivery and specific metabolic derangements make this unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Carbamoyl phosphate synthetase I deficiency",
+            "Genetic testing confirms CPS1 gene mutation, explaining hyperammonemia, low BUN, elevated glutamine, seizures, and cerebral edema in this neonate."
+          ],
+          [
+            "Ornithine transcarbamylase deficiency",
+            "Presents similarly with neonatal hyperammonemia, seizures, and elevated glutamine, though genetic testing reportedly identified CPS1 mutation."
+          ],
+          [
+            "N-acetylglutamate synthase deficiency",
+            "Another urea cycle defect causing identical clinical presentation with hyperammonemia and low BUN in neonates."
+          ],
+          [
+            "Citrullinemia type I",
+            "Urea cycle disorder presenting with neonatal hyperammonemia and seizures, though typically shows elevated citrulline levels."
+          ],
+          [
+            "Argininosuccinic aciduria",
+            "Urea cycle defect causing similar neonatal hyperammonemic crisis with seizures and cerebral edema."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sepsis",
+            "Newborn is afebrile and clinical picture with specific metabolic derangements (hyperammonemia, low BUN, elevated glutamine) and confirmed genetic mutation points to inherited metabolic disorder rather than infection."
+          ],
+          [
+            "Hypoxic-ischemic encephalopathy",
+            "Uncomplicated vaginal delivery without complications makes birth asphyxia unlikely, and metabolic findings indicate urea cycle defect."
+          ],
+          [
+            "Galactosemia",
+            "Would not cause hyperammonemia with low BUN; typically presents with hepatomegaly, jaundice, and reducing substances in urine."
+          ]
+        ]
+      },
+      "cf_id": "case_047_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The newborn is afebrile and has a palpable spleen, which argues against Carbamoyl phosphate synthetase I deficiency."
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "case_id": "case_045",
+  "model": "gemini",
+  "ground_truth": "Rabies",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Meningitis",
+          "Fever and headache are common symptoms of meningitis, an infection of the membranes surrounding the brain and spinal cord."
+        ],
+        [
+          "Encephalitis",
+          "Encephalitis, an inflammation of the brain, can present with fever and headache."
+        ],
+        [
+          "Influenza",
+          "Influenza is a common viral infection that can cause fever and headache."
+        ],
+        [
+          "Tension headache",
+          "Tension headaches can cause head pain and may be associated with stress or other factors."
+        ],
+        [
+          "Migraine",
+          "Migraines can cause severe headaches, and while less likely with fever, atypical presentations are possible."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Meningitis",
+          "Fever, headache, and confusion are common symptoms of meningitis, and the recent onset suggests an infectious etiology."
+        ],
+        [
+          "Encephalitis",
+          "The presence of fever, headache, confusion, and hallucinations points towards encephalitis, possibly viral."
+        ],
+        [
+          "Delirium tremens",
+          "Agitation and hallucinations in a young adult could indicate alcohol withdrawal, especially with limited history."
+        ],
+        [
+          "Acute intermittent porphyria",
+          "This can present with neurological symptoms like confusion and hallucinations, along with abdominal pain (though not yet reported)."
+        ],
+        [
+          "Hyponatremia",
+          "Confusion and hallucinations can be caused by electrolyte imbalances, and the agitation when offered water could suggest an aversion due to nausea."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Common cold",
+          "Symptoms are more severe than a typical cold."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Viral encephalitis",
+          "The combination of fever, headache, altered mental status, hallucinations, and lymphocytic pleocytosis in the CSF points towards a viral infection of the brain parenchyma."
+        ],
+        [
+          "Herpes simplex encephalitis",
+          "While the CT scan was normal, HSV encephalitis can present with normal imaging early on and is a common cause of viral encephalitis with significant morbidity if untreated."
+        ],
+        [
+          "Autoimmune encephalitis",
+          "The subacute onset of altered mental status, hallucinations, and CSF pleocytosis could be due to an autoimmune process targeting the brain."
+        ],
+        [
+          "Meningitis",
+          "Although the CSF glucose and protein are normal, meningitis cannot be completely ruled out, especially viral or partially treated bacterial meningitis, given the fever, headache, and altered mental status."
+        ],
+        [
+          "Drug-induced psychosis",
+          "Hallucinations and altered mental status could be caused by drug use, although the fever and CSF pleocytosis make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial meningitis",
+          "Normal CSF glucose and protein make this less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rabies",
+          "The positive rabies virus RNA PCR test from the CSF confirms the diagnosis, especially given the history of bat exposure."
+        ],
+        [
+          "Viral encephalitis (other than rabies)",
+          "While rabies is confirmed, other viral etiologies could present with similar symptoms and CSF findings, though less likely given the PCR result."
+        ],
+        [
+          "Autoimmune encephalitis",
+          "Although less likely with the positive rabies PCR, autoimmune encephalitis can present with similar neurological symptoms and CSF pleocytosis."
+        ],
+        [
+          "Meningitis (viral)",
+          "Viral meningitis can cause fever, headache, confusion, and lymphocytic pleocytosis, but is less likely given the agitation with water."
+        ],
+        [
+          "HSV Encephalitis",
+          "HSV encephalitis can present with fever, headache, altered mental status, and hallucinations, although the CSF findings are less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial meningitis",
+          "Normal CSF glucose and protein make bacterial meningitis less likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meningitis",
+            "Fever and headache are classic symptoms of meningitis, an infection of the membranes surrounding the brain and spinal cord."
+          ],
+          [
+            "Encephalitis",
+            "Encephalitis, an inflammation of the brain, can present with fever and headache similar to meningitis."
+          ],
+          [
+            "Influenza",
+            "Influenza is a common viral infection that can cause fever and headache."
+          ],
+          [
+            "Tension headache",
+            "Tension headaches can cause head pain and may be associated with stress or other factors."
+          ],
+          [
+            "Migraine",
+            "Migraines can present with headache and may be associated with other symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out based on the limited information provided."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Meningitis",
+            "Fever, headache, and confusion are common symptoms of meningitis."
+          ],
+          [
+            "Encephalitis",
+            "The patient's fever, headache, confusion, and hallucinations suggest possible encephalitis."
+          ],
+          [
+            "Rabies",
+            "Agitation when offered water (hydrophobia) is a classic symptom, along with fever and neurological symptoms."
+          ],
+          [
+            "Delirium tremens",
+            "Given the acute onset of confusion, hallucinations, and agitation, alcohol withdrawal should be considered."
+          ],
+          [
+            "Acute intermittent porphyria",
+            "This can present with acute neurological symptoms, including confusion and hallucinations, along with abdominal pain (though not yet reported)."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Viral encephalitis",
+            "The combination of fever, headache, altered mental status, hallucinations, and lymphocytic pleocytosis in the CSF points towards a viral infection of the brain parenchyma."
+          ],
+          [
+            "Herpes simplex encephalitis",
+            "This specific viral encephalitis is considered due to the rapid progression of symptoms and altered mental status, though the CSF glucose is normal."
+          ],
+          [
+            "Autoimmune encephalitis",
+            "The subacute onset of altered mental status, hallucinations, and CSF pleocytosis, in the absence of specific findings on CT, raises the possibility of an autoimmune process affecting the brain."
+          ],
+          [
+            "Meningitis",
+            "While the patient has encephalitis symptoms, meningitis cannot be ruled out, especially given the fever, headache, and CSF pleocytosis."
+          ],
+          [
+            "Drug-induced psychosis",
+            "Although less likely given the fever and CSF findings, drug use could contribute to the altered mental status and hallucinations."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial meningitis",
+            "Normal CSF glucose makes this less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rabies",
+            "Positive rabies virus RNA in CSF confirms the diagnosis."
+          ],
+          [
+            "Viral encephalitis",
+            "While rabies is confirmed, other viral etiologies could contribute to the encephalitis."
+          ],
+          [
+            "Meningitis",
+            "Although CSF glucose and protein were normal, meningitis can present with lymphocytic pleocytosis."
+          ],
+          [
+            "Autoimmune encephalitis",
+            "Although less likely given the rabies confirmation, autoimmune encephalitis can present with similar neurological symptoms."
+          ],
+          [
+            "Drug-induced psychosis",
+            "Hallucinations and agitation could be related to substance use, although less likely given the other findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial meningitis",
+            "Normal CSF glucose and protein make this less likely."
+          ],
+          [
+            "Structural brain lesion",
+            "Head CT showed no acute abnormalities."
+          ]
+        ]
+      },
+      "cf_id": "case_045_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is noted to have full range of motion of her extremities and no cranial nerve deficits, which argues against rabies."
+    }
+  ]
+}

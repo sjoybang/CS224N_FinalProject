@@ -1,0 +1,126 @@
+{
+  "case_id": "case_038",
+  "model": "biogpt",
+  "ground_truth": "Histoplasmosis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 27-year-old man presents to the emergency room complaining of fever, nausea, and vomiting for the past 3 days. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 27-year-old man presents to the emergency room complaining of fever, nausea, and vomiting for the past 3 days. [Stage 2] While waiting, the patient becomes disoriented and agitated. Examination reveals difficulty breathing, copious oral secretions, and generalized muscle twitching. His temperature is 104 \u00b0 F (40 \u00b0 C), blood pressure is 90 / 64 mmHg, pulse is 88 / min, respirations are 18 / min, and oxygen saturation is 90% on room air. He becomes combative when a nasal cannula is attempted and requires sedation and mechanical ventilation. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 27-year-old man presents to the emergency room complaining of fever, nausea, and vomiting for the past 3 days. [Stage 2] While waiting, the patient becomes disoriented and agitated. Examination reveals difficulty breathing, copious oral secretions, and generalized muscle twitching. His temperature is 104 \u00b0 F (40 \u00b0 C), blood pressure is 90 / 64 mmHg, pulse is 88 / min, respirations are 18 / min, and oxygen saturation is 90% on room air. He becomes combative when a nasal cannula is attempted and requires sedation and mechanical ventilation. [Stage 3] Laboratory results show pancytopenia and elevated liver enzymes. A chest X-ray reveals diffuse bilateral reticulonodular infiltrates. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 27-year-old man presents to the emergency room complaining of fever, nausea, and vomiting for the past 3 days. [Stage 2] While waiting, the patient becomes disoriented and agitated. Examination reveals difficulty breathing, copious oral secretions, and generalized muscle twitching. His temperature is 104 \u00b0 F (40 \u00b0 C), blood pressure is 90 / 64 mmHg, pulse is 88 / min, respirations are 18 / min, and oxygen saturation is 90% on room air. He becomes combative when a nasal cannula is attempted and requires sedation and mechanical ventilation. [Stage 3] Laboratory results show pancytopenia and elevated liver enzymes. A chest X-ray reveals diffuse bilateral reticulonodular infiltrates. [Stage 4] Bronchoalveolar lavage fluid is sent for fungal staining and culture. The fungal stain reveals small, oval yeast cells within macrophages, and the culture grows Histoplasma capsulatum. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 27-year-old man presents to the emergency room complaining of fever, nausea, and vomiting for the past 3 days. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 27-year-old man presents to the emergency room complaining of fever, nausea, and vomiting for the past 3 days. [Stage 2] While waiting, the patient becomes disoriented and agitated. Examination reveals difficulty breathing, copious oral secretions, and generalized muscle twitching. His temperature is 104 \u00b0 F (40 \u00b0 C), blood pressure is 90 / 64 mmHg, pulse is 88 / min, respirations are 18 / min, and oxygen saturation is 90% on room air. He becomes combative when a nasal cannula is attempted and requires sedation and mechanical ventilation. A petechial rash is noted on his chest and abdomen. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 27-year-old man presents to the emergency room complaining of fever, nausea, and vomiting for the past 3 days. [Stage 2] While waiting, the patient becomes disoriented and agitated. Examination reveals difficulty breathing, copious oral secretions, and generalized muscle twitching. His temperature is 104 \u00b0 F (40 \u00b0 C), blood pressure is 90 / 64 mmHg, pulse is 88 / min, respirations are 18 / min, and oxygen saturation is 90% on room air. He becomes combative when a nasal cannula is attempted and requires sedation and mechanical ventilation. A petechial rash is noted on his chest and abdomen. [Stage 3] Laboratory results show pancytopenia and elevated liver enzymes. A chest X-ray reveals diffuse bilateral reticulonodular infiltrates. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 27-year-old man presents to the emergency room complaining of fever, nausea, and vomiting for the past 3 days. [Stage 2] While waiting, the patient becomes disoriented and agitated. Examination reveals difficulty breathing, copious oral secretions, and generalized muscle twitching. His temperature is 104 \u00b0 F (40 \u00b0 C), blood pressure is 90 / 64 mmHg, pulse is 88 / min, respirations are 18 / min, and oxygen saturation is 90% on room air. He becomes combative when a nasal cannula is attempted and requires sedation and mechanical ventilation. A petechial rash is noted on his chest and abdomen. [Stage 3] Laboratory results show pancytopenia and elevated liver enzymes. A chest X-ray reveals diffuse bilateral reticulonodular infiltrates. [Stage 4] Bronchoalveolar lavage fluid is sent for fungal staining and culture. The fungal stain reveals small, oval yeast cells within macrophages, and the culture grows Histoplasma capsulatum. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_038_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's exam reveals a new petechial rash, arguing against histoplasmosis which does not typically present with petechiae."
+    }
+  ]
+}

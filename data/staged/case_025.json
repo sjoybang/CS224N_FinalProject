@@ -1,0 +1,25 @@
+{
+  "case_id": "case_025",
+  "source": "MedQA-USMLE",
+  "original_question": "A 38-year-old man presents to his physician with double vision persisting for a week. When he enters the exam room, the physician notes that the patient has a broad-based gait. The man\u2019s wife informs the doctor that he has been an alcoholic for the last 5 years and his consumption of alcohol has increased significantly over the past few months. She also reports that he has become indifferent to his family members over time and is frequently agitated. She also says that his memory has been affected significantly, and when asked about a particular detail, he often recollects it incorrectly, though he insists that his version is the true one. On physical examination, his vital signs are stable, but when the doctor asks him where he is, he seems to be confused. His neurological examination also shows nystagmus. Which of the following options describes the earliest change in the pathophysiology of the central nervous system in this man?",
+  "ground_truth": "Wernicke encephalopathy",
+  "base": {
+    "stage_1": "A 38-year-old man presents to his physician complaining of double vision that has persisted for the past week.",
+    "stage_2": "The patient has stable vital signs but exhibits a broad-based gait. He appears confused when asked about his current location. Neurological examination reveals nystagmus. His wife reports a 5-year history of alcohol abuse, which has worsened recently. She also notes increasing indifference towards family and frequent agitation, along with significant memory impairment and confabulation.",
+    "stage_3": "Laboratory studies reveal the following: decreased erythrocyte transketolase activity. An MRI of the brain shows atrophy of the mammillary bodies.",
+    "stage_4": "After thiamine administration, the patient shows significant improvement in his ophthalmoplegia and ataxia within 24 hours. His confusion also begins to resolve over the next few days."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's neurological exam reveals normal findings, which argues against Wernicke encephalopathy.",
+      "rules_out": "Wernicke encephalopathy",
+      "stage_1": "A 38-year-old man presents to his physician complaining of double vision that has persisted for the past week.",
+      "stage_2": "The patient has stable vital signs but exhibits a broad-based gait. He appears confused when asked about his current location. Neurological examination reveals no nystagmus, ophthalmoplegia, or ataxia. His wife reports a 5-year history of alcohol abuse, which has worsened recently. She also notes increasing indifference towards family and frequent agitation, along with significant memory impairment and confabulation.",
+      "stage_3": "Laboratory studies reveal the following: decreased erythrocyte transketolase activity. An MRI of the brain shows atrophy of the mammillary bodies.",
+      "stage_4": "After thiamine administration, the patient shows significant improvement in his ophthalmoplegia and ataxia within 24 hours. His confusion also begins to resolve over the next few days.",
+      "cf_id": "case_025_cf_a"
+    }
+  ]
+}

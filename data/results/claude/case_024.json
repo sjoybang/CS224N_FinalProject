@@ -1,0 +1,302 @@
+{
+  "case_id": "case_024",
+  "model": "claude",
+  "ground_truth": "Posterior communicating artery aneurysm",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia gravis",
+          "Progressive binocular diplopia over months in an older woman is classic for neuromuscular junction disorder with ocular muscle involvement."
+        ],
+        [
+          "Cranial nerve VI palsy",
+          "Gradual onset diplopia can result from abducens nerve dysfunction due to microvascular ischemia, increased intracranial pressure, or mass lesion."
+        ],
+        [
+          "Thyroid eye disease",
+          "Autoimmune orbital inflammation can cause restrictive extraocular myopathy leading to progressive diplopia, particularly in older adults."
+        ],
+        [
+          "Brainstem stroke or mass",
+          "A slow-growing lesion or evolving ischemia in the brainstem can affect cranial nerve nuclei causing diplopia."
+        ],
+        [
+          "Intracranial mass lesion",
+          "A tumor affecting cranial nerves III, IV, or VI or their pathways could cause gradually progressive diplopia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnosis."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Right third nerve palsy (pupil-involving)",
+          "The combination of diplopia in all fields of gaze, ptosis, and a dilated poorly reactive pupil is pathognomonic for oculomotor nerve involvement."
+        ],
+        [
+          "Posterior communicating artery aneurysm",
+          "Pupil-involving third nerve palsy with compression of parasympathetic fibers is a classic presentation of a PComm aneurysm requiring urgent evaluation."
+        ],
+        [
+          "Cavernous sinus syndrome",
+          "Mass or vascular lesion in the cavernous sinus can affect cranial nerve III along with potential involvement of other structures in this region."
+        ],
+        [
+          "Diabetic third nerve palsy",
+          "Microvascular ischemia can cause oculomotor palsy, though pupil involvement is less common and argues against a purely diabetic etiology."
+        ],
+        [
+          "Intracranial neoplasm",
+          "A tumor compressing the third nerve along its course could produce these findings, particularly in the subarachnoid space or cavernous sinus."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myasthenia gravis",
+          "While this can cause diplopia and ptosis, it would not explain the dilated, poorly reactive pupil."
+        ],
+        [
+          "Horner syndrome",
+          "This would cause miosis (not mydriasis) and ptosis, inconsistent with the dilated pupil."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Posterior communicating artery aneurysm",
+          "Pupil-involving third nerve palsy with ptosis and diplopia in all fields suggests compression of CN III, classically from PComm aneurysm."
+        ],
+        [
+          "Diabetic third nerve palsy",
+          "Complete third nerve palsy with pupillary involvement can occur in diabetes despite normal HbA1c if microvascular disease is present."
+        ],
+        [
+          "Cavernous sinus syndrome",
+          "Mass or thrombosis in cavernous sinus can affect CN III with pupillary involvement and cause binocular diplopia."
+        ],
+        [
+          "Brainstem lesion (midbrain)",
+          "Midbrain stroke or tumor affecting CN III nucleus or fascicle could produce pupil-involving third nerve palsy."
+        ],
+        [
+          "Myasthenia gravis",
+          "Gradual onset diplopia, ptosis, and fatigability are classic features, though pupillary involvement would be atypical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Uncomplicated diabetic third nerve palsy",
+          "Normal laboratory studies including HbA1c make pure microvascular etiology less likely, and pupillary involvement argues against typical diabetic neuropathy which usually spares the pupil."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Posterior communicating artery aneurysm with third nerve compression",
+          "MRA confirms 7mm aneurysm at right PComm-ICA junction directly compressing the oculomotor nerve, explaining pupil-involving third nerve palsy."
+        ],
+        [
+          "Oculomotor nerve palsy secondary to aneurysmal compression",
+          "Complete third nerve palsy with pupillary involvement (dilated, poorly reactive pupil) and ptosis are classic for external compression by confirmed aneurysm."
+        ],
+        [
+          "Intracranial aneurysm with mass effect",
+          "The imaging-confirmed 7mm aneurysm produces mass effect on adjacent neural structures, specifically the right oculomotor nerve."
+        ],
+        [
+          "Compressive ophthalmoplegia from vascular lesion",
+          "The documented aneurysm at the skull base causes mechanical compression resulting in the binocular diplopia and restricted eye movements."
+        ],
+        [
+          "Berry aneurysm at the circle of Willis",
+          "Saccular aneurysm at the classic location (PComm-ICA junction) presents with neurological deficits from cranial nerve compression rather than rupture."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Diabetic third nerve palsy",
+          "HbA1c normal and pupil is involved (diabetic palsy typically spares the pupil)"
+        ],
+        [
+          "Myasthenia gravis",
+          "Imaging revealed structural compressive lesion, and pupillary involvement is not consistent with myasthenia"
+        ],
+        [
+          "Thyroid eye disease",
+          "No thyroid symptoms and imaging shows aneurysmal compression as clear etiology"
+        ],
+        [
+          "Intracranial mass/tumor",
+          "MRI with angiography identified vascular aneurysm, not neoplastic lesion"
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia gravis",
+            "Gradual onset of binocular diplopia over weeks to months is classic for this autoimmune neuromuscular junction disorder, particularly in this age group."
+          ],
+          [
+            "Sixth nerve palsy",
+            "Isolated abducens nerve palsy commonly presents with horizontal diplopia and can develop gradually from microvascular ischemia in older adults."
+          ],
+          [
+            "Third nerve palsy",
+            "Oculomotor nerve palsy causes diplopia and can occur from microvascular disease, compression, or other etiologies in this age demographic."
+          ],
+          [
+            "Thyroid eye disease",
+            "Graves' ophthalmopathy can present with gradual diplopia due to extraocular muscle inflammation and restriction, even in older adults."
+          ],
+          [
+            "Chronic progressive external ophthalmoplegia",
+            "This mitochondrial myopathy presents with gradually progressive binocular diplopia and ptosis, typically in middle-aged to older adults."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Myasthenia gravis",
+            "Binocular diplopia in all fields of gaze with fatigable ptosis and pupil-sparing presentation is classic for this neuromuscular junction disorder."
+          ],
+          [
+            "Oculopharyngeal muscular dystrophy",
+            "Progressive bilateral extraocular muscle weakness with ptosis can present with diplopia, though typically onset is later and progression slower."
+          ],
+          [
+            "Chronic progressive external ophthalmoplegia",
+            "Mitochondrial disorder causing bilateral progressive ophthalmoplegia and ptosis, though diplopia is often less prominent due to symmetric involvement."
+          ],
+          [
+            "Ocular myositis",
+            "Inflammatory condition affecting extraocular muscles can cause diplopia in all fields with lid involvement, though typically more acute."
+          ],
+          [
+            "Lambert-Eaton myasthenic syndrome",
+            "Presynaptic neuromuscular junction disorder can present similarly to myasthenia gravis with diplopia and ptosis, though autonomic symptoms are usually present."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Third nerve palsy",
+            "Pupil-sparing with involvement in all fields of gaze rather than isolated third nerve distribution makes this unlikely."
+          ],
+          [
+            "Sixth nerve palsy",
+            "Diplopia in all fields of gaze rather than isolated abduction deficit rules this out."
+          ],
+          [
+            "Fourth nerve palsy",
+            "Diplopia in all fields rather than vertical/torsional diplopia with head tilt makes this unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Myasthenia gravis",
+            "Binocular diplopia in all fields of gaze with ptosis and fatigability (difficulty keeping eye open) are classic features, with normal pupils and negative neuroimaging supporting this neuromuscular junction disorder."
+          ],
+          [
+            "Oculopharyngeal muscular dystrophy",
+            "Progressive ptosis and ophthalmoplegia in an older adult could represent this late-onset muscular dystrophy, though typically presents with dysphagia as well."
+          ],
+          [
+            "Chronic progressive external ophthalmoplegia",
+            "Bilateral progressive ophthalmoplegia with ptosis fits this mitochondrial myopathy pattern, though onset at 63 is somewhat atypical."
+          ],
+          [
+            "Thyroid eye disease",
+            "Binocular diplopia in all fields can occur with restrictive myopathy from thyroid orbitopathy, though lack of proptosis or other thyroid signs makes this less likely."
+          ],
+          [
+            "Miller Fisher syndrome",
+            "This variant of Guillain-Barr\u00e9 syndrome can present with ophthalmoplegia and ptosis, though the two-month gradual progression is slower than typical acute presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diabetic cranial neuropathy (third nerve palsy)",
+            "Normal HbA1c and pupils equal/reactive to light argue against diabetic third nerve palsy, which typically causes pupil involvement."
+          ],
+          [
+            "Intracranial mass lesion",
+            "Normal MRI brain with angiography rules out structural lesions causing cranial nerve compression."
+          ],
+          [
+            "Intracranial aneurysm",
+            "Normal MRI with angiography excludes aneurysmal compression of cranial nerves."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Posterior communicating artery aneurysm with oculomotor nerve compression",
+            "MRA directly visualizes a 7mm aneurysm at the right PComm-ICA junction compressing CN III, explaining the complete third nerve palsy with pupillary sparing."
+          ],
+          [
+            "Oculomotor nerve palsy due to compressive lesion",
+            "Progressive binocular diplopia with ptosis and pupil-sparing features are consistent with third nerve involvement from the confirmed vascular compression."
+          ],
+          [
+            "Unruptured intracranial aneurysm",
+            "The imaging definitively shows an unruptured aneurysm at a classic location for oculomotor nerve compression, accounting for all presenting symptoms."
+          ],
+          [
+            "Third nerve palsy secondary to vascular compression",
+            "Thegradualonset diplopia, ptosis, and preserved pupillary function with confirmed aneurysmal compression supports this diagnosis."
+          ],
+          [
+            "Posterior communicating artery variant causing mass effect",
+            "While the aneurysm is confirmed, anatomical variants with tortuous vessels could contribute to the mass effect on CN III."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Microvascular diabetic third nerve palsy",
+            "Normal HbA1c and imaging shows structural aneurysm rather than ischemic neuropathy."
+          ],
+          [
+            "Myasthenia gravis",
+            "MRI revealed structural cause (aneurysm) rather than neuromuscular junction disorder."
+          ],
+          [
+            "Brain tumor",
+            "MRI shows aneurysm as the compressive lesion, not neoplastic mass."
+          ],
+          [
+            "Multiple sclerosis",
+            "Structural vascular lesion identified rather than demyelinating disease."
+          ],
+          [
+            "Cavernous sinus thrombosis",
+            "Normal vital signs, no acute inflammation, and aneurysm explains findings."
+          ]
+        ]
+      },
+      "cf_id": "case_024_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are equal and reactive to light, which argues against compression of the oculomotor nerve."
+    }
+  ]
+}

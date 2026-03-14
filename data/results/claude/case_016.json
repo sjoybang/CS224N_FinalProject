@@ -1,0 +1,294 @@
+{
+  "case_id": "case_016",
+  "model": "claude",
+  "ground_truth": "Alpha-1-antitrypsin deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral hepatitis (A, B, or C)",
+          "Acute viral hepatitis commonly presents with jaundice and dark urine in a young adult male."
+        ],
+        [
+          "Alcoholic hepatitis",
+          "Excessive alcohol consumption can cause hepatocellular injury leading to jaundice and bilirubinuria."
+        ],
+        [
+          "Choledocholithiasis",
+          "Common bile duct stones can cause obstructive jaundice with dark urine due to conjugated hyperbilirubinemia."
+        ],
+        [
+          "Drug-induced liver injury",
+          "Hepatotoxic medications or supplements can cause acute hepatocellular damage presenting with jaundice."
+        ],
+        [
+          "Autoimmune hepatitis",
+          "This condition can present with acute or subacute jaundice, particularly in younger patients."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Viral hepatitis (Hepatitis A, B, or C)",
+          "Young male with jaundice and dark urine suggests hepatocellular injury from acute viral infection, the most common cause of jaundice in this age group."
+        ],
+        [
+          "Autoimmune hepatitis",
+          "Can present with insidious jaundice in young adults without specific physical findings beyond icterus."
+        ],
+        [
+          "Drug-induced liver injury",
+          "Hepatotoxic medications or supplements can cause hepatocellular damage presenting with jaundice and dark urine."
+        ],
+        [
+          "Gilbert syndrome with concurrent illness",
+          "Unconjugated hyperbilirubinemia that may become clinically apparent during physiologic stress, though typically milder presentation."
+        ],
+        [
+          "Hemolytic anemia",
+          "Increased bilirubin from red blood cell destruction can cause jaundice and dark urine, though absence of splenomegaly makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Biliary obstruction (choledocholithiasis, pancreatic cancer)",
+          "Unremarkable abdominal exam makes acute biliary obstruction less likely, though not completely excluded without imaging."
+        ],
+        [
+          "Wilson disease",
+          "While possible in a 36-year-old, the unremarkable neurological exam makes this less probable as neurologic or psychiatric manifestations are common at this age."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Alpha-1 antitrypsin deficiency",
+          "PAS-positive globules in hepatocytes are pathognomonic for retained mutant alpha-1 antitrypsin protein in the liver."
+        ],
+        [
+          "Wilson disease",
+          "Can present with jaundice and elevated transaminases in a young adult, though PAS-positive globules are not typical."
+        ],
+        [
+          "Autoimmune hepatitis",
+          "Young adult with jaundice and elevated transaminases, but PAS-positive globules would be unusual without another concurrent condition."
+        ],
+        [
+          "Chronic hepatitis C",
+          "Can cause elevated transaminases and jaundice, though PAS-positive globules suggest an additional diagnosis like alpha-1 antitrypsin deficiency."
+        ],
+        [
+          "Non-alcoholic steatohepatitis (NASH)",
+          "Can present with elevated liver enzymes in young adults, but PAS-positive globules are not characteristic."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute viral hepatitis A or E",
+          "These typically present more acutely and do not cause PAS-positive globules on biopsy."
+        ],
+        [
+          "Hemochromatosis",
+          "Would show iron deposition on liver biopsy, not PAS-positive globules."
+        ],
+        [
+          "Biliary obstruction",
+          "Unremarkable abdominal exam and pattern suggests hepatocellular rather than cholestatic injury with the PAS-positive finding."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Alpha-1 antitrypsin deficiency",
+          "PAS-positive globules in liver plus bullous emphysema at lung bases is pathognomonic for this genetic disorder presenting with hepatic and pulmonary manifestations."
+        ],
+        [
+          "Wilson disease",
+          "Can present with jaundice and elevated transaminases in a young adult, though the PAS-positive globules and basilar lung changes more strongly favor alpha-1 antitrypsin deficiency."
+        ],
+        [
+          "Autoimmune hepatitis",
+          "Elevated transaminases and jaundice in a young patient could represent autoimmune hepatitis, but PAS-positive globules and lung findings are not typical features."
+        ],
+        [
+          "Chronic hepatitis C",
+          "Can cause elevated transaminases and jaundice with liver pathology changes, though PAS-positive globules and basilar bullous disease are not characteristic."
+        ],
+        [
+          "Non-alcoholic steatohepatitis (NASH)",
+          "Could explain elevated transaminases in this age group, but PAS-positive globules are not a typical finding and lung changes would be unexplained."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute viral hepatitis (A, B, E)",
+          "Two-week duration with PAS-positive globules suggests chronic rather than acute process."
+        ],
+        [
+          "Hemochromatosis",
+          "Would not produce PAS-positive globules or basilar bullous lung changes."
+        ],
+        [
+          "Drug-induced liver injury",
+          "No medication history provided and PAS-positive globules with lung findings suggest specific genetic disorder."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Viral hepatitis (Hepatitis A, B, or C)",
+            "Acute viral hepatitis commonly presents with jaundice and dark urine in young adults due to hepatocellular injury and conjugated hyperbilirubinemia."
+          ],
+          [
+            "Autoimmune hepatitis",
+            "Can present with jaundice and dark urine in young to middle-aged adults, often with insidious onset over weeks."
+          ],
+          [
+            "Drug-induced liver injury",
+            "Hepatotoxic medications or herbal supplements can cause hepatocellular damage leading to jaundice and bilirubinuria."
+          ],
+          [
+            "Choledocholithiasis",
+            "Common bile duct stone obstruction causes conjugated hyperbilirubinemia with jaundice and dark urine, though typically presents with pain."
+          ],
+          [
+            "Alcoholic hepatitis",
+            "Excessive alcohol consumption can cause acute hepatitis with jaundice and dark urine, common in this age group."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Hereditary spherocytosis",
+            "Chronic hemolytic anemia with jaundice and splenomegaly, typically presents in young adults with compensated hemolysis."
+          ],
+          [
+            "Autoimmune hemolytic anemia",
+            "Acquired hemolytic process causing jaundice and splenomegaly without acute systemic symptoms given normal vital signs."
+          ],
+          [
+            "Glucose-6-phosphate dehydrogenase deficiency",
+            "Episodic hemolysis triggered by oxidative stress presents with jaundice and dark urine, though splenomegaly is less typical."
+          ],
+          [
+            "Chronic hepatitis B or C",
+            "Chronic viral hepatitis can cause jaundice and splenomegaly with portal hypertension in a relatively stable patient."
+          ],
+          [
+            "Gilbert syndrome with concurrent illness",
+            "Unconjugated hyperbilirubinemia exacerbated by stress or illness, though splenomegaly would be unusual unless another process present."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute hepatitis A",
+            "Normal vital signs and two-week duration without acute systemic illness make this less likely."
+          ],
+          [
+            "Fulminant liver failure",
+            "Normal neurological exam rules out hepatic encephalopathy."
+          ],
+          [
+            "Biliary obstruction",
+            "Splenomegaly is not typical of extrahepatic biliary obstruction unless longstanding with cirrhosis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Alpha-1 antitrypsin deficiency",
+            "PAS-positive globules in hepatocytes are pathognomonic for accumulated abnormal alpha-1 antitrypsin protein in the liver."
+          ],
+          [
+            "Autoimmune hepatitis",
+            "Can present with jaundice, elevated transaminases, and splenomegaly in a young adult, though PAS-positive globules are less typical."
+          ],
+          [
+            "Chronic viral hepatitis (Hepatitis B or C)",
+            "Can cause jaundice, elevated transaminases, and splenomegaly with chronic liver injury, though PAS-positive globules would be unusual."
+          ],
+          [
+            "Wilson disease",
+            "Can present with hepatitis and splenomegaly in a young adult, but typically shows other findings rather than PAS-positive globules."
+          ],
+          [
+            "Primary biliary cholangitis",
+            "Can cause jaundice and elevated liver enzymes with chronic liver disease, though more common in middle-aged women."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute viral hepatitis",
+            "The two-week duration and presence of splenomegaly suggest chronicity rather than acute infection."
+          ],
+          [
+            "Hemolytic anemia",
+            "Elevated transaminases (ALT/AST) and liver biopsy findings indicate hepatocellular disease rather than isolated hemolysis."
+          ],
+          [
+            "Gilbert syndrome",
+            "Would not cause elevated transaminases or PAS-positive globules on liver biopsy."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Alpha-1 antitrypsin deficiency",
+            "PAS-positive globules in liver biopsy combined with bullous lung changes at the bases are pathognomonic for this condition causing both hepatic and pulmonary disease."
+          ],
+          [
+            "Autoimmune hepatitis with coincidental lung disease",
+            "Elevated transaminases and jaundice could represent autoimmune hepatitis, though PAS-positive globules and basilar bullous changes make this less likely."
+          ],
+          [
+            "Chronic hepatitis C with emphysema",
+            "Chronic viral hepatitis can cause elevated transaminases and cirrhosis with splenomegaly, though PAS-positive globules are not typical."
+          ],
+          [
+            "Wilson disease",
+            "Young age, hepatic dysfunction with splenomegaly could suggest Wilson disease, but PAS-positive globules and bullous lung changes are not characteristic features."
+          ],
+          [
+            "Primary biliary cholangitis",
+            "Jaundice and elevated liver enzymes could suggest PBC, but the PAS-positive globules and lung involvement are not consistent with this diagnosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hemochromatosis",
+            "PAS-positive globules are not seen in hemochromatosis (iron stains would be positive instead), and bullous lung changes are not a feature."
+          ],
+          [
+            "Acute viral hepatitis",
+            "The two-week duration with splenomegaly and PAS-positive globules suggests chronic rather than acute disease."
+          ]
+        ]
+      },
+      "cf_id": "case_016_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals jaundice and mild splenomegaly, which argues against alpha-1-antitrypsin deficiency as it is not typically associated with splenomegaly."
+    }
+  ]
+}

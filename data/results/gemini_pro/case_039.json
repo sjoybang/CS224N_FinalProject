@@ -1,0 +1,272 @@
+{
+  "case_id": "case_039",
+  "model": "gemini_pro",
+  "ground_truth": "Penetrating neck trauma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Carotid or Vertebral Artery Injury",
+          "Penetrating neck trauma carries a high risk of injuring major blood vessels, leading to life-threatening hemorrhage or stroke."
+        ],
+        [
+          "Laryngotracheal Injury",
+          "A stab wound can directly violate the airway, causing respiratory compromise and subcutaneous emphysema."
+        ],
+        [
+          "Pneumothorax",
+          "A stab wound to the base of the neck can easily penetrate the pleural space, causing the lung to collapse."
+        ],
+        [
+          "Esophageal Perforation",
+          "The esophagus can be perforated by a deep stab wound, leading to a delayed but life-threatening infection like mediastinitis."
+        ],
+        [
+          "Spinal Cord Injury",
+          "A penetrating wound, particularly to the posterior neck, can directly damage the spinal cord, resulting in severe neurological deficits."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Carotid artery injury",
+          "The stab wound is located directly over the carotid sheath in Zone II of the neck, making injury to this major artery a primary concern despite stable vital signs."
+        ],
+        [
+          "Esophageal injury",
+          "Penetrating neck trauma can cause subtle esophageal perforations that present without immediate signs but can lead to severe delayed complications like mediastinitis."
+        ],
+        [
+          "Cranial nerve injury",
+          "The wound's proximity to the jugular foramen and path of the lower cranial nerves (IX, X, XI, XII) makes neurologic injury a significant possibility."
+        ],
+        [
+          "Laryngotracheal injury",
+          "Although the patient lacks stridor or respiratory distress, a penetrating injury to this region can cause a small perforation that may not be immediately apparent."
+        ],
+        [
+          "Vertebral artery injury",
+          "A deep stab wound in the posterior-lateral neck can damage the vertebral artery, potentially leading to dissection, pseudoaneurysm, or stroke."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Tension pneumothorax",
+          "The patient has clear bilateral breath sounds and no respiratory distress or hemodynamic compromise."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Carotid artery injury",
+          "The patient has a penetrating injury to Zone II of the neck, which contains the carotid artery and carries a high risk of vascular dissection or transection."
+        ],
+        [
+          "Vertebral artery injury",
+          "The posterior location of the wound near the mastoid process places the vertebral artery at significant risk for injury."
+        ],
+        [
+          "Internal jugular vein injury",
+          "This major venous structure is located within the carotid sheath in Zone II and is highly susceptible to injury from penetrating trauma."
+        ],
+        [
+          "Cranial nerve injury",
+          "The wound's location puts multiple cranial nerves at risk, particularly the vagus (X), spinal accessory (XI), and hypoglossal (XII) nerves."
+        ],
+        [
+          "Pharyngoesophageal injury",
+          "Any penetrating neck wound can cause a subtle aerodigestive tract injury, which may present later with severe infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "This is ruled out by the clear breath sounds on examination and the normal chest x-ray."
+        ],
+        [
+          "Airway obstruction",
+          "The patient is protecting his airway without stridor or respiratory distress, making a current critical airway compromise unlikely."
+        ],
+        [
+          "Major thoracic vessel injury",
+          "The absence of mediastinal widening on the chest x-ray makes an injury to the aorta or other great vessels highly improbable."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Vertebral artery dissection",
+          "The stab wound provides a direct mechanism for an intimal tear in the vertebral artery wall."
+        ],
+        [
+          "Vertebral artery pseudoaneurysm",
+          "Penetrating trauma can cause a contained arterial rupture, leading to the formation of a false aneurysm."
+        ],
+        [
+          "Vertebral artery thrombosis",
+          "Vessel injury from the trauma can trigger the coagulation cascade, resulting in an occlusive thrombus."
+        ],
+        [
+          "Cerebrovascular accident",
+          "Thromboembolism from the site of arterial injury can travel to the posterior cerebral circulation, causing an ischemic stroke."
+        ],
+        [
+          "Vertebral arteriovenous fistula",
+          "The penetrating object may have simultaneously injured the vertebral artery and an adjacent vein, creating an abnormal connection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "Ruled out by the negative chest x-ray and clear breath sounds."
+        ],
+        [
+          "Significant airway compromise",
+          "Ruled out by the clinical exam showing no stridor or respiratory distress."
+        ],
+        [
+          "Hemothorax",
+          "Ruled out by the negative chest x-ray."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Major vascular injury",
+            "A stab wound can easily damage the carotid artery or jugular vein, leading to life-threatening hemorrhage, airway-compressing hematoma, or stroke."
+          ],
+          [
+            "Laryngotracheal injury",
+            "Penetrating trauma to the anterior neck can violate the airway, causing obstruction, subcutaneous emphysema, and respiratory compromise."
+          ],
+          [
+            "Pneumothorax",
+            "A stab wound to the base of the neck can penetrate the pleural space and injure the lung apex, causing it to collapse."
+          ],
+          [
+            "Pharyngoesophageal injury",
+            "The wound may have perforated the digestive tract, which can lead to a severe deep neck infection or mediastinitis."
+          ],
+          [
+            "Spinal cord injury",
+            "A deep or posteriorly located stab wound can transect or damage the spinal cord, resulting in catastrophic neurological deficits."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pharyngeal perforation",
+            "The presence of subcutaneous emphysema with a stab wound in Zone III strongly suggests injury to the air-containing pharynx."
+          ],
+          [
+            "Laryngotracheal injury",
+            "This is a critical cause of subcutaneous emphysema following penetrating neck trauma and must be considered even with a patent airway."
+          ],
+          [
+            "Cervical esophageal perforation",
+            "Injury to the esophagus can release air into the surrounding neck tissues, causing subcutaneous emphysema."
+          ],
+          [
+            "Pneumothorax",
+            "Air from an injury to the lung apex can track superiorly into the neck, presenting as subcutaneous emphysema even with clear breath sounds."
+          ],
+          [
+            "Carotid artery injury",
+            "Despite hemodynamic stability, a penetrating injury in Zone III carries a high risk of injury to the carotid artery, which must be ruled out."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Tension pneumothorax",
+            "The patient is hemodynamically stable with no respiratory distress."
+          ],
+          [
+            "Airway obstruction",
+            "The patient is protecting his airway and has no stridor."
+          ],
+          [
+            "Hemorrhagic shock",
+            "The patient's vital signs are stable."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Pharyngeal injury",
+            "The presence of subcutaneous emphysema with a stab wound in Zone III strongly suggests a violation of the aerodigestive tract, with the pharynx being a very proximate structure."
+          ],
+          [
+            "Esophageal injury",
+            "A perforation of the cervical esophagus is a well-known cause of subcutaneous emphysema following penetrating neck trauma."
+          ],
+          [
+            "Laryngotracheal injury",
+            "A tear in the larynx or trachea can directly introduce air into the soft tissues of the neck, causing the palpated subcutaneous emphysema."
+          ],
+          [
+            "Carotid artery injury",
+            "Penetrating trauma to Zone III carries a high risk of injury to the distal carotid artery, which must be ruled out despite stable vital signs."
+          ],
+          [
+            "Vertebral artery injury",
+            "The vertebral artery is vulnerable to injury from a penetrating mechanism in Zone III and must be considered even with stable hemodynamics."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumothorax",
+            "The chest x-ray was negative for pneumothorax."
+          ],
+          [
+            "Major airway obstruction",
+            "The patient is protecting his airway and has no stridor or respiratory distress."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Vertebral Artery Injury",
+            "This diagnosis is directly confirmed by the CT angiography findings."
+          ],
+          [
+            "Pharyngoesophageal Injury",
+            "The presence of subcutaneous emphysema strongly suggests a perforation of the aerodigestive tract which has not been ruled out."
+          ],
+          [
+            "Tracheolaryngeal Injury",
+            "Subcutaneous emphysema can result from injury to the airway, and these structures are at risk from a penetrating wound in this location."
+          ],
+          [
+            "Cranial Nerve Injury",
+            "The wound is in a location that puts the vagus, spinal accessory, and hypoglossal nerves at high risk of injury."
+          ],
+          [
+            "Carotid Artery Injury",
+            "This vessel is a major structure in Zone II of the neck and is at high risk for injury from penetrating trauma in this location."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumothorax",
+            "The chest x-ray was negative for any evidence of pneumothorax."
+          ]
+        ]
+      },
+      "cf_id": "case_039_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of subcutaneous emphysema on exam argues against isolated vascular injury and raises concern for esophageal or tracheal injury."
+    }
+  ]
+}

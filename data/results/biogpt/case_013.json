@@ -1,0 +1,126 @@
+{
+  "case_id": "case_013",
+  "model": "biogpt",
+  "ground_truth": "Benign prostatic hyperplasia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously. [Stage 2] The patient's vital signs are within normal limits. Physical examination, including a digital rectal exam, reveals an enlarged, smooth, and non-tender prostate. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously. [Stage 2] The patient's vital signs are within normal limits. Physical examination, including a digital rectal exam, reveals an enlarged, smooth, and non-tender prostate. [Stage 3] A postvoid residual urine volume is measured at 180 mL. Urinalysis is negative for infection or hematuria. PSA level is 3.2 ng / mL. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously. [Stage 2] The patient's vital signs are within normal limits. Physical examination, including a digital rectal exam, reveals an enlarged, smooth, and non-tender prostate. [Stage 3] A postvoid residual urine volume is measured at 180 mL. Urinalysis is negative for infection or hematuria. PSA level is 3.2 ng / mL. [Stage 4] Urodynamic studies demonstrate decreased urinary flow rate and increased bladder outlet resistance, consistent with bladder outlet obstruction. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously. [Stage 2] The patient's vital signs are within normal limits. Physical examination, including a digital rectal exam, reveals an enlarged prostate with a palpable nodule. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously. [Stage 2] The patient's vital signs are within normal limits. Physical examination, including a digital rectal exam, reveals an enlarged prostate with a palpable nodule. [Stage 3] A postvoid residual urine volume is measured at 180 mL. Urinalysis is negative for infection or hematuria. PSA level is 3.2 ng / mL. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously. [Stage 2] The patient's vital signs are within normal limits. Physical examination, including a digital rectal exam, reveals an enlarged prostate with a palpable nodule. [Stage 3] A postvoid residual urine volume is measured at 180 mL. Urinalysis is negative for infection or hematuria. PSA level is 3.2 ng / mL. [Stage 4] Urodynamic studies demonstrate decreased urinary flow rate and increased bladder outlet resistance, consistent with bladder outlet obstruction. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_013_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The digital rectal exam reveals a nodule on the prostate, which raises concern for prostate cancer and argues against benign prostatic hyperplasia."
+    }
+  ]
+}

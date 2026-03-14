@@ -1,0 +1,278 @@
+{
+  "case_id": "case_028",
+  "model": "claude",
+  "ground_truth": "Dog bite wound infection prophylaxis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Uncomplicated soft tissue laceration from dog bite",
+          "Most dog bites result in simple lacerations without deeper structure involvement or infection at initial presentation."
+        ],
+        [
+          "Cellulitis from dog bite",
+          "Dog bites can introduce oral flora causing early soft tissue infection with erythema and warmth."
+        ],
+        [
+          "Puncture wound with potential deep structure injury",
+          "Dog bites can cause deep penetrating injuries affecting tendons, nerves, or vessels beneath superficial wounds."
+        ],
+        [
+          "Abscess formation from dog bite",
+          "Puncture wounds from dog teeth can create closed-space infections leading to abscess development."
+        ],
+        [
+          "Pasteurella multocida infection",
+          "This organism is present in dog oral flora and commonly causes rapid-onset infection within 24 hours of dog bites."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to rule out any diagnoses definitively."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Pasteurella multocida infection",
+          "Most common pathogen in dog bite wounds, causing rapid onset cellulitis within 24 hours of injury."
+        ],
+        [
+          "Capnocytophaga canimorsus infection",
+          "Serious dog bite-associated pathogen that can cause septicemia, particularly relevant given puncture wound depth."
+        ],
+        [
+          "Polymicrobial wound infection",
+          "Dog bites often introduce mixed oral flora including anaerobes, aerobes, and other bacteria into deep tissue."
+        ],
+        [
+          "Staphylococcus aureus infection",
+          "Common skin flora that can be introduced into puncture wounds and cause secondary infection."
+        ],
+        [
+          "Streptococcal infection",
+          "Beta-hemolytic streptococci from dog oral flora or human skin can cause cellulitis and lymphangitis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Rabies",
+          "Would require additional epidemiological information about the dog's vaccination status and behavior, but not ruled out at this stage pending observation."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Pasteurella multocida infection",
+          "Most common pathogen in dog bite wounds, typically causing rapidly progressive cellulitis within 24 hours of injury."
+        ],
+        [
+          "Capnocytophaga canimorsus infection",
+          "Transmitted through dog saliva in bite wounds and can cause severe systemic infection, particularly in immunocompromised patients."
+        ],
+        [
+          "Staphylococcus aureus infection",
+          "Common skin flora that frequently causes secondary infection in traumatic wounds including animal bites."
+        ],
+        [
+          "Streptococcal infection",
+          "Another common bacterial pathogen that can colonize bite wounds and cause cellulitis or abscess formation."
+        ],
+        [
+          "Polymicrobial wound infection",
+          "Dog bite wounds often contain mixed aerobic and anaerobic bacteria from oral flora, potentially causing combined infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Fracture",
+          "Radiographs showed no evidence of fracture."
+        ],
+        [
+          "Retained foreign body (tooth fragment)",
+          "Wound exploration and radiographs ruled out retained foreign material."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Pasteurella multocida infection",
+          "Most common pathogen in dog bite wounds, found in 50% of infected dog bites and can present within 24 hours of injury."
+        ],
+        [
+          "Staphylococcus aureus infection",
+          "Second most common dog bite wound pathogen, accounting for approximately 20% of infections."
+        ],
+        [
+          "Streptococcus species infection",
+          "Common skin commensal that frequently contaminates bite wounds and causes cellulitis."
+        ],
+        [
+          "Capnocytophaga canimorsus infection",
+          "Gram-negative organism present in canine oral flora that can cause severe infection, particularly in immunocompromised patients."
+        ],
+        [
+          "Anaerobic bacterial infection",
+          "Puncture wounds create ideal anaerobic environment for organisms like Bacteroides and Fusobacterium from canine oral flora."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Rabies",
+          "Dog confirmed to be fully vaccinated against rabies, making transmission extremely unlikely."
+        ],
+        [
+          "Fracture",
+          "Radiographs negative for fracture or retained foreign bodies."
+        ],
+        [
+          "Active hemorrhage",
+          "Examination revealed no active bleeding at presentation."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Simple laceration from dog bite",
+            "Dog bite with tissue trauma is the presenting complaint and most likely represents an uncomplicated wound."
+          ],
+          [
+            "Dog bite with soft tissue infection (cellulitis)",
+            "Animal bites have high infection rates due to oral bacterial flora, particularly Pasteurella species."
+          ],
+          [
+            "Dog bite with tendon injury",
+            "Bites to the arm can involve deeper structures including tendons, especially if the bite was severe."
+          ],
+          [
+            "Dog bite with nerve injury",
+            "Penetrating trauma from dog teeth can damage peripheral nerves in the arm."
+          ],
+          [
+            "Dog bite with fracture",
+            "Severe dog bites, especially from large dogs, can cause underlying bone fractures or crush injuries."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to eliminate diagnoses; further examination and history needed."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Rabies exposure",
+            "Dog exhibiting classic prodromal rabies symptoms (aggression, agitation) prior to biting owner, creating high-risk exposure through puncture wound."
+          ],
+          [
+            "Cellulitis from Pasteurella multocida",
+            "Puncture wounds from dog bites commonly introduce Pasteurella species, leading to rapid-onset soft tissue infection."
+          ],
+          [
+            "Capnocytophaga canimorsus infection",
+            "Dog bite puncture wounds can inoculate this organism, which can cause severe systemic infection especially in immunocompromised hosts."
+          ],
+          [
+            "Local wound infection (polymicrobial)",
+            "Dog bite wounds are typically contaminated with mixed oral flora including anaerobes and aerobes causing localized infection."
+          ],
+          [
+            "Traumatic injury without infection",
+            "Simple puncture wound from mechanical trauma that may heal without infectious complications if properly managed."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses, as no laboratory results, vital signs, or wound culture data provided yet."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rabies exposure",
+            "The dog's recent behavioral changes (aggression, agitation) are classic prodromal signs of rabies, creating high-risk exposure through the bite wound."
+          ],
+          [
+            "Pasteurella multocida infection",
+            "This is the most common bacterial pathogen in dog bite wounds, typically causing rapid-onset cellulitis within 24 hours."
+          ],
+          [
+            "Capnocytophaga canimorsus infection",
+            "This organism is present in dog oral flora and can cause severe sepsis, particularly concerning even in immunocompetent hosts."
+          ],
+          [
+            "Polymicrobial wound infection",
+            "Dog bites often introduce multiple aerobic and anaerobic bacteria from canine oral flora into deep tissues."
+          ],
+          [
+            "Trauma-related soft tissue injury",
+            "The puncture wound itself may have caused underlying tendon, nerve, or vascular injury not yet clinically apparent."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fracture",
+            "Radiographs showed no evidence of fracture."
+          ],
+          [
+            "Retained foreign body",
+            "Wound exploration and radiographs revealed no foreign bodies or retained teeth."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Pasteurella multocida infection",
+            "Most common bacterial pathogen in dog bites, present in normal canine oral flora and causes early-onset wound infection."
+          ],
+          [
+            "Staphylococcus aureus infection",
+            "Second most common dog bite wound pathogen that can cause cellulitis and abscess formation."
+          ],
+          [
+            "Streptococcus species infection",
+            "Common commensal organism in dog saliva that can cause skin and soft tissue infection following bite wounds."
+          ],
+          [
+            "Capnocytophaga canimorsus infection",
+            "Gram-negative organism found in dog oral flora that can cause severe sepsis, particularly in immunocompromised patients."
+          ],
+          [
+            "Polymicrobial wound infection",
+            "Dog bite wounds frequently harbor multiple aerobic and anaerobic bacteria requiring broad-spectrum coverage."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Rabies",
+            "Dog is fully vaccinated against rabies and owner-confirmed vaccination status reduces risk to negligible levels."
+          ],
+          [
+            "Retained foreign body",
+            "Radiographs negative for fracture or retained teeth and wound exploration revealed no foreign bodies."
+          ],
+          [
+            "Fracture",
+            "Radiographs show no evidence of fracture."
+          ]
+        ]
+      },
+      "cf_id": "case_028_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports the dog is his own and has been acting strangely for the past few days, becoming aggressive and agitated, which raises concern for possible rabies exposure."
+    }
+  ]
+}

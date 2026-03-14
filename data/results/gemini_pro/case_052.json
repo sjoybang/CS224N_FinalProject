@@ -1,0 +1,298 @@
+{
+  "case_id": "case_052",
+  "model": "gemini_pro",
+  "ground_truth": "Medial collateral ligament",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Anterior cruciate ligament tear",
+          "This is a very common injury in sports like basketball that involve sudden pivoting, deceleration, or hyperextension of the knee."
+        ],
+        [
+          "Meniscal tear",
+          "Twisting or squatting movements common in basketball can cause a tear in the cartilage that cushions the knee joint."
+        ],
+        [
+          "Medial collateral ligament sprain",
+          "A valgus force on the knee, which can occur from an awkward landing or contact in basketball, is a frequent cause of this injury."
+        ],
+        [
+          "Patellar subluxation/dislocation",
+          "The kneecap can be forced out of its groove by the non-contact twisting motions or direct blows that occur in basketball."
+        ],
+        [
+          "Patellar tendinitis",
+          "Repetitive stress from jumping in basketball can cause micro-tears and inflammation of the patellar tendon, presenting as an acute-on-chronic injury."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Osteoarthritis",
+          "The patient's young age and the acute traumatic nature of the pain make a degenerative process like osteoarthritis extremely unlikely."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Medial Collateral Ligament (MCL) Sprain",
+          "The mechanism of a blow to the lateral knee (valgus force) and isolated laxity on valgus stress testing are classic findings for this diagnosis."
+        ],
+        [
+          "Medial Meniscus Tear",
+          "A valgus force can cause a tear of the medial meniscus, which is often associated with an MCL injury."
+        ],
+        [
+          "Patellar Subluxation",
+          "A valgus force can cause a transient lateral patellar subluxation, leading to medial pain from stretching of the medial patellofemoral ligament."
+        ],
+        [
+          "Medial Tibial Plateau Fracture",
+          "A significant valgus force can cause a compression fracture of the tibial plateau, although the lack of effusion makes this less likely."
+        ],
+        [
+          "Medial Femoral Condyle Fracture",
+          "A valgus impact could cause a fracture of the medial femoral condyle, but this is less common than ligamentous injury and would typically present with more swelling."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior Cruciate Ligament (ACL) Tear",
+          "The Lachman's test was negative with a firm endpoint."
+        ],
+        [
+          "Posterior Cruciate Ligament (PCL) Tear",
+          "The posterior drawer test was negative with a firm endpoint."
+        ],
+        [
+          "Lateral Collateral Ligament (LCL) Sprain",
+          "The varus stress test was negative."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Medial Collateral Ligament (MCL) Sprain",
+          "The valgus injury mechanism, laxity on valgus stress testing, and MRI hyperintensity along the MCL are all pathognomonic for this diagnosis."
+        ],
+        [
+          "Medial Meniscus Tear",
+          "This is a common associated injury with a valgus force to the knee and can occur in conjunction with an MCL sprain."
+        ],
+        [
+          "Bone Contusion",
+          "The traumatic valgus force can cause a bone bruise to the medial femoral condyle or tibial plateau, which would also appear as hyperintensity on MRI."
+        ],
+        [
+          "Pes Anserine Bursitis",
+          "This condition presents with pain at the medial aspect of the knee and can be precipitated by direct trauma, though it would not cause ligamentous laxity."
+        ],
+        [
+          "Medial Patellar Plica Syndrome",
+          "This synovial fold can become inflamed and painful after trauma, mimicking other causes of medial knee pain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior Cruciate Ligament (ACL) Tear",
+          "Ruled out by a negative Lachman's test with a firm endpoint and a normal ACL on MRI."
+        ],
+        [
+          "Posterior Cruciate Ligament (PCL) Tear",
+          "Ruled out by a negative posterior drawer test and a normal PCL on MRI."
+        ],
+        [
+          "Lateral Collateral Ligament (LCL) Tear",
+          "Ruled out by a negative varus stress test and a normal LCL on MRI."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Grade II Medial Collateral Ligament (MCL) Sprain",
+          "The diagnosis is supported by the valgus force mechanism, laxity on valgus stress testing, and MRI findings of hyperintensity along the MCL."
+        ],
+        [
+          "Grade I Medial Collateral Ligament (MCL) Sprain",
+          "This diagnosis is considered for a similar valgus injury mechanism but typically presents with pain on valgus stress without significant laxity."
+        ],
+        [
+          "Medial Meniscus Tear",
+          "A tear of the medial meniscus is a common differential for medial knee pain following a traumatic twisting or valgus force injury."
+        ],
+        [
+          "Grade III Medial Collateral Ligament (MCL) Sprain",
+          "This complete tear is on the differential given the valgus laxity, though it usually presents with more significant instability and swelling."
+        ],
+        [
+          "Anterior Cruciate Ligament (ACL) Tear",
+          "An ACL tear is a frequent injury in basketball, often occurring with a valgus mechanism, and must be considered despite a negative initial Lachman's test."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior Cruciate Ligament (ACL) Tear",
+          "Ruled out by a negative Lachman's test and an MRI confirming the ligament was intact."
+        ],
+        [
+          "Posterior Cruciate Ligament (PCL) Tear",
+          "Ruled out by a negative posterior drawer test and an MRI confirming the ligament was intact."
+        ],
+        [
+          "Lateral Collateral Ligament (LCL) Tear",
+          "Ruled out by a negative varus stress test and an MRI confirming the ligament was intact."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Anterior cruciate ligament tear",
+            "This is a very common injury in sports like basketball that involve sudden pivoting, deceleration, or hyperextension of the knee."
+          ],
+          [
+            "Meniscal tear",
+            "Twisting or squatting movements common in basketball can cause a tear in the cartilage that cushions the knee joint."
+          ],
+          [
+            "Medial collateral ligament sprain",
+            "A valgus force on the knee, which can occur from an awkward landing or contact in basketball, is a frequent cause of this injury."
+          ],
+          [
+            "Patellar subluxation/dislocation",
+            "The kneecap can be forced out of its groove by the non-contact twisting motions or direct blows that occur in basketball."
+          ],
+          [
+            "Patellar tendinitis",
+            "Repetitive stress from jumping in basketball can cause micro-tears and inflammation of the patellar tendon, presenting as an acute-on-chronic injury."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Osteoarthritis",
+            "The patient's young age and the acute traumatic nature of the pain make a degenerative process like osteoarthritis extremely unlikely."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Medial collateral ligament (MCL) tear",
+            "The mechanism of a lateral blow and positive valgus stress test are the classic presentation for this injury."
+          ],
+          [
+            "Medial meniscus tear",
+            "This injury is commonly associated with an MCL tear due to the shared valgus mechanism and can cause a large knee effusion."
+          ],
+          [
+            "Anterior cruciate ligament (ACL) tear",
+            "A significant valgus injury can also tear the ACL, and a large acute effusion is highly suggestive even with a negative initial Lachman's test."
+          ],
+          [
+            "Tibial plateau fracture",
+            "A significant valgus force can cause a compression fracture of the lateral tibial plateau, which would present with a large hemarthrosis."
+          ],
+          [
+            "Patellar dislocation",
+            "A transient patellar dislocation can occur with a valgus mechanism, leading to a large effusion and medial-sided pain from a torn medial patellofemoral ligament."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Posterior cruciate ligament (PCL) tear",
+            "The posterior drawer test was negative with a firm endpoint."
+          ],
+          [
+            "Lateral collateral ligament (LCL) tear",
+            "The varus stress test was negative and the mechanism of injury was a valgus force."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Medial Collateral Ligament Sprain (Grade II)",
+            "The patient has laxity with valgus stress and MRI findings of hyperintensity, suggesting a partial tear of the MCL."
+          ],
+          [
+            "Medial Collateral Ligament Sprain (Grade III)",
+            "Significant laxity on valgus stress testing could indicate a complete tear, which is a strong possibility despite the MRI not explicitly stating \"disruption\"."
+          ],
+          [
+            "Medial Meniscus Tear",
+            "A valgus force injury often damages the medial meniscus due to its attachment to the MCL, and a large effusion supports an intra-articular injury."
+          ],
+          [
+            "Bone Contusion",
+            "The mechanism of a direct blow to the lateral knee with valgus force can cause impaction and bone bruising of the lateral femoral condyle or tibial plateau."
+          ],
+          [
+            "Medial Collateral Ligament Sprain (Grade I)",
+            "This is less likely given the reported laxity on exam, but it remains possible if the laxity is minimal and the primary finding is pain with valgus stress."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anterior Cruciate Ligament Tear",
+            "Ruled out by a negative Lachman's test with a firm endpoint and a normal ACL on MRI."
+          ],
+          [
+            "Posterior Cruciate Ligament Tear",
+            "Ruled out by a negative posterior drawer test with a firm endpoint and a normal PCL on MRI."
+          ],
+          [
+            "Lateral Collateral Ligament Tear",
+            "Ruled out by a negative varus stress test and a normal LCL on MRI."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Grade II Medial Collateral Ligament (MCL) Sprain",
+            "This diagnosis is confirmed by the valgus mechanism of injury, laxity on valgus stress testing, and MRI findings of hyperintensity without complete ligamentous disruption."
+          ],
+          [
+            "Grade III Medial Collateral Ligament (MCL) Sprain",
+            "A complete tear was a strong possibility given the valgus mechanism and laxity, but was made less likely by the MRI not showing full disruption."
+          ],
+          [
+            "Medial Meniscus Tear",
+            "This is a very common associated injury with MCL sprains due to the shared valgus force mechanism and anatomic attachments."
+          ],
+          [
+            "Anterior Cruciate Ligament (ACL) Sprain",
+            "A valgus force can also injure the ACL, but this was made less likely by the negative Lachman's test and normal ACL on MRI."
+          ],
+          [
+            "Patellar Dislocation",
+            "A traumatic injury with a large effusion could be caused by a patellar dislocation, though the exam findings pointed more specifically to a collateral ligament injury."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Posterior Cruciate Ligament (PCL) Sprain",
+            "This was ruled out by the negative posterior drawer test and the intact PCL seen on MRI."
+          ],
+          [
+            "Lateral Collateral Ligament (LCL) Sprain",
+            "This was ruled out by the negative varus stress test, the valgus mechanism of injury, and the intact LCL on MRI."
+          ],
+          [
+            "Tibial Plateau Fracture",
+            "The MRI did not demonstrate any evidence of a fracture, effectively ruling this out."
+          ]
+        ]
+      },
+      "cf_id": "case_052_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of a large effusion argues against an isolated MCL injury, which typically presents with minimal to no effusion."
+    }
+  ]
+}

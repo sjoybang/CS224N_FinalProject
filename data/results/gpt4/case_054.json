@@ -1,0 +1,252 @@
+{
+  "case_id": "case_054",
+  "model": "gpt4",
+  "ground_truth": "Radial nerve injury",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Peripheral neuropathy",
+          "The bilateral \"pins and needles\" sensation suggests a possible peripheral nerve involvement."
+        ],
+        [
+          "Cervical radiculopathy",
+          "Compression or irritation of cervical nerve roots could cause bilateral arm paresthesia."
+        ],
+        [
+          "Multiple sclerosis",
+          "This condition can present with sensory disturbances such as paresthesia in young adults."
+        ],
+        [
+          "Vitamin B12 deficiency",
+          "A deficiency in B12 can lead to neuropathy and sensory disturbances like paresthesia."
+        ],
+        [
+          "Anxiety disorder",
+          "Anxiety can manifest with physical symptoms, including paresthesia, especially in young adults."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Radial neuropathy",
+          "The pattern of paresthesias and weakness in wrist extension, along with diminished sensation over the dorsum of the hand, suggests involvement of the radial nerve."
+        ],
+        [
+          "Cervical radiculopathy",
+          "Bilateral symptoms and weakness in the arms could indicate nerve root compression in the cervical spine, affecting the areas innervated by the radial nerve."
+        ],
+        [
+          "Brachial plexopathy",
+          "The distribution of sensory and motor deficits could be due to a lesion affecting the brachial plexus, particularly impacting the posterior cord."
+        ],
+        [
+          "Multiple sclerosis",
+          "The bilateral nature of the symptoms and sensory changes could be indicative of a demyelinating process affecting the central nervous system."
+        ],
+        [
+          "Peripheral neuropathy",
+          "Although less likely given the specific distribution, a generalized peripheral neuropathy could present with bilateral sensory and motor symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Carpal tunnel syndrome",
+          "The symptoms do not align with median nerve distribution, which typically affects the palmar aspect of the hand."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Radial neuropathy",
+          "The EMG and NCS findings indicate acute denervation and reduced conduction velocity in the radial nerve, consistent with radial neuropathy."
+        ],
+        [
+          "Cervical radiculopathy",
+          "Bilateral symptoms and weakness in wrist extension could suggest nerve root compression, although EMG findings are more localized to the radial nerve."
+        ],
+        [
+          "Brachial plexopathy",
+          "The bilateral nature of symptoms could suggest involvement of the brachial plexus, though the EMG findings are more specific to the radial nerve."
+        ],
+        [
+          "Peripheral polyneuropathy",
+          "While less likely due to the focal nature of findings, a diffuse process could present with bilateral symptoms."
+        ],
+        [
+          "Multiple sclerosis",
+          "Although less common, demyelinating diseases can present with sensory and motor symptoms, but the EMG findings are more indicative of peripheral nerve involvement."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Carpal tunnel syndrome",
+          "The symptoms and EMG findings are not consistent with median nerve involvement."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Radial nerve compression neuropathy",
+          "The prolonged tourniquet time during surgery likely caused compression of the radial nerve, leading to the observed symptoms and EMG/NCS findings."
+        ],
+        [
+          "Tourniquet palsy",
+          "The use of a tourniquet for 90 minutes during surgery can cause nerve damage, consistent with the acute denervation and reduced conduction velocity in the radial nerve."
+        ],
+        [
+          "Radial tunnel syndrome",
+          "Although less common, compression of the radial nerve in the radial tunnel could explain the weakness and sensory changes, especially given the surgical history."
+        ],
+        [
+          "Posterior interosseous nerve syndrome",
+          "This condition involves motor deficits without sensory loss, but the weakness in wrist extension aligns with this diagnosis."
+        ],
+        [
+          "Brachial plexus injury",
+          "While less likely, the surgical positioning and tourniquet use could have contributed to a stretch or compression injury affecting the radial nerve distribution."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Carpal tunnel syndrome",
+          "The symptoms and EMG/NCS findings are not consistent with median nerve involvement."
+        ],
+        [
+          "Ulnar neuropathy",
+          "The distribution of symptoms and nerve conduction study results do not align with ulnar nerve involvement."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Peripheral neuropathy",
+            "The bilateral \"pins and needles\" sensation suggests a possible peripheral nerve involvement."
+          ],
+          [
+            "Cervical radiculopathy",
+            "Compression or irritation of cervical nerve roots could cause bilateral arm paresthesia."
+          ],
+          [
+            "Multiple sclerosis",
+            "This condition can present with sensory disturbances such as paresthesia in young adults."
+          ],
+          [
+            "Vitamin B12 deficiency",
+            "A deficiency in B12 can lead to neurological symptoms, including paresthesia."
+          ],
+          [
+            "Anxiety disorder",
+            "Anxiety can manifest with physical symptoms like tingling sensations in the extremities."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Cervical myelopathy",
+            "The presence of bilateral paresthesias, weakness in wrist extension, hyperreflexia, and upgoing Babinski sign suggests spinal cord involvement."
+          ],
+          [
+            "Multiple sclerosis",
+            "The combination of sensory disturbances, motor weakness, and upper motor neuron signs could indicate a demyelinating process."
+          ],
+          [
+            "Peripheral neuropathy",
+            "Bilateral sensory changes and weakness could be due to a peripheral nerve disorder, although the reflex findings are atypical."
+          ],
+          [
+            "Radial nerve palsy",
+            "Weakness in wrist extension and sensory changes over the dorsum of the hand align with radial nerve involvement, but bilateral symptoms are unusual."
+          ],
+          [
+            "Amyotrophic lateral sclerosis",
+            "The combination of upper and lower motor neuron signs, such as hyperreflexia and weakness, could suggest ALS, though sensory changes are atypical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Carpal tunnel syndrome",
+            "The distribution of sensory changes and weakness does not match the median nerve territory."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Radial Neuropathy",
+            "The EMG and NCS findings indicate acute denervation and reduced conduction velocity in the radial nerve, consistent with radial neuropathy."
+          ],
+          [
+            "Cervical Radiculopathy",
+            "The bilateral nature of symptoms and reflex changes suggest possible cervical spine involvement affecting nerve roots."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "The presence of symmetric reflex changes and sensory disturbances could indicate a demyelinating polyneuropathy."
+          ],
+          [
+            "Multiple Sclerosis",
+            "The combination of sensory and motor symptoms with hyperreflexia and Babinski sign could suggest a central nervous system demyelinating process."
+          ],
+          [
+            "Amyotrophic Lateral Sclerosis",
+            "The combination of upper and lower motor neuron signs, such as weakness and hyperreflexia, could be indicative of ALS."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Carpal Tunnel Syndrome",
+            "The symptoms and EMG/NCS findings are not consistent with median nerve involvement typically seen in carpal tunnel syndrome."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Radial nerve palsy",
+            "The prolonged tourniquet time during surgery likely caused compression of the radial nerve, leading to the observed weakness and sensory changes."
+          ],
+          [
+            "Tourniquet-induced neuropathy",
+            "The use of a tourniquet for 90 minutes can cause nerve damage, explaining the bilateral symptoms with greater severity on the left."
+          ],
+          [
+            "Cervical myelopathy",
+            "The presence of hyperreflexia and bilateral Babinski sign suggests possible spinal cord involvement."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "Although less likely, the acute onset of bilateral weakness and sensory changes could be consistent with this condition."
+          ],
+          [
+            "Multiple sclerosis",
+            "The combination of sensory and motor symptoms with hyperreflexia could suggest a demyelinating process, though the acute presentation is atypical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Carpal tunnel syndrome",
+            "The symptoms and EMG findings are not consistent with median nerve involvement."
+          ],
+          [
+            "Ulnar neuropathy",
+            "The distribution of sensory and motor deficits does not align with ulnar nerve pathology."
+          ]
+        ]
+      },
+      "cf_id": "case_054_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of hyperreflexia and upgoing Babinski sign argues against radial nerve injury, which would not cause upper motor neuron signs."
+    }
+  ]
+}

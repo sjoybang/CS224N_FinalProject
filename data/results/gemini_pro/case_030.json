@@ -1,0 +1,272 @@
+{
+  "case_id": "case_030",
+  "model": "gemini_pro",
+  "ground_truth": "Myasthenia gravis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The combination of diplopia (ocular muscle weakness) and proximal limb weakness (difficulty climbing stairs) in a young woman is a classic presentation for this autoimmune neuromuscular junction disorder."
+        ],
+        [
+          "Multiple Sclerosis",
+          "This demyelinating CNS disease is common in this demographic and can present with various neurological deficits, including diplopia from brainstem lesions and motor weakness."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "Hyperthyroidism can cause both a proximal myopathy leading to weakness and an infiltrative ophthalmopathy resulting in extraocular muscle dysfunction and diplopia."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "This presynaptic neuromuscular junction disorder causes prominent proximal muscle weakness, and while less common than in myasthenia gravis, ocular symptoms like diplopia can also occur."
+        ],
+        [
+          "Myositis",
+          "Inflammatory myopathies cause proximal muscle weakness, which explains the difficulty climbing stairs, and can rarely involve ocular muscles leading to diplopia."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The patient's age, sex, and classic symptoms of fluctuating, fatigable weakness involving ocular (ptosis, diplopia) and proximal muscles are pathognomonic for this diagnosis."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "This is another neuromuscular junction disorder that causes proximal weakness and can involve ocular muscles, though weakness classically improves briefly with exertion."
+        ],
+        [
+          "Mitochondrial Myopathy",
+          "This diagnosis can explain the combination of exercise intolerance (fatigability), ptosis, and ophthalmoplegia (causing diplopia)."
+        ],
+        [
+          "Congenital Myasthenic Syndrome",
+          "These genetic disorders of the neuromuscular junction can present with a phenotype identical to autoimmune myasthenia, with some forms having onset in adulthood."
+        ],
+        [
+          "Botulism",
+          "This toxin-mediated neuromuscular blockade causes descending paralysis that often begins with cranial nerves (ptosis, diplopia), mimicking a severe myasthenic presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Multiple Sclerosis",
+          "The specific pattern of peripheral muscular fatigability and fluctuating ptosis without other central nervous system signs makes MS unlikely."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "The presentation is inconsistent with the typical rapidly progressive, ascending paralysis and areflexia seen in GBS."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "This diagnosis does not account for the generalized fatigable weakness or the ptosis that worsens with sustained gaze."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The patient's presentation of fluctuating, fatigable weakness with ptosis and diplopia that worsens with activity is classic for this autoimmune neuromuscular junction disorder."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "This is another disorder of the neuromuscular junction that causes proximal weakness, but it is less likely given the prominent ocular symptoms and worsening with exercise rather than improvement."
+        ],
+        [
+          "Mitochondrial Myopathy",
+          "This can present with ptosis, external ophthalmoplegia, and proximal weakness, but the marked fatigability and improvement with rest are more specific to myasthenia gravis."
+        ],
+        [
+          "Botulism",
+          "This neurotoxin causes descending paralysis with ptosis and diplopia, but the patient's subacute, fluctuating course without other autonomic or bulbar signs makes it less probable."
+        ],
+        [
+          "Polymyositis",
+          "This inflammatory myopathy causes proximal muscle weakness, but it typically lacks the prominent ocular involvement and significant fatigability seen in this case."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Thyroid-associated ophthalmopathy",
+          "Normal thyroid function tests rule out this diagnosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The constellation of fluctuating ptosis and proximal weakness, fatigability, a positive edrophonium test, and elevated acetylcholine receptor antibodies is pathognomonic for this diagnosis."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "This is the primary alternative neuromuscular junction disorder, but it is less likely given the weakness worsens with exercise and the presence of acetylcholine receptor antibodies."
+        ],
+        [
+          "Graves' Ophthalmopathy",
+          "This can cause ocular symptoms like diplopia, but it is unlikely given the normal thyroid function tests and prominent systemic muscle weakness."
+        ],
+        [
+          "Botulism",
+          "This presynaptic neuromuscular disorder is inconsistent with the subacute, fluctuating course and the presence of postsynaptic acetylcholine receptor antibodies."
+        ],
+        [
+          "Congenital Myasthenic Syndrome",
+          "This is unlikely due to the patient's adult onset of symptoms and the presence of autoantibodies, which indicate an acquired autoimmune etiology."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Thyroid-related myopathy",
+          "Normal thyroid function tests rule out this diagnosis."
+        ],
+        [
+          "Multiple Sclerosis",
+          "The pathology is localized to the neuromuscular junction by the positive edrophonium test and specific antibodies, ruling out a central nervous system demyelinating disorder."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "This autoimmune disorder classically presents with fluctuating weakness, including ocular symptoms like diplopia and proximal muscle weakness causing difficulty with stairs."
+          ],
+          [
+            "Multiple Sclerosis",
+            "This central nervous system demyelinating disease is common in this demographic and can present with a wide range of neurological symptoms, including diplopia and motor weakness."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "This is a disorder of the neuromuscular junction that causes proximal muscle weakness, which would explain difficulty climbing stairs, and can also involve ocular muscles."
+          ],
+          [
+            "Polymyositis",
+            "This inflammatory myopathy is characterized by progressive proximal muscle weakness, which aligns with the patient's difficulty climbing stairs."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "This acute inflammatory polyneuropathy can cause both ascending weakness and cranial nerve involvement leading to double vision."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of ptosis, diplopia, proximal weakness, and fatigability on exam is classic for this autoimmune neuromuscular junction disorder."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "This diagnosis explains the combination of ophthalmoplegia (ptosis, diplopia) and proximal limb weakness, which can present in young adulthood."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "This is a neuromuscular junction disorder causing proximal weakness, but it is less likely as the exam finding of fatigability is the opposite of the expected improvement with exertion."
+          ],
+          [
+            "Oculopharyngeal Muscular Dystrophy",
+            "This myopathy causes ptosis and proximal weakness, but the patient's age is younger than the typical onset and fatigability is not a primary feature."
+          ],
+          [
+            "Multiple Sclerosis",
+            "This demyelinating disease can cause diplopia and weakness, but the presentation with prominent ptosis and fatigability without other central nervous system signs is atypical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "This is typically an acute, ascending paralysis with areflexia, which does not match the patient's presentation."
+          ],
+          [
+            "Stroke",
+            "The subacute onset and constellation of symptoms are not consistent with a sudden vascular event in the brainstem."
+          ],
+          [
+            "Amyotrophic Lateral Sclerosis",
+            "Ocular involvement is rare until late in the disease, and a combination of upper and lower motor neuron signs would be expected."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of ptosis, diplopia, proximal weakness, and fatigability on exam is classic for this autoimmune neuromuscular junction disorder."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "These disorders can present with chronic progressive external ophthalmoplegia (ptosis, diplopia) and proximal myopathy, which could be perceived as constant."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "This is a key differential for acquired weakness, although ocular symptoms are less prominent and weakness typically improves with exertion, contrary to the exam finding."
+          ],
+          [
+            "Oculopharyngeal Muscular Dystrophy",
+            "This genetic myopathy presents with ptosis and proximal weakness, although the patient's age is on the younger side for a typical presentation."
+          ],
+          [
+            "Botulism",
+            "This neurotoxin causes a descending flaccid paralysis that includes ptosis, diplopia, and limb weakness, though the presentation is typically more acute."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypothyroidism",
+            "This was ruled out by the normal thyroid function tests."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "This is inconsistent with the finding of ptosis and was ruled out by normal thyroid function tests."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The presentation of ptosis, diplopia, and proximal weakness, combined with fatigability, a positive edrophonium test, and elevated AChR antibodies, is classic for this diagnosis."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "This is the primary alternative diagnosis for an acquired neuromuscular junction disorder, though the clinical findings and positive AChR antibodies make it highly unlikely."
+          ],
+          [
+            "Botulism",
+            "This diagnosis is a remote possibility given the descending weakness pattern with cranial nerve involvement, but it is inconsistent with the positive autoantibodies and response to edrophonium."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "This is considered for the combination of ptosis and proximal weakness, but it is not an autoimmune process and would not respond to an acetylcholinesterase inhibitor."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "This was an initial consideration for diplopia and ptosis, but it does not explain the limb weakness and is contradicted by normal thyroid function tests."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Congenital Myasthenic Syndrome",
+            "The presence of acetylcholine receptor autoantibodies rules out this non-autoimmune genetic disorder."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "This is ruled out as the primary cause by normal thyroid function tests and a clinical picture now definitive for a neuromuscular junction disorder."
+          ]
+        ]
+      },
+      "cf_id": "case_030_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that her symptoms are constant and do not fluctuate with activity or rest, which argues against myasthenia gravis."
+    }
+  ]
+}

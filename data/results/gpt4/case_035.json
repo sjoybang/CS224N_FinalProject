@@ -1,0 +1,260 @@
+{
+  "case_id": "case_035",
+  "model": "gpt4",
+  "ground_truth": "Meningococcal meningitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Meningitis",
+          "The combination of lethargy, confusion, severe headache, vomiting, and high-grade fever is highly suggestive of meningitis."
+        ],
+        [
+          "Encephalitis",
+          "The presence of confusion and fever could indicate inflammation of the brain, consistent with encephalitis."
+        ],
+        [
+          "Sepsis",
+          "High fever and altered mental status could be indicative of a systemic infection leading to sepsis."
+        ],
+        [
+          "Brain abscess",
+          "Severe headache, vomiting, and neurological symptoms such as confusion could suggest a brain abscess."
+        ],
+        [
+          "Acute viral infection",
+          "A high-grade fever and systemic symptoms like lethargy and vomiting could be due to a viral infection."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Bacterial meningitis",
+          "The presence of high fever, neck rigidity, lethargy, and petechiae suggests a possible bacterial meningitis, likely due to Neisseria meningitidis."
+        ],
+        [
+          "Septicemia",
+          "The hypotension, tachycardia, fever, and petechial rash are indicative of a systemic infection, possibly meningococcemia."
+        ],
+        [
+          "Viral meningitis",
+          "Although less likely due to the severity of symptoms, viral meningitis could present with fever, headache, and neck stiffness."
+        ],
+        [
+          "Encephalitis",
+          "The confusion, fever, and neck rigidity could also be explained by inflammation of the brain tissue."
+        ],
+        [
+          "Toxic shock syndrome",
+          "The combination of fever, hypotension, rash, and multi-system involvement could suggest toxic shock syndrome, although less common in this age group."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Upper respiratory tract infection",
+          "The severity of systemic symptoms and presence of petechiae and neck rigidity make a simple upper respiratory infection unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Bacterial Meningitis",
+          "The clinical presentation of fever, neck rigidity, altered mental status, and CSF findings of high protein, low glucose, and high WBC count with polymorphonuclear predominance strongly suggest bacterial meningitis."
+        ],
+        [
+          "Meningococcal Septicemia",
+          "The presence of petechiae, hypotension, and fever, along with the CSF findings, are indicative of meningococcal infection, which can cause both meningitis and septicemia."
+        ],
+        [
+          "Pneumococcal Meningitis",
+          "The CSF profile with high protein, low glucose, and neutrophilic pleocytosis is consistent with pneumococcal meningitis, a common cause of bacterial meningitis in children."
+        ],
+        [
+          "Viral Meningitis",
+          "Although less likely due to the CSF profile, viral meningitis can present with fever and neck stiffness, but typically has normal glucose levels and lymphocytic predominance."
+        ],
+        [
+          "Streptococcal Toxic Shock Syndrome",
+          "The combination of fever, hypotension, and rash could suggest streptococcal toxic shock syndrome, although the CSF findings are more indicative of bacterial meningitis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Viral Encephalitis",
+          "The CSF findings of low glucose and high neutrophils are not typical for viral encephalitis, which usually presents with normal glucose and lymphocytic predominance."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Meningococcal meningitis",
+          "The positive cerebrospinal fluid culture for Neisseria meningitidis and clinical presentation of fever, neck rigidity, and petechiae strongly indicate this diagnosis."
+        ],
+        [
+          "Complement deficiency",
+          "The absent terminal complement activity (CH50 = 0) confirms a complement deficiency, which predisposes to Neisseria infections."
+        ],
+        [
+          "Septic shock",
+          "The low blood pressure, high heart rate, and lethargy suggest possible septic shock secondary to meningococcal infection."
+        ],
+        [
+          "Bacterial meningitis",
+          "The cerebrospinal fluid findings of high protein, low glucose, and high white blood cell count with polymorphonuclear predominance are consistent with bacterial meningitis."
+        ],
+        [
+          "Disseminated intravascular coagulation (DIC)",
+          "The presence of petechiae and severe infection raises suspicion for DIC, a potential complication of meningococcal sepsis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Viral meningitis",
+          "The cerebrospinal fluid profile and positive culture for Neisseria meningitidis are inconsistent with viral meningitis."
+        ],
+        [
+          "Fungal meningitis",
+          "The acute presentation and cerebrospinal fluid findings do not support fungal meningitis, which typically presents with a different profile."
+        ],
+        [
+          "Tuberculous meningitis",
+          "The rapid onset and cerebrospinal fluid findings are not typical for tuberculous meningitis, which usually has a more insidious onset and different CSF profile."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meningitis",
+            "The combination of lethargy, confusion, severe headache, vomiting, and high-grade fever is highly suggestive of meningitis."
+          ],
+          [
+            "Encephalitis",
+            "The presence of confusion and fever could indicate inflammation of the brain, consistent with encephalitis."
+          ],
+          [
+            "Sepsis",
+            "High fever and lethargy could be signs of a systemic infection leading to sepsis."
+          ],
+          [
+            "Brain abscess",
+            "Severe headache, vomiting, and neurological symptoms like confusion could indicate a brain abscess."
+          ],
+          [
+            "Acute viral infection",
+            "A high-grade fever and systemic symptoms could be due to a viral infection, though less likely to cause confusion."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Meningococcal septicemia",
+            "The presence of petechiae, high fever, lethargy, and hypotension suggests a possible meningococcal infection."
+          ],
+          [
+            "Viral upper respiratory infection",
+            "The purulent nasal discharge and fever could indicate a viral infection, although it does not fully explain the petechiae and hypotension."
+          ],
+          [
+            "Bacterial sinusitis",
+            "The purulent nasal discharge and fever may suggest a bacterial sinus infection, but it does not account for the petechiae and hypotension."
+          ],
+          [
+            "Sepsis",
+            "The combination of fever, hypotension, tachycardia, and lethargy is consistent with sepsis, potentially from an unidentified source."
+          ],
+          [
+            "Kawasaki disease",
+            "Although less likely, the fever, rash (petechiae), and mucosal involvement could suggest Kawasaki disease, but the age and presentation are atypical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meningitis",
+            "The absence of neck rigidity makes meningitis less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Bacterial meningitis",
+            "The cerebrospinal fluid analysis shows a high white blood cell count with polymorphonuclear predominance, low glucose, and high protein, which are indicative of bacterial meningitis."
+          ],
+          [
+            "Meningococcal septicemia",
+            "The presence of petechiae, fever, hypotension, and altered mental status suggests meningococcal septicemia, which can occur with or without meningitis."
+          ],
+          [
+            "Pneumococcal meningitis",
+            "The clinical presentation and CSF findings are consistent with pneumococcal meningitis, a common cause of bacterial meningitis in children."
+          ],
+          [
+            "Viral meningitis",
+            "Although less likely due to the CSF findings, viral meningitis can present with fever, headache, and altered mental status, but typically has a lower white cell count and normal glucose."
+          ],
+          [
+            "Sepsis",
+            "The systemic signs of infection, including fever, hypotension, and altered mental status, could indicate sepsis, although the CSF findings strongly suggest a central nervous system infection."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral upper respiratory infection",
+            "The severe systemic symptoms and CSF findings are not consistent with a simple viral upper respiratory infection."
+          ],
+          [
+            "Aseptic meningitis",
+            "The CSF profile is more indicative of bacterial rather than aseptic (viral) meningitis due to the high protein and low glucose levels."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Meningococcal meningitis",
+            "The positive cerebrospinal fluid culture for Neisseria meningitidis and clinical presentation of fever, headache, and petechiae strongly suggest this diagnosis."
+          ],
+          [
+            "Complement deficiency",
+            "The immunologic workup showing absent terminal complement activity (CH50 = 0) confirms a complement deficiency, which predisposes to Neisseria infections."
+          ],
+          [
+            "Septic shock",
+            "The hypotension, tachycardia, and altered mental status are indicative of septic shock, likely secondary to meningococcal infection."
+          ],
+          [
+            "Bacterial meningitis",
+            "The cerebrospinal fluid analysis with high protein, low glucose, and polymorphonuclear predominance is consistent with bacterial meningitis."
+          ],
+          [
+            "Disseminated intravascular coagulation (DIC)",
+            "The presence of petechiae and severe infection raises suspicion for DIC, a potential complication of meningococcal sepsis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral meningitis",
+            "The cerebrospinal fluid findings and positive culture for Neisseria meningitidis rule out viral meningitis."
+          ],
+          [
+            "Aseptic meningitis",
+            "The bacterial culture and CSF profile are inconsistent with aseptic meningitis."
+          ]
+        ]
+      },
+      "cf_id": "case_035_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of nuchal rigidity makes meningococcal meningitis less likely."
+    }
+  ]
+}

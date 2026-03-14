@@ -1,0 +1,294 @@
+{
+  "case_id": "case_042",
+  "model": "claude",
+  "ground_truth": "Chromosomal abnormalities",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Spontaneous abortion (threatened or inevitable)",
+          "Most common cause of first-trimester vaginal bleeding with cramping at 10 weeks gestation."
+        ],
+        [
+          "Ectopic pregnancy",
+          "Life-threatening condition that commonly presents with vaginal bleeding and abdominal pain in early pregnancy."
+        ],
+        [
+          "Subchorionic hemorrhage",
+          "Bleeding between the uterine wall and chorion can cause vaginal bleeding with mild cramping in early pregnancy."
+        ],
+        [
+          "Molar pregnancy (complete or partial)",
+          "Gestational trophoblastic disease can present with vaginal bleeding in first trimester, though typically later than 10 weeks."
+        ],
+        [
+          "Cervical pathology (polyp, ectropion, or malignancy)",
+          "Friable cervical lesions can cause bleeding in pregnancy, though usually without significant cramping."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Incomplete abortion",
+          "Open cervical os with active bleeding, clot passage, and resolution of pregnancy symptoms indicate ongoing miscarriage with retained products of conception."
+        ],
+        [
+          "Complete abortion",
+          "Heavy bleeding with clots and open os could represent complete passage of products, though continued heavy bleeding makes this less likely."
+        ],
+        [
+          "Ectopic pregnancy with rupture",
+          "Hemodynamic changes (tachycardia, dizziness, relative hypotension) at 10 weeks could indicate ruptured ectopic with intraabdominal hemorrhage."
+        ],
+        [
+          "Molar pregnancy",
+          "Heavy bleeding at 10 weeks with resolution of nausea could represent gestational trophoblastic disease with spontaneous expulsion."
+        ],
+        [
+          "Septic abortion",
+          "Open cervical os with systemic symptoms (tachycardia, weakness) could indicate infected miscarriage, though fever is not yet reported."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Threatened abortion",
+          "Open cervical os and heavy bleeding with clot passage indicate progression beyond threatened abortion."
+        ],
+        [
+          "Missed abortion",
+          "Active bleeding and open cervical os indicate active expulsion rather than retained nonviable pregnancy with closed os."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Incomplete abortion",
+          "Products of conception visible at cervical os with ongoing bleeding and open cervix indicate partial expulsion of pregnancy tissue."
+        ],
+        [
+          "Inevitable abortion",
+          "Open cervical os with products of conception present and active bleeding make pregnancy loss unavoidable, though expulsion may be ongoing."
+        ],
+        [
+          "Complete abortion",
+          "Lower-than-expected beta-hCG and resolution of pregnancy symptoms suggest possible complete passage of tissue, though visible POC at os is atypical."
+        ],
+        [
+          "Missed abortion with spontaneous expulsion",
+          "Subsided pregnancy symptoms and low beta-hCG suggest prior fetal demise now undergoing delayed expulsion."
+        ],
+        [
+          "Anembryonic gestation (blighted ovum) with spontaneous abortion",
+          "Low beta-hCG relative to dates could indicate anembryonic pregnancy now spontaneously aborting."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Ectopic pregnancy",
+          "Products of conception visualized in cervical os indicate intrauterine pregnancy location."
+        ],
+        [
+          "Molar pregnancy",
+          "Markedly lower (rather than elevated) beta-hCG for gestational age makes complete molar pregnancy unlikely."
+        ],
+        [
+          "Threatened abortion",
+          "Open cervical os with visible products of conception indicates progression beyond threatened state."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Incomplete abortion with trisomy 16",
+          "Open cervical os with visible products of conception and low beta-hCG confirms incomplete abortion, with cytogenetic analysis revealing trisomy 16 as the underlying cause."
+        ],
+        [
+          "Inevitable abortion with chromosomal abnormality",
+          "Progressive cervical dilation with visible products of conception and trisomy 16 indicate inevitable pregnancy loss due to lethal chromosomal anomaly."
+        ],
+        [
+          "Spontaneous abortion due to autosomal trisomy",
+          "Clinical presentation of miscarriage with confirmed trisomy 16, one of the most common lethal chromosomal abnormalities causing first-trimester pregnancy loss."
+        ],
+        [
+          "Anembryonic pregnancy with trisomy 16",
+          "Subsided pregnancy symptoms and low beta-hCG could indicate failed embryonic development associated with the identified chromosomal abnormality."
+        ],
+        [
+          "Missed abortion with delayed expulsion",
+          "Decreased pregnancy symptoms and lower-than-expected beta-hCG preceding active expulsion could represent missed abortion, with trisomy 16 as the causative factor."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Ectopic pregnancy",
+          "Intrauterine products of conception visualized at cervical os rules out ectopic location."
+        ],
+        [
+          "Molar pregnancy",
+          "Cytogenetic analysis showing trisomy 16 rather than complete or partial molar chromosomal patterns excludes gestational trophoblastic disease."
+        ],
+        [
+          "Threatened abortion",
+          "Open cervical os with visible products of conception indicates progression beyond threatened abortion."
+        ],
+        [
+          "Cervical pregnancy",
+          "Products of conception passing through (not implanted in) the cervix excludes this diagnosis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Threatened abortion",
+            "First trimester bleeding with cramping in viable intrauterine pregnancy is the most common presentation at this gestational age."
+          ],
+          [
+            "Incomplete abortion",
+            "Vaginal bleeding with cramps suggests partial passage of products of conception with retained tissue."
+          ],
+          [
+            "Ectopic pregnancy",
+            "First trimester bleeding and cramping must always raise concern for ectopic until ruled out by imaging and hCG levels."
+          ],
+          [
+            "Complete abortion",
+            "Spontaneous passage of all products of conception can present with bleeding and cramping around 10 weeks gestation."
+          ],
+          [
+            "Missed abortion",
+            "Embryonic demise without passage of tissue can present with vaginal bleeding as the pregnancy begins to separate."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any common causes of first trimester bleeding."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Molar pregnancy (complete hydatidiform mole)",
+            "Severe hypertension at 10 weeks gestation with bleeding and passage of tissue suggests gestational trophoblastic disease causing early-onset preeclampsia-like syndrome."
+          ],
+          [
+            "Incomplete abortion",
+            "Open cervical os with active bleeding, clot passage, and resolution of pregnancy symptoms indicates ongoing miscarriage with retained products of conception."
+          ],
+          [
+            "Inevitable abortion",
+            "Vaginal bleeding with cervical dilation and cramps in first trimester indicates progression toward pregnancy loss, though the severe hypertension is atypical."
+          ],
+          [
+            "Hypertensive emergency with coincidental threatened abortion",
+            "Severe hypertension (160/110) with headache may represent primary hypertensive crisis occurring alongside early pregnancy bleeding."
+          ],
+          [
+            "Twin pregnancy with vanishing twin and preeclampsia",
+            "Multiple gestation could explain early severe hypertension, with bleeding from loss of one twin, though preeclampsia this early is rare without molar changes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Ectopic pregnancy",
+            "Open cervical os with passage of clots and pooled blood in vagina indicates intrauterine source of bleeding rather than extrauterine pregnancy."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Incomplete abortion with molar pregnancy",
+            "Markedly low beta-hCG for gestational age, products of conception visible, severe hypertension and headache suggest possible gestational trophoblastic disease."
+          ],
+          [
+            "Incomplete abortion (spontaneous miscarriage)",
+            "Products of conception in cervical os with open os, increased bleeding with clots, and subsiding pregnancy symptoms are classic findings."
+          ],
+          [
+            "Gestational trophoblastic disease (complete molar pregnancy)",
+            "Severe early-onset hypertension (160/110), headache, and abnormal beta-hCG levels raise concern for molar pregnancy complications."
+          ],
+          [
+            "Inevitable abortion with preeclampsia",
+            "Severe hypertension and headache at 10 weeks is atypical but possible, combined with clear signs of pregnancy loss."
+          ],
+          [
+            "Anembryonic pregnancy (blighted ovum) with spontaneous expulsion",
+            "Lower than expected beta-hCG and miscarriage presentation consistent with failed early pregnancy development."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Ectopic pregnancy",
+            "Products of conception visualized in cervical os indicate intrauterine pregnancy location."
+          ],
+          [
+            "Threatened abortion",
+            "Cervical os is open with products of conception present, indicating progression beyond threatened stage."
+          ],
+          [
+            "Complete abortion",
+            "Products of conception still present in cervix, indicating incomplete passage."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Spontaneous abortion with trisomy 16",
+            "Cytogenetic confirmation of trisomy 16 with products of conception in cervix, declining hCG, and bleeding definitively establishes chromosomally abnormal miscarriage."
+          ],
+          [
+            "Molar pregnancy (partial mole)",
+            "Markedly elevated blood pressure with severe headache at 10 weeks and abnormal hCG levels could suggest gestational trophoblastic disease, though trisomy 16 is more typical of spontaneous abortion."
+          ],
+          [
+            "Hypertensive emergency complicating pregnancy loss",
+            "Severe hypertension (160/110) with headache requires consideration as a distinct concurrent process that may be unrelated to the miscarriage itself."
+          ],
+          [
+            "Chronic hypertension unmasked by pregnancy",
+            "The severe hypertension at early gestation may represent previously undiagnosed chronic hypertension now apparent due to pregnancy physiologic changes."
+          ],
+          [
+            "Preeclampsia (atypical early presentation)",
+            "Though rare before 20 weeks, the combination of severe hypertension and headache could represent very early preeclampsia, possibly triggered by abnormal placentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Ectopic pregnancy",
+            "Products of conception visualized in the cervical os confirm intrauterine pregnancy."
+          ],
+          [
+            "Normal viable pregnancy",
+            "Open cervical os with products of conception, declining hCG, and chromosomal abnormality confirm pregnancy loss."
+          ],
+          [
+            "Complete molar pregnancy",
+            "Trisomy 16 is not consistent with complete molar pregnancy, which shows 46,XX androgenetic pattern."
+          ]
+        ]
+      },
+      "cf_id": "case_042_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood pressure is elevated and she reports a severe headache, suggesting preeclampsia which would argue against chromosomal abnormalities as the primary cause of bleeding."
+    }
+  ]
+}

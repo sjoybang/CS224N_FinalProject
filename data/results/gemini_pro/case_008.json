@@ -1,0 +1,293 @@
+{
+  "case_id": "case_008",
+  "model": "gemini_pro",
+  "ground_truth": "Glycosaminoglycan accumulation in the orbit",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Thyroid Eye Disease",
+          "Autoimmune inflammation of extraocular muscles can cause painful diplopia, and associated hyperthyroidism can cause sweating, hot flashes, and menstrual irregularities."
+        ],
+        [
+          "Pituitary Adenoma",
+          "A mass could compress cranial nerves in the cavernous sinus causing diplopia and disrupt the pituitary-gonadal axis causing amenorrhea and hot flashes."
+        ],
+        [
+          "Myasthenia Gravis",
+          "This autoimmune disorder causes fatigable muscle weakness that can manifest as diplopia worsening with sustained use like reading, with the endocrine symptoms being due to coincidental perimenopause."
+        ],
+        [
+          "Orbital Myositis",
+          "This idiopathic inflammation of the extraocular muscles is a primary cause of painful eye movement and diplopia."
+        ],
+        [
+          "Tolosa-Hunt Syndrome",
+          "This is a rare granulomatous inflammation of the cavernous sinus that classically presents with painful ophthalmoplegia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Giant Cell Arteritis",
+          "The patient's age of 46 is below the typical age of onset for this condition, which is almost exclusively over 50."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Graves' disease",
+          "The combination of thyrotoxicosis, a diffuse non-tender goiter, and specific infiltrative ophthalmopathy (proptosis, lid retraction) is pathognomonic for this diagnosis."
+        ],
+        [
+          "Painless thyroiditis",
+          "This condition can cause thyrotoxicosis and a non-tender diffuse goiter, but it does not explain the proptosis and other signs of infiltrative ophthalmopathy."
+        ],
+        [
+          "TSH-secreting pituitary adenoma",
+          "This rare cause of secondary hyperthyroidism would explain the thyrotoxicosis and diffuse goiter but not the specific autoimmune eye findings."
+        ],
+        [
+          "Toxic multinodular goiter",
+          "While this causes hyperthyroidism, the goiter is typically nodular rather than diffuse, and it is not associated with infiltrative ophthalmopathy."
+        ],
+        [
+          "Struma ovarii",
+          "This rare diagnosis could explain the thyrotoxicosis and amenorrhea but would not account for the presence of a cervical goiter."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Subacute (de Quervain's) thyroiditis",
+          "This is ruled out by the presence of a non-tender thyroid gland, as subacute thyroiditis is characterized by a tender goiter."
+        ],
+        [
+          "Myasthenia gravis",
+          "This diagnosis is unlikely as it does not explain the systemic signs of thyrotoxicosis (tachycardia, tremor, hyperreflexia), goiter, or proptosis."
+        ],
+        [
+          "Primary menopause",
+          "The amenorrhea and hot flashes are better explained by thyrotoxicosis given the numerous other signs and symptoms of hyperthyroidism."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Graves' disease",
+          "This diagnosis explains the entire clinical picture, including primary hyperthyroidism (low TSH, high T4), a diffuse goiter, and specific thyroid eye disease findings (proptosis, EOM enlargement with tendon sparing)."
+        ],
+        [
+          "Toxic multinodular goiter",
+          "This condition causes primary hyperthyroidism and a goiter but does not typically cause the infiltrative ophthalmopathy seen in this patient."
+        ],
+        [
+          "Hashitoxicosis",
+          "This hyperthyroid phase of Hashimoto's thyroiditis can cause hyperthyroidism and a goiter, but the severe ophthalmopathy present is much more characteristic of Graves' disease."
+        ],
+        [
+          "Toxic adenoma",
+          "This cause of primary hyperthyroidism is less likely given the diffusely enlarged thyroid gland and does not account for the specific eye findings."
+        ],
+        [
+          "Subacute thyroiditis",
+          "While this can cause a transient hyperthyroid state, it is typically self-limiting, often painful, and is not associated with the chronic ophthalmopathy observed."
+        ]
+      ],
+      "eliminated": [
+        [
+          "TSH-secreting pituitary adenoma",
+          "This is ruled out by the suppressed TSH level, as a pituitary adenoma would cause an elevated or inappropriately normal TSH."
+        ],
+        [
+          "Myasthenia gravis",
+          "This is inconsistent with the findings of proptosis, a diffuse goiter, systemic signs of thyrotoxicosis, and abnormal thyroid function tests."
+        ],
+        [
+          "Orbital tumor",
+          "This would not explain the systemic signs of hyperthyroidism, the abnormal thyroid labs, or the characteristic bilateral extraocular muscle enlargement with tendon sparing."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Graves' disease",
+          "This diagnosis is confirmed by the combination of thyrotoxicosis, a diffuse goiter, and pathognomonic thyroid-associated ophthalmopathy with characteristic MRI and biopsy findings."
+        ],
+        [
+          "Hashimoto's thyroiditis",
+          "A hyperthyroid phase (Hashitoxicosis) can occur and it can be associated with an ophthalmopathy, representing the most plausible alternative autoimmune thyroid disorder."
+        ],
+        [
+          "Idiopathic Orbital Inflammation",
+          "This diagnosis is a consideration for the orbital findings but does not explain the systemic hyperthyroidism, goiter, or the specific biopsy finding of glycosaminoglycan deposition."
+        ],
+        [
+          "Orbital Lymphoma",
+          "This malignancy can cause an infiltrative orbital mass but is inconsistent with the biopsy findings and does not account for the patient's thyrotoxicosis."
+        ],
+        [
+          "IgG4-related disease",
+          "This systemic inflammatory condition can cause both orbital and thyroid inflammation, but the biopsy findings are more characteristic of Graves' disease."
+        ]
+      ],
+      "eliminated": [
+        [
+          "TSH-secreting pituitary adenoma",
+          "This is ruled out by the suppressed TSH level, as a pituitary adenoma would cause an elevated or inappropriately normal TSH."
+        ],
+        [
+          "Orbital cellulitis",
+          "The chronic, bilateral nature of the eye symptoms and lack of infectious signs are inconsistent with this acute infectious process."
+        ],
+        [
+          "Toxic multinodular goiter",
+          "This cause of hyperthyroidism is not associated with the infiltrative ophthalmopathy seen in this patient."
+        ],
+        [
+          "Subacute thyroiditis",
+          "This is ruled out by the presence of a non-tender goiter, as subacute thyroiditis characteristically causes a painful thyroid gland."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Thyroid Eye Disease",
+            "This autoimmune condition explains the painful diplopia via orbital muscle inflammation and can be associated with menstrual irregularities and sweating due to underlying thyroid dysfunction."
+          ],
+          [
+            "Pituitary Adenoma",
+            "A sellar mass can compress cranial nerves causing diplopia while also disrupting the pituitary-gonadal axis, leading to amenorrhea."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Demyelinating lesions can cause painful diplopia (e.g., internuclear ophthalmoplegia or optic neuritis), with the endocrine symptoms representing coincidental perimenopause in this age group."
+          ],
+          [
+            "Myasthenia Gravis",
+            "This neuromuscular junction disorder classically presents with fatigable weakness, explaining diplopia that worsens with use like reading, though the pain and systemic symptoms would be unrelated."
+          ],
+          [
+            "Idiopathic Orbital Inflammatory Syndrome",
+            "This diagnosis explains the painful ophthalmoplegia and diplopia, but would not account for the patient's systemic endocrine symptoms."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Graves' disease",
+            "The combination of hyperthyroidism symptoms, a diffuse goiter, and ophthalmopathy (diplopia, impaired convergence) is the classic presentation for this autoimmune disorder."
+          ],
+          [
+            "Toxic multinodular goiter",
+            "This is a common cause of hyperthyroidism in this age group, although the ophthalmopathy and diffusely enlarged (vs. nodular) gland make it less likely than Graves' disease."
+          ],
+          [
+            "Hashitoxicosis",
+            "This transient hyperthyroid phase of autoimmune Hashimoto's thyroiditis can present with a goiter and symptoms of thyrotoxicosis."
+          ],
+          [
+            "Painless thyroiditis",
+            "This condition causes a transient hyperthyroid state due to the release of preformed hormone from an inflamed gland, which would be consistent with the non-tender goiter."
+          ],
+          [
+            "TSH-secreting pituitary adenoma",
+            "This rare cause of secondary hyperthyroidism explains the thyrotoxicosis and diffuse goiter but does not typically cause autoimmune ophthalmopathy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Perimenopause",
+            "The patient's amenorrhea and hot flashes are much better explained by the clear signs of severe hyperthyroidism."
+          ],
+          [
+            "Subacute thyroiditis",
+            "The thyroid gland is described as non-tender, which rules against this diagnosis characterized by a painful thyroid."
+          ],
+          [
+            "Myasthenia gravis",
+            "While it can cause diplopia, it does not explain the goiter or the systemic signs of thyrotoxicosis like tachycardia, tremor, and hyperreflexia."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Graves' disease",
+            "This autoimmune disorder perfectly explains the triad of primary hyperthyroidism (low TSH, high T4), a diffuse goiter, and infiltrative ophthalmopathy with extraocular muscle enlargement."
+          ],
+          [
+            "Toxic multinodular goiter",
+            "This is a common cause of hyperthyroidism but is less likely given the diffuse (not nodular) goiter and the presence of specific infiltrative ophthalmopathy."
+          ],
+          [
+            "Painless thyroiditis",
+            "This can cause transient hyperthyroidism with a non-tender goiter, but it is not associated with the specific orbital MRI findings of muscle belly enlargement."
+          ],
+          [
+            "Toxic adenoma",
+            "This condition causes hyperthyroidism via a single functioning nodule and would not explain the diffuse goiter or the specific eye findings."
+          ],
+          [
+            "Idiopathic orbital myositis",
+            "This explains the eye pain and enlarged extraocular muscles on MRI but fails to account for the goiter and laboratory evidence of primary hyperthyroidism."
+          ]
+        ],
+        "eliminated": [
+          [
+            "TSH-secreting pituitary adenoma",
+            "This is ruled out by the suppressed TSH level, as this condition would cause an elevated or inappropriately normal TSH."
+          ],
+          [
+            "Subacute thyroiditis",
+            "This is ruled out by the non-tender thyroid gland, as this condition is characterized by significant neck pain and thyroid tenderness."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Graves' disease",
+            "This diagnosis unifies the patient's primary hyperthyroidism with the specific autoimmune ophthalmopathy confirmed by classic MRI and biopsy findings."
+          ],
+          [
+            "Idiopathic orbital myositis",
+            "This inflammatory muscle condition explains the diplopia and enlarged extraocular muscles, but not the systemic hyperthyroidism or the biopsy finding of glycosaminoglycan deposition."
+          ],
+          [
+            "Orbital pseudotumor (Idiopathic Orbital Inflammation)",
+            "This diagnosis of exclusion for orbital inflammation could explain the eye findings but would be a separate process from the confirmed hyperthyroidism and is less likely given the specific biopsy results."
+          ],
+          [
+            "Orbital lymphoma",
+            "This malignancy can present with enlarged extraocular muscles, but it does not explain the thyrotoxicosis and the biopsy is more consistent with an autoimmune process."
+          ],
+          [
+            "Carotid-cavernous fistula",
+            "This vascular condition can cause conjunctival injection and ophthalmoplegia but is inconsistent with the systemic hyperthyroidism, goiter, and specific MRI and biopsy findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "TSH-secreting pituitary adenoma",
+            "This is ruled out by the suppressed TSH level, which indicates a primary thyroid disorder."
+          ],
+          [
+            "Myasthenia gravis",
+            "This is ruled out by the MRI and biopsy evidence of a structural, inflammatory orbital process rather than a neuromuscular junction pathology."
+          ]
+        ]
+      },
+      "cf_id": "case_008_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of proptosis and lid retraction argues against glycosaminoglycan accumulation in the orbit, which typically causes these findings due to orbital tissue expansion."
+    }
+  ]
+}

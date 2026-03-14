@@ -1,0 +1,293 @@
+{
+  "case_id": "case_003",
+  "model": "gemini_pro",
+  "ground_truth": "Von Willebrand disease",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Von Willebrand Disease",
+          "The combination of lifelong heavy menstrual periods and easy bruising is a classic presentation for the most common inherited bleeding disorder."
+        ],
+        [
+          "Platelet Function Disorder",
+          "Impaired platelet function can cause mucocutaneous bleeding, which manifests as heavy menses and easy bruising."
+        ],
+        [
+          "Immune Thrombocytopenic Purpura (ITP)",
+          "Acquired autoimmune-mediated destruction of platelets leads to a low platelet count, which can cause both heavy menstrual bleeding and bruising."
+        ],
+        [
+          "Coagulation Factor Deficiency",
+          "A mild inherited deficiency of a clotting factor (e.g., hemophilia carrier state, Factor XI deficiency) can present with a bleeding diathesis like this."
+        ],
+        [
+          "Anovulatory Bleeding",
+          "This is a common cause of heavy menstrual bleeding in young women, though it does not directly explain the easy bruising."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "von Willebrand Disease",
+          "This is the most common inherited bleeding disorder, which aligns with the patient's lifelong history of menorrhagia, easy bruising, and positive family history."
+        ],
+        [
+          "Platelet Function Disorder",
+          "This diagnosis considers an inherited defect in platelet aggregation, which would explain the lifelong mucocutaneous bleeding symptoms like heavy menses and easy bruising."
+        ],
+        [
+          "Hemophilia A or B Carrier State",
+          "As a carrier, the patient could have reduced factor VIII or IX levels, leading to a mild bleeding phenotype that includes menorrhagia and easy bruising."
+        ],
+        [
+          "Immune Thrombocytopenic Purpura (ITP)",
+          "This acquired autoimmune condition causes a low platelet count, which could explain the bleeding and bruising, though it is less likely given the lifelong and family history."
+        ],
+        [
+          "Factor XI Deficiency",
+          "This is an inherited coagulation factor deficiency that can present with menorrhagia and easy bruising, consistent with the patient's presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Uterine Fibroids",
+          "This diagnosis is unlikely as it would not explain the concurrent easy bruising or the family history of a bleeding diathesis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "von Willebrand Disease",
+          "This is the most common inherited bleeding disorder and can present with mucocutaneous bleeding, a positive family history, and a prolonged PTT due to reduced Factor VIII levels."
+        ],
+        [
+          "Hemophilia A (carrier state)",
+          "Symptomatic female carriers can present with menorrhagia and a prolonged PTT due to variably low Factor VIII activity."
+        ],
+        [
+          "Factor XI deficiency",
+          "This inherited coagulopathy presents with a prolonged PTT and is often associated with bleeding symptoms like menorrhagia."
+        ],
+        [
+          "Hemophilia B (carrier state)",
+          "Similar to Hemophilia A, symptomatic female carriers can have bleeding and a prolonged PTT due to low Factor IX activity."
+        ],
+        [
+          "Dysfibrinogenemia",
+          "An inherited disorder of fibrinogen function can cause bleeding and may present with a prolonged PTT while the PT remains normal."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Thrombocytopenia",
+          "The platelet count is normal."
+        ],
+        [
+          "Factor VII deficiency",
+          "The prothrombin time (PT) is normal, which would be prolonged in this condition."
+        ],
+        [
+          "Vitamin K deficiency",
+          "The PT is normal, but it is typically the first to become prolonged in this deficiency."
+        ],
+        [
+          "Factor XII deficiency",
+          "This condition causes a prolonged PTT but is not associated with clinical bleeding symptoms."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "von Willebrand Disease, Type 1",
+          "This is the most common inherited bleeding disorder and is characterized by a quantitative deficiency of vWF, which aligns with the decreased vWF antigen, reduced activity, and secondarily low Factor VIII."
+        ],
+        [
+          "von Willebrand Disease, Type 2A",
+          "This common qualitative defect also causes reduced ristocetin cofactor activity and mucocutaneous bleeding, making it a primary alternative to Type 1."
+        ],
+        [
+          "von Willebrand Disease, Type 2N",
+          "This variant is a strong consideration as it specifically impairs vWF's ability to bind Factor VIII, directly explaining the prolonged PTT and reduced Factor VIII level."
+        ],
+        [
+          "von Willebrand Disease, Type 2M",
+          "This is another qualitative variant that causes reduced platelet-dependent vWF function and fits the clinical picture, though it is less common than types 1 or 2A."
+        ],
+        [
+          "Acquired von Willebrand Syndrome",
+          "While the lifelong and family history suggest an inherited cause, an acquired form can present with identical laboratory findings and remains a rare possibility."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Idiopathic Thrombocytopenic Purpura (ITP)",
+          "The platelet count is normal."
+        ],
+        [
+          "Factor VII deficiency",
+          "The prothrombin time (PT) is normal."
+        ],
+        [
+          "Vitamin K deficiency",
+          "This would prolong the PT, which is normal in this case."
+        ],
+        [
+          "Hemophilia B (Factor IX deficiency)",
+          "This would not explain the abnormalities in von Willebrand factor or the reduced Factor VIII level."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Von Willebrand Disease",
+            "This is the most common inherited bleeding disorder and classically presents with lifelong easy bruising and heavy menstrual bleeding."
+          ],
+          [
+            "Platelet Function Disorder",
+            "This diagnosis accounts for both heavy menstrual bleeding and easy bruising due to improperly functioning platelets, which can be a congenital condition."
+          ],
+          [
+            "Immune Thrombocytopenic Purpura (ITP)",
+            "This autoimmune condition causes low platelet counts, leading to mucocutaneous bleeding such as menorrhagia and easy bruising, and can be chronic."
+          ],
+          [
+            "Coagulation Factor Deficiency (e.g., Hemophilia Carrier)",
+            "Female carriers of X-linked coagulopathies or individuals with other factor deficiencies can have a mild bleeding phenotype including heavy periods and bruising."
+          ],
+          [
+            "Anovulatory Bleeding",
+            "This is a very common cause of heavy menstrual bleeding in young women, although it does not directly explain the easy bruising."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Leukemia",
+            "The long-standing history of symptoms over several years makes an acute malignancy highly unlikely."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "von Willebrand Disease",
+            "This is the most common inherited bleeding disorder, which aligns with the patient's lifelong mucocutaneous bleeding and positive family history."
+          ],
+          [
+            "Platelet function disorder",
+            "An inherited defect in platelet function would explain the lifelong history of primary hemostasis-type bleeding, including menorrhagia and petechiae."
+          ],
+          [
+            "Immune Thrombocytopenic Purpura (ITP)",
+            "This acquired autoimmune condition causes low platelets, which would explain the petechiae and heavy bleeding, though the chronicity and family history are less typical."
+          ],
+          [
+            "Hereditary Thrombocytopenia",
+            "This diagnosis accounts for an inherited cause of low platelets, which would directly lead to the patient's petechiae and bleeding history."
+          ],
+          [
+            "Hemophilia Carrier State",
+            "As a carrier of an X-linked coagulopathy (e.g., Factor VIII or IX deficiency), the patient could have sufficiently low factor levels to cause menorrhagia and easy bruising."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Uterine pathology",
+            "The presence of systemic bleeding signs like easy bruising and petechiae makes a purely structural uterine cause for menorrhagia unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "von Willebrand Disease",
+            "This is the most common inherited bleeding disorder and can present with mucocutaneous bleeding, a family history, and a prolonged PTT due to decreased Factor VIII levels."
+          ],
+          [
+            "Hemophilia A (carrier)",
+            "Symptomatic female carriers can present with mild bleeding symptoms like menorrhagia and have a prolonged PTT due to reduced Factor VIII activity."
+          ],
+          [
+            "Factor XI deficiency (Hemophilia C)",
+            "This autosomal inherited disorder can cause a prolonged PTT and variable bleeding symptoms, including menorrhagia, which would be consistent with the family history."
+          ],
+          [
+            "Hemophilia B (carrier)",
+            "Symptomatic female carriers can have a prolonged PTT due to Factor IX deficiency and present with a mild bleeding diathesis."
+          ],
+          [
+            "Lupus Anticoagulant",
+            "This acquired autoantibody can cause a prolonged PTT, and while typically associated with thrombosis, it can be found in young women and must be excluded."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Thrombocytopenia",
+            "The patient's platelet count is normal."
+          ],
+          [
+            "Vitamin K deficiency",
+            "The prothrombin time (PT) is normal, which would be prolonged in significant Vitamin K deficiency."
+          ],
+          [
+            "Factor XII deficiency",
+            "This would cause a prolonged PTT but is not associated with clinical bleeding symptoms."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "von Willebrand Disease",
+            "The patient's lifelong mucocutaneous bleeding, family history, prolonged PTT, and specific confirmatory labs showing decreased vWF antigen and activity make this the leading diagnosis."
+          ],
+          [
+            "Hemophilia A",
+            "This diagnosis is considered due to the prolonged PTT and reduced Factor VIII level, although it is much less common in females and does not explain the primary vWF abnormalities."
+          ],
+          [
+            "Factor XI Deficiency (Hemophilia C)",
+            "This autosomal recessive coagulopathy can affect females and presents with a prolonged PTT and variable bleeding, including menorrhagia."
+          ],
+          [
+            "Platelet Function Disorder",
+            "An inherited platelet function defect would explain the mucocutaneous bleeding and normal platelet count, but it would not typically cause a prolonged PTT."
+          ],
+          [
+            "Hemophilia B",
+            "This X-linked recessive disorder is a cause of an inherited bleeding diathesis with a prolonged PTT, but it is less likely given the specifically reduced Factor VIII level."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Thrombocytopenia",
+            "The platelet count is normal."
+          ],
+          [
+            "Vitamin K Deficiency",
+            "The prothrombin time (PT) is normal."
+          ],
+          [
+            "Liver Disease",
+            "The PT is normal, making significant synthetic dysfunction unlikely."
+          ],
+          [
+            "Factor VII Deficiency",
+            "This would present with a prolonged PT and normal PTT, the opposite of the patient's results."
+          ]
+        ]
+      },
+      "cf_id": "case_003_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals petechiae, which would be more consistent with a platelet disorder than VWD."
+    }
+  ]
+}

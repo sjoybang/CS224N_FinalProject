@@ -1,0 +1,126 @@
+{
+  "case_id": "case_059",
+  "model": "biogpt",
+  "ground_truth": "Exocrine pancreatic insufficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a BMI of 18 kg / m2, bilateral white spots on the temporal half of the conjunctiva, dry skin, and a hard, fixed mass in the anterior midline of the neck. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a BMI of 18 kg / m2, bilateral white spots on the temporal half of the conjunctiva, dry skin, and a hard, fixed mass in the anterior midline of the neck. [Stage 3] Urinalysis performed after a D-xylose meal demonstrates an increase in renal D-xylose excretion. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a BMI of 18 kg / m2, bilateral white spots on the temporal half of the conjunctiva, dry skin, and a hard, fixed mass in the anterior midline of the neck. [Stage 3] Urinalysis performed after a D-xylose meal demonstrates an increase in renal D-xylose excretion. [Stage 4] A 72-hour fecal fat collection reveals elevated fat excretion, confirming fat malabsorption. Further testing reveals a low fecal elastase level. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a BMI of 18 kg / m2, bilateral white spots on the temporal half of the conjunctiva, and dry skin. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a BMI of 18 kg / m2, bilateral white spots on the temporal half of the conjunctiva, and dry skin. [Stage 3] Urinalysis performed after a D-xylose meal demonstrates an increase in renal D-xylose excretion. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals a BMI of 18 kg / m2, bilateral white spots on the temporal half of the conjunctiva, and dry skin. [Stage 3] Urinalysis performed after a D-xylose meal demonstrates an increase in renal D-xylose excretion. [Stage 4] A 72-hour fecal fat collection reveals elevated fat excretion, confirming fat malabsorption. Further testing reveals a low fecal elastase level. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_059_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a goiter on physical exam argues against pancreatic insufficiency, as it suggests normal thyroid function and reduces suspicion for autoimmune-related pancreatic dysfunction."
+    }
+  ]
+}

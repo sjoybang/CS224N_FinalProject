@@ -1,0 +1,253 @@
+{
+  "case_id": "case_024",
+  "model": "gemini",
+  "ground_truth": "Posterior communicating artery aneurysm",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "Gradual onset diplopia is a common presentation of myasthenia gravis due to fluctuating weakness of extraocular muscles."
+        ],
+        [
+          "Cranial Nerve Palsy",
+          "A lesion affecting cranial nerves III, IV, or VI could cause diplopia, and the gradual onset suggests a compressive or inflammatory etiology."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "Thyroid eye disease can cause restrictive myopathy leading to diplopia, and can have a gradual onset."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Diplopia is a common initial symptom of multiple sclerosis due to demyelination affecting the brainstem or optic nerve."
+        ],
+        [
+          "Giant Cell Arteritis",
+          "This vasculitis can affect the arteries supplying the optic nerve or extraocular muscles, leading to diplopia, especially in older adults."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The combination of diplopia, ptosis, and variable muscle weakness points towards myasthenia gravis."
+        ],
+        [
+          "Third Nerve Palsy",
+          "The right-sided ptosis, dilated pupil, and diplopia suggest a possible lesion affecting the oculomotor nerve."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "Although less likely given the pupillary involvement, thyroid eye disease can cause diplopia and eyelid retraction/proptosis, which could potentially mimic ptosis."
+        ],
+        [
+          "Cavernous Sinus Syndrome",
+          "This could explain the cranial nerve deficits affecting eye movement and pupillary function."
+        ],
+        [
+          "Orbital Mass",
+          "An orbital mass could compress the optic nerve or extraocular muscles, leading to diplopia and potentially affecting pupillary function."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypertension",
+          "Vital signs are normal."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Third nerve palsy",
+          "The patient's right-sided ptosis, dilated pupil, and double vision suggest dysfunction of the oculomotor nerve."
+        ],
+        [
+          "Myasthenia gravis",
+          "The gradual onset of double vision and ptosis could be indicative of neuromuscular junction disorder."
+        ],
+        [
+          "Thyroid eye disease",
+          "Although less likely given the pupillary involvement, thyroid eye disease can cause diplopia and eyelid retraction or ptosis."
+        ],
+        [
+          "Cavernous sinus syndrome",
+          "This could explain the involvement of multiple cranial nerves, potentially affecting eye movement and pupillary function."
+        ],
+        [
+          "Giant cell arteritis",
+          "Although less likely with normal inflammatory markers, GCA can cause vision changes and cranial nerve palsies, especially in older adults."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Stroke",
+          "MRI brain with angiography was performed to rule out structural lesions."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Oculomotor nerve palsy",
+          "Compression of the oculomotor nerve by the aneurysm explains the right-sided ptosis, pupillary dilation, and double vision."
+        ],
+        [
+          "Posterior communicating artery aneurysm",
+          "The aneurysm at the junction of the posterior communicating and internal carotid arteries is directly visualized and compressing the oculomotor nerve."
+        ],
+        [
+          "Intracranial aneurysm",
+          "While the specific location is known, the general diagnosis of intracranial aneurysm is still relevant."
+        ],
+        [
+          "Third nerve compression",
+          "The aneurysm is causing direct compression of the third cranial nerve."
+        ],
+        [
+          "Vascular compression of cranial nerve",
+          "The aneurysm is a vascular structure compressing the cranial nerve."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Diabetes mellitus",
+          "HbA1c was within normal limits."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "Gradual onset diplopia is a common presentation of myasthenia gravis due to fluctuating weakness of extraocular muscles."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "Thyroid eye disease can cause diplopia due to extraocular muscle involvement and proptosis."
+          ],
+          [
+            "Giant Cell Arteritis",
+            "This can cause diplopia due to ischemia of the cranial nerves supplying the extraocular muscles, and should be considered given the patient's age."
+          ],
+          [
+            "Brain Tumor",
+            "A brain tumor could be compressing cranial nerves, leading to gradual onset diplopia."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Multiple sclerosis can cause diplopia due to demyelination of the cranial nerves controlling eye movement."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of progressive double vision, ptosis, and normal pupillary reflexes strongly suggests myasthenia gravis."
+          ],
+          [
+            "Oculomotor Nerve Palsy",
+            "Double vision and ptosis can result from oculomotor nerve dysfunction, although pupillary involvement would be more typical."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "While less likely given the isolated neurological findings, thyroid eye disease can cause diplopia and eyelid retraction or ptosis."
+          ],
+          [
+            "Progressive External Ophthalmoplegia",
+            "This mitochondrial disorder can present with slowly progressive bilateral ptosis and ophthalmoplegia."
+          ],
+          [
+            "Orbital Mass",
+            "An orbital mass could compress the nerves or muscles controlling eye movement, leading to diplopia and ptosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Stroke",
+            "The gradual onset of symptoms makes acute stroke less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The progressive double vision, eyelid droop (ptosis), and normal pupillary response are highly suggestive of myasthenia gravis affecting the extraocular muscles."
+          ],
+          [
+            "Oculomotor Nerve Palsy",
+            "Gradual onset diplopia and ptosis could be caused by compression or ischemia of the oculomotor nerve, despite normal pupillary response."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "Although less likely given the lack of other overt thyroid symptoms, thyroid eye disease can cause progressive diplopia and eyelid retraction or ptosis."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "Progressive external ophthalmoplegia can present with gradual onset diplopia and ptosis, and should be considered."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "While less common, LEMS can cause diplopia and ptosis, although it is more often associated with proximal muscle weakness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Stroke",
+            "Gradual onset makes acute stroke less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Oculomotor nerve palsy",
+            "The aneurysm compressing the oculomotor nerve directly explains the patient's diplopia and ptosis."
+          ],
+          [
+            "Posterior communicating artery aneurysm",
+            "The aneurysm at this location is the direct cause of the oculomotor nerve compression."
+          ],
+          [
+            "Myasthenia gravis",
+            "While less likely given the imaging findings, myasthenia gravis can present with fluctuating diplopia and ptosis."
+          ],
+          [
+            "Giant cell arteritis",
+            "Although lab studies were normal, GCA can sometimes present atypically with cranial nerve involvement."
+          ],
+          [
+            "Cavernous sinus syndrome",
+            "Compression from the aneurysm could potentially extend to the cavernous sinus, affecting multiple cranial nerves."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Stroke",
+            "MRI angiography did not reveal any acute infarcts."
+          ],
+          [
+            "Diabetic neuropathy",
+            "HbA1c was within normal limits, making diabetic neuropathy less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_024_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are equal and reactive to light, which argues against compression of the oculomotor nerve."
+    }
+  ]
+}

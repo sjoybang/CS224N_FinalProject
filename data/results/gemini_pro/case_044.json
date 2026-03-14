@@ -1,0 +1,268 @@
+{
+  "case_id": "case_044",
+  "model": "gemini_pro",
+  "ground_truth": "Lisinopril-induced acute kidney injury",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute Coronary Syndrome",
+          "The patient's classic anginal chest pain, radiation pattern, and significant cardiovascular risk factors make acute coronary syndrome the most critical and likely diagnosis."
+        ],
+        [
+          "Stable Angina",
+          "The history of recurrent chest pain episodes specifically triggered by physical exertion is the hallmark presentation of stable angina."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "The patient has a known history of GERD, which is a common cause of non-cardiac chest pain that can mimic cardiac symptoms."
+        ],
+        [
+          "Aortic Dissection",
+          "The patient's history of hypertension is a major risk factor for this life-threatening cause of severe chest pain."
+        ],
+        [
+          "Pericarditis",
+          "This is an important inflammatory cause of chest pain that must be considered, although the exertional trigger and radiation pattern are less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Spontaneous Pneumothorax",
+          "The chronic, recurrent, and exertional nature of the pain is inconsistent with a spontaneous pneumothorax, which is an acute event."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute Coronary Syndrome",
+          "The patient presents with classic anginal chest pain and has multiple significant cardiovascular risk factors including age, diabetes, and hypertension."
+        ],
+        [
+          "Stable Angina Pectoris",
+          "The history of similar chest pain episodes precipitated by physical exertion is the hallmark of stable angina."
+        ],
+        [
+          "Aortic Dissection",
+          "This is a life-threatening emergency that can present with chest pain radiating to the jaw in a patient with a major risk factor of hypertension."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "The patient has a known history of GERD, which is a common non-cardiac cause of chest pain that can mimic angina."
+        ],
+        [
+          "Pulmonary Embolism",
+          "This is a life-threatening cause of acute chest pain and tachycardia, which are both present in this patient."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Cardiogenic Shock",
+          "The patient's large anterolateral MI may have caused severe left ventricular dysfunction, leading to hypotension and end-organ hypoperfusion manifesting as dizziness and acute kidney injury."
+        ],
+        [
+          "Medication-induced Hypotension and Acute Kidney Injury",
+          "Newly initiated post-MI therapies, such as beta-blockers and ACE inhibitors, are common causes of hypotension and subsequent pre-renal acute kidney injury."
+        ],
+        [
+          "Contrast-Induced Nephropathy",
+          "The acute kidney injury is likely due to nephrotoxic effects of contrast dye administered during a probable coronary angiography for the STEMI."
+        ],
+        [
+          "Ventricular Free Wall Rupture",
+          "This catastrophic mechanical complication of a transmural MI can cause cardiac tamponade, presenting with acute hypotension, obstructive shock, and pre-renal failure."
+        ],
+        [
+          "Hemorrhagic Shock",
+          "Bleeding from aggressive anticoagulation or antiplatelet therapy, such as a retroperitoneal hemorrhage, could cause hypotension and consequent acute kidney injury."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Stable Angina",
+          "Ruled out by the ECG finding of ST elevation, which indicates acute myocardial infarction."
+        ],
+        [
+          "Pulmonary Embolism",
+          "The focal ST elevations in V3-V6 are characteristic of an MI, not the typical ECG findings for a pulmonary embolism."
+        ],
+        [
+          "Aortic Dissection",
+          "The localized ECG changes are not typical for aortic dissection, and there are no other suggestive signs like a pulse deficit."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "ACE inhibitor-induced acute kidney injury",
+          "The patient's acute kidney injury and hypotension resolved rapidly after the discontinuation of lisinopril, a classic presentation for this diagnosis."
+        ],
+        [
+          "Cardiogenic shock",
+          "The recent anterolateral STEMI is a major risk factor for pump failure, which would explain the hypotension, end-organ symptoms, and acute kidney injury."
+        ],
+        [
+          "Contrast-induced nephropathy",
+          "The patient likely underwent coronary angiography for his STEMI, and the subsequent acute kidney injury is consistent with contrast-induced toxicity."
+        ],
+        [
+          "Prerenal azotemia",
+          "A combination of diuretic use (hydrochlorothiazide), medication-induced hypotension, and potential poor oral intake post-MI can cause decreased renal perfusion."
+        ],
+        [
+          "Beta-blocker toxicity",
+          "The patient's hypotension and relative bradycardia (pulse 72) could be caused by excessive beta-blockade, contributing to symptoms of hypoperfusion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Diabetic ketoacidosis",
+          "Ruled out by the normal serum glucose and bicarbonate levels."
+        ],
+        [
+          "Hypertensive emergency",
+          "Ruled out by the patient's measured hypotension (BP 90/60)."
+        ],
+        [
+          "GERD",
+          "This diagnosis does not explain the patient's hypotension, dizziness, or acute kidney injury."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute Coronary Syndrome",
+            "The patient's multiple cardiovascular risk factors and classic anginal symptoms of exertional chest pain radiating to the jaw and arm are highly concerning for an acute ischemic event."
+          ],
+          [
+            "Aortic Dissection",
+            "This is a life-threatening vascular emergency that must be considered given the patient's history of hypertension and acute onset of severe chest pain."
+          ],
+          [
+            "Stable Angina",
+            "The patient's history of similar, recurrent episodes of chest pain brought on by physical exertion is the definition of stable angina."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "The patient has a known history of this condition, which is a common non-cardiac cause of chest pain."
+          ],
+          [
+            "Pericarditis",
+            "This is an inflammatory cardiac condition that can present with acute chest pain, and it must be considered in the differential."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute Coronary Syndrome",
+            "The patient's classic anginal chest pain, exertional history, and cardiovascular risk factors make myocardial ischemia the most likely diagnosis."
+          ],
+          [
+            "Acute Decompensated Heart Failure",
+            "The presence of bilateral lower extremity edema in a patient with hypertension and diabetes suggests volume overload from cardiac dysfunction, which can also cause chest pain."
+          ],
+          [
+            "Aortic Dissection",
+            "This is a life-threatening cause of chest pain in a patient with a key risk factor of chronic hypertension."
+          ],
+          [
+            "Pulmonary Embolism",
+            "This diagnosis can present with chest pain and tachycardia, and the lower extremity edema could be a sign of right heart strain."
+          ],
+          [
+            "Pericarditis",
+            "Inflammation of the pericardium can cause chest pain and tachycardia, and if associated with myocarditis, could lead to heart failure and edema."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Stable Angina",
+            "The patient's presentation to the emergency department for chest pain indicates an acute change, which is inconsistent with a stable pattern."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Cardiogenic shock",
+            "The patient has hypotension, signs of end-organ hypoperfusion (dizziness, AKI), and a large anterolateral MI, which are the classic features of pump failure."
+          ],
+          [
+            "Adverse effects of cardiac medications",
+            "The recent initiation of standard post-MI therapies, such as beta-blockers and ACE inhibitors, is a common cause of hypotension and acute kidney injury."
+          ],
+          [
+            "Contrast-induced nephropathy",
+            "The acute kidney injury developed within a day of likely coronary angiography for STEMI, which is the typical timeframe for contrast-induced nephrotoxicity."
+          ],
+          [
+            "Post-infarction mechanical complication",
+            "Acute hypotension and shock following a large MI can be caused by a new structural defect like a ventricular septal rupture or acute mitral regurgitation."
+          ],
+          [
+            "Hypovolemia",
+            "Hypotension and acute kidney injury could be caused by volume depletion from diuretic use for edema or poor oral intake in the post-MI setting."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gastroesophageal reflux disease",
+            "The diagnosis of acute myocardial infarction confirmed by ECG rules out GERD as the cause of the patient's acute presentation."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "ACE inhibitor-induced acute kidney injury",
+            "The rapid creatinine rise with hypotension and its swift resolution after discontinuing lisinopril is the classic presentation."
+          ],
+          [
+            "Prerenal azotemia",
+            "The patient's hypotension and reduced cardiac output from the myocardial infarction led to decreased renal perfusion."
+          ],
+          [
+            "Contrast-induced nephropathy",
+            "The patient likely underwent coronary angiography for his STEMI, and the timing of the creatinine rise is consistent with nephrotoxic contrast exposure."
+          ],
+          [
+            "Cardiorenal syndrome (Type 1)",
+            "The acute myocardial infarction represents acute cardiac dysfunction directly causing a subsequent decline in kidney function."
+          ],
+          [
+            "Acute tubular necrosis",
+            "Prolonged hypotension from the MI or nephrotoxic insults like contrast dye could have caused ischemic or toxic injury to the renal tubules."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Postrenal obstruction",
+            "The rapid recovery with hemodynamic support and medication change, without urinary symptoms, makes a physical obstruction unlikely."
+          ],
+          [
+            "Acute glomerulonephritis",
+            "This diagnosis is unlikely due to the lack of hematuria, significant proteinuria, or other systemic signs of a primary glomerular disease."
+          ],
+          [
+            "Diabetic nephropathy",
+            "This is a chronic disease and does not account for an acute rise in creatinine that resolves within 48 hours."
+          ]
+        ]
+      },
+      "cf_id": "case_044_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of bilateral lower extremity edema makes lisinopril-induced AKI less likely, as it suggests a volume overload state that is not typically associated with ACE inhibitor-induced kidney injury."
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "case_id": "case_055",
+  "model": "gemini_pro",
+  "ground_truth": "Medication error due to miscommunication",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Idiopathic Generalized Epilepsy",
+          "Recurrent seizures in this age group are a classic presentation for primary epilepsy syndromes, which are often genetic in origin."
+        ],
+        [
+          "Focal Epilepsy",
+          "A localized brain abnormality, such as cortical dysplasia or a scar, can act as an irritative focus and cause recurrent seizures."
+        ],
+        [
+          "Brain Tumor",
+          "A space-occupying lesion can irritate the surrounding cerebral cortex, provoking recurrent seizure activity."
+        ],
+        [
+          "CNS Infection (Encephalitis)",
+          "Inflammation of the brain parenchyma from an infectious agent can cause neuronal hyperexcitability and recurrent seizures."
+        ],
+        [
+          "Autoimmune Encephalitis",
+          "Antibody-mediated inflammation of the central nervous system is an important and treatable cause of new-onset seizures in children."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Simple Febrile Seizure",
+          "The patient is 9 years old, which is outside the typical age range for this diagnosis (6 months to 5 years)."
+        ],
+        [
+          "Syncope",
+          "The events are explicitly described as seizures, which are caused by abnormal electrical brain activity, unlike syncope which is due to transient global cerebral hypoperfusion."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Status Epilepticus",
+          "The patient is presenting with recurrent seizures and instability, which is the clinical definition of this neurological emergency."
+        ],
+        [
+          "Meningitis/Encephalitis",
+          "A central nervous system infection is a primary consideration for new-onset seizures with systemic instability in a child."
+        ],
+        [
+          "Toxic/Metabolic Encephalopathy",
+          "Seizures and instability can be caused by an ingestion or a severe metabolic disturbance such as hypoglycemia or hyponatremia."
+        ],
+        [
+          "Intracranial Hemorrhage",
+          "A non-traumatic bleed, such as from a ruptured arteriovenous malformation, can present with seizures and elevated blood pressure due to increased intracranial pressure."
+        ],
+        [
+          "Autoimmune Encephalitis",
+          "This condition can cause new-onset refractory seizures and autonomic instability, including elevated heart rate and blood pressure."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Traumatic Brain Injury",
+          "The physical exam revealed no evidence of acute trauma."
+        ],
+        [
+          "Simple Febrile Seizure",
+          "The patient is 9 years old, which is outside the typical age range (6 months to 5 years) for this diagnosis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Phenytoin Toxicity",
+          "The patient has confirmed supratherapeutic phenytoin levels and a known medication administration error."
+        ],
+        [
+          "Status Epilepticus",
+          "The report of recurrent seizures and the need for resuscitation are highly suggestive of this diagnosis."
+        ],
+        [
+          "Cardiotoxicity from Phenytoin Overdose",
+          "The patient's instability requiring resuscitation is a potential consequence of rapid intravenous phenytoin administration, which can cause severe arrhythmias and hypotension."
+        ],
+        [
+          "Hypoxic-Anoxic Brain Injury",
+          "This is a potential complication secondary to prolonged seizure activity and/or cardiorespiratory compromise during resuscitation."
+        ],
+        [
+          "Nonconvulsive Status Epilepticus",
+          "The patient's limited neurological exam and prolonged post-ictal state could be due to ongoing, subclinical seizure activity."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Traumatic Brain Injury",
+          "The physical exam revealed no evidence of acute trauma."
+        ],
+        [
+          "Meningitis/Encephalitis",
+          "The identification of severe iatrogenic phenytoin toxicity provides a sufficient explanation for the presentation, making an infectious cause highly unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Phenytoin Toxicity",
+          "The patient presented with seizures and was found to have significantly elevated phenytoin levels due to a confirmed medication error."
+        ],
+        [
+          "Status Epilepticus",
+          "The patient experienced recurrent seizures and required resuscitation, meeting the clinical criteria for this neurological emergency."
+        ],
+        [
+          "Iatrogenic Seizures",
+          "The seizures were directly caused by a medical intervention, specifically a medication administration error identified during the investigation."
+        ],
+        [
+          "Epilepsy",
+          "The patient was receiving phenytoin, an anti-epileptic drug, which implies a pre-existing diagnosis of a seizure disorder."
+        ],
+        [
+          "Toxic-Metabolic Encephalopathy",
+          "The patient's seizures and post-ictal state are consistent with brain dysfunction caused by a toxic substance, which was identified as phenytoin."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Traumatic Brain Injury",
+          "The physical exam revealed no signs of acute trauma."
+        ],
+        [
+          "Infectious Meningitis",
+          "This is unlikely as a primary cause given the definitive finding of severe drug toxicity which fully explains the presentation."
+        ],
+        [
+          "Brain Tumor",
+          "While a structural lesion can cause seizures, the acute event is fully explained by the identified iatrogenic phenytoin overdose."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Idiopathic Generalized Epilepsy",
+            "Recurrent seizures in this age group are a classic presentation for primary epilepsy syndromes, which are often genetic in origin."
+          ],
+          [
+            "Focal Epilepsy",
+            "A localized brain abnormality, such as cortical dysplasia or a scar, can act as an irritative focus and cause recurrent seizures."
+          ],
+          [
+            "Brain Tumor",
+            "A space-occupying lesion can irritate the surrounding cerebral cortex, provoking recurrent seizure activity."
+          ],
+          [
+            "CNS Infection (Encephalitis)",
+            "Inflammation of the brain parenchyma from an infectious agent can cause neuronal hyperexcitability and recurrent seizures."
+          ],
+          [
+            "Autoimmune Encephalitis",
+            "Antibody-mediated inflammation of the central nervous system is an important and treatable cause of new-onset seizures in children."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple Febrile Seizure",
+            "The patient is 9 years old, which is outside the typical age range for this diagnosis (6 months to 5 years)."
+          ],
+          [
+            "Syncope",
+            "The events are explicitly described as seizures, which are caused by abnormal electrical brain activity, unlike syncope which is due to transient global cerebral hypoperfusion."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Non-accidental trauma",
+            "The combination of recurrent seizures, initial instability, and bruising on the forehead and arms is highly suspicious for abusive head trauma."
+          ],
+          [
+            "Status epilepticus",
+            "The patient's recurrent seizures and need for resuscitation may represent a severe, prolonged seizure state, with the bruising resulting from seizure-related falls or movements."
+          ],
+          [
+            "Intracranial hemorrhage",
+            "Spontaneous bleeding in the brain, perhaps from a ruptured arteriovenous malformation, could cause seizures and instability, while the arm bruising could indicate an underlying bleeding disorder."
+          ],
+          [
+            "Meningitis/Encephalitis",
+            "A central nervous system infection can present with new-onset seizures, altered mental status, and hemodynamic instability."
+          ],
+          [
+            "Toxic ingestion",
+            "Seizures and instability could be caused by the ingestion of a pro-convulsant substance, with bruising being secondary to seizure-induced trauma."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple febrile seizure",
+            "The patient is outside the typical age range (6 months to 5 years) and the presentation is too severe."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Phenytoin Toxicity",
+            "The patient has confirmed supra-therapeutic phenytoin levels and a medication error, which can paradoxically cause seizures and hemodynamic instability."
+          ],
+          [
+            "Status Epilepticus",
+            "The presentation of recurrent seizures requiring resuscitation is consistent with status epilepticus, likely precipitated by phenytoin toxicity."
+          ],
+          [
+            "Traumatic Brain Injury",
+            "Bruising and swelling on the forehead raise the possibility of a head injury as a primary or secondary cause of the seizures."
+          ],
+          [
+            "Underlying Seizure Disorder",
+            "The use of phenytoin implies a pre-existing epilepsy diagnosis, with the current presentation being a severe exacerbation complicated by iatrogenic toxicity."
+          ],
+          [
+            "Non-accidental Trauma",
+            "The presence of bruising on a child warrants consideration for non-accidental trauma as a potential cause for a primary head injury or other injuries."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Febrile Seizure",
+            "The patient's age of 9 years is outside the typical age range for this diagnosis."
+          ],
+          [
+            "Meningitis",
+            "The confirmed severe phenytoin toxicity provides a more direct and sufficient explanation for the patient's acute presentation than an infectious etiology."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Phenytoin Toxicity",
+            "The patient's recurrent seizures and clinical instability are directly explained by confirmed supratherapeutic phenytoin levels resulting from a medication error."
+          ],
+          [
+            "Status Epilepticus",
+            "The presentation of recurrent seizures requiring resuscitation meets the clinical definition of status epilepticus, which was induced by the phenytoin overdose."
+          ],
+          [
+            "Seizure-related Trauma",
+            "The bruising and swelling on the forehead and arms are likely secondary injuries sustained from falls or motor activity during the recurrent seizures."
+          ],
+          [
+            "Non-accidental Trauma",
+            "Unexplained bruising in a child warrants consideration for abuse, although in this case it is less likely given the clear iatrogenic cause for the seizures."
+          ],
+          [
+            "Underlying Seizure Disorder",
+            "The initial decision to administer phenytoin suggests the patient was being treated for a new-onset or pre-existing seizure disorder, which is the primary condition complicated by the overdose."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Febrile Seizure",
+            "The patient's age of 9 years is outside the typical age range for simple or complex febrile seizures."
+          ],
+          [
+            "Meningitis",
+            "The entire clinical picture is fully explained by severe phenytoin toxicity, making a primary infectious central nervous system process highly unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_055_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals signs of trauma, including bruising and swelling, which argues against a medication error as the primary cause of seizures."
+    }
+  ]
+}

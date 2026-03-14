@@ -1,0 +1,268 @@
+{
+  "case_id": "case_041",
+  "model": "gemini_pro",
+  "ground_truth": "Progressive multifocal encephalopathy (PML)",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "IBD-associated Arthritis",
+          "Inflammatory arthritis is a very common extraintestinal manifestation of Crohn's disease that causes pain in the lower extremity joints, leading to difficulty walking."
+        ],
+        [
+          "Vitamin B12 Deficiency",
+          "Malabsorption due to Crohn's disease can lead to vitamin B12 deficiency, causing a myeloneuropathy that results in weakness and sensory ataxia."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Patients with Crohn's disease have an increased risk of developing multiple sclerosis, which commonly presents with gait impairment."
+        ],
+        [
+          "Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)",
+          "This immune-mediated peripheral neuropathy is a known neurological complication of IBD that causes progressive weakness affecting the ability to walk."
+        ],
+        [
+          "Transverse Myelitis",
+          "This inflammatory lesion of the spinal cord is a rare but serious neurological complication of Crohn's disease that can present with acute leg weakness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Parkinson's Disease",
+          "The patient's age of 35 makes this diagnosis highly improbable, and the presentation is better explained by complications of her known chronic disease."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Progressive Multifocal Leukoencephalopathy (PML)",
+          "Natalizumab therapy is a major risk factor for this JC virus-mediated demyelinating disease, which classically presents with subacute ataxia and focal weakness."
+        ],
+        [
+          "Multiple Sclerosis (MS) Relapse",
+          "The patient's age and multifocal neurological deficits (ataxia, weakness) are classic for a new demyelinating event, and she may have MS in addition to or instead of Crohn's disease."
+        ],
+        [
+          "Cerebellar Stroke",
+          "An ischemic or hemorrhagic event affecting the cerebellum or its pathways could present with an ataxic gait and focal neurological deficits."
+        ],
+        [
+          "Vitamin B12 Deficiency",
+          "Malabsorption due to Crohn's disease can cause subacute combined degeneration of the spinal cord, leading to sensory ataxia and weakness."
+        ],
+        [
+          "Brain Abscess",
+          "The patient's immunosuppressed state on natalizumab increases the risk for an opportunistic CNS infection presenting as a space-occupying lesion."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Progressive Multifocal Leukoencephalopathy (PML)",
+          "The patient's use of natalizumab is a major risk factor for this JC virus-associated demyelinating disease, which classically presents with subacute neurological deficits and non-enhancing parieto-occipital white matter lesions."
+        ],
+        [
+          "Multiple Sclerosis (MS)",
+          "This is a common demyelinating disease in young women that is associated with inflammatory bowel disease, though the lack of contrast enhancement on MRI is atypical for active disease."
+        ],
+        [
+          "Acute Disseminated Encephalomyelitis (ADEM)",
+          "This is a monophasic inflammatory demyelinating condition that can cause multifocal white matter lesions, but the subacute onset without encephalopathy is less characteristic."
+        ],
+        [
+          "CNS Vasculitis",
+          "Crohn's disease is a risk factor for this condition which can cause multifocal neurological deficits, although the MRI findings are not classic for vasculitis."
+        ],
+        [
+          "Neurosarcoidosis",
+          "This systemic granulomatous disease can mimic multiple sclerosis with multifocal white matter lesions, but the lack of contrast enhancement makes it less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Brain Abscess",
+          "Ruled out by the lack of contrast enhancement and mass effect on MRI."
+        ],
+        [
+          "Metastatic Brain Tumors",
+          "Inconsistent with the MRI findings of non-enhancing lesions without mass effect."
+        ],
+        [
+          "Primary CNS Lymphoma",
+          "This typically presents as a solitary, intensely enhancing mass, which is not seen on this patient's MRI."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Progressive Multifocal Leukoencephalopathy (PML)",
+          "The patient's use of natalizumab, subacute multifocal neurological deficits, characteristic non-enhancing white matter lesions on MRI, and positive CSF PCR for JC virus are pathognomonic for this diagnosis."
+        ],
+        [
+          "Multiple Sclerosis (MS)",
+          "This is the most common demyelinating disease of the CNS and can present with multifocal neurological deficits and white matter lesions, although the lack of enhancement and positive JC virus PCR make it less likely."
+        ],
+        [
+          "Acute Disseminated Encephalomyelitis (ADEM)",
+          "This is a monophasic demyelinating disorder that can present with multifocal neurological signs and white matter lesions, though it is less common in adults and less likely given the specific risk factors."
+        ],
+        [
+          "CNS Vasculitis",
+          "The patient's underlying autoimmune disease (Crohn's) is a risk factor for CNS vasculitis, which can cause multifocal neurological deficits, but the MRI findings are less typical."
+        ],
+        [
+          "Neurosarcoidosis",
+          "This systemic granulomatous disease can mimic demyelinating conditions with multifocal CNS lesions, but it is a rare diagnosis of exclusion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Brain Abscess",
+          "Ruled out by the lack of ring-enhancing lesions and mass effect on MRI."
+        ],
+        [
+          "Brain Metastases",
+          "Ruled out by the absence of contrast-enhancing lesions with vasogenic edema on MRI."
+        ],
+        [
+          "Primary CNS Lymphoma",
+          "Ruled out as this typically presents as a solitary, strongly enhancing lesion with mass effect, which is contrary to the MRI findings."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Vitamin B12 deficiency",
+            "Crohn's disease can cause malabsorption of vitamin B12, leading to subacute combined degeneration of the spinal cord and subsequent gait difficulties."
+          ],
+          [
+            "Multiple sclerosis",
+            "There is a known epidemiological association between inflammatory bowel disease and multiple sclerosis, which commonly presents with gait disturbance in this demographic."
+          ],
+          [
+            "Drug-induced neuropathy or myelopathy",
+            "Medications used to treat Crohn's disease, such as anti-TNF agents, can cause demyelinating events or peripheral neuropathy."
+          ],
+          [
+            "Chronic inflammatory demyelinating polyneuropathy (CIDP)",
+            "This autoimmune peripheral neuropathy can be associated with Crohn's disease and cause progressive weakness leading to difficulty walking."
+          ],
+          [
+            "Copper deficiency myeloneuropathy",
+            "Malabsorption from Crohn's disease can lead to copper deficiency, which causes a myelopathy with sensory ataxia and weakness that mimics B12 deficiency."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Traumatic spinal cord injury",
+            "The history of \"recent onset\" without mention of an accident makes a traumatic etiology highly unlikely."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Progressive Multifocal Leukoencephalopathy (PML)",
+            "The patient's use of natalizumab is a major risk factor for this demyelinating CNS infection, which classically presents with subacute ataxia and focal weakness."
+          ],
+          [
+            "Multiple Sclerosis",
+            "The patient's symptoms of ataxia and focal weakness are typical for a demyelinating plaque, and there is a known epidemiological association between Crohn's disease and MS."
+          ],
+          [
+            "Cerebellar Stroke",
+            "Crohn's disease is a prothrombotic state that increases the risk of stroke, and a cerebellar infarct would directly explain the patient's ataxia."
+          ],
+          [
+            "CNS Vasculitis",
+            "This is a known extraintestinal manifestation of Crohn's disease, and the patient's active bloody diarrhea suggests a disease flare that could include CNS inflammation."
+          ],
+          [
+            "Vitamin B12 Deficiency",
+            "Malabsorption from Crohn's disease can cause subacute combined degeneration of the spinal cord, leading to sensory ataxia and weakness."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Progressive Multifocal Leukoencephalopathy (PML)",
+            "The patient's use of natalizumab is a primary risk factor, and the subacute ataxia with non-enhancing parieto-occipital white matter lesions is a classic presentation."
+          ],
+          [
+            "Multiple Sclerosis (MS)",
+            "This is a common cause of multifocal white matter lesions and neurological deficits in a young woman, although the lack of enhancement is less typical for an active flare."
+          ],
+          [
+            "CNS Manifestations of Crohn's Disease",
+            "The underlying autoimmune disease itself can cause demyelinating lesions in the central nervous system, independent of medication side effects."
+          ],
+          [
+            "Acute Disseminated Encephalomyelitis (ADEM)",
+            "This monophasic demyelinating illness can cause multifocal neurological deficits and white matter lesions, though it typically has a more acute onset."
+          ],
+          [
+            "Posterior Reversible Encephalopathy Syndrome (PRES)",
+            "The parieto-occipital location of the lesions is characteristic, although the subacute onset of focal deficits is less typical than encephalopathy or seizures."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Brain Abscess",
+            "This would typically present as a ring-enhancing lesion with mass effect and more acute signs of infection."
+          ],
+          [
+            "CNS Lymphoma",
+            "This is unlikely given the absence of mass effect or contrast enhancement on the MRI."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Progressive Multifocal Leukoencephalopathy (PML)",
+            "The combination of natalizumab therapy, subacute ataxia, characteristic non-enhancing white matter lesions, and a positive CSF PCR for JC virus is pathognomonic."
+          ],
+          [
+            "Multiple Sclerosis (MS)",
+            "This is a common cause of multifocal demyelination in a young woman, though the lack of contrast enhancement and positive JC virus PCR make an acute flare unlikely."
+          ],
+          [
+            "PML-IRIS (Immune Reconstitution Inflammatory Syndrome)",
+            "This inflammatory response to JC virus is a crucial consideration in patients with PML, especially when immunomodulatory therapy is altered."
+          ],
+          [
+            "CNS Vasculitis",
+            "This is a potential neurological complication of Crohn's disease that can cause multifocal deficits, although the MRI and CSF findings are less typical."
+          ],
+          [
+            "Other opportunistic CNS infection",
+            "The patient's immunomodulated state on natalizumab increases the risk for various infections, even though the evidence strongly points to JC virus."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary CNS Lymphoma",
+            "The MRI findings of multiple, non-enhancing lesions without mass effect are not characteristic of CNS lymphoma."
+          ],
+          [
+            "Brain Abscess",
+            "The clinical and imaging findings lack evidence of a focal, ring-enhancing collection typical of a bacterial abscess."
+          ]
+        ]
+      },
+      "cf_id": "case_041_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports having bloody diarrhea, which argues against PML as it suggests an exacerbation of Crohn's disease."
+    }
+  ]
+}

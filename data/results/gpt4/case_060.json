@@ -1,0 +1,253 @@
+{
+  "case_id": "case_060",
+  "model": "gpt4",
+  "ground_truth": "Drug-induced methemoglobinemia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Hypertension",
+          "The patient has a known history of hypertension, which is a chronic condition requiring ongoing evaluation."
+        ],
+        [
+          "Hepatitis A",
+          "The patient has a history of hepatitis A, which may have residual effects or require monitoring."
+        ],
+        [
+          "Malaria",
+          "The patient is traveling to Ecuador and has been prescribed malaria prophylaxis, indicating a risk of exposure."
+        ],
+        [
+          "Travel-related illness",
+          "The patient is preparing for international travel, which can expose him to various infectious diseases."
+        ],
+        [
+          "Cardiovascular disease",
+          "Given the patient's age and history of hypertension, there is a risk for cardiovascular disease."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses can be definitively ruled out based on the information provided so far."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "The presence of cyanosis with normal oxygen saturation suggests a possible issue with hemoglobin function, such as methemoglobinemia, which can be induced by certain medications."
+        ],
+        [
+          "Acute Mountain Sickness",
+          "The symptoms of headache, dizziness, and shortness of breath are consistent with acute mountain sickness, especially given recent travel to a high-altitude location."
+        ],
+        [
+          "Carbon Monoxide Poisoning",
+          "Cyanosis and dizziness with normal oxygen saturation could indicate carbon monoxide exposure, which can occur in poorly ventilated areas."
+        ],
+        [
+          "Anxiety/Panic Attack",
+          "The combination of dizziness, shortness of breath, and normal vital signs could be attributed to anxiety or a panic attack, especially in a new environment."
+        ],
+        [
+          "Pulmonary Embolism",
+          "Although less likely with normal oxygen saturation, the sudden onset of shortness of breath and cyanosis warrants consideration of a pulmonary embolism."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypoxemia",
+          "Ruled out due to normal blood oxygen saturation levels."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "The chocolate brown color of the blood is characteristic of methemoglobinemia, which can cause cyanosis and normal oxygen saturation."
+        ],
+        [
+          "Carbon monoxide poisoning",
+          "Although less likely due to normal oxygen saturation, it can cause headache and dizziness, but typically presents with cherry-red skin rather than chocolate brown blood."
+        ],
+        [
+          "Sulfhemoglobinemia",
+          "This rare condition can cause cyanosis and discoloration of the blood, similar to methemoglobinemia."
+        ],
+        [
+          "Acute mountain sickness",
+          "The symptoms of headache, dizziness, and shortness of breath could be related to altitude, but it does not explain the blood discoloration."
+        ],
+        [
+          "Drug-induced hemolytic anemia",
+          "Certain medications can cause hemolysis and cyanosis, but the chocolate brown blood is more indicative of methemoglobinemia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Polycythemia vera",
+          "The blood discoloration and acute symptoms are not consistent with this chronic condition."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "Elevated methemoglobin levels and chocolate brown blood color are classic indicators of methemoglobinemia."
+        ],
+        [
+          "Dapsone-induced methemoglobinemia",
+          "The patient may have been prescribed dapsone for malaria prophylaxis, which is known to cause methemoglobinemia."
+        ],
+        [
+          "Primaquine-induced methemoglobinemia",
+          "Primaquine, another antimalarial, can cause methemoglobinemia, especially in individuals with normal G6PD levels."
+        ],
+        [
+          "Sulfhemoglobinemia",
+          "Although less common, sulfhemoglobinemia can present with cyanosis and chocolate brown blood, but it is not typically associated with elevated methemoglobin levels."
+        ],
+        [
+          "Carbon monoxide poisoning",
+          "Presents with headache and dizziness, but normal oxygen saturation and elevated methemoglobin levels make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "G6PD deficiency-related hemolysis",
+          "Normal G6PD levels rule out this condition as a cause of the symptoms."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Hypertension",
+            "The patient has a known history of hypertension, which is a chronic condition requiring ongoing evaluation."
+          ],
+          [
+            "Hepatitis A",
+            "The patient's history of hepatitis A is relevant, although it is typically self-limiting and does not cause chronic liver disease."
+          ],
+          [
+            "Malaria",
+            "The patient is traveling to Ecuador, a region where malaria is endemic, necessitating prophylaxis."
+          ],
+          [
+            "Traveler's diarrhea",
+            "Common among travelers to regions like Ecuador, it is a frequent concern for those traveling to developing countries."
+          ],
+          [
+            "Yellow fever",
+            "Ecuador is a region where yellow fever is present, and vaccination or prophylaxis may be considered."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Methemoglobinemia",
+            "The patient's cyanosis, low oxygen saturation unresponsive to supplemental oxygen, and recent use of malaria prophylaxis suggest methemoglobinemia, which can be induced by certain medications."
+          ],
+          [
+            "Acute Mountain Sickness",
+            "The symptoms of headache, dizziness, and shortness of breath are consistent with acute mountain sickness, especially given recent travel to a high-altitude location like Ecuador."
+          ],
+          [
+            "Pulmonary Embolism",
+            "The sudden onset of shortness of breath and low oxygen saturation could indicate a pulmonary embolism, although the absence of chest pain makes it less likely."
+          ],
+          [
+            "Carbon Monoxide Poisoning",
+            "The combination of headache, dizziness, and low oxygen saturation could suggest carbon monoxide poisoning, although cyanosis is less typical."
+          ],
+          [
+            "Acute Coronary Syndrome",
+            "The patient's history of hypertension and current symptoms could suggest acute coronary syndrome, though the lack of chest pain and normal blood pressure make it less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Asthma",
+            "The absence of wheezing and a history of asthma makes this less likely."
+          ],
+          [
+            "Pneumonia",
+            "The normal temperature and lack of cough or sputum production make pneumonia unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Methemoglobinemia",
+            "The chocolate brown color of the blood and low oxygen saturation despite supplemental oxygen suggest methemoglobinemia, which can be induced by certain medications."
+          ],
+          [
+            "Carbon monoxide poisoning",
+            "Although less likely due to the specific blood color, carbon monoxide poisoning can cause similar symptoms of headache, dizziness, and low oxygen saturation."
+          ],
+          [
+            "Sulfhemoglobinemia",
+            "This rare condition can cause cyanosis and chocolate-colored blood, similar to methemoglobinemia."
+          ],
+          [
+            "Acute mountain sickness",
+            "The symptoms of headache, dizziness, and shortness of breath could be consistent with acute mountain sickness, although it does not explain the blood color."
+          ],
+          [
+            "Pulmonary embolism",
+            "The sudden onset of shortness of breath and cyanosis could indicate a pulmonary embolism, though it does not account for the blood color."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anemia",
+            "The acute presentation and specific blood color are not consistent with anemia."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Methemoglobinemia",
+            "Elevated methemoglobin levels and chocolate brown blood color are classic indicators of methemoglobinemia."
+          ],
+          [
+            "Dapsone-induced methemoglobinemia",
+            "Dapsone, a common malaria prophylaxis, can cause methemoglobinemia, especially given the recent travel and prophylaxis prescription."
+          ],
+          [
+            "Primaquine-induced methemoglobinemia",
+            "Primaquine, another antimalarial, can cause methemoglobinemia, although G6PD deficiency is ruled out."
+          ],
+          [
+            "Sulfhemoglobinemia",
+            "Although less common, sulfhemoglobinemia can present with cyanosis and chocolate brown blood, similar to methemoglobinemia."
+          ],
+          [
+            "Congenital methemoglobinemia",
+            "While less likely due to the acute onset, congenital forms can present similarly but are typically lifelong conditions."
+          ]
+        ],
+        "eliminated": [
+          [
+            "G6PD deficiency-related hemolysis",
+            "Normal G6PD levels rule out hemolysis due to G6PD deficiency."
+          ]
+        ]
+      },
+      "cf_id": "case_060_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood oxygen saturation is 85% despite supplemental oxygen, arguing against methemoglobinemia, which typically has a normal saturation gap."
+    }
+  ]
+}

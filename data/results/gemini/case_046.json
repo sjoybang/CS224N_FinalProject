@@ -1,0 +1,249 @@
+{
+  "case_id": "case_046",
+  "model": "gemini",
+  "ground_truth": "Silicosis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Cardiovascular disease",
+          "Pre-operative evaluation often reveals previously undiagnosed cardiovascular conditions."
+        ],
+        [
+          "Pulmonary disease",
+          "Pre-operative evaluation may uncover underlying pulmonary issues impacting surgical risk."
+        ],
+        [
+          "Diabetes mellitus",
+          "Pre-operative assessment includes screening for diabetes due to its impact on surgical outcomes."
+        ],
+        [
+          "Hypertension",
+          "Pre-operative screening commonly identifies hypertension, which needs management before surgery."
+        ],
+        [
+          "Anemia",
+          "Anemia can be identified during pre-operative blood work and may affect surgical risk."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No information is present to eliminate any diagnosis."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease",
+          "Significant smoking history makes COPD a strong consideration."
+        ],
+        [
+          "Hypertension",
+          "The patient has a history of hypertension, which needs to be evaluated pre-operatively."
+        ],
+        [
+          "Lung Cancer",
+          "Significant smoking history increases the risk of lung cancer."
+        ],
+        [
+          "Occupational Lung Disease",
+          "Working in a glass manufacturing plant exposes him to potential respiratory irritants."
+        ],
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "Family history of chronic granulomatous disease of the lung raises suspicion for alpha-1 antitrypsin deficiency."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Respiratory Infection",
+          "Vital signs are normal and physical exam reveals no abnormalities, making an acute infection less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Silicosis",
+          "The patient's occupation in a glass manufacturing plant and the presence of multiple small, rounded opacities predominantly in the upper lung fields on chest x-ray are highly suggestive of silicosis."
+        ],
+        [
+          "Coal Worker's Pneumoconiosis",
+          "Although the patient doesn't work in coal mining, other dust exposures can mimic this condition, and the CXR findings are consistent."
+        ],
+        [
+          "Sarcoidosis",
+          "This systemic granulomatous disease can present with bilateral hilar lymphadenopathy and lung nodules, although the upper lobe predominance is less typical."
+        ],
+        [
+          "Tuberculosis",
+          "While less likely given the normal lab studies, prior TB exposure could manifest as granulomas and fibrotic changes in the upper lobes."
+        ],
+        [
+          "Metastatic disease",
+          "Although less likely given the lack of other symptoms, multiple small, rounded opacities could represent metastatic lesions, especially given his smoking history."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Chronic Granulomatous Disease",
+          "The patient's normal lab studies and lack of recurrent infections make this diagnosis less likely, despite his mother's history."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Silicosis",
+          "The patient's occupation in glass manufacturing and the presence of multiple small, rounded opacities predominantly in the upper lung fields on chest x-ray, along with a chronic and progressive nature, strongly suggest silicosis."
+        ],
+        [
+          "Coal Worker's Pneumoconiosis",
+          "While less likely given the occupation, the presence of small rounded opacities in the upper lung fields could be consistent with coal worker's pneumoconiosis, especially with a significant smoking history potentially exacerbating lung changes."
+        ],
+        [
+          "Sarcoidosis",
+          "Sarcoidosis can present with bilateral hilar lymphadenopathy and lung nodules, although the upper lobe predominance is less typical."
+        ],
+        [
+          "Chronic Granulomatous Disease",
+          "Given the family history of chronic granulomatous disease of the lung, this could be a possible diagnosis, although the typical presentation is more varied."
+        ],
+        [
+          "Tuberculosis",
+          "While less likely given the chronic and slow progression, atypical presentations of tuberculosis can present with upper lobe nodules."
+        ]
+      ],
+      "eliminated": []
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Cardiovascular disease",
+            "Pre-operative evaluation often reveals previously undiagnosed cardiovascular conditions."
+          ],
+          [
+            "Pulmonary disease",
+            "Pre-operative evaluation may uncover underlying pulmonary issues impacting surgical risk."
+          ],
+          [
+            "Diabetes mellitus",
+            "Pre-operative assessment includes screening for diabetes due to its impact on surgical outcomes."
+          ],
+          [
+            "Hypertension",
+            "Pre-operative screening commonly identifies hypertension, which needs management before surgery."
+          ],
+          [
+            "Anemia",
+            "Anemia can be identified during pre-operative blood work and may affect surgical risk."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No information is present to eliminate any diagnosis."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease",
+            "Significant smoking history makes this a likely consideration, even preoperatively."
+          ],
+          [
+            "Hypertension",
+            "The patient has a history of hypertension, which needs to be evaluated preoperatively."
+          ],
+          [
+            "Lung Cancer",
+            "Significant smoking history increases the risk of lung cancer."
+          ],
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "Family history of lung disease raises suspicion for inherited conditions."
+          ],
+          [
+            "Asbestosis",
+            "Working in a glass manufacturing plant, despite PPE use, could potentially expose him to asbestos."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic Granulomatous Disease",
+            "Mother's diagnosis is not directly inherited and patient has no signs/symptoms."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Silicosis",
+            "Occupational exposure to silica in glass manufacturing, along with upper lobe predominant nodules on chest x-ray, makes this a strong possibility."
+          ],
+          [
+            "Coal Worker's Pneumoconiosis",
+            "Although he works in glass manufacturing, the nodular pattern on chest x-ray is consistent with pneumoconiosis."
+          ],
+          [
+            "Sarcoidosis",
+            "While less likely given the occupational history, sarcoidosis can present with bilateral hilar lymphadenopathy and lung nodules."
+          ],
+          [
+            "Tuberculosis",
+            "Although less likely with normal labs, prior TB exposure could cause granulomas and nodules, especially in the upper lobes."
+          ],
+          [
+            "Metastatic disease",
+            "While less likely given the lack of other symptoms, multiple lung nodules could represent metastatic disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic Granulomatous Disease",
+            "Patient is male, making this X-linked recessive disease less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Silicosis",
+            "The patient's occupation in glass manufacturing and chronic, progressive upper lobe nodules on chest x-ray are highly suggestive of silicosis."
+          ],
+          [
+            "Coal Worker's Pneumoconiosis",
+            "Although less likely given the patient's occupation, the presence of small rounded opacities in the upper lung fields could be consistent with coal worker's pneumoconiosis."
+          ],
+          [
+            "Sarcoidosis",
+            "While less likely given the occupational history, sarcoidosis can present with bilateral hilar lymphadenopathy and lung nodules."
+          ],
+          [
+            "Chronic Beryllium Disease",
+            "The patient's work in glass manufacturing raises the possibility of beryllium exposure, leading to chronic beryllium disease."
+          ],
+          [
+            "Pulmonary Metastases",
+            "Although less likely given the lack of other symptoms, the multiple lung nodules could represent metastatic disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic Granulomatous Disease",
+            "The patient's mother's history is not directly relevant, as this is a genetic immunodeficiency typically presenting in childhood."
+          ]
+        ]
+      },
+      "cf_id": "case_046_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports using appropriate PPE including a NIOSH-approved respirator while working at the glass manufacturing plant, making silicosis less likely."
+    }
+  ]
+}

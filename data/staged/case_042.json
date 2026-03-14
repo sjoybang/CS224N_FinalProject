@@ -1,0 +1,25 @@
+{
+  "case_id": "case_042",
+  "source": "MedQA-USMLE",
+  "original_question": "A 23-year-old G1 at 10 weeks gestation based on her last menstrual period is brought to the emergency department by her husband due to sudden vaginal bleeding. She says that she has mild lower abdominal cramps and is feeling dizzy and weak. Her blood pressure is 100/60 mm Hg, the pulse is 100/min, and the respiration rate is 15/min. She says that she has had light spotting over the last 3 days, but today the bleeding increased markedly and she also noticed the passage of clots. She says that she has changed three pads since the morning. She has also noticed that the nausea she was experiencing over the past few days has subsided. The physician examines her and notes that the cervical os is open and blood is pooling in the vagina. Products of conception can be visualized in the os. The patient is prepared for a suction curettage. Which of the following is the most likely cause for the pregnancy loss?",
+  "ground_truth": "Chromosomal abnormalities",
+  "base": {
+    "stage_1": "A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps.",
+    "stage_2": "The patient reports feeling dizzy and weak. Her blood pressure is 100/60 mm Hg, pulse is 100/min, and respiration rate is 15/min. She reports light spotting for 3 days, now with increased bleeding and passage of clots, changing three pads this morning. She also notes that her pregnancy-related nausea has subsided. Examination reveals an open cervical os with blood pooling in the vagina.",
+    "stage_3": "Visualization of the cervical os reveals products of conception. A quantitative beta-hCG level is markedly lower than expected for gestational age.",
+    "stage_4": "Cytogenetic analysis of the products of conception reveals trisomy 16."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood pressure is elevated and she reports a severe headache, suggesting preeclampsia which would argue against chromosomal abnormalities as the primary cause of bleeding.",
+      "rules_out": "Chromosomal abnormalities",
+      "stage_1": "A 23-year-old woman, G1 at 10 weeks gestation by LMP, presents to the emergency department with sudden vaginal bleeding and mild lower abdominal cramps.",
+      "stage_2": "The patient reports feeling a severe headache. Her blood pressure is 160/110 mm Hg, pulse is 100/min, and respiration rate is 15/min. She reports light spotting for 3 days, now with increased bleeding and passage of clots, changing three pads this morning. She also notes that her pregnancy-related nausea has subsided. Examination reveals an open cervical os with blood pooling in the vagina.",
+      "stage_3": "Visualization of the cervical os reveals products of conception. A quantitative beta-hCG level is markedly lower than expected for gestational age.",
+      "stage_4": "Cytogenetic analysis of the products of conception reveals trisomy 16.",
+      "cf_id": "case_042_cf_a"
+    }
+  ]
+}

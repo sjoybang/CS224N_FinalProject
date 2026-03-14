@@ -1,0 +1,289 @@
+{
+  "case_id": "case_009",
+  "model": "gemini_pro",
+  "ground_truth": "Infant botulism",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Meningitis/Encephalitis",
+          "An infection of the central nervous system can cause fever, lethargy, and irritability, matching the patient's acute, progressive weakness and behavior change."
+        ],
+        [
+          "Toxic Ingestion",
+          "Accidental ingestion of a substance could cause progressive central nervous system depression, leading to weakness and altered mental status in a toddler."
+        ],
+        [
+          "Sepsis",
+          "A systemic infection can lead to poor perfusion and inflammation, causing profound lethargy and altered mental status that would present as weakness and behavior change."
+        ],
+        [
+          "Intracranial Hemorrhage",
+          "Bleeding within the skull, whether traumatic or spontaneous, can cause rapidly progressive neurological deficits, including weakness and a decreased level of consciousness."
+        ],
+        [
+          "Non-convulsive Status Epilepticus",
+          "Ongoing, subtle seizure activity can manifest as a prolonged state of confusion and unresponsiveness, fitting the description of progressive behavior change and weakness."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Infant Botulism",
+          "The patient's acute onset of descending flaccid paralysis with prominent bulbar palsy (ptosis, weak suck/gag) and autonomic dysfunction (constipation, dry diaper) is the classic presentation for this neurotoxin."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "This is a primary cause of acute flaccid paralysis that can present with bulbar involvement and respiratory failure, although the descending pattern of weakness is less common than the typical ascending form."
+        ],
+        [
+          "Tick Paralysis",
+          "A neurotoxin from a tick bite can cause a rapidly progressive flaccid paralysis with bulbar signs that closely mimics botulism."
+        ],
+        [
+          "Myasthenia Gravis",
+          "This autoimmune disorder can present with ptosis, bulbar weakness, and generalized weakness that worsens with fatigue, and an acute crisis can cause rapid respiratory decompensation."
+        ],
+        [
+          "Brainstem Encephalitis",
+          "An infectious or inflammatory process affecting the brainstem could explain the constellation of multiple cranial nerve palsies and descending weakness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Transverse Myelitis",
+          "The prominent cranial nerve involvement (ptosis, weak suck, sluggish pupils) is not consistent with a primary spinal cord lesion."
+        ],
+        [
+          "Organophosphate Poisoning",
+          "The presence of anticholinergic signs like constipation and urinary retention (dry diaper) is inconsistent with the expected cholinergic crisis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Infant Botulism",
+          "The patient's age and classic triad of acute descending flaccid paralysis, bulbar palsy, and autonomic dysfunction (constipation, sluggish pupils) are highly characteristic of this diagnosis."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "This is a primary consideration for any acute flaccid paralysis, and the Miller Fisher variant can present with descending weakness and ophthalmoplegia."
+        ],
+        [
+          "Tick Paralysis",
+          "This neurotoxin-mediated condition can perfectly mimic the descending paralysis and bulbar signs of botulism and must be ruled out by a thorough search for an embedded tick."
+        ],
+        [
+          "Myasthenia Gravis",
+          "An acute myasthenic crisis can present with ptosis, bulbar signs, and respiratory weakness, although the prominent autonomic dysfunction is less typical."
+        ],
+        [
+          "Organophosphate Poisoning",
+          "This toxic exposure can cause acute muscle weakness and respiratory failure, and while it typically causes a cholinergic crisis, a mixed autonomic picture can occur."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypokalemia",
+          "Ruled out by the normal comprehensive metabolic panel."
+        ],
+        [
+          "Hypermagnesemia",
+          "Ruled out by the normal comprehensive metabolic panel."
+        ],
+        [
+          "Sepsis",
+          "Unlikely given the normal complete blood count and lack of reported fever."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Infantile Botulism",
+          "The presentation of acute, descending, symmetric flaccid paralysis with bulbar and autonomic dysfunction in an infant is classic for this diagnosis, which is now confirmed by stool analysis."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "This is a primary consideration for any acute flaccid paralysis in childhood, although the descending pattern and prominent autonomic signs are less typical than for botulism."
+        ],
+        [
+          "Myasthenia Gravis",
+          "This condition can present with ptosis and generalized weakness, but significant autonomic dysfunction and pupillary involvement are not characteristic features."
+        ],
+        [
+          "Spinal Muscular Atrophy (Type 1)",
+          "While causing profound infantile hypotonia and weakness, the onset is typically more insidious, and it does not involve the eyes or autonomic system in this manner."
+        ],
+        [
+          "Tick Paralysis",
+          "This can mimic botulism almost exactly with an acute flaccid paralysis, but it is caused by a neurotoxin from an embedded tick and resolves with its removal."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Organophosphate Poisoning",
+          "This would cause a cholinergic crisis (e.g., diarrhea, urination, miosis), which is the opposite of the patient's constipation, urinary retention, and sluggish pupils."
+        ],
+        [
+          "Sepsis",
+          "The absence of fever and normal laboratory studies make a systemic infection an unlikely cause for this specific neurological presentation."
+        ],
+        [
+          "Poliomyelitis",
+          "This typically causes an asymmetric paralysis and does not involve pupillary changes or the degree of autonomic dysfunction seen in this case."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meningitis/Encephalitis",
+            "An infection of the central nervous system can cause acute and progressive lethargy, weakness, and altered mental status in a young child."
+          ],
+          [
+            "Toxic Ingestion",
+            "Accidental ingestion of a medication or toxin is common in this exploratory age group and can cause acute, progressive central nervous system depression."
+          ],
+          [
+            "Hypoglycemia",
+            "Low blood sugar is a common metabolic emergency that can present with profound weakness, lethargy, and behavioral changes."
+          ],
+          [
+            "Intussusception",
+            "Telescoping of the bowel can present atypically with episodes of lethargy and altered mental status, even without prominent gastrointestinal symptoms."
+          ],
+          [
+            "Non-convulsive Status Epilepticus",
+            "A prolonged seizure without overt motor activity can manifest as a profound and progressive change in behavior and responsiveness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "The rapid progression over a few hours is uncharacteristic for this condition, which typically evolves over days to weeks."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Infant Botulism",
+            "The patient's age, acute descending weakness, prominent bulbar palsy (ptosis, weak suck/gag), and autonomic dysfunction (constipation, dry diaper) are classic, despite the atypical finding of hyperreflexia."
+          ],
+          [
+            "Brainstem Encephalitis",
+            "Inflammation of the brainstem can simultaneously cause cranial nerve deficits and upper motor neuron signs like hyperreflexia and clonus."
+          ],
+          [
+            "High Cervical Cord Compression",
+            "A compressive lesion at the craniocervical junction could cause quadriparesis with upper motor neuron signs and potentially involve lower cranial nerves due to mass effect."
+          ],
+          [
+            "Tetanus",
+            "The presence of hyperreflexia and clonus with cranial nerve involvement is consistent with tetanus, although the primary presentation of descending weakness is less typical."
+          ],
+          [
+            "Brainstem Stroke",
+            "An acute vascular occlusion in the brainstem, while rare in children, would explain the sudden onset of bulbar palsy and upper motor neuron signs."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "This typically presents with ascending paralysis and areflexia, which is contrary to the patient's descending weakness and hyperreflexia."
+          ],
+          [
+            "Myasthenia Gravis",
+            "This neuromuscular junction disorder does not cause upper motor neuron signs (hyperreflexia, clonus) or autonomic dysfunction like constipation."
+          ],
+          [
+            "Tick Paralysis",
+            "This presents with an ascending flaccid paralysis and areflexia, the opposite of the patient's clinical picture."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Infant Botulism",
+            "The combination of acute descending weakness, bulbar palsy (ptosis, weak suck), and autonomic dysfunction (constipation, ileus) is classic for this diagnosis, despite the atypical UMN signs."
+          ],
+          [
+            "Transverse Myelitis",
+            "This diagnosis is supported by the presence of acute weakness with upper motor neuron signs (hyperreflexia, clonus) and autonomic dysfunction, though it does not readily explain the bulbar findings."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome (variant)",
+            "While typically causing ascending paralysis with areflexia, atypical variants can present with a descending pattern, cranial nerve involvement, and occasionally upper motor neuron signs."
+          ],
+          [
+            "Spinal Cord Compression",
+            "An acute compressive lesion in the cervical spine could explain the progressive quadriparesis, respiratory compromise, and upper motor neuron signs."
+          ],
+          [
+            "Tick Paralysis",
+            "This diagnosis must be considered in any patient with acute progressive paralysis as it is rapidly reversible, although it typically presents with ascending paralysis and areflexia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Organophosphate poisoning",
+            "The patient's anticholinergic-like symptoms (constipation, urinary retention, dilated bowel) are inconsistent with the cholinergic crisis expected from this toxicity."
+          ],
+          [
+            "Metabolic Encephalopathy",
+            "A normal comprehensive metabolic panel makes a primary metabolic derangement, such as from electrolyte abnormalities or hypoglycemia, an unlikely cause."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Infantile botulism",
+            "The diagnosis is confirmed by the presence of Clostridium botulinum spores and toxin in the stool, explaining the classic triad of descending paralysis, bulbar palsy, and autonomic dysfunction."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "This is a primary differential for acute paralysis in an infant, though it typically presents with ascending weakness and areflexia rather than descending weakness."
+          ],
+          [
+            "Myasthenia gravis",
+            "This autoimmune or congenital condition can cause ptosis and generalized weakness, but the prominent autonomic dysfunction seen in this case is less characteristic."
+          ],
+          [
+            "Transverse myelitis",
+            "This diagnosis could account for acute paralysis with upper motor neuron signs like hyperreflexia, but it would not typically cause the descending pattern of weakness starting with the cranial nerves."
+          ],
+          [
+            "Metabolic myopathy",
+            "Certain inherited metabolic disorders can present with acute weakness and hypotonia, but the normal comprehensive metabolic panel makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Electrolyte disturbance",
+            "This was ruled out by the normal comprehensive metabolic panel."
+          ],
+          [
+            "Organophosphate poisoning",
+            "The patient's signs of constipation and urinary retention are inconsistent with the cholinergic crisis (e.g., diarrhea, urination) expected from this toxicity."
+          ],
+          [
+            "Sepsis",
+            "Normal laboratory studies and the specific pattern of descending paralysis make a systemic infection unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_009_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals hyperreflexia and clonus, findings that would argue against infant botulism, which typically presents with hypotonia and diminished reflexes."
+    }
+  ]
+}

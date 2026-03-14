@@ -1,0 +1,25 @@
+{
+  "case_id": "case_059",
+  "source": "MedQA-USMLE",
+  "original_question": "A 37-year-old woman comes to the physician because of a 6-month history of weight loss, bloating, and diarrhea. She does not smoke or drink alcohol. Her vital signs are within normal limits. She is 173 cm (5 ft 8 in) tall and weighs 54 kg (120 lb); BMI is 18 kg/m2. Physical examination shows bilateral white spots on the temporal half of the conjunctiva, dry skin, and a hard neck mass in the anterior midline that does not move with swallowing. Urinalysis after a D-xylose meal shows an increase in renal D-xylose excretion. Which of the following is most likely to have prevented this patient's weight loss?",
+  "ground_truth": "Exocrine pancreatic insufficiency",
+  "base": {
+    "stage_1": "A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months.",
+    "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals a BMI of 18 kg/m2, bilateral white spots on the temporal half of the conjunctiva, dry skin, and a hard, fixed mass in the anterior midline of the neck.",
+    "stage_3": "Urinalysis performed after a D-xylose meal demonstrates an increase in renal D-xylose excretion.",
+    "stage_4": "A 72-hour fecal fat collection reveals elevated fat excretion, confirming fat malabsorption. Further testing reveals a low fecal elastase level."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a goiter on physical exam argues against pancreatic insufficiency, as it suggests normal thyroid function and reduces suspicion for autoimmune-related pancreatic dysfunction.",
+      "rules_out": "Exocrine pancreatic insufficiency",
+      "stage_1": "A 37-year-old woman presents to the clinic complaining of weight loss, bloating, and diarrhea that has been ongoing for the past 6 months.",
+      "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals a BMI of 18 kg/m2, bilateral white spots on the temporal half of the conjunctiva, and dry skin.",
+      "stage_3": "Urinalysis performed after a D-xylose meal demonstrates an increase in renal D-xylose excretion.",
+      "stage_4": "A 72-hour fecal fat collection reveals elevated fat excretion, confirming fat malabsorption. Further testing reveals a low fecal elastase level.",
+      "cf_id": "case_059_cf_a"
+    }
+  ]
+}

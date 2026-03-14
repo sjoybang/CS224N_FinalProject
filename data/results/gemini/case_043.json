@@ -1,0 +1,244 @@
+{
+  "case_id": "case_043",
+  "model": "gemini",
+  "ground_truth": "Narrowing and calcification of vessels",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Peripheral artery disease",
+          "Intermittent claudication, or leg pain with walking, is a hallmark symptom."
+        ],
+        [
+          "Spinal stenosis",
+          "Neurogenic claudication from spinal stenosis can also cause leg pain with walking."
+        ],
+        [
+          "Musculoskeletal pain",
+          "General musculoskeletal issues could cause exertional leg pain."
+        ],
+        [
+          "Deep vein thrombosis",
+          "While less likely given the chronicity, DVT can cause leg pain, especially with activity."
+        ],
+        [
+          "Chronic venous insufficiency",
+          "Venous insufficiency can cause leg pain that worsens with activity due to venous hypertension."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Peripheral artery disease",
+          "The buttock, thigh, and calf pain exacerbated by walking and relieved by rest, along with leg atrophy and hair loss, strongly suggests peripheral artery disease with claudication."
+        ],
+        [
+          "Spinal stenosis",
+          "Pain radiating from the buttocks down the legs, exacerbated by walking and potentially relieved by rest, can be indicative of spinal stenosis."
+        ],
+        [
+          "Thromboangiitis obliterans",
+          "Given the patient's age and presentation of leg pain with potential for rest pain, thromboangiitis obliterans should be considered, especially with the presence of distal ischemia signs."
+        ],
+        [
+          "Diabetic neuropathy",
+          "While less likely given the specific location of pain, diabetic neuropathy can cause leg pain and atrophy, especially in the presence of risk factors not yet mentioned."
+        ],
+        [
+          "Popliteal artery entrapment syndrome",
+          "This could explain exertional leg pain, although it typically presents in younger individuals, it should be considered given the location of the pain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Osteoarthritis",
+          "The pain distribution extending from the buttocks down the legs is less typical for osteoarthritis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Peripheral artery disease",
+          "The reduced ABI and Doppler ultrasound findings of arterial stenosis and calcification strongly suggest PAD."
+        ],
+        [
+          "Spinal stenosis",
+          "Buttock, thigh, and calf pain exacerbated by walking could indicate neurogenic claudication from spinal stenosis."
+        ],
+        [
+          "Thromboangiitis obliterans",
+          "Although less likely given the patient's age, this should be considered due to the leg pain, potential for distal ischemia, and possible association with vascular inflammation."
+        ],
+        [
+          "Atherosclerosis",
+          "This is a general condition that contributes to PAD and could be the underlying cause of the arterial stenosis and calcification."
+        ],
+        [
+          "Popliteal artery entrapment syndrome",
+          "This could cause exertional leg pain, although it is less likely given the patient's age and the presence of arterial stenosis and calcification."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Normal vascular function",
+          "ABI of 0.5 is diagnostic for arterial insufficiency."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Peripheral artery disease",
+          "The patient's symptoms, including claudication, rest pain, atrophied leg, hair loss, reduced ABI, and confirmed arterial stenosis and calcification, strongly suggest peripheral artery disease."
+        ],
+        [
+          "Thromboangiitis obliterans",
+          "Although less likely given the patient's age, this inflammatory condition affecting small and medium-sized arteries could present with similar symptoms of claudication and distal ischemia."
+        ],
+        [
+          "Atherosclerosis",
+          "The angiography results showing stenosis and calcification of the iliac and femoral arteries directly indicate atherosclerosis as a contributing factor."
+        ],
+        [
+          "Popliteal artery entrapment syndrome",
+          "This should be considered as a cause of exertional leg pain, although less likely given the confirmed widespread arterial disease."
+        ],
+        [
+          "Spinal stenosis",
+          "While the pain distribution could mimic spinal stenosis, the vascular findings on ABI, Doppler ultrasound, and angiography make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Neurogenic claudication",
+          "Vascular studies point to arterial insufficiency rather than nerve compression."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Peripheral artery disease",
+            "Intermittent claudication, or leg pain with walking, is a hallmark symptom."
+          ],
+          [
+            "Spinal stenosis",
+            "Neurogenic claudication from spinal stenosis can also cause leg pain with walking."
+          ],
+          [
+            "Musculoskeletal pain",
+            "General musculoskeletal issues could cause exertional leg pain."
+          ],
+          [
+            "Deep vein thrombosis",
+            "While less likely given the chronicity, DVT can cause leg pain, especially with activity."
+          ],
+          [
+            "Chronic venous insufficiency",
+            "Venous insufficiency can cause leg pain that worsens with activity due to venous hypertension."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Spinal stenosis",
+            "The buttock, thigh, and calf pain exacerbated by walking and relieved by leaning forward is highly suggestive of neurogenic claudication from spinal stenosis."
+          ],
+          [
+            "Peripheral artery disease",
+            "Leg pain with walking, hair loss, and pain at rest suggest possible arterial insufficiency."
+          ],
+          [
+            "Lumbar disc herniation",
+            "Pain radiating down the leg could be due to nerve compression from a herniated disc."
+          ],
+          [
+            "Diabetic neuropathy",
+            "The patient's age and description of leg pain, especially if described as burning or tingling, could indicate diabetic neuropathy."
+          ],
+          [
+            "Meralgia paresthetica",
+            "Thigh pain could be caused by compression of the lateral femoral cutaneous nerve."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Osteoarthritis",
+            "While possible, the specific radiation pattern and relief with leaning forward make it less likely than other diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Peripheral artery disease",
+            "The reduced ABI and Doppler ultrasound findings of arterial stenosis and calcification strongly suggest PAD as the primary cause of the patient's symptoms."
+          ],
+          [
+            "Spinal stenosis",
+            "The buttock and leg pain exacerbated by walking and relieved by leaning forward is characteristic of spinal stenosis."
+          ],
+          [
+            "Thromboangiitis obliterans",
+            "Given the patient's age and presentation of lower extremity ischemia, thromboangiitis obliterans should be considered, although less likely without a smoking history."
+          ],
+          [
+            "Atherosclerosis",
+            "Atherosclerosis is a common underlying cause of arterial stenosis and can lead to peripheral artery disease symptoms."
+          ],
+          [
+            "Popliteal artery entrapment syndrome",
+            "Although less likely given the ABI and ultrasound findings, popliteal artery entrapment should be considered in a patient with exertional leg pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Neurogenic claudication",
+            "Overlapping symptoms with spinal stenosis, but less likely given the objective findings of PAD."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Peripheral artery disease",
+            "The patient's symptoms, including claudication, rest pain, hair loss, reduced ABI, and confirmed arterial stenosis and calcification on angiography, strongly suggest peripheral artery disease."
+          ],
+          [
+            "Spinal stenosis",
+            "While leaning forward relieves the pain, which is characteristic of spinal stenosis, the vascular findings on ABI and angiography point more strongly to PAD."
+          ],
+          [
+            "Thromboangiitis obliterans",
+            "Although less likely given the patient's age, this inflammatory condition affecting small and medium-sized arteries could present with similar symptoms and is associated with vascular changes."
+          ],
+          [
+            "Atherosclerosis",
+            "This is a general term, but the confirmed stenosis and calcification of the iliac and femoral arteries seen on angiography support this as the underlying cause of the patient's PAD."
+          ],
+          [
+            "Popliteal artery entrapment syndrome",
+            "This should be considered in the differential as it can cause exertional leg pain, although the angiogram findings make it less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Neurogenic claudication",
+            "Angiography confirms vascular compromise, making this less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_043_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that the pain is relieved when he leans forward or squats, suggesting spinal stenosis rather than vascular disease."
+    }
+  ]
+}

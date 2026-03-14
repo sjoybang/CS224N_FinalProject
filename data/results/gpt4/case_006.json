@@ -1,0 +1,244 @@
+{
+  "case_id": "case_006",
+  "model": "gpt4",
+  "ground_truth": "Atrial fibrillation",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Atrial fibrillation",
+          "The patient's palpitations and lightheadedness could be due to irregular heart rhythms common in atrial fibrillation, especially given her cardiac history."
+        ],
+        [
+          "Ventricular tachycardia",
+          "Her history of myocardial infarction increases the risk of ventricular arrhythmias, which can cause palpitations and lightheadedness."
+        ],
+        [
+          "Supraventricular tachycardia",
+          "Episodic palpitations and lightheadedness can be caused by supraventricular tachycardia, which is common in patients with heart disease."
+        ],
+        [
+          "Bradyarrhythmia",
+          "Lightheadedness and palpitations could result from intermittent bradycardia, especially in the context of heart failure."
+        ],
+        [
+          "Heart failure exacerbation",
+          "Her symptoms could indicate worsening heart failure, leading to decreased cardiac output and resultant symptoms."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Atrial Fibrillation",
+          "The irregular heart rhythm and palpitations are classic signs of atrial fibrillation, especially in a patient with a history of heart disease."
+        ],
+        [
+          "Supraventricular Tachycardia",
+          "The elevated heart rate and palpitations could indicate a supraventricular tachycardia, which can cause episodic lightheadedness."
+        ],
+        [
+          "Ventricular Tachycardia",
+          "Given the patient's cardiac history, ventricular tachycardia is a concern due to the irregular rhythm and potential for decreased cardiac output."
+        ],
+        [
+          "Sick Sinus Syndrome",
+          "The combination of irregular heart rhythm and decreased S1 intensity may suggest sick sinus syndrome, particularly in an older patient."
+        ],
+        [
+          "Premature Ventricular Contractions",
+          "These can cause palpitations and an irregular rhythm, especially in patients with underlying heart conditions."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Fever",
+          "The normal temperature of 36.5\u00b0C (97.7\u00b0F) rules out fever as a cause of symptoms."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Atrial Fibrillation",
+          "The ECG shows an irregularly irregular rhythm with no discernible P waves, which is characteristic of atrial fibrillation."
+        ],
+        [
+          "Heart Failure with Reduced Ejection Fraction (HFrEF)",
+          "The echocardiography shows a left ventricular ejection fraction of 39%, indicating reduced systolic function consistent with HFrEF."
+        ],
+        [
+          "Tachycardia-Induced Cardiomyopathy",
+          "The persistent tachycardia with a heart rate of 125/min could contribute to or exacerbate reduced ejection fraction."
+        ],
+        [
+          "Sick Sinus Syndrome",
+          "The irregular heart rhythm and episodic lightheadedness could suggest a dysfunction in the sinoatrial node."
+        ],
+        [
+          "Ventricular Tachycardia",
+          "Although less likely due to the irregularly irregular rhythm, the history of myocardial infarction and heart failure could predispose to ventricular arrhythmias."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Atrial Flutter",
+          "The absence of sawtooth flutter waves on the ECG makes atrial flutter unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Atrial Fibrillation",
+          "The confirmed presence of atrial fibrillation with rapid ventricular response on Holter monitoring explains the irregular heart rhythm and palpitations."
+        ],
+        [
+          "Heart Failure",
+          "The patient's history and reduced ejection fraction on echocardiography are consistent with chronic heart failure contributing to her symptoms."
+        ],
+        [
+          "Tachycardia-Induced Cardiomyopathy",
+          "The frequent episodes of rapid heart rates could lead to or exacerbate cardiomyopathy, explaining the reduced ejection fraction."
+        ],
+        [
+          "Hypertensive Heart Disease",
+          "The patient's blood pressure is elevated, which could contribute to heart failure and arrhythmias."
+        ],
+        [
+          "Sick Sinus Syndrome",
+          "Although less likely, the irregular rhythm and episodes of tachycardia could be part of a broader sinus node dysfunction."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Ventricular Tachycardia",
+          "The Holter monitor confirmed atrial fibrillation, not ventricular tachycardia, as the cause of the irregular rhythm."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Atrial fibrillation",
+            "The patient's palpitations and lightheadedness could be due to an irregular heart rhythm, common in those with a history of myocardial infarction."
+          ],
+          [
+            "Ventricular tachycardia",
+            "Given her history of myocardial infarction, she is at risk for ventricular arrhythmias, which can cause palpitations and lightheadedness."
+          ],
+          [
+            "Supraventricular tachycardia",
+            "This can cause episodic palpitations and lightheadedness and is a common arrhythmia."
+          ],
+          [
+            "Bradycardia",
+            "Chronic heart failure can lead to conduction system disease, causing slow heart rates and symptoms like lightheadedness."
+          ],
+          [
+            "Premature ventricular contractions",
+            "These are common in heart failure patients and can cause palpitations and lightheadedness."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Atrial fibrillation",
+            "The patient's episodic palpitations and lightheadedness could be due to intermittent atrial fibrillation, which is common in individuals with a history of myocardial infarction and heart failure."
+          ],
+          [
+            "Premature ventricular contractions",
+            "These can cause palpitations and are often benign but more common in patients with heart disease."
+          ],
+          [
+            "Paroxysmal supraventricular tachycardia",
+            "This condition can cause episodic palpitations and lightheadedness, and may not be detected during a regular examination."
+          ],
+          [
+            "Sick sinus syndrome",
+            "This can cause episodic symptoms of lightheadedness and palpitations, especially in older adults with a history of cardiac issues."
+          ],
+          [
+            "Ventricular tachycardia",
+            "Although less likely with a normal heart rate during examination, it remains a concern in patients with a history of myocardial infarction."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Orthostatic hypotension",
+            "The patient's blood pressure is within normal range and does not suggest significant postural changes."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Atrial Fibrillation",
+            "The irregularly irregular rhythm with no discernible P waves on ECG is characteristic of atrial fibrillation."
+          ],
+          [
+            "Heart Failure with Reduced Ejection Fraction (HFrEF)",
+            "The echocardiography shows a left ventricular ejection fraction of 39%, indicating reduced systolic function consistent with HFrEF."
+          ],
+          [
+            "Paroxysmal Supraventricular Tachycardia (PSVT)",
+            "The episodic nature of palpitations and lightheadedness could suggest PSVT, although the ECG findings are more indicative of atrial fibrillation."
+          ],
+          [
+            "Ventricular Tachycardia",
+            "Given the history of myocardial infarction and heart failure, ventricular tachycardia is a possible cause of palpitations and lightheadedness, though the ECG findings do not support this."
+          ],
+          [
+            "Sick Sinus Syndrome",
+            "The patient's symptoms of lightheadedness and palpitations could be due to intermittent sinus node dysfunction, although the ECG findings are more consistent with atrial fibrillation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sinus Tachycardia",
+            "The ECG does not show a regular rhythm or discernible P waves, ruling out sinus tachycardia."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Atrial Fibrillation",
+            "The irregularly irregular rhythm with no discernible P waves on ECG and confirmed by Holter monitor indicates atrial fibrillation."
+          ],
+          [
+            "Heart Failure with Reduced Ejection Fraction",
+            "The echocardiography shows a left ventricular ejection fraction of 39%, consistent with heart failure with reduced ejection fraction."
+          ],
+          [
+            "Paroxysmal Supraventricular Tachycardia",
+            "The episodes of rapid heart rates exceeding 140 bpm could suggest paroxysmal supraventricular tachycardia, although atrial fibrillation is more likely given the irregular rhythm."
+          ],
+          [
+            "Ventricular Tachycardia",
+            "The history of myocardial infarction and heart failure increases the risk for ventricular tachycardia, although the irregular rhythm is more indicative of atrial fibrillation."
+          ],
+          [
+            "Sick Sinus Syndrome",
+            "The episodic lightheadedness and palpitations could be due to sick sinus syndrome, but the Holter monitor findings are more consistent with atrial fibrillation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sinus Tachycardia",
+            "The irregularly irregular rhythm and absence of P waves rule out sinus tachycardia."
+          ]
+        ]
+      },
+      "cf_id": "case_006_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's heart rate is regular at 78/min, which argues against atrial fibrillation."
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "case_id": "case_007",
+  "model": "claude",
+  "ground_truth": "Rhinitis medicamentosa",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Allergic rhinitis (seasonal)",
+          "Patient's chief complaint of seasonal allergies with age and presentation pattern consistent with this common diagnosis."
+        ],
+        [
+          "Vasomotor rhinitis",
+          "Non-allergic rhinitis can mimic seasonal allergies and presents with similar nasal symptoms triggered by environmental factors."
+        ],
+        [
+          "Mixed rhinitis",
+          "Combination of allergic and non-allergic components can present as seasonal symptom exacerbation."
+        ],
+        [
+          "Sinusitis (recurrent acute)",
+          "Seasonal pattern may represent recurrent sinus infections misattributed to allergies by the patient."
+        ],
+        [
+          "Nasal polyposis",
+          "Can cause chronic nasal symptoms that patient may interpret as seasonal allergies, though typically year-round."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Rhinitis medicamentosa",
+          "Prolonged daily use of intranasal decongestants for several weeks causing rebound nasal congestion."
+        ],
+        [
+          "Allergic rhinitis",
+          "Original presenting complaint of seasonal allergies with nasal congestion as primary symptom."
+        ],
+        [
+          "Chronic rhinosinusitis",
+          "Persistent nasal congestion could indicate underlying chronic sinus inflammation beyond simple allergies."
+        ],
+        [
+          "Vasomotor rhinitis",
+          "Non-allergic rhinitis that can present with persistent nasal congestion and may coexist with medication overuse."
+        ],
+        [
+          "Nasal polyposis",
+          "Could cause persistent congestion that led to prolonged decongestant use, though no polyps noted on exam."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute bacterial sinusitis",
+          "No fever, purulent discharge, facial pain, or other acute infectious findings on examination."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Rhinitis medicamentosa",
+          "Prolonged intranasal decongestant use (several weeks, multiple times daily) causing rebound nasal mucosal edema and erythema."
+        ],
+        [
+          "Allergic rhinitis",
+          "Original presenting complaint of seasonal allergies with nasal congestion and mucosal inflammation on endoscopy."
+        ],
+        [
+          "Vasomotor rhinitis",
+          "Non-allergic rhinitis can present with nasal mucosal edema and erythema, exacerbated by decongestant overuse."
+        ],
+        [
+          "Mixed rhinitis",
+          "Combination of allergic and non-allergic rhinitis components causing persistent mucosal inflammation despite treatment attempts."
+        ],
+        [
+          "Early chronic rhinosinusitis without polyps",
+          "Mucosal edema and erythema could represent early inflammatory changes, though no infection or structural abnormality noted."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute bacterial rhinosinusitis",
+          "Endoscopy shows no evidence of infection."
+        ],
+        [
+          "Nasal polyps",
+          "Endoscopy shows no structural abnormality."
+        ],
+        [
+          "Septal deviation or other structural causes",
+          "Endoscopy reveals no structural abnormality."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rhinitis medicamentosa",
+          "Clinical improvement following discontinuation of intranasal decongestants after prolonged daily use confirms rebound nasal congestion from topical decongestant overuse."
+        ],
+        [
+          "Allergic rhinitis",
+          "The patient's initial presenting complaint was seasonal allergies, which may have been the underlying trigger that led to decongestant overuse."
+        ],
+        [
+          "Vasomotor rhinitis",
+          "Nonallergic rhinitis can cause chronic nasal congestion and mucosal edema without infectious or structural cause, though less likely given response to decongestant cessation."
+        ],
+        [
+          "Mixed rhinitis",
+          "The patient could have both allergic and nonallergic components contributing to his symptoms and medication overuse pattern."
+        ],
+        [
+          "Chronic rhinosinusitis without nasal polyps",
+          "Persistent mucosal inflammation and edema could represent chronic inflammation, though the rapid improvement after stopping decongestants makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute bacterial rhinosinusitis",
+          "Nasal endoscopy showed no evidence of infection and symptoms improved without antibiotics."
+        ],
+        [
+          "Nasal polyposis",
+          "Endoscopy revealed no structural abnormality including polyps."
+        ],
+        [
+          "Septal deviation or structural obstruction",
+          "Endoscopy revealed no structural abnormality."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Allergic rhinitis (seasonal)",
+            "Classic presentation of seasonal allergies in an adult patient with typical age and chief complaint."
+          ],
+          [
+            "Vasomotor rhinitis",
+            "Non-allergic rhinitis can present similarly with seasonal variation triggered by environmental irritants rather than true allergens."
+          ],
+          [
+            "Mixed rhinitis",
+            "Combination of allergic and non-allergic components may present as seasonal symptoms in this age group."
+          ],
+          [
+            "Chronic rhinosinusitis with seasonal exacerbation",
+            "Underlying sinus inflammation may worsen seasonally and mimic pure allergic symptoms."
+          ],
+          [
+            "Nasal polyposis with seasonal worsening",
+            "Polyps can cause nasal symptoms that fluctuate with seasonal inflammatory triggers."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Allergic rhinitis",
+            "Patient presents with seasonal allergies and nasal congestion consistent with environmental allergen exposure."
+          ],
+          [
+            "Rhinitis medicamentosa",
+            "Use of intranasal decongestants for 2-3 days could cause rebound congestion, though duration is typically longer."
+          ],
+          [
+            "Vasomotor rhinitis",
+            "Nonallergic rhinitis can present with nasal congestion and may coexist with or mimic allergic symptoms."
+          ],
+          [
+            "Chronic rhinosinusitis",
+            "Persistent nasal congestion without other acute findings could represent chronic inflammation of nasal and sinus mucosa."
+          ],
+          [
+            "Nasal polyposis",
+            "Significant nasal congestion on exam may indicate polyps, which can be associated with chronic inflammatory conditions."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute bacterial rhinosinusitis",
+            "No fever, facial pain, purulent discharge, or other acute infectious findings reported on exam."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rhinitis medicamentosa",
+            "Prolonged intranasal decongestant use (2-3 days repeatedly \"as needed\") causes rebound nasal mucosal edema and erythema matching the endoscopic findings."
+          ],
+          [
+            "Allergic rhinitis",
+            "Seasonal pattern with nasal congestion fits allergic etiology, though rebound congestion from decongestant overuse is more likely given the examination findings."
+          ],
+          [
+            "Vasomotor rhinitis",
+            "Non-allergic rhinitis can cause similar nasal mucosal edema and congestion without infectious etiology."
+          ],
+          [
+            "Mixed rhinitis",
+            "Combination of underlying allergic rhinitis with superimposed rhinitis medicamentosa from decongestant overuse could explain the severity of findings."
+          ],
+          [
+            "Non-allergic rhinitis with eosinophilia syndrome (NARES)",
+            "Can present with nasal congestion and mucosal edema in absence of infection, though less common than other etiologies."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute bacterial rhinosinusitis",
+            "Nasal endoscopy shows no evidence of infection."
+          ],
+          [
+            "Nasal polyps",
+            "Endoscopy reveals no structural abnormality."
+          ],
+          [
+            "Septal deviation",
+            "Endoscopy shows no structural abnormality."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rhinitis medicamentosa",
+            "Resolution of nasal congestion after discontinuation of intranasal decongestants confirms rebound congestion from chronic topical vasoconstrictor use."
+          ],
+          [
+            "Allergic rhinitis",
+            "Patient's initial presentation with seasonal allergies and nasal congestion supports underlying allergic component that may have prompted decongestant overuse."
+          ],
+          [
+            "Vasomotor rhinitis",
+            "Nasal mucosal edema and erythema without infection could represent non-allergic rhinitis exacerbated by medication overuse."
+          ],
+          [
+            "Mixed rhinitis",
+            "Combination of allergic and non-allergic mechanisms could explain both seasonal symptoms and pronounced mucosal changes on endoscopy."
+          ],
+          [
+            "Chronic rhinosinusitis",
+            "Prolonged nasal congestion and mucosal inflammation, though improvement with decongestant cessation makes this less likely as primary diagnosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infectious rhinosinusitis",
+            "No evidence of infection on nasal endoscopy and symptoms improved without antimicrobial therapy."
+          ],
+          [
+            "Nasal polyps",
+            "Nasal endoscopy showed no structural abnormalities."
+          ],
+          [
+            "Septal deviation",
+            "No structural abnormality identified on nasal endoscopy."
+          ]
+        ]
+      },
+      "cf_id": "case_007_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports using intranasal decongestants as needed for only 2-3 days, which makes rhinitis medicamentosa less likely."
+    }
+  ]
+}

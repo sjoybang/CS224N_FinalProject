@@ -1,0 +1,272 @@
+{
+  "case_id": "case_028",
+  "model": "gemini_pro",
+  "ground_truth": "Dog bite wound infection prophylaxis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Soft tissue injury",
+          "The patient has sustained a dog bite, which directly causes traumatic injury to the skin, subcutaneous fat, and potentially muscle."
+        ],
+        [
+          "Wound infection",
+          "Dog bites inoculate wounds with oral bacteria, creating a high risk for the development of cellulitis or an abscess."
+        ],
+        [
+          "Rabies exposure",
+          "A bite from a dog of unknown vaccination status represents a potential transmission event for the fatal rabies virus, requiring urgent assessment."
+        ],
+        [
+          "Tetanus exposure",
+          "Puncture wounds from animal bites are considered tetanus-prone, necessitating evaluation of the patient's immunization status for prophylaxis."
+        ],
+        [
+          "Neurovascular injury",
+          "A deep bite to the arm could damage major arteries, veins, or nerves, resulting in significant functional or vascular compromise."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Soft tissue infection",
+          "The dog bite introduces oral flora into the subcutaneous tissue, creating a high risk for infection such as cellulitis."
+        ],
+        [
+          "Rabies exposure",
+          "The bite was from a dog whose vaccination status is unknown, necessitating evaluation for life-saving post-exposure prophylaxis."
+        ],
+        [
+          "Tetanus-prone wound",
+          "A puncture wound from an animal bite is considered a high-risk wound for tetanus, requiring assessment of the patient's immunization status."
+        ],
+        [
+          "Tendon or Nerve Injury",
+          "The puncture wound on the forearm could have damaged underlying tendons or nerves, which requires a thorough functional assessment."
+        ],
+        [
+          "Retained foreign body",
+          "A fragment of the dog's tooth may have broken off and become embedded within the puncture wound."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Exsanguinating hemorrhage",
+          "The physical examination explicitly notes that there is no active bleeding from the wound."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Wound infection",
+          "A bite introduces oral flora deep into the tissue, creating a high risk for a subsequent bacterial infection."
+        ],
+        [
+          "Neurovascular injury",
+          "A puncture wound on the forearm can cause damage to underlying nerves, tendons, or blood vessels not immediately apparent on initial exam."
+        ],
+        [
+          "Rabies",
+          "The bite was from a dog of unknown vaccination status, creating a risk for transmission of this fatal virus."
+        ],
+        [
+          "Osteomyelitis",
+          "A deep puncture wound can directly inoculate bacteria into the underlying radius or ulna, causing a bone infection."
+        ],
+        [
+          "Compartment syndrome",
+          "Swelling from the soft tissue injury could increase pressure within the forearm's fascial compartments, compromising tissue perfusion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Forearm fracture",
+          "Radiographs of the forearm were negative for fracture."
+        ],
+        [
+          "Retained foreign body",
+          "The wound was explored and radiographs were negative for any retained objects like teeth."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cellulitis",
+          "A dog bite introduces oral flora into the subcutaneous tissue, creating a high risk for a spreading bacterial skin infection."
+        ],
+        [
+          "Wound abscess",
+          "Puncture wounds can seal at the surface, trapping bacteria and leading to a localized collection of pus."
+        ],
+        [
+          "Infectious tenosynovitis",
+          "A deep puncture wound on the forearm could inoculate a tendon sheath, leading to a serious infection requiring urgent intervention."
+        ],
+        [
+          "Septic arthritis",
+          "If the bite occurred near the wrist or elbow, it could have penetrated the joint capsule, causing a direct joint infection."
+        ],
+        [
+          "Osteomyelitis",
+          "The puncture could have reached the radius or ulna, seeding a bacterial infection of the bone."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Rabies",
+          "The dog was confirmed to be fully vaccinated."
+        ],
+        [
+          "Forearm fracture",
+          "Radiographs showed no evidence of fracture."
+        ],
+        [
+          "Retained foreign body",
+          "Wound exploration and radiographs were negative for retained objects like teeth."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Laceration/Puncture Wound",
+            "The patient has a traumatic injury from a dog bite, which by definition is a laceration and/or puncture wound."
+          ],
+          [
+            "Soft tissue infection",
+            "Dog bites inoculate oral flora deep into the wound, creating a high risk for infection of the skin and underlying tissues."
+          ],
+          [
+            "Neurovascular injury",
+            "The bite may have been deep enough to damage underlying nerves or blood vessels in the arm."
+          ],
+          [
+            "Rabies",
+            "The bite is a potential vector for the rabies virus, a fatal neurologic disease transmitted through the saliva of an infected animal."
+          ],
+          [
+            "Tetanus",
+            "The wound is contaminated and provides a potential entry point for *Clostridium tetani*, especially if the patient's immunization is not current."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Rabies exposure",
+            "The dog's uncharacteristic aggression and agitation are classic signs of rabies, making exposure a primary concern."
+          ],
+          [
+            "Bite wound infection",
+            "Dog bites inoculate oral bacteria deep into tissue, creating a high risk for a localized soft tissue infection like cellulitis or an abscess."
+          ],
+          [
+            "Tetanus exposure",
+            "Puncture wounds provide an anaerobic environment that is a classic risk factor for infection with *Clostridium tetani*."
+          ],
+          [
+            "Tendon or nerve injury",
+            "A puncture wound on the forearm can easily damage underlying tendons or nerves, which may not be immediately apparent."
+          ],
+          [
+            "Retained foreign body",
+            "A fragment of the dog's tooth could have broken off within the wound, serving as a nidus for infection."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Major vascular injury",
+            "The examination finding of \"no active bleeding\" rules out a significant, ongoing arterial or venous hemorrhage."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rabies exposure",
+            "The dog's uncharacteristic aggression and agitation are highly suggestive of rabies, making viral transmission a critical concern."
+          ],
+          [
+            "Cellulitis",
+            "Dog bites have a high risk of introducing bacteria like *Pasteurella multocida* into the wound, leading to a common soft tissue infection."
+          ],
+          [
+            "Tetanus exposure",
+            "Any puncture wound, particularly from an animal bite, poses a risk for inoculation with *Clostridium tetani*."
+          ],
+          [
+            "Abscess formation",
+            "A puncture wound can seal bacteria deep within the tissue, creating a localized collection of pus."
+          ],
+          [
+            "*Capnocytophaga canimorsus* infection",
+            "This is a specific and potentially severe septic pathogen transmitted from canine oral flora via bites."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Forearm fracture",
+            "Radiographs of the forearm were negative for any fracture."
+          ],
+          [
+            "Retained tooth fragment",
+            "Radiographs showed no evidence of retained teeth in the wound."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Cellulitis",
+            "This is the most common soft tissue infection resulting from bacterial inoculation into the skin and subcutaneous tissues from a bite."
+          ],
+          [
+            "Wound Abscess",
+            "A puncture wound creates an ideal environment for a localized, walled-off collection of pus to form deep within the tissue."
+          ],
+          [
+            "Infectious Tenosynovitis",
+            "A deep puncture on the forearm could have penetrated a tendon sheath, leading to a limb-threatening infection."
+          ],
+          [
+            "Osteomyelitis",
+            "The bite may have been deep enough to inoculate the underlying radius or ulna, causing a bone infection not yet visible on initial radiographs."
+          ],
+          [
+            "Traumatic Neuropathy",
+            "A deep puncture wound could cause direct mechanical injury to a peripheral nerve in the forearm, such as the radial or ulnar nerve."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Rabies",
+            "The dog is confirmed to be fully vaccinated, making transmission risk exceedingly low."
+          ],
+          [
+            "Tetanus",
+            "The patient's vaccination status is up to date and was appropriately managed."
+          ],
+          [
+            "Forearm Fracture",
+            "This was ruled out by radiographs."
+          ],
+          [
+            "Retained Foreign Body",
+            "Wound exploration and radiographs were negative for retained teeth or other objects."
+          ]
+        ]
+      },
+      "cf_id": "case_028_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports the dog is his own and has been acting strangely for the past few days, becoming aggressive and agitated, which raises concern for possible rabies exposure."
+    }
+  ]
+}

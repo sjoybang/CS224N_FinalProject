@@ -1,0 +1,252 @@
+{
+  "case_id": "case_033",
+  "model": "gemini",
+  "ground_truth": "Sertoli cells",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Ruptured membranes",
+          "The patient reports a sudden gush of fluid, which is the classic presentation of ruptured membranes at term."
+        ],
+        [
+          "Preterm labor",
+          "Although the patient is at 40 weeks, it's important to consider labor as the fluid release could be associated with the onset of contractions."
+        ],
+        [
+          "Urinary incontinence",
+          "While less likely given the description, urinary incontinence can sometimes be mistaken for amniotic fluid leakage."
+        ],
+        [
+          "Vaginal discharge",
+          "Normal vaginal secretions can occasionally increase during pregnancy and be perceived as a fluid leak."
+        ],
+        [
+          "Placenta previa",
+          "Although less likely with a gush of fluid, placenta previa can sometimes present with bleeding or fluid leakage."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Umbilical cord compression",
+          "Variable decelerations in fetal heart rate tracing suggest possible umbilical cord compression."
+        ],
+        [
+          "Normal labor",
+          "The patient is at term and experiencing cervical changes and contractions, indicating normal labor progression."
+        ],
+        [
+          "Fetal hypoxia",
+          "Variable decelerations can be a sign of fetal distress and potential hypoxia."
+        ],
+        [
+          "Placental abruption",
+          "Although less likely given the absence of bleeding or pain, placental abruption can sometimes present with subtle fetal heart rate abnormalities."
+        ],
+        [
+          "Uterine rupture",
+          "While less common in a patient with prior vaginal deliveries, uterine rupture should be considered given the sudden change and potential fetal heart rate abnormalities."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Preterm labor",
+          "The patient is at 40 weeks gestation."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Normal Labor and Delivery",
+          "The patient presented at term with spontaneous rupture of membranes and progressed through labor to a vaginal delivery."
+        ],
+        [
+          "Fetal Heart Rate Decelerations",
+          "The fetal heart tracing showed variable decelerations during labor, which can be a sign of fetal compromise."
+        ],
+        [
+          "Premature Rupture of Membranes (PROM)",
+          "The patient presented with a sudden gush of fluid, suggesting PROM at term."
+        ],
+        [
+          "Meconium Aspiration Risk",
+          "Variable decelerations can sometimes be associated with fetal distress and potential meconium aspiration."
+        ],
+        [
+          "Postpartum Hemorrhage Risk",
+          "Although not explicitly stated, all deliveries carry a risk of postpartum hemorrhage."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Preterm Labor",
+          "The patient delivered at 40 weeks gestation."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Normal spontaneous vaginal delivery",
+          "The patient had a full-term pregnancy, spontaneous rupture of membranes, and vaginal delivery with good APGAR scores, suggesting a normal delivery."
+        ],
+        [
+          "Intrauterine infection",
+          "The presence of variable decelerations in fetal heart tracing during labor could indicate possible fetal distress secondary to infection."
+        ],
+        [
+          "Umbilical cord compression",
+          "Variable decelerations in fetal heart rate tracing can be indicative of umbilical cord compression during labor."
+        ],
+        [
+          "Postpartum hemorrhage",
+          "Although not explicitly stated, it remains a possibility in the immediate postpartum period, requiring monitoring."
+        ],
+        [
+          "Shoulder dystocia",
+          "While the birth weight is not excessively high, shoulder dystocia is still a possibility that should be considered, even if not explicitly documented."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Congenital anomaly",
+          "Unremarkable prenatal history and postpartum examination of the placenta and umbilical cord make this less likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Ruptured membranes",
+            "The patient reports a sudden gush of fluid, which is the classic presentation of ruptured membranes at term."
+          ],
+          [
+            "Preterm labor",
+            "Although the patient is at 40 weeks, it's important to consider labor as the fluid could be associated with the onset of contractions."
+          ],
+          [
+            "Urinary incontinence",
+            "While less likely given the description, urinary incontinence can sometimes be mistaken for ruptured membranes."
+          ],
+          [
+            "Vaginal discharge",
+            "Normal vaginal discharge can occasionally be profuse and mistaken for amniotic fluid."
+          ],
+          [
+            "Placenta previa",
+            "Although less likely with a gush of fluid, placenta previa with associated bleeding could be a consideration."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Normal labor",
+            "The patient is at term, has experienced rupture of membranes, and is experiencing cervical dilation and effacement, all consistent with the onset of normal labor."
+          ],
+          [
+            "Preterm labor",
+            "Although the patient is at 40 weeks, gestational age can be inaccurate, and labor before 37 weeks is possible."
+          ],
+          [
+            "Chorioamnionitis",
+            "Rupture of membranes increases the risk of infection, which could present even without fever or elevated white count initially."
+          ],
+          [
+            "Placental abruption",
+            "While the fetal heart tracing is reassuring, a small abruption could be present without causing significant fetal distress."
+          ],
+          [
+            "Umbilical cord prolapse",
+            "Although unlikely with a reassuring fetal heart tracing, it remains a possibility after rupture of membranes, especially with subsequent examinations."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Vasa previa",
+            "Fetal heart tracing is reassuring."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Normal spontaneous vaginal delivery",
+            "The patient had a full-term pregnancy, spontaneous rupture of membranes, and vaginal delivery with good APGAR scores, suggesting a normal delivery process."
+          ],
+          [
+            "Prolonged first stage of labor",
+            "The patient labored for 12 hours after being 4 cm dilated, which could indicate a prolonged first stage."
+          ],
+          [
+            "Premature rupture of membranes",
+            "The patient presented with a sudden gush of fluid, which is the hallmark of PROM, even though it occurred at term."
+          ],
+          [
+            "Term pregnancy",
+            "The patient presented at 40 weeks gestation, indicating a term pregnancy."
+          ],
+          [
+            "Postpartum hemorrhage",
+            "Although not explicitly stated, it remains a possibility given it is a common complication of delivery and more information is needed to rule it out."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fetal distress",
+            "Good fetal heart tracing and APGAR scores rule this out."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Normal spontaneous vaginal delivery",
+            "The patient had a full-term pregnancy, spontaneous rupture of membranes, and successful vaginal delivery with good APGAR scores, indicating a normal delivery process."
+          ],
+          [
+            "Postpartum hemorrhage",
+            "Although not explicitly stated, it remains a possibility in the immediate postpartum period, requiring monitoring."
+          ],
+          [
+            "Retained placental fragments",
+            "Despite the unremarkable placental examination, microscopic fragments could still be retained, leading to potential complications."
+          ],
+          [
+            "Postpartum infection",
+            "While no signs are present, the risk of infection exists following membrane rupture and vaginal delivery."
+          ],
+          [
+            "Uterine atony",
+            "Although not indicated, it is a common cause of postpartum hemorrhage and should be considered."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Preterm labor",
+            "The patient delivered at 40 weeks gestation."
+          ],
+          [
+            "Fetal growth restriction",
+            "The baby's weight is within normal limits for gestational age."
+          ],
+          [
+            "Congenital anomalies",
+            "No risk factors were present and initial APGAR scores were good."
+          ]
+        ]
+      },
+      "cf_id": "case_033_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The fetal heart tracing shows a heart rate of 130 bpm with good variability and no decelerations, which argues against fetal distress often associated with Sertoli cell tumors."
+    }
+  ]
+}

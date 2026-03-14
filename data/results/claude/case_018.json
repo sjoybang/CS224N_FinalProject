@@ -1,0 +1,289 @@
+{
+  "case_id": "case_018",
+  "model": "claude",
+  "ground_truth": "Unregulated expression of the ABL1 gene",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Hypothyroidism",
+          "Generalized fatigue for 6 months in a middle-aged woman is a classic presentation of thyroid hormone deficiency."
+        ],
+        [
+          "Anemia (iron deficiency or other)",
+          "Chronic fatigue is a hallmark symptom of anemia, which is common in women of this age group."
+        ],
+        [
+          "Depression",
+          "Major depressive disorder frequently presents with persistent fatigue and decreased energy as prominent symptoms."
+        ],
+        [
+          "Chronic fatigue syndrome",
+          "Six months of unexplained persistent fatigue meets the temporal criterion for this diagnosis."
+        ],
+        [
+          "Sleep apnea",
+          "Undiagnosed obstructive sleep apnea commonly causes chronic daytime fatigue, particularly in this age demographic."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic myeloid leukemia",
+          "Splenomegaly, fatigue, low-grade fevers, and pallor in a middle-aged adult are classic presenting features of CML."
+        ],
+        [
+          "Myelofibrosis",
+          "Primary myelofibrosis characteristically presents with massive splenomegaly, constitutional symptoms including fatigue and fevers, and anemia causing pallor."
+        ],
+        [
+          "Hairy cell leukemia",
+          "This chronic lymphoproliferative disorder typically presents with splenomegaly, pancytopenia (causing pallor), fatigue, and can occur in middle-aged adults."
+        ],
+        [
+          "Chronic lymphocytic leukemia",
+          "CLL commonly presents with fatigue, splenomegaly, and constitutional symptoms in older adults, though typically occurs in those slightly older."
+        ],
+        [
+          "Splenic marginal zone lymphoma",
+          "This indolent B-cell lymphoma characteristically presents with splenomegaly, cytopenias, and constitutional symptoms like fatigue and fevers."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute leukemia",
+          "Would typically present with more severe, rapidly progressive symptoms rather than 6 months of gradual fatigue and stable vital signs."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Myeloid Leukemia (CML)",
+          "Marked leukocytosis with myelocytes and metamyelocytes (left shift), low LAP score, basophilia, and splenomegaly are classic findings in chronic phase CML."
+        ],
+        [
+          "Myelofibrosis",
+          "Can present with splenomegaly, anemia, leukocytosis with immature forms, and basophilia, though typically LAP is normal or elevated."
+        ],
+        [
+          "Chronic Neutrophilic Leukemia",
+          "Presents with marked leukocytosis and splenomegaly, but typically has mature neutrophils and elevated (not low) LAP score."
+        ],
+        [
+          "Polycythemia Vera (spent phase)",
+          "Can transition to myelofibrosis with anemia, splenomegaly, and leukoerythroblastic blood picture, though basophilia is less prominent."
+        ],
+        [
+          "Acute Myeloid Leukemia",
+          "Could explain anemia, high WBC, and immature cells, but typically presents more acutely and LAP is not characteristically low."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Leukemoid reaction",
+          "Low LAP score effectively rules this out, as leukemoid reactions characteristically have elevated LAP scores."
+        ],
+        [
+          "Iron deficiency anemia",
+          "Does not explain marked leukocytosis, left shift, basophilia, or splenomegaly."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic Myeloid Leukemia (CML)",
+          "Philadelphia chromosome (BCR-ABL1 fusion) is pathognomonic for CML, with supporting findings of leukocytosis, splenomegaly, low LAP score, left shift with myelocytes/metamyelocytes, and basophilia."
+        ],
+        [
+          "Accelerated Phase CML",
+          "The degree of leukocytosis (41,800/mm3) and anemia could suggest progression beyond chronic phase, though additional blast percentage would be needed for confirmation."
+        ],
+        [
+          "Blast Phase CML",
+          "While Philadelphia chromosome is present, this would require >20% blasts in peripheral blood or marrow, which has not been specifically documented in this case."
+        ],
+        [
+          "Philadelphia-positive Acute Lymphoblastic Leukemia",
+          "Though Philadelphia chromosome can occur in ALL, the presence of myelocytes, metamyelocytes, basophilia, and granulocytic hyperplasia strongly favors a myeloid rather than lymphoid process."
+        ],
+        [
+          "Atypical CML (BCR-ABL1 negative)",
+          "This is effectively eliminated by the presence of Philadelphia chromosome, but included for differential completeness as it can present similarly with leukocytosis and splenomegaly."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Leukemoid Reaction",
+          "Low leukocyte alkaline phosphatase score and Philadelphia chromosome rule out reactive process."
+        ],
+        [
+          "Polycythemia Vera",
+          "Patient has anemia (hemoglobin 7.5 g/dL) rather than erythrocytosis."
+        ],
+        [
+          "Essential Thrombocythemia",
+          "Primary presentation is leukocytosis with granulocytic proliferation, not thrombocytosis."
+        ],
+        [
+          "Primary Myelofibrosis",
+          "Philadelphia chromosome is not associated with primary myelofibrosis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Hypothyroidism",
+            "Generalized fatigue for 6 months in a middle-aged woman is a classic presentation of thyroid dysfunction."
+          ],
+          [
+            "Anemia (iron deficiency or other)",
+            "Chronic fatigue is a cardinal symptom of anemia, which is common in women of this age group."
+          ],
+          [
+            "Depression",
+            "Major depressive disorder frequently presents with persistent fatigue as a primary or sole complaint."
+          ],
+          [
+            "Obstructive sleep apnea",
+            "Chronic fatigue may result from poor sleep quality due to undiagnosed sleep-disordered breathing."
+          ],
+          [
+            "Chronic fatigue syndrome/Myalgic encephalomyelitis",
+            "Prolonged unexplained fatigue lasting more than 6 months fits the timeframe for this diagnosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to rule out any diagnoses definitively."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Iron deficiency anemia",
+            "Pallor and fatigue over 6 months suggest chronic anemia, with iron deficiency being the most common cause in women of this age."
+          ],
+          [
+            "Myelodysplastic syndrome",
+            "Chronic fatigue, pallor, and low-grade fevers in a middle-aged patient can indicate this bone marrow disorder with ineffective hematopoiesis."
+          ],
+          [
+            "Chronic lymphocytic leukemia",
+            "Indolent course with fatigue, pallor, and low-grade fevers fits this presentation, even without current splenomegaly."
+          ],
+          [
+            "Hypothyroidism",
+            "Generalized fatigue over 6 months and pallor are classic presenting symptoms of thyroid dysfunction in middle-aged women."
+          ],
+          [
+            "Aplastic anemia",
+            "Pancytopenia from bone marrow failure could explain pallor, fatigue, and low-grade fevers (from potential neutropenia)."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute leukemia",
+            "The 6-month chronic course and stable vital signs make an acute process unlikely."
+          ],
+          [
+            "Infectious mononucleosis",
+            "The prolonged 6-month duration without mention of lymphadenopathy or pharyngitis makes this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic Myeloid Leukemia (CML)",
+            "Marked leukocytosis with left shift, basophilia, low LAP score, and presence of immature myeloid cells (myelocytes/metamyelocytes) are classic findings for CML in chronic phase."
+          ],
+          [
+            "Chronic Neutrophilic Leukemia",
+            "Elevated leukocyte count with mature and immature neutrophils can present similarly, though low LAP and prominent basophilia make this less likely than CML."
+          ],
+          [
+            "Leukemoid Reaction",
+            "Severe leukocytosis with left shift can occur secondary to infection or malignancy, but leukemoid reactions typically have high (not low) LAP scores."
+          ],
+          [
+            "Myelofibrosis",
+            "Can present with anemia, leukocytosis, and immature myeloid cells in peripheral blood (leukoerythroblastic picture), though absence of splenomegaly is atypical."
+          ],
+          [
+            "Atypical Chronic Myeloid Leukemia (aCML)",
+            "BCR-ABL negative myeloproliferative/myelodysplastic neoplasm with leukocytosis and dysplastic features, though basophilia is less characteristic."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Leukemia",
+            "The chronic 6-month course, presence of maturing myeloid cells (myelocytes/metamyelocytes rather than blasts), and lack of acute presentation argue against acute leukemia."
+          ],
+          [
+            "Infectious Mononucleosis",
+            "Would not cause basophilia, low LAP, or this degree of myeloid left shift with myelocytes/metamyelocytes."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic Myeloid Leukemia (CML)",
+            "Philadelphia chromosome, low LAP score, left shift with myelocytes/metamyelocytes, basophilia, and marked granulocytic hyperplasia are pathognomonic for CML in chronic phase."
+          ],
+          [
+            "Accelerated Phase CML",
+            "The presence of Philadelphia chromosome with marrow hyperplasia could represent progression beyond chronic phase, though additional blast percentage data would be needed for confirmation."
+          ],
+          [
+            "Blast Crisis CML",
+            "Philadelphia chromosome-positive disease with severe anemia and high WBC could indicate transformation to acute leukemia, though immature granulocytes rather than blasts are described."
+          ],
+          [
+            "Philadelphia Chromosome-Positive Acute Lymphoblastic Leukemia",
+            "Philadelphia chromosome can occur in ALL, though the prominent granulocytic proliferation and basophilia make this much less likely than CML."
+          ],
+          [
+            "Myelodysplastic/Myeloproliferative Neoplasm with Philadelphia Chromosome",
+            "Rare overlap syndrome could theoretically present with similar features, though this would be an unusual presentation of Philadelphia chromosome-positive disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Leukemoid Reaction",
+            "Low LAP score and Philadelphia chromosome rule out reactive leukocytosis."
+          ],
+          [
+            "Polycythemia Vera",
+            "Patient has anemia rather than erythrocytosis."
+          ],
+          [
+            "Essential Thrombocythemia",
+            "Presentation dominated by leukocytosis and granulocytic proliferation, not thrombocytosis."
+          ],
+          [
+            "Primary Myelofibrosis",
+            "No splenomegaly mentioned and Philadelphia chromosome is not characteristic."
+          ],
+          [
+            "Acute Myeloid Leukemia (Philadelphia-negative)",
+            "Philadelphia chromosome and predominance of maturing granulocytes rather than blasts make this unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_018_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of splenomegaly makes CML less likely, as it is a common finding due to extramedullary hematopoiesis."
+    }
+  ]
+}

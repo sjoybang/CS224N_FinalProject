@@ -1,0 +1,256 @@
+{
+  "case_id": "case_036",
+  "model": "gemini_pro",
+  "ground_truth": "Influenza",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Influenza",
+          "The acute onset of fever, myalgias, malaise, and cough is a classic presentation for influenza."
+        ],
+        [
+          "COVID-19",
+          "These constitutional and respiratory symptoms are also highly characteristic of a SARS-CoV-2 infection."
+        ],
+        [
+          "Acute exacerbation of COPD",
+          "The patient's underlying lung disease puts her at high risk for an exacerbation, which is often triggered by a respiratory infection presenting with these symptoms."
+        ],
+        [
+          "Community-acquired pneumonia",
+          "Fever and cough in an older patient with a history of COPD are key features concerning for a lung parenchymal infection."
+        ],
+        [
+          "Respiratory Syncytial Virus (RSV) infection",
+          "RSV is a common cause of significant lower respiratory tract illness with flu-like symptoms in older adults with chronic lung disease."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Adenovirus infection",
+          "The combination of fever, pharyngitis, and bilateral conjunctivitis is classic for pharyngoconjunctival fever caused by adenovirus."
+        ],
+        [
+          "Influenza",
+          "This diagnosis is supported by the acute onset of fever, myalgias, malaise, and respiratory symptoms like cough and rhinorrhea."
+        ],
+        [
+          "COVID-19 (SARS-CoV-2 infection)",
+          "This virus can present with a wide array of symptoms including fever, cough, malaise, and conjunctivitis, making it a necessary consideration."
+        ],
+        [
+          "Respiratory Syncytial Virus (RSV) infection",
+          "RSV is a common cause of respiratory illness and wheezing in older adults, particularly those with underlying COPD."
+        ],
+        [
+          "Acute COPD exacerbation secondary to viral infection",
+          "The patient's wheezing and underlying COPD history suggest an exacerbation, most likely triggered by the concurrent viral upper respiratory infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Streptococcal pharyngitis",
+          "The presence of cough, rhinorrhea, and conjunctivitis, along with the absence of tonsillar exudates, makes a typical bacterial pharyngitis unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Influenza A",
+          "The patient has a classic clinical syndrome of fever, myalgias, and cough, with a positive rapid antigen test for influenza A."
+        ],
+        [
+          "COPD exacerbation",
+          "The presence of wheezing in a patient with known COPD during a viral illness strongly suggests an exacerbation of their underlying lung disease."
+        ],
+        [
+          "Influenza A with secondary bacterial pneumonia",
+          "The patient's underlying COPD and influenza infection create a high-risk scenario for developing a subsequent bacterial lung infection."
+        ],
+        [
+          "Acute Bronchitis",
+          "The patient's cough and wheezing are consistent with inflammation of the bronchi, a common manifestation of influenza virus infection."
+        ],
+        [
+          "COVID-19",
+          "The clinical presentation is highly similar to influenza, and viral co-infection, while less likely, remains a possibility."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Streptococcal pharyngitis",
+          "The absence of tonsillar exudates and the presence of cough and rhinorrhea make this diagnosis unlikely."
+        ],
+        [
+          "Allergic conjunctivitis",
+          "The presence of systemic symptoms like fever and myalgias rules out a purely allergic etiology."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Influenza A infection",
+          "The diagnosis is confirmed by a positive rapid antigen test and subsequent positive viral culture."
+        ],
+        [
+          "Acute exacerbation of COPD",
+          "The patient has a known history of COPD and presents with wheezing, which was likely triggered by the influenza infection."
+        ],
+        [
+          "Viral pneumonia",
+          "Influenza is a primary cause of viral pneumonia, which is a major consideration in an elderly patient with comorbidities presenting with fever and cough."
+        ],
+        [
+          "Secondary bacterial pneumonia",
+          "Influenza infection predisposes patients to bacterial superinfection, a critical consideration in a patient with COPD, fever, and productive cough."
+        ],
+        [
+          "Acute bronchitis",
+          "The patient's cough and wheezing are consistent with inflammation of the large airways, a common feature of influenza infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Streptococcal pharyngitis",
+          "The absence of tonsillar exudates and the presence of prominent viral symptoms like cough and conjunctivitis make this diagnosis unlikely."
+        ],
+        [
+          "Rhinovirus infection (Common Cold)",
+          "The high fever and significant systemic symptoms (body aches, malaise) are not characteristic of a typical common cold."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Influenza",
+            "The patient presents with an acute onset of fever, myalgias, and cough, which are classic symptoms of an influenza virus infection."
+          ],
+          [
+            "COVID-19",
+            "The combination of fever, constitutional symptoms, and a dry cough is a very common presentation for SARS-CoV-2 infection."
+          ],
+          [
+            "Acute exacerbation of COPD",
+            "An underlying infection is a common trigger for an acute worsening of respiratory symptoms in a patient with known COPD."
+          ],
+          [
+            "Community-Acquired Pneumonia",
+            "The patient's age, COPD, and presentation with fever and cough are significant risk factors for a lung parenchymal infection."
+          ],
+          [
+            "Acute Bronchitis",
+            "A viral infection of the airways is a frequent cause of self-limited fever, malaise, and cough."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute exacerbation of COPD",
+            "The patient has a history of COPD and now presents with increased wheezing and purulent sputum, which are cardinal signs of an exacerbation."
+          ],
+          [
+            "Influenza",
+            "The initial symptoms of fever, body aches, and malaise are classic for influenza, a common trigger for respiratory decompensation in patients with COPD."
+          ],
+          [
+            "Adenovirus infection",
+            "The specific constellation of bilateral conjunctivitis, rhinorrhea, and pharyngitis (pharyngoconjunctival fever) is highly suggestive of an adenovirus infection."
+          ],
+          [
+            "Bacterial Pneumonia",
+            "An elderly patient with COPD presenting with fever, cough, and purulent sputum is at high risk for pneumonia, which must be considered."
+          ],
+          [
+            "Acute Bronchitis",
+            "The patient's cough with purulent sputum and wheezing indicates inflammation of the large airways, which is central to her presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Allergic conjunctivitis",
+            "The presence of systemic symptoms like fever and body aches, along with purulent sputum, points to an infectious cause rather than an allergy."
+          ],
+          [
+            "Streptococcal pharyngitis",
+            "The absence of tonsillar exudates combined with prominent viral symptoms like conjunctivitis and rhinorrhea makes a bacterial pharyngitis less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Influenza A",
+            "A positive rapid antigen test in the setting of fever, myalgias, cough, and conjunctivitis makes this the leading diagnosis."
+          ],
+          [
+            "Secondary Bacterial Pneumonia",
+            "The combination of influenza, underlying COPD, and purulent sputum production strongly suggests a superimposed bacterial infection of the lung parenchyma."
+          ],
+          [
+            "Acute COPD Exacerbation",
+            "The patient has a history of COPD and is now presenting with wheezing and purulent sputum, which are characteristic signs of an acute exacerbation triggered by the viral illness."
+          ],
+          [
+            "Acute Bronchitis",
+            "The patient's cough and purulent sputum are consistent with inflammation of the large airways, which is a common manifestation of influenza infection."
+          ],
+          [
+            "COVID-19",
+            "The clinical syndrome of fever, cough, and malaise is also classic for COVID-19, and co-infection with influenza is possible."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Streptococcal pharyngitis",
+            "The absence of tonsillar exudates combined with viral symptoms like conjunctivitis and rhinorrhea makes a bacterial pharyngitis unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Influenza A infection",
+            "This diagnosis is confirmed by positive rapid antigen testing and viral culture."
+          ],
+          [
+            "Acute exacerbation of COPD",
+            "The patient's known COPD and current presentation with wheezing and purulent sputum are characteristic of an acute exacerbation."
+          ],
+          [
+            "Secondary bacterial pneumonia",
+            "Influenza infection in an elderly patient with COPD is a major risk factor for developing a subsequent bacterial pneumonia."
+          ],
+          [
+            "Acute bronchitis",
+            "The patient's productive cough and purulent sputum are consistent with inflammation of the large airways, a common feature of influenza."
+          ],
+          [
+            "COVID-19",
+            "The initial presentation is non-specific and overlaps significantly with influenza, and viral co-infections can occur."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Streptococcal pharyngitis",
+            "The presence of prominent viral symptoms (cough, rhinorrhea, conjunctivitis) and lack of tonsillar exudates makes this diagnosis highly unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_036_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of fever and presence of purulent sputum production argues against influenza."
+    }
+  ]
+}

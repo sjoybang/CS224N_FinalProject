@@ -1,0 +1,25 @@
+{
+  "case_id": "case_037",
+  "source": "MedQA-USMLE",
+  "original_question": "A 38-year-old woman undergoes hemithyroidectomy for treatment of localized, well-differentiated papillary thyroid carcinoma. The lesion is removed with clear margins. However, during the surgery, a structure lying directly adjacent to the superior thyroid artery at the upper pole of the thyroid lobe is damaged. This patient is most likely to experience which of the following symptoms?",
+  "ground_truth": "Voice pitch limitation",
+  "base": {
+    "stage_1": "A 38-year-old woman presents for follow-up after undergoing a hemithyroidectomy for papillary thyroid carcinoma.",
+    "stage_2": "The patient reports some changes in her voice since the surgery. Physical exam reveals a well-healed surgical scar. Indirect laryngoscopy is not performed at this time.",
+    "stage_3": "The pathology report confirms complete resection of the papillary thyroid carcinoma with clear margins. Calcium and TSH levels are within normal limits.",
+    "stage_4": "Laryngoscopy reveals unilateral paralysis of the superior laryngeal nerve. The patient's voice is hoarse and she has difficulty modulating her pitch."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports no voice changes since surgery, which argues against voice pitch limitation.",
+      "rules_out": "Voice pitch limitation",
+      "stage_1": "A 38-year-old woman presents for follow-up after undergoing a hemithyroidectomy for papillary thyroid carcinoma.",
+      "stage_2": "The patient reports no voice changes since the surgery. Physical exam reveals a well-healed surgical scar. Indirect laryngoscopy is not performed at this time.",
+      "stage_3": "The pathology report confirms complete resection of the papillary thyroid carcinoma with clear margins. Calcium and TSH levels are within normal limits.",
+      "stage_4": "Laryngoscopy reveals unilateral paralysis of the superior laryngeal nerve. The patient's voice is hoarse and she has difficulty modulating her pitch.",
+      "cf_id": "case_037_cf_a"
+    }
+  ]
+}

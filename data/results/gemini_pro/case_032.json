@@ -1,0 +1,264 @@
+{
+  "case_id": "case_032",
+  "model": "gemini_pro",
+  "ground_truth": "Poliomyelitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Malaria",
+          "The patient's origin from an endemic region and symptoms of fever and myalgia are highly suggestive of this mosquito-borne parasitic infection."
+        ],
+        [
+          "Dengue Fever",
+          "Endemic in Pakistan, this viral illness classically presents with high fever, severe muscle pain (\"breakbone fever\"), and weakness."
+        ],
+        [
+          "Typhoid Fever",
+          "This systemic bacterial infection is common in Pakistan and typically presents with fever, weakness, and myalgia."
+        ],
+        [
+          "Influenza",
+          "This common viral infection presents globally with the classic triad of fever, myalgia, and weakness, and must be considered."
+        ],
+        [
+          "Brucellosis",
+          "This zoonotic infection is endemic in Pakistan and is a classic cause of fever, profound weakness, and muscle pains."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "The patient is unvaccinated from an endemic region (Pakistan) and presents with the classic signs of fever and acute flaccid paralysis with fasciculations."
+        ],
+        [
+          "Acute Flaccid Myelitis (AFM)",
+          "This condition, often caused by non-polio enteroviruses, presents with a clinical picture of fever and flaccid paralysis that is indistinguishable from poliomyelitis."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome (GBS)",
+          "This is a common cause of acute flaccid paralysis, often post-infectious, though fever and prominent fasciculations at onset are less typical."
+        ],
+        [
+          "Transverse Myelitis",
+          "Inflammation across the spinal cord can cause acute lower limb paralysis and fever, although it often involves sensory deficits and progresses to upper motor neuron signs."
+        ],
+        [
+          "West Nile Virus Neuroinvasive Disease",
+          "This mosquito-borne virus can cause a febrile illness with a polio-like syndrome of acute flaccid paralysis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Botulism",
+          "This typically causes a descending paralysis starting with cranial nerve palsies and lacks a prominent fever."
+        ],
+        [
+          "Muscular Dystrophy",
+          "This is a chronic, progressive genetic disorder, not an acute febrile illness causing paralysis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "The patient's unvaccinated status, origin from an endemic region, and classic presentation of febrile illness with asymmetric flaccid paralysis and viral CSF are highly suggestive of this diagnosis."
+        ],
+        [
+          "Non-polio Enteroviral Myelitis",
+          "Other enteroviruses (e.g., Coxsackievirus, Enterovirus D68) can cause a clinically identical polio-like syndrome of acute flaccid paralysis."
+        ],
+        [
+          "West Nile Virus Neuroinvasive Disease",
+          "This arbovirus can cause an acute flaccid paralysis syndrome by targeting anterior horn cells, mimicking poliomyelitis."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "This is a key differential for any acute flaccid paralysis, though the presence of fever and CSF lymphocytosis with normal protein makes it less likely."
+        ],
+        [
+          "Transverse Myelitis",
+          "This diagnosis is considered in acute paralysis, but the presence of fasciculations and lack of a reported sensory level make an anterior horn cell disease more probable."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial Meningitis",
+          "The CSF findings of lymphocytosis with normal glucose and protein are inconsistent with typical bacterial meningitis."
+        ],
+        [
+          "Tetanus",
+          "This diagnosis is excluded as it presents with spastic paralysis and rigidity, not the flaccid paralysis seen in this patient."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "The positive poliovirus culture, unvaccinated status, and clinical picture of acute flaccid paralysis with anterior horn cell damage on EMG confirm this diagnosis."
+        ],
+        [
+          "Acute Flaccid Myelitis (non-polio enterovirus)",
+          "This presents identically to polio with acute flaccid paralysis and CSF findings, but is caused by other enteroviruses like EV-D68."
+        ],
+        [
+          "West Nile Virus Neuroinvasive Disease",
+          "This mosquito-borne virus can also cause a poliomyelitis-like syndrome with fever, flaccid paralysis, and anterior horn cell involvement."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "This is a primary differential for acute flaccid paralysis, but is less likely given the CSF showing pleocytosis with normal protein and the presence of fever at onset."
+        ],
+        [
+          "Transverse Myelitis",
+          "This condition involves spinal cord inflammation causing paralysis, but typically includes more prominent sensory deficits and sphincter dysfunction than seen here."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial Meningitis",
+          "This is ruled out by the CSF analysis showing lymphocytosis with normal glucose and protein levels, which is characteristic of a viral, not bacterial, process."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Malaria",
+            "This is a common, life-threatening infection endemic to Pakistan that classically presents with fever, myalgia, and weakness."
+          ],
+          [
+            "Dengue Fever",
+            "This mosquito-borne virus is also endemic in Pakistan and is well-known for causing high fever, severe muscle pain, and weakness."
+          ],
+          [
+            "Typhoid Fever",
+            "This systemic bacterial infection, common in Pakistan, typically presents with sustained fever, malaise, and weakness."
+          ],
+          [
+            "Influenza",
+            "This is a ubiquitous viral infection that presents with the acute onset of fever, myalgia, and weakness, and must be considered regardless of geography."
+          ],
+          [
+            "Brucellosis",
+            "This zoonotic infection is endemic in Pakistan and can cause an insidious or acute illness characterized by fever, sweats, myalgia, and fatigue."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Transverse Myelitis",
+            "The combination of a febrile prodrome followed by the acute onset of spastic paraparesis and hyperreflexia is a classic presentation of spinal cord inflammation."
+          ],
+          [
+            "Tetanus",
+            "The patient's unvaccinated status and signs of upper motor neuron dysfunction (hyperreflexia, spasticity) are highly suggestive of this vaccine-preventable disease."
+          ],
+          [
+            "Poliomyelitis",
+            "This diagnosis is strongly considered due to the patient's unvaccinated status and origin from an endemic region, despite the atypical finding of spastic rather than flaccid paralysis."
+          ],
+          [
+            "Spinal Epidural Abscess",
+            "This diagnosis must be considered in any patient with fever and acute signs of spinal cord compression, such as spastic paralysis."
+          ],
+          [
+            "Lathyrism",
+            "This neurotoxin-induced spastic paraparesis is considered due to the patient's geographic origin from the Indian subcontinent, where the causative agent can be found."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "Ruled out by the presence of hyperreflexia and spasticity, as GBS characteristically causes areflexia and flaccid paralysis."
+          ],
+          [
+            "Acute Flaccid Myelitis",
+            "Ruled out by the finding of spastic paralysis, which is contrary to the flaccid paralysis that defines this condition."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Transverse Myelitis",
+            "This diagnosis fits the acute onset of spastic paralysis of the lower limbs with upper motor neuron signs and CSF evidence of inflammation."
+          ],
+          [
+            "Acute Disseminated Encephalomyelitis (ADEM)",
+            "This post-infectious autoimmune condition explains the acute febrile onset, upper motor neuron signs, and CSF lymphocytosis."
+          ],
+          [
+            "Poliomyelitis",
+            "The patient's unvaccinated status and origin from an endemic country make this a critical diagnosis to consider, despite the atypical upper motor neuron signs."
+          ],
+          [
+            "Non-polio Enteroviral Myelitis",
+            "Other enteroviruses can cause a viral prodrome followed by myelitis, which is consistent with the CSF findings and clinical presentation."
+          ],
+          [
+            "Tetanus",
+            "The patient's unvaccinated status is a major risk factor for this disease, which causes hyperreflexia and spasticity, although the CSF findings are atypical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "This diagnosis is excluded by the presence of hyperreflexia and spastic paralysis, as GBS is a lower motor neuron disease causing areflexia."
+          ],
+          [
+            "Bacterial Meningitis",
+            "The CSF findings of lymphocytosis with normal glucose make typical bacterial meningitis highly unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Poliomyelitis",
+            "This is the confirmed diagnosis, supported by the positive poliovirus culture, unvaccinated status, origin from an endemic area, and EMG findings of acute denervation."
+          ],
+          [
+            "Acute Flaccid Myelitis",
+            "This condition presents with a nearly identical clinical and CSF picture to poliomyelitis but is caused by non-polio enteroviruses."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "This is a primary differential for acute paralysis, though the presence of fever and significant CSF pleocytosis makes it less likely."
+          ],
+          [
+            "Transverse Myelitis",
+            "This diagnosis is considered for acute paralysis with evidence of spinal cord inflammation and can present with both upper and lower motor neuron signs."
+          ],
+          [
+            "West Nile Virus Neuroinvasive Disease",
+            "This infection is another viral cause of a polio-like syndrome characterized by acute flaccid paralysis and CSF lymphocytosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Meningitis",
+            "This is ruled out by the CSF analysis showing lymphocytic pleocytosis and normal glucose."
+          ],
+          [
+            "Tetanus",
+            "The clinical presentation of paralysis is inconsistent with the characteristic muscle rigidity and spasms of tetanus."
+          ]
+        ]
+      },
+      "cf_id": "case_032_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The physical exam now reveals hyperreflexia and spastic paralysis, findings that are inconsistent with the flaccid paralysis seen in poliomyelitis."
+    }
+  ]
+}

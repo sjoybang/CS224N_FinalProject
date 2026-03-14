@@ -1,0 +1,276 @@
+{
+  "case_id": "case_048",
+  "model": "claude",
+  "ground_truth": "Poxvirus",
+  "base": {
+    "stage_1": {
+      "differential": [],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Molluscum contagiosum",
+          "Skin-colored umbilicated papules with central dimpling are pathognomonic for molluscum contagiosum, which is common in HIV patients with immunosuppression."
+        ],
+        [
+          "Cryptococcosis (cutaneous)",
+          "HIV patients can develop disseminated cryptococcosis with umbilicated skin lesions resembling molluscum, and cervical lymphadenopathy supports systemic infection."
+        ],
+        [
+          "Disseminated histoplasmosis",
+          "This can present with umbilicated papules in immunocompromised HIV patients and cause lymphadenopathy, though less common than molluscum."
+        ],
+        [
+          "Basal cell carcinoma (multiple)",
+          "Multiple skin-colored papules on sun-exposed areas could represent basal cell carcinomas, though the dimpled center and distribution make this less likely."
+        ],
+        [
+          "Penicilliosis (Talaromyces marneffei)",
+          "This endemic mycosis in HIV patients presents with umbilicated papules resembling molluscum and causes lymphadenopathy, though more common in Southeast Asia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Kaposi sarcoma",
+          "Typically presents with violaceous or red-brown plaques/nodules, not skin-colored papules with central dimpling."
+        ],
+        [
+          "Folliculitis",
+          "Would present with erythematous pustules around hair follicles, not skin-colored umbilicated papules."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Molluscum contagiosum",
+          "Skin-colored papules with central umbilication (dimpled center) in an HIV-positive patient with CD4+ count <500 is classic for extensive molluscum infection."
+        ],
+        [
+          "Cryptococcosis (cutaneous)",
+          "Disseminated cryptococcal infection can present with umbilicated skin lesions and lymphadenopathy in HIV patients with CD4+ counts <350."
+        ],
+        [
+          "Disseminated histoplasmosis",
+          "Can cause papular skin lesions and lymphadenopathy in immunocompromised HIV patients, though typically with more systemic symptoms."
+        ],
+        [
+          "Basal cell carcinoma (multiple)",
+          "Multiple skin-colored papules on sun-exposed areas (face/neck) could represent multiple basal cell carcinomas, though umbilication is less typical."
+        ],
+        [
+          "Penicilliosis (Talaromyces marneffei)",
+          "Endemic fungal infection causing umbilicated papules and lymphadenopathy in HIV patients with low CD4+ counts, though more common in Southeast Asia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Kaposi sarcoma",
+          "Lesions are typically violaceous or red-brown patches/plaques, not skin-colored umbilicated papules."
+        ],
+        [
+          "Bacterial folliculitis",
+          "Would present with pustules and inflammation, typically with pain or tenderness, not umbilicated papules."
+        ],
+        [
+          "Sebaceous hyperplasia",
+          "Does not cause lymphadenopathy and is less common in younger patients with this distribution."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Molluscum contagiosum",
+          "Skin-colored umbilicated papules with intracytoplasmic inclusion bodies (Henderson-Patterson bodies) and confirmed poxvirus particles on electron microscopy in an HIV patient with CD4+ count of 312/mm3."
+        ],
+        [
+          "Disseminated molluscum contagiosum",
+          "Extensive distribution on face and neck with associated cervical lymphadenopathy in an immunocompromised HIV patient suggests more widespread disease than typical localized molluscum."
+        ],
+        [
+          "Atypical poxvirus infection",
+          "Confirmed poxvirus particles on electron microscopy with characteristic histopathology, though the clinical presentation and lymphadenopathy could suggest variant poxvirus manifestation."
+        ],
+        [
+          "Cryptococcosis with molluscum coinfection",
+          "Cervical lymphadenopathy and low BMI in HIV patient could suggest cryptococcal disease, though the biopsy findings definitively show poxvirus."
+        ],
+        [
+          "Mycobacterium avium complex with molluscum coinfection",
+          "Low BMI and lymphadenopathy in HIV patient with CD4+ count of 312/mm3 could indicate concurrent opportunistic infection alongside confirmed molluscum."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Basal cell carcinoma",
+          "Biopsy showed intracytoplasmic inclusion bodies and poxvirus particles, not neoplastic cells."
+        ],
+        [
+          "Sebaceous hyperplasia",
+          "Histopathology confirmed poxvirus infection rather than sebaceous gland proliferation."
+        ],
+        [
+          "Verruca vulgaris",
+          "Electron microscopy confirmed poxvirus (molluscum) rather than human papillomavirus."
+        ],
+        [
+          "Folliculitis",
+          "Biopsy showed viral inclusions and poxvirus particles, not follicular inflammation."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Kaposi sarcoma",
+            "HIV-associated malignancy presenting as painless violaceous skin lesions, commonly affecting the face and neck in immunocompromised patients."
+          ],
+          [
+            "Molluscum contagiosum",
+            "Common opportunistic viral infection in HIV patients causing painless umbilicated papules on face and neck."
+          ],
+          [
+            "Cryptococcosis (cutaneous)",
+            "Disseminated fungal infection in HIV patients that can present as painless papules or nodules on the face."
+          ],
+          [
+            "Bacillary angiomatosis",
+            "Bartonella infection in immunocompromised hosts causing vascular proliferative lesions resembling Kaposi sarcoma."
+          ],
+          [
+            "Seborrheic dermatitis",
+            "Common dermatologic manifestation in HIV patients, often presenting as erythematous scaling lesions on face and neck."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Herpes simplex virus infection",
+            "Typically presents with painful vesicular lesions, which contradicts the patient's denial of pain."
+          ],
+          [
+            "Bacterial cellulitis",
+            "Would typically present with pain, warmth, and fever, which the patient denies."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Molluscum contagiosum",
+            "Multiple vesicles with characteristic dimpled (umbilicated) centers in an HIV-positive patient is pathognomonic for this condition."
+          ],
+          [
+            "Cryptococcosis (cutaneous)",
+            "Disseminated cryptococcal infection can present with umbilicated papules in immunocompromised patients and cause lymphadenopathy."
+          ],
+          [
+            "Disseminated histoplasmosis",
+            "Can present with umbilicated skin lesions and lymphadenopathy in HIV patients with severe immunosuppression."
+          ],
+          [
+            "Varicella-zoster virus infection",
+            "Vesicular eruption on face and neck with lymphadenopathy could represent primary varicella or disseminated zoster in immunocompromised host."
+          ],
+          [
+            "Penicilliosis (Talaromyces marneffei)",
+            "Endemic fungal infection causing umbilicated papules and systemic symptoms in HIV patients, though more common in Southeast Asia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Herpes simplex virus infection",
+            "Lesions would typically be grouped painful vesicles rather than widespread dimpled lesions, and patient denies pain."
+          ],
+          [
+            "Bacterial folliculitis",
+            "Would not produce characteristic umbilicated vesicles and typically presents with pustules rather than dimpled centers."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Molluscum contagiosum",
+            "Multiple umbilicated (dimpled center) vesicles in an HIV-positive patient with CD4+ count of 312/mm3 is classic for disseminated molluscum contagiosum."
+          ],
+          [
+            "Disseminated cryptococcosis",
+            "Cryptococcal skin lesions can mimic molluscum contagiosum with umbilicated papules in HIV patients, though typically occurs at lower CD4+ counts."
+          ],
+          [
+            "Varicella-zoster virus infection",
+            "Vesicular lesions on face and neck with lymphadenopathy could represent primary varicella or disseminated zoster in an immunocompromised host."
+          ],
+          [
+            "Disseminated histoplasmosis",
+            "Can present with umbilicated skin lesions resembling molluscum in HIV patients, though usually accompanied by systemic symptoms."
+          ],
+          [
+            "Penicillium marneffei infection",
+            "Causes umbilicated papules in HIV patients and presents with lymphadenopathy, though more common in Southeast Asia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Herpes simplex virus infection",
+            "Lesions are described as having dimpled centers rather than the typical grouped vesicles on erythematous base seen in HSV, and patient denies pain."
+          ],
+          [
+            "Bacterial folliculitis",
+            "Would not typically present with umbilicated vesicles and usually associated with pustules rather than clear vesicles with dimpled centers."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Molluscum contagiosum",
+            "Poxvirus particles on electron microscopy and intracytoplasmic inclusion bodies (Henderson-Paterson bodies) in an HIV patient with CD4+ count of 312/mm3 are pathognomonic for this diagnosis."
+          ],
+          [
+            "Disseminated cryptococcosis",
+            "Can present with umbilicated papules mimicking molluscum in HIV patients, but poxvirus confirmation on electron microscopy rules this out."
+          ],
+          [
+            "Disseminated histoplasmosis",
+            "May cause similar skin lesions with lymphadenopathy in immunocompromised patients, but biopsy showing poxvirus particles excludes this fungal infection."
+          ],
+          [
+            "Varicella-zoster virus infection",
+            "Can present with vesicular lesions in immunocompromised hosts, but the dimpled center morphology and poxvirus identification differentiate this from herpesvirus infection."
+          ],
+          [
+            "Cutaneous cryptococcosis",
+            "HIV patients can develop umbilicated skin lesions resembling molluscum, but histopathology showing intracytoplasmic inclusions and poxvirus excludes cryptococcal organisms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Disseminated cryptococcosis",
+            "Electron microscopy confirmed poxvirus, not encapsulated yeast"
+          ],
+          [
+            "Disseminated histoplasmosis",
+            "Histopathology shows poxvirus inclusions, not intracellular yeast forms"
+          ],
+          [
+            "Varicella-zoster virus infection",
+            "Poxvirus particles identified rather than herpesvirus"
+          ],
+          [
+            "Cutaneous cryptococcosis",
+            "Biopsy demonstrates poxvirus rather than Cryptococcus organisms"
+          ]
+        ]
+      },
+      "cf_id": "case_048_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of vesicles instead of papules argues against Poxvirus, which typically presents with papules or nodules."
+    }
+  ]
+}

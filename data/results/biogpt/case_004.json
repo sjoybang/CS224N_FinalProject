@@ -1,0 +1,126 @@
+{
+  "case_id": "case_004",
+  "model": "biogpt",
+  "ground_truth": "Scorpion sting",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 40-year-old female zookeeper presents to the emergency department complaining of severe abdominal pain that radiates to her back, and nausea. The pain started 2 days ago and has been gradually increasing. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 40-year-old female zookeeper presents to the emergency department complaining of severe abdominal pain that radiates to her back, and nausea. The pain started 2 days ago and has been gradually increasing. [Stage 2] The patient's blood pressure is 108 / 58 mm Hg, heart rate is 99 / min, respiratory rate is 21 / min, and temperature is 37.0 \u00b0 C (98.6 \u00b0 F). Physical exam reveals a well-developed, obese female who appears unwell. Her heart has a regular rate and rhythm. Radial pulses are weak but symmetric. Her lungs are clear to auscultation bilaterally. Her lateral left ankle is swollen, erythematous, and painful to palpation. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 40-year-old female zookeeper presents to the emergency department complaining of severe abdominal pain that radiates to her back, and nausea. The pain started 2 days ago and has been gradually increasing. [Stage 2] The patient's blood pressure is 108 / 58 mm Hg, heart rate is 99 / min, respiratory rate is 21 / min, and temperature is 37.0 \u00b0 C (98.6 \u00b0 F). Physical exam reveals a well-developed, obese female who appears unwell. Her heart has a regular rate and rhythm. Radial pulses are weak but symmetric. Her lungs are clear to auscultation bilaterally. Her lateral left ankle is swollen, erythematous, and painful to palpation. [Stage 3] The patient's past medical history includes hypertension and hypothyroidism. She reports being stung by a scorpion recently but did not seek medical treatment. She takes aspirin, levothyroxine, and oral contraceptive pills daily. An abdominal CT is consistent with acute pancreatitis. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 40-year-old female zookeeper presents to the emergency department complaining of severe abdominal pain that radiates to her back, and nausea. The pain started 2 days ago and has been gradually increasing. [Stage 2] The patient's blood pressure is 108 / 58 mm Hg, heart rate is 99 / min, respiratory rate is 21 / min, and temperature is 37.0 \u00b0 C (98.6 \u00b0 F). Physical exam reveals a well-developed, obese female who appears unwell. Her heart has a regular rate and rhythm. Radial pulses are weak but symmetric. Her lungs are clear to auscultation bilaterally. Her lateral left ankle is swollen, erythematous, and painful to palpation. [Stage 3] The patient's past medical history includes hypertension and hypothyroidism. She reports being stung by a scorpion recently but did not seek medical treatment. She takes aspirin, levothyroxine, and oral contraceptive pills daily. An abdominal CT is consistent with acute pancreatitis. [Stage 4] Further questioning reveals that the scorpion was identified as a Tityus species, known to cause pancreatitis through the release of toxins. The patient's serum amylase and lipase levels are markedly elevated, and scorpion venom was detected in the patient's serum. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 40-year-old female zookeeper presents to the emergency department complaining of severe abdominal pain that radiates to her back, and nausea. The pain started 2 days ago and has been gradually increasing. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 40-year-old female zookeeper presents to the emergency department complaining of severe abdominal pain that radiates to her back, and nausea. The pain started 2 days ago and has been gradually increasing. [Stage 2] The patient's blood pressure is 108 / 58 mm Hg, heart rate is 99 / min, respiratory rate is 21 / min, and temperature is 37.0 \u00b0 C (98.6 \u00b0 F). Physical exam reveals a well-developed, obese female who appears unwell. Her heart has a regular rate and rhythm. Radial pulses are weak but symmetric. Her lungs are clear to auscultation bilaterally. There is no swelling, erythema, or pain at the site of the reported sting. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 40-year-old female zookeeper presents to the emergency department complaining of severe abdominal pain that radiates to her back, and nausea. The pain started 2 days ago and has been gradually increasing. [Stage 2] The patient's blood pressure is 108 / 58 mm Hg, heart rate is 99 / min, respiratory rate is 21 / min, and temperature is 37.0 \u00b0 C (98.6 \u00b0 F). Physical exam reveals a well-developed, obese female who appears unwell. Her heart has a regular rate and rhythm. Radial pulses are weak but symmetric. Her lungs are clear to auscultation bilaterally. There is no swelling, erythema, or pain at the site of the reported sting. [Stage 3] The patient's past medical history includes hypertension and hypothyroidism. She reports being stung by a scorpion recently but did not seek medical treatment. She takes aspirin, levothyroxine, and oral contraceptive pills daily. An abdominal CT is consistent with acute pancreatitis. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 40-year-old female zookeeper presents to the emergency department complaining of severe abdominal pain that radiates to her back, and nausea. The pain started 2 days ago and has been gradually increasing. [Stage 2] The patient's blood pressure is 108 / 58 mm Hg, heart rate is 99 / min, respiratory rate is 21 / min, and temperature is 37.0 \u00b0 C (98.6 \u00b0 F). Physical exam reveals a well-developed, obese female who appears unwell. Her heart has a regular rate and rhythm. Radial pulses are weak but symmetric. Her lungs are clear to auscultation bilaterally. There is no swelling, erythema, or pain at the site of the reported sting. [Stage 3] The patient's past medical history includes hypertension and hypothyroidism. She reports being stung by a scorpion recently but did not seek medical treatment. She takes aspirin, levothyroxine, and oral contraceptive pills daily. An abdominal CT is consistent with acute pancreatitis. [Stage 4] Further questioning reveals that the scorpion was identified as a Tityus species, known to cause pancreatitis through the release of toxins. The patient's serum amylase and lipase levels are markedly elevated, and scorpion venom was detected in the patient's serum. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_004_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of local findings at the sting site argues against scorpion envenomation."
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "case_id": "case_014",
+  "model": "claude",
+  "ground_truth": "Coronary artery disease",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Peptic ulcer disease",
+          "Recurrent upper abdominal discomfort exacerbated by eating is classic for gastric or duodenal ulceration in this age group."
+        ],
+        [
+          "Gastric malignancy",
+          "Age over 65 with new-onset dyspepsia and postprandial symptoms raises concern for gastric cancer."
+        ],
+        [
+          "Chronic gastritis",
+          "Nausea and upper abdominal discomfort over 4 months suggests chronic inflammatory changes of the gastric mucosa."
+        ],
+        [
+          "Biliary colic/Cholelithiasis",
+          "Postprandial upper abdominal discomfort and nausea are consistent with gallstone-related symptoms."
+        ],
+        [
+          "Gastroparesis",
+          "Recurrent nausea and postprandial discomfort over months can indicate delayed gastric emptying."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic mesenteric ischemia",
+          "Recurrent postprandial abdominal discomfort in a patient with absent foot pulses suggests diffuse atherosclerotic disease affecting mesenteric vessels."
+        ],
+        [
+          "Peptic ulcer disease",
+          "Upper abdominal discomfort with nausea exacerbated by eating is consistent with gastric or duodenal ulceration."
+        ],
+        [
+          "Gastric cancer",
+          "Four-month history of progressive upper abdominal symptoms and nausea in a 68-year-old warrants malignancy consideration."
+        ],
+        [
+          "Chronic pancreatitis",
+          "Recurrent upper abdominal discomfort after meals with nausea can indicate chronic pancreatic inflammation."
+        ],
+        [
+          "Gastroparesis",
+          "Postprandial nausea and upper abdominal discomfort may reflect delayed gastric emptying, potentially related to vascular disease."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute mesenteric ischemia",
+          "The chronic 4-month duration and nontender abdomen exclude acute arterial occlusion."
+        ],
+        [
+          "Acute cholecystitis",
+          "Absence of fever, tenderness, and organomegaly makes acute gallbladder inflammation unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic mesenteric ischemia",
+          "Postprandial abdominal discomfort in a patient with extensive atherosclerotic disease (diabetes, hypertension, PAD, smoking) and new exertional symptoms suggests mesenteric arterial insufficiency."
+        ],
+        [
+          "Gastric cancer",
+          "Recurrent nausea and upper abdominal discomfort over 4 months in a 68-year-old with risk factors warrants consideration of malignancy despite soft abdomen on exam."
+        ],
+        [
+          "Peptic ulcer disease",
+          "Upper abdominal discomfort exacerbated by eating with nausea could represent gastric or duodenal ulceration, especially in the context of possible NSAID use for vascular disease."
+        ],
+        [
+          "Gastroparesis",
+          "Diabetic autonomic neuropathy can cause delayed gastric emptying presenting with postprandial nausea and upper abdominal discomfort in this long-standing diabetic patient."
+        ],
+        [
+          "Stable angina",
+          "New exertional symptoms in a patient with multiple cardiovascular risk factors and vascular disease could represent cardiac ischemia with atypical gastrointestinal symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute coronary syndrome",
+          "Normal ECG and stable 4-month symptom course without acute presentation make this unlikely."
+        ],
+        [
+          "Acute mesenteric ischemia",
+          "Chronic 4-month history with soft, nontender abdomen rules out acute vascular occlusion."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic mesenteric ischemia",
+          "Recurrent postprandial abdominal discomfort in a patient with extensive atherosclerotic disease (PAD, CAD) and vascular risk factors suggests intestinal angina."
+        ],
+        [
+          "Unstable angina/coronary artery disease",
+          "Stress test showing significant ST-segment depression with severe LAD stenosis explains exertional symptoms and may contribute to nausea via vagal stimulation."
+        ],
+        [
+          "Peptic ulcer disease",
+          "Upper abdominal discomfort exacerbated by eating in a patient with multiple risk factors, though less likely given normal physical exam and vascular disease burden."
+        ],
+        [
+          "Gastroparesis",
+          "Type 2 diabetes can cause delayed gastric emptying leading to postprandial nausea and upper abdominal discomfort over months."
+        ],
+        [
+          "Gastroesophageal reflux disease",
+          "Chronic upper abdominal discomfort and nausea after eating could represent GERD, though less consistent with the vascular disease pattern."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute coronary syndrome",
+          "ECG shows no abnormalities and symptoms are recurrent over 4 months rather than acute."
+        ],
+        [
+          "Acute mesenteric ischemia",
+          "Symptoms are chronic (4 months) and abdomen is soft and nontender, inconsistent with acute presentation."
+        ],
+        [
+          "Abdominal malignancy",
+          "No organomegaly or focal tenderness on examination makes this less likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Peptic ulcer disease",
+            "Recurrent postprandial upper abdominal discomfort and nausea in an older adult are classic presentations of gastric or duodenal ulceration."
+          ],
+          [
+            "Chronic gastritis",
+            "Persistent upper abdominal symptoms with nausea over 4 months suggests chronic inflammatory changes of the gastric mucosa, often related to H. pylori or NSAIDs."
+          ],
+          [
+            "Gastric malignancy",
+            "Age over 65 with progressive upper GI symptoms including postprandial discomfort and nausea raises concern for gastric adenocarcinoma."
+          ],
+          [
+            "Gastroparesis",
+            "Recurrent nausea and postprandial upper abdominal discomfort may reflect delayed gastric emptying, particularly common in older adults."
+          ],
+          [
+            "Pancreatic disease (chronic pancreatitis or malignancy)",
+            "Upper abdominal discomfort exacerbated by eating with nausea could indicate pancreatic pathology given the symptom duration and patient age."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Peptic ulcer disease",
+            "Recurrent postprandial upper abdominal discomfort and nausea in an elderly patient are classic symptoms, with benign abdominal exam not excluding this diagnosis."
+          ],
+          [
+            "Gastric cancer",
+            "Age over 65 with persistent upper GI symptoms for 4 months warrants consideration of malignancy despite unremarkable physical examination."
+          ],
+          [
+            "Chronic mesenteric ischemia",
+            "Postprandial exacerbation of symptoms suggests intestinal angina, though strong foot pulses make severe atherosclerosis less likely."
+          ],
+          [
+            "Functional dyspepsia",
+            "Chronic upper abdominal symptoms without alarm features on physical exam could represent this common diagnosis of exclusion."
+          ],
+          [
+            "Gastroparesis",
+            "Recurrent nausea and postprandial discomfort over months may indicate delayed gastric emptying, though diabetic history not yet established."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute appendicitis",
+            "Chronic 4-month duration and upper abdominal location inconsistent with acute appendicitis."
+          ],
+          [
+            "Acute cholecystitis",
+            "Nontender abdomen without fever or signs of acute inflammation makes acute process unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic mesenteric ischemia",
+            "Recurrent postprandial abdominal discomfort in a patient with extensive vascular risk factors (diabetes, hypertension, PAD, smoking) suggests intestinal angina."
+          ],
+          [
+            "Gastric malignancy",
+            "Four-month history of nausea and upper abdominal discomfort with new exertional symptoms could indicate gastric cancer with associated anemia or systemic effects."
+          ],
+          [
+            "Peptic ulcer disease",
+            "Upper abdominal discomfort exacerbated by eating in a smoker with diabetes could represent gastric or duodenal ulceration."
+          ],
+          [
+            "Stable angina pectoris",
+            "New exertional symptoms with multiple cardiovascular risk factors may indicate coronary artery disease manifesting with atypical gastrointestinal symptoms, despite normal ECG at rest."
+          ],
+          [
+            "Gastroparesis",
+            "Type 2 diabetes history with chronic postprandial nausea and upper abdominal discomfort suggests delayed gastric emptying from diabetic autonomic neuropathy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute coronary syndrome",
+            "Normal ECG and absence of acute symptoms make this unlikely."
+          ],
+          [
+            "Acute mesenteric ischemia",
+            "Chronic 4-month course and nontender abdomen on examination rule out acute vascular occlusion."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic mesenteric ischemia",
+            "Postprandial upper abdominal discomfort in a patient with significant atherosclerotic disease (PAD, coronary stenosis) and vascular risk factors suggests mesenteric arterial insufficiency."
+          ],
+          [
+            "Stable angina pectoris",
+            "Positive stress test with severe LAD stenosis and new exertional symptoms directly explain the clinical presentation, though upper abdominal symptoms can represent anginal equivalents."
+          ],
+          [
+            "Peptic ulcer disease",
+            "Recurrent upper abdominal discomfort exacerbated by eating could represent peptic ulcer disease, though lack of tenderness on exam makes this less likely."
+          ],
+          [
+            "Gastroesophageal reflux disease",
+            "Upper abdominal discomfort related to eating in an older patient could represent GERD, though cardiovascular findings suggest a more systemic vascular etiology."
+          ],
+          [
+            "Gastroparesis",
+            "Type 2 diabetes history with postprandial nausea and upper abdominal discomfort could indicate diabetic gastroparesis as a complication."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute coronary syndrome",
+            "Normal vital signs, stable 4-month history, and lack of acute changes on initial ECG rule out acute presentation."
+          ],
+          [
+            "Abdominal aortic aneurysm",
+            "Absence of pulsatile abdominal mass and lack of organomegaly on physical examination make this unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_014_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of strong, palpable dorsalis pedis pulses bilaterally argues against peripheral arterial disease as a cause of the patient's symptoms, making coronary artery disease less likely."
+    }
+  ]
+}

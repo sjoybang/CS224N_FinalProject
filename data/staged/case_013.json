@@ -1,0 +1,25 @@
+{
+  "case_id": "case_013",
+  "source": "MedQA-USMLE",
+  "original_question": "A 76-year-old African American man presents to his primary care provider complaining of urinary frequency. He wakes up 3-4 times per night to urinate while he previously only had to wake up once per night. He also complains of post-void dribbling and difficulty initiating a stream of urine. He denies any difficulty maintaining an erection. His past medical history is notable for non-alcoholic fatty liver disease, hypertension, hyperlipidemia, and gout. He takes aspirin, atorvastatin, enalapril, and allopurinol. His family history is notable for prostate cancer in his father and lung cancer in his mother. He has a 15-pack-year smoking history and drinks alcohol socially. On digital rectal exam, his prostate is enlarged, smooth, and non-tender. Which of the following medications is indicated in this patient?",
+  "ground_truth": "Benign prostatic hyperplasia",
+  "base": {
+    "stage_1": "A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously.",
+    "stage_2": "The patient's vital signs are within normal limits. Physical examination, including a digital rectal exam, reveals an enlarged, smooth, and non-tender prostate.",
+    "stage_3": "A postvoid residual urine volume is measured at 180 mL. Urinalysis is negative for infection or hematuria. PSA level is 3.2 ng/mL.",
+    "stage_4": "Urodynamic studies demonstrate decreased urinary flow rate and increased bladder outlet resistance, consistent with bladder outlet obstruction."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The digital rectal exam reveals a nodule on the prostate, which raises concern for prostate cancer and argues against benign prostatic hyperplasia.",
+      "rules_out": "Benign prostatic hyperplasia",
+      "stage_1": "A 76-year-old African American man presents to his primary care provider complaining of increased urinary frequency, reporting that he now wakes up 3-4 times per night to urinate, compared to once previously.",
+      "stage_2": "The patient's vital signs are within normal limits. Physical examination, including a digital rectal exam, reveals an enlarged prostate with a palpable nodule.",
+      "stage_3": "A postvoid residual urine volume is measured at 180 mL. Urinalysis is negative for infection or hematuria. PSA level is 3.2 ng/mL.",
+      "stage_4": "Urodynamic studies demonstrate decreased urinary flow rate and increased bladder outlet resistance, consistent with bladder outlet obstruction.",
+      "cf_id": "case_013_cf_a"
+    }
+  ]
+}

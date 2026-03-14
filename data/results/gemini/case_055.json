@@ -1,0 +1,254 @@
+{
+  "case_id": "case_055",
+  "model": "gemini",
+  "ground_truth": "Medication error due to miscommunication",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Epilepsy",
+          "Recurrent seizures in a child are a hallmark of epilepsy."
+        ],
+        [
+          "Febrile Seizures",
+          "Although the patient's age is slightly older than typical, febrile seizures should be considered if fever is present."
+        ],
+        [
+          "Meningitis",
+          "Seizures can be a symptom of meningitis, especially in children."
+        ],
+        [
+          "Encephalitis",
+          "Inflammation of the brain can cause seizures."
+        ],
+        [
+          "Brain Tumor",
+          "Although less common, a brain tumor can present with seizures."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Status epilepticus",
+          "The patient has a history of recurrent seizures and is currently in a post-ictal state after resuscitation."
+        ],
+        [
+          "Encephalitis",
+          "Altered mental status and seizures can be indicative of brain inflammation."
+        ],
+        [
+          "Meningitis",
+          "Seizures and altered mental status can be associated with an infection of the meninges."
+        ],
+        [
+          "Toxic ingestion",
+          "Seizures can be a manifestation of exposure to certain toxins or drugs."
+        ],
+        [
+          "Hypertensive encephalopathy",
+          "Elevated heart rate and blood pressure along with neurological symptoms suggest possible hypertensive crisis affecting the brain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute trauma",
+          "Physical exam revealed no acute trauma."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Phenytoin toxicity",
+          "Elevated phenytoin levels directly correlate with the patient's symptoms and the medication error."
+        ],
+        [
+          "Status epilepticus",
+          "The patient presented with recurrent seizures and required resuscitation, suggesting a prolonged seizure state."
+        ],
+        [
+          "Hypertensive encephalopathy",
+          "Elevated blood pressure post-seizure could indicate hypertensive encephalopathy."
+        ],
+        [
+          "Electrolyte imbalance",
+          "Resuscitation and seizure activity can disrupt electrolyte balance, contributing to neurological symptoms."
+        ],
+        [
+          "Hypoglycemia",
+          "Although not explicitly mentioned, hypoglycemia can cause seizures and altered mental status, requiring consideration."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Traumatic brain injury",
+          "No acute trauma was noted on physical exam."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Phenytoin toxicity",
+          "Elevated phenytoin levels directly correlate with the patient's symptoms and the medication error."
+        ],
+        [
+          "Postictal state",
+          "The patient's neurological exam is limited due to the recent seizure activity."
+        ],
+        [
+          "Medication error",
+          "The root cause analysis confirms a medication error as the primary event."
+        ],
+        [
+          "Seizure disorder",
+          "The patient has a history of recurrent seizures."
+        ],
+        [
+          "Iatrogenic illness",
+          "The patient's condition is a direct result of medical intervention."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Traumatic brain injury",
+          "Physical exam revealed no acute trauma."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Epilepsy",
+            "Recurrent seizures in a child are a hallmark of epilepsy."
+          ],
+          [
+            "Febrile Seizures",
+            "Although the patient's age is slightly older than typical, febrile seizures should be considered if fever is present."
+          ],
+          [
+            "Meningitis",
+            "Seizures can be a symptom of meningitis, especially in children."
+          ],
+          [
+            "Encephalitis",
+            "Inflammation of the brain can cause seizures."
+          ],
+          [
+            "Brain Tumor",
+            "Although less common, a brain tumor can present with seizures."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Traumatic Brain Injury",
+            "The presence of bruising and swelling on the forehead, along with seizures, strongly suggests head trauma."
+          ],
+          [
+            "Child Abuse",
+            "The bruising and swelling on the arms, in addition to the head trauma, raises concern for non-accidental injury."
+          ],
+          [
+            "Postictal State",
+            "The patient's limited neurological exam and recent seizures suggest she is currently in a postictal state."
+          ],
+          [
+            "Coagulation Disorder",
+            "Bruising could indicate an underlying bleeding or clotting abnormality."
+          ],
+          [
+            "Hypertensive Encephalopathy",
+            "Elevated heart rate and blood pressure, along with seizures, could indicate hypertensive encephalopathy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "",
+            "None at this time."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Phenytoin Toxicity",
+            "Elevated phenytoin levels directly correlate with the patient's symptoms and the reported medication error."
+          ],
+          [
+            "Traumatic Brain Injury",
+            "Bruising and swelling on the forehead, along with seizures, raise concern for underlying head trauma."
+          ],
+          [
+            "Postictal State",
+            "The neurological exam is limited due to the recent seizure activity, which can cause temporary neurological deficits."
+          ],
+          [
+            "Hypertensive Emergency",
+            "Elevated heart rate and blood pressure could indicate a hypertensive crisis secondary to the phenytoin toxicity or other underlying cause."
+          ],
+          [
+            "Electrolyte Imbalance",
+            "Resuscitation and seizure activity can disrupt electrolyte balance, potentially contributing to neurological symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Status Epilepticus",
+            "The patient is no longer actively seizing after resuscitation."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Phenytoin toxicity",
+            "Elevated phenytoin levels directly correlate with the observed seizures and neurological symptoms."
+          ],
+          [
+            "Traumatic brain injury",
+            "The bruising and swelling on the forehead raise suspicion for underlying head trauma contributing to seizure activity."
+          ],
+          [
+            "Postictal state",
+            "The neurological exam is limited due to the patient's recent seizure activity."
+          ],
+          [
+            "Electrolyte imbalance",
+            "Resuscitation and potential underlying conditions could lead to electrolyte abnormalities contributing to seizure activity."
+          ],
+          [
+            "Medication error",
+            "While phenytoin is the primary issue, other medications given during resuscitation could have contributed."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Epilepsy",
+            "The seizures are directly linked to phenytoin toxicity, making epilepsy less likely as the primary cause."
+          ]
+        ]
+      },
+      "cf_id": "case_055_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals signs of trauma, including bruising and swelling, which argues against a medication error as the primary cause of seizures."
+    }
+  ]
+}

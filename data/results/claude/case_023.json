@@ -1,0 +1,265 @@
+{
+  "case_id": "case_023",
+  "model": "claude",
+  "ground_truth": "Acting out",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Substance use disorder",
+          "Behavioral changes in adolescents frequently stem from experimentation with or regular use of drugs or alcohol."
+        ],
+        [
+          "Major depressive disorder",
+          "Depression commonly presents with behavioral changes during adolescence and is a leading cause of functional impairment in this age group."
+        ],
+        [
+          "Psychotic disorder (first episode)",
+          "Late adolescence is a typical age for first presentation of schizophrenia or other primary psychotic disorders with behavioral changes."
+        ],
+        [
+          "Bipolar disorder",
+          "Adolescence is a common period for initial presentation of bipolar disorder, which manifests with notable behavioral shifts."
+        ],
+        [
+          "Attention-deficit/hyperactivity disorder",
+          "ADHD can present or worsen in adolescence, causing behavioral problems that may prompt parental concern."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Conduct Disorder",
+          "Repetitive pattern of aggression toward others, violation of rules (truancy), and antisocial behaviors (bullying) are hallmark features in an adolescent."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "Demonstrates defiant and hostile behavior toward authority figures (teachers) with aggression, though the severity suggests conduct disorder is more likely."
+        ],
+        [
+          "Substance Use Disorder",
+          "Cigarette smoking may indicate broader substance experimentation that could explain behavioral changes and impulsivity."
+        ],
+        [
+          "Bipolar Disorder (manic episode)",
+          "Adolescent-onset mania can present with irritability, aggression, impulsivity, and risk-taking behaviors like truancy and smoking."
+        ],
+        [
+          "Attention-Deficit/Hyperactivity Disorder with comorbid behavioral problems",
+          "Underlying ADHD with impulsivity could contribute to school problems and escalating behavioral issues in adolescence."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses; medical, neurological, and substance-related causes still require evaluation."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Adjustment Disorder with Disturbance of Conduct",
+          "Acute behavioral changes temporally linked to significant stressor (father's departure) within past three months with previously normal functioning."
+        ],
+        [
+          "Major Depressive Disorder",
+          "Behavioral deterioration, social withdrawal, and academic decline can manifest as irritability and conduct problems in adolescents following major life stressor."
+        ],
+        [
+          "Conduct Disorder",
+          "Pattern of aggression toward peers and teachers, bullying, rule violations (truancy), though the acute onset is somewhat atypical for this diagnosis."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "Defiant and hostile behavior toward authority figures (teachers), though severity and acute onset better fit adjustment disorder."
+        ],
+        [
+          "Substance Use Disorder",
+          "Smoking cigarettes observed and behavioral changes raise concern, though negative urine drug screen makes active intoxication less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Psychotic Disorder",
+          "No evidence of delusions, hallucinations, or disorganized thinking reported."
+        ],
+        [
+          "Bipolar Disorder",
+          "No mention of manic symptoms such as decreased need for sleep, grandiosity, or elevated mood."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Adjustment Disorder with Disturbance of Conduct",
+          "Behavioral changes (aggression, defiance, skipping school) began temporally linked to identifiable stressor (parental separation) within three months, with previously normal functioning."
+        ],
+        [
+          "Conduct Disorder",
+          "Pattern of aggressive behavior toward peers and teachers, bullying, defiance of authority, and rule violations (skipping classes) meets criteria for persistent antisocial behavior."
+        ],
+        [
+          "Oppositional Defiant Disorder",
+          "Recurrent pattern of defiant, hostile behavior toward authority figures (teachers, staff) with verbal altercations and rule-breaking, though severity suggests possible progression beyond ODD."
+        ],
+        [
+          "Major Depressive Disorder",
+          "Acute behavioral deterioration, academic decline, and social withdrawal following significant life stressor could represent behavioral manifestation of depression in adolescent males."
+        ],
+        [
+          "Disruptive Mood Dysregulation Disorder",
+          "Persistent irritability manifesting as verbal altercations and aggressive outbursts, though timeline is shorter than typically required for this diagnosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Substance Use Disorder",
+          "Negative urine drug screen and isolated cigarette smoking incident insufficient for diagnosis."
+        ],
+        [
+          "Bipolar Disorder",
+          "No evidence of manic or hypomanic episodes, grandiosity, decreased need for sleep, or mood cycling."
+        ],
+        [
+          "Psychotic Disorder",
+          "No reported psychotic symptoms, delusions, or hallucinations."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Substance use disorder",
+            "Adolescent males commonly present with behavioral changes related to drug or alcohol use."
+          ],
+          [
+            "Major depressive disorder",
+            "Depression frequently manifests as behavioral changes in adolescents and is highly prevalent in this age group."
+          ],
+          [
+            "Psychotic disorder (first episode)",
+            "Mid-adolescence is a typical age of onset for schizophrenia and other primary psychotic disorders."
+          ],
+          [
+            "Bipolar disorder",
+            "Manic or hypomanic episodes often present with notable behavioral changes and can emerge during adolescence."
+          ],
+          [
+            "Attention-deficit/hyperactivity disorder",
+            "ADHD may become more apparent in adolescence when academic and social demands increase, causing behavioral concerns."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Conduct Disorder",
+            "Recurrent pattern of aggression, bullying, rule violations (skipping classes, smoking), and antisocial behavior resulting in school expulsions and suspensions fits diagnostic criteria."
+          ],
+          [
+            "Early-onset Schizophrenia",
+            "Auditory hallucinations (voices saying he is worthless) in an adolescent with behavioral changes raise concern for psychotic disorder."
+          ],
+          [
+            "Substance-Induced Psychotic Disorder",
+            "Cigarette smoking noted, possibility of other substance use causing hallucinations and behavioral deterioration in adolescent."
+          ],
+          [
+            "Major Depressive Disorder with Psychotic Features",
+            "Auditory hallucinations with negative content (worthlessness) combined with behavioral changes could indicate depression with psychosis."
+          ],
+          [
+            "Bipolar Disorder with Psychotic Features",
+            "Aggressive behavior, irritability, and auditory hallucinations could represent a manic or mixed episode with psychotic features."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Adjustment Disorder with Mixed Disturbance of Emotions and Conduct",
+            "Behavioral changes (aggression, truancy) and emotional symptoms (auditory hallucinations) began acutely three months ago directly following parental separation due to maternal infidelity."
+          ],
+          [
+            "Major Depressive Disorder with Psychotic Features",
+            "Auditory hallucinations with negative content (\"worthless\"), significant behavioral deterioration, and temporal relationship to major psychosocial stressor suggest depression with psychosis."
+          ],
+          [
+            "Brief Psychotic Disorder",
+            "Auditory hallucinations present for less than one month (if recent onset within the 3-month timeframe) following severe psychological stress of family disruption."
+          ],
+          [
+            "Conduct Disorder",
+            "Pattern of aggression toward peers and teachers, defiance of authority (truancy), and rule violations (smoking) over a two-month period meets behavioral criteria."
+          ],
+          [
+            "Early-onset Schizophrenia",
+            "Auditory hallucinations with behavioral deterioration in an adolescent, though the acute onset and clear psychosocial precipitant make this less likely than reactive diagnoses."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Substance-Induced Psychotic Disorder",
+            "Negative urine drug screen rules out acute substance intoxication as cause of symptoms."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Adjustment Disorder with Disturbance of Conduct",
+            "Behavioral changes (aggression, defiance, truancy) emerged specifically following the parental separation three months ago with previously excellent functioning."
+          ],
+          [
+            "Major Depressive Disorder with Psychotic Features",
+            "Auditory hallucinations with negative content (\"worthless\") and behavioral regression could represent adolescent depression with psychosis triggered by family stressor."
+          ],
+          [
+            "Brief Psychotic Disorder",
+            "Acute onset of auditory hallucinations temporally related to significant psychosocial stressor (parental separation) lasting less than one month duration."
+          ],
+          [
+            "Conduct Disorder",
+            "Pattern of bullying, aggression toward others, defiance of authority, truancy, and tobacco use meets criteria for conduct disorder symptoms."
+          ],
+          [
+            "Early-onset Schizophrenia",
+            "New-onset auditory hallucinations with behavioral deterioration and social withdrawal in mid-adolescence could represent emerging psychotic disorder."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Substance-Induced Psychotic Disorder",
+            "Negative urine drug screen makes substance-induced etiology unlikely."
+          ],
+          [
+            "Oppositional Defiant Disorder",
+            "The severity of aggression, bullying behavior, and presence of psychotic symptoms exceeds typical ODD presentation."
+          ]
+        ]
+      },
+      "cf_id": "case_023_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports auditory hallucinations, which argues against acting out."
+    }
+  ]
+}

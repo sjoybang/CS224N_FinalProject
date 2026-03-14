@@ -1,0 +1,247 @@
+{
+  "case_id": "case_059",
+  "model": "gpt4",
+  "ground_truth": "Exocrine pancreatic insufficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Celiac Disease",
+          "Chronic diarrhea, weight loss, and bloating are classic symptoms of celiac disease due to malabsorption."
+        ],
+        [
+          "Irritable Bowel Syndrome",
+          "IBS can present with bloating and diarrhea, especially in the absence of alarm features like bleeding."
+        ],
+        [
+          "Inflammatory Bowel Disease",
+          "Conditions like Crohn's disease or ulcerative colitis can cause chronic diarrhea and weight loss."
+        ],
+        [
+          "Lactose Intolerance",
+          "Bloating and diarrhea can occur with lactose intolerance, especially if symptoms are related to dairy intake."
+        ],
+        [
+          "Hyperthyroidism",
+          "Weight loss and diarrhea can be symptoms of hyperthyroidism due to increased metabolic rate."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Celiac disease",
+          "The combination of weight loss, diarrhea, and bloating suggests malabsorption, which is characteristic of celiac disease."
+        ],
+        [
+          "Thyroid cancer",
+          "The presence of a hard, fixed mass in the anterior midline of the neck raises suspicion for a thyroid malignancy."
+        ],
+        [
+          "Vitamin A deficiency",
+          "Bilateral white spots on the conjunctiva (Bitot's spots) and dry skin are indicative of vitamin A deficiency."
+        ],
+        [
+          "Hyperthyroidism",
+          "Weight loss and diarrhea can be symptoms of hyperthyroidism, and the neck mass could be a thyroid nodule."
+        ],
+        [
+          "Inflammatory bowel disease",
+          "Chronic diarrhea and weight loss are consistent with inflammatory bowel disease, such as Crohn's disease or ulcerative colitis."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Celiac disease",
+          "The presence of diarrhea, weight loss, and increased D-xylose excretion suggests malabsorption, which is consistent with celiac disease."
+        ],
+        [
+          "Thyroid cancer",
+          "The hard, fixed mass in the anterior midline of the neck raises suspicion for a thyroid malignancy."
+        ],
+        [
+          "Vitamin A deficiency",
+          "Bilateral white spots on the conjunctiva (Bitot's spots) and dry skin are indicative of vitamin A deficiency."
+        ],
+        [
+          "Hyperthyroidism",
+          "Weight loss and a neck mass could be associated with hyperthyroidism, although other symptoms are not prominent."
+        ],
+        [
+          "Small intestinal bacterial overgrowth (SIBO)",
+          "Diarrhea and malabsorption symptoms could be due to SIBO, which can also cause increased D-xylose excretion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Lactose intolerance",
+          "The presence of increased D-xylose excretion suggests intact carbohydrate absorption, ruling out lactose intolerance."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Celiac disease",
+          "The combination of weight loss, diarrhea, and fat malabsorption with elevated fecal fat and low fecal elastase suggests a malabsorptive disorder like celiac disease."
+        ],
+        [
+          "Chronic pancreatitis",
+          "Low fecal elastase and fat malabsorption are indicative of pancreatic insufficiency, which is commonly seen in chronic pancreatitis."
+        ],
+        [
+          "Thyroid cancer",
+          "The presence of a hard, fixed mass in the anterior midline of the neck raises suspicion for thyroid cancer, which can also cause systemic symptoms like weight loss."
+        ],
+        [
+          "Vitamin A deficiency",
+          "Bilateral white spots on the conjunctiva (Bitot's spots) and dry skin are classic signs of vitamin A deficiency, which can occur secondary to malabsorption."
+        ],
+        [
+          "Whipple's disease",
+          "Chronic diarrhea, weight loss, and fat malabsorption are consistent with Whipple's disease, although it is rare."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hyperthyroidism",
+          "Normal vital signs and the presence of a neck mass suggest a structural thyroid issue rather than hyperthyroidism."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Celiac Disease",
+            "Chronic diarrhea, weight loss, and bloating are classic symptoms of celiac disease due to malabsorption."
+          ],
+          [
+            "Irritable Bowel Syndrome",
+            "The combination of bloating and diarrhea is common in IBS, especially in the absence of alarm features."
+          ],
+          [
+            "Inflammatory Bowel Disease",
+            "Conditions like Crohn's disease or ulcerative colitis can present with diarrhea and weight loss."
+          ],
+          [
+            "Lactose Intolerance",
+            "Bloating and diarrhea can occur with lactose intolerance, especially if symptoms are related to dairy intake."
+          ],
+          [
+            "Hyperthyroidism",
+            "Weight loss and diarrhea can be symptoms of hyperthyroidism due to increased metabolic rate."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Celiac disease",
+            "The combination of weight loss, diarrhea, and bloating suggests malabsorption, which is consistent with celiac disease, and the presence of conjunctival spots may indicate vitamin deficiencies."
+          ],
+          [
+            "Crohn's disease",
+            "Chronic diarrhea and weight loss are common in Crohn's disease, and the dry skin could be related to nutritional deficiencies."
+          ],
+          [
+            "Lactose intolerance",
+            "Bloating and diarrhea are classic symptoms of lactose intolerance, although weight loss is less common."
+          ],
+          [
+            "Giardiasis",
+            "This parasitic infection can cause chronic diarrhea and weight loss, aligning with the patient's symptoms."
+          ],
+          [
+            "Hyperthyroidism",
+            "Although less likely due to the absence of other classic symptoms, hyperthyroidism can cause weight loss and diarrhea."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Irritable bowel syndrome",
+            "IBS typically does not cause weight loss or nutritional deficiencies."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Celiac Disease",
+            "The symptoms of weight loss, bloating, diarrhea, and malabsorption indicated by increased D-xylose excretion are consistent with celiac disease."
+          ],
+          [
+            "Tropical Sprue",
+            "The chronic diarrhea and malabsorption symptoms, along with the geographic possibility, align with tropical sprue."
+          ],
+          [
+            "Whipple's Disease",
+            "The combination of weight loss, diarrhea, and malabsorption could suggest Whipple's disease, although it is rare."
+          ],
+          [
+            "Lactose Intolerance",
+            "The symptoms of bloating and diarrhea could be due to lactose intolerance, although weight loss is less typical."
+          ],
+          [
+            "Small Intestinal Bacterial Overgrowth (SIBO)",
+            "The malabsorption and gastrointestinal symptoms could be due to SIBO, which can cause similar presentations."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Crohn's Disease",
+            "The absence of abdominal pain, fever, or blood in stools makes Crohn's disease less likely."
+          ],
+          [
+            "Ulcerative Colitis",
+            "The lack of bloody diarrhea and normal vital signs make ulcerative colitis unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Celiac disease",
+            "The combination of weight loss, diarrhea, and fat malabsorption with low fecal elastase suggests a malabsorptive disorder, and celiac disease is a common cause."
+          ],
+          [
+            "Chronic pancreatitis",
+            "Low fecal elastase and fat malabsorption indicate pancreatic insufficiency, which is consistent with chronic pancreatitis."
+          ],
+          [
+            "Small intestinal bacterial overgrowth (SIBO)",
+            "Symptoms of bloating and diarrhea, along with malabsorption, can be due to SIBO, which can also cause fat malabsorption."
+          ],
+          [
+            "Lactose intolerance",
+            "While less likely given the fat malabsorption, lactose intolerance can cause diarrhea and bloating, though it typically does not cause weight loss."
+          ],
+          [
+            "Crohn's disease",
+            "This inflammatory bowel disease can cause malabsorption, weight loss, and diarrhea, though the low fecal elastase is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Whipple's disease",
+            "The presence of low fecal elastase and specific symptoms make other diagnoses more likely."
+          ],
+          [
+            "Irritable bowel syndrome (IBS)",
+            "IBS does not typically cause fat malabsorption or low fecal elastase levels."
+          ]
+        ]
+      },
+      "cf_id": "case_059_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a goiter on physical exam argues against pancreatic insufficiency, as it suggests normal thyroid function and reduces suspicion for autoimmune-related pancreatic dysfunction."
+    }
+  ]
+}

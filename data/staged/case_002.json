@@ -1,0 +1,25 @@
+{
+  "case_id": "case_002",
+  "source": "MedQA-USMLE",
+  "original_question": "A pulmonary autopsy specimen from a 58-year-old woman who died of acute hypoxic respiratory failure was examined. She had recently undergone surgery for a fractured femur 3 months ago. Initial hospital course was uncomplicated, and she was discharged to a rehab facility in good health. Shortly after discharge home from rehab, she developed sudden shortness of breath and had cardiac arrest. Resuscitation was unsuccessful. On histological examination of lung tissue, fibrous connective tissue around the lumen of the pulmonary artery is observed. Which of the following is the most likely pathogenesis for the present findings?",
+  "ground_truth": "Thromboembolism",
+  "base": {
+    "stage_1": "A 58-year-old woman presents with sudden shortness of breath.",
+    "stage_2": "The patient experienced cardiac arrest and resuscitation was unsuccessful. She had a fractured femur 3 months ago and recently discharged from rehab.",
+    "stage_3": "An autopsy was performed. Histological examination of lung tissue reveals fibrous connective tissue around the lumen of the pulmonary artery.",
+    "stage_4": "Further microscopic analysis of the pulmonary artery reveals the presence of organized thrombi with evidence of recanalization, confirming chronic thromboembolic disease."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient experienced cardiac arrest and resuscitation was successful, making thromboembolism less likely as the patient survived the acute event.",
+      "rules_out": "Thromboembolism",
+      "stage_1": "A 58-year-old woman presents with sudden shortness of breath.",
+      "stage_2": "The patient experienced cardiac arrest and resuscitation was successful. She had a fractured femur 3 months ago and recently discharged from rehab.",
+      "stage_3": "An autopsy was performed. Histological examination of lung tissue reveals fibrous connective tissue around the lumen of the pulmonary artery.",
+      "stage_4": "Further microscopic analysis of the pulmonary artery reveals the presence of organized thrombi with evidence of recanalization, confirming chronic thromboembolic disease.",
+      "cf_id": "case_002_cf_a"
+    }
+  ]
+}

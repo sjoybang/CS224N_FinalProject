@@ -1,0 +1,25 @@
+{
+  "case_id": "case_054",
+  "source": "MedQA-USMLE",
+  "original_question": "An 18-year-old man comes to the clinic with his mom for \u201cpins and needles\u201d of both of his arms. He denies any past medical history besides a recent anterior cruciate ligament (ACL) tear that was repaired 1 week ago. The patient reports that the paresthesias are mostly located along the posterior forearms, left more than the right. What physical examination finding would you expect from this patient?",
+  "ground_truth": "Radial nerve injury",
+  "base": {
+    "stage_1": "An 18-year-old man presents to the clinic accompanied by his mother, complaining of \"pins and needles\" sensations in both arms.",
+    "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals paresthesias predominantly along the posterior forearms, more pronounced on the left side than the right. Strength testing reveals weakness in wrist extension bilaterally, more significant on the left. Sensation to light touch is diminished over the dorsum of the hand.",
+    "stage_3": "Electromyography (EMG) and nerve conduction studies (NCS) are performed. EMG shows evidence of acute denervation in the muscles innervated by the radial nerve in the left forearm. NCS demonstrates reduced conduction velocity across the radial nerve at the elbow bilaterally, more pronounced on the left.",
+    "stage_4": "Further questioning reveals that the patient had a prolonged tourniquet time during his recent ACL repair surgery one week prior. The surgical report confirms the use of a tourniquet on the left upper extremity for approximately 90 minutes."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of hyperreflexia and upgoing Babinski sign argues against radial nerve injury, which would not cause upper motor neuron signs.",
+      "rules_out": "Radial nerve injury",
+      "stage_1": "An 18-year-old man presents to the clinic accompanied by his mother, complaining of \"pins and needles\" sensations in both arms.",
+      "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals paresthesias predominantly along the posterior forearms, more pronounced on the left side than the right. Strength testing reveals weakness in wrist extension bilaterally, more significant on the left. Sensation to light touch is diminished over the dorsum of the hand. Reflexes are 3+ and symmetric in the upper extremities, and 3+ in the lower extremities with upgoing Babinski sign bilaterally.",
+      "stage_3": "Electromyography (EMG) and nerve conduction studies (NCS) are performed. EMG shows evidence of acute denervation in the muscles innervated by the radial nerve in the left forearm. NCS demonstrates reduced conduction velocity across the radial nerve at the elbow bilaterally, more pronounced on the left.",
+      "stage_4": "Further questioning reveals that the patient had a prolonged tourniquet time during his recent ACL repair surgery one week prior. The surgical report confirms the use of a tourniquet on the left upper extremity for approximately 90 minutes.",
+      "cf_id": "case_054_cf_a"
+    }
+  ]
+}

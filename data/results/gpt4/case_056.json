@@ -1,0 +1,244 @@
+{
+  "case_id": "case_056",
+  "model": "gpt4",
+  "ground_truth": "Thrombotic thrombocytopenic purpura (TTP)",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral gastroenteritis",
+          "The combination of nausea, vomiting, diarrhea, and malaise is commonly seen in viral gastroenteritis."
+        ],
+        [
+          "Food poisoning",
+          "Acute onset of gastrointestinal symptoms such as nausea, vomiting, and diarrhea can indicate food poisoning."
+        ],
+        [
+          "Migraine",
+          "Headache accompanied by nausea and vomiting could suggest a migraine episode."
+        ],
+        [
+          "Influenza",
+          "Generalized malaise, headache, and gastrointestinal symptoms can be indicative of influenza."
+        ],
+        [
+          "Acute gastroenteritis",
+          "The presence of nausea, vomiting, and diarrhea suggests acute gastroenteritis as a possible diagnosis."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Viral gastroenteritis",
+          "The combination of nausea, vomiting, diarrhea, and fever suggests a viral infection affecting the gastrointestinal tract."
+        ],
+        [
+          "Sepsis",
+          "The presence of fever, malaise, and drowsiness raises concern for a systemic infection, potentially leading to sepsis."
+        ],
+        [
+          "Meningitis",
+          "Headache, fever, and drowsiness could indicate meningitis, although the nonfocal neurological exam makes this less likely."
+        ],
+        [
+          "Influenza",
+          "The acute onset of fever, malaise, headache, and gastrointestinal symptoms could be consistent with influenza."
+        ],
+        [
+          "Food poisoning",
+          "The gastrointestinal symptoms and acute onset could be due to ingestion of contaminated food, although fever is less common."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Dehydration",
+          "While possible, the blood pressure and heart rate are not indicative of significant dehydration at this stage."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Thrombotic Thrombocytopenic Purpura (TTP)",
+          "The presence of schistocytes, low platelet count, and renal impairment are classic findings in TTP."
+        ],
+        [
+          "Hemolytic Uremic Syndrome (HUS)",
+          "Similar to TTP, HUS presents with schistocytes, renal impairment, and thrombocytopenia, though it is more common in children."
+        ],
+        [
+          "Disseminated Intravascular Coagulation (DIC)",
+          "Schistocytes and thrombocytopenia can occur in DIC, although it typically presents with more severe coagulopathy."
+        ],
+        [
+          "Systemic Lupus Erythematosus (SLE)",
+          "SLE can cause hematologic abnormalities such as anemia and thrombocytopenia, and may present with renal involvement."
+        ],
+        [
+          "Malaria",
+          "Malaria can cause hemolytic anemia and thrombocytopenia, and the patient's symptoms and travel history (if relevant) could support this diagnosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Iron Deficiency Anemia",
+          "The presence of schistocytes and acute presentation with renal impairment are not typical for iron deficiency anemia."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Thrombotic Thrombocytopenic Purpura (TTP)",
+          "The severely deficient ADAMTS13 activity, presence of schistocytes, thrombocytopenia, and renal impairment strongly suggest TTP."
+        ],
+        [
+          "Hemolytic Uremic Syndrome (HUS)",
+          "Although less likely due to the ADAMTS13 deficiency, the combination of hemolytic anemia, renal impairment, and thrombocytopenia could suggest HUS."
+        ],
+        [
+          "Disseminated Intravascular Coagulation (DIC)",
+          "The presence of schistocytes and thrombocytopenia could be consistent with DIC, though the ADAMTS13 deficiency is not typical."
+        ],
+        [
+          "Systemic Lupus Erythematosus (SLE)",
+          "SLE can cause a similar clinical picture with hematologic abnormalities, though the ADAMTS13 deficiency is more indicative of TTP."
+        ],
+        [
+          "Atypical Hemolytic Uremic Syndrome (aHUS)",
+          "This condition can present similarly to TTP, but the ADAMTS13 deficiency is more characteristic of TTP."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Immune Thrombocytopenic Purpura (ITP)",
+          "The presence of schistocytes and ADAMTS13 deficiency are not consistent with ITP, which typically involves isolated thrombocytopenia without hemolysis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Viral gastroenteritis",
+            "The acute onset of nausea, vomiting, and diarrhea suggests a viral infection of the gastrointestinal tract."
+          ],
+          [
+            "Food poisoning",
+            "The combination of gastrointestinal symptoms and the acute nature of the illness could indicate ingestion of contaminated food."
+          ],
+          [
+            "Migraine",
+            "The presence of headache, nausea, and vomiting could be consistent with a migraine episode."
+          ],
+          [
+            "Acute gastroenteritis",
+            "Generalized malaise, weakness, and gastrointestinal symptoms are typical of this condition."
+          ],
+          [
+            "Influenza",
+            "The combination of systemic symptoms such as malaise, headache, and gastrointestinal upset could be indicative of influenza."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Viral gastroenteritis",
+            "The combination of nausea, vomiting, diarrhea, and malaise is consistent with a viral infection affecting the gastrointestinal tract."
+          ],
+          [
+            "Food poisoning",
+            "The acute onset of gastrointestinal symptoms suggests a possible ingestion of contaminated food."
+          ],
+          [
+            "Migraine",
+            "The presence of headache, nausea, and vomiting could indicate a migraine, especially given the normal neurological exam."
+          ],
+          [
+            "Acute stress reaction",
+            "Generalized malaise and gastrointestinal symptoms can occur in response to acute stress, with normal vital signs and neurological exam."
+          ],
+          [
+            "Early pregnancy",
+            "Nausea, vomiting, and malaise are common early pregnancy symptoms, although the absence of other signs makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meningitis",
+            "Normal neurological exam and absence of fever make this unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Thrombotic Thrombocytopenic Purpura (TTP)",
+            "The presence of schistocytes, low platelet count, and renal impairment are classic findings in TTP."
+          ],
+          [
+            "Hemolytic Uremic Syndrome (HUS)",
+            "Similar to TTP, HUS presents with schistocytes, renal impairment, and thrombocytopenia, though it is more common in children."
+          ],
+          [
+            "Disseminated Intravascular Coagulation (DIC)",
+            "Schistocytes and thrombocytopenia can occur in DIC, although the normal vital signs and lack of bleeding are less typical."
+          ],
+          [
+            "Atypical Hemolytic Uremic Syndrome (aHUS)",
+            "This condition can present similarly to TTP and HUS with schistocytes, renal impairment, and thrombocytopenia."
+          ],
+          [
+            "Systemic Lupus Erythematosus (SLE)",
+            "SLE can cause hematologic abnormalities including anemia, thrombocytopenia, and renal involvement, though schistocytes are less common."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Iron Deficiency Anemia",
+            "The presence of schistocytes and thrombocytopenia is not typical for iron deficiency anemia."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Thrombotic Thrombocytopenic Purpura (TTP)",
+            "The severely deficient ADAMTS13 activity, presence of schistocytes, thrombocytopenia, and anemia strongly suggest TTP."
+          ],
+          [
+            "Hemolytic Uremic Syndrome (HUS)",
+            "Although less likely due to the ADAMTS13 deficiency, the symptoms and lab findings overlap with HUS, which also presents with schistocytes and renal impairment."
+          ],
+          [
+            "Disseminated Intravascular Coagulation (DIC)",
+            "The presence of schistocytes and thrombocytopenia could suggest DIC, though the normal coagulation profile and ADAMTS13 deficiency make it less likely."
+          ],
+          [
+            "Atypical Hemolytic Uremic Syndrome (aHUS)",
+            "Similar to HUS, aHUS can present with renal impairment and schistocytes, but the ADAMTS13 deficiency points more towards TTP."
+          ],
+          [
+            "Systemic Lupus Erythematosus (SLE)",
+            "SLE can cause a thrombotic microangiopathy with similar hematological findings, though the specific ADAMTS13 deficiency is more indicative of TTP."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Immune Thrombocytopenic Purpura (ITP)",
+            "The presence of schistocytes and ADAMTS13 deficiency are not consistent with ITP, which typically does not cause hemolytic anemia or schistocytes."
+          ]
+        ]
+      },
+      "cf_id": "case_056_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is alert and oriented with a normal neurological exam, which argues against the neurological involvement typically seen in TTP."
+    }
+  ]
+}

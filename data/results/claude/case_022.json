@@ -1,0 +1,290 @@
+{
+  "case_id": "case_022",
+  "model": "claude",
+  "ground_truth": "Granulosa cell tumor",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Premature adrenarche",
+          "Isolated excessive hair growth in a 5-year-old girl is most commonly due to early activation of adrenal androgen production without other signs of puberty."
+        ],
+        [
+          "Congenital adrenal hyperplasia (late-onset)",
+          "Excess androgen production from enzyme deficiency can present with hirsutism in early childhood."
+        ],
+        [
+          "Exogenous androgen exposure",
+          "Accidental or intentional exposure to topical or oral androgens can cause rapid onset hirsutism in children."
+        ],
+        [
+          "Adrenal tumor",
+          "Androgen-secreting adrenal neoplasm can cause rapid-onset virilization and excessive hair growth."
+        ],
+        [
+          "Polycystic ovary syndrome (prepubertal presentation)",
+          "Though rare at age 5, early PCOS can occasionally present with hyperandrogenism and hirsutism."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Congenital adrenal hyperplasia (CAH)",
+          "Tanner stage 4 development at age 5 with premature adrenarche suggests excess androgen production, most commonly from 21-hydroxylase deficiency."
+        ],
+        [
+          "Androgen-secreting adrenal tumor",
+          "Rapid onset over 2 months with advanced sexual maturation could indicate a virilizing adrenal neoplasm producing excess androgens."
+        ],
+        [
+          "Ovarian tumor (androblastoma/Leydig cell tumor)",
+          "Androgen-secreting ovarian tumors can cause rapid virilization and precocious puberty in young girls."
+        ],
+        [
+          "Central precocious puberty",
+          "Early activation of the hypothalamic-pituitary-gonadal axis can cause premature sexual development, though typically progresses more gradually."
+        ],
+        [
+          "Exogenous androgen exposure",
+          "Accidental or intentional exposure to topical testosterone or anabolic steroids could explain the rapid virilization."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Premature adrenarche (isolated)",
+          "This diagnosis is ruled out because the patient has Tanner stage 4 development involving multiple secondary sexual characteristics rather than isolated pubic/axillary hair."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Granulosa cell tumor",
+          "Ovarian mass with elevated estrogen causing precocious puberty is classic for this estrogen-secreting sex cord-stromal tumor."
+        ],
+        [
+          "Ovarian teratoma (mature cystic)",
+          "Can contain functional tissue that secretes estrogen and presents as an ovarian mass with precocious puberty."
+        ],
+        [
+          "Sertoli-Leydig cell tumor",
+          "Ovarian sex cord-stromal tumor that can produce estrogen (though more commonly produces androgens) and present as an ovarian mass."
+        ],
+        [
+          "Ovarian embryonal carcinoma",
+          "Rare malignant germ cell tumor that can produce estrogen and cause isosexual precocious puberty with ovarian mass."
+        ],
+        [
+          "Follicular cyst (autonomous)",
+          "Large functional cyst producing estrogen autonomously can cause peripheral precocious puberty, though less common than neoplasms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Central precocious puberty (idiopathic)",
+          "Ovarian mass with elevated estrogen indicates peripheral etiology, not central."
+        ],
+        [
+          "McCune-Albright syndrome",
+          "Would present with caf\u00e9-au-lait spots and bone lesions; isolated ovarian mass with estrogen secretion points to neoplasm."
+        ],
+        [
+          "Premature adrenarche",
+          "Would not cause breast development (Tanner 4) or elevated estrogen; isolated pubic/axillary hair only."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Granulosa cell tumor",
+          "Histopathology with Call-Exner bodies is pathognomonic for this estrogen-secreting sex cord-stromal tumor causing precocious puberty."
+        ],
+        [
+          "Juvenile granulosa cell tumor",
+          "This is the specific subtype of granulosa cell tumor that occurs in prepubertal children and presents with isosexual precocious puberty."
+        ],
+        [
+          "Sertoli-Leydig cell tumor",
+          "Though less likely given confirmed histopathology, this sex cord-stromal tumor can rarely show overlapping features and cause virilization or feminization."
+        ],
+        [
+          "Thecoma",
+          "This benign estrogen-producing ovarian stromal tumor can cause precocious puberty but typically lacks Call-Exner bodies on histology."
+        ],
+        [
+          "Sex cord tumor with annular tubules",
+          "This rare ovarian tumor can produce estrogen and cause precocious puberty with some histologic similarities to granulosa cell tumors."
+        ]
+      ],
+      "eliminated": [
+        [
+          "McCune-Albright syndrome",
+          "No caf\u00e9-au-lait spots, polyostotic fibrous dysplasia, or multiple endocrinopathies reported, and confirmed ovarian neoplasm."
+        ],
+        [
+          "Idiopathic central precocious puberty",
+          "Ovarian mass with elevated estrogen indicates peripheral rather than central etiology."
+        ],
+        [
+          "Exogenous estrogen exposure",
+          "Presence of ovarian mass producing endogenous estrogen rules out exogenous source."
+        ],
+        [
+          "Adrenal tumor",
+          "Ovarian mass confirmed on imaging and pathology, not adrenal origin."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Premature adrenarche",
+            "Early activation of adrenal androgens commonly causes increased body hair in prepubertal children around this age."
+          ],
+          [
+            "Congenital adrenal hyperplasia (late-onset)",
+            "Partial enzyme deficiency can present with isolated hirsutism in childhood without prior signs of virilization."
+          ],
+          [
+            "Exogenous androgen exposure",
+            "Topical or inadvertent exposure to testosterone-containing products can cause rapid hirsutism development."
+          ],
+          [
+            "Androgen-secreting tumor",
+            "Ovarian or adrenal tumors can cause sudden-onset hirsutism, though rare in this age group."
+          ],
+          [
+            "Familial/racial hypertrichosis",
+            "Genetic or ethnic predisposition to increased hair growth may become more noticeable during childhood development."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Premature adrenarche",
+            "Isolated development of pubic and axillary hair without other pubertal signs is characteristic of this benign condition in children under 8 years."
+          ],
+          [
+            "Congenital adrenal hyperplasia (non-classic form)",
+            "Androgen excess from partial 21-hydroxylase deficiency can cause premature pubic/axillary hair with initially absent pubertal development."
+          ],
+          [
+            "Adrenal tumor",
+            "Androgen-secreting adrenal neoplasm can cause isolated virilization signs including premature hair growth without true puberty."
+          ],
+          [
+            "Exogenous androgen exposure",
+            "Accidental exposure to testosterone-containing products (creams, gels, supplements) can cause isolated androgenic effects."
+          ],
+          [
+            "Ovarian tumor",
+            "Androgen-secreting ovarian tumor (such as arrhenoblastoma) can produce virilization without activating estrogen-dependent pubertal changes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Central precocious puberty",
+            "No breast development or other signs of estrogen-mediated pubertal changes are present on examination."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Granulosa cell tumor",
+            "Ovarian mass with elevated estrogen in a prepubertal girl is classic for this estrogen-secreting neoplasm causing precocious pseudopuberty."
+          ],
+          [
+            "Ovarian thecoma",
+            "This benign estrogen-producing stromal tumor can present with an ovarian mass and elevated estrogen causing premature adrenarche."
+          ],
+          [
+            "Ovarian teratoma (with functional tissue)",
+            "Mature teratomas can rarely contain hormonally active tissue producing estrogen and present as ovarian masses in children."
+          ],
+          [
+            "Gonadoblastoma",
+            "This tumor can produce sex steroids and present as an ovarian mass, though more common in dysgenetic gonads."
+          ],
+          [
+            "Follicular cyst",
+            "Large functional cysts can autonomously produce estrogen and cause precocious pseudopuberty, appearing as ovarian masses on ultrasound."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Central precocious puberty",
+            "Elevated estrogen with ovarian mass suggests peripheral/pseudoprecocious puberty from autonomous estrogen production rather than central activation of HPG axis."
+          ],
+          [
+            "Premature adrenarche alone",
+            "The elevated estrogen level and ovarian mass indicate ovarian pathology rather than isolated early adrenal androgen production."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Granulosa cell tumor",
+            "Histopathology with Call-Exner bodies is pathognomonic for this estrogen-secreting sex cord-stromal tumor, confirming the diagnosis."
+          ],
+          [
+            "Juvenile granulosa cell tumor",
+            "This specific subtype occurs in prepubertal children and presents with precocious pseudopuberty due to estrogen secretion from the ovarian mass."
+          ],
+          [
+            "Sertoli-Leydig cell tumor",
+            "Although less likely given Call-Exner bodies, sex cord-stromal tumors can occasionally have overlapping features and present with hormone secretion."
+          ],
+          [
+            "Thecoma",
+            "This benign estrogen-producing ovarian tumor can cause precocious puberty but typically lacks Call-Exner bodies on histopathology."
+          ],
+          [
+            "Steroid cell tumor",
+            "Rare ovarian tumor that secretes sex hormones and could present with precocious pseudopuberty, though histology would differ."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Idiopathic precocious puberty",
+            "Ruled out by presence of ovarian mass and lack of true pubertal development with FSH/LH stimulation."
+          ],
+          [
+            "Adrenal tumor",
+            "Eliminated by pelvic ultrasound localizing pathology to ovarian mass rather than adrenal gland."
+          ],
+          [
+            "Exogenous estrogen exposure",
+            "Excluded by identification of endogenous source (ovarian mass) producing elevated estrogen."
+          ],
+          [
+            "Premature adrenarche",
+            "Does not explain elevated estrogen levels or ovarian mass, and typically presents with adrenal androgens only."
+          ]
+        ]
+      },
+      "cf_id": "case_022_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical examination reveals no signs of pubertal development, making granulosa cell tumor less likely as it typically presents with precocious puberty."
+    }
+  ]
+}

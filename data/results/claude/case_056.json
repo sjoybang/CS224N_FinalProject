@@ -1,0 +1,278 @@
+{
+  "case_id": "case_056",
+  "model": "claude",
+  "ground_truth": "Thrombotic thrombocytopenic purpura (TTP)",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute viral gastroenteritis",
+          "The constellation of nausea, vomiting, diarrhea, malaise, and headache over 2 days is classic for viral gastroenteritis."
+        ],
+        [
+          "Food poisoning (bacterial gastroenteritis)",
+          "Acute onset of gastrointestinal symptoms with systemic features could represent bacterial toxin-mediated or infectious food poisoning."
+        ],
+        [
+          "Influenza",
+          "Generalized malaise, weakness, headache, and gastrointestinal symptoms can occur with influenza infection."
+        ],
+        [
+          "Acute medication or toxin exposure",
+          "The acute presentation with multisystem symptoms could represent an ingested toxin or drug reaction."
+        ],
+        [
+          "Early sepsis from occult source",
+          "The combination of constitutional symptoms, weakness, and gastrointestinal manifestations could represent early systemic infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute viral gastroenteritis",
+          "Prodromal symptoms of malaise, nausea, vomiting, and diarrhea with fever are classic for viral gastroenteritis in an otherwise healthy adult."
+        ],
+        [
+          "Bacterial gastroenteritis (Salmonella/Campylobacter/Shigella)",
+          "Fever with GI symptoms and systemic signs of illness suggest possible invasive bacterial enteritis."
+        ],
+        [
+          "Influenza",
+          "Generalized malaise, fever, headache, and weakness are typical of influenza, though GI symptoms are less common in adults."
+        ],
+        [
+          "Meningitis (early)",
+          "Fever, headache, drowsiness with nonfocal exam could represent early meningitis before meningismus develops fully."
+        ],
+        [
+          "Sepsis from occult source",
+          "Fever, tachycardia, drowsiness, and systemic symptoms raise concern for early sepsis requiring further workup."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses; further laboratory and imaging studies would be needed."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Thrombotic thrombocytopenic purpura (TTP)",
+          "Presence of microangiopathic hemolytic anemia (schistocytes, anemia), thrombocytopenia, acute kidney injury, fever, and neurological symptoms (drowsiness) comprise the classic pentad."
+        ],
+        [
+          "Hemolytic uremic syndrome (HUS)",
+          "Triad of microangiopathic hemolytic anemia with schistocytes, thrombocytopenia, and acute kidney injury with prodromal diarrheal illness fits this diagnosis."
+        ],
+        [
+          "Disseminated intravascular coagulation (DIC)",
+          "Thrombocytopenia, schistocytes from microangiopathic hemolysis, and multiorgan dysfunction could indicate consumptive coagulopathy from sepsis or other trigger."
+        ],
+        [
+          "Atypical hemolytic uremic syndrome",
+          "Microangiopathic hemolytic anemia, thrombocytopenia, and renal dysfunction without typical STEC-associated prodrome could represent complement-mediated HUS."
+        ],
+        [
+          "HELLP syndrome",
+          "Hemolysis with schistocytes, elevated liver enzymes (presumed), low platelets, and systemic symptoms in a woman of childbearing age warrants consideration if pregnant."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sepsis alone",
+          "While fever and systemic symptoms present, the combination of schistocytes, thrombocytopenia, and hemolytic anemia specifically indicates a thrombotic microangiopathy rather than uncomplicated sepsis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Thrombotic thrombocytopenic purpura (TTP)",
+          "Severely deficient ADAMTS13 activity (<5%) with classic pentad features including thrombocytopenia, microangiopathic hemolytic anemia with schistocytes, renal impairment, neurological symptoms, and fever."
+        ],
+        [
+          "Acquired idiopathic TTP",
+          "Most common form of TTP in adults, presenting with acute onset of symptoms and severely reduced ADAMTS13 due to autoantibody formation against the enzyme."
+        ],
+        [
+          "Secondary TTP",
+          "Clinical presentation and ADAMTS13 deficiency could be associated with underlying autoimmune disease, infection, or malignancy triggering the thrombotic microangiopathy."
+        ],
+        [
+          "Drug-induced TTP",
+          "Certain medications can trigger acquired TTP with ADAMTS13 deficiency, though no drug history is provided in this case."
+        ],
+        [
+          "Pregnancy-associated TTP",
+          "Given patient's age and sex, this remains a consideration though pregnancy status is not confirmed in the clinical presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hemolytic uremic syndrome (HUS)",
+          "ADAMTS13 activity is typically normal or only mildly reduced in HUS, not severely deficient as in this case."
+        ],
+        [
+          "Disseminated intravascular coagulation (DIC)",
+          "Would not cause severe ADAMTS13 deficiency and typically has different coagulation profile."
+        ],
+        [
+          "Sepsis with MODS",
+          "Does not cause severely deficient ADAMTS13 activity."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Viral gastroenteritis",
+            "Constellation of nausea, vomiting, diarrhea with constitutional symptoms and 2-day prodrome is classic for viral gastroenteritis."
+          ],
+          [
+            "Food poisoning (bacterial gastroenteritis)",
+            "Acute onset GI symptoms with systemic features suggests possible bacterial toxin or infectious enteritis."
+          ],
+          [
+            "Influenza",
+            "Generalized malaise, weakness, headache with GI symptoms can occur with influenza infection."
+          ],
+          [
+            "Acute viral syndrome (non-specific)",
+            "Constellation of constitutional symptoms including headache, malaise, weakness with GI involvement suggests systemic viral illness."
+          ],
+          [
+            "Early appendicitis",
+            "Nausea, vomiting, and malaise can precede localized abdominal findings in early appendicitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Viral gastroenteritis",
+            "Acute onset of nausea, vomiting, and diarrhea with malaise and headache in a previously healthy young woman is classic for viral gastroenteritis."
+          ],
+          [
+            "Bacterial gastroenteritis",
+            "Similar presentation to viral gastroenteritis but may be suggested by the severity and duration of symptoms over two days."
+          ],
+          [
+            "Influenza",
+            "Generalized malaise, weakness, headache, and gastrointestinal symptoms can occur with influenza, though afebrile presentation is atypical."
+          ],
+          [
+            "Food poisoning",
+            "Acute onset of gastrointestinal symptoms with systemic manifestations could represent toxin-mediated or infectious food poisoning."
+          ],
+          [
+            "Medication or toxin exposure",
+            "Nausea, vomiting, diarrhea, malaise, and headache could represent adverse drug reaction or environmental toxin exposure."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meningitis",
+            "Normal neurological exam and absence of fever make this unlikely despite headache presentation."
+          ],
+          [
+            "Sepsis",
+            "Normal vital signs including normal temperature, heart rate, and blood pressure argue against systemic infection with sepsis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Thrombotic thrombocytopenic purpura (TTP)",
+            "Classic pentad features present including thrombocytopenia, microangiopathic hemolytic anemia with schistocytes, renal impairment, and neurological symptoms (headache, though exam currently normal)."
+          ],
+          [
+            "Hemolytic uremic syndrome (HUS)",
+            "Microangiopathic hemolytic anemia with schistocytes, thrombocytopenia, and acute kidney injury following diarrheal prodrome suggests this diagnosis."
+          ],
+          [
+            "Disseminated intravascular coagulation (DIC)",
+            "Thrombocytopenia, anemia, and schistocytes could indicate DIC, though typically presents with more severe coagulopathy and different clinical context."
+          ],
+          [
+            "HELLP syndrome",
+            "Hemolysis with schistocytes, elevated liver enzymes (not yet reported), and low platelets can occur in pregnancy-related complications in women of childbearing age."
+          ],
+          [
+            "Malignant hypertension",
+            "Can cause microangiopathic hemolytic anemia with schistocytes, thrombocytopenia, and renal dysfunction, though blood pressure is currently normal."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral gastroenteritis",
+            "Does not explain thrombocytopenia, anemia, schistocytes, or renal dysfunction."
+          ],
+          [
+            "Simple dehydration",
+            "Would not cause microangiopathic hemolytic anemia or schistocytes on peripheral smear."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Thrombotic thrombocytopenic purpura (TTP)",
+            "Severely deficient ADAMTS13 activity (<5%) with classic pentad features of thrombocytopenia, microangiopathic hemolytic anemia (schistocytes, anemia), renal dysfunction, and neurological symptoms."
+          ],
+          [
+            "Acquired TTP (autoimmune)",
+            "Most common form in adults presenting at age 37 with severely deficient ADAMTS13 from autoantibodies, consistent with acute presentation and clinical features."
+          ],
+          [
+            "Congenital TTP (Upshaw-Schulman syndrome)",
+            "Hereditary ADAMTS13 deficiency can present in adulthood during stress/infection, though less common than acquired form at this age."
+          ],
+          [
+            "Secondary TTP",
+            "ADAMTS13 deficiency triggered by underlying condition (infection, malignancy, autoimmune disease) causing the acute thrombotic microangiopathy presentation."
+          ],
+          [
+            "Drug-induced TTP",
+            "Certain medications can trigger acquired ADAMTS13 deficiency and TTP, though medication history not specified in presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hemolytic uremic syndrome (HUS)",
+            "Typically associated with normal or only moderately reduced ADAMTS13 activity, not severely deficient (<5%)."
+          ],
+          [
+            "Disseminated intravascular coagulation (DIC)",
+            "Would show abnormal coagulation studies and does not cause severely deficient ADAMTS13 activity."
+          ],
+          [
+            "HELLP syndrome",
+            "Patient is not pregnant and ADAMTS13 is typically normal or only mildly reduced in HELLP."
+          ]
+        ]
+      },
+      "cf_id": "case_056_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is alert and oriented with a normal neurological exam, which argues against the neurological involvement typically seen in TTP."
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "case_id": "case_037",
+  "model": "gemini_pro",
+  "ground_truth": "Voice pitch limitation",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Hypothyroidism",
+          "The remaining thyroid lobe may be insufficient to produce adequate thyroid hormone."
+        ],
+        [
+          "Recurrent Papillary Thyroid Carcinoma",
+          "Follow-up is essential to monitor for residual or metastatic disease after cancer surgery."
+        ],
+        [
+          "Hypoparathyroidism",
+          "Inadvertent damage to or removal of parathyroid glands during surgery can lead to hypocalcemia."
+        ],
+        [
+          "Recurrent Laryngeal Nerve Injury",
+          "The nerve is at risk of injury during thyroid surgery, which can result in voice changes."
+        ],
+        [
+          "Post-surgical Seroma/Hematoma",
+          "Fluid or blood can accumulate in the neck at the surgical site following the procedure."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Recurrent laryngeal nerve injury",
+          "This nerve is at high risk for injury during thyroid surgery and its paralysis or paresis directly causes hoarseness and a breathy voice."
+        ],
+        [
+          "External branch of the superior laryngeal nerve injury",
+          "Injury to this nerve, also at risk during thyroidectomy, affects the cricothyroid muscle, leading to vocal fatigue and inability to produce high-pitched sounds."
+        ],
+        [
+          "Post-operative laryngeal edema",
+          "Swelling of the larynx from surgical manipulation or endotracheal intubation is a common and often transient cause of post-operative hoarseness."
+        ],
+        [
+          "Hypothyroidism",
+          "The patient is at risk for hypothyroidism after a hemithyroidectomy, which can cause voice changes due to myxedematous infiltration of the vocal cords."
+        ],
+        [
+          "Laryngeal scarring/adhesion",
+          "Post-surgical scarring in the operative bed can tether the larynx or surrounding structures, mechanically impairing vocal function."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Recurrent laryngeal nerve injury",
+          "Injury to this nerve during thyroidectomy is a classic cause of vocal cord paralysis leading to hoarseness."
+        ],
+        [
+          "Superior laryngeal nerve injury",
+          "Damage to this nerve affects pitch control and causes vocal fatigue, consistent with the patient's report of voice changes."
+        ],
+        [
+          "Post-surgical laryngeal edema",
+          "Swelling of the larynx from intubation or surgical manipulation is a common and often transient cause of postoperative hoarseness."
+        ],
+        [
+          "Laryngeal scarring/adhesion",
+          "Post-surgical scar tissue formation can restrict laryngeal movement and impair normal vocal cord function."
+        ],
+        [
+          "Vocal cord hematoma",
+          "Trauma from the endotracheal tube during anesthesia can cause bleeding into the vocal cord, resulting in hoarseness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypocalcemia",
+          "Ruled out by the normal serum calcium level."
+        ],
+        [
+          "Hypothyroidism",
+          "Ruled out as a cause by the normal TSH level."
+        ],
+        [
+          "Residual thyroid carcinoma",
+          "Ruled out by the pathology report confirming complete resection with clear margins."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Iatrogenic Superior Laryngeal Nerve Injury",
+          "The patient's symptoms and laryngoscopic findings of nerve paralysis developed immediately following a hemithyroidectomy, a procedure with a known risk of injury to this nerve."
+        ],
+        [
+          "Postoperative Nerve Compression from Edema or Hematoma",
+          "Swelling or a blood collection in the surgical bed can exert pressure on the superior laryngeal nerve, causing a compressive neuropathy."
+        ],
+        [
+          "Scar Tissue Entrapment of Superior Laryngeal Nerve",
+          "Fibrosis developing during the healing process can entrap the nerve, leading to persistent or delayed-onset paralysis."
+        ],
+        [
+          "Inflammatory Neuropathy",
+          "A localized inflammatory response to surgery or a coincidental viral infection could cause neuritis and subsequent nerve paralysis."
+        ],
+        [
+          "Idiopathic Superior Laryngeal Nerve Palsy",
+          "This is a diagnosis of exclusion for nerve paralysis when no specific iatrogenic, compressive, or inflammatory cause can be found."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Recurrent Laryngeal Nerve Injury",
+          "Laryngoscopy specifically identified superior laryngeal nerve paralysis, not the vocal fold immobility characteristic of RLN injury."
+        ],
+        [
+          "Recurrent Thyroid Carcinoma",
+          "Pathology confirmed complete resection with clear margins, making early recurrence an unlikely cause of these acute postoperative symptoms."
+        ],
+        [
+          "Hypocalcemia",
+          "The patient's calcium level is normal and symptoms are inconsistent with hypocalcemic laryngospasm."
+        ],
+        [
+          "Hypothyroidism",
+          "The patient's TSH level is within normal limits."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Hypothyroidism",
+            "The remaining thyroid lobe may not produce sufficient thyroid hormone following partial surgical removal."
+          ],
+          [
+            "Hypoparathyroidism",
+            "Inadvertent damage or removal of parathyroid glands during surgery can lead to hypocalcemia."
+          ],
+          [
+            "Recurrent Laryngeal Nerve Injury",
+            "The nerve is at risk of injury during thyroid surgery, which can result in postoperative hoarseness."
+          ],
+          [
+            "Residual/Recurrent Papillary Thyroid Carcinoma",
+            "Follow-up is essential to monitor for any remaining cancer in the thyroid bed or metastatic disease in lymph nodes."
+          ],
+          [
+            "Postoperative Seroma/Hematoma",
+            "Fluid or blood can accumulate in the surgical bed, presenting as swelling or a neck mass."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Normal post-operative status",
+            "The patient's lack of voice changes and a well-healed scar are the expected findings of an uncomplicated recovery."
+          ],
+          [
+            "Hypothyroidism",
+            "The remaining thyroid lobe may not produce sufficient hormone, a common delayed complication following hemithyroidectomy."
+          ],
+          [
+            "External branch of the superior laryngeal nerve (EBSLN) injury",
+            "This nerve injury can be asymptomatic or cause subtle vocal changes (e.g., loss of high pitch) that the patient may not notice."
+          ],
+          [
+            "Hypoparathyroidism",
+            "Though less common after hemithyroidectomy, intraoperative damage to the parathyroid glands can lead to subclinical hypocalcemia."
+          ],
+          [
+            "Recurrent laryngeal nerve (RLN) paresis",
+            "A mild, non-paralytic injury could be well-compensated by the contralateral vocal cord, resulting in no subjectively perceived voice change."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Symptomatic recurrent laryngeal nerve paralysis",
+            "Ruled out by the patient's explicit report of no voice changes."
+          ],
+          [
+            "Surgical site infection",
+            "Ruled out by the physical exam finding of a well-healed surgical scar."
+          ],
+          [
+            "Post-operative hematoma",
+            "This is an acute complication ruled out by the time elapsed since surgery and the benign physical exam."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Euthyroid post-hemithyroidectomy status",
+            "The patient has undergone successful surgery for thyroid cancer and maintains a normal TSH, indicating adequate function of the remaining thyroid lobe."
+          ],
+          [
+            "Risk of papillary thyroid carcinoma recurrence",
+            "Despite a complete resection, long-term surveillance is necessary due to the inherent risk of cancer recurrence."
+          ],
+          [
+            "Subclinical recurrent laryngeal nerve palsy",
+            "The absence of voice changes does not definitively exclude a subtle nerve injury that can only be ruled out by laryngoscopy."
+          ],
+          [
+            "Post-surgical adhesion formation",
+            "Internal scarring is a common sequela of neck surgery that can occur despite a well-healed external incision."
+          ],
+          [
+            "Subclinical hypoparathyroidism",
+            "Although the calcium level is normal, borderline parathyroid function can exist post-operatively and warrants monitoring."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypocalcemia",
+            "This is ruled out by the normal serum calcium level."
+          ],
+          [
+            "Overt hypothyroidism",
+            "This is ruled out by the normal TSH level."
+          ],
+          [
+            "Symptomatic recurrent laryngeal nerve injury",
+            "This is ruled out by the patient's report of no voice changes."
+          ],
+          [
+            "Incomplete tumor resection",
+            "This is ruled out by the pathology report confirming complete resection with clear margins."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Iatrogenic Superior Laryngeal Nerve Injury",
+            "The recent hemithyroidectomy is the most common cause of superior laryngeal nerve paralysis due to direct intraoperative trauma."
+          ],
+          [
+            "Postoperative Nerve Compression",
+            "A hematoma or significant edema from the surgery could be compressing the nerve, leading to dysfunction."
+          ],
+          [
+            "Nerve Entrapment by Scar Tissue",
+            "Fibrosis developing during the healing process can entrap the nerve, causing a delayed-onset paralysis."
+          ],
+          [
+            "Viral Neuritis",
+            "A coincidental viral infection may have caused inflammation of the superior laryngeal nerve, resulting in paralysis."
+          ],
+          [
+            "Idiopathic Superior Laryngeal Nerve Palsy",
+            "This is a diagnosis of exclusion for nerve paralysis when no other specific cause can be identified after a full workup."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Recurrent Laryngeal Nerve Injury",
+            "Laryngoscopy specifically identified superior laryngeal nerve paralysis, and the symptoms are more characteristic of SLN than RLN injury."
+          ],
+          [
+            "Hypoparathyroidism",
+            "The patient's normal calcium level rules out this potential post-surgical complication."
+          ],
+          [
+            "Malignant Invasion",
+            "The pathology report confirmed complete resection with clear margins, making tumor recurrence an unlikely cause at this stage."
+          ]
+        ]
+      },
+      "cf_id": "case_037_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports no voice changes since surgery, which argues against voice pitch limitation."
+    }
+  ]
+}

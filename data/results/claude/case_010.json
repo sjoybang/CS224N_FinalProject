@@ -1,0 +1,290 @@
+{
+  "case_id": "case_010",
+  "model": "claude",
+  "ground_truth": "Neurofibromatosis type 2",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "M\u00e9ni\u00e8re's disease",
+          "Classic triad of unilateral hearing loss, tinnitus, and episodic vertigo in a young adult fits this endolymphatic hydrops disorder."
+        ],
+        [
+          "Vestibular schwannoma (acoustic neuroma)",
+          "Unilateral hearing loss, tinnitus, and dizziness over months suggests a slow-growing tumor of the vestibulocochlear nerve."
+        ],
+        [
+          "Chronic otitis media with labyrinthitis",
+          "Prolonged middle ear infection can cause hearing loss, tinnitus, and vestibular symptoms affecting one ear."
+        ],
+        [
+          "Superior semicircular canal dehiscence",
+          "Bony defect can cause unilateral hearing loss, tinnitus, and vestibular symptoms including dizziness."
+        ],
+        [
+          "Labyrinthine concussion",
+          "Prior head trauma causing inner ear injury could explain the unilateral auditory and vestibular symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Cerebrotendinous xanthomatosis",
+          "Young patient with xanthomas, sensorineural hearing loss, ataxia (unsteady gait), and bilateral facial weakness suggests this lipid storage disorder with neurological manifestations."
+        ],
+        [
+          "Neurofibromatosis type 2",
+          "Bilateral facial weakness and sensorineural hearing loss could indicate bilateral vestibular schwannomas, though cutaneous lesions are typically neurofibromas not xanthomas."
+        ],
+        [
+          "Familial hypercholesterolemia with coincidental neurological disease",
+          "Multiple xanthomas in a young patient indicate severe lipid disorder, though the constellation of neurological findings would be unusual."
+        ],
+        [
+          "Erdheim-Chester disease",
+          "Rare non-Langerhans cell histiocytosis can present with xanthomatous skin lesions and central nervous system involvement causing multiple cranial neuropathies."
+        ],
+        [
+          "Sarcoidosis",
+          "Multisystem granulomatous disease can cause cutaneous papules/plaques, bilateral facial palsy (cranial nerve VII), and audiovestibular dysfunction."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acoustic neuroma (unilateral vestibular schwannoma)",
+          "Bilateral facial weakness and multiple systemic cutaneous lesions make isolated unilateral schwannoma unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Neurofibromatosis type 2 (NF2)",
+          "Bilateral cerebellopontine angle masses (vestibular schwannomas) with facial weakness and hearing loss are pathognomonic for NF2, though the skin lesions are atypical."
+        ],
+        [
+          "Schwannomatosis",
+          "Multiple schwannomas can occur at the cerebellopontine angle and internal auditory canal, explaining the bilateral masses and neurological symptoms."
+        ],
+        [
+          "Erdheim-Chester disease",
+          "This rare histiocytosis can present with bilateral cerebellopontine angle masses and characteristic xanthomatous skin lesions (yellow plaques/papules)."
+        ],
+        [
+          "Xanthoma disseminatum with CNS involvement",
+          "The characteristic yellow cutaneous xanthomas combined with bilateral intracranial masses affecting cranial nerves matches this rare histiocytic disorder."
+        ],
+        [
+          "Von Hippel-Lindau disease with bilateral hemangioblastomas",
+          "Can present with bilateral posterior fossa masses and systemic manifestations, though the characteristic skin lesions are less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acoustic neuroma (sporadic unilateral)",
+          "The bilateral nature of the masses rules out sporadic unilateral vestibular schwannoma."
+        ],
+        [
+          "Multiple sclerosis",
+          "MRI shows discrete masses rather than demyelinating plaques, and skin findings are inconsistent."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Neurofibromatosis type 2 (NF2)",
+          "Confirmed by NF2 gene mutation, bilateral vestibular schwannomas (masses at internal auditory meatus and cerebellopontine angle), and cutaneous schwannomas."
+        ],
+        [
+          "Schwannomatosis",
+          "Multiple schwannomas are present on skin and bilaterally in cranial nerves, though the confirmed NF2 mutation makes this diagnosis less likely than NF2."
+        ],
+        [
+          "LZTR1-related schwannomatosis",
+          "Can present with multiple schwannomas and rarely bilateral vestibular schwannomas, but the confirmed NF2 mutation definitively excludes this diagnosis."
+        ],
+        [
+          "Sporadic bilateral vestibular schwannomas",
+          "Bilateral acoustic neuromas with cutaneous findings could occur sporadically, but the NF2 mutation confirms genetic etiology."
+        ],
+        [
+          "Mosaic NF2",
+          "Could explain variable presentation, though the genetic testing already confirmed NF2 mutation without specifying mosaicism."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Neurofibromatosis type 1",
+          "No caf\u00e9-au-lait macules, Lisch nodules, or neurofibromas; skin lesions are schwannomas not neurofibromas; NF2 gene mutation confirmed instead of NF1."
+        ],
+        [
+          "Acoustic neuroma (unilateral/sporadic)",
+          "Bilateral masses and confirmed genetic mutation indicate hereditary syndrome rather than sporadic unilateral disease."
+        ],
+        [
+          "Cutaneous xanthomas",
+          "While yellow plaques were noted, biopsy confirmed Schwann cells not lipid-laden histiocytes."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "M\u00e9ni\u00e8re's disease",
+            "Classic triad of episodic vertigo, tinnitus, and unilateral hearing loss in a young adult fits this idiopathic endolymphatic hydrops condition."
+          ],
+          [
+            "Vestibular schwannoma (acoustic neuroma)",
+            "Unilateral hearing loss, tinnitus, and dizziness over 6 months suggests a slow-growing tumor of the vestibulocochlear nerve."
+          ],
+          [
+            "Chronic otitis media with labyrinthitis",
+            "Progressive unilateral hearing loss with vestibular symptoms could indicate chronic middle ear infection with inner ear involvement."
+          ],
+          [
+            "Labyrinthine concussion",
+            "Post-traumatic inner ear injury can cause persistent unilateral audiovestibular symptoms lasting months."
+          ],
+          [
+            "Superior semicircular canal dehiscence",
+            "Bone defect over the superior canal can produce vertigo, hearing loss, and tinnitus, though autophony is more typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Neurofibromatosis type 2 (NF2)",
+            "Young adult with bilateral cranial nerve involvement (CN VIII causing sensorineural hearing loss and CN VII causing bilateral facial weakness) suggests bilateral vestibular schwannomas."
+          ],
+          [
+            "Bilateral vestibular schwannomas (sporadic)",
+            "Sensorineural hearing loss, tinnitus, dizziness, and unsteady gait are classic for vestibular schwannomas, though bilateral presentation is rare without NF2."
+          ],
+          [
+            "Lyme disease (neuroborreliosis)",
+            "Can cause bilateral facial palsy (cranial nerve VII) and sensorineural hearing loss with vestibular symptoms in endemic areas."
+          ],
+          [
+            "Sarcoidosis",
+            "Neurosarcoidosis can present with bilateral cranial neuropathies (particularly CN VII), sensorineural hearing loss, and vestibular dysfunction."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome (Miller Fisher variant)",
+            "Can cause bilateral facial weakness and ataxia, though the six-month duration is longer than typical acute presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acoustic neuroma (unilateral)",
+            "Bilateral facial weakness and potentially bilateral vestibular involvement make isolated unilateral pathology unlikely."
+          ],
+          [
+            "Meniere's disease",
+            "Would not explain bilateral facial muscle weakness."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Neurofibromatosis type 2 (NF2)",
+            "Bilateral cerebellopontine angle masses in a young patient with bilateral facial weakness is pathognomonic for NF2 with bilateral vestibular schwannomas."
+          ],
+          [
+            "Bilateral vestibular schwannomas (sporadic)",
+            "Bilateral acoustic neuromas causing sensorineural hearing loss and vestibular symptoms, though sporadic bilateral cases are extremely rare without NF2."
+          ],
+          [
+            "Neurofibromatosis type 1 with bilateral schwannomas",
+            "NF1 can rarely present with multiple schwannomas, though bilateral vestibular schwannomas are much more characteristic of NF2."
+          ],
+          [
+            "Schwannomatosis",
+            "Multiple schwannomas can occur in this condition, though bilateral vestibular involvement would be atypical and should prompt consideration of NF2 instead."
+          ],
+          [
+            "Multiple meningiomas",
+            "Bilateral cerebellopontine angle meningiomas could mimic this presentation, though less likely given the patient's age and typical location for vestibular schwannomas."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acoustic neuroma (unilateral sporadic)",
+            "Imaging reveals bilateral masses, ruling out a solitary unilateral lesion."
+          ],
+          [
+            "Meniere's disease",
+            "MRI findings of structural masses exclude this inner ear disorder."
+          ],
+          [
+            "Vestibular neuritis",
+            "The presence of bilateral structural masses on imaging excludes inflammatory vestibular pathology."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Neurofibromatosis type 2 (NF2)",
+            "Genetic testing confirmed NF2 gene mutation with bilateral vestibular schwannomas and cutaneous schwannomas, pathognomonic for this condition."
+          ],
+          [
+            "Schwannomatosis",
+            "Multiple schwannomas are present, but the confirmed NF2 mutation and bilateral vestibular schwannomas make NF2 more likely than isolated schwannomatosis."
+          ],
+          [
+            "LZTR1-related schwannomatosis",
+            "This can present with multiple schwannomas and rarely vestibular involvement, but confirmed NF2 mutation makes this diagnosis less likely."
+          ],
+          [
+            "Mosaic neurofibromatosis type 2",
+            "Could present with milder or asymmetric features, but the bilateral vestibular schwannomas and germline NF2 mutation confirm classic NF2."
+          ],
+          [
+            "SMARCB1-related schwannomatosis",
+            "Multiple schwannomas can occur, but the presence of bilateral vestibular schwannomas and confirmed NF2 mutation excludes this diagnosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Neurofibromatosis type 1",
+            "No caf\u00e9-au-lait macules or neurofibromas; NF2 gene mutation confirmed rather than NF1."
+          ],
+          [
+            "Acoustic neuroma (sporadic)",
+            "Bilateral vestibular schwannomas with NF2 mutation indicate hereditary syndrome rather than sporadic tumor."
+          ],
+          [
+            "Vestibular migraine",
+            "MRI shows structural lesions (schwannomas) causing symptoms, not functional disorder."
+          ],
+          [
+            "Meniere's disease",
+            "Bilateral masses on MRI and NF2 mutation explain symptoms, not endolymphatic hydrops."
+          ]
+        ]
+      },
+      "cf_id": "case_010_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of skin findings argues against neurofibromatosis, which typically presents with multiple cutaneous neurofibromas or other skin manifestations."
+    }
+  ]
+}

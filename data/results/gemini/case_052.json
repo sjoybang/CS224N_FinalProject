@@ -1,0 +1,276 @@
+{
+  "case_id": "case_052",
+  "model": "gemini",
+  "ground_truth": "Medial collateral ligament",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Anterior cruciate ligament tear",
+          "Acute knee pain following a twisting injury is a common presentation for ACL tears."
+        ],
+        [
+          "Medial collateral ligament sprain",
+          "Valgus stress on the knee during the injury could result in an MCL sprain."
+        ],
+        [
+          "Meniscal tear",
+          "Twisting injuries can cause meniscal tears, leading to pain and mechanical symptoms."
+        ],
+        [
+          "Patellar dislocation",
+          "The injury mechanism could have caused a patellar dislocation, resulting in pain and instability."
+        ],
+        [
+          "Knee contusion",
+          "Direct trauma to the knee could cause a contusion with associated pain and swelling."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Medial Collateral Ligament (MCL) Sprain",
+          "Valgus stress test laxity indicates injury to the medial collateral ligament."
+        ],
+        [
+          "Lateral Meniscus Tear",
+          "A lateral knee collision could cause a meniscal tear, although the lack of effusion makes it less likely."
+        ],
+        [
+          "Patellar Subluxation",
+          "The mechanism of injury could have caused a transient patellar subluxation, leading to ligamentous strain."
+        ],
+        [
+          "Bone Contusion",
+          "The direct blow to the lateral knee could have resulted in a bone contusion, causing pain without significant instability."
+        ],
+        [
+          "Anterior Cruciate Ligament (ACL) Sprain",
+          "Although Lachman's test is negative, an ACL sprain cannot be completely ruled out, especially a partial tear."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Posterior Cruciate Ligament (PCL) Tear",
+          "Posterior drawer test was negative."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Medial Collateral Ligament Sprain",
+          "The MRI findings of hyperintensity along the MCL confirm a sprain."
+        ],
+        [
+          "Meniscal Tear",
+          "Although Lachman's and posterior drawer tests were negative, meniscal tears can sometimes present with subtle findings and should be considered."
+        ],
+        [
+          "Contusion",
+          "A direct blow to the knee could cause a contusion, although the MRI findings make this less likely than a ligamentous injury."
+        ],
+        [
+          "Patellar Subluxation",
+          "While less likely given the mechanism and exam, patellar subluxation can sometimes cause medial knee pain."
+        ],
+        [
+          "Osteochondral Injury",
+          "The trauma could have resulted in an osteochondral injury, though the MRI would likely show more specific findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior Cruciate Ligament Tear",
+          "Lachman's test was negative with a firm endpoint, and the MRI showed no disruption."
+        ],
+        [
+          "Posterior Cruciate Ligament Tear",
+          "Posterior drawer test was negative with a firm endpoint, and the MRI showed no disruption."
+        ],
+        [
+          "Lateral Collateral Ligament Sprain",
+          "Varus stress test was negative, and the MRI showed no disruption."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Medial Collateral Ligament Sprain",
+          "The positive valgus stress test and MRI hyperintensity along the MCL confirm a sprain."
+        ],
+        [
+          "Lateral Meniscus Tear",
+          "Although less likely given the mechanism and exam, a meniscal tear could present with pain after a collision."
+        ],
+        [
+          "Medial Meniscus Tear",
+          "Medial meniscus injuries can occur with valgus stress and present with pain."
+        ],
+        [
+          "Patellofemoral Pain Syndrome",
+          "While less likely given the acute injury, patellofemoral pain could be exacerbated by the injury."
+        ],
+        [
+          "Contusion",
+          "A bone contusion from the direct blow could contribute to the patient's pain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Anterior Cruciate Ligament Tear",
+          "Lachman's test was negative with a firm endpoint, and the MRI showed no disruption."
+        ],
+        [
+          "Posterior Cruciate Ligament Tear",
+          "Posterior drawer test was negative with a firm endpoint, and the MRI showed no disruption."
+        ],
+        [
+          "Lateral Collateral Ligament Sprain",
+          "Varus stress test was negative, and the MRI showed no disruption."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Anterior cruciate ligament tear",
+            "Acute knee pain following a twisting injury is a common presentation for ACL tears."
+          ],
+          [
+            "Medial collateral ligament sprain",
+            "Valgus stress on the knee during the injury could result in an MCL sprain."
+          ],
+          [
+            "Meniscal tear",
+            "Twisting injuries can cause meniscal tears, leading to pain and mechanical symptoms."
+          ],
+          [
+            "Patellar dislocation",
+            "The injury mechanism could have caused a patellar dislocation, resulting in pain and instability."
+          ],
+          [
+            "Knee contusion",
+            "Direct trauma to the knee could cause a contusion with associated pain and swelling."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Medial collateral ligament tear",
+            "Valgus laxity indicates injury to the medial collateral ligament."
+          ],
+          [
+            "Lateral meniscus tear",
+            "A lateral knee collision could cause a meniscal tear, although Lachman's and posterior drawer tests are negative."
+          ],
+          [
+            "Anterior cruciate ligament tear",
+            "Although Lachman's test is negative, ACL tears can sometimes present with a large effusion and subtle instability."
+          ],
+          [
+            "Patellar dislocation",
+            "The mechanism of injury could have caused a patellar dislocation that spontaneously reduced, leading to effusion and pain."
+          ],
+          [
+            "Knee contusion",
+            "Direct trauma to the knee can cause significant pain and effusion, even without ligamentous injury."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Posterior cruciate ligament tear",
+            "Posterior drawer test was negative."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Medial Collateral Ligament Sprain",
+            "The MRI confirms hyperintensity along the MCL, indicating a sprain."
+          ],
+          [
+            "Knee Contusion",
+            "The initial trauma and effusion could indicate a contusion to the knee joint."
+          ],
+          [
+            "Medial Meniscus Tear",
+            "Although the MRI report doesn't mention it, meniscal injuries can sometimes occur with MCL sprains."
+          ],
+          [
+            "Patellar Subluxation",
+            "The valgus stress could have contributed to a patellar subluxation event."
+          ],
+          [
+            "Bone Bruise",
+            "The initial impact could have caused a bone bruise, contributing to the pain and effusion."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anterior Cruciate Ligament Tear",
+            "The MRI showed no disruption of the ACL."
+          ],
+          [
+            "Posterior Cruciate Ligament Tear",
+            "The MRI showed no disruption of the PCL."
+          ],
+          [
+            "Lateral Collateral Ligament Sprain",
+            "The MRI showed no disruption of the LCL and varus stress test was negative."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Medial Collateral Ligament Sprain",
+            "The valgus laxity, MRI hyperintensity along the MCL, and mechanism of injury strongly suggest an MCL sprain."
+          ],
+          [
+            "Medial Meniscus Tear",
+            "Medial knee pain following a twisting injury can indicate a medial meniscus tear, although the absence of locking or catching makes it less likely."
+          ],
+          [
+            "Patellofemoral Pain Syndrome",
+            "While less likely given the acute injury, patellofemoral pain could contribute to knee pain, especially with activity."
+          ],
+          [
+            "Knee Contusion",
+            "Direct trauma to the knee can cause a contusion, contributing to pain and effusion."
+          ],
+          [
+            "Pes Anserinus Bursitis",
+            "Medial knee pain could be related to pes anserinus bursitis, although the acute traumatic onset makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anterior Cruciate Ligament Tear",
+            "Lachman's test was negative with a firm endpoint, and the MRI showed no disruption."
+          ],
+          [
+            "Posterior Cruciate Ligament Tear",
+            "Posterior drawer test was negative with a firm endpoint, and the MRI showed no disruption."
+          ],
+          [
+            "Lateral Collateral Ligament Sprain",
+            "Varus stress test was negative, and the MRI showed no disruption."
+          ]
+        ]
+      },
+      "cf_id": "case_052_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of a large effusion argues against an isolated MCL injury, which typically presents with minimal to no effusion."
+    }
+  ]
+}

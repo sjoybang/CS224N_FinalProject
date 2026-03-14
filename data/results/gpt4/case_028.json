@@ -1,0 +1,250 @@
+{
+  "case_id": "case_028",
+  "model": "gpt4",
+  "ground_truth": "Dog bite wound infection prophylaxis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Cellulitis",
+          "The patient is at risk for cellulitis due to the introduction of bacteria from the dog bite."
+        ],
+        [
+          "Rabies",
+          "Dog bites can transmit rabies, especially if the vaccination status of the dog is unknown."
+        ],
+        [
+          "Tetanus",
+          "A dog bite can introduce tetanus spores, particularly if the patient's vaccination status is not up to date."
+        ],
+        [
+          "Wound infection",
+          "The bite wound itself is susceptible to infection from oral flora of the dog."
+        ],
+        [
+          "Pasteurella infection",
+          "Pasteurella species are common in dog saliva and can cause infection following a bite."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Dog bite wound",
+          "The patient has a clear history of a dog bite with a puncture wound on the forearm."
+        ],
+        [
+          "Cellulitis",
+          "There is a risk of bacterial infection from the dog bite, which could lead to cellulitis."
+        ],
+        [
+          "Rabies exposure",
+          "Dog bites can potentially transmit rabies, especially if the dog's vaccination status is unknown."
+        ],
+        [
+          "Tetanus exposure",
+          "Puncture wounds, such as those from animal bites, can be a risk factor for tetanus if the patient's vaccination status is not up to date."
+        ],
+        [
+          "Soft tissue infection",
+          "The puncture wound from the dog bite could lead to a localized soft tissue infection."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Cellulitis",
+          "The puncture wound from the dog bite poses a risk for bacterial skin infection."
+        ],
+        [
+          "Rabies",
+          "Although less common, rabies is a concern with animal bites, especially if the dog's vaccination status is unknown."
+        ],
+        [
+          "Pasteurella infection",
+          "Pasteurella species are commonly found in the mouths of dogs and can cause infection following a bite."
+        ],
+        [
+          "Tetanus",
+          "Despite vaccination, tetanus is a consideration with puncture wounds, though less likely given the up-to-date vaccination."
+        ],
+        [
+          "Abscess formation",
+          "The puncture wound could lead to localized pus collection if bacteria proliferate."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Fracture",
+          "Radiographs show no evidence of fracture."
+        ],
+        [
+          "Retained foreign body",
+          "Exploration of the wound revealed no foreign bodies."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cellulitis",
+          "The puncture wound from the dog bite presents a risk for bacterial skin infection, especially given the need for prophylactic antibiotics."
+        ],
+        [
+          "Abscess",
+          "The potential for localized infection and pus formation exists due to the puncture wound, despite no current signs of abscess."
+        ],
+        [
+          "Soft Tissue Infection",
+          "The nature of the bite and the need for antibiotics suggest a risk for infection of the surrounding soft tissues."
+        ],
+        [
+          "Rabies",
+          "Although the dog is vaccinated, rabies is a consideration in any animal bite, but less likely due to vaccination status."
+        ],
+        [
+          "Tetanus",
+          "Despite being up to date on vaccination, tetanus is always a consideration in puncture wounds, though unlikely here."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Fracture",
+          "Radiographs show no evidence of fracture."
+        ],
+        [
+          "Retained foreign body",
+          "Exploration of the wound revealed no foreign bodies."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Cellulitis",
+            "The patient is at risk for cellulitis due to the introduction of bacteria from the dog bite."
+          ],
+          [
+            "Rabies",
+            "A dog bite raises concern for rabies transmission, especially if the dog's vaccination status is unknown."
+          ],
+          [
+            "Tetanus",
+            "A dog bite can introduce tetanus spores, particularly if the patient is not up-to-date on vaccinations."
+          ],
+          [
+            "Wound infection",
+            "The bite wound itself is susceptible to bacterial infection from oral flora of the dog."
+          ],
+          [
+            "Pasteurella infection",
+            "Pasteurella species are common in dog saliva and can cause infection following a bite."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Rabies",
+            "The dog's recent change in behavior and aggression raises concern for rabies, which can be transmitted through bites."
+          ],
+          [
+            "Cellulitis",
+            "The puncture wound from the bite could lead to a bacterial skin infection, such as cellulitis."
+          ],
+          [
+            "Tetanus",
+            "A puncture wound from an animal bite poses a risk for tetanus, especially if vaccination status is unknown."
+          ],
+          [
+            "Pasteurella infection",
+            "Animal bites, particularly from dogs, can introduce Pasteurella bacteria, leading to infection."
+          ],
+          [
+            "Capnocytophaga infection",
+            "Dog bites can transmit Capnocytophaga bacteria, especially in individuals with certain risk factors."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rabies",
+            "The dog's recent strange behavior and aggression raise concern for rabies transmission through the bite."
+          ],
+          [
+            "Cellulitis",
+            "The puncture wound from the bite poses a risk for bacterial skin infection."
+          ],
+          [
+            "Pasteurella infection",
+            "Common in animal bites, Pasteurella species can cause soft tissue infections."
+          ],
+          [
+            "Capnocytophaga infection",
+            "This bacterium, found in dog saliva, can lead to serious infections, especially in bite wounds."
+          ],
+          [
+            "Anxiety disorder",
+            "The patient's experience of being bitten by his own pet may lead to acute stress or anxiety symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fracture",
+            "Radiographs show no evidence of fracture."
+          ],
+          [
+            "Retained foreign body",
+            "Exploration of the wound revealed no foreign bodies."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Cellulitis",
+            "The dog bite presents a risk for bacterial infection of the skin and soft tissues, which is common in such injuries."
+          ],
+          [
+            "Dog bite wound infection",
+            "The puncture wound from the dog bite is susceptible to infection from oral flora of the dog."
+          ],
+          [
+            "Anxiety reaction",
+            "The patient may experience anxiety due to the traumatic event of being bitten by his own dog."
+          ],
+          [
+            "Rabies exposure concern",
+            "Despite the dog being vaccinated, the unusual behavior of the dog raises concern for rabies exposure."
+          ],
+          [
+            "Tetanus exposure",
+            "Although the patient is up to date on vaccination, tetanus is a standard consideration in puncture wounds."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fracture",
+            "Radiographs show no evidence of fracture."
+          ],
+          [
+            "Retained foreign body",
+            "Exploration of the wound revealed no foreign bodies."
+          ]
+        ]
+      },
+      "cf_id": "case_028_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports the dog is his own and has been acting strangely for the past few days, becoming aggressive and agitated, which raises concern for possible rabies exposure."
+    }
+  ]
+}

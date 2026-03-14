@@ -1,0 +1,244 @@
+{
+  "case_id": "case_012",
+  "model": "gemini",
+  "ground_truth": "Acute arterial occlusion",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute Arterial Occlusion",
+          "Sudden onset of leg pain in a patient with multiple cardiovascular risk factors suggests acute arterial occlusion."
+        ],
+        [
+          "Peripheral Artery Disease",
+          "Exacerbation of pre-existing peripheral artery disease could present with sudden leg pain, especially with exertion."
+        ],
+        [
+          "Deep Vein Thrombosis",
+          "While less likely to cause sudden onset pain while walking, DVT can present with leg pain and should be considered."
+        ],
+        [
+          "Spinal Stenosis",
+          "Neurogenic claudication from spinal stenosis can mimic vascular pain, especially with walking."
+        ],
+        [
+          "Musculoskeletal Strain",
+          "Although less likely given the patient's risk factors, a sudden strain could cause acute leg pain."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute arterial occlusion",
+          "Sudden onset of pain, pallor, pulselessness, poikilothermia, and paralysis in the affected limb strongly suggest acute arterial occlusion."
+        ],
+        [
+          "Peripheral artery disease",
+          "The patient's risk factors (diabetes, hypertension, obesity, atrial fibrillation) increase the likelihood of underlying peripheral artery disease that could lead to acute limb ischemia."
+        ],
+        [
+          "Aortic dissection",
+          "Although less likely given the unilateral symptoms, aortic dissection can present with limb ischemia due to compromised blood flow."
+        ],
+        [
+          "Popliteal artery aneurysm with thrombosis",
+          "An aneurysm can lead to thrombosis and subsequent acute limb ischemia."
+        ],
+        [
+          "Thromboembolism",
+          "Atrial fibrillation increases the risk of thromboembolism, which can cause acute arterial occlusion in the leg."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cellulitis",
+          "Lack of typical inflammatory signs such as warmth, erythema, and swelling makes cellulitis less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute arterial occlusion",
+          "The CTA confirms an occlusion of the left common femoral artery, consistent with acute limb ischemia."
+        ],
+        [
+          "Atherosclerosis",
+          "Given the patient's history of diabetes, hypertension, and obesity, atherosclerosis is a likely underlying cause of the arterial occlusion."
+        ],
+        [
+          "Thromboembolism",
+          "Atrial fibrillation increases the risk of thromboembolism, which could lead to arterial occlusion."
+        ],
+        [
+          "Peripheral artery disease",
+          "The patient's risk factors make PAD a likely contributor to the acute occlusion."
+        ],
+        [
+          "Popliteal artery entrapment syndrome",
+          "Although less likely given the sudden onset and risk factors, popliteal artery entrapment could cause arterial occlusion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cellulitis",
+          "Lack of significant skin changes and presence of pallor and diminished sensation argue against cellulitis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Acute Arterial Occlusion",
+          "Sudden onset of pain, cold/pale leg, diminished sensation/strength, and CTA confirmation strongly suggest acute arterial occlusion."
+        ],
+        [
+          "Arterial Embolism",
+          "Given the patient's atrial fibrillation history, an embolus is a likely cause of the acute arterial occlusion."
+        ],
+        [
+          "Acute Arterial Thrombosis",
+          "The patient's history of diabetes, hypertension, and obesity increases the risk of in-situ thrombosis leading to acute occlusion."
+        ],
+        [
+          "Aortic Dissection",
+          "Although less likely given the localized symptoms, aortic dissection with distal embolization could present with acute limb ischemia."
+        ],
+        [
+          "Popliteal Artery Entrapment Syndrome",
+          "While less likely given the sudden onset and patient's age, popliteal artery entrapment could cause arterial occlusion, especially with exercise."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Deep Vein Thrombosis",
+          "The pallor and diminished pulses argue against DVT."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute Arterial Occlusion",
+            "Sudden onset of leg pain in a patient with multiple cardiovascular risk factors suggests arterial blockage."
+          ],
+          [
+            "Peripheral Artery Disease",
+            "Existing risk factors increase the likelihood of symptomatic PAD exacerbation."
+          ],
+          [
+            "Deep Vein Thrombosis",
+            "While less likely given the sudden onset, DVT can cause leg pain, especially in the presence of risk factors."
+          ],
+          [
+            "Spinal Stenosis",
+            "Neurogenic claudication can mimic vascular symptoms, and the patient's age makes it a possibility."
+          ],
+          [
+            "Musculoskeletal Strain",
+            "Although less likely given the sudden onset, a muscle strain could present with acute leg pain."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute arterial occlusion",
+            "Sudden onset of pain, pallor, coolness, and diminished sensation/motor function in the leg suggest acute arterial occlusion despite palpable pulses."
+          ],
+          [
+            "Peripheral artery disease",
+            "The patient's risk factors (diabetes, hypertension, obesity, atrial fibrillation) increase the likelihood of underlying peripheral artery disease contributing to the acute symptoms."
+          ],
+          [
+            "Acute compartment syndrome",
+            "Leg pain, pallor, and diminished sensation/motor function, along with potential muscle swelling, could indicate compartment syndrome, although palpable pulses make this less likely."
+          ],
+          [
+            "Deep vein thrombosis",
+            "While less likely given the pallor and coolness, DVT can present with leg pain and diminished sensation due to swelling and venous congestion."
+          ],
+          [
+            "Spinal stenosis",
+            "Although less likely given the acute onset, spinal stenosis could cause leg pain and weakness, but would not explain the pallor and coolness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Cellulitis",
+            "Lack of typical cellulitis signs such as warmth, erythema, and swelling makes this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute arterial occlusion",
+            "The CTA showing occlusion of the left common femoral artery confirms this diagnosis."
+          ],
+          [
+            "Atherosclerosis",
+            "Given the patient's history of diabetes, hypertension, and obesity, atherosclerosis is a likely underlying cause of the arterial occlusion."
+          ],
+          [
+            "Thromboembolism",
+            "Atrial fibrillation increases the risk of thromboembolism, which could lead to arterial occlusion."
+          ],
+          [
+            "Peripheral artery disease",
+            "The patient's risk factors make PAD a likely contributor to the acute occlusion."
+          ],
+          [
+            "Arterial thrombosis",
+            "Thrombosis at the site of an atherosclerotic plaque could cause acute occlusion."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Compartment syndrome",
+            "Pulses are present, making this less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Acute Arterial Occlusion",
+            "The CTA confirms an occlusion of the left common femoral artery, consistent with acute limb ischemia."
+          ],
+          [
+            "Arterial Thrombosis",
+            "Given the patient's history of atrial fibrillation and the sudden onset of symptoms, arterial thrombosis is a likely cause of the occlusion."
+          ],
+          [
+            "Arterial Embolism",
+            "Embolism from the heart (due to atrial fibrillation) or another proximal source could cause the acute arterial occlusion."
+          ],
+          [
+            "Peripheral Artery Disease",
+            "The patient's risk factors (diabetes, hypertension, obesity) increase the likelihood of underlying atherosclerotic disease contributing to the acute occlusion."
+          ],
+          [
+            "Aortoiliac Occlusive Disease (Leriche Syndrome)",
+            "Although the occlusion is in the common femoral, the patient's risk factors and presentation could suggest more proximal disease contributing to the acute event."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Deep Vein Thrombosis",
+            "The presentation of a cold, pale leg with diminished sensation and muscle strength, along with the CTA findings, points to arterial rather than venous pathology."
+          ]
+        ]
+      },
+      "cf_id": "case_012_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of palpable pulses in the affected leg argues against acute arterial occlusion."
+    }
+  ]
+}

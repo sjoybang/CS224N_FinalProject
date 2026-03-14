@@ -1,0 +1,302 @@
+{
+  "case_id": "case_026",
+  "model": "gemini_pro",
+  "ground_truth": "Ischemic stroke",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Ischemic Stroke",
+          "Acute onset of unilateral weakness in an older adult is the classic presentation for an ischemic event in the contralateral cerebral hemisphere."
+        ],
+        [
+          "Intracerebral Hemorrhage",
+          "This presents with acute focal neurological deficits similar to an ischemic stroke and must be distinguished by imaging."
+        ],
+        [
+          "Todd's Paralysis",
+          "The unilateral weakness could be a transient postictal state following an unwitnessed focal seizure."
+        ],
+        [
+          "Hypoglycemia",
+          "This metabolic derangement is a critical and reversible stroke mimic that can present with focal neurological deficits."
+        ],
+        [
+          "Brain Tumor",
+          "A primary or metastatic brain tumor can present acutely due to hemorrhage into the mass, seizure, or significant vasogenic edema."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Transient Ischemic Attack (TIA)",
+          "The patient's symptoms have persisted for four hours, which by definition constitutes a stroke rather than a transient event."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Ischemic Stroke",
+          "The patient's acute onset of hemiparesis with a history of hypertension and dyslipidemia is a classic presentation for a cerebrovascular ischemic event."
+        ],
+        [
+          "Intracerebral Hemorrhage",
+          "This presents identically to an ischemic stroke and is a strong consideration given the patient's history of hypertension."
+        ],
+        [
+          "Todd's Paralysis",
+          "The unilateral weakness could be a post-ictal phenomenon following an unwitnessed or non-convulsive seizure."
+        ],
+        [
+          "Hypoglycemia",
+          "This metabolic disturbance is a critical and reversible cause that can mimic focal neurological deficits of a stroke."
+        ],
+        [
+          "Brain Tumor",
+          "A primary or metastatic brain tumor can present with acute symptoms due to hemorrhage into the lesion or a new-onset seizure."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Multiple Sclerosis",
+          "The patient's age of 69 makes a new diagnosis of multiple sclerosis extremely unlikely."
+        ],
+        [
+          "Peripheral Neuropathy",
+          "The acute onset and central pattern of weakness (hemiparesis) are inconsistent with a peripheral nerve disorder."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Cardioembolic Stroke",
+          "The abrupt onset of major neurological deficits is classic for an embolic event, with atrial fibrillation being a common underlying cause in this age group."
+        ],
+        [
+          "Large-Artery Atherosclerotic Stroke",
+          "The patient's history of hypertension and dyslipidemia are major risk factors for thrombotic occlusion secondary to atherosclerosis in the carotid or cerebral arteries."
+        ],
+        [
+          "Small-Vessel (Lacunar) Stroke",
+          "Chronic hypertension is the primary risk factor for disease of small penetrating arteries, which can lead to ischemic stroke."
+        ],
+        [
+          "Cryptogenic Stroke",
+          "A definitive etiology is not yet identified, and a substantial number of ischemic strokes remain without a clear cause after a comprehensive evaluation."
+        ],
+        [
+          "Stroke due to Hypercoagulable State",
+          "Underlying prothrombotic disorders remain a less common but possible etiology that is not excluded by the initial normal coagulation profile."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hemorrhagic Stroke",
+          "The non-contrast CT scan revealed a hypodensity consistent with ischemia, not the hyperdensity that would indicate an acute hemorrhage."
+        ],
+        [
+          "Brain Tumor",
+          "The patient's acute presentation and CT findings of a vascular territory infarct are inconsistent with a typically slower-growing space-occupying lesion."
+        ],
+        [
+          "Todd's Paralysis",
+          "This transient post-seizure weakness would not cause the permanent structural brain changes of an acute infarct seen on the CT scan."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Large-artery atherosclerotic stroke",
+          "The patient has multiple atherosclerotic risk factors and moderate stenosis in the ipsilateral carotid artery."
+        ],
+        [
+          "Cardioembolic stroke",
+          "The large territorial infarct is characteristic of an embolic source, and a cardiac etiology like atrial fibrillation has not yet been ruled out."
+        ],
+        [
+          "Cryptogenic stroke",
+          "The etiology is considered undetermined until a comprehensive workup excludes other definite causes, as the moderate stenosis may not be the sole culprit."
+        ],
+        [
+          "Lacunar stroke",
+          "The patient's history of hypertension is a primary risk factor for small-vessel disease, though the infarct size may be larger than a classic lacune."
+        ],
+        [
+          "Carotid artery dissection",
+          "This is an uncommon but possible cause of ischemic stroke in the MCA territory that has not been excluded."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hemorrhagic stroke",
+          "The non-contrast CT scan showed hypodensity consistent with ischemia, not hyperdensity indicating hemorrhage."
+        ],
+        [
+          "Intracranial mass",
+          "Brain imaging findings were explicitly described as an acute infarct, not a tumor or abscess."
+        ],
+        [
+          "Transient Ischemic Attack (TIA)",
+          "The diagnosis is excluded by the MRI confirmation of a permanent brain infarct."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Ischemic Stroke",
+            "The acute onset of unilateral weakness (hemiparesis) in an older adult is the classic presentation for an ischemic stroke, most commonly affecting the middle cerebral artery territory."
+          ],
+          [
+            "Hemorrhagic Stroke",
+            "An intracerebral hemorrhage presents with sudden focal neurologic deficits that are clinically indistinguishable from an ischemic stroke without brain imaging."
+          ],
+          [
+            "Hypoglycemia",
+            "This metabolic emergency is a critical stroke mimic that can cause focal neurologic deficits, including hemiparesis, and must be ruled out immediately."
+          ],
+          [
+            "Seizure with Todd's Paralysis",
+            "A postictal state following a focal seizure can manifest as transient unilateral weakness, which may be the only sign if the seizure itself was unwitnessed."
+          ],
+          [
+            "Brain Tumor",
+            "While typically causing progressive symptoms, a primary or metastatic brain tumor can present acutely due to hemorrhage into the tumor or sudden edema."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "This condition typically presents with ascending and symmetric weakness, not acute unilateral hemiparesis."
+          ],
+          [
+            "Amyotrophic Lateral Sclerosis (ALS)",
+            "This is a chronic, progressive motor neuron disease and does not have an acute onset over a few hours."
+          ],
+          [
+            "Myasthenia Gravis",
+            "This disorder is characterized by fluctuating, fatigable weakness, which is inconsistent with the patient's sudden and persistent deficit."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Transient Ischemic Attack (TIA)",
+            "The patient's vascular risk factors and the son's report of acute, transient, focal neurologic deficits that have resolved on exam are classic for a TIA."
+          ],
+          [
+            "Focal Seizure with Todd's Paralysis",
+            "A seizure could cause transient unilateral weakness in the postictal period, which would explain the resolved symptoms on examination."
+          ],
+          [
+            "Hemiplegic Migraine",
+            "This rare migraine variant can present with transient unilateral weakness, which would mimic the reported symptoms."
+          ],
+          [
+            "Hypoglycemia",
+            "Metabolic disturbances such as low blood sugar can cause transient focal neurological deficits that resolve upon correction."
+          ],
+          [
+            "Functional Neurological Disorder",
+            "The discrepancy between the son's report, the patient's denial, and the normal exam could suggest a non-organic etiology, though this is less likely given the patient's risk factors."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Completed Ischemic Stroke",
+            "The complete resolution of motor weakness on examination is inconsistent with a stroke causing a persistent deficit."
+          ],
+          [
+            "Intracerebral Hemorrhage",
+            "The rapid and complete resolution of symptoms makes a significant hemorrhage highly unlikely, as deficits are typically persistent or progressive."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Cardioembolic Stroke",
+            "The patient's age and history of hypertension are significant risk factors for atrial fibrillation, a common cause of embolic strokes to the middle cerebral artery territory."
+          ],
+          [
+            "Large Artery Atherosclerosis",
+            "Hypertension and dyslipidemia strongly predispose the patient to atherosclerotic disease in the carotid or intracranial arteries, leading to thrombosis or artery-to-artery embolism."
+          ],
+          [
+            "Small Vessel Disease (Lacunar Stroke)",
+            "Chronic hypertension is the most important risk factor for occlusive disease of small penetrating arteries, which can cause infarcts within the larger MCA territory."
+          ],
+          [
+            "Cryptogenic Stroke",
+            "A specific etiology may not be identified despite a comprehensive workup, which is a common outcome in ischemic stroke evaluation."
+          ],
+          [
+            "Aortic Arch Atherosclerosis",
+            "Complex plaques in the aortic arch are an established embolic source that could explain an ischemic event in this patient with known vascular risk factors."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Transient Ischemic Attack (TIA)",
+            "The presence of a hypodensity on the head CT indicates a completed infarct, which is inconsistent with the definition of a TIA."
+          ],
+          [
+            "Hemorrhagic Stroke",
+            "The non-contrast head CT showed a hypodensity (ischemia) and no evidence of hyperdensity, which would indicate hemorrhage."
+          ],
+          [
+            "Seizure with Todd's Paralysis",
+            "This diagnosis is excluded as the cause of the presentation by the definitive CT finding of an acute ischemic infarct."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Large-artery atherosclerosis",
+            "The patient has multiple vascular risk factors and carotid ultrasound revealed moderate stenosis in the ipsilateral artery."
+          ],
+          [
+            "Cardioembolic stroke",
+            "This is a common etiology in this age group, and a cardiac source such as atrial fibrillation has not yet been excluded."
+          ],
+          [
+            "Small-vessel occlusion (lacunar stroke)",
+            "The patient's history of chronic hypertension is a major risk factor for this type of infarct."
+          ],
+          [
+            "Cryptogenic stroke",
+            "This diagnosis remains a possibility if a comprehensive etiological workup, including further cardiac monitoring, is unrevealing."
+          ],
+          [
+            "Stroke of other determined etiology (e.g., hypercoagulable state)",
+            "While less likely given the patient's age and risk factors, uncommon causes are not yet ruled out."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Transient Ischemic Attack (TIA)",
+            "The MRI confirmed a permanent acute infarct, which rules out a TIA by definition."
+          ],
+          [
+            "Hemorrhagic stroke",
+            "The non-contrast CT scan showed hypodensity (ischemia) rather than the hyperdensity that would indicate a hemorrhage."
+          ],
+          [
+            "Brain tumor",
+            "The imaging characteristics on both CT and MRI were classic for an acute infarct, not a neoplasm."
+          ]
+        ]
+      },
+      "cf_id": "case_026_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is found to have full and equal strength in all extremities, arguing against a stroke."
+    }
+  ]
+}

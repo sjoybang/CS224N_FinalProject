@@ -1,0 +1,248 @@
+{
+  "case_id": "case_015",
+  "model": "gpt4",
+  "ground_truth": "Vitamin K deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The patient's history of chronic bronchitis suggests a possible progression to COPD."
+        ],
+        [
+          "Asthma",
+          "Chronic respiratory symptoms could also be indicative of asthma, especially if there are episodic exacerbations."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic bronchitis can lead to bronchiectasis, characterized by persistent cough and sputum production."
+        ],
+        [
+          "Allergic Rhinitis",
+          "Chronic respiratory symptoms may be related to underlying allergic conditions."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "GERD can cause chronic cough and respiratory symptoms, mimicking bronchitis."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic Bronchitis",
+          "The patient's history and presence of rhonchi suggest ongoing airway inflammation consistent with chronic bronchitis."
+        ],
+        [
+          "Asthma",
+          "The presence of rhonchi and a history of respiratory issues could indicate asthma, which can present with similar lung sounds."
+        ],
+        [
+          "COPD",
+          "Chronic bronchitis is a component of COPD, and the lung findings could suggest early or mild COPD."
+        ],
+        [
+          "Allergic Rhinitis",
+          "Although primarily affecting the upper airways, it can contribute to lower airway symptoms like rhonchi."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic bronchitis can lead to bronchiectasis, which may present with rhonchi due to mucus accumulation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "The absence of fever, abnormal vital signs, or significant findings on physical exam makes pneumonia unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic bronchitis",
+          "The patient has a history of chronic bronchitis, mild scattered rhonchi, and bronchial thickening on chest x-ray, which are consistent with this condition."
+        ],
+        [
+          "Vitamin K deficiency",
+          "Prolonged prothrombin time can be indicative of a vitamin K deficiency, which affects blood clotting."
+        ],
+        [
+          "Liver disease",
+          "Liver dysfunction can lead to a prolonged prothrombin time due to impaired synthesis of clotting factors."
+        ],
+        [
+          "Anticoagulant use",
+          "Use of anticoagulant medications can cause prolonged prothrombin time, although there is no mention of medication use in the case."
+        ],
+        [
+          "Coagulation disorder",
+          "An underlying coagulation disorder could explain the prolonged prothrombin time, despite normal electrolytes and renal function."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute bronchitis",
+          "The chronic nature of the symptoms and history makes acute bronchitis less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cystic fibrosis",
+          "Genetic testing confirms the diagnosis, explaining the chronic bronchitis, greasy stools, and vitamin K deficiency."
+        ],
+        [
+          "Chronic pancreatitis",
+          "Could explain the greasy stools and vitamin K deficiency due to malabsorption, but less likely given the confirmed cystic fibrosis."
+        ],
+        [
+          "Primary sclerosing cholangitis",
+          "Could cause fat malabsorption and vitamin deficiencies, but lacks specific supporting evidence in this case."
+        ],
+        [
+          "Celiac disease",
+          "Could cause malabsorption and vitamin deficiencies, but the genetic confirmation of cystic fibrosis makes this less likely."
+        ],
+        [
+          "Alpha-1 antitrypsin deficiency",
+          "Could cause lung issues and liver dysfunction, but does not explain the greasy stools and is less likely with confirmed cystic fibrosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Chronic bronchitis",
+          "Explained as a symptom of cystic fibrosis rather than a separate diagnosis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "The patient's history of chronic bronchitis suggests a possible progression to COPD."
+          ],
+          [
+            "Asthma",
+            "Chronic respiratory symptoms could also be indicative of asthma, especially if there are episodic exacerbations."
+          ],
+          [
+            "Bronchiectasis",
+            "Chronic bronchitis can lead to bronchiectasis, characterized by persistent cough and sputum production."
+          ],
+          [
+            "Allergic Rhinitis",
+            "Chronic respiratory symptoms may be related to underlying allergic conditions."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "GERD can cause chronic cough and respiratory symptoms, mimicking bronchitis."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Immune thrombocytopenic purpura (ITP)",
+            "The presence of petechiae and bruising suggests a bleeding disorder, and ITP is a common cause of thrombocytopenia in young adults."
+          ],
+          [
+            "Von Willebrand disease",
+            "This bleeding disorder can cause easy bruising and petechiae due to a deficiency or dysfunction of von Willebrand factor."
+          ],
+          [
+            "Leukemia",
+            "Hematologic malignancies can present with bruising and petechiae due to bone marrow infiltration and resultant cytopenias."
+          ],
+          [
+            "Aplastic anemia",
+            "This condition can cause pancytopenia, leading to symptoms such as bruising and petechiae due to low platelet counts."
+          ],
+          [
+            "Vitamin C deficiency (scurvy)",
+            "Although rare, scurvy can cause easy bruising and petechiae due to impaired collagen synthesis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic bronchitis",
+            "The lung auscultation is clear, and there are no respiratory symptoms currently present."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Vitamin K deficiency",
+            "The prolonged prothrombin time and presence of bruising and petechiae suggest a possible deficiency affecting clotting factors."
+          ],
+          [
+            "Liver disease",
+            "Liver dysfunction can lead to a prolonged PT and easy bruising due to impaired synthesis of clotting factors."
+          ],
+          [
+            "Disseminated intravascular coagulation (DIC)",
+            "Although less likely without acute illness, DIC can cause prolonged PT and bleeding manifestations."
+          ],
+          [
+            "Von Willebrand disease",
+            "This bleeding disorder can present with easy bruising and petechiae, although it typically affects aPTT more than PT."
+          ],
+          [
+            "Antiphospholipid syndrome",
+            "This condition can cause prolonged PT and bleeding, though it is more commonly associated with thrombosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic bronchitis",
+            "The clear lung auscultation and normal vital signs make acute exacerbation unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Cystic Fibrosis",
+            "Genetic testing confirms the diagnosis, explaining the chronic bronchitis, greasy stools, and vitamin K deficiency."
+          ],
+          [
+            "Vitamin K Deficiency",
+            "The low vitamin K level accounts for the prolonged PT and bleeding tendencies such as bruises and petechiae."
+          ],
+          [
+            "Chronic Bronchitis",
+            "The patient's history and mild bronchial thickening on chest x-ray are consistent with this condition."
+          ],
+          [
+            "Fat Malabsorption",
+            "The greasy stools and vitamin K deficiency suggest malabsorption of fat-soluble vitamins."
+          ],
+          [
+            "Coagulopathy",
+            "The prolonged PT and bleeding symptoms indicate a disorder of blood coagulation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Liver Disease",
+            "Normal liver function tests and lack of other liver-related symptoms rule this out."
+          ],
+          [
+            "Von Willebrand Disease",
+            "Normal platelet function and specific vitamin K deficiency make this unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_015_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The physical exam reveals multiple bruises and petechiae, which argues against chronic Vitamin K deficiency, which would not typically present without a clear bleeding diathesis."
+    }
+  ]
+}

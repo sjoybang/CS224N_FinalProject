@@ -1,0 +1,286 @@
+{
+  "case_id": "case_037",
+  "model": "claude",
+  "ground_truth": "Voice pitch limitation",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Residual papillary thyroid carcinoma",
+          "Incomplete tumor resection after hemithyroidectomy may leave residual malignant tissue requiring further evaluation."
+        ],
+        [
+          "Hypothyroidism",
+          "Hemithyroidectomy reduces thyroid hormone production, potentially causing thyroid hormone deficiency."
+        ],
+        [
+          "Hypoparathyroidism",
+          "Surgical disruption or removal of parathyroid glands during thyroidectomy can cause hypocalcemia."
+        ],
+        [
+          "Recurrent laryngeal nerve injury",
+          "Iatrogenic nerve damage during thyroid surgery can cause vocal cord dysfunction and hoarseness."
+        ],
+        [
+          "Metastatic papillary thyroid carcinoma",
+          "Despite surgery, lymphatic or distant spread may have occurred given the malignant diagnosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Recurrent laryngeal nerve injury",
+          "Voice changes following thyroid surgery are most commonly due to injury of the recurrent laryngeal nerve during the procedure."
+        ],
+        [
+          "Superior laryngeal nerve injury",
+          "Injury to the external branch can cause voice fatigue and loss of vocal pitch, presenting as subtle voice changes post-thyroidectomy."
+        ],
+        [
+          "Laryngeal edema",
+          "Post-surgical inflammation and edema of laryngeal structures can cause temporary voice alterations in the early postoperative period."
+        ],
+        [
+          "Strap muscle dysfunction",
+          "Division or manipulation of strap muscles during surgery can affect laryngeal support and cause voice changes."
+        ],
+        [
+          "Postoperative hypothyroidism",
+          "Reduced thyroid hormone levels after hemithyroidectomy can cause voice changes including hoarseness and deepening of voice."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out diagnoses without laryngoscopy findings or timeframe since surgery."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Recurrent laryngeal nerve injury",
+          "Voice changes after thyroid surgery with normal calcium levels strongly suggest unilateral vocal cord paralysis from surgical nerve damage."
+        ],
+        [
+          "Superior laryngeal nerve injury",
+          "External branch injury can cause voice fatigue and pitch changes after hemithyroidectomy, though less common than recurrent nerve injury."
+        ],
+        [
+          "Laryngeal edema",
+          "Postoperative inflammation or intubation trauma can cause temporary voice changes, though typically resolves within days to weeks."
+        ],
+        [
+          "Vocal cord scarring/fibrosis",
+          "Direct surgical trauma or tissue handling near the larynx can cause mechanical voice changes independent of nerve injury."
+        ],
+        [
+          "Psychogenic voice disorder",
+          "Functional voice changes can occur post-surgically due to anxiety about cancer or surgery, though organic causes must be excluded first."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypoparathyroidism",
+          "Normal calcium levels rule out parathyroid gland injury from surgery."
+        ],
+        [
+          "Hypothyroidism",
+          "Normal TSH levels exclude thyroid hormone deficiency as cause of voice changes."
+        ],
+        [
+          "Recurrent/metastatic thyroid carcinoma",
+          "Pathology confirms complete resection with clear margins, making immediate recurrence unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Iatrogenic external branch of superior laryngeal nerve injury",
+          "Post-hemithyroidectomy vocal changes with confirmed unilateral superior laryngeal nerve paralysis on laryngoscopy directly indicates surgical nerve injury."
+        ],
+        [
+          "Recurrent laryngeal nerve injury",
+          "Hoarseness post-thyroidectomy commonly results from recurrent laryngeal nerve damage, though laryngoscopy findings specifically indicate superior laryngeal nerve involvement."
+        ],
+        [
+          "Combined superior and recurrent laryngeal nerve injury",
+          "The severity of voice changes and difficulty with pitch modulation could suggest injury to both nerves during thyroid surgery."
+        ],
+        [
+          "Vocal cord hemorrhage or hematoma",
+          "Post-surgical bleeding or hematoma causing mass effect could produce vocal changes, though less likely given well-healed scar and confirmed nerve paralysis."
+        ],
+        [
+          "Laryngeal edema",
+          "Post-operative inflammatory changes could contribute to voice alterations, though this would typically resolve by follow-up and doesn't explain confirmed nerve paralysis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypocalcemia from hypoparathyroidism",
+          "Calcium levels are within normal limits, ruling out parathyroid injury."
+        ],
+        [
+          "Hypothyroidism",
+          "TSH levels are within normal limits, excluding thyroid hormone deficiency as cause of symptoms."
+        ],
+        [
+          "Tumor recurrence or residual disease",
+          "Pathology confirmed complete resection with clear margins."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Hypothyroidism",
+            "Hemithyroidectomy reduces thyroid hormone production capacity, commonly resulting in subclinical or overt hypothyroidism requiring monitoring."
+          ],
+          [
+            "Hypoparathyroidism",
+            "Surgical manipulation or inadvertent damage to parathyroid glands during thyroidectomy can cause transient or permanent hypocalcemia."
+          ],
+          [
+            "Recurrent laryngeal nerve injury",
+            "Nerve damage during thyroid surgery may cause hoarseness, voice changes, or vocal cord dysfunction."
+          ],
+          [
+            "Residual or recurrent papillary thyroid carcinoma",
+            "Incomplete resection or microscopic disease may persist after hemithyroidectomy, requiring surveillance."
+          ],
+          [
+            "Surgical site complications",
+            "Hematoma, seroma, infection, or wound healing issues can occur in the early postoperative period."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient clinical information at this stage to definitively rule out any post-thyroidectomy complications."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Uncomplicated postoperative recovery from hemithyroidectomy",
+            "Patient has no voice changes and well-healed scar suggesting normal healing without complications."
+          ],
+          [
+            "Asymptomatic recurrent laryngeal nerve injury",
+            "Unilateral vocal cord paralysis can be asymptomatic if compensation has occurred, not yet assessed by laryngoscopy."
+          ],
+          [
+            "Residual/recurrent papillary thyroid carcinoma",
+            "Post-thyroidectomy patients remain at risk for residual disease in remaining thyroid lobe or local recurrence."
+          ],
+          [
+            "Hypoparathyroidism",
+            "Inadvertent parathyroid gland injury during surgery can occur even with hemithyroidectomy, though less common than with total thyroidectomy."
+          ],
+          [
+            "Incidental thyroid nodule in contralateral lobe",
+            "Remaining thyroid tissue may harbor additional nodules requiring surveillance given history of papillary carcinoma."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bilateral recurrent laryngeal nerve injury",
+            "Hemithyroidectomy only places one recurrent laryngeal nerve at risk, and patient has no voice changes suggesting bilateral injury is not possible."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Papillary thyroid carcinoma status post hemithyroidectomy with favorable prognosis",
+            "Complete resection with clear margins indicates successful surgical treatment with low risk of immediate complications or recurrence."
+          ],
+          [
+            "Subclinical recurrent laryngeal nerve injury",
+            "Normal voice does not completely exclude mild nerve injury, which may manifest subtly on formal laryngoscopy despite patient being asymptomatic."
+          ],
+          [
+            "Contralateral thyroid nodule or occult disease",
+            "Remaining thyroid lobe could harbor additional nodules or occult papillary carcinoma foci given multifocal nature of this cancer type."
+          ],
+          [
+            "Persistent microscopic disease despite clear margins",
+            "Papillary thyroid carcinoma can have microscopic extrathyroidal extension or lymphovascular invasion not detected on initial pathology review."
+          ],
+          [
+            "Hypoparathyroidism (subclinical or developing)",
+            "Despite normal calcium currently, parathyroid function can decline over time post-thyroid surgery due to devascularization or inadvertent trauma."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypocalcemia/symptomatic hypoparathyroidism",
+            "Calcium levels are documented as normal."
+          ],
+          [
+            "Recurrent laryngeal nerve palsy with vocal cord paralysis",
+            "Patient denies voice changes and has no clinical evidence of symptomatic nerve injury."
+          ],
+          [
+            "Hypothyroidism",
+            "TSH levels are within normal limits, indicating adequate thyroid function from remaining lobe."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Iatrogenic superior laryngeal nerve injury",
+            "Unilateral superior laryngeal nerve paralysis confirmed on laryngoscopy following hemithyroidectomy with hoarseness and pitch modulation difficulty is classic for surgical nerve injury."
+          ],
+          [
+            "Iatrogenic recurrent laryngeal nerve injury",
+            "Thyroid surgery carries risk of recurrent laryngeal nerve damage which can cause hoarseness, though superior laryngeal nerve involvement is specifically documented here."
+          ],
+          [
+            "Combined superior and recurrent laryngeal nerve injury",
+            "Both nerves may be injured during thyroidectomy, producing overlapping symptoms of hoarseness and pitch control difficulties."
+          ],
+          [
+            "Postoperative nerve neuropraxia (temporary)",
+            "The nerve paralysis may represent transient injury from surgical manipulation, traction, or thermal damage rather than permanent transection."
+          ],
+          [
+            "Tumor invasion of superior laryngeal nerve",
+            "Though margins were clear, the papillary thyroid carcinoma may have caused pre-existing nerve involvement that was not surgically related."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypocalcemia/hypoparathyroidism",
+            "Calcium levels are normal, ruling out parathyroid injury."
+          ],
+          [
+            "Hypothyroidism",
+            "TSH levels are normal, excluding thyroid hormone deficiency."
+          ],
+          [
+            "Recurrent/residual papillary thyroid carcinoma",
+            "Pathology confirmed complete resection with clear margins."
+          ]
+        ]
+      },
+      "cf_id": "case_037_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports no voice changes since surgery, which argues against voice pitch limitation."
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "case_id": "case_001",
+  "model": "gemini_pro",
+  "ground_truth": "Cystitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Uncomplicated Cystitis",
+          "This is the most common cause of acute dysuria in young women, and pregnancy is a significant risk factor."
+        ],
+        [
+          "Pyelonephritis",
+          "An upper urinary tract infection must be considered in a pregnant patient with dysuria due to the high risk of maternal and fetal complications."
+        ],
+        [
+          "Vaginitis",
+          "Inflammation of the vagina, which is common in pregnancy, can cause external dysuria as urine passes over inflamed tissues."
+        ],
+        [
+          "Urethritis",
+          "Sexually transmitted infections are a frequent cause of urethral inflammation and dysuria in this patient's age group."
+        ],
+        [
+          "Asymptomatic Bacteriuria",
+          "The patient may have had pre-existing bacteriuria, common in pregnancy, which is now becoming a symptomatic infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Interstitial Cystitis",
+          "This is a chronic pain syndrome, which is inconsistent with the patient's acute one-day history of symptoms."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Uncomplicated Cystitis",
+          "The patient has acute dysuria without fever or CVA tenderness, which is classic for a lower UTI, a common condition in pregnancy."
+        ],
+        [
+          "Urethritis",
+          "Dysuria is a primary symptom of urethral inflammation, which can be caused by sexually transmitted infections."
+        ],
+        [
+          "Vaginitis",
+          "Inflammation of the vulvovaginal area can cause external dysuria as urine passes over irritated tissues, and is common during pregnancy."
+        ],
+        [
+          "Urolithiasis",
+          "A kidney stone located in the distal ureter or bladder can cause irritative voiding symptoms, including dysuria."
+        ],
+        [
+          "Interstitial Cystitis",
+          "This chronic bladder pain syndrome can present with urinary urgency and dysuria, although it is less common than an acute infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "The absence of fever and costovertebral angle tenderness makes an upper urinary tract infection highly unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute Cystitis",
+          "The patient has classic symptoms of dysuria with urinalysis findings of pyuria, bacteriuria, and nitrites, strongly indicating a bladder infection."
+        ],
+        [
+          "Pyelonephritis",
+          "An ascending infection to the kidneys must be considered in any pregnant patient with a UTI, despite the absence of fever or flank pain."
+        ],
+        [
+          "Urethritis",
+          "Dysuria in a young, sexually active person could be caused by urethral inflammation, including from a sexually transmitted infection."
+        ],
+        [
+          "Vaginitis/Cervicitis",
+          "Inflammation of the vagina or cervix can cause external dysuria and may lead to a contaminated urine sample, though the positive nitrites make a primary UTI more likely."
+        ],
+        [
+          "Nephrolithiasis",
+          "A kidney stone can cause irritative voiding symptoms and predispose to a urinary tract infection, presenting without classic flank pain if the stone is in the distal ureter."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Asymptomatic Bacteriuria",
+          "This diagnosis is ruled out by the patient's report of symptoms (burning on urination)."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Uncomplicated Cystitis",
+          "The patient has lower urinary tract symptoms (dysuria) with urinalysis and culture confirming a significant E. coli infection, without signs of systemic illness."
+        ],
+        [
+          "Pyelonephritis",
+          "This is a critical consideration for any UTI in pregnancy due to the high risk of ascension, though the patient currently lacks fever or costovertebral angle tenderness."
+        ],
+        [
+          "Urethritis",
+          "This is a cause of dysuria, but the presence of nitrites and a pure culture of E. coli makes a typical bacterial UTI far more likely than an STI."
+        ],
+        [
+          "Vaginitis",
+          "This can cause external dysuria, but it would not explain the urinalysis findings of pyuria, nitrites, and significant bacteriuria."
+        ],
+        [
+          "Contaminated Urine Sample",
+          "While the high colony count and pyuria make this unlikely, it is always a consideration when interpreting urine culture results."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Asymptomatic Bacteriuria",
+          "This diagnosis is defined by the absence of symptoms, and the patient is symptomatic with dysuria."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Uncomplicated Cystitis",
+            "This is the most common cause of acute dysuria in women, with pregnancy being a significant risk factor."
+          ],
+          [
+            "Urethritis secondary to sexually transmitted infection",
+            "Chlamydia and gonorrhea are common causes of dysuria in this age group and can present with urethritis."
+          ],
+          [
+            "Vulvovaginal candidiasis",
+            "Yeast infections are very common during pregnancy and can cause external dysuria from urine passing over inflamed vulvar tissue."
+          ],
+          [
+            "Bacterial vaginosis",
+            "This common vaginal infection, prevalent in pregnancy, can cause dysuria, although it is a less typical symptom than discharge."
+          ],
+          [
+            "Pyelonephritis",
+            "While less likely without flank pain or fever, an ascending urinary tract infection must be considered in a pregnant patient due to its high morbidity."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Interstitial cystitis",
+            "This is a chronic pain syndrome, which is inconsistent with the patient's acute one-day onset of symptoms."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pyelonephritis",
+            "The combination of dysuria and costovertebral angle tenderness is classic for an upper urinary tract infection, which is common in pregnancy."
+          ],
+          [
+            "Nephrolithiasis",
+            "An obstructing kidney stone can cause both right-sided flank pain (CVA tenderness) and urinary symptoms like dysuria."
+          ],
+          [
+            "Appendicitis",
+            "The appendix is displaced superiorly during pregnancy, which can lead to an atypical presentation with right flank pain and urinary symptoms due to irritation of the ureter."
+          ],
+          [
+            "Ureteral obstruction secondary to pregnancy",
+            "The gravid uterus can compress the right ureter causing hydronephrosis and flank pain, with the dysuria resulting from a concurrent simple cystitis."
+          ],
+          [
+            "Complicated cystitis",
+            "The patient has a lower urinary tract infection that is causing significant inflammation, potentially leading to referred flank pain or representing an early ascending infection."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Preeclampsia",
+            "The patient's blood pressure is within the normal range."
+          ],
+          [
+            "Ectopic pregnancy",
+            "The patient is at 22 weeks gestation with a gravid uterus, which is inconsistent with an ectopic pregnancy."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute Pyelonephritis",
+            "The combination of urinary symptoms, costovertebral angle tenderness, and a urinalysis confirming infection is classic for a kidney infection, especially in pregnancy."
+          ],
+          [
+            "Nephrolithiasis",
+            "A kidney stone can cause flank pain and urinary stasis, predisposing the patient to a secondary urinary tract infection."
+          ],
+          [
+            "Renal Abscess",
+            "This complication of severe pyelonephritis presents with flank pain and infection, and must be considered given the CVA tenderness."
+          ],
+          [
+            "Acute Cystitis",
+            "The patient's dysuria and urinalysis are consistent with a bladder infection, but this diagnosis alone does not explain the costovertebral angle tenderness."
+          ],
+          [
+            "Appendicitis",
+            "Atypical presentation of appendicitis in pregnancy can mimic a urinary tract infection due to the superior displacement of the appendix near the ureter."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Asymptomatic Bacteriuria",
+            "The patient is symptomatic with dysuria and flank tenderness."
+          ],
+          [
+            "Musculoskeletal pain",
+            "This diagnosis would not explain the dysuria or the urinalysis findings of leukocyte esterase, nitrites, WBCs, and bacteria."
+          ],
+          [
+            "Vaginitis",
+            "This would not cause costovertebral angle tenderness or nitrites in the urine."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Pyelonephritis",
+            "The diagnosis is strongly supported by the combination of CVA tenderness and a urine culture positive for >100,000 CFU/mL E. coli."
+          ],
+          [
+            "Complicated Urinary Tract Infection",
+            "This is a correct diagnosis as any UTI in a pregnant patient is considered complicated, especially with upper tract signs."
+          ],
+          [
+            "Cystitis",
+            "The patient's presenting symptom of dysuria is classic for a lower UTI, which has now progressed to involve the kidneys."
+          ],
+          [
+            "Nephrolithiasis",
+            "A kidney stone causing obstruction could lead to these exact findings of flank pain and a secondary E. coli infection."
+          ],
+          [
+            "Appendicitis",
+            "Atypical presentation in pregnancy can mimic pyelonephritis, but the definitive positive urine culture makes this diagnosis highly improbable."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Asymptomatic bacteriuria",
+            "This is ruled out by the patient's clear symptoms of dysuria and CVA tenderness."
+          ],
+          [
+            "Vaginitis",
+            "This would not cause CVA tenderness or the specific urinalysis findings of significant bacteriuria and nitrites."
+          ],
+          [
+            "Musculoskeletal pain",
+            "This diagnosis is inconsistent with the patient's dysuria and infectious findings on urinalysis and culture."
+          ],
+          [
+            "Preeclampsia",
+            "This is ruled out by the patient's normal blood pressure and lack of other characteristic signs."
+          ]
+        ]
+      },
+      "cf_id": "case_001_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has marked CVA tenderness, which argues against uncomplicated cystitis."
+    }
+  ]
+}

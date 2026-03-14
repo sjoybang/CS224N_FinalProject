@@ -1,0 +1,219 @@
+{
+  "case_id": "case_017",
+  "model": "gemini",
+  "ground_truth": "Cauda equina syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Vertebral compression fracture",
+          "Acute severe back pain in an elderly male with metastatic prostate cancer raises concern for a fracture due to bone metastasis."
+        ],
+        [
+          "Metastatic spinal cord compression",
+          "Prostate cancer metastasis to the spine can cause spinal cord compression, leading to severe back pain."
+        ],
+        [
+          "Musculoskeletal strain",
+          "Although less likely given the severity and history, a muscle strain could still be a cause of acute back pain."
+        ],
+        [
+          "Aortic dissection",
+          "Severe, sudden-onset back pain can be a symptom of aortic dissection, especially in older individuals."
+        ],
+        [
+          "Pyelonephritis",
+          "Although back pain is the primary symptom, pyelonephritis can present with severe back pain, especially if there is an atypical presentation."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Spinal cord compression",
+          "The patient's back pain, lower extremity weakness, and history of metastatic prostate cancer suggest possible spinal cord compression from a metastatic lesion."
+        ],
+        [
+          "Vertebral fracture",
+          "Severe back pain and tenderness to palpation along the lower spine could indicate a vertebral fracture, especially given his age and potential for bone metastases."
+        ],
+        [
+          "Epidural abscess",
+          "Back pain and lower extremity weakness could be caused by an epidural abscess, although less likely given the history of cancer."
+        ],
+        [
+          "Cauda equina syndrome",
+          "Lower extremity weakness and severe back pain raise concern for cauda equina syndrome, requiring prompt evaluation."
+        ],
+        [
+          "Musculoskeletal strain",
+          "While less likely given the severity and neurological symptoms, a severe musculoskeletal strain could present with back pain and limited mobility."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Cauda Equina Syndrome",
+          "Saddle anesthesia and bilateral lower extremity weakness with hyporeflexia are highly suggestive."
+        ],
+        [
+          "Metastatic Spinal Cord Compression",
+          "Given his history of metastatic prostate cancer, this is a strong possibility causing neurological deficits."
+        ],
+        [
+          "Lumbar Spinal Stenosis",
+          "This could explain the back pain and lower extremity weakness, although saddle anesthesia is less typical."
+        ],
+        [
+          "Lumbar Disc Herniation",
+          "A herniated disc could cause nerve compression leading to back pain, weakness, and reflex changes."
+        ],
+        [
+          "Spinal Cord Infarction",
+          "Although less likely, sudden onset back pain and neurological deficits could indicate a vascular event."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cauda Equina Syndrome",
+          "MRI confirms compression of the cauda equina, explaining the back pain, lower extremity weakness, hyporeflexia, and saddle anesthesia."
+        ],
+        [
+          "Metastatic Spinal Cord Compression",
+          "While cauda equina syndrome is more specific, the patient's history of metastatic prostate cancer makes spinal cord compression a strong consideration."
+        ],
+        [
+          "Spinal Stenosis",
+          "Although less likely given the acute presentation and saddle anesthesia, spinal stenosis could contribute to back pain and neurological symptoms."
+        ],
+        [
+          "Lumbar Disc Herniation",
+          "Disc herniation can cause back pain and neurological deficits, but the history of cancer and MRI findings make it less likely than metastatic compression."
+        ],
+        [
+          "Vertebral Compression Fracture",
+          "While possible given the patient's age and potential for bone metastases, the MRI findings point more directly to cauda equina compression."
+        ]
+      ],
+      "eliminated": []
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Vertebral compression fracture",
+            "Acute onset of severe back pain in an elderly male with metastatic prostate cancer raises concern for a fracture due to bone metastasis."
+          ],
+          [
+            "Metastatic spinal cord compression",
+            "Existing metastatic prostate cancer could be impinging on the spinal cord, causing severe back pain."
+          ],
+          [
+            "Muscle strain",
+            "Although less likely given the severity and patient history, a muscle strain could still be a cause of acute back pain."
+          ],
+          [
+            "Aortic dissection",
+            "Severe back pain, especially if new and sudden, can be a symptom of aortic dissection, although less likely without other typical symptoms."
+          ],
+          [
+            "Kidney stone",
+            "While less likely to present solely as back pain, nephrolithiasis can cause severe flank pain that may radiate to the back."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Spinal cord compression",
+            "The patient's lower extremity weakness and back pain, especially with spinal tenderness, suggest possible compression of the spinal cord."
+          ],
+          [
+            "Metastatic disease to spine",
+            "Given his history of metastatic prostate cancer, the new onset of severe back pain and neurological deficits could be due to spinal metastases."
+          ],
+          [
+            "Epidural abscess",
+            "Back pain with neurological deficits and spinal tenderness could indicate an epidural abscess, although fever is not mentioned."
+          ],
+          [
+            "Cauda equina syndrome",
+            "Bilateral lower extremity weakness and severe back pain raise concern for cauda equina syndrome."
+          ],
+          [
+            "Vertebral compression fracture",
+            "The patient's age and severe back pain could be caused by a vertebral compression fracture, potentially related to metastatic disease or osteoporosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Straight leg raise",
+            "The patient reports feeling significant relief of pain with straight leg raise, which is not a diagnosis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Cauda Equina Syndrome",
+            "Saddle anesthesia and bilateral lower extremity weakness with hyporeflexia are highly suggestive."
+          ],
+          [
+            "Metastatic Spinal Cord Compression",
+            "Given his history of metastatic prostate cancer, this is a strong possibility causing neurological deficits."
+          ],
+          [
+            "Lumbar Spinal Stenosis",
+            "This could explain the back pain and lower extremity weakness, although saddle anesthesia is less typical."
+          ],
+          [
+            "Lumbar Disc Herniation",
+            "A herniated disc could cause nerve compression leading to back pain, weakness, and reflex changes."
+          ],
+          [
+            "Spinal Epidural Abscess",
+            "While less likely, back pain with neurological deficits and potential for rapid progression warrants consideration."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Cauda Equina Syndrome",
+            "MRI confirms compression of the cauda equina, explaining the back pain, lower extremity weakness, hyporeflexia, and saddle anesthesia."
+          ],
+          [
+            "Metastatic Spinal Cord Compression",
+            "The patient's history of metastatic prostate cancer and MRI findings strongly suggest spinal cord compression due to metastasis."
+          ],
+          [
+            "Lumbar Spinal Stenosis",
+            "While less likely given the acute presentation and saddle anesthesia, spinal stenosis could contribute to back pain and neurological symptoms."
+          ],
+          [
+            "Herniated Disc",
+            "Although less probable with the history of cancer and MRI findings, a herniated disc could cause back pain and nerve compression."
+          ],
+          [
+            "Spinal Epidural Abscess",
+            "While less likely given the absence of fever or other signs of infection, an abscess could cause spinal cord compression."
+          ]
+        ],
+        "eliminated": []
+      },
+      "cf_id": "case_017_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports significant relief of pain with straight leg raise, arguing against cauda equina syndrome which typically does not improve with this maneuver."
+    }
+  ]
+}

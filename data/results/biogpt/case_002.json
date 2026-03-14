@@ -1,0 +1,126 @@
+{
+  "case_id": "case_002",
+  "model": "biogpt",
+  "ground_truth": "Thromboembolism",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 58-year-old woman presents with sudden shortness of breath. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 58-year-old woman presents with sudden shortness of breath. [Stage 2] The patient experienced cardiac arrest and resuscitation was unsuccessful. She had a fractured femur 3 months ago and recently discharged from rehab. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 58-year-old woman presents with sudden shortness of breath. [Stage 2] The patient experienced cardiac arrest and resuscitation was unsuccessful. She had a fractured femur 3 months ago and recently discharged from rehab. [Stage 3] An autopsy was performed. Histological examination of lung tissue reveals fibrous connective tissue around the lumen of the pulmonary artery. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 58-year-old woman presents with sudden shortness of breath. [Stage 2] The patient experienced cardiac arrest and resuscitation was unsuccessful. She had a fractured femur 3 months ago and recently discharged from rehab. [Stage 3] An autopsy was performed. Histological examination of lung tissue reveals fibrous connective tissue around the lumen of the pulmonary artery. [Stage 4] Further microscopic analysis of the pulmonary artery reveals the presence of organized thrombi with evidence of recanalization, confirming chronic thromboembolic disease. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 58-year-old woman presents with sudden shortness of breath. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 58-year-old woman presents with sudden shortness of breath. [Stage 2] The patient experienced cardiac arrest and resuscitation was successful. She had a fractured femur 3 months ago and recently discharged from rehab. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 58-year-old woman presents with sudden shortness of breath. [Stage 2] The patient experienced cardiac arrest and resuscitation was successful. She had a fractured femur 3 months ago and recently discharged from rehab. [Stage 3] An autopsy was performed. Histological examination of lung tissue reveals fibrous connective tissue around the lumen of the pulmonary artery. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 58-year-old woman presents with sudden shortness of breath. [Stage 2] The patient experienced cardiac arrest and resuscitation was successful. She had a fractured femur 3 months ago and recently discharged from rehab. [Stage 3] An autopsy was performed. Histological examination of lung tissue reveals fibrous connective tissue around the lumen of the pulmonary artery. [Stage 4] Further microscopic analysis of the pulmonary artery reveals the presence of organized thrombi with evidence of recanalization, confirming chronic thromboembolic disease. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_002_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient experienced cardiac arrest and resuscitation was successful, making thromboembolism less likely as the patient survived the acute event."
+    }
+  ]
+}

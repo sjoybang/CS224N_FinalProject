@@ -1,0 +1,257 @@
+{
+  "case_id": "case_004",
+  "model": "gemini",
+  "ground_truth": "Scorpion sting",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute Pancreatitis",
+          "The sudden onset of severe abdominal pain radiating to the back, accompanied by nausea, is highly suggestive of acute pancreatitis."
+        ],
+        [
+          "Biliary Colic",
+          "The patient's symptoms could be caused by a gallstone obstructing the bile duct, leading to abdominal pain and nausea."
+        ],
+        [
+          "Perforated Peptic Ulcer",
+          "The acute onset of severe abdominal pain could indicate a perforated ulcer, although the gradual increase in pain is less typical."
+        ],
+        [
+          "Small Bowel Obstruction",
+          "Abdominal pain, nausea, and potential radiation to the back can be seen with small bowel obstruction."
+        ],
+        [
+          "Ovarian Cyst Rupture",
+          "Although less likely given the patient's age and lack of specific gynecological complaints, a ruptured ovarian cyst can cause acute abdominal pain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myocardial Infarction",
+          "Chest pain is absent."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute Pancreatitis",
+          "Abdominal pain radiating to the back and nausea are consistent with pancreatitis, though the ankle swelling is not typical."
+        ],
+        [
+          "Septic Arthritis",
+          "The swollen, erythematous, and painful ankle suggests a possible joint infection, especially given the patient's unwell appearance."
+        ],
+        [
+          "Gout",
+          "The acute onset of pain and swelling in the ankle could indicate a gout flare, although abdominal pain is not a typical symptom."
+        ],
+        [
+          "Deep Vein Thrombosis",
+          "Ankle swelling and pain could be due to DVT, but the redness is less common and the abdominal pain is unexplained."
+        ],
+        [
+          "Abdominal Aortic Aneurysm",
+          "Abdominal pain radiating to the back could indicate an AAA, but the ankle swelling is not explained by this diagnosis."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute pancreatitis",
+          "The abdominal CT confirms acute pancreatitis, aligning with the patient's abdominal pain and nausea."
+        ],
+        [
+          "Scorpion envenomation",
+          "Scorpion stings can cause pancreatitis, and the patient reports a recent sting."
+        ],
+        [
+          "Aspirin-induced gastritis",
+          "Aspirin use can cause gastritis, potentially contributing to abdominal pain and nausea."
+        ],
+        [
+          "Hypothyroidism",
+          "Although less likely to cause acute abdominal pain, hypothyroidism can sometimes manifest with gastrointestinal symptoms."
+        ],
+        [
+          "Ankle cellulitis",
+          "The patient's swollen, erythematous, and painful ankle suggests a localized infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myocardial infarction",
+          "The patient's regular heart rate and rhythm, along with the abdominal CT findings, make this less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Scorpion-induced pancreatitis",
+          "The patient was stung by a Tityus scorpion, known to cause pancreatitis, and scorpion venom was detected in her serum."
+        ],
+        [
+          "Gallstone pancreatitis",
+          "Although scorpion venom is present, gallstones are a common cause of pancreatitis and should be considered."
+        ],
+        [
+          "Alcoholic pancreatitis",
+          "While not explicitly stated, alcohol use is a common cause of pancreatitis and should be considered."
+        ],
+        [
+          "Hypertriglyceridemia-induced pancreatitis",
+          "The patient is obese and on oral contraceptive pills, which could contribute to hypertriglyceridemia, a potential cause of pancreatitis."
+        ],
+        [
+          "Drug-induced pancreatitis",
+          "Aspirin and oral contraceptive pills are potential, though less common, causes of pancreatitis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypothyroidism",
+          "While the patient has hypothyroidism, it is not directly related to acute pancreatitis."
+        ],
+        [
+          "Hypertension",
+          "While the patient has hypertension, it is not directly related to acute pancreatitis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute Pancreatitis",
+            "The sudden onset of severe abdominal pain radiating to the back, accompanied by nausea, is highly suggestive of acute pancreatitis."
+          ],
+          [
+            "Biliary Colic",
+            "The patient's symptoms could be caused by a gallstone obstructing the bile duct, leading to abdominal pain and nausea."
+          ],
+          [
+            "Perforated Peptic Ulcer",
+            "The acute onset of severe abdominal pain could indicate a perforated ulcer, although the gradual increase in pain is less typical."
+          ],
+          [
+            "Small Bowel Obstruction",
+            "Abdominal pain, nausea, and potential radiation to the back can be seen with small bowel obstruction."
+          ],
+          [
+            "Ovarian Cyst Rupture",
+            "Although less likely given the patient's age and lack of specific gynecological complaints, a ruptured ovarian cyst can cause acute abdominal pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myocardial Infarction",
+            "Chest pain is absent."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute Pancreatitis",
+            "Abdominal pain radiating to the back and nausea are classic symptoms, and while the patient denies alcohol use, other etiologies are possible."
+          ],
+          [
+            "Biliary Colic",
+            "The patient's abdominal pain could be due to gallstones obstructing the bile duct, though the radiation to the back is less typical."
+          ],
+          [
+            "Perforated Viscus",
+            "The patient's severe abdominal pain and unwell appearance could indicate a perforation, although the vitals are not yet overtly alarming."
+          ],
+          [
+            "Mesenteric Ischemia",
+            "This is a less likely but serious consideration given the abdominal pain and potential for vascular compromise, especially in an obese patient."
+          ],
+          [
+            "Diabetic Ketoacidosis",
+            "Although no history of diabetes is given, DKA can present with abdominal pain and nausea, and should be considered."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Envenomation",
+            "No local signs of envenomation are present."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute pancreatitis",
+            "The abdominal CT confirms acute pancreatitis."
+          ],
+          [
+            "Medication-induced pancreatitis",
+            "Aspirin or oral contraceptive pills could potentially contribute to pancreatitis."
+          ],
+          [
+            "Scorpion envenomation",
+            "Although less likely given the CT findings, scorpion stings can rarely cause pancreatitis."
+          ],
+          [
+            "Hypertriglyceridemia-induced pancreatitis",
+            "Obesity and oral contraceptive pills can increase triglyceride levels, potentially leading to pancreatitis."
+          ],
+          [
+            "Biliary pancreatitis",
+            "Although not explicitly stated, gallstones could be a potential cause of pancreatitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypothyroidism",
+            "While present in the patient's history, it does not directly explain the acute abdominal pain and pancreatitis."
+          ],
+          [
+            "Hypertension",
+            "While present in the patient's history, it does not directly explain the acute abdominal pain and pancreatitis."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Scorpion-induced pancreatitis",
+            "The patient was stung by a Tityus scorpion, known to cause pancreatitis, and scorpion venom was detected in her serum."
+          ],
+          [
+            "Gallstone pancreatitis",
+            "Although scorpion venom was detected, gallstones are a common cause of pancreatitis and should be considered."
+          ],
+          [
+            "Alcoholic pancreatitis",
+            "While not explicitly stated, alcohol use is a common cause of pancreatitis and should be considered."
+          ],
+          [
+            "Hypertriglyceridemia-induced pancreatitis",
+            "Obesity and oral contraceptive use can contribute to hypertriglyceridemia, a potential cause of pancreatitis."
+          ],
+          [
+            "Autoimmune pancreatitis",
+            "Although less likely given the scorpion sting, autoimmune pancreatitis can present with similar symptoms and elevated amylase/lipase."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypothyroidism",
+            "Levothyroxine suggests it is being managed."
+          ]
+        ]
+      },
+      "cf_id": "case_004_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of local findings at the sting site argues against scorpion envenomation."
+    }
+  ]
+}

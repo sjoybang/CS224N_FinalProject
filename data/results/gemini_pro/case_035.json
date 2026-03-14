@@ -1,0 +1,282 @@
+{
+  "case_id": "case_035",
+  "model": "gemini_pro",
+  "ground_truth": "Meningococcal meningitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Bacterial Meningitis",
+          "The acute presentation of high-grade fever, severe headache, and altered mental status (lethargy, confusion) is a classic triad for this life-threatening infection."
+        ],
+        [
+          "Viral Meningoencephalitis",
+          "This diagnosis explains the combination of meningeal signs (headache, vomiting) and brain parenchymal involvement (lethargy, confusion) in the setting of a febrile illness."
+        ],
+        [
+          "Encephalitis",
+          "Prominent neurological dysfunction, including lethargy and confusion, with fever and headache strongly suggests primary inflammation of the brain parenchyma."
+        ],
+        [
+          "Sepsis with Encephalopathy",
+          "A severe systemic infection can cause fever, headache, and altered mental status, mimicking a primary central nervous system infection."
+        ],
+        [
+          "Brain Abscess",
+          "This focal CNS infection can present with fever, headache, and signs of increased intracranial pressure such as vomiting and altered consciousness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Migraine",
+          "The presence of a high-grade fever makes a primary headache disorder an extremely unlikely cause of the patient's symptoms."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Meningococcal meningitis with meningococcemia",
+          "The patient presents with the classic meningitis triad, septic shock, and a petechial rash, which is highly characteristic of this diagnosis."
+        ],
+        [
+          "Pneumococcal meningitis",
+          "This is a leading cause of bacterial meningitis in this age group and can be complicated by septic shock, often following an upper respiratory infection."
+        ],
+        [
+          "Haemophilus influenzae type b meningitis",
+          "This is another potential bacterial cause of meningitis and sepsis, particularly if the child's vaccination history is incomplete."
+        ],
+        [
+          "Rocky Mountain Spotted Fever",
+          "This tick-borne illness is considered due to the constellation of high fever, headache, and a petechial rash, though prominent neck rigidity is less typical."
+        ],
+        [
+          "Viral meningoencephalitis",
+          "A severe viral infection can cause fever, headache, and altered mental status, but is less likely to present with this degree of shock and petechiae."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Uncomplicated upper respiratory infection",
+          "The presence of meningeal signs, altered mental status, and septic shock indicates a much more severe systemic illness."
+        ],
+        [
+          "Gastroenteritis",
+          "The clinical picture is dominated by signs of sepsis and central nervous system infection rather than a primary gastrointestinal process."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Meningococcal Meningitis",
+          "The presentation of bacterial meningitis with petechiae and rapid progression to septic shock is highly characteristic of this etiology."
+        ],
+        [
+          "Pneumococcal Meningitis",
+          "This is a very common cause of bacterial meningitis in this age group and is consistent with the clinical and classic CSF findings."
+        ],
+        [
+          "Haemophilus influenzae type b (Hib) Meningitis",
+          "This diagnosis is clinically indistinguishable from other causes of bacterial meningitis and remains a possibility in an under-immunized child."
+        ],
+        [
+          "Group A Streptococcal Meningitis",
+          "This is a possible cause of bacterial meningitis that could be associated with the preceding purulent nasal discharge from a primary pharyngeal or sinus infection."
+        ],
+        [
+          "Brain Abscess",
+          "This focal infection can present with fever, headache, and altered mental status, and rupture into the subarachnoid space could explain the CSF findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Viral Meningitis",
+          "The CSF profile with high neutrophils, high protein, and low glucose is classic for a bacterial, not viral, etiology."
+        ],
+        [
+          "Subarachnoid Hemorrhage",
+          "This is ruled out by the presence of high fever and a CSF profile indicative of infection rather than hemorrhage."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Meningococcal meningitis",
+          "The positive *N. meningitidis* culture confirms this diagnosis, which perfectly matches the clinical syndrome of meningitis, petechiae, and shock, with the underlying complement deficiency explaining susceptibility."
+        ],
+        [
+          "Pneumococcal meningitis",
+          "This is the leading cause of bacterial meningitis in this age group and presents with a clinically indistinguishable picture of sepsis and purulent meningitis."
+        ],
+        [
+          "*Haemophilus influenzae* meningitis",
+          "This pathogen causes a similar fulminant meningitis in young children and would be a primary consideration, especially with incomplete immunization."
+        ],
+        [
+          "Rocky Mountain Spotted Fever",
+          "The presentation of fever, headache, and petechiae makes this a consideration, but the highly purulent CSF makes it much less likely than bacterial meningitis."
+        ],
+        [
+          "Viral meningoencephalitis",
+          "This is considered for any patient with fever and altered mental status, but is effectively ruled out by the CSF profile showing a bacterial, not viral, pattern."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Aseptic meningitis",
+          "The CSF findings of high polymorphonuclear cells, high protein, and low glucose are characteristic of a bacterial infection, not a typical viral process."
+        ],
+        [
+          "Subarachnoid hemorrhage",
+          "The presence of high fever and a purulent CSF is inconsistent with a primary intracranial bleed."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Bacterial Meningitis",
+            "The patient presents with the classic triad of high fever, headache, and altered mental status (lethargy, confusion)."
+          ],
+          [
+            "Viral Encephalitis",
+            "Prominent signs of brain parenchymal dysfunction, specifically lethargy and confusion, are key features of this diagnosis."
+          ],
+          [
+            "Viral Meningitis",
+            "This is a common cause of fever, headache, and vomiting, and can initially present similarly to bacterial meningitis."
+          ],
+          [
+            "Sepsis",
+            "The constellation of high fever, lethargy, and confusion may represent a systemic infection causing secondary central nervous system effects."
+          ],
+          [
+            "Brain Abscess",
+            "This focal infection can cause fever, headache, and vomiting due to mass effect and increased intracranial pressure."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gastroenteritis",
+            "The presence of severe headache and significant altered mental status is not explained by a primary gastrointestinal illness."
+          ],
+          [
+            "Migraine",
+            "The high-grade fever is not a feature of a migraine headache."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Meningococcemia",
+            "The patient presents with the classic triad of high fever, septic shock, and a petechial rash."
+          ],
+          [
+            "Bacterial Sepsis with DIC",
+            "The patient meets criteria for septic shock (fever, hypotension, tachycardia, lethargy), and the petechiae are suggestive of disseminated intravascular coagulation."
+          ],
+          [
+            "Bacterial Meningitis",
+            "High fever, headache, lethargy, and vomiting are classic signs, and the absence of neck rigidity does not rule out this diagnosis in a young child."
+          ],
+          [
+            "Toxic Shock Syndrome",
+            "This diagnosis is suggested by the presence of fever, hypotension, and a skin manifestation (petechiae) in the setting of a possible staphylococcal or streptococcal infection."
+          ],
+          [
+            "Rocky Mountain Spotted Fever",
+            "This tick-borne illness is a key consideration for any patient with fever, headache, and a petechial rash, as its presentation can mimic meningococcemia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Henoch-Sch\u00f6nlein Purpura",
+            "The profound septic shock with hypotension and high fever is not a typical presentation for this vasculitis."
+          ],
+          [
+            "Acute Leukemia",
+            "The fulminant onset over a single day is much more characteristic of overwhelming infection than a hematologic malignancy."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Meningococcal Meningitis",
+            "The combination of classic bacterial meningitis CSF findings with petechiae and septic shock is highly characteristic of infection with Neisseria meningitidis."
+          ],
+          [
+            "Pneumococcal Meningitis",
+            "This is a very common cause of bacterial meningitis in children, and the purulent nasal discharge suggests a preceding upper respiratory infection from which Streptococcus pneumoniae could have spread."
+          ],
+          [
+            "Sepsis with Septic Shock",
+            "The patient's presentation with fever, altered mental status, tachycardia, and hypotension meets the clinical criteria for septic shock secondary to a severe infection."
+          ],
+          [
+            "Haemophilus influenzae Meningitis",
+            "This is another potential bacterial cause of meningitis in this age group, presenting with a clinical and CSF picture identical to other bacterial pathogens."
+          ],
+          [
+            "Brain Abscess",
+            "A focal CNS infection is possible given the severe neurological signs, although less likely than meningitis given the diffuse CSF findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral Meningitis",
+            "The CSF findings of very high polymorphonuclear white blood cells, high protein, and low glucose are classic for a bacterial, not viral, infection."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Meningococcal meningitis secondary to complement deficiency",
+            "The patient has classic signs and CSF findings of bacterial meningitis, a positive culture for Neisseria meningitidis, and a confirmed underlying terminal complement deficiency."
+          ],
+          [
+            "Meningococcemia",
+            "The clinical picture of hypotension, tachycardia, and petechiae is characteristic of systemic infection and septic shock caused by Neisseria meningitidis."
+          ],
+          [
+            "Pneumococcal meningitis",
+            "Streptococcus pneumoniae is a leading cause of bacterial meningitis in this age group and presents with an identical clinical and CSF profile prior to culture results."
+          ],
+          [
+            "Haemophilus influenzae meningitis",
+            "This is another common cause of bacterial meningitis in unvaccinated or partially vaccinated children that would present with indistinguishable signs and CSF findings."
+          ],
+          [
+            "Rocky Mountain Spotted Fever",
+            "The initial presentation of fever, headache, altered mental status, and petechiae can mimic this tick-borne rickettsial disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral meningitis",
+            "The CSF findings of a very high neutrophilic pleocytosis, high protein, and low glucose are indicative of a bacterial, not viral, infection."
+          ],
+          [
+            "Tuberculous meningitis",
+            "The fulminant, acute onset and neutrophilic CSF predominance are inconsistent with the typically subacute, lymphocytic meningitis caused by tuberculosis."
+          ],
+          [
+            "Henoch-Sch\u00f6nlein purpura",
+            "The presence of septic shock and CSF findings confirming bacterial meningitis rule out this non-infectious small-vessel vasculitis."
+          ]
+        ]
+      },
+      "cf_id": "case_035_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of nuchal rigidity makes meningococcal meningitis less likely."
+    }
+  ]
+}

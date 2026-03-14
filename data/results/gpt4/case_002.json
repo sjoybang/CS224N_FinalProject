@@ -1,0 +1,260 @@
+{
+  "case_id": "case_002",
+  "model": "gpt4",
+  "ground_truth": "Thromboembolism",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Pulmonary embolism",
+          "Sudden onset of shortness of breath in a 58-year-old woman is highly suggestive of a pulmonary embolism."
+        ],
+        [
+          "Myocardial infarction",
+          "Acute shortness of breath can be a presenting symptom of a myocardial infarction, especially in women."
+        ],
+        [
+          "Pneumonia",
+          "Respiratory infections like pneumonia can cause sudden shortness of breath, particularly in older adults."
+        ],
+        [
+          "Congestive heart failure",
+          "Acute decompensation in heart failure can lead to sudden shortness of breath."
+        ],
+        [
+          "Asthma exacerbation",
+          "Although less common at this age, an asthma exacerbation can cause sudden respiratory symptoms."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Pulmonary embolism",
+          "The recent history of femur fracture and immobility increases the risk of thromboembolism, which can lead to sudden cardiac arrest."
+        ],
+        [
+          "Myocardial infarction",
+          "Sudden cardiac arrest can be caused by an acute coronary event, especially in a patient of this age."
+        ],
+        [
+          "Fat embolism syndrome",
+          "The history of a recent femur fracture could lead to fat emboli, causing respiratory distress and cardiac arrest."
+        ],
+        [
+          "Cardiac arrhythmia",
+          "Sudden cardiac arrest could be due to an underlying arrhythmia, which may not have been previously diagnosed."
+        ],
+        [
+          "Aortic dissection",
+          "Although less common, it can cause sudden cardiac arrest and is a possibility in this age group."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Asthma",
+          "The sudden cardiac arrest and recent fracture history make asthma less likely as a primary cause."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Pulmonary embolism",
+          "The presence of fibrous connective tissue around the lumen of the pulmonary artery suggests chronic thromboembolic changes, consistent with a history of recent immobilization due to a fractured femur."
+        ],
+        [
+          "Chronic thromboembolic pulmonary hypertension (CTEPH)",
+          "The fibrous connective tissue in the pulmonary artery indicates possible chronic thromboembolic disease leading to pulmonary hypertension."
+        ],
+        [
+          "Pulmonary hypertension",
+          "Fibrous changes in the pulmonary artery can be indicative of pulmonary hypertension, which could have contributed to the cardiac arrest."
+        ],
+        [
+          "Fat embolism syndrome",
+          "The history of a fractured femur and sudden respiratory distress could suggest fat embolism, although the histological findings are more indicative of thromboembolic disease."
+        ],
+        [
+          "Pulmonary fibrosis",
+          "The fibrous connective tissue might suggest pulmonary fibrosis, although this is less likely given the acute presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myocardial infarction",
+          "The histological findings in the lungs do not support a primary cardiac cause."
+        ],
+        [
+          "Pneumonia",
+          "There is no evidence of infection or inflammatory infiltrates in the lung tissue."
+        ],
+        [
+          "Asthma",
+          "The acute presentation and histological findings do not align with asthma."
+        ],
+        [
+          "COPD",
+          "The sudden onset and histological findings are not typical for COPD."
+        ],
+        [
+          "Pulmonary edema",
+          "The findings are more consistent with chronic vascular changes rather than acute fluid accumulation."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic Thromboembolic Pulmonary Hypertension (CTEPH)",
+          "The presence of organized thrombi with recanalization in the pulmonary artery is indicative of CTEPH."
+        ],
+        [
+          "Pulmonary Embolism",
+          "The sudden shortness of breath and history of a fractured femur suggest a possible embolic event."
+        ],
+        [
+          "Post-Cardiac Arrest Syndrome",
+          "The patient experienced cardiac arrest, which could lead to multiple organ dysfunction."
+        ],
+        [
+          "Pulmonary Hypertension",
+          "Fibrous connective tissue around the pulmonary artery lumen suggests increased pressure and remodeling."
+        ],
+        [
+          "Deep Vein Thrombosis (DVT)",
+          "The history of a fractured femur and recent immobility increases the risk of DVT, which can lead to pulmonary embolism."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Myocardial Infarction",
+          "The autopsy findings focus on pulmonary pathology rather than coronary artery disease."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Pulmonary embolism",
+            "Sudden onset of shortness of breath in a 58-year-old woman is highly suggestive of a pulmonary embolism."
+          ],
+          [
+            "Myocardial infarction",
+            "Acute shortness of breath can be a presenting symptom of a myocardial infarction, especially in women."
+          ],
+          [
+            "Pneumonia",
+            "Sudden shortness of breath could indicate an acute infectious process like pneumonia."
+          ],
+          [
+            "Congestive heart failure",
+            "Acute decompensation in heart failure can lead to sudden shortness of breath."
+          ],
+          [
+            "Asthma exacerbation",
+            "Although less common at this age, an asthma exacerbation can cause sudden shortness of breath."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pulmonary embolism",
+            "The history of recent immobilization due to a fractured femur increases the risk of thromboembolism."
+          ],
+          [
+            "Myocardial infarction",
+            "Sudden cardiac arrest and shortness of breath are consistent with an acute coronary event."
+          ],
+          [
+            "Fat embolism syndrome",
+            "Recent fracture and rehabilitation could lead to fat emboli causing respiratory distress and cardiac complications."
+          ],
+          [
+            "Cardiac arrhythmia",
+            "Sudden cardiac arrest could be due to an underlying arrhythmia, especially in the context of recent stress on the body."
+          ],
+          [
+            "Acute heart failure",
+            "The sudden onset of shortness of breath and cardiac arrest could indicate acute decompensation of heart function."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumonia",
+            "The acute presentation and cardiac arrest are less typical for pneumonia without preceding symptoms."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Pulmonary embolism",
+            "The patient's history of recent immobilization due to a fractured femur and the presence of fibrous connective tissue around the pulmonary artery suggest a thromboembolic event."
+          ],
+          [
+            "Chronic thromboembolic pulmonary hypertension (CTEPH)",
+            "The fibrous tissue around the pulmonary artery lumen is consistent with chronic thromboembolic changes."
+          ],
+          [
+            "Pulmonary hypertension",
+            "The fibrous changes in the pulmonary artery could indicate elevated pulmonary pressures."
+          ],
+          [
+            "Fat embolism syndrome",
+            "The recent fracture and rehabilitation period could have led to fat emboli, although histological findings are more suggestive of thromboembolism."
+          ],
+          [
+            "Pulmonary fibrosis",
+            "The fibrous connective tissue could suggest a fibrotic process, although less likely given the acute presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myocardial infarction",
+            "The histological findings in the lung tissue do not support a cardiac origin for the acute event."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic thromboembolic pulmonary hypertension (CTEPH)",
+            "The presence of organized thrombi with recanalization in the pulmonary artery is indicative of CTEPH."
+          ],
+          [
+            "Pulmonary embolism",
+            "The patient's history of recent immobilization due to a fractured femur increases the risk of thromboembolic events."
+          ],
+          [
+            "Post-cardiac arrest syndrome",
+            "The patient experienced cardiac arrest, which can lead to a range of complications affecting multiple organs."
+          ],
+          [
+            "Pulmonary hypertension",
+            "Fibrous connective tissue around the pulmonary artery lumen suggests increased pressure and remodeling."
+          ],
+          [
+            "Deep vein thrombosis (DVT)",
+            "The patient's recent immobilization and subsequent thromboembolic disease suggest a possible source of emboli."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute myocardial infarction",
+            "The autopsy findings focus on pulmonary pathology rather than coronary artery disease."
+          ]
+        ]
+      },
+      "cf_id": "case_002_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient experienced cardiac arrest and resuscitation was successful, making thromboembolism less likely as the patient survived the acute event."
+    }
+  ]
+}

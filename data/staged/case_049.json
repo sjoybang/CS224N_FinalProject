@@ -1,0 +1,25 @@
+{
+  "case_id": "case_049",
+  "source": "MedQA-USMLE",
+  "original_question": "A 55-year-old man comes to the physician because of fatigue and worsening abdominal pain for 4 weeks. He also reports excessive night sweats and a 5.4-kg (12-lb) weight loss during this time. He has a neck swelling for 4 days. Physical examination shows a nontender, enlarged, and fixed supraclavicular lymph node. There is splenomegaly. A CT scan of the thorax and abdomen shows massively enlarged axillary, mediastinal, and cervical lymph nodes. Analysis of an excised cervical lymph node shows lymphocytes with a high proliferative index that stain positive for CD20. Which of the following is the most likely diagnosis?",
+  "ground_truth": "Diffuse large B-cell lymphoma",
+  "base": {
+    "stage_1": "A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time.",
+    "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals a non-tender, enlarged, and fixed supraclavicular lymph node. Splenomegaly is also noted upon abdominal palpation.",
+    "stage_3": "A CT scan of the thorax and abdomen reveals massively enlarged axillary, mediastinal, and cervical lymph nodes.",
+    "stage_4": "Analysis of an excised cervical lymph node demonstrates lymphocytes with a high proliferative index. Immunohistochemical staining of the lymphocytes is positive for CD20."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a painful, enlarged, and rubbery supraclavicular lymph node, which is more consistent with an inflammatory process than lymphoma.",
+      "rules_out": "Diffuse large B-cell lymphoma",
+      "stage_1": "A 55-year-old man presents to the clinic complaining of fatigue and worsening abdominal pain over the past 4 weeks. He also reports experiencing excessive night sweats and unintentional weight loss during this time.",
+      "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals a tender, enlarged, and rubbery supraclavicular lymph node. Splenomegaly is also noted upon abdominal palpation.",
+      "stage_3": "A CT scan of the thorax and abdomen reveals massively enlarged axillary, mediastinal, and cervical lymph nodes.",
+      "stage_4": "Analysis of an excised cervical lymph node demonstrates lymphocytes with a high proliferative index. Immunohistochemical staining of the lymphocytes is positive for CD20.",
+      "cf_id": "case_049_cf_a"
+    }
+  ]
+}

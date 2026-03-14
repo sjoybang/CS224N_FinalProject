@@ -1,0 +1,126 @@
+{
+  "case_id": "case_055",
+  "model": "biogpt",
+  "ground_truth": "Medication error due to miscommunication",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures. [Stage 2] The patient is initially unstable requiring resuscitation. Physical exam reveals no acute trauma, but neurological exam is limited due to post-ictal state. Vital signs show improving but still elevated heart rate and blood pressure. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures. [Stage 2] The patient is initially unstable requiring resuscitation. Physical exam reveals no acute trauma, but neurological exam is limited due to post-ictal state. Vital signs show improving but still elevated heart rate and blood pressure. [Stage 3] Initial lab results show elevated phenytoin levels significantly above the therapeutic range. Further investigation reveals a medication error during intravenous phenytoin administration. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures. [Stage 2] The patient is initially unstable requiring resuscitation. Physical exam reveals no acute trauma, but neurological exam is limited due to post-ictal state. Vital signs show improving but still elevated heart rate and blood pressure. [Stage 3] Initial lab results show elevated phenytoin levels significantly above the therapeutic range. Further investigation reveals a medication error during intravenous phenytoin administration. [Stage 4] A root cause analysis of the medication error identifies a verbal misunderstanding of the phenytoin dose between the senior and first-year residents during patient handover. The hospital implements a mandatory 'read-back' policy for all verbal medication orders to prevent future errors. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures. [Stage 2] The patient is initially unstable requiring resuscitation. Physical exam reveals bruising and swelling on the forehead and arms, concerning for trauma. Neurological exam is limited due to post-ictal state. Vital signs show improving but still elevated heart rate and blood pressure. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures. [Stage 2] The patient is initially unstable requiring resuscitation. Physical exam reveals bruising and swelling on the forehead and arms, concerning for trauma. Neurological exam is limited due to post-ictal state. Vital signs show improving but still elevated heart rate and blood pressure. [Stage 3] Initial lab results show elevated phenytoin levels significantly above the therapeutic range. Further investigation reveals a medication error during intravenous phenytoin administration. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 9-year-old girl is brought to the emergency department after experiencing recurrent seizures. [Stage 2] The patient is initially unstable requiring resuscitation. Physical exam reveals bruising and swelling on the forehead and arms, concerning for trauma. Neurological exam is limited due to post-ictal state. Vital signs show improving but still elevated heart rate and blood pressure. [Stage 3] Initial lab results show elevated phenytoin levels significantly above the therapeutic range. Further investigation reveals a medication error during intravenous phenytoin administration. [Stage 4] A root cause analysis of the medication error identifies a verbal misunderstanding of the phenytoin dose between the senior and first-year residents during patient handover. The hospital implements a mandatory 'read-back' policy for all verbal medication orders to prevent future errors. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_055_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals signs of trauma, including bruising and swelling, which argues against a medication error as the primary cause of seizures."
+    }
+  ]
+}

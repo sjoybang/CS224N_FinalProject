@@ -1,0 +1,248 @@
+{
+  "case_id": "case_014",
+  "model": "gpt4",
+  "ground_truth": "Coronary artery disease",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Peptic Ulcer Disease",
+          "The recurrent upper abdominal discomfort and nausea, especially after eating, are classic symptoms."
+        ],
+        [
+          "Gastritis",
+          "Chronic upper abdominal discomfort and nausea can indicate inflammation of the stomach lining."
+        ],
+        [
+          "Gallstones",
+          "Postprandial exacerbation of symptoms suggests possible biliary colic."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "Upper abdominal discomfort and nausea can be associated with acid reflux, especially after meals."
+        ],
+        [
+          "Pancreatitis",
+          "Although less common, chronic pancreatitis can present with upper abdominal pain and nausea."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic mesenteric ischemia",
+          "The absence of foot pulses bilaterally suggests peripheral vascular disease, which can be associated with mesenteric ischemia causing postprandial abdominal pain."
+        ],
+        [
+          "Peptic ulcer disease",
+          "Recurrent upper abdominal discomfort exacerbated by eating is consistent with peptic ulcer disease."
+        ],
+        [
+          "Gastritis",
+          "Nausea and upper abdominal discomfort are common symptoms of gastritis, which can be related to meals."
+        ],
+        [
+          "Gastroesophageal reflux disease (GERD)",
+          "Upper abdominal discomfort after eating can be indicative of GERD."
+        ],
+        [
+          "Functional dyspepsia",
+          "The chronic nature of symptoms without significant physical findings could suggest functional dyspepsia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute pancreatitis",
+          "The absence of abdominal tenderness and normal vital signs make acute pancreatitis unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Mesenteric Ischemia",
+          "The patient's history of peripheral arterial disease and smoking, combined with postprandial abdominal discomfort, suggests reduced blood flow to the intestines."
+        ],
+        [
+          "Peptic Ulcer Disease",
+          "The recurrent upper abdominal discomfort exacerbated by eating is consistent with peptic ulcer disease, especially given the patient's age and smoking history."
+        ],
+        [
+          "Diabetic Gastroparesis",
+          "The patient's diabetes and symptoms of nausea and abdominal discomfort could indicate delayed gastric emptying."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "The upper abdominal discomfort after eating could be due to acid reflux, which is common in older adults."
+        ],
+        [
+          "Angina Pectoris",
+          "The new-onset exertional symptoms and history of hypertension and smoking raise the possibility of cardiac ischemia presenting atypically."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Coronary Syndrome",
+          "The absence of ECG abnormalities and the chronic nature of symptoms make this less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Coronary artery disease",
+          "The cardiac stress test and coronary angiography findings indicate significant myocardial ischemia due to severe stenosis in the left anterior descending artery."
+        ],
+        [
+          "Chronic mesenteric ischemia",
+          "The recurrent postprandial abdominal discomfort and history of peripheral arterial disease suggest possible mesenteric artery involvement."
+        ],
+        [
+          "Diabetic gastroparesis",
+          "The patient's history of type 2 diabetes mellitus and symptoms of nausea and upper abdominal discomfort are consistent with delayed gastric emptying."
+        ],
+        [
+          "Gastroesophageal reflux disease (GERD)",
+          "The upper abdominal discomfort exacerbated by eating could be due to acid reflux, common in this age group."
+        ],
+        [
+          "Peptic ulcer disease",
+          "The recurrent upper abdominal discomfort and nausea could be indicative of an ulcer, although less likely given the absence of tenderness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute coronary syndrome",
+          "The absence of acute symptoms and normal ECG at rest make this less likely."
+        ],
+        [
+          "Acute mesenteric ischemia",
+          "The chronic nature of symptoms and lack of acute abdominal findings rule this out."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Peptic Ulcer Disease",
+            "The recurrent upper abdominal discomfort and nausea, especially after eating, are classic symptoms."
+          ],
+          [
+            "Gastritis",
+            "Chronic upper abdominal discomfort and nausea can indicate inflammation of the stomach lining."
+          ],
+          [
+            "Gallstones",
+            "Postprandial exacerbation of symptoms suggests possible biliary colic."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "Symptoms can mimic those of peptic ulcer disease, with discomfort after meals."
+          ],
+          [
+            "Chronic Pancreatitis",
+            "Recurrent abdominal pain and nausea could indicate pancreatic inflammation, especially in a chronic form."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Peptic Ulcer Disease",
+            "The recurrent upper abdominal discomfort and exacerbation after eating are classic symptoms of peptic ulcer disease."
+          ],
+          [
+            "Gastritis",
+            "The symptoms of nausea and upper abdominal discomfort can be indicative of inflammation of the stomach lining."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "The postprandial exacerbation of symptoms suggests possible acid reflux."
+          ],
+          [
+            "Functional Dyspepsia",
+            "The chronic nature of symptoms without alarming features or tenderness suggests a functional gastrointestinal disorder."
+          ],
+          [
+            "Cholelithiasis",
+            "Although the abdomen is nontender, gallstones can cause episodic upper abdominal discomfort, especially after eating."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Pancreatitis",
+            "The absence of abdominal tenderness and normal vital signs make acute pancreatitis unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic Mesenteric Ischemia",
+            "The patient's history of peripheral arterial disease and smoking, combined with postprandial abdominal discomfort, suggests reduced blood flow to the intestines."
+          ],
+          [
+            "Peptic Ulcer Disease",
+            "The recurrent upper abdominal discomfort exacerbated by eating is consistent with peptic ulcer disease, especially given the patient's age and smoking history."
+          ],
+          [
+            "Diabetic Gastroparesis",
+            "The patient's type 2 diabetes mellitus and symptoms of nausea and abdominal discomfort could indicate delayed gastric emptying."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "The upper abdominal discomfort after eating could be due to acid reflux, which is common in older adults."
+          ],
+          [
+            "Angina Pectoris",
+            "The new-onset exertional symptoms and history of hypertension and smoking raise the possibility of cardiac-related chest discomfort."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Coronary Syndrome",
+            "The absence of ECG abnormalities and the nature of the symptoms make this less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Coronary artery disease",
+            "The cardiac stress test and coronary angiography findings of significant ST-segment depression and severe stenosis in the left anterior descending artery indicate myocardial ischemia."
+          ],
+          [
+            "Gastroesophageal reflux disease (GERD)",
+            "The recurrent episodes of nausea and upper abdominal discomfort, especially after eating, are consistent with GERD symptoms."
+          ],
+          [
+            "Diabetic gastroparesis",
+            "The patient's history of type 2 diabetes mellitus and symptoms of nausea and abdominal discomfort suggest possible delayed gastric emptying."
+          ],
+          [
+            "Peptic ulcer disease",
+            "The upper abdominal discomfort and exacerbation after eating could be indicative of peptic ulcer disease."
+          ],
+          [
+            "Chronic mesenteric ischemia",
+            "The patient's history of peripheral arterial disease and postprandial abdominal discomfort raise the possibility of mesenteric ischemia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute coronary syndrome",
+            "The chronic nature of the symptoms and the absence of acute ECG changes or elevated cardiac biomarkers rule out an acute coronary event."
+          ]
+        ]
+      },
+      "cf_id": "case_014_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of strong, palpable dorsalis pedis pulses bilaterally argues against peripheral arterial disease as a cause of the patient's symptoms, making coronary artery disease less likely."
+    }
+  ]
+}

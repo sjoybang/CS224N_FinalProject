@@ -1,0 +1,243 @@
+{
+  "case_id": "case_050",
+  "model": "gpt4",
+  "ground_truth": "Hypertrophic cardiomyopathy",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Normal pregnancy",
+          "Routine follow-up ultrasounds are common in uncomplicated pregnancies to monitor fetal development."
+        ],
+        [
+          "Gestational diabetes",
+          "Screening for gestational diabetes is typically done around this time in pregnancy."
+        ],
+        [
+          "Preterm labor",
+          "At 32 weeks, there is a risk of preterm labor, which may be assessed during routine visits."
+        ],
+        [
+          "Preeclampsia",
+          "Monitoring for signs of preeclampsia is standard in prenatal care, especially in the third trimester."
+        ],
+        [
+          "Fetal growth restriction",
+          "Ultrasounds are used to assess fetal growth and identify any potential growth restrictions."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Fetal Macrosomia",
+          "Poor glucose control in gestational diabetes increases the risk of fetal overgrowth."
+        ],
+        [
+          "Polyhydramnios",
+          "Uncontrolled gestational diabetes can lead to excessive amniotic fluid."
+        ],
+        [
+          "Preterm Labor",
+          "Gestational diabetes with poor control can increase the risk of preterm labor."
+        ],
+        [
+          "Preeclampsia",
+          "Gestational diabetes is a risk factor for developing preeclampsia, especially with poor glucose control."
+        ],
+        [
+          "Neonatal Hypoglycemia",
+          "Infants of mothers with poorly controlled gestational diabetes are at risk for hypoglycemia after birth."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Hypertrophic cardiomyopathy",
+          "The asymmetric septal hypertrophy and left ventricular outflow tract obstruction are characteristic findings."
+        ],
+        [
+          "Fetal cardiac hypertrophy due to maternal diabetes",
+          "Poor glucose control in gestational diabetes can lead to fetal cardiac hypertrophy."
+        ],
+        [
+          "Congenital heart defect",
+          "Structural abnormalities such as left ventricular outflow tract obstruction suggest a possible congenital defect."
+        ],
+        [
+          "Fetal arrhythmia",
+          "Reduced ejection fraction could be secondary to an underlying arrhythmia affecting cardiac function."
+        ],
+        [
+          "Maternal hyperglycemia effects",
+          "Chronic maternal hyperglycemia can cause fetal cardiac changes, including hypertrophy and functional impairment."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Tetralogy of Fallot",
+          "The findings do not include the classic features such as ventricular septal defect or overriding aorta."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Hypertrophic cardiomyopathy",
+          "Confirmed by postnatal echocardiogram and genetic testing showing a mutation associated with familial hypertrophic cardiomyopathy."
+        ],
+        [
+          "Gestational diabetes-related fetal cardiomyopathy",
+          "Poor glucose control in gestational diabetes can lead to fetal cardiac abnormalities, including hypertrophy."
+        ],
+        [
+          "Congenital heart defect",
+          "The presence of left ventricular outflow tract obstruction and reduced ejection fraction could suggest a structural heart defect."
+        ],
+        [
+          "Noonan syndrome",
+          "This genetic condition can present with hypertrophic cardiomyopathy and other cardiac anomalies."
+        ],
+        [
+          "Maternal diabetes-related macrosomia",
+          "Poorly controlled gestational diabetes can lead to fetal overgrowth and associated cardiac changes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Viral myocarditis",
+          "The genetic mutation and familial pattern make a viral cause less likely."
+        ],
+        [
+          "Dilated cardiomyopathy",
+          "The findings of hypertrophy and genetic mutation are more consistent with hypertrophic cardiomyopathy."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Normal pregnancy",
+            "Routine follow-up ultrasounds are common in uncomplicated pregnancies to monitor fetal development."
+          ],
+          [
+            "Fetal growth restriction",
+            "Ultrasounds at this stage can assess fetal size and growth, which may reveal growth restriction."
+          ],
+          [
+            "Placenta previa",
+            "Ultrasound can evaluate placental position, and placenta previa is a concern in the third trimester."
+          ],
+          [
+            "Oligohydramnios",
+            "Ultrasound can assess amniotic fluid levels, and low levels may indicate oligohydramnios."
+          ],
+          [
+            "Polyhydramnios",
+            "Excessive amniotic fluid can be detected on ultrasound, suggesting polyhydramnios."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Coronary artery disease",
+            "The patient's chest pain relieved by nitroglycerin suggests angina, which is indicative of coronary artery disease."
+          ],
+          [
+            "Gestational diabetes complications",
+            "Poor glucose control and non-adherence to insulin therapy increase the risk of complications such as fetal macrosomia or preeclampsia."
+          ],
+          [
+            "Gastroesophageal reflux disease (GERD)",
+            "Chest pain in pregnancy can be due to GERD, especially if relieved by nitroglycerin, which can relax the lower esophageal sphincter."
+          ],
+          [
+            "Anxiety disorder",
+            "Episodes of chest pain could be related to anxiety, which is common in pregnancy and can mimic cardiac symptoms."
+          ],
+          [
+            "Hypertensive disorders of pregnancy",
+            "Although her vital signs are stable, poor glucose control can predispose to hypertensive disorders, which can present with chest pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myocardial infarction",
+            "The stable vital signs and relief of chest pain with nitroglycerin make an acute myocardial infarction less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Hypertrophic Cardiomyopathy",
+            "The asymmetric septal hypertrophy and left ventricular outflow tract obstruction are characteristic findings."
+          ],
+          [
+            "Congenital Heart Disease",
+            "The structural abnormalities in the fetal heart suggest a possible congenital defect."
+          ],
+          [
+            "Maternal Diabetes-Related Cardiomyopathy",
+            "Poor glucose control in gestational diabetes can lead to fetal cardiac hypertrophy."
+          ],
+          [
+            "Fetal Aortic Stenosis",
+            "The left ventricular outflow tract obstruction could be due to aortic stenosis."
+          ],
+          [
+            "Fetal Heart Failure",
+            "The significantly reduced ejection fraction indicates compromised cardiac function."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myocardial Infarction",
+            "The chest pain relieved by nitroglycerin suggests angina rather than an acute myocardial infarction."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Hypertrophic cardiomyopathy",
+            "Confirmed by postnatal echocardiogram and genetic testing showing a mutation associated with familial hypertrophic cardiomyopathy."
+          ],
+          [
+            "Gestational diabetes",
+            "Previously diagnosed in the mother during the second trimester with poor glucose control and non-adherence to insulin therapy."
+          ],
+          [
+            "Maternal cardiac ischemia",
+            "Suggested by the mother's regular episodes of chest pain relieved by nitroglycerin, indicating possible coronary artery disease."
+          ],
+          [
+            "Left ventricular outflow tract obstruction",
+            "Identified on fetal ultrasound, consistent with the findings of hypertrophic cardiomyopathy."
+          ],
+          [
+            "Asymmetric septal hypertrophy",
+            "Observed on fetal ultrasound, commonly associated with hypertrophic cardiomyopathy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Congenital heart defect unrelated to hypertrophic cardiomyopathy",
+            "The specific findings and genetic mutation confirm hypertrophic cardiomyopathy rather than another congenital heart defect."
+          ]
+        ]
+      },
+      "cf_id": "case_050_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports regular episodes of chest pain that are relieved with nitroglycerin, which argues against hypertrophic cardiomyopathy as exertional chest pain is not typically relieved by nitroglycerin in HCM."
+    }
+  ]
+}

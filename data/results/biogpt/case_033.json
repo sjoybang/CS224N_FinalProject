@@ -1,0 +1,126 @@
+{
+  "case_id": "case_033",
+  "model": "biogpt",
+  "ground_truth": "Sertoli cells",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina. [Stage 2] On examination, the patient is found to be 4 cm dilated and 80% effaced. Fetal heart tracing reveals a heart rate of 155 bpm with variable decelerations. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina. [Stage 2] On examination, the patient is found to be 4 cm dilated and 80% effaced. Fetal heart tracing reveals a heart rate of 155 bpm with variable decelerations. [Stage 3] After approximately 12 hours of labor, the patient delivers a baby boy weighing 6 lb 15 oz. The infant's APGAR scores are 8 and 9 at 1 and 5 minutes, respectively. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina. [Stage 2] On examination, the patient is found to be 4 cm dilated and 80% effaced. Fetal heart tracing reveals a heart rate of 155 bpm with variable decelerations. [Stage 3] After approximately 12 hours of labor, the patient delivers a baby boy weighing 6 lb 15 oz. The infant's APGAR scores are 8 and 9 at 1 and 5 minutes, respectively. [Stage 4] Further review of the patient's prenatal history reveals no known risk factors for congenital anomalies. Postpartum examination of the placenta and umbilical cord is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina. [Stage 2] On examination, the patient is found to be 4 cm dilated and 80% effaced. Fetal heart tracing reveals a heart rate of 130 bpm with good variability and no decelerations. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina. [Stage 2] On examination, the patient is found to be 4 cm dilated and 80% effaced. Fetal heart tracing reveals a heart rate of 130 bpm with good variability and no decelerations. [Stage 3] After approximately 12 hours of labor, the patient delivers a baby boy weighing 6 lb 15 oz. The infant's APGAR scores are 8 and 9 at 1 and 5 minutes, respectively. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 31-year-old female, G2P2 at 40 weeks gestation, presents to the labor and delivery unit reporting a sudden gush of fluid from her vagina. [Stage 2] On examination, the patient is found to be 4 cm dilated and 80% effaced. Fetal heart tracing reveals a heart rate of 130 bpm with good variability and no decelerations. [Stage 3] After approximately 12 hours of labor, the patient delivers a baby boy weighing 6 lb 15 oz. The infant's APGAR scores are 8 and 9 at 1 and 5 minutes, respectively. [Stage 4] Further review of the patient's prenatal history reveals no known risk factors for congenital anomalies. Postpartum examination of the placenta and umbilical cord is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_033_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The fetal heart tracing shows a heart rate of 130 bpm with good variability and no decelerations, which argues against fetal distress often associated with Sertoli cell tumors."
+    }
+  ]
+}

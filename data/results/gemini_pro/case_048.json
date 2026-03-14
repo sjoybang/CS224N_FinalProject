@@ -1,0 +1,294 @@
+{
+  "case_id": "case_048",
+  "model": "gemini_pro",
+  "ground_truth": "Poxvirus",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Kaposi Sarcoma",
+          "This malignancy is strongly associated with HIV and classically presents as asymptomatic, violaceous papules or nodules on the face."
+        ],
+        [
+          "Molluscum Contagiosum",
+          "Disseminated and persistent molluscum is a common opportunistic viral infection in HIV, presenting as asymptomatic, flesh-colored, umbilicated papules."
+        ],
+        [
+          "Cutaneous Cryptococcosis",
+          "This opportunistic fungal infection can disseminate to the skin in immunocompromised patients, often causing asymptomatic papules on the head and neck that can mimic molluscum."
+        ],
+        [
+          "Bacillary Angiomatosis",
+          "Caused by *Bartonella* species, this opportunistic infection presents with vascular papules and nodules in HIV patients that can resemble Kaposi sarcoma."
+        ],
+        [
+          "Secondary Syphilis",
+          "Known as \"the great imitator,\" secondary syphilis can present with a variety of non-pruritic skin lesions and has a high rate of co-infection with HIV."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Herpes Zoster",
+          "This diagnosis is unlikely due to the explicit denial of pain, a hallmark symptom."
+        ],
+        [
+          "Allergic Contact Dermatitis",
+          "The absence of pruritus makes this inflammatory condition highly improbable."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Cryptococcosis",
+          "This opportunistic fungal infection is a primary consideration in an HIV patient presenting with umbilicated papules and lymphadenopathy, which can signify disseminated disease."
+        ],
+        [
+          "Molluscum contagiosum",
+          "This viral infection classically causes umbilicated papules and can be widespread and persistent in individuals with advanced HIV."
+        ],
+        [
+          "Histoplasmosis",
+          "Disseminated infection with this endemic fungus can manifest with umbilicated skin lesions, weight loss, and lymphadenopathy in immunocompromised patients."
+        ],
+        [
+          "Penicilliosis (Talaromycosis)",
+          "This opportunistic fungal infection, particularly in patients with exposure to Southeast Asia, is a classic cause of umbilicated papules and systemic illness in HIV."
+        ],
+        [
+          "Basal cell carcinoma",
+          "Although typically solitary and slow-growing, this common skin cancer can present as a papule with central umbilication and occurs with increased frequency in immunocompromised hosts."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Kaposi sarcoma",
+          "Lesions are typically violaceous plaques or nodules, not skin-colored umbilicated papules."
+        ],
+        [
+          "Acne vulgaris",
+          "Lesion morphology is inconsistent as acne does not cause umbilicated papules."
+        ],
+        [
+          "Varicella",
+          "Lesions are vesicular, not papular with central umbilication, and are typically associated with fever and pruritus."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Cryptococcosis",
+          "The patient's HIV status and presence of umbilicated papules are classic for cutaneous manifestations of disseminated cryptococcosis."
+        ],
+        [
+          "Molluscum contagiosum",
+          "This viral infection is the most common cause of umbilicated papules, which can be numerous and widespread in immunocompromised individuals."
+        ],
+        [
+          "Histoplasmosis",
+          "This systemic fungal infection can disseminate and cause umbilicated skin lesions in patients with HIV, mimicking cryptococcosis."
+        ],
+        [
+          "Penicilliosis (Talaromycosis)",
+          "This is an important opportunistic fungal infection in endemic areas that characteristically presents with umbilicated papules on the face and neck in HIV patients."
+        ],
+        [
+          "Atypical mycobacterial infection",
+          "Cutaneous infections with nontuberculous mycobacteria can present as papules and nodules, which may umbilicate, in patients with impaired immunity."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Basal cell carcinoma",
+          "Unlikely to present as multiple lesions with a rapid onset of only two weeks."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Molluscum contagiosum",
+          "The clinical presentation of umbilicated papules in an HIV patient combined with biopsy showing intracytoplasmic inclusions and electron microscopy confirming a poxvirus is pathognomonic for this diagnosis."
+        ],
+        [
+          "Monkeypox",
+          "This orthopoxvirus can cause umbilicated papules and lymphadenopathy, but the patient's lack of fever or other systemic symptoms makes it less likely."
+        ],
+        [
+          "Orf (Contagious Ecthyma)",
+          "This is a parapoxvirus infection that can cause umbilicated lesions, but it is typically acquired from livestock and presents as a solitary, more inflammatory lesion on the hands."
+        ],
+        [
+          "Milker's nodule",
+          "This parapoxvirus infection would be confirmed by electron microscopy, but it characteristically causes lesions on the hands of individuals handling cattle, not multiple facial papules."
+        ],
+        [
+          "Smallpox (Variola)",
+          "Although eradicated, this orthopoxvirus causes umbilicated pustules, but it is ruled out by the lack of severe systemic illness and known exposure."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cutaneous cryptococcosis",
+          "Biopsy and electron microscopy revealed a poxvirus, not the encapsulated yeast characteristic of Cryptococcus."
+        ],
+        [
+          "Disseminated histoplasmosis",
+          "Histopathology did not show the intracellular yeast forms of Histoplasma capsulatum."
+        ],
+        [
+          "Basal cell carcinoma",
+          "Histopathology did not show nests of malignant basaloid cells."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Kaposi Sarcoma",
+            "This is a common AIDS-defining malignancy that classically presents as asymptomatic violaceous papules or nodules on the face and neck."
+          ],
+          [
+            "Cutaneous Cryptococcosis",
+            "This opportunistic fungal infection can present with asymptomatic, umbilicated papules on the face in patients with advanced HIV."
+          ],
+          [
+            "Molluscum Contagiosum",
+            "This viral infection is common in immunocompromised individuals and can cause numerous, widespread, asymptomatic papules on the face."
+          ],
+          [
+            "Bacillary Angiomatosis",
+            "This opportunistic bacterial infection causes vascular lesions that mimic Kaposi sarcoma and is a key consideration in patients with HIV."
+          ],
+          [
+            "Disseminated Histoplasmosis",
+            "This systemic fungal infection can manifest with varied cutaneous lesions, including papules and nodules on the face, in an immunocompromised host."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Herpes Zoster",
+            "Ruled out by the absence of pain, which is a hallmark symptom."
+          ],
+          [
+            "Allergic Contact Dermatitis",
+            "Unlikely due to the complete absence of pruritus."
+          ],
+          [
+            "Urticaria",
+            "Inconsistent with the 2-week stable duration of lesions and lack of itch."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Molluscum contagiosum",
+            "The patient has umbilicated vesicles, a classic presentation for this poxvirus infection, which is often widespread on the face in individuals with HIV."
+          ],
+          [
+            "Cutaneous cryptococcosis",
+            "This disseminated fungal infection is a key mimic of molluscum contagiosum in immunocompromised patients and can present with umbilicated skin lesions and lymphadenopathy."
+          ],
+          [
+            "Disseminated Varicella-Zoster Virus (VZV) infection",
+            "Atypical VZV in an HIV patient can present as umbilicated vesicles, and the facial/neck distribution with lymphadenopathy is consistent with this diagnosis."
+          ],
+          [
+            "Disseminated histoplasmosis",
+            "This opportunistic fungal infection can manifest with umbilicated cutaneous lesions in patients with advanced HIV."
+          ],
+          [
+            "Atypical Herpes Simplex Virus (HSV) infection",
+            "Chronic or disseminated HSV can present with atypical umbilicated lesions rather than classic vesicles in severely immunocompromised hosts."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Allergic contact dermatitis",
+            "This diagnosis is unlikely given the specific morphology of umbilicated vesicles and the reported absence of itching."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Molluscum Contagiosum",
+            "The presence of multiple umbilicated (dimpled) vesicles on the face and neck is a classic presentation for this poxvirus infection in an HIV-positive individual."
+          ],
+          [
+            "Cryptococcosis (Cutaneous)",
+            "This opportunistic fungal infection can present with umbilicated skin lesions that mimic molluscum contagiosum in immunocompromised patients."
+          ],
+          [
+            "Herpes Simplex Virus (HSV)",
+            "Atypical, centrally umbilicated vesicles can be a manifestation of chronic or disseminated herpetic infection in an immunocompromised host."
+          ],
+          [
+            "Histoplasmosis (Cutaneous)",
+            "Disseminated infection with this endemic fungus can cause umbilicated skin lesions, particularly in patients with HIV."
+          ],
+          [
+            "Talaromycosis (Penicilliosis)",
+            "This systemic mycosis, particularly in patients with exposure to Southeast Asia, classically presents with umbilicated skin papules on the face and trunk in HIV patients."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Kaposi Sarcoma",
+            "The lesions are described as vesicles, not the typical violaceous papules, plaques, or nodules of Kaposi sarcoma."
+          ],
+          [
+            "Bacterial Folliculitis",
+            "The lesions are described as umbilicated vesicles, not the typical erythematous pustules centered on hair follicles."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Molluscum contagiosum",
+            "This is the most common poxvirus infection in HIV patients, classically presenting with umbilicated papules and Henderson-Patterson intracytoplasmic inclusion bodies."
+          ],
+          [
+            "Monkeypox (Mpox)",
+            "This orthopoxvirus causes umbilicated vesicles and lymphadenopathy, and is a consideration in an immunocompromised patient given recent outbreaks."
+          ],
+          [
+            "Orf (Ecthyma contagiosum)",
+            "This is a zoonotic parapoxvirus infection from sheep/goats that can cause umbilicated lesions in humans."
+          ],
+          [
+            "Milker's nodule",
+            "This is a zoonotic parapoxvirus infection from cattle that causes skin lesions similar to orf."
+          ],
+          [
+            "Vaccinia virus infection",
+            "This orthopoxvirus can cause umbilicated vesicles following vaccination or accidental exposure."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Disseminated cryptococcosis",
+            "This fungal infection can cause umbilicated skin lesions in HIV patients but is ruled out by the confirmed viral etiology."
+          ],
+          [
+            "Herpes simplex virus infection",
+            "This is ruled out as the biopsy showed intracytoplasmic inclusions and poxvirus particles, not the characteristic intranuclear inclusions and multinucleated giant cells of herpesviruses."
+          ],
+          [
+            "Varicella-zoster virus infection",
+            "This is ruled out as the histopathology and electron microscopy findings are specific to a poxvirus, not a herpesvirus."
+          ]
+        ]
+      },
+      "cf_id": "case_048_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of vesicles instead of papules argues against Poxvirus, which typically presents with papules or nodules."
+    }
+  ]
+}

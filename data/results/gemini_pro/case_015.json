@@ -1,0 +1,284 @@
+{
+  "case_id": "case_015",
+  "model": "gemini_pro",
+  "ground_truth": "Vitamin K deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Asthma",
+          "This is a very common cause of chronic cough in young adults, and its associated airway inflammation can be misidentified as chronic bronchitis."
+        ],
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "This genetic condition is a classic cause of early-onset emphysema and bronchiectasis, which would present as chronic bronchitis in a young patient."
+        ],
+        [
+          "Cystic Fibrosis",
+          "Milder or atypical forms of this genetic disorder can present in early adulthood with chronic productive cough and recurrent infections."
+        ],
+        [
+          "Bronchiectasis",
+          "This structural lung disease, characterized by permanent airway dilation, leads to chronic productive cough and could be the underlying cause of a \"chronic bronchitis\" label."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "Chronic cough due to microaspiration of gastric contents is a common etiology that can mimic or exacerbate bronchial symptoms."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Asthma",
+          "A common cause of chronic cough and airway inflammation in young adults, which can be mislabeled as chronic bronchitis."
+        ],
+        [
+          "Bronchiectasis",
+          "This structural lung disease causes impaired mucus clearance, leading to chronic cough and rhonchi consistent with the patient's presentation."
+        ],
+        [
+          "Cystic Fibrosis",
+          "Atypical or mild forms can present in young adults with chronic airway secretions and inflammation, mimicking chronic bronchitis."
+        ],
+        [
+          "Chronic Bronchitis",
+          "This diagnosis, often part of COPD, matches the patient's reported history and rhonchi, though it is less common in this age group without significant risk factors."
+        ],
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "This is a key genetic cause of a COPD-like picture in a young person, which would explain a \"chronic bronchitis\" presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Bronchitis",
+          "The patient's history is explicitly chronic, making an isolated acute process unlikely."
+        ],
+        [
+          "Lobar Pneumonia",
+          "The patient is stable with normal vitals and lacks the focal exam findings or systemic symptoms of an acute parenchymal infection."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Cystic Fibrosis",
+          "This genetic disorder causes both chronic suppurative lung disease and pancreatic insufficiency, leading to vitamin K malabsorption and a prolonged PT."
+        ],
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "This genetic condition can cause bronchiectasis and liver disease, with the latter leading to impaired synthesis of coagulation factors and a prolonged PT."
+        ],
+        [
+          "Common Variable Immunodeficiency (CVID)",
+          "This primary immunodeficiency leads to recurrent sinopulmonary infections and can be associated with malabsorption or autoimmune liver disease, explaining both the lung findings and prolonged PT."
+        ],
+        [
+          "Chronic Liver Disease",
+          "A primary hepatic disorder, such as autoimmune hepatitis, would directly cause synthetic dysfunction and a prolonged PT, with the lung findings being a less common extrahepatic manifestation."
+        ],
+        [
+          "Primary Ciliary Dyskinesia",
+          "This genetic disorder of cilia causes chronic bronchiectasis, and severe chronic disease could lead to malnutrition and vitamin K deficiency, resulting in a prolonged PT."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Simple Chronic Bronchitis",
+          "This diagnosis is unlikely in a young patient and does not explain the prolonged prothrombin time."
+        ],
+        [
+          "Congenital Factor VII Deficiency",
+          "This would explain the isolated prolonged PT but fails to account for the patient's chronic respiratory symptoms and findings."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cystic fibrosis",
+          "This genetic disease explains the entire clinical picture of chronic suppurative lung disease and pancreatic exocrine insufficiency leading to fat malabsorption and vitamin K deficiency."
+        ],
+        [
+          "Shwachman-Diamond syndrome",
+          "This genetic disorder causes exocrine pancreatic insufficiency and can be associated with recurrent infections, explaining the malabsorption and potentially the pulmonary findings."
+        ],
+        [
+          "Common variable immunodeficiency",
+          "This primary immunodeficiency can cause both recurrent sinopulmonary infections and a malabsorptive enteropathy, fitting the two major systems involved."
+        ],
+        [
+          "Chronic pancreatitis",
+          "This condition directly explains the steatorrhea and vitamin K deficiency due to exocrine insufficiency, but it does not account for the primary chronic lung disease."
+        ],
+        [
+          "Primary ciliary dyskinesia",
+          "This condition explains the chronic bronchitis and bronchial thickening but does not account for the steatorrhea and malabsorption from pancreatic insufficiency."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Celiac disease",
+          "While it causes malabsorption, it does not typically present with chronic suppurative lung disease."
+        ],
+        [
+          "Alpha-1 antitrypsin deficiency",
+          "This condition typically causes emphysema, not a bronchiectatic picture, and does not cause pancreatic insufficiency."
+        ],
+        [
+          "Chronic liver disease",
+          "A prolonged PT in this context would be from impaired factor synthesis, not vitamin K malabsorption, and it does not explain the primary lung pathology."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Asthma",
+            "This common condition is a frequent cause of chronic cough in young adults and can be mislabeled as chronic bronchitis."
+          ],
+          [
+            "Cystic Fibrosis",
+            "Milder genetic variants can present in young adulthood with chronic productive cough and recurrent respiratory infections."
+          ],
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "This genetic disorder is a classic cause of early-onset lung disease that can manifest as a chronic bronchitis phenotype."
+          ],
+          [
+            "Common Variable Immunodeficiency",
+            "Recurrent sinopulmonary infections from an underlying immunodeficiency could be the cause of a \"chronic bronchitis\" diagnosis in this age group."
+          ],
+          [
+            "Bronchiectasis",
+            "This structural lung disease, characterized by chronic cough and sputum production, may be the true underlying diagnosis."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Immune Thrombocytopenic Purpura (ITP)",
+            "This is a common cause of isolated thrombocytopenia presenting with petechiae and bruising in a young woman."
+          ],
+          [
+            "Acute Leukemia",
+            "Bone marrow infiltration by blasts can lead to thrombocytopenia, and the history of chronic bronchitis could represent infections from associated neutropenia."
+          ],
+          [
+            "Drug-Induced Thrombocytopenia",
+            "Many medications can cause immune-mediated platelet destruction, representing a common and reversible cause of these findings."
+          ],
+          [
+            "Systemic Lupus Erythematosus (SLE)",
+            "This systemic autoimmune disease can cause secondary ITP and could also explain a history of pulmonary symptoms."
+          ],
+          [
+            "Thrombotic Thrombocytopenic Purpura (TTP)",
+            "This is a life-threatening microangiopathic emergency that can present initially with thrombocytopenia and purpura."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sepsis",
+            "The patient's vital signs are normal and she is presenting for a routine checkup, not an acute illness."
+          ],
+          [
+            "Chronic Liver Disease",
+            "The physical exam was unremarkable, lacking stigmata such as jaundice, ascites, or spider nevi."
+          ],
+          [
+            "Vitamin K Deficiency",
+            "This coagulopathy does not typically cause petechiae, which are characteristic of a platelet number or function defect."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Cystic Fibrosis",
+            "This genetic disease provides a unifying diagnosis for chronic lung disease and a coagulopathy due to malabsorption of fat-soluble vitamins like Vitamin K."
+          ],
+          [
+            "Vitamin K Deficiency",
+            "This deficiency is a direct cause of a prolonged PT and bleeding, often secondary to malabsorption from an underlying condition like CF or liver disease."
+          ],
+          [
+            "Chronic Liver Disease",
+            "Impaired hepatic synthesis of coagulation factors would cause a prolonged PT, and some liver diseases are associated with pulmonary findings."
+          ],
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "This inherited disorder can cause both chronic lung disease and liver cirrhosis, with the latter leading to impaired clotting factor synthesis."
+          ],
+          [
+            "Congenital Factor VII Deficiency",
+            "This rare coagulopathy is a cause of an isolated prolonged PT and bleeding, though it would not explain the chronic bronchitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hemophilia A/B",
+            "These disorders would cause a prolonged PTT, not an isolated prolonged PT."
+          ],
+          [
+            "Immune Thrombocytopenic Purpura (ITP)",
+            "This platelet disorder would cause a normal PT, as it does not affect coagulation factors."
+          ],
+          [
+            "von Willebrand Disease",
+            "This common bleeding disorder typically presents with a normal PT."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Cystic Fibrosis",
+            "This single genetic disorder explains the chronic lung disease (bronchial thickening), pancreatic insufficiency causing malabsorption, and resultant vitamin K deficiency leading to a prolonged PT."
+          ],
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "This condition can cause both chronic lung disease (bronchiectasis) and liver disease, with the latter leading to impaired clotting factor synthesis and a prolonged PT."
+          ],
+          [
+            "Chronic Liver Disease",
+            "Impaired hepatic synthesis of coagulation factors would directly cause a prolonged PT and bruising, with the chronic bronchitis history representing a separate comorbidity."
+          ],
+          [
+            "Celiac Disease",
+            "This diagnosis would explain a malabsorption syndrome leading to vitamin K deficiency and a prolonged PT, but would not account for the chronic lung findings."
+          ],
+          [
+            "Common Variable Immunodeficiency (CVID)",
+            "This condition can cause recurrent sinopulmonary infections leading to bronchiectasis, and is also associated with malabsorption which could cause vitamin K deficiency."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hemophilia A/B",
+            "These disorders affect the intrinsic pathway and would present with a prolonged aPTT, not a prolonged PT."
+          ],
+          [
+            "Immune Thrombocytopenic Purpura (ITP)",
+            "This is a platelet disorder that would not cause a prolonged prothrombin time."
+          ],
+          [
+            "Von Willebrand Disease",
+            "This common bleeding disorder typically presents with a normal PT."
+          ]
+        ]
+      },
+      "cf_id": "case_015_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The physical exam reveals multiple bruises and petechiae, which argues against chronic Vitamin K deficiency, which would not typically present without a clear bleeding diathesis."
+    }
+  ]
+}

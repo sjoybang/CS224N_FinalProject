@@ -1,0 +1,244 @@
+{
+  "case_id": "case_054",
+  "model": "gemini",
+  "ground_truth": "Radial nerve injury",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Cervical radiculopathy",
+          "Nerve compression in the cervical spine could cause bilateral arm paresthesias."
+        ],
+        [
+          "Thoracic outlet syndrome",
+          "Compression of nerves or blood vessels in the thoracic outlet can cause paresthesias in the arms."
+        ],
+        [
+          "Multiple sclerosis",
+          "Demyelination in the central nervous system can present with sensory symptoms like paresthesias."
+        ],
+        [
+          "Anxiety disorder",
+          "Hyperventilation associated with anxiety can cause bilateral paresthesias."
+        ],
+        [
+          "Vitamin B12 deficiency",
+          "B12 deficiency can cause peripheral neuropathy, leading to paresthesias."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Radial nerve entrapment",
+          "The distribution of paresthesias and wrist extension weakness points to radial nerve involvement, potentially from compression."
+        ],
+        [
+          "Cervical radiculopathy",
+          "Nerve root compression in the cervical spine could cause bilateral arm paresthesias and weakness, though the posterior forearm and wrist extension findings are more specific to the radial nerve."
+        ],
+        [
+          "Thoracic outlet syndrome",
+          "Compression of the brachial plexus in the thoracic outlet could cause paresthesias and weakness in the upper extremities."
+        ],
+        [
+          "Brachial neuritis",
+          "This inflammatory condition of the brachial plexus can cause pain, weakness, and sensory changes in the upper extremities."
+        ],
+        [
+          "Multiple sclerosis",
+          "Although less likely given the presentation, demyelinating disease could present with sensory and motor deficits in the upper extremities."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Carpal tunnel syndrome",
+          "The paresthesias are primarily in the posterior forearm and dorsum of the hand, which is not consistent with median nerve distribution."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Radial nerve entrapment",
+          "The EMG and NCS findings, along with the patient's symptoms and physical exam, strongly suggest radial nerve compression at the elbow."
+        ],
+        [
+          "Cervical radiculopathy",
+          "Although less likely given the bilateral symptoms and specific nerve findings, cervical radiculopathy could present with similar sensory and motor deficits in the upper extremities."
+        ],
+        [
+          "Thoracic outlet syndrome",
+          "TOS can cause nerve compression in the upper extremity, potentially affecting the radial nerve and causing similar symptoms."
+        ],
+        [
+          "Brachial neuritis",
+          "This inflammatory condition affecting the brachial plexus could cause acute denervation and nerve conduction abnormalities, though it typically presents with more pain."
+        ],
+        [
+          "Lead neuropathy",
+          "Although less common, lead exposure can cause peripheral neuropathy affecting multiple nerves, including the radial nerve."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Multiple sclerosis",
+          "Lack of central nervous system findings and the focal nature of the nerve deficits make MS less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Radial nerve palsy",
+          "Prolonged tourniquet use during surgery is a known cause of radial nerve compression and subsequent palsy."
+        ],
+        [
+          "Postoperative neuropathy",
+          "Surgery itself can cause nerve damage due to positioning, compression, or stretching."
+        ],
+        [
+          "Brachial neuritis",
+          "Although less likely given the localized findings, brachial neuritis can present with asymmetric weakness and sensory changes in the upper extremity."
+        ],
+        [
+          "Compartment syndrome",
+          "While less likely without significant pain, compartment syndrome following surgery could cause nerve compression."
+        ],
+        [
+          "Cervical radiculopathy",
+          "Although the symptoms are primarily in the radial nerve distribution, cervical radiculopathy could present with bilateral arm paresthesias and weakness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Multiple sclerosis",
+          "Lack of central nervous system findings and the acute onset after surgery make this unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Cervical radiculopathy",
+            "Nerve compression in the cervical spine could cause bilateral arm paresthesias."
+          ],
+          [
+            "Thoracic outlet syndrome",
+            "Compression of nerves or blood vessels in the thoracic outlet can cause paresthesias in the arms."
+          ],
+          [
+            "Multiple sclerosis",
+            "Demyelination in the central nervous system can present with sensory symptoms like paresthesias."
+          ],
+          [
+            "Anxiety disorder",
+            "Hyperventilation associated with anxiety can cause bilateral paresthesias."
+          ],
+          [
+            "Vitamin B12 deficiency",
+            "B12 deficiency can cause peripheral neuropathy, leading to paresthesias."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Cervical spinal cord lesion",
+            "The bilateral paresthesias, weakness, hyperreflexia, and upgoing Babinski signs suggest a lesion affecting the cervical spinal cord."
+          ],
+          [
+            "Multiple sclerosis",
+            "This demyelinating disease can present with sensory and motor deficits, hyperreflexia, and Babinski signs, although the asymmetric presentation is less typical."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "While typically presenting with ascending weakness, atypical variants can present with upper extremity involvement and hyperreflexia."
+          ],
+          [
+            "Brachial neuritis",
+            "This inflammatory condition can cause pain, weakness, and sensory changes in the upper extremities, though the hyperreflexia and Babinski signs are less common."
+          ],
+          [
+            "Syringomyelia",
+            "This condition can cause a central cord syndrome with sensory deficits, weakness, and hyperreflexia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Carpal tunnel syndrome",
+            "The symptoms are bilateral and involve the posterior forearm, which is not consistent with carpal tunnel syndrome."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Radial nerve entrapment",
+            "The EMG and NCS findings of reduced conduction velocity at the elbow and denervation in radial nerve innervated muscles strongly suggest radial nerve compression."
+          ],
+          [
+            "Cervical myelopathy",
+            "The presence of hyperreflexia and bilateral upgoing Babinski signs, along with upper extremity symptoms, suggests possible spinal cord involvement."
+          ],
+          [
+            "Multiple sclerosis",
+            "Demyelinating disease could explain the sensory and motor deficits, along with the hyperreflexia and Babinski signs."
+          ],
+          [
+            "Brachial neuritis",
+            "Although less likely given the NCS findings, brachial neuritis can cause acute onset of weakness and sensory changes in the upper extremity."
+          ],
+          [
+            "Lead neuropathy",
+            "Bilateral radial nerve involvement, although more pronounced on the left, could be caused by lead exposure."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Normal variant",
+            "The presence of weakness, sensory loss, and abnormal reflexes makes a normal variant unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Radial nerve palsy",
+            "Prolonged tourniquet use during surgery is a known cause of radial nerve compression and subsequent palsy."
+          ],
+          [
+            "Brachial plexus injury",
+            "While less likely given the radial nerve findings, tourniquet use can sometimes affect the brachial plexus."
+          ],
+          [
+            "Compartment syndrome",
+            "Although less likely without severe pain, compartment syndrome following surgery could compress the radial nerve."
+          ],
+          [
+            "Cervical myelopathy",
+            "The upgoing Babinski sign could indicate an upper motor neuron lesion, although the radial nerve findings are more specific."
+          ],
+          [
+            "Multiple sclerosis",
+            "Although less likely given the acute onset, demyelinating disease could present with sensory and motor deficits."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Carpal tunnel syndrome",
+            "Symptoms are not consistent with median nerve distribution."
+          ]
+        ]
+      },
+      "cf_id": "case_054_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of hyperreflexia and upgoing Babinski sign argues against radial nerve injury, which would not cause upper motor neuron signs."
+    }
+  ]
+}

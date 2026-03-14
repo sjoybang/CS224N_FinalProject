@@ -1,0 +1,239 @@
+{
+  "case_id": "case_059",
+  "model": "gemini",
+  "ground_truth": "Exocrine pancreatic insufficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Celiac disease",
+          "The chronic diarrhea, bloating, and weight loss are highly suggestive of malabsorption due to celiac disease."
+        ],
+        [
+          "Irritable bowel syndrome",
+          "Bloating and diarrhea are common symptoms of IBS, although weight loss is less typical."
+        ],
+        [
+          "Crohn's disease",
+          "This inflammatory bowel disease can cause chronic diarrhea, abdominal pain, and weight loss."
+        ],
+        [
+          "Small intestinal bacterial overgrowth (SIBO)",
+          "SIBO can lead to malabsorption, bloating, and diarrhea."
+        ],
+        [
+          "Giardiasis",
+          "This parasitic infection can cause diarrhea, bloating, and weight loss, especially with chronic infection."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Hyperthyroidism",
+          "The neck mass, weight loss, and diarrhea suggest possible thyroid involvement."
+        ],
+        [
+          "Malabsorption",
+          "Chronic diarrhea, weight loss, and low BMI point towards impaired nutrient absorption."
+        ],
+        [
+          "Celiac Disease",
+          "Chronic diarrhea, weight loss, and malabsorption can be indicative of celiac disease."
+        ],
+        [
+          "Thyroid Cancer",
+          "A hard, fixed mass in the anterior neck raises suspicion for thyroid malignancy."
+        ],
+        [
+          "Vitamin A Deficiency",
+          "The conjunctival spots and dry skin suggest a possible vitamin A deficiency."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Celiac Disease",
+          "The chronic diarrhea, weight loss, bloating, and evidence of malabsorption (increased D-xylose excretion) are consistent with celiac disease."
+        ],
+        [
+          "Hyperthyroidism",
+          "The neck mass, weight loss, and diarrhea could be related to hyperthyroidism."
+        ],
+        [
+          "Whipple's Disease",
+          "This rare bacterial infection can cause malabsorption, weight loss, diarrhea, and arthralgias."
+        ],
+        [
+          "Crohn's Disease",
+          "While less likely given the D-xylose result, Crohn's can cause diarrhea, weight loss, and abdominal pain."
+        ],
+        [
+          "Malnutrition",
+          "The patient's BMI and dry skin suggest malnutrition, which could be primary or secondary to another condition."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Lactose Intolerance",
+          "The increased D-xylose excretion suggests a more generalized malabsorption issue than isolated lactose intolerance."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Pancreatic insufficiency",
+          "Low fecal elastase and fat malabsorption strongly suggest pancreatic insufficiency."
+        ],
+        [
+          "Celiac disease",
+          "Diarrhea, weight loss, and malabsorption are consistent with celiac disease, although the D-xylose test result is less typical."
+        ],
+        [
+          "Crohn's disease",
+          "Diarrhea, weight loss, and malabsorption can be seen in Crohn's disease."
+        ],
+        [
+          "Whipple's disease",
+          "Malabsorption and diarrhea are consistent with Whipple's disease."
+        ],
+        [
+          "Small intestinal bacterial overgrowth (SIBO)",
+          "SIBO can cause malabsorption, diarrhea, and weight loss."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hyperthyroidism",
+          "The presence of a hard, fixed mass in the anterior midline of the neck is inconsistent with diffuse thyroid enlargement."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Celiac disease",
+            "The chronic diarrhea, bloating, and weight loss are highly suggestive of malabsorption due to celiac disease."
+          ],
+          [
+            "Irritable bowel syndrome (IBS)",
+            "Bloating and diarrhea are common symptoms of IBS, although weight loss is less typical."
+          ],
+          [
+            "Inflammatory bowel disease (IBD)",
+            "Chronic diarrhea and weight loss can be indicative of IBD, such as Crohn's disease or ulcerative colitis."
+          ],
+          [
+            "Small intestinal bacterial overgrowth (SIBO)",
+            "SIBO can cause bloating, diarrhea, and malabsorption leading to weight loss."
+          ],
+          [
+            "Giardiasis",
+            "This parasitic infection can cause chronic diarrhea, bloating, and weight loss."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Celiac Disease",
+            "Chronic diarrhea, weight loss, and bloating are classic symptoms, and the low BMI supports this diagnosis."
+          ],
+          [
+            "Malabsorption",
+            "The constellation of weight loss, diarrhea, and dry skin suggests a general problem with nutrient absorption."
+          ],
+          [
+            "Giardiasis",
+            "Chronic diarrhea and bloating can be caused by this parasitic infection."
+          ],
+          [
+            "Crohn's Disease",
+            "This inflammatory bowel disease can cause chronic diarrhea, weight loss, and malabsorption."
+          ],
+          [
+            "Hyperthyroidism",
+            "Weight loss and diarrhea can be associated with hyperthyroidism, although other symptoms are not yet present."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Celiac disease",
+            "Chronic diarrhea, weight loss, and bloating are consistent with malabsorption due to celiac disease, and the normal D-xylose test makes small bowel disease more likely."
+          ],
+          [
+            "Tropical sprue",
+            "This is a possibility given the chronic diarrhea, weight loss, and malabsorption symptoms, although less likely without a history of travel to endemic areas."
+          ],
+          [
+            "Whipple's disease",
+            "This should be considered given the malabsorption symptoms, though less likely without neurological symptoms or lymphadenopathy."
+          ],
+          [
+            "Giardiasis",
+            "Chronic Giardia infection can cause diarrhea, bloating, and weight loss, although the normal D-xylose test makes this less likely."
+          ],
+          [
+            "Chronic pancreatitis",
+            "Although less likely with a normal D-xylose test, chronic pancreatitis can cause malabsorption and diarrhea, and should be considered."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Small intestinal bacterial overgrowth (SIBO)",
+            "The normal D-xylose test makes SIBO less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic Pancreatitis",
+            "Low fecal elastase and fat malabsorption strongly suggest pancreatic insufficiency."
+          ],
+          [
+            "Cystic Fibrosis",
+            "Although less likely in a 37-year-old, it can present with pancreatic insufficiency and malabsorption."
+          ],
+          [
+            "Shwachman-Diamond Syndrome",
+            "This can cause pancreatic insufficiency and malabsorption, though it typically presents in childhood."
+          ],
+          [
+            "Pancreatic Cancer",
+            "This could cause pancreatic insufficiency and malabsorption, although less likely given the duration of symptoms."
+          ],
+          [
+            "Celiac Disease",
+            "While D-xylose absorption was normal, it doesn't fully exclude celiac disease, and it can sometimes coexist with other malabsorptive disorders."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Small Intestinal Bacterial Overgrowth (SIBO)",
+            "Normal D-xylose absorption makes this less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_059_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a goiter on physical exam argues against pancreatic insufficiency, as it suggests normal thyroid function and reduces suspicion for autoimmune-related pancreatic dysfunction."
+    }
+  ]
+}

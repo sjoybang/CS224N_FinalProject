@@ -1,0 +1,126 @@
+{
+  "case_id": "case_003",
+  "model": "biogpt",
+  "ground_truth": "Von Willebrand disease",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily. [Stage 2] The patient's vital signs are as follows: heart rate 98 / min, respiratory rate 14 / min, temperature 36.1 \u00b0 C (96.9 \u00b0 F), and blood pressure 110 / 87 mm Hg. Physical examination is unremarkable. She mentions her mother has similar bruising issues. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily. [Stage 2] The patient's vital signs are as follows: heart rate 98 / min, respiratory rate 14 / min, temperature 36.1 \u00b0 C (96.9 \u00b0 F), and blood pressure 110 / 87 mm Hg. Physical examination is unremarkable. She mentions her mother has similar bruising issues. [Stage 3] Initial laboratory results reveal a platelet count of 200,000 / mm3, a prothrombin time (PT) of 12 seconds, and a partial thromboplastin time (PTT) of 43 seconds. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily. [Stage 2] The patient's vital signs are as follows: heart rate 98 / min, respiratory rate 14 / min, temperature 36.1 \u00b0 C (96.9 \u00b0 F), and blood pressure 110 / 87 mm Hg. Physical examination is unremarkable. She mentions her mother has similar bruising issues. [Stage 3] Initial laboratory results reveal a platelet count of 200,000 / mm3, a prothrombin time (PT) of 12 seconds, and a partial thromboplastin time (PTT) of 43 seconds. [Stage 4] Further testing reveals a decreased von Willebrand factor (vWF) antigen level and reduced ristocetin cofactor activity. Factor VIII level is also slightly reduced. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily. [Stage 2] The patient's vital signs are as follows: heart rate 98 / min, respiratory rate 14 / min, temperature 36.1 \u00b0 C (96.9 \u00b0 F), and blood pressure 110 / 87 mm Hg. Physical examination reveals petechiae on her lower extremities. She mentions her mother has similar bruising issues. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily. [Stage 2] The patient's vital signs are as follows: heart rate 98 / min, respiratory rate 14 / min, temperature 36.1 \u00b0 C (96.9 \u00b0 F), and blood pressure 110 / 87 mm Hg. Physical examination reveals petechiae on her lower extremities. She mentions her mother has similar bruising issues. [Stage 3] Initial laboratory results reveal a platelet count of 200,000 / mm3, a prothrombin time (PT) of 12 seconds, and a partial thromboplastin time (PTT) of 43 seconds. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily. [Stage 2] The patient's vital signs are as follows: heart rate 98 / min, respiratory rate 14 / min, temperature 36.1 \u00b0 C (96.9 \u00b0 F), and blood pressure 110 / 87 mm Hg. Physical examination reveals petechiae on her lower extremities. She mentions her mother has similar bruising issues. [Stage 3] Initial laboratory results reveal a platelet count of 200,000 / mm3, a prothrombin time (PT) of 12 seconds, and a partial thromboplastin time (PTT) of 43 seconds. [Stage 4] Further testing reveals a decreased von Willebrand factor (vWF) antigen level and reduced ristocetin cofactor activity. Factor VIII level is also slightly reduced. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_003_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals petechiae, which would be more consistent with a platelet disorder than VWD."
+    }
+  ]
+}

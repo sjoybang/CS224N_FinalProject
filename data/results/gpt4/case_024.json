@@ -1,0 +1,256 @@
+{
+  "case_id": "case_024",
+  "model": "gpt4",
+  "ground_truth": "Posterior communicating artery aneurysm",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The gradual worsening of double vision is characteristic of ocular myasthenia gravis, which often presents with diplopia."
+        ],
+        [
+          "Cranial Nerve III Palsy",
+          "Double vision can result from dysfunction of the oculomotor nerve, which controls most of the eye's movements."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "This condition can cause extraocular muscle dysfunction leading to diplopia, especially in middle-aged women."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Although less common at this age, MS can present with diplopia due to demyelination affecting cranial nerves."
+        ],
+        [
+          "Brain Tumor",
+          "A mass effect from a tumor could cause cranial nerve compression, leading to double vision."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Oculomotor nerve palsy",
+          "The combination of right eyelid droop, dilated pupil, and double vision in all fields of gaze suggests dysfunction of the oculomotor nerve."
+        ],
+        [
+          "Myasthenia gravis",
+          "The difficulty keeping the right eye open and eyelid droop could indicate a neuromuscular junction disorder like myasthenia gravis."
+        ],
+        [
+          "Horner's syndrome",
+          "Although the dilated pupil is atypical, the eyelid droop could suggest a sympathetic pathway disruption."
+        ],
+        [
+          "Intracranial aneurysm",
+          "A compressive lesion such as an aneurysm could cause oculomotor nerve palsy with pupil involvement."
+        ],
+        [
+          "Brain tumor",
+          "A mass effect from a tumor could cause cranial nerve dysfunction leading to the observed symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Graves' disease",
+          "The presence of a dilated pupil and poor reactivity to light is inconsistent with the typical presentation of Graves' ophthalmopathy."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Oculomotor nerve palsy",
+          "The combination of double vision, right eyelid droop, and a dilated pupil with poor reactivity suggests a third cranial nerve palsy."
+        ],
+        [
+          "Myasthenia gravis",
+          "The fluctuating nature of the eyelid droop and difficulty keeping the eye open could indicate a neuromuscular junction disorder."
+        ],
+        [
+          "Intracranial aneurysm",
+          "A posterior communicating artery aneurysm can cause oculomotor nerve compression, leading to the symptoms observed."
+        ],
+        [
+          "Horner's syndrome",
+          "Although less likely due to the dilated pupil, the eyelid droop could suggest sympathetic pathway involvement."
+        ],
+        [
+          "Thyroid eye disease",
+          "Although less common, it can cause extraocular muscle involvement leading to diplopia and eyelid changes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Diabetes-related cranial neuropathy",
+          "Normal HbA1c and lack of other diabetic complications make this less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Oculomotor nerve palsy",
+          "The presence of a dilated pupil, ptosis, and ophthalmoplegia in the right eye is consistent with compression of the oculomotor nerve by the identified aneurysm."
+        ],
+        [
+          "Posterior communicating artery aneurysm",
+          "The MR angiography finding of an aneurysm at the junction of the right posterior communicating and internal carotid arteries explains the compression of the oculomotor nerve."
+        ],
+        [
+          "Third cranial nerve compression",
+          "The aneurysm's location and the patient's symptoms suggest compression of the third cranial nerve, leading to the observed ophthalmoplegia and pupil involvement."
+        ],
+        [
+          "Pupil-involving third nerve palsy",
+          "The combination of ptosis, ophthalmoplegia, and a dilated pupil is characteristic of a pupil-involving third nerve palsy, often due to aneurysmal compression."
+        ],
+        [
+          "Right-sided ptosis",
+          "The difficulty keeping the right eye open and eyelid droop are symptoms of ptosis, which can result from oculomotor nerve dysfunction."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myasthenia gravis",
+          "The normal laboratory studies and specific imaging findings of an aneurysm compressing the oculomotor nerve rule out this neuromuscular disorder."
+        ],
+        [
+          "Horner's syndrome",
+          "The presence of a dilated pupil and the specific imaging findings are inconsistent with Horner's syndrome, which typically presents with miosis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "Gradual worsening of double vision is a common symptom of ocular myasthenia gravis."
+          ],
+          [
+            "Cranial Nerve III Palsy",
+            "Double vision can result from dysfunction of the oculomotor nerve, which controls most of the eye's movements."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "This condition can cause extraocular muscle dysfunction leading to double vision."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Demyelinating diseases can present with ocular symptoms such as double vision."
+          ],
+          [
+            "Brain Tumor",
+            "A mass effect in the brain can lead to cranial nerve dysfunction, resulting in double vision."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of double vision, eyelid droop, and difficulty keeping the eye open suggests a neuromuscular junction disorder."
+          ],
+          [
+            "Oculomotor Nerve Palsy",
+            "The eyelid droop and double vision in all fields of gaze could indicate a cranial nerve III dysfunction."
+          ],
+          [
+            "Horner's Syndrome",
+            "Although pupils are equal and reactive, the eyelid droop could suggest sympathetic pathway involvement."
+          ],
+          [
+            "Chronic Progressive External Ophthalmoplegia",
+            "The gradual worsening of double vision and eyelid droop aligns with this mitochondrial disorder."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "Although less likely without other symptoms, it can cause eyelid retraction and diplopia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Stroke",
+            "The unremarkable neurological exam and equal, reactive pupils make an acute cerebrovascular event unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of double vision, eyelid droop, and difficulty keeping the eye open suggests a neuromuscular junction disorder."
+          ],
+          [
+            "Oculomotor Nerve Palsy",
+            "The eyelid droop and double vision in all fields of gaze could indicate a cranial nerve III dysfunction."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "Although less likely without thyroid abnormalities, it can cause eyelid retraction and diplopia."
+          ],
+          [
+            "Chronic Progressive External Ophthalmoplegia",
+            "This condition can cause progressive ptosis and ophthalmoplegia, fitting the chronic nature of symptoms."
+          ],
+          [
+            "Intracranial Aneurysm",
+            "Though less likely with normal MRI angiography, it can cause oculomotor nerve compression leading to similar symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diabetes Mellitus",
+            "Normal HbA1c and lack of other diabetic complications make this unlikely."
+          ],
+          [
+            "Stroke",
+            "Normal neurological exam and MRI findings rule out acute cerebrovascular events."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Oculomotor nerve palsy",
+            "The presence of double vision, right eyelid droop, and difficulty keeping the right eye open, combined with the MRI finding of an aneurysm compressing the oculomotor nerve, strongly suggests this diagnosis."
+          ],
+          [
+            "Posterior communicating artery aneurysm",
+            "The MR angiography finding of an aneurysm at the junction of the right posterior communicating and internal carotid arteries is consistent with this diagnosis."
+          ],
+          [
+            "Cranial nerve III compression",
+            "The MRI finding of an aneurysm compressing the oculomotor nerve aligns with the symptoms of double vision and eyelid droop."
+          ],
+          [
+            "Isolated cranial nerve palsy",
+            "The specific involvement of the oculomotor nerve without other neurological deficits suggests an isolated cranial nerve palsy."
+          ],
+          [
+            "Aneurysmal compression syndrome",
+            "The symptoms and imaging findings are consistent with a syndrome caused by vascular compression of cranial nerves."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myasthenia gravis",
+            "The normal laboratory studies and specific imaging findings of an aneurysm compressing the oculomotor nerve rule out this neuromuscular disorder."
+          ],
+          [
+            "Diabetes-related cranial neuropathy",
+            "Normal HbA1c and the specific finding of an aneurysm compressing the nerve make this unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_024_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are equal and reactive to light, which argues against compression of the oculomotor nerve."
+    }
+  ]
+}

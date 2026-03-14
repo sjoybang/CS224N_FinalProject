@@ -1,0 +1,247 @@
+{
+  "case_id": "case_021",
+  "model": "gemini",
+  "ground_truth": "Ureteral stone",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Nephrolithiasis",
+          "The sudden onset of severe, unilateral flank pain is highly suggestive of a kidney stone."
+        ],
+        [
+          "Pyelonephritis",
+          "Flank pain can be associated with a kidney infection, although typically accompanied by fever and urinary symptoms."
+        ],
+        [
+          "Ureteral Obstruction",
+          "Obstruction of the ureter, regardless of cause, can present with acute flank pain."
+        ],
+        [
+          "Musculoskeletal Strain",
+          "While less likely given the severity, a muscle strain could cause flank pain."
+        ],
+        [
+          "Renal Infarction",
+          "Although less common, sudden flank pain can be a sign of renal artery occlusion."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Nephrolithiasis",
+          "The sudden onset of severe flank pain with CVA tenderness is highly suggestive of a kidney stone."
+        ],
+        [
+          "Pyelonephritis",
+          "Flank pain with CVA tenderness and a slightly elevated heart rate could indicate a kidney infection."
+        ],
+        [
+          "Ureterolithiasis",
+          "Similar to nephrolithiasis, a stone lodged in the ureter can cause severe flank pain."
+        ],
+        [
+          "Musculoskeletal pain",
+          "While less likely given the severity, referred pain from a musculoskeletal issue cannot be entirely ruled out."
+        ],
+        [
+          "Renal cell carcinoma",
+          "Although less likely to present with acute pain, underlying renal pathology should be considered."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Appendicitis",
+          "Abdomen is soft and nontender."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Ureteral stone",
+          "The CT scan confirms a ureteral stone in the proximal ureter, causing the patient's flank pain."
+        ],
+        [
+          "Renal colic",
+          "The patient's flank pain and the presence of a ureteral stone are consistent with renal colic."
+        ],
+        [
+          "Pyelonephritis",
+          "Although the patient's temperature is only slightly elevated, pyelonephritis could be present with a ureteral stone causing obstruction."
+        ],
+        [
+          "Ureteropelvic junction obstruction",
+          "The hydronephrosis could be due to a pre-existing UPJ obstruction exacerbated by the stone."
+        ],
+        [
+          "Nephrolithiasis",
+          "The presence of a ureteral stone indicates nephrolithiasis as the underlying condition."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Appendicitis",
+          "Abdominal exam is soft and nontender."
+        ],
+        [
+          "Diverticulitis",
+          "Abdominal exam is soft and nontender, and CT scan shows a ureteral stone."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Ureteral stone",
+          "The CT scan confirms a ureteral stone, explaining the flank pain and hydronephrosis."
+        ],
+        [
+          "Uric acid nephrolithiasis",
+          "The presence of uric acid crystals in the urine suggests this specific type of kidney stone."
+        ],
+        [
+          "Pyelonephritis",
+          "While the patient is afebrile and has a normal abdominal exam, pyelonephritis can sometimes present with flank pain and microscopic hematuria, and cannot be entirely ruled out without further information."
+        ],
+        [
+          "Ureteropelvic junction obstruction",
+          "This could predispose to stone formation and present with flank pain, although the acute presentation is less typical."
+        ],
+        [
+          "Renal cell carcinoma",
+          "Although less likely given the acute presentation and stone, renal cell carcinoma can sometimes present with hematuria and flank pain, and could potentially contribute to stone formation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Abdominal aortic aneurysm",
+          "The abdominal exam was benign and the CT scan did not report any aneurysm."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Nephrolithiasis",
+            "The sudden onset of severe, unilateral flank pain is highly suggestive of a kidney stone."
+          ],
+          [
+            "Pyelonephritis",
+            "Flank pain can be associated with a kidney infection, although typically accompanied by fever and urinary symptoms."
+          ],
+          [
+            "Ureteral Obstruction",
+            "Obstruction of the ureter, regardless of cause, can present with acute flank pain."
+          ],
+          [
+            "Musculoskeletal Strain",
+            "While less likely given the severity, a muscle strain could cause flank pain."
+          ],
+          [
+            "Renal Infarction",
+            "Although less common, sudden flank pain can be a sign of renal artery occlusion."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Nephrolithiasis",
+            "Sudden onset flank pain and CVA tenderness are highly suggestive of a kidney stone."
+          ],
+          [
+            "Pyelonephritis",
+            "Fever and CVA tenderness suggest a possible kidney infection."
+          ],
+          [
+            "Appendicitis",
+            "Although less likely given the flank pain, retrocecal appendicitis can present with right flank pain."
+          ],
+          [
+            "Musculoskeletal strain",
+            "Could explain the flank pain, although fever makes it less likely."
+          ],
+          [
+            "Ureteral obstruction",
+            "Obstruction can cause hydronephrosis and flank pain, even without infection."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Ureteral stone",
+            "The CT scan confirms a ureteral stone, explaining the flank pain and hydronephrosis."
+          ],
+          [
+            "Pyelonephritis",
+            "The patient's fever and CVA tenderness suggest a possible kidney infection secondary to the ureteral stone."
+          ],
+          [
+            "Ureteropelvic junction obstruction",
+            "This could predispose to stone formation and present with flank pain and hydronephrosis."
+          ],
+          [
+            "Renal cell carcinoma",
+            "Although less likely given the acute presentation, renal cell carcinoma can sometimes present with flank pain and hydronephrosis due to obstruction."
+          ],
+          [
+            "Ureteral stricture",
+            "A stricture could cause hydronephrosis and predispose to stone formation, though less likely given the acute onset."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Abdominal aortic aneurysm",
+            "The CT scan would likely have identified this."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Ureteral stone",
+            "The CT scan confirms a ureteral stone, and the patient presents with classic symptoms of flank pain and hematuria."
+          ],
+          [
+            "Pyelonephritis",
+            "Fever and CVA tenderness suggest a possible kidney infection, even with a stone present."
+          ],
+          [
+            "Uric acid nephrolithiasis",
+            "The presence of uric acid crystals in the urine suggests this specific type of kidney stone."
+          ],
+          [
+            "Renal colic",
+            "The patient's severe flank pain is consistent with renal colic caused by the ureteral stone."
+          ],
+          [
+            "Acute cystitis",
+            "While less likely given the flank pain, cystitis could contribute to hematuria and discomfort."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Abdominal aortic aneurysm",
+            "The CT scan showed no signs of AAA."
+          ],
+          [
+            "Appendicitis",
+            "The location of pain and CT findings make this unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_021_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a fever of 38.9\u00b0C (102\u00b0F) and significant abdominal tenderness, suggesting pyelonephritis rather than an uncomplicated ureteral stone."
+    }
+  ]
+}

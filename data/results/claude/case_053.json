@@ -1,0 +1,314 @@
+{
+  "case_id": "case_053",
+  "model": "claude",
+  "ground_truth": "Nephrotic syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Nephrotic syndrome",
+          "Periorbital edema in a young child is a classic presentation, typically due to minimal change disease at this age."
+        ],
+        [
+          "Acute post-streptococcal glomerulonephritis",
+          "Can cause periorbital edema and facial swelling in pediatric patients following streptococcal infection."
+        ],
+        [
+          "Allergic reaction",
+          "Periorbital edema can result from environmental allergens, food allergies, or contact allergens affecting the periorbital area."
+        ],
+        [
+          "Angioedema",
+          "Can present with periorbital swelling in children, either hereditary or acquired, often episodic in nature."
+        ],
+        [
+          "Orbital/periorbital cellulitis",
+          "Infection can cause periorbital swelling, though typically accompanied by erythema and other inflammatory signs."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Minimal change disease (nephrotic syndrome)",
+          "Most common cause of nephrotic syndrome in preschool-aged children presenting with periorbital and lower extremity edema without fever or hypertension."
+        ],
+        [
+          "Acute post-streptococcal glomerulonephritis",
+          "Can present with edema in children, though the absence of hypertension and hematuria makes this less typical."
+        ],
+        [
+          "Membranoproliferative glomerulonephritis",
+          "Can cause nephrotic syndrome in children with generalized edema, though less common than minimal change disease in this age group."
+        ],
+        [
+          "Focal segmental glomerulosclerosis",
+          "Important cause of steroid-resistant nephrotic syndrome in children presenting with significant proteinuria and edema."
+        ],
+        [
+          "IgA nephropathy (Henoch-Sch\u00f6nlein purpura nephritis)",
+          "Can present with edema in children, though typically accompanied by other systemic manifestations like rash or joint pain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Allergic reaction",
+          "Absence of urticaria, pruritus, respiratory symptoms, and the 4-day duration with progressive lower extremity involvement makes this unlikely."
+        ],
+        [
+          "Congestive heart failure",
+          "Normal temperature and lack of other cardiac findings (tachypnea, hepatomegaly, jugular venous distension) make this less likely, though tachycardia is present."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Minimal change disease",
+          "Classic presentation with nephrotic syndrome (proteinuria >3.5g/day equivalent, hypoalbuminemia, edema) and fatty casts in a preschool-aged child with normal complement levels."
+        ],
+        [
+          "Focal segmental glomerulosclerosis",
+          "Can present identically to minimal change disease with nephrotic syndrome but is less common as initial presentation in this age group."
+        ],
+        [
+          "Membranous nephropathy",
+          "Presents with nephrotic syndrome and normal complement levels, though rare in young children and more typical in adults."
+        ],
+        [
+          "Congenital nephrotic syndrome",
+          "Could cause severe nephrotic syndrome at young age, though typically presents earlier in infancy or first year of life."
+        ],
+        [
+          "IgA nephropathy",
+          "Can occasionally present with heavy proteinuria and nephrotic features, though typically shows hematuria which is absent here."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Post-streptococcal glomerulonephritis",
+          "Normal complement levels rule this out (typically shows low C3)."
+        ],
+        [
+          "Lupus nephritis",
+          "Normal complement levels and absence of systemic features make this unlikely."
+        ],
+        [
+          "Membranoproliferative glomerulonephritis",
+          "Normal complement levels argue against this diagnosis (typically shows low C3 and/or C4)."
+        ],
+        [
+          "Acute tubular necrosis",
+          "Normal creatinine and no clinical history of nephrotoxic insult or hypoperfusion."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Minimal change disease",
+          "Renal biopsy confirmed diffuse podocyte foot process effacement on electron microscopy, which is pathognomonic for this diagnosis."
+        ],
+        [
+          "Secondary minimal change disease (medication/malignancy-induced)",
+          "While biopsy shows minimal change disease pattern, secondary causes should be considered though less likely in a 4-year-old."
+        ],
+        [
+          "Early focal segmental glomerulosclerosis",
+          "Can present identically to minimal change disease clinically and may show only podocyte effacement on initial biopsy before sclerotic lesions develop."
+        ],
+        [
+          "IgM nephropathy",
+          "May show podocyte foot process effacement on electron microscopy but would require immunofluorescence showing mesangial IgM deposition to distinguish from minimal change disease."
+        ],
+        [
+          "C1q nephropathy",
+          "Rare entity that can mimic minimal change disease histologically but requires immunofluorescence showing dominant C1q staining, which was not reported."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Membranous nephropathy",
+          "Electron microscopy would show subepithelial immune deposits and basement membrane spikes, not isolated podocyte effacement."
+        ],
+        [
+          "Post-streptococcal glomerulonephritis",
+          "Normal complement levels and absence of hematuria make this unlikely, plus biopsy is inconsistent."
+        ],
+        [
+          "IgA nephropathy",
+          "Would show hematuria and mesangial IgA deposits on immunofluorescence, not isolated podocyte effacement."
+        ],
+        [
+          "Membranoproliferative glomerulonephritis",
+          "Would show basement membrane duplication and low complement levels, inconsistent with biopsy findings."
+        ],
+        [
+          "Acute tubular necrosis",
+          "No clinical history of hypotension or nephrotoxin exposure, and biopsy findings are inconsistent."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Nephrotic syndrome",
+            "Periorbital edema in a young child is a classic presentation, especially if bilateral and worse in the morning."
+          ],
+          [
+            "Acute post-streptococcal glomerulonephritis",
+            "Can cause periorbital edema due to fluid retention from glomerular inflammation in pediatric patients."
+          ],
+          [
+            "Allergic reaction",
+            "Periorbital swelling can result from environmental allergens, food allergies, or contact allergens."
+          ],
+          [
+            "Periorbital cellulitis",
+            "Bacterial infection of periorbital tissues can cause localized swelling around the eyes in children."
+          ],
+          [
+            "Hypothyroidism",
+            "Can present with periorbital edema and myxedema, though less common in this age group."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Minimal change disease (nephrotic syndrome)",
+            "Periorbital and lower extremity edema in a young child is classic for nephrotic syndrome, most commonly due to minimal change disease in this age group."
+          ],
+          [
+            "Post-infectious glomerulonephritis",
+            "The rash combined with edema suggests a possible immune-mediated glomerulonephritis following a recent infection (e.g., streptococcal)."
+          ],
+          [
+            "IgA vasculitis (Henoch-Sch\u00f6nlein purpura)",
+            "Maculopapular rash on trunk with edema could represent HSP, though typical purpuric distribution on lower extremities is not explicitly described."
+          ],
+          [
+            "Acute rheumatic fever",
+            "The combination of rash and systemic findings including tachycardia could suggest rheumatic fever, though edema is less typical."
+          ],
+          [
+            "Systemic lupus erythematosus",
+            "Though uncommon at age 4, SLE can present with nephrotic syndrome, rash, and systemic manifestations."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Angioedema",
+            "The presence of pitting edema and duration of 4 days makes this unlikely; angioedema is typically non-pitting and transient."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Minimal change disease",
+            "Classic nephrotic syndrome presentation in a young child with massive proteinuria, hypoalbuminemia, edema, and normal complement levels without hematuria."
+          ],
+          [
+            "Focal segmental glomerulosclerosis",
+            "Can present identically to minimal change disease but may show more resistance to therapy and less common as initial presentation in this age group."
+          ],
+          [
+            "Membranous nephropathy",
+            "Presents with nephrotic syndrome and normal complements, though less common in young children and typically lacks the associated rash."
+          ],
+          [
+            "IgA nephropathy",
+            "Can cause proteinuria and edema, though typically presents with hematuria which is absent here, making it less likely."
+          ],
+          [
+            "Systemic lupus erythematosus",
+            "The combination of nephrotic syndrome, rash, and thrombocytosis could suggest lupus nephritis, but normal complement levels make this unlikely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Post-streptococcal glomerulonephritis",
+            "Absent hematuria and normal complement levels rule out this diagnosis."
+          ],
+          [
+            "IgA vasculitis (Henoch-Sch\u00f6nlein purpura)",
+            "Lack of hematuria and the distribution/type of rash are inconsistent with this diagnosis."
+          ],
+          [
+            "Membranoproliferative glomerulonephritis",
+            "Normal complement levels effectively exclude this diagnosis."
+          ],
+          [
+            "Acute postinfectious glomerulonephritis",
+            "Nephritic features (hematuria, hypertension) are absent and complements are normal."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Minimal change disease",
+            "Renal biopsy confirms diffuse podocyte foot process effacement on electron microscopy, which is pathognomonic for this diagnosis."
+          ],
+          [
+            "NSAID-induced minimal change disease",
+            "The maculopapular rash raises concern for drug reaction, and NSAIDs are a known cause of minimal change disease with associated hypersensitivity features."
+          ],
+          [
+            "Hodgkin lymphoma-associated minimal change disease",
+            "Though rare in young children, Hodgkin lymphoma can present with minimal change disease and constitutional symptoms including rash."
+          ],
+          [
+            "Acute interstitial nephritis with concurrent minimal change disease",
+            "The rash and minimal change disease pattern could suggest an immune-mediated process affecting both tubules and glomeruli."
+          ],
+          [
+            "Idiopathic minimal change disease with viral exanthem",
+            "The most common presentation of minimal change disease in children, with the rash representing an incidental viral infection."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Membranous nephropathy",
+            "Renal biopsy shows foot process effacement without immune complex deposition characteristic of membranous nephropathy."
+          ],
+          [
+            "Post-streptococcal glomerulonephritis",
+            "Normal complement levels and absence of hematuria make this unlikely, and biopsy is inconsistent."
+          ],
+          [
+            "IgA nephropathy",
+            "Biopsy shows minimal change disease without mesangial IgA deposits, and presentation lacks hematuria."
+          ],
+          [
+            "Focal segmental glomerulosclerosis",
+            "Electron microscopy shows diffuse (not focal) foot process effacement without sclerosis."
+          ],
+          [
+            "Membranoproliferative glomerulonephritis",
+            "Normal complement levels and biopsy findings rule this out."
+          ]
+        ]
+      },
+      "cf_id": "case_053_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of a rash argues against nephrotic syndrome, which typically does not present with dermatological findings."
+    }
+  ]
+}

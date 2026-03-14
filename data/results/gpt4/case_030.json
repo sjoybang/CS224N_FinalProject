@@ -1,0 +1,260 @@
+{
+  "case_id": "case_030",
+  "model": "gpt4",
+  "ground_truth": "Myasthenia gravis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The combination of double vision, difficulty climbing stairs, and generalized weakness is classic for myasthenia gravis, an autoimmune disorder affecting neuromuscular transmission."
+        ],
+        [
+          "Multiple Sclerosis",
+          "This condition can cause neurological symptoms such as double vision and muscle weakness due to demyelination in the central nervous system."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "Although less common, this condition can present with muscle weakness and may occasionally affect cranial nerves, leading to double vision."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "Similar to myasthenia gravis, this syndrome causes muscle weakness and can affect ocular muscles, leading to double vision."
+        ],
+        [
+          "Hyperthyroidism",
+          "Thyroid eye disease associated with hyperthyroidism can cause double vision, and muscle weakness can occur due to thyrotoxic myopathy."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "Symptoms of muscle weakness that worsen with exercise and improve with rest, along with ptosis and diplopia, are classic for this condition."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "Muscle weakness that improves with rest and worsens with exertion could suggest this, although ptosis is less common."
+        ],
+        [
+          "Multiple Sclerosis",
+          "While less likely, it can present with muscle weakness and diplopia, but the improvement with rest is atypical."
+        ],
+        [
+          "Oculopharyngeal Muscular Dystrophy",
+          "Ptosis and muscle weakness are consistent, but the age of onset is typically later."
+        ],
+        [
+          "Chronic Progressive External Ophthalmoplegia",
+          "This can cause ptosis and muscle weakness, but the pattern of worsening with exercise is less characteristic."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "Typically presents with ascending paralysis and does not improve with rest."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The symptoms of muscle weakness that worsens with activity and improves with rest, along with ptosis and diplopia, are classic for myasthenia gravis."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "Although less common, this condition can cause muscle weakness that improves with activity, but the absence of autonomic symptoms makes it less likely."
+        ],
+        [
+          "Multiple Sclerosis",
+          "While less typical, MS can present with ocular symptoms and muscle weakness, though the pattern of fatigue and improvement with rest is less characteristic."
+        ],
+        [
+          "Ocular Myopathy",
+          "This could explain the ocular symptoms, but it does not typically cause generalized muscle weakness that improves with rest."
+        ],
+        [
+          "Chronic Fatigue Syndrome",
+          "This condition can cause generalized weakness and fatigue, but it does not typically present with the specific ocular symptoms seen here."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hyperthyroidism",
+          "Normal thyroid function tests rule out this condition."
+        ],
+        [
+          "Anemia",
+          "Normal complete blood count rules out anemia as a cause of the symptoms."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The patient's symptoms of muscle weakness that worsens with activity and improves with rest, along with positive edrophonium test and elevated acetylcholine receptor antibodies, strongly suggest myasthenia gravis."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "Although less likely, the presentation of muscle weakness could suggest Lambert-Eaton syndrome, but the positive edrophonium test and elevated acetylcholine receptor antibodies make this less probable."
+        ],
+        [
+          "Ocular Myasthenia Gravis",
+          "The presence of ptosis and diplopia with improvement after edrophonium administration could indicate a form of myasthenia gravis primarily affecting the eyes."
+        ],
+        [
+          "Multiple Sclerosis",
+          "The neurological symptoms could suggest multiple sclerosis, but the lack of other neurological findings and the positive edrophonium test make this less likely."
+        ],
+        [
+          "Chronic Fatigue Syndrome",
+          "The generalized weakness could be consistent with chronic fatigue syndrome, but the specific pattern of muscle weakness and positive test results make this diagnosis less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hyperthyroidism",
+          "Normal thyroid function tests rule out hyperthyroidism as a cause of the symptoms."
+        ],
+        [
+          "Thymoma",
+          "While a thymoma could be associated with myasthenia gravis, the CT scan results are not provided, and the focus is on the neuromuscular diagnosis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of double vision, difficulty climbing stairs, and generalized weakness is classic for myasthenia gravis, an autoimmune disorder affecting neuromuscular transmission."
+          ],
+          [
+            "Multiple Sclerosis",
+            "This condition can cause neurological symptoms such as double vision and muscle weakness due to demyelination in the central nervous system."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "Although less common, this condition can present with muscle weakness and may affect ocular muscles, leading to double vision."
+          ],
+          [
+            "Hyperthyroidism",
+            "Thyroid dysfunction can cause muscle weakness and ophthalmopathy, which might explain the double vision."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "This paraneoplastic syndrome can cause proximal muscle weakness and ocular symptoms similar to myasthenia gravis."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The presence of ptosis that worsens with sustained upward gaze and muscle weakness suggests a neuromuscular junction disorder."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "Constant muscle weakness and difficulty climbing stairs could indicate a presynaptic neuromuscular transmission issue."
+          ],
+          [
+            "Oculopharyngeal Muscular Dystrophy",
+            "Ptosis and muscle weakness in the upper extremities are consistent with this muscular dystrophy, although the age is slightly atypical."
+          ],
+          [
+            "Chronic Progressive External Ophthalmoplegia",
+            "The combination of ptosis and muscle weakness could indicate a mitochondrial disorder affecting the eyes and limbs."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Although less likely due to the lack of fluctuation, MS can present with ocular and limb weakness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "Typically presents with ascending weakness and is often preceded by an infection, which is not indicated here."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The presence of ptosis that worsens with sustained upward gaze and muscle weakness suggests a neuromuscular junction disorder, commonly associated with thymoma."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "Although less common, this condition can cause muscle weakness and is associated with malignancies, but the lack of fluctuation with activity makes it less likely."
+          ],
+          [
+            "Oculopharyngeal Muscular Dystrophy",
+            "This condition can cause ptosis and muscle weakness, but the patient's age and lack of family history make it less likely."
+          ],
+          [
+            "Multiple Sclerosis",
+            "While it can cause double vision and muscle weakness, the constant nature of symptoms and normal lab results make it less likely."
+          ],
+          [
+            "Chronic Progressive External Ophthalmoplegia",
+            "This mitochondrial disorder can cause ptosis and muscle weakness, but typically presents with more systemic symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hyperthyroidism",
+            "Normal thyroid function tests rule out this condition."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "The absence of recent infection or progressive ascending weakness makes this unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The positive edrophonium test and elevated acetylcholine receptor antibodies strongly indicate myasthenia gravis."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "Although less likely due to the positive edrophonium test, it can cause muscle weakness and is associated with thymoma."
+          ],
+          [
+            "Ocular Myasthenia Gravis",
+            "The ptosis and double vision could suggest a variant of myasthenia gravis primarily affecting the eyes."
+          ],
+          [
+            "Multiple Sclerosis",
+            "While less likely due to the lack of fluctuating symptoms, it can cause muscle weakness and vision problems."
+          ],
+          [
+            "Chronic Progressive External Ophthalmoplegia",
+            "This condition can cause ptosis and muscle weakness, though it typically does not respond to edrophonium."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hyperthyroidism",
+            "Normal thyroid function tests rule out this condition."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "The lack of fluctuating symptoms and normal laboratory studies make this unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_030_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that her symptoms are constant and do not fluctuate with activity or rest, which argues against myasthenia gravis."
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "case_id": "case_042",
+  "model": "gemini",
+  "ground_truth": "Chromosomal abnormalities",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Threatened abortion",
+          "Vaginal bleeding and cramping in early pregnancy are classic symptoms."
+        ],
+        [
+          "Ectopic pregnancy",
+          "This must be considered due to the vaginal bleeding and abdominal pain in early pregnancy, although cramping is typically more severe."
+        ],
+        [
+          "Subchorionic hemorrhage",
+          "This can cause vaginal bleeding in early pregnancy."
+        ],
+        [
+          "Molar pregnancy",
+          "Although less likely, molar pregnancy can present with vaginal bleeding in the first trimester."
+        ],
+        [
+          "Cervical polyp",
+          "A cervical polyp could cause vaginal bleeding, especially during pregnancy due to increased cervical vascularity."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Spontaneous abortion",
+          "The sudden vaginal bleeding, abdominal cramps, open cervical os, passage of clots, and decreased pregnancy symptoms in a pregnant woman strongly suggest spontaneous abortion."
+        ],
+        [
+          "Ectopic pregnancy",
+          "Despite the open os, ectopic pregnancy remains a possibility, especially with dizziness, weakness, and lower abdominal pain, and needs to be ruled out with further investigation."
+        ],
+        [
+          "Threatened abortion",
+          "While bleeding is heavier than typically seen in threatened abortion, it is still a consideration given the pregnancy and lower abdominal cramps."
+        ],
+        [
+          "Molar pregnancy",
+          "The passage of clots and decreased pregnancy symptoms could indicate a molar pregnancy, which can present with vaginal bleeding."
+        ],
+        [
+          "Cervical polyp",
+          "Although less likely given the heavy bleeding and clots, a cervical polyp could be the source of some bleeding during pregnancy, exacerbated by cervical changes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Normal pregnancy",
+          "The presence of vaginal bleeding and an open cervical os make a normal, viable pregnancy unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Spontaneous abortion",
+          "The presence of vaginal bleeding, cramping, passage of clots, open cervical os with products of conception, and lower than expected beta-hCG strongly suggest a spontaneous abortion."
+        ],
+        [
+          "Incomplete abortion",
+          "The open cervical os with products of conception visualized indicates that the abortion process is ongoing and not yet complete."
+        ],
+        [
+          "Missed abortion",
+          "While products of conception are seen, the markedly lower than expected beta-hCG and the report of decreased nausea suggest the possibility of a missed abortion where fetal demise occurred some time ago."
+        ],
+        [
+          "Ectopic pregnancy with spontaneous abortion",
+          "Although less likely given the visualization of products of conception in the uterus, an ectopic pregnancy that spontaneously aborted and is passing tissue could present similarly."
+        ],
+        [
+          "Molar pregnancy",
+          "Although less likely without specific findings suggestive of gestational trophoblastic disease, a partial molar pregnancy could present with bleeding and lower than expected beta-hCG levels."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Threatened abortion",
+          "Products of conception are seen, indicating that the pregnancy is no longer viable."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Spontaneous abortion",
+          "Cytogenetic analysis revealing trisomy 16 strongly supports this diagnosis as a common cause of early pregnancy loss."
+        ],
+        [
+          "Inevitable abortion",
+          "The open cervical os with bleeding and cramping in early pregnancy suggests progression towards pregnancy loss."
+        ],
+        [
+          "Missed abortion",
+          "The discrepancy between gestational age and beta-hCG levels, along with the cessation of pregnancy symptoms, points to a nonviable pregnancy."
+        ],
+        [
+          "Threatened abortion",
+          "Although the passage of products of conception makes this less likely, the initial bleeding and cramping could have initially indicated a threatened abortion."
+        ],
+        [
+          "Ectopic pregnancy",
+          "While less likely given the passage of products of conception, it should still be considered until definitively ruled out, especially with bleeding and abdominal pain."
+        ]
+      ],
+      "eliminated": []
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Threatened abortion",
+            "Vaginal bleeding and cramping in early pregnancy are classic symptoms."
+          ],
+          [
+            "Ectopic pregnancy",
+            "This can present with bleeding and abdominal pain in early pregnancy, and must be ruled out."
+          ],
+          [
+            "Subchorionic hemorrhage",
+            "This can cause vaginal bleeding in the first trimester."
+          ],
+          [
+            "Molar pregnancy",
+            "This can present with vaginal bleeding in the first trimester."
+          ],
+          [
+            "Cervical polyp",
+            "This can cause painless vaginal bleeding during pregnancy."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Abruptio Placentae",
+            "Sudden vaginal bleeding, abdominal pain, and elevated blood pressure in a pregnant woman suggest placental abruption."
+          ],
+          [
+            "Preeclampsia",
+            "New-onset hypertension and headache at 10 weeks gestation, though atypical, warrant consideration of early-onset preeclampsia."
+          ],
+          [
+            "Molar Pregnancy",
+            "The combination of vaginal bleeding, passage of clots, hyperemesis followed by resolution, and elevated blood pressure raises suspicion for a molar pregnancy."
+          ],
+          [
+            "Spontaneous Abortion",
+            "Vaginal bleeding, abdominal cramps, and an open cervical os are consistent with a spontaneous abortion."
+          ],
+          [
+            "Ectopic Pregnancy Rupture",
+            "Although less likely given the intrauterine pregnancy, rupture can present with bleeding, abdominal pain, and hemodynamic instability."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Threatened Abortion",
+            "The passage of clots and open cervical os suggest the abortion is no longer just threatened."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Spontaneous abortion",
+            "The presence of vaginal bleeding, abdominal cramps, open cervical os, passage of clots and products of conception, and lower than expected beta-hCG levels strongly suggest a spontaneous abortion."
+          ],
+          [
+            "Ectopic pregnancy",
+            "While less likely given the passage of products of conception, ectopic pregnancy can sometimes present with bleeding and abdominal pain, and the lower than expected beta-hCG warrants consideration."
+          ],
+          [
+            "Molar pregnancy",
+            "Although less likely with passage of products, the elevated blood pressure and lower than expected beta-hCG could suggest a molar pregnancy."
+          ],
+          [
+            "Septic abortion",
+            "The open cervical os and passage of products of conception create a risk for infection, making septic abortion a possibility."
+          ],
+          [
+            "Threatened abortion",
+            "Although the passage of products of conception makes this less likely, it is still possible that some pregnancy tissue remains, and the patient could be experiencing a threatened abortion."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Normal pregnancy",
+            "Passage of products of conception and lower than expected beta-hCG rule this out."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Spontaneous abortion",
+            "The presence of vaginal bleeding, abdominal cramps, open cervical os, passage of clots and products of conception, and lower than expected beta-hCG levels in early pregnancy strongly suggest a spontaneous abortion."
+          ],
+          [
+            "Complete hydatidiform mole",
+            "While less likely given the cytogenetic analysis, a complete mole could present with vaginal bleeding, absent fetal heart tones, and lower than expected beta-hCG levels initially, with the trisomy 16 representing a co-existing twin pregnancy."
+          ],
+          [
+            "Partial hydatidiform mole",
+            "A partial mole can present with vaginal bleeding and lower than expected beta-hCG levels, although trisomy is more common in partial moles."
+          ],
+          [
+            "Ectopic pregnancy",
+            "Although less likely given the passage of products of conception, ectopic pregnancy can sometimes be difficult to rule out initially with bleeding and abdominal pain."
+          ],
+          [
+            "Threatened abortion",
+            "Although the passage of products of conception makes this less likely, a threatened abortion should still be considered if the products of conception are not confirmed to be fetal tissue."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Normal intrauterine pregnancy",
+            "Products of conception were passed."
+          ]
+        ]
+      },
+      "cf_id": "case_042_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood pressure is elevated and she reports a severe headache, suggesting preeclampsia which would argue against chromosomal abnormalities as the primary cause of bleeding."
+    }
+  ]
+}

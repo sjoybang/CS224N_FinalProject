@@ -1,0 +1,244 @@
+{
+  "case_id": "case_057",
+  "model": "gpt4",
+  "ground_truth": "Loss of antithrombin III",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Nephrolithiasis",
+          "The combination of right flank pain and hematuria is classic for kidney stones."
+        ],
+        [
+          "Urinary tract infection (UTI)",
+          "Hematuria and flank pain can occur with a UTI, especially if it has progressed to pyelonephritis."
+        ],
+        [
+          "Renal cell carcinoma",
+          "Hematuria and flank pain can be symptoms of a renal mass."
+        ],
+        [
+          "Bladder cancer",
+          "Hematuria is a common symptom, and pain can occur if there is local invasion or obstruction."
+        ],
+        [
+          "Polycystic kidney disease",
+          "Can present with flank pain and hematuria due to cyst rupture or infection."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Nephrotic syndrome",
+          "The presence of edema, weight gain, and periorbital swelling suggests significant proteinuria, which is characteristic of nephrotic syndrome."
+        ],
+        [
+          "Acute glomerulonephritis",
+          "The combination of hematuria, edema, and hypertension could indicate an inflammatory process affecting the glomeruli."
+        ],
+        [
+          "Renal vein thrombosis",
+          "Flank pain, hematuria, and edema could be due to impaired renal drainage from a thrombus."
+        ],
+        [
+          "Congestive heart failure",
+          "The edema and weight gain could be due to fluid overload, although the clear lungs make this less likely."
+        ],
+        [
+          "Hepatic cirrhosis",
+          "Ascites and edema could suggest liver dysfunction, but the acute presentation and hematuria are atypical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary tract infection",
+          "The presence of significant edema and systemic symptoms makes a simple UTI unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Renal vein thrombosis",
+          "The filling defect in the right renal vein and the presence of nephrotic syndrome (4+ proteinuria, edema) suggest renal vein thrombosis, which can occur in the context of hypercoagulability associated with nephrotic syndrome."
+        ],
+        [
+          "Membranous nephropathy",
+          "The patient's chronic hepatitis B infection and nephrotic syndrome are consistent with membranous nephropathy, a common cause of nephrotic syndrome associated with hepatitis B."
+        ],
+        [
+          "Hepatocellular carcinoma",
+          "The nodular liver and ascites in a patient with chronic hepatitis B suggest possible hepatocellular carcinoma, which can cause paraneoplastic syndromes including nephrotic syndrome."
+        ],
+        [
+          "Budd-Chiari syndrome",
+          "The nodular liver, ascites, and history of chronic hepatitis B could indicate Budd-Chiari syndrome, which involves hepatic venous outflow obstruction and can lead to renal complications."
+        ],
+        [
+          "Diabetic nephropathy",
+          "The positive glucose in the urine and nephrotic range proteinuria could suggest diabetic nephropathy, although the absence of a known history of diabetes makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary tract infection",
+          "The presence of significant proteinuria and fatty casts, along with the CT findings, are not typical for a simple urinary tract infection."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Renal vein thrombosis",
+          "The presence of a filling defect in the right renal vein, decreased antithrombin III activity, and a history of chronic hepatitis B suggest renal vein thrombosis."
+        ],
+        [
+          "Nephrotic syndrome",
+          "The significant proteinuria, edema, and fatty casts in the urine are indicative of nephrotic syndrome."
+        ],
+        [
+          "Cirrhosis",
+          "The nodular liver, ascites, and history of chronic hepatitis B infection are consistent with cirrhosis."
+        ],
+        [
+          "Hereditary antithrombin III deficiency",
+          "The genetic testing confirming a mutation in the SERPINC1 gene explains the decreased antithrombin III activity and predisposition to thrombosis."
+        ],
+        [
+          "Hepatorenal syndrome",
+          "The combination of liver disease and renal impairment with ascites and edema could suggest hepatorenal syndrome."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary tract infection",
+          "The presence of proteinuria and fatty casts, along with the absence of typical symptoms like dysuria or fever, makes a UTI unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Nephrolithiasis",
+            "The combination of right flank pain and hematuria is classic for kidney stones."
+          ],
+          [
+            "Urinary tract infection (UTI)",
+            "Hematuria and flank pain can occur with a UTI, especially if it has progressed to pyelonephritis."
+          ],
+          [
+            "Renal cell carcinoma",
+            "Hematuria and flank pain can be symptoms of a renal mass."
+          ],
+          [
+            "Bladder cancer",
+            "Hematuria is a common symptom, and pain can occur if there is local invasion or obstruction."
+          ],
+          [
+            "Polycystic kidney disease",
+            "Can present with flank pain and hematuria due to cyst rupture or infection."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pulmonary embolism",
+            "The acute onset of pleuritic chest pain, shortness of breath, tachycardia, and mild cyanosis suggests a possible pulmonary embolism."
+          ],
+          [
+            "Renal colic",
+            "The initial presentation of right flank pain and hematuria is consistent with renal colic due to a kidney stone."
+          ],
+          [
+            "Pneumothorax",
+            "The sudden onset of pleuritic chest pain and shortness of breath, along with increased work of breathing, could indicate a pneumothorax."
+          ],
+          [
+            "Myocardial infarction",
+            "The combination of chest pain, shortness of breath, and diaphoresis raises the possibility of a myocardial infarction."
+          ],
+          [
+            "Panic attack",
+            "The patient's anxiety, tachycardia, and hyperventilation could be explained by a panic attack."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumonia",
+            "The clear lung auscultation makes pneumonia less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Renal vein thrombosis",
+            "The filling defect in the right renal vein, flank pain, and nephrotic syndrome findings (proteinuria, fatty casts) suggest renal vein thrombosis."
+          ],
+          [
+            "Pulmonary embolism",
+            "The pleuritic chest pain, shortness of breath, tachycardia, and history of frequent flying raise suspicion for a pulmonary embolism."
+          ],
+          [
+            "Hepatocellular carcinoma",
+            "The nodular liver, ascites, and history of chronic hepatitis B infection are suggestive of hepatocellular carcinoma."
+          ],
+          [
+            "Nephrotic syndrome",
+            "The significant proteinuria, fatty casts, and renal findings are consistent with nephrotic syndrome, possibly secondary to renal vein thrombosis."
+          ],
+          [
+            "Cirrhosis",
+            "The nodular liver and ascites are indicative of cirrhosis, likely due to chronic hepatitis B infection."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary tract infection",
+            "The presence of proteinuria and fatty casts, rather than pyuria or bacteriuria, makes a UTI unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Renal vein thrombosis",
+            "The filling defect in the right renal vein, flank pain, and nephrotic syndrome features suggest renal vein thrombosis, likely due to antithrombin III deficiency."
+          ],
+          [
+            "Pulmonary embolism",
+            "The pleuritic chest pain, shortness of breath, tachycardia, and decreased antithrombin III activity are consistent with a pulmonary embolism."
+          ],
+          [
+            "Nephrotic syndrome",
+            "The presence of 4+ proteinuria, fatty casts, and the nodular liver with ascites indicate nephrotic syndrome, possibly secondary to renal vein thrombosis."
+          ],
+          [
+            "Cirrhosis",
+            "The nodular liver and ascites on CT scan suggest cirrhosis, likely due to chronic hepatitis B infection."
+          ],
+          [
+            "Deep vein thrombosis",
+            "The patient's frequent flying, decreased antithrombin III activity, and symptoms of venous thrombosis raise suspicion for deep vein thrombosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Urinary tract infection",
+            "The presence of bloody urine and flank pain could suggest a UTI, but the absence of typical symptoms like dysuria and the presence of proteinuria and fatty casts make it unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_057_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports pleuritic chest pain and shortness of breath, which argues against antithrombin III deficiency, which typically presents with venous thromboembolism, not pulmonary embolism."
+    }
+  ]
+}

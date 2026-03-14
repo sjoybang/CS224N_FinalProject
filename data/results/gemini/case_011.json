@@ -1,0 +1,262 @@
+{
+  "case_id": "case_011",
+  "model": "gemini",
+  "ground_truth": "Progressive obstruction of expiratory airflow",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Chronic Bronchitis",
+          "Chronic cough is a hallmark symptom, and fatigue can be associated with the increased work of breathing."
+        ],
+        [
+          "Asthma",
+          "Cough and fatigue can be present in asthma, especially with chronic or poorly controlled disease."
+        ],
+        [
+          "COPD",
+          "This is a possibility given the chronic cough and fatigue, especially if there is a history of smoking or environmental exposures."
+        ],
+        [
+          "Post-Infectious Cough",
+          "A persistent cough and fatigue could linger following a respiratory infection."
+        ],
+        [
+          "Lung Cancer",
+          "Although less likely, chronic cough and fatigue can be initial symptoms of lung cancer, especially in older individuals."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease",
+          "The patient's chronic cough, fatigue, wheezing, and rhonchi are consistent with COPD."
+        ],
+        [
+          "Asthma",
+          "The presence of wheezing and chronic cough suggests possible asthma, even in an older adult."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic cough with rhonchi could indicate bronchiectasis, especially given the duration of symptoms."
+        ],
+        [
+          "Congestive Heart Failure",
+          "Distant heart sounds and respiratory rate of 24 could indicate underlying heart failure contributing to pulmonary symptoms."
+        ],
+        [
+          "Upper Respiratory Infection",
+          "Although chronic, an atypical or persistent upper respiratory infection could explain the cough and lung sounds."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "Temperature is normal, making pneumonia less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease",
+          "The decreased FEV1/FVC ratio, hyperinflation, flattened diaphragm, wheezing, and chronic cough strongly suggest COPD."
+        ],
+        [
+          "Asthma",
+          "Asthma can present with chronic cough, wheezing, decreased FEV1/FVC ratio, and hyperinflation, although the flattened diaphragm is less typical."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic cough with scattered rhonchi and potential for airflow obstruction could indicate bronchiectasis."
+        ],
+        [
+          "Allergic Bronchopulmonary Aspergillosis",
+          "This should be considered given the wheezing, chronic cough, and potential for lung hyperinflation, especially if there is a history of asthma or allergic rhinitis."
+        ],
+        [
+          "Emphysema",
+          "Emphysema is a subtype of COPD characterized by hyperinflation and destruction of alveolar walls, consistent with the X-ray findings and decreased FEV1/FVC ratio."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "No fever or acute symptoms are present."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease",
+          "The patient's chronic cough, fatigue, decreased FEV1/FVC ratio, hyperinflation, and flattened diaphragm are consistent with COPD."
+        ],
+        [
+          "Asthma",
+          "The patient's wheezing, decreased FEV1/FVC ratio, and chronic cough could indicate asthma, although the chronic nature and age of onset are less typical."
+        ],
+        [
+          "Bronchiectasis",
+          "Chronic cough with sputum production (though sputum culture is negative), wheezing, and abnormal lung findings on chest X-ray can suggest bronchiectasis."
+        ],
+        [
+          "Allergic Bronchopulmonary Aspergillosis",
+          "Given the wheezing and abnormal lung findings, ABPA should be considered, especially if there is a history of asthma or allergic rhinitis."
+        ],
+        [
+          "Obliterative Bronchiolitis",
+          "This should be considered given the obstructive pattern on PFTs and the chronic nature of the symptoms, even though the etiology is unclear."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial Pneumonia",
+          "Sputum culture is negative for bacterial pathogens."
+        ],
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "Alpha-1 antitrypsin level is normal."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Chronic Bronchitis",
+            "Chronic cough is a hallmark symptom, and fatigue can be associated with the increased work of breathing."
+          ],
+          [
+            "Asthma",
+            "Cough and fatigue can be present in asthma, especially with chronic or poorly controlled disease."
+          ],
+          [
+            "COPD",
+            "This is a possibility given the chronic cough and fatigue, especially if there is a history of smoking or environmental exposures."
+          ],
+          [
+            "Post-Infectious Cough",
+            "A persistent cough and fatigue could linger following a respiratory infection."
+          ],
+          [
+            "Lung Cancer",
+            "Although less likely, chronic cough and fatigue can be initial symptoms of lung cancer, especially in older individuals."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pneumonia",
+            "Egophony in the right lower lobe suggests consolidation consistent with pneumonia."
+          ],
+          [
+            "Lung cancer",
+            "Chronic cough and fatigue, along with abnormal lung sounds, raise suspicion for a possible malignancy."
+          ],
+          [
+            "Pulmonary embolism",
+            "Increased respiratory rate and abnormal lung sounds could indicate a pulmonary embolism."
+          ],
+          [
+            "Pleural effusion",
+            "Egophony and distant heart sounds may be caused by fluid accumulation in the pleural space."
+          ],
+          [
+            "Chronic bronchitis",
+            "Chronic cough and fatigue are common symptoms of chronic bronchitis, although egophony is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Normal",
+            "Symptoms and signs are present."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease",
+            "The decreased FEV1/FVC ratio, hyperinflation, and flattened diaphragm on chest X-ray strongly suggest COPD."
+          ],
+          [
+            "Asthma",
+            "While less likely given the patient's age, asthma can present with chronic cough, fatigue, and decreased FEV1/FVC ratio."
+          ],
+          [
+            "Bronchiectasis",
+            "Chronic cough and abnormal lung sounds could indicate bronchiectasis, though the PFT results are less typical."
+          ],
+          [
+            "Interstitial Lung Disease",
+            "Although less likely with hyperinflation, some ILDs can present with chronic cough and fatigue."
+          ],
+          [
+            "Lung Cancer",
+            "Chronic cough warrants consideration of lung cancer, especially given the patient's age, although other findings are less specific."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumonia",
+            "The chronic nature of the symptoms and lack of fever make pneumonia unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "The decreased FEV1/FVC ratio, hyperinflation, flattened diaphragm, chronic cough, and fatigue are consistent with COPD."
+          ],
+          [
+            "Asthma",
+            "Although less likely given the patient's age, asthma can present with similar pulmonary function test results and chronic cough."
+          ],
+          [
+            "Bronchiectasis",
+            "Chronic cough and abnormal lung sounds could indicate bronchiectasis, though the PFT results are more suggestive of obstructive disease."
+          ],
+          [
+            "Interstitial Lung Disease (ILD)",
+            "While less likely given the PFT results, some forms of ILD can present with chronic cough and fatigue, and the egophony could be a sign of lung consolidation."
+          ],
+          [
+            "Lung Cancer",
+            "Chronic cough warrants consideration of lung cancer, although other findings are more suggestive of other diagnoses."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Pneumonia",
+            "Sputum culture was negative."
+          ],
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "Alpha-1 antitrypsin level is normal."
+          ]
+        ]
+      },
+      "cf_id": "case_011_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of egophony on lung auscultation suggests consolidation, arguing against diffuse airway obstruction."
+    }
+  ]
+}

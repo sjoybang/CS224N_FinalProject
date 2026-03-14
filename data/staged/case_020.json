@@ -1,0 +1,25 @@
+{
+  "case_id": "case_020",
+  "source": "MedQA-USMLE",
+  "original_question": "A 48-year-old woman comes to the emergency department because of a photosensitive blistering rash on her hands, forearms, and face for 3 weeks. The lesions are not itchy. She has also noticed that her urine has been dark brown in color recently. Twenty years ago, she was successfully treated for Coats disease of the retina via retinal sclerotherapy. She is currently on hormonal replacement therapy for perimenopausal symptoms. Her aunt and sister have a history of a similar skin lesions. Examination shows multiple fluid-filled blisters and oozing erosions on the forearms, dorsal side of both hands, and forehead. There is hyperpigmented scarring and patches of bald skin along the sides of the blisters. Laboratory studies show a normal serum ferritin concentration. Which of the following is the most appropriate next step in management to induce remission in this patient?",
+  "ground_truth": "Porphyria cutanea tarda",
+  "base": {
+    "stage_1": "A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks.",
+    "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals multiple fluid-filled blisters and oozing erosions on the forearms, dorsal hands, and forehead. Hyperpigmented scarring and areas of alopecia are noted along the sides of the blisters.",
+    "stage_3": "Laboratory studies reveal dark brown urine and a normal serum ferritin concentration. The patient reports a history of successfully treated Coats disease of the retina 20 years ago and is currently taking hormonal replacement therapy. She also reports that her aunt and sister have a history of similar skin lesions.",
+    "stage_4": "Further laboratory testing reveals elevated levels of porphyrins in the urine, confirming the diagnosis."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of blisters and erosions on sun-exposed areas argues against porphyria cutanea tarda, which typically presents with these skin findings.",
+      "rules_out": "Porphyria cutanea tarda",
+      "stage_1": "A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks.",
+      "stage_2": "The patient's vital signs are within normal limits. Physical examination reveals no fluid-filled blisters or oozing erosions on the forearms, dorsal hands, and forehead. Hyperpigmented scarring and areas of alopecia are noted along the sides of the affected areas.",
+      "stage_3": "Laboratory studies reveal dark brown urine and a normal serum ferritin concentration. The patient reports a history of successfully treated Coats disease of the retina 20 years ago and is currently taking hormonal replacement therapy. She also reports that her aunt and sister have a history of similar skin lesions.",
+      "stage_4": "Further laboratory testing reveals elevated levels of porphyrins in the urine, confirming the diagnosis.",
+      "cf_id": "case_020_cf_a"
+    }
+  ]
+}

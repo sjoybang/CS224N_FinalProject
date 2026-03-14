@@ -1,0 +1,268 @@
+{
+  "case_id": "case_025",
+  "model": "gpt4",
+  "ground_truth": "Wernicke encephalopathy",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "Double vision is a common early symptom due to ocular muscle weakness."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Can present with double vision due to demyelination affecting cranial nerves."
+        ],
+        [
+          "Cranial Nerve Palsy",
+          "Isolated cranial nerve palsies, such as CN III, IV, or VI, can cause double vision."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "Can cause double vision due to extraocular muscle involvement."
+        ],
+        [
+          "Intracranial Mass",
+          "A mass effect can lead to cranial nerve compression, resulting in double vision."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Wernicke's encephalopathy",
+          "The combination of confusion, ataxia, nystagmus, and a history of alcohol abuse strongly suggests this condition."
+        ],
+        [
+          "Korsakoff syndrome",
+          "The significant memory impairment, confabulation, and indifference towards family are indicative of this alcohol-related neurocognitive disorder."
+        ],
+        [
+          "Alcoholic cerebellar degeneration",
+          "The broad-based gait and history of chronic alcohol abuse suggest cerebellar involvement."
+        ],
+        [
+          "Hepatic encephalopathy",
+          "Confusion and neurological symptoms in the context of alcohol abuse could indicate liver dysfunction affecting the brain."
+        ],
+        [
+          "Thiamine deficiency",
+          "The neurological symptoms and history of alcohol abuse could be due to a deficiency in thiamine, which is common in alcoholics."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Multiple sclerosis",
+          "The acute presentation and history of alcohol abuse make this less likely."
+        ],
+        [
+          "Myasthenia gravis",
+          "The presence of nystagmus and confusion is not typical for this condition."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Wernicke's encephalopathy",
+          "The combination of ophthalmoplegia, ataxia, confusion, history of alcohol abuse, decreased erythrocyte transketolase activity, and mammillary body atrophy strongly suggests this diagnosis."
+        ],
+        [
+          "Korsakoff syndrome",
+          "The significant memory impairment, confabulation, and mammillary body atrophy are indicative of this condition, often following Wernicke's encephalopathy."
+        ],
+        [
+          "Alcoholic cerebellar degeneration",
+          "The broad-based gait and history of chronic alcohol abuse suggest this condition, although it does not fully explain the ophthalmoplegia and confusion."
+        ],
+        [
+          "Thiamine deficiency",
+          "The decreased erythrocyte transketolase activity and alcohol abuse history point towards thiamine deficiency, which can lead to Wernicke's encephalopathy."
+        ],
+        [
+          "Central pontine myelinolysis",
+          "Although less likely, the confusion and gait disturbance could be related to this condition, especially in the context of chronic alcohol abuse."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Multiple sclerosis",
+          "The acute presentation and specific findings of mammillary body atrophy and decreased erythrocyte transketolase activity are not typical for this condition."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Wernicke's encephalopathy",
+          "The patient's symptoms, history of alcohol abuse, decreased erythrocyte transketolase activity, and improvement with thiamine administration strongly suggest this diagnosis."
+        ],
+        [
+          "Korsakoff syndrome",
+          "The significant memory impairment, confabulation, and indifference towards family are consistent with this condition, often associated with Wernicke's encephalopathy."
+        ],
+        [
+          "Alcoholic cerebellar degeneration",
+          "The broad-based gait and history of alcohol abuse could indicate this condition, although the rapid improvement with thiamine makes it less likely."
+        ],
+        [
+          "Central pontine myelinolysis",
+          "Although less likely due to the rapid improvement with thiamine, the confusion and gait disturbance could suggest this diagnosis in the context of electrolyte imbalances."
+        ],
+        [
+          "Hepatic encephalopathy",
+          "The confusion and history of alcohol abuse could suggest this diagnosis, but the rapid improvement with thiamine makes it less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Multiple sclerosis",
+          "The acute presentation and rapid improvement with thiamine administration are inconsistent with this diagnosis."
+        ],
+        [
+          "Myasthenia gravis",
+          "The improvement with thiamine and presence of ataxia and confusion are not typical for this condition."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "Double vision is a common early symptom due to ocular muscle weakness."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Can present with double vision due to demyelination affecting cranial nerves."
+          ],
+          [
+            "Cranial Nerve Palsy",
+            "Isolated cranial nerve palsies, such as CN III, IV, or VI, can cause double vision."
+          ],
+          [
+            "Brainstem Lesion",
+            "Lesions in the brainstem can affect cranial nerves leading to diplopia."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "Can cause extraocular muscle dysfunction leading to double vision."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff syndrome",
+            "The patient's history of alcohol abuse, confusion, memory impairment, and confabulation are classic signs of this condition."
+          ],
+          [
+            "Alcohol-related dementia",
+            "The chronic alcohol abuse and cognitive symptoms, including memory issues and indifference, suggest this possibility."
+          ],
+          [
+            "Hepatic encephalopathy",
+            "Alcohol abuse can lead to liver dysfunction, which may cause confusion and cognitive changes."
+          ],
+          [
+            "Alcohol withdrawal syndrome",
+            "The recent worsening of alcohol abuse and symptoms of agitation could indicate withdrawal effects."
+          ],
+          [
+            "Thiamine deficiency",
+            "Chronic alcohol use can lead to thiamine deficiency, contributing to neurological symptoms like confusion and gait disturbances."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Multiple sclerosis",
+            "The absence of nystagmus, ophthalmoplegia, and ataxia makes this less likely."
+          ],
+          [
+            "Stroke",
+            "Stable vital signs and the absence of focal neurological deficits reduce the likelihood of an acute stroke."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff syndrome",
+            "The combination of alcohol abuse, confusion, memory impairment, confabulation, and mammillary body atrophy strongly suggests this diagnosis."
+          ],
+          [
+            "Alcohol-related dementia",
+            "The history of alcohol abuse and cognitive decline, including memory impairment and indifference, are consistent with this condition."
+          ],
+          [
+            "Thiamine deficiency",
+            "Decreased erythrocyte transketolase activity and alcohol abuse indicate a deficiency in thiamine, which can cause neurological symptoms."
+          ],
+          [
+            "Alcoholic cerebellar degeneration",
+            "The broad-based gait and history of alcohol abuse could suggest cerebellar involvement, although the absence of ataxia makes this less likely."
+          ],
+          [
+            "Hepatic encephalopathy",
+            "Alcohol abuse and confusion could indicate liver dysfunction leading to encephalopathy, though specific liver function test results are not provided."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Multiple sclerosis",
+            "The absence of nystagmus, ophthalmoplegia, and ataxia, along with the MRI findings, make this unlikely."
+          ],
+          [
+            "Stroke",
+            "The gradual onset and specific MRI findings do not support an acute vascular event."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Wernicke's encephalopathy",
+            "The patient's symptoms, history of alcohol abuse, decreased erythrocyte transketolase activity, and improvement with thiamine administration strongly suggest this diagnosis."
+          ],
+          [
+            "Korsakoff syndrome",
+            "The significant memory impairment, confabulation, and indifference towards family align with this condition, often associated with Wernicke's encephalopathy."
+          ],
+          [
+            "Alcohol-related dementia",
+            "The chronic alcohol abuse and cognitive symptoms could indicate this condition, although the rapid improvement with thiamine makes it less likely."
+          ],
+          [
+            "Thiamine deficiency",
+            "The laboratory findings and rapid response to thiamine supplementation support this diagnosis as a contributing factor."
+          ],
+          [
+            "Alcohol withdrawal syndrome",
+            "The patient's agitation and confusion could be related to withdrawal, but the specific neurological findings and response to thiamine make this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Multiple sclerosis",
+            "The absence of nystagmus, ophthalmoplegia, and ataxia, along with the specific MRI findings, rule this out."
+          ],
+          [
+            "Stroke",
+            "The gradual onset and improvement with thiamine are inconsistent with a stroke."
+          ],
+          [
+            "Brain tumor",
+            "The rapid improvement with thiamine and specific MRI findings do not support this diagnosis."
+          ]
+        ]
+      },
+      "cf_id": "case_025_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's neurological exam reveals normal findings, which argues against Wernicke encephalopathy."
+    }
+  ]
+}

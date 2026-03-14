@@ -1,0 +1,244 @@
+{
+  "case_id": "case_053",
+  "model": "gemini",
+  "ground_truth": "Nephrotic syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Periorbital cellulitis",
+          "Unilateral periorbital swelling in a child suggests possible infection."
+        ],
+        [
+          "Allergic reaction",
+          "Periorbital swelling can be a manifestation of an allergic response."
+        ],
+        [
+          "Nephrotic syndrome",
+          "This can present with periorbital edema due to protein loss."
+        ],
+        [
+          "Viral conjunctivitis",
+          "Viral infections can cause periorbital swelling, especially in children."
+        ],
+        [
+          "Insect bite",
+          "An insect bite near the eye could cause localized swelling."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Nephrotic syndrome",
+          "The periorbital and lower extremity edema, along with the patient's age, strongly suggest nephrotic syndrome as a likely cause."
+        ],
+        [
+          "Glomerulonephritis",
+          "Edema and age could indicate a glomerulonephritis, although the unremarkable exam makes this less likely than nephrotic syndrome."
+        ],
+        [
+          "Heart failure",
+          "While less likely given the age and lack of respiratory symptoms, heart failure could present with edema."
+        ],
+        [
+          "Protein-losing enteropathy",
+          "This condition can cause edema due to hypoalbuminemia, although it is less common than nephrotic syndrome in this age group."
+        ],
+        [
+          "Allergic reaction",
+          "Although less likely with the persistent edema, an allergic reaction could cause periorbital edema, but would not explain the lower extremity edema as well."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Malnutrition",
+          "Unlikely given the acute presentation."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Nephrotic syndrome",
+          "The presence of periorbital and lower extremity edema, 4+ proteinuria, elevated protein/creatinine ratio, hypoalbuminemia, and fatty casts strongly suggests nephrotic syndrome."
+        ],
+        [
+          "Minimal change disease",
+          "This is the most common cause of nephrotic syndrome in children, presenting with edema, proteinuria, and normal complement levels."
+        ],
+        [
+          "Focal segmental glomerulosclerosis",
+          "This is another potential cause of nephrotic syndrome, although less common than minimal change disease in young children, and can present with similar findings."
+        ],
+        [
+          "Membranous nephropathy",
+          "While less common in children, membranous nephropathy can cause nephrotic syndrome, presenting with proteinuria and edema."
+        ],
+        [
+          "Membranoproliferative glomerulonephritis",
+          "Although complement levels are normal, early stages or certain types of MPGN could present with nephrotic syndrome before complement abnormalities are fully established."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute glomerulonephritis",
+          "The absence of hematuria and normal complement levels make this less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Minimal Change Disease",
+          "The renal biopsy showing diffuse effacement of podocyte foot processes strongly supports this diagnosis."
+        ],
+        [
+          "Focal Segmental Glomerulosclerosis",
+          "While less likely given the biopsy results, FSGS can sometimes present with similar nephrotic syndrome features."
+        ],
+        [
+          "Membranous Nephropathy",
+          "Although less common in children, membranous nephropathy can cause nephrotic syndrome and should be considered."
+        ],
+        [
+          "Membranoproliferative Glomerulonephritis",
+          "This glomerulonephritis can present with nephrotic syndrome, though complement levels are normal in this case."
+        ],
+        [
+          "Congenital Nephrotic Syndrome",
+          "Although the patient is 4 years old, congenital nephrotic syndrome should be considered, especially if there is a family history."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Post-streptococcal glomerulonephritis",
+          "Normal complement levels and lack of hematuria make this less likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Periorbital cellulitis",
+            "Unilateral periorbital swelling in a child suggests possible infection."
+          ],
+          [
+            "Allergic reaction",
+            "Periorbital swelling can be a manifestation of an allergic response."
+          ],
+          [
+            "Nephrotic syndrome",
+            "This can present with periorbital edema due to protein loss."
+          ],
+          [
+            "Viral conjunctivitis",
+            "Viral infections can cause periorbital swelling, especially in children."
+          ],
+          [
+            "Insect bite",
+            "An insect bite near the eye could cause localized swelling."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Nephrotic syndrome",
+            "The periorbital and lower extremity edema, along with the age of the patient, are highly suggestive of nephrotic syndrome."
+          ],
+          [
+            "Acute glomerulonephritis",
+            "The edema and rash could be consistent with post-infectious glomerulonephritis."
+          ],
+          [
+            "Allergic reaction",
+            "The periorbital edema and rash could be due to an allergic reaction, although the lower extremity edema is less typical."
+          ],
+          [
+            "Heart failure",
+            "Although less likely in a child, edema could be a sign of heart failure."
+          ],
+          [
+            "Protein-losing enteropathy",
+            "This could cause edema due to hypoalbuminemia, although the rash is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Nephrotic syndrome",
+            "The presence of periorbital and lower extremity edema, 4+ proteinuria, elevated protein/creatinine ratio, hypoalbuminemia, and fatty casts strongly suggests nephrotic syndrome."
+          ],
+          [
+            "Post-infectious glomerulonephritis",
+            "Although complement levels are normal, the edema, proteinuria, and rash could still indicate a resolving glomerulonephritis."
+          ],
+          [
+            "Membranoproliferative glomerulonephritis",
+            "This glomerulonephritis can present with nephrotic syndrome and should be considered despite normal complement levels."
+          ],
+          [
+            "Minimal change disease",
+            "This is a common cause of nephrotic syndrome in children, presenting with edema and heavy proteinuria."
+          ],
+          [
+            "Focal segmental glomerulosclerosis",
+            "This condition can cause nephrotic syndrome and may present with similar lab findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute kidney injury",
+            "Creatinine is normal."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Minimal Change Disease",
+            "The renal biopsy showing diffuse effacement of podocyte foot processes strongly supports this diagnosis."
+          ],
+          [
+            "Focal Segmental Glomerulosclerosis",
+            "While minimal change disease is most likely, FSGS can present similarly with nephrotic syndrome and may only be differentiated by biopsy findings not fully described."
+          ],
+          [
+            "Membranous Nephropathy",
+            "Although less likely given the age and lack of hematuria, membranous nephropathy can cause nephrotic syndrome."
+          ],
+          [
+            "Membranoproliferative Glomerulonephritis",
+            "While complement levels are normal, MPGN can sometimes present with nephrotic syndrome and should be considered."
+          ],
+          [
+            "IgA Nephropathy",
+            "Although IgA nephropathy typically presents with hematuria, atypical presentations with nephrotic syndrome are possible."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Post-streptococcal glomerulonephritis",
+            "Normal complement levels and lack of hematuria make this less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_053_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of a rash argues against nephrotic syndrome, which typically does not present with dermatological findings."
+    }
+  ]
+}

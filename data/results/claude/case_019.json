@@ -1,0 +1,265 @@
+{
+  "case_id": "case_019",
+  "model": "claude",
+  "ground_truth": "Delirium tremens",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Postoperative pain or anxiety",
+          "Tachycardia is commonly triggered by inadequate pain control or anxiety in the immediate postoperative period."
+        ],
+        [
+          "Hypovolemia/bleeding",
+          "Fluid loss from surgery or occult bleeding can cause compensatory tachycardia in the postoperative setting."
+        ],
+        [
+          "Pulmonary embolism",
+          "Postoperative patients are at increased risk for thromboembolic events, which classically present with tachycardia and pacing sensations."
+        ],
+        [
+          "Atrial fibrillation with rapid ventricular response",
+          "New-onset atrial fibrillation can occur postoperatively due to surgical stress, electrolyte imbalances, or inflammation."
+        ],
+        [
+          "Supraventricular tachycardia",
+          "Paroxysmal SVT can be triggered by postoperative stress, catecholamine release, or electrolyte disturbances."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Sepsis",
+          "Postoperative patient with fever, tachycardia, altered mental status, and recent cholangitis despite antibiotic treatment suggests possible sepsis."
+        ],
+        [
+          "Alcohol withdrawal (delirium tremens)",
+          "Tachycardia, hypertension, diaphoresis, agitation, disorientation, and inability to stay still appearing 3 days postoperatively is classic timing for alcohol withdrawal."
+        ],
+        [
+          "Thyroid storm",
+          "Tachycardia, fever, hypertension, diaphoresis, agitation, and altered mental status could represent thyrotoxic crisis triggered by surgical stress."
+        ],
+        [
+          "Pulmonary embolism",
+          "Postoperative day 3 patient with tachycardia, tachypnea, and agitation raises concern for PE, though fever and disorientation are less typical."
+        ],
+        [
+          "Drug-induced delirium",
+          "Tachycardia, fever, agitation, and disorientation could represent adverse reaction to piperacillin-tazobactam or other perioperative medications."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Postoperative intra-abdominal infection/abscess",
+          "Unremarkable abdominal examination makes this less likely despite fever and recent cholangitis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Alcohol withdrawal (delirium tremens)",
+          "Tachycardia, hypertension, hyperthermia, diaphoresis, agitation, disorientation, and restlessness are classic for alcohol withdrawal, typically emerging 72 hours post-operatively when intake ceases."
+        ],
+        [
+          "Thyroid storm",
+          "Tachycardia, hyperthermia, hypertension, diaphoresis, agitation, and altered mental status suggest thyrotoxicosis triggered by surgical stress."
+        ],
+        [
+          "Sepsis",
+          "Post-operative patient with fever, tachycardia, altered mental status, and recent cholangitis despite antibiotic treatment could indicate persistent or new infection."
+        ],
+        [
+          "Drug-induced delirium",
+          "Piperacillin-tazobactam or other perioperative medications can cause hyperactive delirium with autonomic instability and disorientation."
+        ],
+        [
+          "Anticholinergic syndrome",
+          "Medications used perioperatively could cause tachycardia, hyperthermia, agitation, altered mental status, and flushed/sweaty appearance."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Intra-abdominal surgical complication",
+          "CT scan shows no surgical complications and abdominal exam is unremarkable."
+        ],
+        [
+          "Biliary sepsis from cholangitis progression",
+          "While possible, stable transaminitis and benign abdominal exam make this less likely as primary cause."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Alcohol withdrawal (delirium tremens)",
+          "Timeline fits 3 days post-cessation of heavy daily alcohol use with autonomic hyperactivity, hyperthermia, confusion, and psychomotor agitation."
+        ],
+        [
+          "Sepsis from cholangitis",
+          "Post-operative fever and tachycardia in patient with recent cholangitis, though normal labs and imaging make this less likely."
+        ],
+        [
+          "Thyroid storm",
+          "Presents with tachycardia, hyperthermia, hypertension, diaphoresis, and altered mental status, though no known thyroid history reported."
+        ],
+        [
+          "Post-operative infection (occult abscess)",
+          "Fever and tachycardia 3 days post-op could indicate infection not visible on CT, though unremarkable abdominal exam argues against this."
+        ],
+        [
+          "Anticholinergic toxicity",
+          "Agitation, hyperthermia, tachycardia, and confusion could suggest medication reaction, though no anticholinergic agents specifically mentioned."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Surgical complication (bile leak, bowel perforation)",
+          "CT abdomen shows no surgical complications and abdominal exam is unremarkable."
+        ],
+        [
+          "Pneumonia",
+          "No respiratory symptoms beyond mild tachypnea and fever has alternative explanation."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Postoperative atrial fibrillation",
+            "Surgical stress and inflammation commonly trigger new-onset atrial fibrillation in the immediate postoperative period."
+          ],
+          [
+            "Pulmonary embolism",
+            "Postoperative immobilization and hypercoagulability increase thromboembolism risk, which can present with tachycardia."
+          ],
+          [
+            "Postoperative pain/anxiety",
+            "Inadequate pain control or anxiety can activate sympathetic response causing sinus tachycardia."
+          ],
+          [
+            "Hypovolemia/bleeding",
+            "Occult bleeding or fluid shifts after surgery can cause compensatory tachycardia from decreased intravascular volume."
+          ],
+          [
+            "Hyperthyroidism/thyroid storm",
+            "Undiagnosed or undertreated thyroid disease can be unmasked by surgical stress causing tachycardia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Sepsis",
+            "Tachycardia, fever, altered mental status, and diaphoresis in a patient with recent cholangitis and post-operative status suggest evolving systemic infection."
+          ],
+          [
+            "Opioid overdose",
+            "Constricted pupils, somnolence, altered mental status, and diaphoresis are classic signs of opioid toxicity in a post-operative patient likely receiving analgesics."
+          ],
+          [
+            "Hepatic encephalopathy",
+            "Confusion with disorientation to place and time in a patient with recent cholangitis could indicate hepatic dysfunction causing encephalopathy."
+          ],
+          [
+            "Thyroid storm",
+            "Tachycardia, hypertension, fever, diaphoresis, and altered mental status could represent thyrotoxicosis, though miosis is atypical."
+          ],
+          [
+            "Anticholinesterase toxicity",
+            "Miosis, diaphoresis, altered mental status, and tachycardia could suggest cholinergic crisis, though less common in this post-operative setting."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anastomotic leak/intra-abdominal abscess",
+            "Unremarkable abdominal examination makes intra-abdominal complication less likely as primary cause."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Opioid toxicity",
+            "Somnolence, constricted pupils, and altered mental status are classic signs of opioid overdose in a post-operative patient likely receiving narcotic analgesia."
+          ],
+          [
+            "Sepsis from persistent/recurrent cholangitis",
+            "Tachycardia, fever, altered mental status, and recent history of cholangitis despite antibiotic treatment suggest possible ongoing infection."
+          ],
+          [
+            "Anticholinergic syndrome",
+            "Tachycardia, hyperthermia, altered mental status, and sweating could suggest anticholinergic toxicity, though constricted pupils are atypical."
+          ],
+          [
+            "Thyroid storm",
+            "Tachycardia, hyperthermia, sweating, hypertension, and altered mental status could represent thyrotoxicosis, possibly precipitated by surgical stress."
+          ],
+          [
+            "Delirium tremens/alcohol withdrawal",
+            "Post-operative tachycardia, hypertension, fever, diaphoresis, and disorientation can occur in unrecognized alcohol withdrawal."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Intra-abdominal surgical complication",
+            "CT abdomen shows no surgical complications and abdominal exam is benign."
+          ],
+          [
+            "Acute hepatic failure",
+            "Transaminitis is mild and unchanged from baseline, and comprehensive metabolic panel is otherwise normal."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Alcohol withdrawal syndrome",
+            "Timeline of 3 days since last drink, tachycardia, hypertension, diaphoresis, altered mental status, and hyperthermia are classic features of moderate-to-severe alcohol withdrawal."
+          ],
+          [
+            "Delirium tremens",
+            "Most severe form of alcohol withdrawal typically occurring 48-96 hours after cessation, presenting with confusion, autonomic instability, and hyperthermia in patient with chronic heavy alcohol use."
+          ],
+          [
+            "Sepsis from cholangitis",
+            "Post-operative fever, tachycardia, and altered mental status could represent persistent or recurrent infection despite antibiotic therapy."
+          ],
+          [
+            "Wernicke encephalopathy",
+            "Confusion and disorientation in chronic alcohol user at risk for thiamine deficiency, though ophthalmoplegia and ataxia are not reported."
+          ],
+          [
+            "Opioid toxicity",
+            "Constricted pupils and somnolence suggest opioid effect, though tachycardia and hypertension are atypical for isolated opioid toxicity."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Surgical complication (anastomotic leak, abscess, bile duct injury)",
+            "CT abdomen shows no surgical complications and abdominal exam is unremarkable."
+          ],
+          [
+            "Metabolic encephalopathy from electrolyte disturbance",
+            "Comprehensive metabolic panel is normal."
+          ]
+        ]
+      },
+      "cf_id": "case_019_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are now noted to be constricted and she is somnolent, findings that argue against delirium tremens."
+    }
+  ]
+}

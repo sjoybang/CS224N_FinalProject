@@ -1,0 +1,266 @@
+{
+  "case_id": "case_044",
+  "model": "claude",
+  "ground_truth": "Lisinopril-induced acute kidney injury",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute coronary syndrome (unstable angina/NSTEMI)",
+          "Classic anginal symptoms with radiation to jaw and arm in a patient with multiple cardiac risk factors (diabetes, hypertension) and exertional pattern."
+        ],
+        [
+          "Stable angina pectoris",
+          "History of similar episodes with physical exertion suggests chronic coronary artery disease with predictable ischemic symptoms."
+        ],
+        [
+          "STEMI (ST-elevation myocardial infarction)",
+          "Chest pain radiating to jaw and arm could represent complete coronary occlusion requiring immediate intervention."
+        ],
+        [
+          "GERD with esophageal spasm",
+          "Known GERD history could cause chest pain that mimics cardiac symptoms, though radiation pattern is less typical."
+        ],
+        [
+          "Aortic dissection",
+          "Acute chest pain in hypertensive patient must include this life-threatening diagnosis in the differential."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "At this early stage without diagnostic test results, no diagnoses can be definitively ruled out."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute coronary syndrome (unstable angina or NSMTI)",
+          "Chest pain radiating to jaw and arm with history of exertional episodes, multiple cardiac risk factors (diabetes, hypertension), and current symptoms suggest myocardial ischemia."
+        ],
+        [
+          "Stable angina pectoris",
+          "Recurrent exertional chest pain pattern in a patient with diabetes and hypertension suggests chronic coronary artery disease, though current rest symptoms are concerning."
+        ],
+        [
+          "GERD with esophageal spasm",
+          "Known GERD history could cause chest pain, though radiation to jaw and arm and exertional pattern make this less likely than cardiac causes."
+        ],
+        [
+          "Acute myocardial infarction (STEMI)",
+          "Classic presentation of radiating chest pain with cardiovascular risk factors, though would expect more diagnostic certainty with further testing."
+        ],
+        [
+          "Hypertensive urgency",
+          "Elevated blood pressure (150/90) with chest pain could represent hypertensive emergency with cardiac strain, though BP elevation is relatively modest."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnosis without ECG, cardiac biomarkers, and further diagnostic testing."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute tubular necrosis (contrast-induced nephropathy)",
+          "Acute kidney injury with elevated creatinine following cardiac catheterization with contrast dye administration for acute MI is highly likely."
+        ],
+        [
+          "Cardiogenic shock",
+          "Hypotension (90/60) with acute MI and elevated creatinine suggests reduced cardiac output causing end-organ hypoperfusion and prerenal azotemia."
+        ],
+        [
+          "ACE inhibitor-induced acute kidney injury",
+          "New hypotension and elevated creatinine the day after MI treatment suggests ACE inhibitor initiation causing efferent arteriolar dilation and reduced GFR."
+        ],
+        [
+          "Right ventricular infarction",
+          "ST elevations in anterior leads with subsequent hypotension and potential prerenal azotemia could indicate RV involvement complicating anterior MI."
+        ],
+        [
+          "Medication-induced hypotension with prerenal azotemia",
+          "Aggressive treatment with nitrates, beta-blockers, and antihypertensives post-MI causing hypotension and secondary prerenal kidney injury."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute glomerulonephritis",
+          "No proteinuria, hematuria, or other systemic features; timeline inconsistent with acute presentation following MI treatment."
+        ],
+        [
+          "Bilateral renal artery stenosis",
+          "Would not cause acute deterioration overnight; chronic condition inconsistent with rapid creatinine rise."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "ACE inhibitor-induced acute kidney injury in bilateral renal artery stenosis",
+          "Lisinopril discontinuation leading to rapid creatinine normalization in a patient with cardiovascular disease strongly suggests hemodynamically-mediated AKI from bilateral RAS or solitary functioning kidney with unilateral RAS."
+        ],
+        [
+          "ACE inhibitor-induced prerenal azotemia from hypotension",
+          "The combination of ACE inhibitor, diuretic, and beta-blocker in the setting of acute MI led to hypotension (90/60 mm Hg) causing prerenal AKI that resolved with drug discontinuation and fluids."
+        ],
+        [
+          "Cardiorenal syndrome type 1",
+          "Acute MI with reduced cardiac output can lead to acute kidney injury, though the rapid resolution with lisinopril discontinuation alone makes this less likely as the primary mechanism."
+        ],
+        [
+          "Contrast-induced nephropathy",
+          "If cardiac catheterization was performed during acute MI treatment, contrast exposure could explain the acute rise in creatinine, though timing and rapid resolution with ACE inhibitor discontinuation is atypical."
+        ],
+        [
+          "Acute tubular necrosis from hypoperfusion",
+          "Hypotension in the setting of acute MI could have caused ischemic ATN, though the very rapid return to baseline creatinine (48 hours) is unusually fast for ATN recovery."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Volume depletion from diuretics alone",
+          "The rapid and complete resolution specifically after lisinopril discontinuation (rather than just with fluids) points to an ACE inhibitor-specific mechanism rather than simple volume depletion."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute coronary syndrome (unstable angina or MYOCARDIAL INFARCTION)",
+            "Classic presentation of chest pain radiating to jaw and left arm in a patient with multiple cardiac risk factors (diabetes, hypertension) and history of exertional symptoms suggestive of coronary artery disease."
+          ],
+          [
+            "Stable angina pectoris with acute exacerbation",
+            "Patient reports similar episodes during physical exertion in the past, suggesting chronic coronary insufficiency now presenting acutely."
+          ],
+          [
+            "Gastroesophageal reflux disease exacerbation",
+            "Known GERD history could cause chest pain that may radiate, though the radiation pattern to jaw and left arm is less typical."
+          ],
+          [
+            "Aortic dissection",
+            "Diabetic and hypertensive patient presenting with chest pain radiating to other areas, though jaw/arm radiation is less common than back pain in dissection."
+          ],
+          [
+            "Esophageal spasm",
+            "Can mimic cardiac chest pain and radiate to jaw/arm, and patient has known GERD which is associated with esophageal motility disorders."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses; further evaluation including ECG, cardiac biomarkers, and imaging is needed."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute coronary syndrome (unstable angina/NSMTEI)",
+            "Exertional chest pain radiating to jaw and arm in a patient with multiple cardiovascular risk factors (diabetes, hypertension) is classic for cardiac ischemia."
+          ],
+          [
+            "Stable angina pectoris with acute exacerbation",
+            "History of similar exertional episodes suggests chronic coronary artery disease now presenting with rest symptoms."
+          ],
+          [
+            "Acute myocardial infarction (STEMI)",
+            "The radiation pattern, risk factors, and acute presentation are consistent with complete coronary occlusion requiring immediate evaluation."
+          ],
+          [
+            "Acute decompensated heart failure",
+            "Bilateral lower extremity edema, elevated blood pressure, and tachycardia suggest volume overload with possible cardiac decompensation causing chest discomfort."
+          ],
+          [
+            "Hypertensive emergency with cardiac strain",
+            "Significantly elevated blood pressure (150/90) with tachycardia could cause myocardial oxygen demand-supply mismatch producing anginal symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "GERD",
+            "While the patient has a history of GERD, the radiation to jaw and arm, exertional pattern, and cardiovascular risk factors make this an unlikely primary cause of current symptoms."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "ACE inhibitor-induced acute kidney injury",
+            "New acute kidney injury (creatinine 1.0\u21922.3 mg/dL) with hypotension following initiation of ACE inhibitor therapy for acute MI suggests drug-induced prerenal azotemia."
+          ],
+          [
+            "Cardiogenic shock",
+            "ST-elevation MI in anterior leads (V3-V6) with subsequent hypotension (BP 90/60), dizziness, and elevated creatinine suggests pump failure with hypoperfusion."
+          ],
+          [
+            "Right ventricular infarction",
+            "Hypotension and acute kidney injury post-MI may indicate RV involvement causing decreased cardiac output and prerenal azotemia."
+          ],
+          [
+            "Contrast-induced nephropathy",
+            "Acute rise in creatinine following presumed cardiac catheterization for STEMI could represent contrast-related acute tubular necrosis."
+          ],
+          [
+            "Acute tubular necrosis from hypoperfusion",
+            "Prolonged hypotension from cardiogenic shock or aggressive diuresis may have caused ischemic acute tubular necrosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypervolemic heart failure",
+            "Patient is now hypotensive rather than hypertensive, suggesting volume depletion or pump failure rather than volume overload as primary issue."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "ACE inhibitor-induced acute kidney injury in bilateral renal artery stenosis",
+            "Lisinopril discontinuation with rapid creatinine normalization suggests ACE inhibitor unmasking bilateral RAS or stenosis in a solitary functioning kidney."
+          ],
+          [
+            "ACE inhibitor-induced acute interstitial nephritis",
+            "ACE inhibitors can cause AIN, though the rapid resolution within 48 hours after discontinuation is atypically fast for this mechanism."
+          ],
+          [
+            "Cardiorenal syndrome type 1",
+            "Acute MI causing reduced cardiac output led to acute kidney injury, compounded by ACE inhibitor use in the setting of hypotension."
+          ],
+          [
+            "Contrast-induced nephropathy",
+            "If cardiac catheterization was performed during MI treatment, contrast exposure could explain AKI, though timing and rapid recovery favor ACE inhibitor effect."
+          ],
+          [
+            "Hypovolemia-induced prerenal azotemia",
+            "Combination of diuretic use, decreased oral intake during acute illness, and ACE inhibitor causing efferent arteriolar dilation resulted in prerenal AKI."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute tubular necrosis",
+            "Would not resolve to baseline within 48 hours of ACE inhibitor discontinuation alone without dialysis."
+          ],
+          [
+            "Rhabdomyolysis",
+            "No mention of elevated CK, myoglobinuria, or muscle symptoms."
+          ],
+          [
+            "Obstructive uropathy",
+            "Bilateral lower extremity edema and rapid resolution with medical management argues against obstruction."
+          ]
+        ]
+      },
+      "cf_id": "case_044_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of bilateral lower extremity edema makes lisinopril-induced AKI less likely, as it suggests a volume overload state that is not typically associated with ACE inhibitor-induced kidney injury."
+    }
+  ]
+}

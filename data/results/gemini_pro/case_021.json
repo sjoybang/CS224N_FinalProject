@@ -1,0 +1,280 @@
+{
+  "case_id": "case_021",
+  "model": "gemini_pro",
+  "ground_truth": "Ureteral stone",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Nephrolithiasis",
+          "The acute onset of severe, unilateral flank pain is the classic presentation for a kidney stone causing ureteral obstruction."
+        ],
+        [
+          "Pyelonephritis",
+          "An infection of the kidney is a common cause of flank pain, which can be severe and of acute onset."
+        ],
+        [
+          "Musculoskeletal Strain",
+          "Acute strain or spasm of the paraspinal or flank muscles can mimic visceral pain and present with severe, localized pain."
+        ],
+        [
+          "Renal Infarction",
+          "Occlusion of a renal artery can cause kidney ischemia, presenting as sudden, severe flank pain."
+        ],
+        [
+          "Herpes Zoster",
+          "Reactivation of the varicella-zoster virus can cause severe dermatomal pain in the flank days before a characteristic rash appears."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Nephrolithiasis",
+          "The classic presentation of acute, severe, unilateral flank pain with associated costovertebral angle tenderness."
+        ],
+        [
+          "Pyelonephritis",
+          "This kidney infection is a primary cause of flank pain and costovertebral angle tenderness, though high fever is typically present."
+        ],
+        [
+          "Renal infarction",
+          "This vascular emergency can present with sudden, severe flank pain mimicking a kidney stone, often without fever."
+        ],
+        [
+          "Herpes zoster",
+          "Pre-eruptive shingles can cause severe, unilateral dermatomal pain in the flank region before a rash appears."
+        ],
+        [
+          "Musculoskeletal strain",
+          "Acute strain of the paraspinal or quadratus lumborum muscles can cause severe localized pain and tenderness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cholecystitis",
+          "This is unlikely given the pain and tenderness are localized to the flank and costovertebral angle, with a soft, nontender abdomen."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Ureterolithiasis",
+          "The CT scan confirmed a 7-mm stone in the proximal ureter with hydronephrosis, which perfectly explains the acute flank pain and CVA tenderness."
+        ],
+        [
+          "Pyelonephritis",
+          "The presentation of flank pain, CVA tenderness, and tachycardia is highly suggestive of a kidney infection, though the patient was afebrile."
+        ],
+        [
+          "Obstructive Pyonephrosis",
+          "The presence of an obstructing stone with hydronephrosis creates a high risk for a superimposed infection, a urologic emergency."
+        ],
+        [
+          "Renal Infarction",
+          "This vascular cause presents with sudden, severe flank pain and can mimic the symptoms of a kidney stone prior to definitive imaging."
+        ],
+        [
+          "Biliary Colic",
+          "Severe pain from the gallbladder can radiate to the right flank, presenting similarly to renal colic before the CT scan localized the pathology."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Abdominal Aortic Aneurysm",
+          "The CT scan of the abdomen and pelvis would have visualized the aorta and did not report an aneurysm."
+        ],
+        [
+          "Appendicitis",
+          "The physical exam revealed a non-tender abdomen, and the CT scan showed no signs of appendiceal inflammation."
+        ],
+        [
+          "Musculoskeletal strain",
+          "The CT scan identified a definitive visceral cause for the pain, making a primary musculoskeletal diagnosis highly improbable."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Uric Acid Nephrolithiasis",
+          "The patient has a confirmed ureteral stone on CT with associated hydronephrosis, and the urinalysis reveals uric acid crystals, which are typically radiolucent on x-ray."
+        ],
+        [
+          "Nephrolithiasis",
+          "This diagnosis is confirmed by the CT scan showing a 7-mm stone in the ureter causing flank pain, CVA tenderness, and hematuria."
+        ],
+        [
+          "Obstructive Uropathy",
+          "The CT scan demonstrates a ureteral stone causing grade I hydronephrosis, which is a direct sign of urinary tract obstruction."
+        ],
+        [
+          "Calcium Oxalate Nephrolithiasis",
+          "This is the most common type of kidney stone and can present identically, although the presence of uric acid crystals makes it less likely."
+        ],
+        [
+          "Pyelonephritis",
+          "The patient's flank pain and CVA tenderness are consistent with a kidney infection, which can be a complication of an obstructing stone, though he is currently afebrile."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Appendicitis",
+          "The CT scan was negative for appendicitis and revealed an alternative cause for the pain."
+        ],
+        [
+          "Abdominal Aortic Aneurysm",
+          "The CT scan would have identified an aneurysm, but instead showed a kidney stone."
+        ],
+        [
+          "Diverticulitis",
+          "The clinical picture and definitive CT findings are not consistent with this diagnosis."
+        ],
+        [
+          "Biliary Colic",
+          "The location of pain and the specific findings on the CT scan rule out gallbladder pathology."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Nephrolithiasis",
+            "The acute onset of severe, unilateral flank pain is the classic presentation for a kidney stone causing ureteral obstruction."
+          ],
+          [
+            "Pyelonephritis",
+            "An infection of the kidney is a common cause of flank pain, which can be severe and of acute onset."
+          ],
+          [
+            "Musculoskeletal Strain",
+            "Acute strain or spasm of the paraspinal or flank muscles can mimic visceral pain and present with severe, localized pain."
+          ],
+          [
+            "Renal Infarction",
+            "Occlusion of a renal artery can cause kidney ischemia, presenting as sudden, severe flank pain."
+          ],
+          [
+            "Herpes Zoster",
+            "Reactivation of the varicella-zoster virus can cause severe dermatomal pain in the flank days before a characteristic rash appears."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pyelonephritis",
+            "The patient's presentation of fever, flank pain, and costovertebral angle tenderness forms the classic triad for a kidney infection."
+          ],
+          [
+            "Obstructive nephrolithiasis with infection",
+            "Severe, acute flank pain is characteristic of a kidney stone, and the accompanying fever suggests a secondary infection due to urinary obstruction."
+          ],
+          [
+            "Perinephric abscess",
+            "This is a serious complication of severe pyelonephritis and is suggested by the high fever and significant tenderness."
+          ],
+          [
+            "Retrocecal appendicitis",
+            "An inflamed appendix in a retrocecal position can irritate the retroperitoneum and right ureter, mimicking the signs and symptoms of a primary kidney problem."
+          ],
+          [
+            "Acute cholecystitis",
+            "Inflammation of the gallbladder can cause right-sided pain that radiates to the flank, accompanied by fever and tenderness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Uncomplicated nephrolithiasis",
+            "The presence of a high fever makes a simple, uninfected kidney stone highly unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Complicated Ureterolithiasis",
+            "The CT scan confirms an obstructing ureteral stone, and the patient's fever and tachycardia indicate a superimposed infection."
+          ],
+          [
+            "Pyelonephritis",
+            "The patient's presentation with high fever, flank pain, and costovertebral angle tenderness is classic for an infection of the kidney."
+          ],
+          [
+            "Pyonephrosis",
+            "The combination of a confirmed ureteral obstruction and systemic signs of infection raises concern for pus accumulation within the renal collecting system."
+          ],
+          [
+            "Urosepsis",
+            "The presence of fever and tachycardia in the setting of a confirmed urinary source (obstructing stone) suggests a systemic inflammatory response to the infection."
+          ],
+          [
+            "Renal Abscess",
+            "This is a serious potential complication of severe or obstructed pyelonephritis, which must be considered in a febrile patient with an obstructing stone."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Uncomplicated Ureterolithiasis",
+            "The presence of high fever and tachycardia is inconsistent with an uncomplicated stone and points towards infection."
+          ],
+          [
+            "Appendicitis",
+            "The CT scan confirmed a urologic cause and did not show evidence of appendiceal inflammation."
+          ],
+          [
+            "Biliary Colic",
+            "The location of tenderness and the definitive CT findings of a ureteral stone rule out a gallbladder-related etiology."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Obstructive Pyelonephritis",
+            "The patient has fever, CVA tenderness, and a CT-confirmed obstructing ureteral stone with hydronephrosis."
+          ],
+          [
+            "Urosepsis",
+            "The patient meets systemic inflammatory response criteria (fever, tachycardia) with a clear urinary source of infection."
+          ],
+          [
+            "Pyonephrosis",
+            "The combination of high fever and an obstructed kidney is highly suspicious for a pus-filled renal collecting system."
+          ],
+          [
+            "Uric Acid Ureterolithiasis",
+            "A 7-mm ureteral stone was confirmed on CT, and the urinalysis revealed uric acid crystals, suggesting the stone's composition."
+          ],
+          [
+            "Perinephric Abscess",
+            "This is a potential complication of severe pyelonephritis, which is strongly suggested by the patient's clinical picture."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Non-obstructive nephrolithiasis",
+            "The CT scan confirmed grade I hydronephrosis, which indicates urinary tract obstruction."
+          ],
+          [
+            "Uncomplicated nephrolithiasis",
+            "The presence of fever and tachycardia indicates a complicated course beyond simple stone passage."
+          ],
+          [
+            "Appendicitis",
+            "The CT scan findings are specific for a ureteral stone and hydronephrosis, with no mention of appendiceal inflammation."
+          ]
+        ]
+      },
+      "cf_id": "case_021_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has a fever of 38.9\u00b0C (102\u00b0F) and significant abdominal tenderness, suggesting pyelonephritis rather than an uncomplicated ureteral stone."
+    }
+  ]
+}

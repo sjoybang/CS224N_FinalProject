@@ -1,0 +1,302 @@
+{
+  "case_id": "case_003",
+  "model": "claude",
+  "ground_truth": "Von Willebrand disease",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Von Willebrand disease",
+          "Most common inherited bleeding disorder presenting with heavy menstrual bleeding and easy bruising in a young woman with lifelong symptoms."
+        ],
+        [
+          "Platelet function disorder",
+          "Inherited platelet dysfunction can cause lifelong mucocutaneous bleeding including menorrhagia and easy bruising."
+        ],
+        [
+          "Immune thrombocytopenic purpura (ITP)",
+          "Autoimmune platelet destruction causing menorrhagia and bruising, though typically more acute in onset."
+        ],
+        [
+          "Hypothyroidism",
+          "Thyroid dysfunction can cause menorrhagia and coagulopathy, though easy bruising would be less prominent."
+        ],
+        [
+          "Coagulation factor deficiency (mild hemophilia A or B carrier)",
+          "Female carriers of hemophilia can experience bleeding symptoms including heavy menses and easy bruising."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Von Willebrand Disease",
+          "Young woman with lifelong heavy menstrual bleeding, easy bruising, and positive family history suggesting an inherited bleeding disorder."
+        ],
+        [
+          "Platelet function disorder",
+          "Lifelong menorrhagia and easy bruising with family history could indicate inherited platelet dysfunction such as Bernard-Soulier or Glanzmann thrombasthenia."
+        ],
+        [
+          "Hemophilia A carrier state",
+          "Female carriers can have reduced factor VIII levels leading to menorrhagia and easy bruising, consistent with family history."
+        ],
+        [
+          "Thrombocytopenia (inherited)",
+          "Familial thrombocytopenia variants could present with bleeding symptoms and positive family history."
+        ],
+        [
+          "Factor XI deficiency",
+          "Autosomal disorder affecting both sexes causing mild-moderate bleeding symptoms including menorrhagia and bruising."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acquired coagulopathy (liver disease, vitamin K deficiency)",
+          "Unremarkable physical examination and young age with lifelong symptoms make acquired causes unlikely."
+        ],
+        [
+          "Disseminated intravascular coagulation",
+          "Acute presentation and systemic illness inconsistent with chronic lifelong symptoms and normal vital signs."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "von Willebrand disease",
+          "Prolonged PTT with normal PT and platelet count, heavy menstrual bleeding, easy bruising, and positive family history are classic features."
+        ],
+        [
+          "Hemophilia A carrier state",
+          "Prolonged PTT with family history and bleeding symptoms can occur in carriers with low factor VIII levels, though less common in females."
+        ],
+        [
+          "Factor XI deficiency",
+          "Isolated PTT prolongation with mucosal bleeding (menorrhagia) fits this intrinsic pathway factor deficiency."
+        ],
+        [
+          "Factor XII deficiency",
+          "Prolonged PTT with normal PT could indicate this deficiency, though it typically does not cause clinical bleeding symptoms."
+        ],
+        [
+          "Lupus anticoagulant",
+          "Prolonged PTT in a young woman could represent antiphospholipid antibodies, though bleeding symptoms are atypical (thrombosis more common)."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Immune thrombocytopenic purpura (ITP)",
+          "Normal platelet count of 200,000/mm3 rules out thrombocytopenia."
+        ],
+        [
+          "Platelet function disorders",
+          "While possible, the normal platelet count and isolated PTT prolongation point more toward a coagulation factor deficiency."
+        ],
+        [
+          "Hemophilia A (classic)",
+          "X-linked recessive pattern makes this unlikely in a female without consanguinity or Turner syndrome."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "von Willebrand Disease Type 1",
+          "Decreased vWF antigen, reduced ristocetin cofactor activity, and mildly decreased Factor VIII with mucocutaneous bleeding and family history are pathognomonic for this most common inherited bleeding disorder."
+        ],
+        [
+          "von Willebrand Disease Type 2",
+          "Qualitative vWF defects can present with reduced ristocetin cofactor activity disproportionate to vWF antigen levels, though the concurrent low vWF antigen makes Type 1 more likely."
+        ],
+        [
+          "von Willebrand Disease Type 3",
+          "Though this severe form presents with very low vWF levels, the patient's ability to function into adulthood with only menorrhagia and easy bruising makes this less likely than milder forms."
+        ],
+        [
+          "Mild Hemophilia A (carrier state)",
+          "Reduced Factor VIII can cause similar bleeding symptoms, but the decreased vWF antigen and ristocetin cofactor activity point more specifically to von Willebrand disease."
+        ],
+        [
+          "Combined Factor VIII and vWF deficiency",
+          "Rare inherited conditions can affect both factors simultaneously, though this is typically part of the von Willebrand disease spectrum rather than a separate entity."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Immune Thrombocytopenic Purpura",
+          "Normal platelet count excludes thrombocytopenia as the cause."
+        ],
+        [
+          "Hemophilia B",
+          "Normal PT and the presence of decreased vWF with positive family history in a female patient rule this out."
+        ],
+        [
+          "Platelet function disorders",
+          "Specific vWF deficiency identified with confirmatory testing makes primary platelet dysfunction unlikely."
+        ],
+        [
+          "Acquired von Willebrand syndrome",
+          "Young age, family history, and lifelong symptoms indicate inherited rather than acquired disease."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Von Willebrand disease",
+            "Young woman with lifelong heavy menstrual bleeding and easy bruising suggests inherited bleeding disorder, most commonly von Willebrand disease."
+          ],
+          [
+            "Platelet function disorder",
+            "Lifelong history of heavy menses and easy bruising indicates possible qualitative platelet defect affecting hemostasis."
+          ],
+          [
+            "Immune thrombocytopenic purpura (ITP)",
+            "Easy bruising and menorrhagia could reflect thrombocytopenia from autoimmune platelet destruction, though chronicity since menarche is less typical."
+          ],
+          [
+            "Hemophilia A carrier state",
+            "Female carriers of hemophilia A can have reduced factor VIII levels causing bleeding symptoms including menorrhagia."
+          ],
+          [
+            "Dysfunctional uterine bleeding with concurrent mild coagulopathy",
+            "Heavy menstrual bleeding since menarche could be hormonal with incidental mild bleeding tendency explaining easy bruising."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Von Willebrand Disease",
+            "Young woman with lifelong heavy menstrual bleeding, easy bruising, petechiae, and positive family history (mother with similar symptoms) suggests inherited bleeding disorder."
+          ],
+          [
+            "Platelet function disorder",
+            "Heavy menstrual bleeding since menarche with petechiae and easy bruising could indicate qualitative platelet abnormality, possibly hereditary given maternal history."
+          ],
+          [
+            "Immune thrombocytopenic purpura (ITP)",
+            "Petechiae, easy bruising, and menorrhagia suggest thrombocytopenia, though chronic presentation in young woman is less typical."
+          ],
+          [
+            "Bernard-Soulier syndrome",
+            "Rare inherited platelet disorder presenting with mucocutaneous bleeding (menorrhagia, petechiae, bruising) and family history pattern."
+          ],
+          [
+            "Glanzmann thrombasthenia",
+            "Rare inherited platelet disorder causing lifelong mucocutaneous bleeding symptoms with family history, though consanguinity would increase likelihood."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hemophilia A or B",
+            "X-linked recessive disorders extremely rare in females, and petechiae are not characteristic of factor deficiencies."
+          ],
+          [
+            "Acute leukemia",
+            "Absence of systemic symptoms, chronic course since menarche, and family history make malignancy unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Von Willebrand disease",
+            "Prolonged PTT with normal PT and platelet count, plus family history, heavy menstrual bleeding, and mucocutaneous bleeding (petechiae, easy bruising) are classic findings."
+          ],
+          [
+            "Hemophilia A (carrier state)",
+            "Prolonged PTT suggests factor VIII deficiency, and female carriers can have mild bleeding symptoms with family history, though heavy menstrual bleeding is less typical than in VWD."
+          ],
+          [
+            "Factor XI deficiency",
+            "Prolonged PTT with normal PT and platelet count with mucocutaneous bleeding pattern, though less common and typically seen in Ashkenazi Jewish populations."
+          ],
+          [
+            "Factor XII deficiency",
+            "Prolonged PTT with normal PT, though this typically does NOT cause clinical bleeding symptoms, making it less likely given her significant bleeding history."
+          ],
+          [
+            "Acquired inhibitor to factor VIII",
+            "Prolonged PTT could indicate an acquired factor inhibitor, though this is rare in young patients and lack of acute presentation makes it less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Immune thrombocytopenic purpura (ITP)",
+            "Normal platelet count of 200,000/mm3 rules out thrombocytopenia."
+          ],
+          [
+            "Qualitative platelet disorders",
+            "Would typically present with normal PT and PTT, but PTT is prolonged here."
+          ],
+          [
+            "Vitamin K deficiency",
+            "Would cause prolongation of both PT and PTT, but PT is normal."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Von Willebrand disease Type 1",
+            "Decreased vWF antigen, reduced ristocetin cofactor activity, and mildly reduced Factor VIII with lifelong bleeding history and family history are diagnostic."
+          ],
+          [
+            "Von Willebrand disease Type 2",
+            "Qualitative vWF defects can present similarly with reduced ristocetin cofactor activity, though quantitative reduction suggests Type 1 more likely."
+          ],
+          [
+            "Von Willebrand disease Type 3",
+            "Severe homozygous form could present with these findings, though typically shows more severe bleeding and lower factor levels."
+          ],
+          [
+            "Acquired von Willebrand syndrome",
+            "Could present with similar laboratory findings, though less likely given lifelong symptoms, young age, and positive family history."
+          ],
+          [
+            "Combined Factor VIII and vWF deficiency",
+            "Rare inherited disorder showing reduction in both factors, though the pattern here is more consistent with vWD."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hemophilia A",
+            "Normal or elevated vWF levels expected, X-linked inheritance makes it extremely rare in females with this presentation."
+          ],
+          [
+            "Immune thrombocytopenic purpura",
+            "Platelet count is normal at 200,000/mm3."
+          ],
+          [
+            "Platelet function disorder",
+            "Would not explain the prolonged PTT, reduced vWF antigen, and reduced ristocetin cofactor activity."
+          ],
+          [
+            "Hemophilia B (Factor IX deficiency)",
+            "Would not affect vWF levels or ristocetin cofactor activity."
+          ]
+        ]
+      },
+      "cf_id": "case_003_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals petechiae, which would be more consistent with a platelet disorder than VWD."
+    }
+  ]
+}

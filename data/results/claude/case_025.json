@@ -1,0 +1,285 @@
+{
+  "case_id": "case_025",
+  "model": "claude",
+  "ground_truth": "Wernicke encephalopathy",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia gravis",
+          "Double vision (diplopia) in a young adult is a classic presenting symptom of this autoimmune neuromuscular disorder affecting ocular muscles."
+        ],
+        [
+          "Multiple sclerosis",
+          "Demyelinating lesions affecting cranial nerves or brainstem pathways can cause binocular diplopia in this age group."
+        ],
+        [
+          "Cranial nerve VI palsy",
+          "Isolated abducens nerve palsy from microvascular, inflammatory, or idiopathic causes presents with horizontal diplopia."
+        ],
+        [
+          "Thyroid eye disease (Graves' ophthalmopathy)",
+          "Inflammatory infiltration of extraocular muscles can cause restrictive diplopia, even without overt hyperthyroidism."
+        ],
+        [
+          "Brainstem stroke or ischemia",
+          "Vascular events affecting cranial nerve nuclei or internuclear pathways can produce acute diplopia in adults."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Wernicke-Korsakoff syndrome",
+          "Classic triad of ophthalmoplegia (diplopia), ataxia (broad-based gait), and confusion in chronic alcohol abuse with memory impairment and confabulation."
+        ],
+        [
+          "Cerebellar degeneration (alcohol-related)",
+          "Chronic alcohol abuse causing nystagmus and ataxia, though does not fully explain cognitive symptoms and confabulation."
+        ],
+        [
+          "Hepatic encephalopathy",
+          "Confusion, personality changes, and ataxia can occur in chronic alcoholics with liver disease, though ophthalmoplegia is less typical."
+        ],
+        [
+          "Chronic subdural hematoma",
+          "Gait disturbance, confusion, and personality changes in alcoholic patient prone to falls, though bilateral ophthalmoplegia would be unusual."
+        ],
+        [
+          "Marchiafava-Bignami disease",
+          "Rare demyelinating disorder associated with chronic alcoholism causing cognitive decline and gait abnormalities."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute stroke",
+          "Vital signs stable and symptoms have evolved over a week rather than acutely."
+        ],
+        [
+          "Multiple sclerosis",
+          "Age and clinical presentation with chronic alcoholism makes Wernicke-Korsakoff far more likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Wernicke-Korsakoff syndrome",
+          "Decreased erythrocyte transketolase activity and mammillary body atrophy are pathognomonic for thiamine deficiency with chronic alcoholism causing this combined encephalopathy-amnestic syndrome."
+        ],
+        [
+          "Wernicke encephalopathy",
+          "The classic triad of ophthalmoplegia (diplopia, nystagmus), ataxia (broad-based gait), and confusion with alcohol abuse and decreased transketolase activity are diagnostic."
+        ],
+        [
+          "Korsakoff syndrome",
+          "Mammillary body atrophy, confabulation, severe memory impairment, and personality changes (indifference, agitation) in chronic alcoholism represent the chronic amnestic phase of thiamine deficiency."
+        ],
+        [
+          "Alcoholic cerebellar degeneration",
+          "Chronic alcohol abuse with ataxia and broad-based gait could suggest cerebellar degeneration, though this doesn't fully explain the ocular findings and cognitive impairment."
+        ],
+        [
+          "Hepatic encephalopathy",
+          "Chronic alcoholism can cause liver disease leading to encephalopathy with confusion and personality changes, though the specific laboratory and imaging findings point elsewhere."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute stroke",
+          "MRI shows chronic atrophy rather than acute vascular lesions, and the symptom progression over weeks is inconsistent with acute cerebrovascular event."
+        ],
+        [
+          "Multiple sclerosis",
+          "Patient's age and sex could fit, but decreased transketolase activity and mammillary body atrophy are specific for thiamine deficiency, not demyelinating disease."
+        ],
+        [
+          "Alcohol intoxication",
+          "While patient has alcohol abuse history, the specific laboratory findings and structural brain changes indicate a chronic thiamine deficiency state rather than acute intoxication."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Wernicke-Korsakoff syndrome",
+          "Chronic alcoholism with classic triad (ophthalmoplegia, ataxia, confusion), decreased transketolase activity, mammillary body atrophy, and dramatic response to thiamine confirm thiamine deficiency encephalopathy."
+        ],
+        [
+          "Alcohol-related dementia",
+          "Chronic alcohol abuse with memory impairment, personality changes, and cognitive decline, though this would not explain the acute ophthalmoplegia or rapid thiamine response."
+        ],
+        [
+          "Marchiafava-Bignami disease",
+          "Rare alcohol-related corpus callosum demyelination can present with confusion and gait disturbance, but mammillary body atrophy and thiamine response point away from this."
+        ],
+        [
+          "Hepatic encephalopathy",
+          "Chronic alcoholism can cause liver failure with confusion and personality changes, but would not explain nystagmus, ophthalmoplegia, or mammillary body atrophy."
+        ],
+        [
+          "Alcoholic cerebellar degeneration",
+          "Chronic alcohol use causing ataxia and gait disturbance, but would not explain ophthalmoplegia, mammillary body atrophy, or rapid thiamine response."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Stroke (posterior circulation)",
+          "Acute thiamine response and bilateral mammillary body atrophy inconsistent with vascular etiology."
+        ],
+        [
+          "Multiple sclerosis",
+          "Mammillary body atrophy, decreased transketolase activity, and dramatic thiamine response rule out demyelinating disease."
+        ],
+        [
+          "Brain tumor",
+          "MRI showing only mammillary body atrophy without mass lesion and rapid thiamine response exclude neoplasm."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia gravis",
+            "Diplopia is a classic presenting symptom in adults, often with fluctuating weakness of extraocular muscles."
+          ],
+          [
+            "Sixth nerve palsy",
+            "Unilateral or bilateral abducens nerve dysfunction commonly presents with binocular horizontal diplopia."
+          ],
+          [
+            "Multiple sclerosis",
+            "Young adults can present with diplopia from internuclear ophthalmoplegia or cranial nerve involvement due to demyelinating lesions."
+          ],
+          [
+            "Thyroid eye disease",
+            "Orbital inflammation and extraocular muscle enlargement can cause restrictive diplopia, even in subclinical thyroid dysfunction."
+          ],
+          [
+            "Intracranial mass lesion",
+            "A tumor or other space-occupying lesion affecting cranial nerves III, IV, or VI could present with isolated diplopia."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff syndrome",
+            "Chronic alcoholism with confusion, memory impairment, confabulation, and gait disturbance are classic features, though classic triad is incomplete."
+          ],
+          [
+            "Alcoholic cerebellar degeneration",
+            "Chronic alcohol abuse with broad-based gait and cognitive changes, though lack of ataxia on exam is atypical."
+          ],
+          [
+            "Hepatic encephalopathy",
+            "Confusion, personality changes, and gait disturbance in chronic alcoholic could indicate liver failure with encephalopathy."
+          ],
+          [
+            "Marchiafava-Bignami disease",
+            "Rare alcohol-related corpus callosum demyelination presenting with confusion, personality changes, and gait abnormalities."
+          ],
+          [
+            "Alcohol-related dementia",
+            "Progressive cognitive decline, personality changes, confabulation, and memory impairment in setting of chronic heavy alcohol use."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Wernicke encephalopathy (acute)",
+            "Absence of the classic triad (nystagmus, ophthalmoplegia, and ataxia documented on exam) makes isolated acute Wernicke less likely than the chronic Korsakoff component."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff syndrome",
+            "Decreased erythrocyte transketolase activity and mammillary body atrophy in a chronic alcohol abuser with confabulation, memory impairment, and confusion are pathognomonic for thiamine deficiency-related encephalopathy."
+          ],
+          [
+            "Korsakoff syndrome (chronic phase)",
+            "Prominent confabulation, memory impairment, and mammillary body atrophy suggest the chronic amnestic phase of thiamine deficiency, though acute Wernicke features are less evident."
+          ],
+          [
+            "Alcoholic dementia",
+            "Chronic alcohol abuse with personality changes (indifference, agitation) and cognitive impairment could represent direct alcohol-related brain damage, though laboratory findings favor thiamine deficiency."
+          ],
+          [
+            "Hepatic encephalopathy",
+            "Confusion and personality changes in a chronic alcohol abuser could indicate liver dysfunction, though the specific laboratory findings and imaging are more consistent with Wernicke-Korsakoff syndrome."
+          ],
+          [
+            "Marchiafava-Bignami disease",
+            "Rare alcohol-related demyelination disorder can present with confusion and cognitive impairment in chronic alcoholics, though mammillary body atrophy is not typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Wernicke encephalopathy (acute, isolated)",
+            "Classic triad of ophthalmoplegia, nystagmus, and ataxia are explicitly absent on examination."
+          ],
+          [
+            "Multiple sclerosis",
+            "Decreased transketolase activity and mammillary body atrophy are not consistent with demyelinating disease."
+          ],
+          [
+            "Stroke",
+            "Acute onset and vascular distribution would not explain progressive symptoms, decreased transketolase activity, or bilateral mammillary body atrophy."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff syndrome",
+            "Chronic alcoholism with thiamine deficiency causing ophthalmoplegia, ataxia, confusion, mammillary body atrophy, decreased transketolase activity, and dramatic response to thiamine replacement."
+          ],
+          [
+            "Alcohol-related dementia",
+            "Chronic alcohol abuse with cognitive impairment, personality changes, and confabulation, though this would not explain the acute ophthalmologic symptoms or dramatic thiamine response."
+          ],
+          [
+            "Hepatic encephalopathy",
+            "Chronic alcohol abuse can cause liver dysfunction leading to confusion and personality changes, but would not explain mammillary body atrophy or specific thiamine-responsive ophthalmoplegia."
+          ],
+          [
+            "Alcoholic cerebellar degeneration",
+            "Chronic alcoholism causing gait abnormalities and ataxia, but does not typically cause ophthalmoplegia, mammillary body atrophy, or respond dramatically to thiamine."
+          ],
+          [
+            "Marchiafava-Bignami disease",
+            "Rare demyelinating disorder associated with chronic alcoholism causing cognitive impairment and gait disturbance, but lacks the characteristic thiamine deficiency markers and dramatic treatment response."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Multiple sclerosis",
+            "Rapid and complete response to thiamine rather than immunomodulatory therapy rules out demyelinating disease."
+          ],
+          [
+            "Brainstem stroke",
+            "Lack of acute vascular event on MRI and complete reversibility with thiamine excludes cerebrovascular etiology."
+          ],
+          [
+            "Brain tumor",
+            "MRI showing only mammillary body atrophy without mass lesion and reversibility with thiamine excludes neoplastic process."
+          ]
+        ]
+      },
+      "cf_id": "case_025_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's neurological exam reveals normal findings, which argues against Wernicke encephalopathy."
+    }
+  ]
+}

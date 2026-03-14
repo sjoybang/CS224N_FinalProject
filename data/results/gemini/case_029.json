@@ -1,0 +1,262 @@
+{
+  "case_id": "case_029",
+  "model": "gemini",
+  "ground_truth": "Neuroleptic malignant syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Medication-induced psychosis",
+          "Risperidone, though intended to treat psychosis, can paradoxically induce or exacerbate psychotic symptoms in some individuals, especially early in treatment."
+        ],
+        [
+          "Schizophreniform disorder",
+          "The acute onset of psychotic symptoms like delusions and abnormal behavior in a young adult raises suspicion for a primary psychotic disorder, even with a negative family history."
+        ],
+        [
+          "Brief psychotic disorder",
+          "Given the short duration (one week) of the symptoms, a brief psychotic disorder triggered by stress or an unknown factor is a possibility."
+        ],
+        [
+          "Substance-induced psychosis",
+          "Although the patient denies illicit drug use, it remains a possibility that needs further investigation, as substance use can induce acute psychotic symptoms."
+        ],
+        [
+          "Bipolar disorder with psychotic features",
+          "While the family history is negative for psychiatric illness, bipolar disorder can present with psychotic symptoms during manic or depressive episodes, and the aggression could be related to mood lability."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Seizure disorder",
+          "Patient denies seizures."
+        ],
+        [
+          "Infection",
+          "Patient denies fever."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Neuroleptic Malignant Syndrome",
+          "Recent initiation of risperidone, fever, altered mental status, rigidity, and autonomic instability (diaphoresis, elevated heart rate) strongly suggest NMS."
+        ],
+        [
+          "Serotonin Syndrome",
+          "Although less likely given the risperidone initiation, the combination of altered mental status, fever, diaphoresis, and possible rigidity could indicate serotonin syndrome, especially if other serotonergic medications are involved."
+        ],
+        [
+          "Meningitis",
+          "Fever and altered mental status necessitate consideration of meningitis, although the rigidity is less typical."
+        ],
+        [
+          "Encephalitis",
+          "Similar to meningitis, encephalitis should be considered given the fever and altered mental status, though the rigidity is less common."
+        ],
+        [
+          "Catatonia",
+          "While less likely given the fever, catatonia can present with rigidity and unresponsiveness, and should be considered in the differential."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Illicit drug use",
+          "Patient denies use."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Neuroleptic Malignant Syndrome",
+          "Recent initiation of risperidone, fever, altered mental status, rigidity, elevated CK, and leukocytosis strongly suggest NMS."
+        ],
+        [
+          "Serotonin Syndrome",
+          "Although risperidone is less associated, the combination of altered mental status, fever, diaphoresis, and possible rigidity could indicate serotonin syndrome, especially if other serotonergic agents are involved."
+        ],
+        [
+          "Autoimmune Encephalitis",
+          "New-onset psychosis with rapid progression and abnormal behavior, along with fever and elevated WBCs, could indicate an autoimmune encephalitis, though rigidity is less typical."
+        ],
+        [
+          "Drug-induced Encephalopathy",
+          "While illicit drug use is denied, other medications or toxins could be contributing to encephalopathy with fever and altered mental status."
+        ],
+        [
+          "Rhabdomyolysis",
+          "Elevated CK and hemoglobinuria suggest rhabdomyolysis, which could be secondary to drug use, prolonged immobility, or other underlying conditions, contributing to the patient's presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Infection",
+          "While fever and leukocytosis are present, the rapid onset after starting risperidone and the other clinical features make infection less likely as the primary cause."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Neuroleptic Malignant Syndrome",
+          "The temporal relationship to risperidone initiation, coupled with fever, rigidity, elevated CK, and leukocytosis, strongly suggests NMS, further supported by resolution after discontinuation."
+        ],
+        [
+          "Serotonin Syndrome",
+          "Although less likely given the primary use of risperidone, the altered mental status, autonomic instability, and rigidity could indicate serotonin syndrome, especially if other serotonergic agents were involved."
+        ],
+        [
+          "Drug-induced hyperthermia",
+          "While NMS is more specific, a broader category of drug-induced hyperthermia should be considered, especially given the temporal association with risperidone."
+        ],
+        [
+          "Encephalitis",
+          "Although less likely given the rapid improvement after stopping risperidone, encephalitis could present with fever, altered mental status, and abnormal behavior."
+        ],
+        [
+          "Rhabdomyolysis",
+          "While the elevated CK is likely secondary to NMS or drug-induced hyperthermia, rhabdomyolysis itself can cause kidney injury and should be considered as a contributing factor."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Malignant hyperthermia",
+          "No exposure to volatile anesthetics or succinylcholine was reported."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Medication-induced psychosis",
+            "Risperidone, though intended to treat psychosis, can paradoxically induce or exacerbate psychotic symptoms in some individuals, especially early in treatment."
+          ],
+          [
+            "Schizophreniform disorder",
+            "The acute onset of psychotic symptoms like delusions and abnormal behavior in a young adult raises suspicion for a primary psychotic disorder, even with a negative family history."
+          ],
+          [
+            "Brief psychotic disorder",
+            "Given the short duration (one week) of the symptoms, a brief psychotic disorder triggered by stress or an unknown factor is a possibility."
+          ],
+          [
+            "Substance-induced psychosis",
+            "Although the patient denies illicit drug use, it remains a possibility that needs further investigation, as substance use can induce acute psychotic symptoms."
+          ],
+          [
+            "Bipolar disorder with psychotic features",
+            "While the family history is negative for psychiatric illness, bipolar disorder can present with psychotic symptoms during manic or depressive episodes, and the aggression could be related to mood lability."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Seizure disorder",
+            "Patient denies seizures."
+          ],
+          [
+            "Infection",
+            "Patient denies fever."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Neuroleptic Malignant Syndrome",
+            "Recent initiation of risperidone, coupled with altered mental status, rigidity, diaphoresis, and fever, strongly suggests NMS."
+          ],
+          [
+            "Serotonin Syndrome",
+            "Although less likely given the risperidone initiation, the combination of altered mental status, autonomic instability (diaphoresis, elevated heart rate), and possible rigidity could indicate serotonin syndrome."
+          ],
+          [
+            "Catatonia",
+            "The patient's unresponsiveness, stiffness, and spontaneous eye-opening could be indicative of catatonia, although the recent medication change makes this less likely as a primary diagnosis."
+          ],
+          [
+            "Encephalitis",
+            "Although the patient denies fever, encephalitis could present with altered mental status and behavioral changes, and cannot be ruled out without further investigation."
+          ],
+          [
+            "Drug-induced Dystonia",
+            "While less likely to cause complete unresponsiveness, risperidone can cause dystonic reactions, which could contribute to the patient's stiffness and abnormal movements."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Illicit drug use",
+            "Patient denies use."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Neuroleptic Malignant Syndrome",
+            "The recent initiation of risperidone, coupled with fever, muscle rigidity, altered mental status, elevated CK, and leukocytosis, strongly suggests NMS."
+          ],
+          [
+            "Serotonin Syndrome",
+            "Although less likely given the medication history, the altered mental status, diaphoresis, and rigidity could indicate serotonin syndrome."
+          ],
+          [
+            "Rhabdomyolysis",
+            "Elevated CK and hemoglobinuria suggest muscle breakdown, which could be due to various causes, including drug-induced or exertional."
+          ],
+          [
+            "Autoimmune Encephalitis",
+            "Although less likely given the acute presentation, altered mental status and abnormal behavior could be due to an autoimmune process."
+          ],
+          [
+            "Drug-induced Dystonia",
+            "While less likely to cause the full constellation of symptoms, risperidone can cause dystonic reactions, which could contribute to the rigidity."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infection",
+            "The patient denies fever, and the WBC count is only mildly elevated, making a primary infectious process less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Neuroleptic Malignant Syndrome",
+            "The temporal relationship with risperidone initiation, coupled with rigidity, elevated CK, and autonomic instability, strongly suggests NMS."
+          ],
+          [
+            "Serotonin Syndrome",
+            "Although less likely given the absence of serotonergic agents, the altered mental status, autonomic instability, and rigidity could potentially indicate serotonin syndrome."
+          ],
+          [
+            "Drug-induced Dystonia",
+            "While less likely to cause the full constellation of symptoms, risperidone can induce dystonic reactions, potentially contributing to rigidity."
+          ],
+          [
+            "Viral Encephalitis",
+            "Although fever was absent, altered mental status and behavioral changes could be consistent with encephalitis, though the rapid improvement after stopping risperidone makes this less likely."
+          ],
+          [
+            "Autoimmune Encephalitis",
+            "Although less likely given the rapid improvement, autoimmune encephalitis can present with psychiatric symptoms and altered mental status."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Malignant Hyperthermia",
+            "The patient did not have exposure to volatile anesthetics or succinylcholine, making this diagnosis less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_029_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's temperature is normal, which argues against neuroleptic malignant syndrome."
+    }
+  ]
+}

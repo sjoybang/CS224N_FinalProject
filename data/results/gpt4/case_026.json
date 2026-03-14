@@ -1,0 +1,244 @@
+{
+  "case_id": "case_026",
+  "model": "gpt4",
+  "ground_truth": "Ischemic stroke",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Ischemic stroke",
+          "Sudden onset of unilateral weakness suggests a possible cerebrovascular event."
+        ],
+        [
+          "Transient ischemic attack (TIA)",
+          "The acute presentation of weakness could indicate a temporary reduction in blood flow to the brain."
+        ],
+        [
+          "Intracerebral hemorrhage",
+          "Acute neurological deficits could be due to bleeding within the brain."
+        ],
+        [
+          "Brain tumor",
+          "Although less likely, a mass effect could cause sudden neurological symptoms."
+        ],
+        [
+          "Multiple sclerosis",
+          "Unilateral weakness can occur, though the patient's age and acute onset make this less likely."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Ischemic Stroke",
+          "The sudden onset of right-sided weakness and the patient's history of hypertension and dyslipidemia are suggestive of an ischemic stroke."
+        ],
+        [
+          "Transient Ischemic Attack (TIA)",
+          "The acute presentation of unilateral weakness could indicate a TIA, especially given the patient's vascular risk factors."
+        ],
+        [
+          "Hemorrhagic Stroke",
+          "Although less likely due to stable vital signs, a hemorrhagic stroke could still present with sudden unilateral weakness."
+        ],
+        [
+          "Brain Tumor",
+          "A brain tumor could cause focal neurological deficits, though the acute onset is less typical."
+        ],
+        [
+          "Multiple Sclerosis",
+          "While less common at this age, multiple sclerosis can present with sudden neurological deficits, though it is less likely given the patient's age and risk factors."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hypoglycemia",
+          "The patient is alert and oriented, making hypoglycemia unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute Ischemic Stroke",
+          "The CT scan shows hypodensity in the left middle cerebral artery territory, consistent with an acute ischemic event causing right-sided weakness."
+        ],
+        [
+          "Transient Ischemic Attack",
+          "Although less likely due to the CT findings, a TIA could present similarly but typically resolves within 24 hours without imaging changes."
+        ],
+        [
+          "Intracerebral Hemorrhage",
+          "Ruled out by the CT scan showing hypodensity rather than hyperdensity, but still considered due to acute neurological symptoms."
+        ],
+        [
+          "Brain Tumor",
+          "Less likely given the acute presentation, but could cause similar symptoms if there was sudden bleeding or edema."
+        ],
+        [
+          "Subdural Hematoma",
+          "Unlikely due to the CT findings and lack of trauma history, but can cause focal neurological deficits."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hemorrhagic Stroke",
+          "The CT scan does not show hyperdensity, which would be expected in a hemorrhagic stroke."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Acute Ischemic Stroke",
+          "The MRI confirms an acute infarct in the left MCA distribution, correlating with the patient's right-sided weakness."
+        ],
+        [
+          "Transient Ischemic Attack (TIA)",
+          "Although less likely due to the confirmed infarct, the initial presentation could have been a TIA that progressed."
+        ],
+        [
+          "Carotid Artery Stenosis",
+          "Moderate stenosis on the left side could contribute to reduced cerebral perfusion and ischemic events."
+        ],
+        [
+          "Hypertensive Encephalopathy",
+          "The patient's history of hypertension could contribute to cerebrovascular changes, though less likely given the specific infarct."
+        ],
+        [
+          "Lacunar Stroke",
+          "While the infarct is in the MCA territory, small vessel disease could still play a role, especially with the patient's hypertension history."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hemorrhagic Stroke",
+          "The non-contrast CT scan did not show any bleeding, ruling out a hemorrhagic event."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Ischemic stroke",
+            "Sudden onset of unilateral weakness suggests a possible cerebrovascular event."
+          ],
+          [
+            "Transient ischemic attack (TIA)",
+            "The acute presentation of weakness could indicate a temporary reduction in blood flow to the brain."
+          ],
+          [
+            "Intracerebral hemorrhage",
+            "Acute neurological deficits could be due to bleeding within the brain."
+          ],
+          [
+            "Brain tumor",
+            "Although less likely, a mass effect could cause sudden neurological symptoms."
+          ],
+          [
+            "Multiple sclerosis",
+            "Unilateral weakness can occur, though the patient's age and acute onset make this less likely."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Transient Ischemic Attack (TIA)",
+            "The sudden onset of weakness in the right arm and leg suggests a possible transient ischemic event, especially given his history of hypertension and dyslipidemia."
+          ],
+          [
+            "Stroke",
+            "Although current examination shows full strength, the initial symptoms could indicate a resolving or minor stroke, particularly in a patient with vascular risk factors."
+          ],
+          [
+            "Conversion Disorder",
+            "The discrepancy between the reported weakness and the normal physical examination could suggest a psychological origin for the symptoms."
+          ],
+          [
+            "Hypoglycemia",
+            "Sudden weakness can be a symptom of low blood sugar, and the patient's dismissive attitude might indicate altered mental status."
+          ],
+          [
+            "Seizure",
+            "Postictal weakness (Todd's paralysis) could explain the transient weakness, although there is no reported history of seizure."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Peripheral neuropathy",
+            "The acute onset and resolution of symptoms are inconsistent with the typical presentation of peripheral neuropathy."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute Ischemic Stroke",
+            "The CT scan shows hypodensity in the left middle cerebral artery territory, which is indicative of an acute ischemic stroke."
+          ],
+          [
+            "Transient Ischemic Attack (TIA)",
+            "The sudden onset of weakness and the resolution of symptoms could suggest a TIA, although the CT findings favor a stroke."
+          ],
+          [
+            "Lacunar Infarct",
+            "Given the patient's history of hypertension, a small vessel disease leading to a lacunar infarct is possible, though less likely with the CT findings."
+          ],
+          [
+            "Hemiplegic Migraine",
+            "Although rare at this age, the transient weakness could mimic a stroke, but the CT findings make this less likely."
+          ],
+          [
+            "Conversion Disorder",
+            "The discrepancy between the initial symptoms and examination findings could suggest a non-organic cause, but the CT findings argue against this."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Intracerebral Hemorrhage",
+            "The CT scan did not show hyperdensity, which would be expected in a hemorrhagic event."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Acute Ischemic Stroke",
+            "The MRI confirms an acute infarct in the left MCA distribution, correlating with the patient's initial symptoms of right-sided weakness."
+          ],
+          [
+            "Transient Ischemic Attack (TIA)",
+            "Although less likely due to MRI findings, the initial transient nature of symptoms could suggest a TIA."
+          ],
+          [
+            "Carotid Artery Stenosis",
+            "Moderate stenosis on the left side could contribute to reduced cerebral perfusion and ischemic events."
+          ],
+          [
+            "Hypertensive Encephalopathy",
+            "The patient's history of hypertension could contribute to cerebrovascular changes, although imaging findings are more consistent with an infarct."
+          ],
+          [
+            "Vascular Dementia",
+            "While not directly related to the acute event, chronic cerebrovascular disease could predispose to cognitive changes, though not evident in this case."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hemorrhagic Stroke",
+            "Ruled out by the non-contrast CT scan showing hypodensity rather than hyperdensity, which would indicate bleeding."
+          ]
+        ]
+      },
+      "cf_id": "case_026_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is found to have full and equal strength in all extremities, arguing against a stroke."
+    }
+  ]
+}

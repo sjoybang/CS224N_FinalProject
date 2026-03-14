@@ -1,0 +1,290 @@
+{
+  "case_id": "case_039",
+  "model": "claude",
+  "ground_truth": "Penetrating neck trauma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Cervical spine injury",
+          "Penetrating trauma from stab wound can directly damage vertebrae, ligaments, or spinal cord causing neck pain."
+        ],
+        [
+          "Cervical muscle/soft tissue injury",
+          "Stab wound may have lacerated or contused neck musculature (sternocleidomastoid, trapezius, or paraspinal muscles) causing pain."
+        ],
+        [
+          "Vascular injury (carotid or vertebral artery)",
+          "Neck stab wounds can penetrate major vessels causing pain, hematoma, or vascular compromise."
+        ],
+        [
+          "Esophageal perforation",
+          "Penetrating neck trauma can lacerate the esophagus causing pain, with risk of mediastinitis."
+        ],
+        [
+          "Nerve injury (cervical plexus or spinal nerves)",
+          "Stab wound may have damaged peripheral nerves causing neuropathic pain and potential neurological deficits."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to rule out any diagnoses definitively."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Penetrating neck trauma with vascular injury",
+          "Stab wound in Zone II near major vessels (carotid artery, jugular vein) requires exclusion of vascular compromise despite current stability."
+        ],
+        [
+          "Penetrating neck trauma with spinal cord injury",
+          "Proximity to cervical spine (inferior to mastoid process) raises concern for cord or nerve root damage causing neck pain."
+        ],
+        [
+          "Penetrating neck trauma with esophageal injury",
+          "Location of wound places esophagus at risk, which can present subtly initially before developing mediastinitis or abscess."
+        ],
+        [
+          "Penetrating neck trauma with nerve injury",
+          "Wound location near cranial nerves (IX, X, XI, XII) and cervical plexus could result in neurological deficits."
+        ],
+        [
+          "Simple soft tissue laceration without deep structure injury",
+          "Stable vital signs and lack of respiratory distress suggest injury may be limited to superficial structures."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "Clear bilateral breath sounds, normal oxygen saturation, and no respiratory distress make this unlikely."
+        ],
+        [
+          "Tension pneumothorax",
+          "Normal vital signs and absence of respiratory distress rule this out."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Vascular injury (carotid artery or internal jugular vein)",
+          "Stab wound location near mastoid process places major neck vessels at risk, though patient is currently hemodynamically stable."
+        ],
+        [
+          "Spinal accessory nerve injury",
+          "The wound location is in the posterior triangle where cranial nerve XI is superficial and vulnerable to penetrating trauma."
+        ],
+        [
+          "Superficial soft tissue injury only",
+          "Normal vital signs, labs, and imaging with preserved airway and no bleeding suggest injury may be limited to skin and subcutaneous tissue."
+        ],
+        [
+          "Pharyngeal or esophageal injury",
+          "Penetrating neck trauma can involve the aerodigestive tract even without immediate respiratory distress or subcutaneous emphysema."
+        ],
+        [
+          "Cervical spine injury",
+          "Proximity of stab wound to cervical spine warrants consideration, though absence of neurological symptoms and normal respirations make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "Chest x-ray is negative and breath sounds are clear bilaterally."
+        ],
+        [
+          "Hemothorax",
+          "Chest x-ray shows no abnormalities and patient is hemodynamically stable."
+        ],
+        [
+          "Mediastinal vascular injury",
+          "No mediastinal widening on chest x-ray."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Vertebral artery dissection",
+          "CT angiography confirms vertebral artery injury, and dissection is the most common traumatic injury pattern from penetrating neck trauma at this location."
+        ],
+        [
+          "Vertebral artery pseudoaneurysm",
+          "Penetrating trauma can cause focal arterial wall disruption leading to contained hematoma formation, confirmed on CT angiography."
+        ],
+        [
+          "Vertebral artery laceration",
+          "Direct arterial injury from the stab wound is consistent with the anatomical location and positive CT angiography findings."
+        ],
+        [
+          "Vertebral artery thrombosis",
+          "Traumatic injury to the vessel wall can lead to thrombotic occlusion, which would be visualized on CT angiography as arterial injury."
+        ],
+        [
+          "Cervical spine fracture with vascular injury",
+          "The proximity of the vertebral artery to cervical vertebrae raises concern for combined bony and vascular injury from penetrating trauma."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "Chest x-ray negative and no respiratory distress."
+        ],
+        [
+          "Mediastinal hematoma",
+          "No mediastinal widening on chest x-ray."
+        ],
+        [
+          "Carotid artery injury",
+          "CT angiography identified vertebral artery injury specifically, not carotid."
+        ],
+        [
+          "Esophageal perforation",
+          "Normal vital signs, no subcutaneous emphysema, and CT findings point to vascular rather than esophageal injury."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Cervical spine injury (vertebral fracture or ligamentous injury)",
+            "Penetrating trauma from stab wound can cause direct bony or ligamentous damage to cervical structures."
+          ],
+          [
+            "Vascular injury (carotid or vertebral artery)",
+            "Stab wounds to the neck can penetrate major vessels causing dissection, pseudoaneurysm, or active hemorrhage."
+          ],
+          [
+            "Esophageal perforation",
+            "Penetrating neck trauma can breach the esophagus leading to mediastinitis or abscess formation."
+          ],
+          [
+            "Spinal cord injury",
+            "Deep penetration may directly injure the spinal cord causing neurological deficits."
+          ],
+          [
+            "Soft tissue injury without deep structure involvement",
+            "Superficial stab wound affecting only muscles, fascia, and subcutaneous tissues causing localized pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses related to neck trauma."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Laryngeal injury",
+            "Subcutaneous emphysema near the neck wound suggests air leak from disrupted airway structures."
+          ],
+          [
+            "Pharyngeal/esophageal perforation",
+            "Subcutaneous emphysema can result from perforation of the pharynx or cervical esophagus allowing air to track into soft tissues."
+          ],
+          [
+            "Tracheal injury",
+            "Proximity to airway structures and subcutaneous emphysema indicate possible tracheal laceration despite stable airway currently."
+          ],
+          [
+            "Major vascular injury (carotid/jugular)",
+            "Stab wound location near mastoid process places major neck vessels at risk, though patient is currently hemodynamically stable."
+          ],
+          [
+            "Pneumothorax",
+            "Subcutaneous emphysema could indicate apical pneumothorax from deep penetration, though breath sounds are currently clear bilaterally."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple soft tissue laceration",
+            "Subcutaneous emphysema indicates deeper structural injury beyond simple soft tissue involvement."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Pharyngeal/esophageal injury",
+            "Subcutaneous emphysema with penetrating neck trauma suggests air leak from a pharyngeal or esophageal perforation despite normal initial imaging."
+          ],
+          [
+            "Laryngeal injury",
+            "The location of the stab wound and presence of subcutaneous emphysema indicate possible laryngeal framework disruption, though absence of stridor makes this less severe."
+          ],
+          [
+            "Tracheal injury",
+            "Subcutaneous emphysema is a classic sign of tracheal perforation from penetrating neck trauma, even without pneumothorax on initial chest x-ray."
+          ],
+          [
+            "Vascular injury (carotid/jugular)",
+            "The wound location near the mastoid process places major neck vessels at risk, though hemodynamic stability makes major vascular injury less likely."
+          ],
+          [
+            "Superficial soft tissue injury with air tracking",
+            "The laceration may have introduced air into subcutaneous tissues without deeper structural injury, though this requires exclusion of more serious pathology."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Tension pneumothorax",
+            "Chest x-ray shows no pneumothorax and patient is hemodynamically stable without respiratory distress."
+          ],
+          [
+            "Spinal cord injury",
+            "No mention of neurological deficits and patient appears neurologically intact."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Vertebral artery dissection",
+            "CT angiography directly confirms injury to the vertebral artery, which commonly presents as dissection following penetrating trauma."
+          ],
+          [
+            "Vertebral artery pseudoaneurysm",
+            "Penetrating trauma can cause arterial wall disruption leading to contained hematoma formation with persistent communication to the arterial lumen."
+          ],
+          [
+            "Vertebral artery laceration",
+            "Direct traumatic disruption of the arterial wall from the stab wound is consistent with the anatomic location and imaging findings."
+          ],
+          [
+            "Esophageal injury",
+            "Subcutaneous emphysema in the neck following penetrating trauma raises concern for aerodigestive tract injury despite normal initial chest x-ray."
+          ],
+          [
+            "Spinal cord injury",
+            "The proximity of the stab wound to the cervical spine and vertebral artery places neural structures at risk for associated injury."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumothorax",
+            "Chest x-ray did not reveal pneumothorax and patient has clear bilateral breath sounds."
+          ],
+          [
+            "Hemothorax",
+            "Normal chest x-ray without evidence of pleural fluid collection."
+          ],
+          [
+            "Tracheal injury",
+            "Absence of stridor, respiratory distress, and patient protecting airway makes this less likely despite subcutaneous emphysema."
+          ]
+        ]
+      },
+      "cf_id": "case_039_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of subcutaneous emphysema on exam argues against isolated vascular injury and raises concern for esophageal or tracheal injury."
+    }
+  ]
+}

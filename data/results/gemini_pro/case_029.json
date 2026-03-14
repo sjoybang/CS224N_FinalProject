@@ -1,0 +1,266 @@
+{
+  "case_id": "case_029",
+  "model": "gemini_pro",
+  "ground_truth": "Neuroleptic malignant syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Schizophreniform disorder",
+          "The patient's age and acute onset of classic psychotic symptoms are highly suggestive of a first-episode primary psychotic disorder of less than six months duration."
+        ],
+        [
+          "Anti-NMDAR encephalitis",
+          "This autoimmune condition is a key consideration given the patient is a young woman presenting with acute behavioral changes and psychosis."
+        ],
+        [
+          "Substance-induced psychotic disorder",
+          "Despite the patient's denial, substance use is a common cause of acute psychosis in this age group and must be ruled out."
+        ],
+        [
+          "Bipolar I disorder, manic episode with psychotic features",
+          "The acute onset of aggression, delusions, and abnormal behavior is characteristic of a first manic episode."
+        ],
+        [
+          "Psychosis secondary to a central nervous system lesion",
+          "A structural cause, such as a brain tumor, must be considered in any case of new-onset psychosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Schizophrenia",
+          "The one-week duration of symptoms does not meet the six-month diagnostic criterion for schizophrenia."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Neuroleptic Malignant Syndrome (NMS)",
+          "The patient exhibits the classic tetrad of altered mental status, fever, autonomic instability, and muscle rigidity shortly after the initiation of an antipsychotic drug."
+        ],
+        [
+          "Autoimmune Encephalitis",
+          "New-onset psychosis in a young woman followed by a rapid decline with fever, confusion, and rigidity is a characteristic presentation for this condition."
+        ],
+        [
+          "Malignant Catatonia",
+          "The patient's severe rigidity, fever, and autonomic dysfunction may represent a progression of an underlying primary psychotic illness rather than a drug reaction."
+        ],
+        [
+          "Serotonin Syndrome",
+          "This condition presents with similar features of altered mental status and autonomic hyperactivity, and there is clinical overlap with NMS, although the rigidity is more classic for NMS."
+        ],
+        [
+          "Meningoencephalitis",
+          "An infection of the central nervous system must be considered in any patient with fever, altered mental status, and signs of neurologic dysfunction like rigidity."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Malignant Hyperthermia",
+          "This is highly unlikely due to the absence of a typical trigger, such as volatile anesthetics or succinylcholine."
+        ],
+        [
+          "Uncomplicated Psychiatric Illness",
+          "The presence of high fever, severe rigidity, and autonomic instability indicates a medical emergency beyond a primary psychiatric process."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Neuroleptic Malignant Syndrome (NMS)",
+          "The patient has the classic tetrad of fever, altered mental status, muscle rigidity, and autonomic instability, with a massive creatine kinase elevation, occurring days after starting an antipsychotic."
+        ],
+        [
+          "Malignant Catatonia",
+          "This syndrome presents identically to NMS with fever, rigidity, and autonomic instability, and can be precipitated by an underlying psychiatric illness."
+        ],
+        [
+          "Serotonin Syndrome",
+          "This diagnosis presents with a similar triad of altered mental status, autonomic hyperactivity, and neuromuscular abnormalities, though the profound rigidity is more classic for NMS."
+        ],
+        [
+          "Encephalitis",
+          "The initial psychotic symptoms followed by fever and confusion are suggestive of encephalitis, which can also cause movement abnormalities and autonomic dysfunction."
+        ],
+        [
+          "Malignant Hyperthermia",
+          "This condition presents with a clinically identical picture of hyperthermia, rigidity, and rhabdomyolysis, but is typically triggered by anesthetic agents."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary psychiatric disorder",
+          "The acute presentation with hyperthermia, extreme rigidity, and massive rhabdomyolysis is not explained by an underlying psychiatric illness alone."
+        ],
+        [
+          "Sepsis",
+          "While fever and leukocytosis are present, the classic tetrad of symptoms following a specific drug trigger makes a primary infection without a clear source less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Neuroleptic Malignant Syndrome (NMS)",
+          "The patient presents with the classic tetrad of fever, muscle rigidity, altered mental status, and autonomic instability with a massively elevated CK after starting an antipsychotic."
+        ],
+        [
+          "Malignant Catatonia",
+          "This syndrome presents identically to NMS and can arise from a severe underlying psychiatric illness, which this patient has."
+        ],
+        [
+          "Serotonin Syndrome",
+          "This condition presents with overlapping features of altered mental status, autonomic hyperactivity, and fever, though the profound rigidity is less typical."
+        ],
+        [
+          "Meningitis/Encephalitis",
+          "This infectious process must be considered in any patient with fever and altered mental status, although the extreme rhabdomyolysis and rigidity are less common."
+        ],
+        [
+          "Severe Sepsis with Rhabdomyolysis",
+          "Sepsis can cause fever, altered mental status, and organ dysfunction, but the \"lead-pipe\" rigidity and clear drug trigger are less characteristic."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Malignant Hyperthermia",
+          "The patient was not exposed to the typical triggering agents, such as volatile anesthetics or succinylcholine."
+        ],
+        [
+          "Heat Stroke",
+          "There is no history of environmental heat exposure to explain the profound hyperthermia."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Schizophreniform disorder",
+            "The patient's age and acute onset of classic psychotic symptoms are highly suggestive of a first-episode primary psychotic disorder of less than six months duration."
+          ],
+          [
+            "Anti-NMDAR encephalitis",
+            "This autoimmune condition is a key consideration given the patient is a young woman presenting with acute behavioral changes and psychosis."
+          ],
+          [
+            "Substance-induced psychotic disorder",
+            "Despite the patient's denial, substance use is a common cause of acute psychosis in this age group and must be ruled out."
+          ],
+          [
+            "Bipolar I disorder, manic episode with psychotic features",
+            "The acute onset of aggression, delusions, and abnormal behavior is characteristic of a first manic episode."
+          ],
+          [
+            "Psychosis secondary to a central nervous system lesion",
+            "A structural cause, such as a brain tumor, must be considered in any case of new-onset psychosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Schizophrenia",
+            "The one-week duration of symptoms does not meet the six-month diagnostic criterion for schizophrenia."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Neuroleptic Malignant Syndrome",
+            "The patient has the classic triad of altered mental status, rigidity, and autonomic instability after recently starting an antipsychotic medication."
+          ],
+          [
+            "Malignant Catatonia",
+            "The presentation of stupor, rigidity, and autonomic dysfunction is characteristic of this life-threatening complication of an underlying primary psychotic disorder."
+          ],
+          [
+            "Anti-NMDAR Encephalitis",
+            "This autoimmune condition commonly affects young women, presenting with new-onset psychosis followed by a rapid decline in consciousness and autonomic instability."
+          ],
+          [
+            "Serotonin Syndrome",
+            "This diagnosis is considered due to the significant clinical overlap with NMS, including altered mental status and autonomic hyperactivity, and risperidone's serotonergic activity."
+          ],
+          [
+            "Infectious Encephalitis",
+            "A central nervous system infection can present with a psychiatric prodrome and progressive decline in mental status, although the absence of fever makes it less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Malignant Hyperthermia",
+            "The patient has not been exposed to the typical triggers for this condition, such as volatile anesthetics or succinylcholine."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Neuroleptic Malignant Syndrome",
+            "The patient has classic features of altered mental status, rigidity, and autonomic instability with rhabdomyolysis shortly after starting a dopamine antagonist."
+          ],
+          [
+            "Malignant Catatonia",
+            "The presentation of immobility, rigidity, and autonomic instability is consistent with a severe catatonic state, which can mimic NMS."
+          ],
+          [
+            "Serotonin Syndrome",
+            "This diagnosis is considered due to overlapping features of altered mental status and autonomic hyperactivity, although the trigger and prominent rigidity are less typical."
+          ],
+          [
+            "Anti-NMDAR Encephalitis",
+            "This condition often presents with new-onset psychosis in young women and can progress to include movement disorders and autonomic instability."
+          ],
+          [
+            "Infectious Encephalitis",
+            "Acute altered mental status with leukocytosis warrants consideration of a CNS infection, which can cause neurological decline and systemic effects."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Malignant Hyperthermia",
+            "This syndrome is triggered by volatile anesthetics or succinylcholine, which were not administered in this case."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Neuroleptic Malignant Syndrome (NMS)",
+            "The patient exhibits the classic tetrad of altered mental status, rigidity, autonomic dysfunction, and hyperpyrexia with rhabdomyolysis temporally associated with starting an antipsychotic."
+          ],
+          [
+            "Serotonin Syndrome",
+            "This diagnosis presents with similar features of altered mental status and autonomic hyperactivity, but the profound rigidity is more characteristic of NMS than the myoclonus typical of this syndrome."
+          ],
+          [
+            "Malignant Catatonia",
+            "This condition is clinically indistinguishable from NMS but is less likely given the clear trigger of risperidone initiation, which defines the syndrome as NMS."
+          ],
+          [
+            "Anti-NMDA Receptor Encephalitis",
+            "This autoimmune process explains the initial psychosis and can cause autonomic instability, but the massive rhabdomyolysis and rapid improvement after discontinuing risperidone strongly favor NMS."
+          ],
+          [
+            "Malignant Hyperthermia",
+            "While the clinical presentation of hyperthermia, rigidity, and rhabdomyolysis is very similar, this diagnosis is highly unlikely without exposure to a triggering anesthetic agent."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sepsis",
+            "The patient was afebrile on presentation and symptoms resolved upon drug withdrawal, not with antibiotics, making a primary infectious etiology unlikely."
+          ]
+        ]
+      },
+      "cf_id": "case_029_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's temperature is normal, which argues against neuroleptic malignant syndrome."
+    }
+  ]
+}

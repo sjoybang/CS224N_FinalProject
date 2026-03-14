@@ -1,0 +1,126 @@
+{
+  "case_id": "case_044",
+  "model": "biogpt",
+  "ground_truth": "Lisinopril-induced acute kidney injury",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion. [Stage 2] The patient's blood pressure is 150 / 90 mm Hg, pulse is 100 / min, and respirations are 15 / min. Physical exam is otherwise unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion. [Stage 2] The patient's blood pressure is 150 / 90 mm Hg, pulse is 100 / min, and respirations are 15 / min. Physical exam is otherwise unremarkable. [Stage 3] An ECG reveals ST elevation in leads V3-V6. The patient is hospitalized for a suspected acute MI and started on treatment. The next day, he reports dizziness and blurred vision. His blood pressure is now 90 / 60 mm Hg, pulse is 72 / min, and respirations are 12 / min. Serum creatinine is 2.3 mg / dL (baseline creatinine was 1.0 mg / dL prior to admission). Other labs: Sodium 143 mEq / L, Potassium 4.1 mEq / L, Chloride 98 mEq / L, Bicarbonate 22 mEq / L, Blood urea nitrogen 26 mg / dL, Glucose 120 mg / dL. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion. [Stage 2] The patient's blood pressure is 150 / 90 mm Hg, pulse is 100 / min, and respirations are 15 / min. Physical exam is otherwise unremarkable. [Stage 3] An ECG reveals ST elevation in leads V3-V6. The patient is hospitalized for a suspected acute MI and started on treatment. The next day, he reports dizziness and blurred vision. His blood pressure is now 90 / 60 mm Hg, pulse is 72 / min, and respirations are 12 / min. Serum creatinine is 2.3 mg / dL (baseline creatinine was 1.0 mg / dL prior to admission). Other labs: Sodium 143 mEq / L, Potassium 4.1 mEq / L, Chloride 98 mEq / L, Bicarbonate 22 mEq / L, Blood urea nitrogen 26 mg / dL, Glucose 120 mg / dL. [Stage 4] The patient's medications are reviewed. He is taking metformin, hydrochlorothiazide, pantoprazole, aspirin, a beta-blocker, a statin, and lisinopril. Lisinopril is discontinued, and the patient's creatinine returns to baseline within 48 hours with supportive care and IV fluids. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion. [Stage 2] The patient's blood pressure is 150 / 90 mm Hg, pulse is 100 / min, and respirations are 15 / min. Physical exam reveals 2 + bilateral lower extremity edema. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion. [Stage 2] The patient's blood pressure is 150 / 90 mm Hg, pulse is 100 / min, and respirations are 15 / min. Physical exam reveals 2 + bilateral lower extremity edema. [Stage 3] An ECG reveals ST elevation in leads V3-V6. The patient is hospitalized for a suspected acute MI and started on treatment. The next day, he reports dizziness and blurred vision. His blood pressure is now 90 / 60 mm Hg, pulse is 72 / min, and respirations are 12 / min. Serum creatinine is 2.3 mg / dL (baseline creatinine was 1.0 mg / dL prior to admission). Other labs: Sodium 143 mEq / L, Potassium 4.1 mEq / L, Chloride 98 mEq / L, Bicarbonate 22 mEq / L, Blood urea nitrogen 26 mg / dL, Glucose 120 mg / dL. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 52-year-old man with a history of diabetes mellitus, hypertension, and GERD presents to the emergency department complaining of chest pain radiating to his left jaw and arm. He reports similar episodes in the past during physical exertion. [Stage 2] The patient's blood pressure is 150 / 90 mm Hg, pulse is 100 / min, and respirations are 15 / min. Physical exam reveals 2 + bilateral lower extremity edema. [Stage 3] An ECG reveals ST elevation in leads V3-V6. The patient is hospitalized for a suspected acute MI and started on treatment. The next day, he reports dizziness and blurred vision. His blood pressure is now 90 / 60 mm Hg, pulse is 72 / min, and respirations are 12 / min. Serum creatinine is 2.3 mg / dL (baseline creatinine was 1.0 mg / dL prior to admission). Other labs: Sodium 143 mEq / L, Potassium 4.1 mEq / L, Chloride 98 mEq / L, Bicarbonate 22 mEq / L, Blood urea nitrogen 26 mg / dL, Glucose 120 mg / dL. [Stage 4] The patient's medications are reviewed. He is taking metformin, hydrochlorothiazide, pantoprazole, aspirin, a beta-blocker, a statin, and lisinopril. Lisinopril is discontinued, and the patient's creatinine returns to baseline within 48 hours with supportive care and IV fluids. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_044_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of bilateral lower extremity edema makes lisinopril-induced AKI less likely, as it suggests a volume overload state that is not typically associated with ACE inhibitor-induced kidney injury."
+    }
+  ]
+}

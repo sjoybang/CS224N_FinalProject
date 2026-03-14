@@ -1,0 +1,286 @@
+{
+  "case_id": "case_045",
+  "model": "gemini_pro",
+  "ground_truth": "Rabies",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Meningitis",
+          "The combination of fever and headache is a classic presentation for inflammation of the meninges, a potential medical emergency."
+        ],
+        [
+          "Systemic viral infection",
+          "This is a very common cause of an acute febrile illness with headache, such as influenza or COVID-19."
+        ],
+        [
+          "Encephalitis",
+          "This serious condition involves inflammation of the brain parenchyma and can present similarly to meningitis with fever and headache."
+        ],
+        [
+          "Sepsis",
+          "A systemic infection from any source can manifest with non-specific constitutional symptoms including fever and headache."
+        ],
+        [
+          "Subarachnoid hemorrhage",
+          "An acute severe headache can be the primary symptom of this life-threatening bleed, which can also be associated with a subsequent fever."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Giant cell arteritis",
+          "This diagnosis is extremely unlikely in a patient under the age of 50."
+        ],
+        [
+          "Tension-type headache",
+          "This common headache type is not associated with fever."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Rabies",
+          "The combination of acute encephalopathy with fever, headache, and the highly specific sign of agitation when offered water (hydrophobia) is classic for this diagnosis."
+        ],
+        [
+          "Herpes Simplex Virus (HSV) Encephalitis",
+          "This is a common cause of sporadic fatal encephalitis presenting with fever, headache, and acute neurological changes like confusion and hallucinations."
+        ],
+        [
+          "Autoimmune Encephalitis",
+          "This condition can mimic infectious encephalitis with a prodrome of fever and headache followed by prominent neuropsychiatric symptoms, and it has a predilection for young women."
+        ],
+        [
+          "Viral Meningoencephalitis (non-HSV)",
+          "Other viral pathogens, such as arboviruses, can cause a similar rapid onset of fever, headache, and altered mental status."
+        ],
+        [
+          "Bacterial Meningitis",
+          "Although classic meningeal signs are not reported, severe bacterial meningitis can present with fever, headache, and profound encephalopathy, including confusion and agitation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary Psychiatric Disorder",
+          "The presence of a high fever and headache makes an organic brain process much more likely than a primary psychiatric break."
+        ],
+        [
+          "Migraine with aura",
+          "This would not typically cause a sustained fever, progressive confusion, or hydrophobia."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Rabies",
+          "The combination of acute encephalitis and agitation when offered water is a classic presentation of hydrophobia, which is pathognomonic for rabies."
+        ],
+        [
+          "Herpes Simplex Virus (HSV) Encephalitis",
+          "This is a common cause of severe sporadic encephalitis presenting with fever, headache, and altered mental status, consistent with the patient's CSF findings."
+        ],
+        [
+          "Arboviral Encephalitis",
+          "This diagnosis encompasses various viral infections (e.g., West Nile virus) that cause fever, headache, and confusion with a lymphocytic pleocytosis in the CSF."
+        ],
+        [
+          "Anti-NMDA Receptor Encephalitis",
+          "This autoimmune process often affects young women and presents with prominent psychiatric symptoms, such as hallucinations and agitation, preceded by a febrile illness."
+        ],
+        [
+          "Tetanus",
+          "Although less likely given the prominent confusion, cephalic tetanus can cause pharyngeal spasms triggered by swallowing, which can mimic hydrophobia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial Meningitis",
+          "The CSF findings of normal glucose and lymphocytic pleocytosis are inconsistent with typical bacterial meningitis."
+        ],
+        [
+          "Brain Abscess",
+          "The normal head CT scan rules out a space-occupying lesion like an abscess."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rabies",
+          "The patient has the classic triad of encephalopathy, hydrophobia, and a history of bat exposure, with a confirmatory positive CSF PCR for rabies virus."
+        ],
+        [
+          "Herpes Simplex Encephalitis",
+          "This is a primary consideration for any acute febrile encephalopathy, presenting with fever, headache, and confusion, and can have a similar CSF profile."
+        ],
+        [
+          "Arboviral Encephalitis",
+          "These viruses cause a similar syndrome of fever, headache, and altered mental status with a lymphocytic pleocytosis in the CSF."
+        ],
+        [
+          "Autoimmune Encephalitis",
+          "This diagnosis is considered in a young woman with acute neuropsychiatric symptoms like confusion and hallucinations, which can mimic an infectious process."
+        ],
+        [
+          "Tetanus",
+          "This is included due to the potential for pharyngeal spasms causing dysphagia and apparent hydrophobia, although the primary presentation is typically muscle rigidity."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial Meningitis",
+          "The CSF profile with lymphocytic pleocytosis and normal glucose makes typical bacterial meningitis highly unlikely."
+        ],
+        [
+          "Intracranial Mass",
+          "A normal head CT scan rules out a large tumor, abscess, or other space-occupying lesion."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meningitis",
+            "The combination of fever and headache are classic signs of meningeal inflammation, a medical emergency."
+          ],
+          [
+            "Encephalitis",
+            "This diagnosis is considered due to the presence of fever and headache, which are common symptoms of brain parenchyma inflammation."
+          ],
+          [
+            "Systemic viral infection",
+            "Many common viruses (e.g., influenza, SARS-CoV-2, mononucleosis) present with non-specific systemic symptoms including fever and headache."
+          ],
+          [
+            "Sinusitis",
+            "Infection of the paranasal sinuses is a common cause of headache and associated fever."
+          ],
+          [
+            "Brain abscess",
+            "This serious focal CNS infection is a consideration for any patient presenting with fever and headache."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Giant cell arteritis",
+            "This condition is extremely rare in patients under the age of 50."
+          ],
+          [
+            "Tension-type headache",
+            "This primary headache disorder is not characteristically associated with fever."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Rabies",
+            "The combination of acute encephalopathy with fever, headache, confusion, and the specific sign of hydrophobia (agitation when offered water) is highly suggestive of this diagnosis."
+          ],
+          [
+            "Herpes Simplex Virus Encephalitis",
+            "This is a primary consideration for any patient with fever and acute-onset encephalopathy featuring confusion and hallucinations."
+          ],
+          [
+            "Viral Meningoencephalitis",
+            "Other viral etiologies, such as arboviruses, can present with a non-specific prodrome of fever and headache followed by rapid neurological decline."
+          ],
+          [
+            "Tetanus",
+            "This diagnosis is considered due to severe dysphagia from pharyngeal spasms, which can be misinterpreted as hydrophobia, in the setting of an acute illness."
+          ],
+          [
+            "Delirium Tremens",
+            "In a patient with a history of alcohol dependence, withdrawal can cause autonomic hyperactivity (fever), agitation, confusion, and hallucinations."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute primary psychosis",
+            "The presence of a high fever makes an organic cause for the patient's altered mental status much more likely than a primary psychiatric disorder."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rabies",
+            "The patient presents with the classic signs of furious rabies, including fever, progressive encephalopathy, and hydrophobia."
+          ],
+          [
+            "Herpes Simplex Virus (HSV) Encephalitis",
+            "This is a common cause of acute focal encephalitis presenting with fever, headache, and altered mental status, which is consistent with the patient's symptoms and CSF findings."
+          ],
+          [
+            "Autoimmune Encephalitis",
+            "This condition can present with acute psychiatric symptoms, confusion, and CSF lymphocytic pleocytosis, particularly in young women."
+          ],
+          [
+            "Arboviral Encephalitis",
+            "Various arboviruses (e.g., West Nile Virus) can cause fever, headache, and altered mental status with a lymphocytic pleocytosis in the CSF."
+          ],
+          [
+            "Tetanus",
+            "Although less likely given the prominent confusion, severe tetanus can cause dysphagia and pharyngeal spasms that mimic hydrophobia, along with agitation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Meningitis",
+            "The CSF findings of lymphocytic pleocytosis with normal glucose and protein are not typical for bacterial meningitis."
+          ],
+          [
+            "Brain Abscess",
+            "The normal head CT scan rules out a space-occupying lesion like an abscess."
+          ],
+          [
+            "Intracranial Hemorrhage",
+            "The absence of acute abnormalities on the head CT scan makes a significant hemorrhage unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rabies",
+            "The diagnosis is confirmed by positive CSF PCR for rabies virus RNA, fitting the clinical picture of acute encephalopathy with hydrophobia following bat exposure."
+          ],
+          [
+            "Herpes Simplex Virus Encephalitis",
+            "This is a primary consideration for any acute febrile encephalopathy, as it presents with fever, headache, and confusion, and is a treatable emergency."
+          ],
+          [
+            "West Nile Virus Encephalitis",
+            "This arbovirus causes a similar syndrome of fever, headache, and altered mental status with lymphocytic pleocytosis, especially after outdoor exposure."
+          ],
+          [
+            "Autoimmune Encephalitis",
+            "This condition can present with prominent psychiatric symptoms, altered consciousness, and CSF pleocytosis in a young woman, mimicking an infectious process."
+          ],
+          [
+            "Tetanus",
+            "The presence of agitation and potential pharyngeal spasms mimicking hydrophobia warrants consideration, although encephalopathy is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Meningitis",
+            "CSF analysis showed a lymphocytic pleocytosis with normal glucose, which is inconsistent with typical bacterial meningitis."
+          ],
+          [
+            "Acute Intracranial Mass/Hemorrhage",
+            "The normal head CT scan ruled out a large structural lesion as the cause of the patient's symptoms."
+          ]
+        ]
+      },
+      "cf_id": "case_045_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is noted to have full range of motion of her extremities and no cranial nerve deficits, which argues against rabies."
+    }
+  ]
+}

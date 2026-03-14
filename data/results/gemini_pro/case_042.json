@@ -1,0 +1,306 @@
+{
+  "case_id": "case_042",
+  "model": "gemini_pro",
+  "ground_truth": "Chromosomal abnormalities",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Threatened Abortion",
+          "The patient presents with vaginal bleeding and cramps in the first trimester, which are the defining symptoms of this common complication."
+        ],
+        [
+          "Ectopic Pregnancy",
+          "This is a life-threatening emergency that classically presents with abdominal pain and vaginal bleeding in early pregnancy."
+        ],
+        [
+          "Incomplete Abortion",
+          "The sudden onset of bleeding and cramping may represent the partial expulsion of products of conception from the uterus."
+        ],
+        [
+          "Subchorionic Hematoma",
+          "Bleeding between the chorion and uterine wall is a frequent cause of first-trimester vaginal bleeding."
+        ],
+        [
+          "Gestational Trophoblastic Disease",
+          "This condition of abnormal placental development is an important, though less common, cause of first-trimester bleeding."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Placenta Previa",
+          "This is a diagnosis of the second or third trimester, as the placenta has not yet fully formed or implanted in its final position."
+        ],
+        [
+          "Placental Abruption",
+          "This is a complication of later pregnancy involving premature separation of a formed placenta."
+        ],
+        [
+          "Implantation Bleeding",
+          "This occurs much earlier in gestation (around 4 weeks) and is typically characterized by light spotting, not sudden bleeding."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Inevitable abortion",
+          "The patient presents with first-trimester vaginal bleeding, cramping, and an open cervical os, which are the defining features of this diagnosis."
+        ],
+        [
+          "Incomplete abortion",
+          "Heavy bleeding with passage of clots and an open os suggests some products of conception have passed but some remain in the uterus."
+        ],
+        [
+          "Ruptured ectopic pregnancy",
+          "Hemodynamic instability (dizziness, hypotension, tachycardia) with first-trimester bleeding is highly concerning for a life-threatening ruptured ectopic pregnancy."
+        ],
+        [
+          "Complete abortion",
+          "The passage of clots and subsiding pregnancy symptoms could indicate a completed miscarriage, though ongoing heavy bleeding makes this less likely than an incomplete/inevitable process."
+        ],
+        [
+          "Molar pregnancy",
+          "This is a cause of significant first-trimester bleeding and must be considered, although it is less common than a spontaneous abortion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Threatened abortion",
+          "This diagnosis is defined by bleeding with a closed cervical os, but this patient's cervical os is open."
+        ],
+        [
+          "Implantation bleeding",
+          "This is typically light spotting and would not cause heavy bleeding, clots, an open os, or hemodynamic instability."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Incomplete abortion",
+          "The open cervical os with visible products of conception and ongoing heavy bleeding indicate partial expulsion of uterine contents."
+        ],
+        [
+          "Inevitable abortion",
+          "The combination of vaginal bleeding, lower abdominal cramps, and an open cervical os makes the eventual loss of the pregnancy unavoidable."
+        ],
+        [
+          "Septic abortion",
+          "The patient's tachycardia and borderline hypotension with an open os and retained products of conception raise concern for a superimposed uterine infection."
+        ],
+        [
+          "Complete abortion",
+          "This is a possibility if the tissue seen is the last of the products to be expelled, although the open os and significant bleeding make an ongoing process more likely."
+        ],
+        [
+          "Ectopic pregnancy",
+          "Hemodynamic instability and lower-than-expected hCG levels are classic for a ruptured ectopic, which must be considered despite findings suggesting an intrauterine process."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Threatened abortion",
+          "Ruled out by the open cervical os and visible products of conception."
+        ],
+        [
+          "Missed abortion",
+          "Ruled out by the open cervical os and active expulsion of tissue."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Incomplete Spontaneous Abortion",
+          "The patient has an open cervical os with ongoing bleeding and visible products of conception, indicating some but not all uterine contents have been expelled."
+        ],
+        [
+          "Spontaneous Abortion secondary to Chromosomal Aneuploidy",
+          "Cytogenetic analysis confirmed trisomy 16, a common and definitive cause for first-trimester pregnancy loss."
+        ],
+        [
+          "Inevitable Spontaneous Abortion",
+          "This diagnosis is supported by the open cervical os and significant vaginal bleeding, indicating that pregnancy loss is unavoidable."
+        ],
+        [
+          "Septic Abortion",
+          "This is a critical consideration given the open cervix and retained products of conception, which create a risk for uterine infection."
+        ],
+        [
+          "Complete Spontaneous Abortion",
+          "This is a possible outcome of the current process, though less likely at this moment given the visible products of conception at the os."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Ectopic Pregnancy",
+          "The visualization and cytogenetic analysis of products of conception passed through the cervix confirms an intrauterine pregnancy."
+        ],
+        [
+          "Threatened Abortion",
+          "This diagnosis is defined by bleeding with a closed cervical os, whereas this patient's cervix is open."
+        ],
+        [
+          "Gestational Trophoblastic Disease",
+          "The cytogenetic finding of trisomy 16 is inconsistent with the typical genetic makeup of a molar pregnancy."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Threatened miscarriage",
+            "The patient presents with the classic signs of vaginal bleeding and mild cramps in the first trimester while the pregnancy may still be viable."
+          ],
+          [
+            "Ectopic pregnancy",
+            "This is a life-threatening condition that must be ruled out in any first-trimester patient presenting with bleeding and abdominal pain."
+          ],
+          [
+            "Incomplete miscarriage",
+            "The bleeding and cramping may represent the partial expulsion of products of conception, which is a common cause of these symptoms."
+          ],
+          [
+            "Subchorionic hemorrhage",
+            "Bleeding from a hematoma between the uterine wall and the chorionic membrane is a frequent cause of vaginal bleeding in early pregnancy."
+          ],
+          [
+            "Gestational trophoblastic disease",
+            "This abnormal pregnancy can present with vaginal bleeding in the first trimester and is an important, albeit less common, diagnosis to consider."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Placenta previa",
+            "This diagnosis is not made in the first trimester as the placenta's final position is not yet established."
+          ],
+          [
+            "Placental abruption",
+            "This is a diagnosis typically made in the second or third trimester; subchorionic hemorrhage is the more appropriate term for a similar process in early pregnancy."
+          ],
+          [
+            "Vasa previa",
+            "This is a condition diagnosed later in pregnancy, usually by ultrasound, involving fetal vessels overlying the cervix."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Molar Pregnancy",
+            "This diagnosis best explains the combination of first-trimester vaginal bleeding and early-onset severe hypertension with headache."
+          ],
+          [
+            "Incomplete Abortion",
+            "The open cervical os, heavy bleeding, and passage of clots are classic signs that some, but not all, products of conception have been expelled."
+          ],
+          [
+            "Inevitable Abortion",
+            "Vaginal bleeding accompanied by an open cervical os indicates that miscarriage is unavoidable, even if no tissue has passed yet."
+          ],
+          [
+            "Septic Abortion",
+            "The presence of an open cervix, bleeding, and tachycardia raises concern for a superimposed intrauterine infection."
+          ],
+          [
+            "Ectopic Pregnancy",
+            "This is a life-threatening cause of first-trimester bleeding and must be considered, although the open cervical os points more toward an intrauterine process."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Threatened Abortion",
+            "This diagnosis is defined by bleeding with a closed cervical os, but this patient's os is open."
+          ],
+          [
+            "Placenta Previa",
+            "This is a cause of bleeding later in pregnancy (typically after 20 weeks) and is not a diagnosis made in the first trimester."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Molar Pregnancy",
+            "The combination of a failing pregnancy and severe hypertension with headache at this early gestational age is highly suggestive of gestational trophoblastic disease."
+          ],
+          [
+            "Incomplete Abortion",
+            "An open cervical os with visible products of conception and a history of passing clots indicates that some, but not all, pregnancy tissue has been expelled."
+          ],
+          [
+            "Inevitable Abortion",
+            "The presence of an open cervical os with bleeding and visible products of conception indicates that a miscarriage is actively in progress."
+          ],
+          [
+            "Preeclampsia with severe features",
+            "The patient's severe headache and blood pressure of 160/110 mmHg meet diagnostic criteria, likely occurring secondary to a molar pregnancy."
+          ],
+          [
+            "Septic Abortion",
+            "Retained products of conception in the setting of an open cervix present a significant risk for uterine infection, which may be heralded by tachycardia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Threatened Abortion",
+            "This diagnosis is defined by vaginal bleeding with a closed cervical os, which is contrary to the patient's physical exam."
+          ],
+          [
+            "Ectopic Pregnancy",
+            "The visualization of products of conception in the cervical os confirms an intrauterine process, making a primary ectopic pregnancy extremely unlikely."
+          ],
+          [
+            "Complete Abortion",
+            "This diagnosis requires the full expulsion of all products of conception and a closed cervix, which is inconsistent with the current findings."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Spontaneous Abortion due to Trisomy 16",
+            "The definitive cytogenetic result provides the specific etiology for the clinically evident first-trimester pregnancy loss."
+          ],
+          [
+            "Incomplete Spontaneous Abortion",
+            "The open cervical os with visible products of conception indicates that the process of miscarriage has begun but is not yet complete."
+          ],
+          [
+            "Preeclampsia with severe features",
+            "The patient's blood pressure of 160/110 mmHg and severe headache meet the diagnostic criteria, even at this early gestational age."
+          ],
+          [
+            "Gestational Trophoblastic Disease",
+            "This was a primary consideration due to the combination of a non-viable pregnancy and very early onset severe hypertension, though cytogenetics revealed a different cause."
+          ],
+          [
+            "Inevitable Abortion",
+            "Vaginal bleeding and an open cervical os in the first trimester make pregnancy loss unavoidable."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Threatened Abortion",
+            "This is ruled out by the finding of an open cervical os."
+          ],
+          [
+            "Ectopic Pregnancy",
+            "The visualization of products of conception in the cervical os confirms an intrauterine pregnancy is being expelled."
+          ],
+          [
+            "Complete Abortion",
+            "This is ruled out as the cervical os is open and products of conception are still present."
+          ]
+        ]
+      },
+      "cf_id": "case_042_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood pressure is elevated and she reports a severe headache, suggesting preeclampsia which would argue against chromosomal abnormalities as the primary cause of bleeding."
+    }
+  ]
+}

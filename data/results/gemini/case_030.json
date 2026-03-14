@@ -1,0 +1,247 @@
+{
+  "case_id": "case_030",
+  "model": "gemini",
+  "ground_truth": "Myasthenia gravis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The combination of double vision and muscle weakness, particularly affecting extraocular and proximal muscles, is highly suggestive of myasthenia gravis."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Double vision and weakness are common initial symptoms of multiple sclerosis due to demyelination in the brain or spinal cord."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "Weakness and potential cranial nerve involvement could indicate LEMS, although it is less common than myasthenia gravis."
+        ],
+        [
+          "Brain Tumor",
+          "A brain tumor could cause cranial nerve palsies leading to double vision and also contribute to generalized weakness."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "While less likely to cause limb weakness, thyroid eye disease can cause diplopia due to extraocular muscle involvement."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The fatigable weakness, ptosis worsening with sustained gaze, and improvement with rest strongly suggest myasthenia gravis."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "While less likely given the patient's age and sex, LEMS can present with proximal muscle weakness and fatigability."
+        ],
+        [
+          "Oculomotor Nerve Palsy",
+          "Double vision and ptosis could be caused by oculomotor nerve dysfunction, although the generalized weakness is less typical."
+        ],
+        [
+          "Mitochondrial Myopathy",
+          "Progressive external ophthalmoplegia and proximal muscle weakness can be features of mitochondrial myopathies."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Although less likely given the symptom fluctuation with rest and activity, MS can present with double vision and weakness."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "The fatigable weakness, ptosis worsening with sustained gaze, and improvement with rest strongly suggest myasthenia gravis."
+        ],
+        [
+          "Lambert-Eaton Myasthenic Syndrome",
+          "While less likely given the patient's age and lack of associated malignancy risk factors so far, LEMS can present with proximal muscle weakness and fatigability."
+        ],
+        [
+          "Oculomotor Nerve Palsy",
+          "Double vision and ptosis could be caused by oculomotor nerve dysfunction, although the generalized weakness is less typical."
+        ],
+        [
+          "Mitochondrial Myopathy",
+          "This could explain the progressive muscle weakness and fatigue, although the specific pattern of symptoms is less typical."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Although less likely without other neurological findings, MS can present with fatigue, double vision, and weakness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hyperthyroidism",
+          "Thyroid function tests were normal."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Myasthenia gravis",
+          "The positive edrophonium test and elevated acetylcholine receptor antibodies strongly suggest myasthenia gravis."
+        ],
+        [
+          "Lambert-Eaton myasthenic syndrome",
+          "While less likely given the isolated findings, LEMS can present with proximal muscle weakness and fatigability, though it is usually associated with small cell lung cancer."
+        ],
+        [
+          "Congenital myasthenic syndrome",
+          "This is a possibility given the fatigable weakness and ptosis, although the adult onset makes it less likely than acquired myasthenia gravis."
+        ],
+        [
+          "Oculopharyngeal muscular dystrophy",
+          "This condition can present with ptosis and dysphagia, but the improvement with edrophonium makes it less likely."
+        ],
+        [
+          "Mitochondrial myopathy",
+          "Mitochondrial disorders can cause progressive external ophthalmoplegia and muscle weakness, but the response to edrophonium is atypical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hyperthyroidism",
+          "Thyroid function tests were normal."
+        ],
+        [
+          "Thymoma",
+          "CT scan of the chest was performed to evaluate for thymoma, but the results were not provided, so it cannot be fully eliminated, but the positive antibody test makes myasthenia gravis more likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of double vision and muscle weakness, particularly affecting extraocular and proximal muscles, is highly suggestive of myasthenia gravis."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Double vision and weakness are common initial symptoms of multiple sclerosis due to demyelination in the brain or spinal cord."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "Weakness and potential cranial nerve involvement could indicate LEMS, although it is less common than myasthenia gravis."
+          ],
+          [
+            "Brain Tumor",
+            "A brain tumor could cause cranial nerve palsies leading to double vision and also contribute to generalized weakness."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "While less likely to cause limb weakness, thyroid eye disease can cause diplopia due to extraocular muscle involvement."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The presence of ptosis worsening with sustained gaze and generalized weakness suggests a possible autoimmune neuromuscular junction disorder."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "While less likely given the patient's age and sex, LEMS can present with proximal muscle weakness and ptosis."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "Constant muscle weakness and ptosis could be indicative of a mitochondrial disorder affecting muscle function."
+          ],
+          [
+            "Oculopharyngeal Muscular Dystrophy",
+            "The combination of ptosis and proximal muscle weakness, particularly difficulty climbing stairs, raises suspicion for this muscular dystrophy."
+          ],
+          [
+            "Brainstem Lesion",
+            "Although less likely given the constant symptoms, a brainstem lesion could affect cranial nerves and motor pathways, leading to ptosis and weakness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Exertional fatigue",
+            "Symptoms are constant and do not fluctuate with activity."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The combination of ptosis worsening with sustained gaze and limb weakness points towards myasthenia gravis, even with normal labs so far."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "Though less likely given the patient's age and lack of associated malignancy risk factors, LEMS can present with proximal muscle weakness and should be considered."
+          ],
+          [
+            "Oculomotor Nerve Palsy",
+            "Double vision and ptosis could be caused by oculomotor nerve dysfunction, although the limb weakness is less typical."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "Progressive external ophthalmoplegia and proximal muscle weakness can be features of mitochondrial myopathies."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Although less likely given the constant symptoms, MS can present with a variety of neurological symptoms including vision changes and weakness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hyperthyroidism",
+            "Thyroid function tests were normal."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "The positive edrophonium test and elevated acetylcholine receptor antibodies strongly suggest myasthenia gravis."
+          ],
+          [
+            "Lambert-Eaton Myasthenic Syndrome",
+            "While less likely given the absence of autonomic symptoms, LEMS can present with proximal muscle weakness and should be considered."
+          ],
+          [
+            "Oculomotor Nerve Palsy",
+            "The patient's diplopia and ptosis could be related to oculomotor nerve dysfunction, although the generalized weakness is less typical."
+          ],
+          [
+            "Mitochondrial Myopathy",
+            "This could explain the progressive muscle weakness, although the edrophonium response is not characteristic."
+          ],
+          [
+            "Botulism",
+            "Although less likely given the gradual onset, botulism can cause descending paralysis and cranial nerve involvement."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hyperthyroidism",
+            "Thyroid function tests were normal."
+          ],
+          [
+            "Thymoma",
+            "CT scan of the chest was performed to evaluate for thymoma, but the result was not provided."
+          ]
+        ]
+      },
+      "cf_id": "case_030_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that her symptoms are constant and do not fluctuate with activity or rest, which argues against myasthenia gravis."
+    }
+  ]
+}

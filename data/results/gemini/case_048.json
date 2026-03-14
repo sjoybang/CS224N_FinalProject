@@ -1,0 +1,244 @@
+{
+  "case_id": "case_048",
+  "model": "gemini",
+  "ground_truth": "Poxvirus",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Kaposi sarcoma",
+          "Given the patient's HIV status and presentation of skin lesions, Kaposi sarcoma is a strong consideration."
+        ],
+        [
+          "Molluscum contagiosum",
+          "This viral skin infection is more common and can be extensive in immunocompromised individuals."
+        ],
+        [
+          "Folliculitis",
+          "While he denies pain, folliculitis can present with skin lesions, especially in the setting of immunosuppression."
+        ],
+        [
+          "Drug eruption",
+          "New medications could cause a rash, even without systemic symptoms."
+        ],
+        [
+          "Seborrheic dermatitis",
+          "This common skin condition can be exacerbated by HIV and present with facial lesions."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Molluscum Contagiosum",
+          "The presence of skin-colored papules with a dimpled center is characteristic of molluscum contagiosum, and it is more common and can be extensive in immunocompromised individuals."
+        ],
+        [
+          "Cryptococcosis",
+          "Disseminated cryptococcosis can present with skin lesions, particularly in immunocompromised patients with HIV, and can also cause lymphadenopathy."
+        ],
+        [
+          "Histoplasmosis",
+          "Disseminated histoplasmosis can cause skin lesions and lymphadenopathy in immunocompromised individuals, especially those with advanced HIV."
+        ],
+        [
+          "Kaposi Sarcoma",
+          "This malignancy associated with HIV can present with skin lesions, although they are typically violaceous or brownish, and lymphadenopathy."
+        ],
+        [
+          "Cutaneous T-cell Lymphoma",
+          "This lymphoma can present with skin lesions, including papules and plaques, and lymphadenopathy, and can be more aggressive in HIV-positive individuals."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Varicella-Zoster Virus",
+          "The patient denies pain, which is common in VZV."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Molluscum Contagiosum",
+          "The presence of skin-colored papules with a dimpled center, especially in an immunocompromised individual, strongly suggests molluscum contagiosum."
+        ],
+        [
+          "Cryptococcosis",
+          "Disseminated cryptococcosis can present with skin lesions resembling papules or nodules, and the patient's HIV status makes this a plausible opportunistic infection."
+        ],
+        [
+          "Histoplasmosis",
+          "This fungal infection can cause skin lesions and lymphadenopathy in immunocompromised individuals, although it is less likely given the specific description of the lesions."
+        ],
+        [
+          "Kaposi Sarcoma",
+          "While less likely given the lesion description, Kaposi sarcoma should be considered in an HIV-positive patient presenting with skin lesions and lymphadenopathy."
+        ],
+        [
+          "Folliculitis",
+          "Although the lesions are not described as pustular, folliculitis can present with papules and should be considered in the differential, especially given the patient's HIV status."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Herpes Simplex Virus",
+          "No vesicles or ulcerations are described."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Molluscum Contagiosum",
+          "The presence of skin-colored papules with a dimpled center, intracytoplasmic inclusion bodies, and poxvirus particles confirmed by electron microscopy strongly suggests molluscum contagiosum."
+        ],
+        [
+          "Histoplasmosis",
+          "Given the patient's HIV status and low BMI, disseminated fungal infections like histoplasmosis should be considered, although skin lesions are less typical."
+        ],
+        [
+          "Cryptococcosis",
+          "This fungal infection can present with skin lesions in immunocompromised individuals, although the characteristic skin findings of molluscum contagiosum are more specific."
+        ],
+        [
+          "Bacillary Angiomatosis",
+          "While less likely given the biopsy results, this should be considered in an HIV-positive patient with skin lesions and lymphadenopathy."
+        ],
+        [
+          "Kaposi Sarcoma",
+          "Although less likely given the biopsy results, Kaposi Sarcoma can present with skin lesions in HIV-positive patients, and should be considered in the differential."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Herpes Simplex Virus",
+          "The absence of pain or vesicles and the biopsy results make HSV less likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Kaposi sarcoma",
+            "Given the patient's HIV status and presentation of skin lesions, Kaposi sarcoma is a strong consideration."
+          ],
+          [
+            "Molluscum contagiosum",
+            "This viral skin infection is more common and can be extensive in immunocompromised individuals."
+          ],
+          [
+            "Folliculitis",
+            "While he denies pain, folliculitis can present with skin lesions, especially in the setting of immunosuppression."
+          ],
+          [
+            "Drug eruption",
+            "New medications could cause a rash, even without systemic symptoms."
+          ],
+          [
+            "Seborrheic dermatitis",
+            "This common skin condition can be exacerbated by HIV and present with facial lesions."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Molluscum contagiosum",
+            "The presence of multiple vesicles with a dimpled center is highly suggestive of molluscum contagiosum, especially in an immunocompromised individual."
+          ],
+          [
+            "Herpes simplex virus infection",
+            "Vesicular lesions in an HIV-positive patient could represent a disseminated or atypical herpes simplex infection."
+          ],
+          [
+            "Varicella-zoster virus infection",
+            "While less likely given the absence of pain, atypical presentation of varicella-zoster virus (VZV) infection is possible in immunocompromised patients."
+          ],
+          [
+            "Cryptococcosis",
+            "Skin lesions, particularly in the setting of HIV and lymphadenopathy, can be a manifestation of disseminated cryptococcosis."
+          ],
+          [
+            "Histoplasmosis",
+            "Disseminated histoplasmosis can present with skin lesions and lymphadenopathy in immunocompromised individuals."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Primary syphilis",
+            "No mention of typical chancre or other characteristic findings."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Molluscum Contagiosum",
+            "The presence of multiple vesicles with a dimpled center in an HIV-positive patient with a CD4 count of 312 is highly suggestive of molluscum contagiosum."
+          ],
+          [
+            "Herpes Simplex Virus (HSV) infection",
+            "Vesicular lesions on the face in an immunocompromised patient could be due to HSV."
+          ],
+          [
+            "Varicella-Zoster Virus (VZV) infection",
+            "Although the patient denies pain, atypical presentation of VZV is possible in HIV patients."
+          ],
+          [
+            "Fungal infection",
+            "Disseminated fungal infections can present with skin lesions, especially in immunocompromised individuals."
+          ],
+          [
+            "Kaposi Sarcoma",
+            "While less likely given the description of the lesions, Kaposi Sarcoma should be considered in an HIV-positive patient with skin lesions and lymphadenopathy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial infection",
+            "No signs of bacterial infection are present based on the lab results."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Molluscum Contagiosum",
+            "The presence of vesicles with a dimpled center, cervical lymphadenopathy, CD4 count of 312, and confirmation of poxvirus particles on electron microscopy strongly suggests molluscum contagiosum, which is more common and severe in immunocompromised individuals."
+          ],
+          [
+            "Herpes Simplex Virus (HSV) Infection",
+            "While the lesions are not typical, HSV can present atypically in immunocompromised patients, and the presence of vesicles warrants consideration."
+          ],
+          [
+            "Varicella-Zoster Virus (VZV) Infection",
+            "Although the patient denies pain, atypical presentations of VZV can occur in HIV-positive individuals, and the vesicular nature of the lesions necessitates its inclusion."
+          ],
+          [
+            "Disseminated Warts",
+            "Although less likely given the dimpled appearance, disseminated warts can occur in immunocompromised patients and present with multiple skin lesions."
+          ],
+          [
+            "Histoplasmosis",
+            "Disseminated histoplasmosis can present with skin lesions in immunocompromised individuals, although the morphology is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Syphilis",
+            "Serum studies showed no abnormalities, making syphilis less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_048_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of vesicles instead of papules argues against Poxvirus, which typically presents with papules or nodules."
+    }
+  ]
+}

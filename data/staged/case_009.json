@@ -1,0 +1,25 @@
+{
+  "case_id": "case_009",
+  "source": "MedQA-USMLE",
+  "original_question": "A 1-year-old boy presents to the emergency department with weakness and a change in his behavior. His parents state that they first noticed the change in his behavior this morning and it has been getting worse. They noticed the patient was initially weak in his upper body and arms, but now he won\u2019t move his legs with as much strength or vigor as he used to. Physical exam is notable for bilateral ptosis with a sluggish pupillary response, a very weak sucking and gag reflex, and shallow respirations. The patient is currently drooling and his diaper is dry. The parents state he has not had a bowel movement in over 1 day. Which of the following is the pathophysiology of this patient\u2019s condition?",
+  "ground_truth": "Infant botulism",
+  "base": {
+    "stage_1": "A 1-year-old boy is brought to the emergency department by his parents due to weakness and a change in behavior that started this morning and has progressively worsened.",
+    "stage_2": "On physical examination, the patient exhibits bilateral ptosis with sluggish pupillary response. He has a very weak sucking and gag reflex, along with shallow respirations. He is drooling and his diaper is dry. The parents report he hasn't had a bowel movement in over 24 hours. The patient's upper body and arms appear weaker than usual, and he is demonstrating decreased leg movement.",
+    "stage_3": "Laboratory studies, including a complete blood count and comprehensive metabolic panel, are within normal limits. A flat and dilated bowel is seen on abdominal X-ray.",
+    "stage_4": "Stool sample analysis reveals the presence of Clostridium botulinum spores and botulinum toxin."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals hyperreflexia and clonus, findings that would argue against infant botulism, which typically presents with hypotonia and diminished reflexes.",
+      "rules_out": "Infant botulism",
+      "stage_1": "A 1-year-old boy is brought to the emergency department by his parents due to weakness and a change in behavior that started this morning and has progressively worsened.",
+      "stage_2": "On physical examination, the patient exhibits bilateral ptosis with sluggish pupillary response. He has a very weak sucking and gag reflex, along with shallow respirations. He is drooling and his diaper is dry. The parents report he hasn't had a bowel movement in over 24 hours. The patient's upper body and arms appear weaker than usual, and he is demonstrating decreased leg movement. Hyperreflexia and clonus are noted in all four extremities.",
+      "stage_3": "Laboratory studies, including a complete blood count and comprehensive metabolic panel, are within normal limits. A flat and dilated bowel is seen on abdominal X-ray.",
+      "stage_4": "Stool sample analysis reveals the presence of Clostridium botulinum spores and botulinum toxin.",
+      "cf_id": "case_009_cf_a"
+    }
+  ]
+}

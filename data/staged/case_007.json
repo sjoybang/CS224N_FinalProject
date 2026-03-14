@@ -1,0 +1,25 @@
+{
+  "case_id": "case_007",
+  "source": "MedQA-USMLE",
+  "original_question": "A 35-year-old male presents to his primary care physician with complaints of seasonal allergies. He has been using intranasal vasoconstrictors several times per day for several weeks. What is a likely sequela of the chronic use of topical nasal decongestants?",
+  "ground_truth": "Rhinitis medicamentosa",
+  "base": {
+    "stage_1": "A 35-year-old male presents to his primary care physician complaining of seasonal allergies.",
+    "stage_2": "The patient reports using intranasal decongestants multiple times daily for several weeks to manage his allergy symptoms. Physical exam reveals significant nasal congestion, but no other acute findings.",
+    "stage_3": "Nasal endoscopy reveals significant edema of the nasal mucosa with associated erythema. There is no evidence of infection or structural abnormality.",
+    "stage_4": "The patient is instructed to discontinue the use of intranasal decongestants. At a follow-up appointment two weeks later, the patient reports significant improvement in nasal congestion after complete cessation of the medication."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports using intranasal decongestants as needed for only 2-3 days, which makes rhinitis medicamentosa less likely.",
+      "rules_out": "Rhinitis medicamentosa",
+      "stage_1": "A 35-year-old male presents to his primary care physician complaining of seasonal allergies.",
+      "stage_2": "The patient reports using intranasal decongestants as needed for 2-3 days to manage his allergy symptoms. Physical exam reveals significant nasal congestion, but no other acute findings.",
+      "stage_3": "Nasal endoscopy reveals significant edema of the nasal mucosa with associated erythema. There is no evidence of infection or structural abnormality.",
+      "stage_4": "The patient is instructed to discontinue the use of intranasal decongestants. At a follow-up appointment two weeks later, the patient reports significant improvement in nasal congestion after complete cessation of the medication.",
+      "cf_id": "case_007_cf_a"
+    }
+  ]
+}

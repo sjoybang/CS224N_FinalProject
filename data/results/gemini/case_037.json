@@ -1,0 +1,256 @@
+{
+  "case_id": "case_037",
+  "model": "gemini",
+  "ground_truth": "Voice pitch limitation",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Hypothyroidism",
+          "Post-hemithyroidectomy, the remaining thyroid tissue may be insufficient to maintain adequate thyroid hormone levels."
+        ],
+        [
+          "Papillary thyroid carcinoma recurrence",
+          "Although treated, there is always a risk of recurrence, requiring monitoring."
+        ],
+        [
+          "Postoperative hypoparathyroidism",
+          "Thyroid surgery can sometimes damage the parathyroid glands, leading to hypocalcemia."
+        ],
+        [
+          "Postoperative pain",
+          "Pain is common after surgery and needs to be considered."
+        ],
+        [
+          "Thyrotoxicosis",
+          "Manipulation of the thyroid gland during surgery can cause a transient release of thyroid hormone."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Vocal cord paralysis",
+          "This is a common complication of thyroid surgery due to potential damage to the recurrent laryngeal nerve, which can cause voice changes."
+        ],
+        [
+          "Hypocalcemia",
+          "Post-thyroidectomy hypocalcemia can cause neuromuscular symptoms affecting voice."
+        ],
+        [
+          "Laryngeal edema",
+          "Postoperative swelling in the larynx could contribute to voice changes."
+        ],
+        [
+          "Superior laryngeal nerve injury",
+          "Damage to this nerve during surgery can affect the cricothyroid muscle, altering voice pitch and quality."
+        ],
+        [
+          "Postoperative pain",
+          "Pain and muscle tension in the neck area following surgery could alter vocal mechanics."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Papillary thyroid carcinoma",
+          "The patient already underwent surgery for this."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Vocal cord paresis",
+          "Voice changes post-thyroid surgery suggest possible nerve damage."
+        ],
+        [
+          "Postoperative edema",
+          "Swelling in the surgical area could be affecting vocal cord function."
+        ],
+        [
+          "Laryngitis",
+          "Inflammation of the larynx could be contributing to voice changes."
+        ],
+        [
+          "Muscle tension dysphonia",
+          "Compensatory muscle tension could be altering voice quality."
+        ],
+        [
+          "Scar tissue formation",
+          "Scarring around the surgical site could be impacting laryngeal movement."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Papillary thyroid carcinoma",
+          "Complete resection with clear margins confirmed."
+        ],
+        [
+          "Hypocalcemia",
+          "Calcium levels are within normal limits."
+        ],
+        [
+          "Hypothyroidism",
+          "TSH levels are within normal limits."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Superior laryngeal nerve injury",
+          "Unilateral paralysis of the superior laryngeal nerve observed during laryngoscopy directly explains the voice changes and difficulty modulating pitch."
+        ],
+        [
+          "Vocal cord paresis",
+          "Although superior laryngeal nerve injury is confirmed, vocal cord paresis could be a contributing factor to the hoarseness."
+        ],
+        [
+          "Postoperative edema",
+          "Edema following surgery could contribute to voice changes, although less likely given the time since surgery."
+        ],
+        [
+          "Scar tissue formation",
+          "Scar tissue around the surgical site could potentially affect laryngeal function and voice quality."
+        ],
+        [
+          "Muscle tension dysphonia",
+          "The patient may be compensating for the nerve injury with increased muscle tension, leading to dysphonia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Papillary thyroid carcinoma recurrence",
+          "Complete resection with clear margins and normal TSH levels make recurrence unlikely at this stage."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Post-thyroidectomy Hypothyroidism",
+            "Thyroid tissue removal can lead to insufficient thyroid hormone production."
+          ],
+          [
+            "Papillary Thyroid Carcinoma Recurrence",
+            "Papillary thyroid carcinoma can recur in the remaining thyroid tissue or regionally."
+          ],
+          [
+            "Post-operative Hypoparathyroidism",
+            "Damage to parathyroid glands during surgery can cause hypocalcemia."
+          ],
+          [
+            "Post-operative Hematoma",
+            "Bleeding after surgery can cause a hematoma."
+          ],
+          [
+            "Post-operative Infection",
+            "Any surgery carries a risk of infection."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Post-thyroidectomy state",
+            "The patient is being followed up after a hemithyroidectomy."
+          ],
+          [
+            "Papillary thyroid carcinoma (status post hemithyroidectomy)",
+            "The patient has a history of papillary thyroid carcinoma, which was the reason for the surgery."
+          ],
+          [
+            "Hypothyroidism",
+            "Thyroidectomy can lead to hypothyroidism, requiring monitoring."
+          ],
+          [
+            "Euthyroid state",
+            "The patient may be maintaining normal thyroid function after partial thyroid removal."
+          ],
+          [
+            "Surgical site pain",
+            "Post-operative pain is possible even with a well-healed scar."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Vocal cord paralysis",
+            "The patient reports no voice changes."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Post-thyroidectomy state",
+            "The patient is in a post-operative state following a hemithyroidectomy."
+          ],
+          [
+            "Papillary thyroid carcinoma, status post resection",
+            "The patient has a history of papillary thyroid carcinoma, now resected."
+          ],
+          [
+            "Euthyroidism",
+            "TSH levels are within normal limits, suggesting normal thyroid function."
+          ],
+          [
+            "Normal calcium metabolism",
+            "Calcium levels are within normal limits."
+          ],
+          [
+            "Surgical scar",
+            "The patient has a well-healed surgical scar from the hemithyroidectomy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypocalcemia",
+            "Calcium levels are normal."
+          ],
+          [
+            "Hypothyroidism",
+            "TSH levels are normal."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Superior Laryngeal Nerve Injury",
+            "Unilateral paralysis of the superior laryngeal nerve observed during laryngoscopy explains the hoarseness and difficulty with pitch modulation."
+          ],
+          [
+            "Vocal Cord Paralysis",
+            "Although superior laryngeal nerve injury is more specific, vocal cord paralysis is a broader category that could encompass the observed findings."
+          ],
+          [
+            "Post-operative Inflammation",
+            "Inflammation following surgery could contribute to nerve dysfunction and voice changes."
+          ],
+          [
+            "Scar Tissue Formation",
+            "Scar tissue around the surgical site could potentially impinge on the superior laryngeal nerve."
+          ],
+          [
+            "Muscle Tension Dysphonia",
+            "Although less likely given the laryngoscopy findings, compensatory muscle tension could contribute to the hoarseness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Papillary Thyroid Carcinoma",
+            "Complete resection with clear margins confirmed by pathology eliminates this as a current diagnosis."
+          ]
+        ]
+      },
+      "cf_id": "case_037_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports no voice changes since surgery, which argues against voice pitch limitation."
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "case_id": "case_032",
+  "model": "gemini",
+  "ground_truth": "Poliomyelitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Malaria",
+          "Recent travel from Pakistan and fever suggest possible malarial infection."
+        ],
+        [
+          "Dengue Fever",
+          "Dengue is prevalent in many parts of the world and presents with fever and muscle pain."
+        ],
+        [
+          "Typhoid Fever",
+          "Typhoid fever is endemic in Pakistan and can cause fever, muscle pain, and weakness."
+        ],
+        [
+          "Influenza",
+          "Influenza is a common cause of fever, muscle pain, and weakness, especially during flu season."
+        ],
+        [
+          "Chikungunya",
+          "This mosquito-borne illness is present in parts of Asia and can cause fever, joint pain, and muscle weakness."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "Unvaccinated status, fever, and acute flaccid paralysis with fasciculations strongly suggest polio."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "Ascending paralysis with areflexia can present similarly, although fever is less common."
+        ],
+        [
+          "Transverse Myelitis",
+          "Inflammation of the spinal cord could cause weakness and paralysis, though usually with sensory deficits."
+        ],
+        [
+          "West Nile Virus",
+          "This arbovirus can cause acute flaccid paralysis, especially in unvaccinated individuals."
+        ],
+        [
+          "Enterovirus D68",
+          "This virus can cause acute flaccid myelitis, presenting with limb weakness and paralysis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "Unvaccinated status, flaccid paralysis, and CSF lymphocytosis are highly suggestive."
+        ],
+        [
+          "West Nile Virus",
+          "Fever, muscle weakness, paralysis, and lymphocytosis in CSF are consistent with this arboviral infection."
+        ],
+        [
+          "Enterovirus D68",
+          "This virus can cause acute flaccid myelitis, presenting with limb weakness and potential CSF abnormalities."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "While typically presenting with ascending paralysis, variants can present with limb weakness and CSF albuminocytologic dissociation (though normal protein does not support this)."
+        ],
+        [
+          "Transverse Myelitis",
+          "Inflammation of the spinal cord can cause weakness, paralysis, and sensory changes, though CSF findings are less specific."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Meningitis",
+          "Normal CSF glucose and protein make bacterial meningitis less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Poliomyelitis",
+          "The presence of poliovirus in the throat swab, along with flaccid paralysis, fever, and EMG evidence of denervation, strongly suggests poliomyelitis."
+        ],
+        [
+          "Acute Flaccid Myelitis",
+          "While poliovirus is confirmed, AFM remains in the differential due to its similar presentation of acute-onset flaccid paralysis, though less likely given the confirmed polio."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "GBS can present with flaccid paralysis and areflexia, but the CSF findings of lymphocytosis and confirmed poliovirus make it less likely than polio."
+        ],
+        [
+          "Transverse Myelitis",
+          "Transverse myelitis can cause weakness and sensory changes, but the confirmed poliovirus and EMG findings point more towards polio."
+        ],
+        [
+          "West Nile Virus",
+          "West Nile Virus can cause a polio-like syndrome with flaccid paralysis, but the confirmed poliovirus makes it less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Botulism",
+          "The CSF findings of lymphocytosis and the presence of fever make botulism less likely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Malaria",
+            "Recent travel from Pakistan and fever suggest possible malarial infection."
+          ],
+          [
+            "Dengue Fever",
+            "Dengue is prevalent in many parts of the world and presents with fever and muscle pain."
+          ],
+          [
+            "Typhoid Fever",
+            "Typhoid fever is endemic in Pakistan and can cause fever, muscle pain, and weakness."
+          ],
+          [
+            "Influenza",
+            "Influenza is a common cause of fever, muscle pain, and weakness, especially during flu season."
+          ],
+          [
+            "Chikungunya",
+            "This mosquito-borne illness is present in parts of Asia and can cause fever, joint pain, and muscle weakness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Poliomyelitis",
+            "Unvaccinated status, fever, and acute flaccid paralysis with hyperreflexia strongly suggest polio."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "Ascending paralysis with hyperreflexia could indicate GBS, although fever is less typical."
+          ],
+          [
+            "Transverse Myelitis",
+            "Spinal cord inflammation could cause weakness, paralysis, and hyperreflexia, though the fever and lack of vaccination are less specific."
+          ],
+          [
+            "West Nile Virus",
+            "This viral infection can cause fever, muscle weakness, and neurological symptoms, including paralysis."
+          ],
+          [
+            "Spinal Cord Tumor",
+            "Although less likely given the acute onset and fever, a spinal cord tumor could present with progressive weakness and hyperreflexia."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Poliomyelitis",
+            "Unvaccinated status, fever, paralysis, and CSF lymphocytosis are consistent with polio."
+          ],
+          [
+            "West Nile Virus",
+            "Fever, muscle weakness, hyperreflexia, and lymphocytosis in CSF are suggestive of West Nile Virus."
+          ],
+          [
+            "Enterovirus Encephalitis",
+            "Fever, paralysis, and CSF lymphocytosis can be caused by enteroviruses."
+          ],
+          [
+            "Japanese Encephalitis",
+            "Given the patient's recent emigration from Pakistan, Japanese encephalitis should be considered with fever, paralysis, and CSF lymphocytosis."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "While typically presenting with areflexia, GBS can rarely present with hyperreflexia, and should be considered given the paralysis and recent fever."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Meningitis",
+            "Normal glucose and protein levels in CSF make bacterial meningitis less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Poliomyelitis",
+            "Poliovirus was confirmed in the throat swab, and the patient presents with fever, paralysis, and EMG evidence of denervation."
+          ],
+          [
+            "Acute Flaccid Myelitis",
+            "While poliovirus is confirmed, AFM can present similarly with acute onset of limb weakness and spinal cord involvement."
+          ],
+          [
+            "Transverse Myelitis",
+            "This inflammatory condition can cause rapid onset of motor weakness and sensory changes, though CSF usually shows elevated protein."
+          ],
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "This autoimmune disorder can cause ascending paralysis and areflexia, but the hyperreflexia makes it less likely."
+          ],
+          [
+            "West Nile Virus",
+            "This arbovirus can cause fever, muscle weakness, and neurological symptoms, but is less likely given the confirmed poliovirus."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meningitis",
+            "CSF analysis showed normal glucose and protein levels, making bacterial meningitis less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_032_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The physical exam now reveals hyperreflexia and spastic paralysis, findings that are inconsistent with the flaccid paralysis seen in poliomyelitis."
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "case_id": "case_011",
+  "model": "gemini_pro",
+  "ground_truth": "Progressive obstruction of expiratory airflow",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The patient's age and the combination of chronic cough and fatigue are classic for this common progressive airway disease."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "This is a very common cause of chronic cough, which can be associated with non-specific symptoms like fatigue."
+        ],
+        [
+          "Asthma",
+          "This inflammatory airway disease can present later in life with chronic cough (cough-variant asthma) and associated fatigue."
+        ],
+        [
+          "Interstitial Lung Disease (ILD)",
+          "This diagnosis is suggested by the patient's age and the combination of chronic cough and fatigue, which are hallmark symptoms of progressive lung parenchymal disease."
+        ],
+        [
+          "Congestive Heart Failure (CHF)",
+          "This condition can cause both chronic cough due to pulmonary congestion and significant fatigue from reduced cardiac output."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Bronchitis",
+          "The two-year duration of symptoms is inconsistent with an acute infectious process."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The patient's age, chronic cough, fatigue, tachypnea, and diffuse wheezing and rhonchi are highly characteristic of this diagnosis."
+        ],
+        [
+          "Asthma",
+          "The prominent bilateral wheezing is a hallmark of asthma, and the chronic cough could represent cough-variant or poorly controlled disease."
+        ],
+        [
+          "Bronchiectasis",
+          "This condition explains the chronic cough and rhonchi due to excessive mucus in permanently dilated airways."
+        ],
+        [
+          "Congestive Heart Failure",
+          "Pulmonary edema can cause a chronic cough and wheezing (cardiac asthma), and the patient's hypertension is a significant risk factor."
+        ],
+        [
+          "Interstitial Lung Disease",
+          "This broad category of chronic fibrosing lung diseases can present with a persistent cough and fatigue, and some forms may have associated wheezing."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Bronchitis",
+          "The two-year duration of symptoms is inconsistent with an acute illness."
+        ],
+        [
+          "Community-Acquired Pneumonia",
+          "The chronic nature of the symptoms and lack of fever make an acute infection unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The patient's age, chronic symptoms, wheezing, and classic obstructive findings on PFTs (decreased FEV1/FVC) and CXR (hyperinflation) are highly characteristic of COPD."
+        ],
+        [
+          "Asthma",
+          "This diagnosis is supported by the presence of wheezing and an obstructive pattern on PFTs, as severe, long-standing asthma can lead to airway remodeling and findings similar to COPD."
+        ],
+        [
+          "Bronchiectasis",
+          "This condition causes chronic cough and can present with an obstructive pattern on PFTs due to airway damage and mucus plugging."
+        ],
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "This genetic disorder is a cause of emphysema and presents with the same obstructive PFT and CXR findings, and should be considered as an underlying etiology for COPD."
+        ],
+        [
+          "Obliterative Bronchiolitis",
+          "This rare condition involves inflammation and fibrosis of the small airways, leading to a severe, fixed obstructive picture that matches the PFT and imaging results."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Interstitial Lung Disease",
+          "This is a restrictive process, which is inconsistent with the obstructive pattern (decreased FEV1/FVC ratio) found on pulmonary function testing."
+        ],
+        [
+          "Congestive Heart Failure",
+          "The clinical picture of diffuse wheezing and CXR findings of hyperinflation are not typical for heart failure, which usually presents with crackles and signs of pulmonary edema."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The patient's age, chronic cough, obstructive pattern on PFTs, and radiographic evidence of hyperinflation are all classic for this diagnosis."
+        ],
+        [
+          "Asthma",
+          "Chronic, poorly controlled asthma can lead to airway remodeling and a fixed obstructive pattern, and would explain the prominent wheezing."
+        ],
+        [
+          "Asthma-COPD Overlap (ACO)",
+          "This diagnosis is appropriate for patients with persistent airflow limitation who also have features suggestive of asthma, such as significant wheezing."
+        ],
+        [
+          "Bronchiectasis",
+          "This condition can cause chronic cough and airflow obstruction, though the negative sputum culture and lack of typical radiographic findings make it less likely."
+        ],
+        [
+          "Obliterative Bronchiolitis",
+          "This is a rarer cause of progressive, fixed airflow obstruction that can mimic COPD, although it often has specific risk factors not mentioned."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "This was ruled out by the normal alpha-1 antitrypsin level."
+        ],
+        [
+          "Interstitial Lung Disease",
+          "Pulmonary function testing revealed an obstructive, not a restrictive, pattern."
+        ],
+        [
+          "Active Bacterial Infection",
+          "The sputum culture was negative for bacterial pathogens."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "This is a common cause of chronic cough and fatigue in this age group, particularly with a history of smoking."
+          ],
+          [
+            "Asthma",
+            "Cough-variant or late-onset asthma is a frequent cause of chronic cough and can be associated with fatigue."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "A very common cause of chronic cough, which can occur as the sole presenting symptom without classic heartburn."
+          ],
+          [
+            "Interstitial Lung Disease (ILD)",
+            "This diagnosis is suggested by the chronicity of the cough and fatigue in an older adult, representing a broad category of lung parenchymal disorders."
+          ],
+          [
+            "Congestive Heart Failure (CHF)",
+            "Pulmonary congestion from chronic heart failure can manifest as a persistent cough, and fatigue is a cardinal symptom."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Bronchitis",
+            "The two-year duration of symptoms is inconsistent with an acute infectious process."
+          ],
+          [
+            "Pneumonia",
+            "This is an acute infection and does not fit the chronic two-year history."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Lung Cancer",
+            "The patient's age, chronic cough, and focal sign of consolidation (egophony) are highly suspicious for a primary lung malignancy."
+          ],
+          [
+            "Heart Failure",
+            "Chronic fatigue, tachypnea, and distant heart sounds are suggestive, and a resultant pleural effusion could cause egophony in the compressed lung above it."
+          ],
+          [
+            "Pulmonary Tuberculosis",
+            "This is a classic infectious cause of chronic cough, fatigue, and lung consolidation that must be considered."
+          ],
+          [
+            "Organizing Pneumonia",
+            "This condition presents as a non-resolving pneumonia with consolidation, fitting the chronic nature of the patient's symptoms and focal lung finding."
+          ],
+          [
+            "Chronic Fungal Pneumonia",
+            "Similar to tuberculosis, endemic fungi can cause an indolent infection leading to chronic cough, fatigue, and focal lung consolidation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Bacterial Pneumonia",
+            "The two-year history of symptoms and lack of fever are inconsistent with an acute bacterial infection."
+          ],
+          [
+            "COPD",
+            "This obstructive lung disease does not typically cause focal consolidation with egophony."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD) with superimposed pneumonia",
+            "The patient has chronic symptoms, obstructive PFTs, and CXR findings of hyperinflation consistent with COPD, while the egophony suggests a superimposed consolidation like pneumonia."
+          ],
+          [
+            "Bronchiectasis",
+            "This condition causes chronic cough and can lead to an obstructive pattern on PFTs, with the egophony explained by a common infectious exacerbation or mucus plugging."
+          ],
+          [
+            "Lung Cancer",
+            "A central tumor could cause bronchial obstruction leading to an obstructive PFT pattern and post-obstructive pneumonia, which would account for the egophony."
+          ],
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "This genetic condition causes emphysema, explaining the obstructive PFTs and hyperinflation, with the egophony likely due to a secondary infection."
+          ],
+          [
+            "Asthma with mucoid impaction",
+            "Chronic severe asthma can cause a fixed obstructive defect, and a mucus plug could lead to atelectasis or consolidation causing egophony."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Interstitial Lung Disease",
+            "This is inconsistent with the obstructive pattern (decreased FEV1/FVC ratio) found on pulmonary function testing."
+          ],
+          [
+            "Congestive Heart Failure",
+            "The chest x-ray findings of hyperinflation and a flattened diaphragm are not typical for CHF, which usually presents with cardiomegaly and signs of pulmonary edema."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "The patient's chronic cough, obstructive pattern on PFTs, and radiographic signs of hyperinflation are all classic features of this diagnosis."
+          ],
+          [
+            "Asthma-COPD Overlap Syndrome (ACOS)",
+            "This is considered as long-standing asthma can lead to fixed airway obstruction and features that mimic COPD."
+          ],
+          [
+            "Bronchiectasis",
+            "This condition causes irreversible airway dilation leading to chronic cough and can produce an obstructive pattern on spirometry."
+          ],
+          [
+            "Obliterative Bronchiolitis",
+            "This diagnosis explains the irreversible airflow obstruction and chronic cough, though the degree of hyperinflation on imaging is less typical."
+          ],
+          [
+            "Chronic Eosinophilic Pneumonia",
+            "This condition can present with chronic cough and an obstructive pattern, and the egophony could be explained by its characteristic parenchymal consolidation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "This was ruled out by the normal laboratory test result."
+          ],
+          [
+            "Idiopathic Pulmonary Fibrosis",
+            "This typically causes a restrictive, not obstructive, pattern on pulmonary function testing."
+          ],
+          [
+            "Bacterial Pneumonia",
+            "The two-year history and negative sputum culture make a chronic bacterial infection unlikely as the primary underlying cause."
+          ]
+        ]
+      },
+      "cf_id": "case_011_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of egophony on lung auscultation suggests consolidation, arguing against diffuse airway obstruction."
+    }
+  ]
+}

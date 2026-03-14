@@ -1,0 +1,302 @@
+{
+  "case_id": "case_014",
+  "model": "gemini_pro",
+  "ground_truth": "Coronary artery disease",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Peptic Ulcer Disease",
+          "The chronic, postprandial upper abdominal discomfort is a classic presentation for a gastric or duodenal ulcer."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "This is a very common condition that can present atypically with nausea and epigastric discomfort instead of classic heartburn."
+        ],
+        [
+          "Gastritis",
+          "Inflammation of the stomach lining is a frequent cause of chronic nausea and upper abdominal discomfort that is often exacerbated by eating."
+        ],
+        [
+          "Gastric Malignancy",
+          "The patient's age and new onset of chronic gastrointestinal symptoms warrant consideration for an underlying cancer."
+        ],
+        [
+          "Biliary Colic",
+          "Recurrent, episodic upper abdominal discomfort triggered by meals is characteristic of symptomatic cholelithiasis (gallstones)."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Pancreatitis",
+          "The 4-month recurrent history is inconsistent with an acute, singular inflammatory event."
+        ],
+        [
+          "Acute Cholecystitis",
+          "The chronic, episodic nature of symptoms is not typical for an acute infection and inflammation of the gallbladder."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic mesenteric ischemia",
+          "The patient has post-prandial abdominal discomfort and absent foot pulses, suggesting systemic atherosclerosis affecting the gut."
+        ],
+        [
+          "Peptic ulcer disease",
+          "This is a very common cause of chronic, post-prandial upper abdominal discomfort and nausea."
+        ],
+        [
+          "Gastric cancer",
+          "Malignancy must be considered in an older patient with new-onset dyspeptic symptoms."
+        ],
+        [
+          "Atypical angina",
+          "The patient's evidence of peripheral artery disease increases the likelihood that his epigastric symptoms are an anginal equivalent from coronary artery disease."
+        ],
+        [
+          "Gastroparesis",
+          "Delayed gastric emptying can cause chronic nausea and post-prandial discomfort, and the patient has risk factors for diabetes which is a common cause."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute cholecystitis",
+          "The patient is afebrile with a nontender abdomen, making an acute gallbladder inflammation unlikely."
+        ],
+        [
+          "Acute pancreatitis",
+          "The chronic, 4-month duration of symptoms and lack of significant abdominal tenderness are inconsistent with this diagnosis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic mesenteric ischemia",
+          "The patient's postprandial abdominal discomfort, extensive vascular risk factors, and evidence of severe peripheral arterial disease are highly suggestive of intestinal angina."
+        ],
+        [
+          "Stable angina",
+          "The upper abdominal discomfort and nausea may be anginal equivalents, especially given the new-onset exertional symptoms in a patient with this degree of cardiovascular risk."
+        ],
+        [
+          "Diabetic gastroparesis",
+          "Nausea and postprandial discomfort are classic symptoms of delayed gastric emptying, a common complication of the patient's type 2 diabetes."
+        ],
+        [
+          "Peptic ulcer disease",
+          "This is a common cause of meal-related upper abdominal discomfort, and the patient's smoking history is a significant risk factor."
+        ],
+        [
+          "Gastroesophageal reflux disease",
+          "This highly prevalent condition commonly causes upper abdominal discomfort and nausea that can be exacerbated by eating."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myocardial infarction",
+          "The chronic 4-month history and normal resting ECG are inconsistent with an acute infarction."
+        ],
+        [
+          "Aortic dissection",
+          "This acute, catastrophic diagnosis is ruled out by the chronic and intermittent nature of the symptoms."
+        ],
+        [
+          "Acute pancreatitis",
+          "The chronicity of symptoms and a benign, non-tender abdominal exam make this diagnosis highly improbable."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Stable Angina",
+          "The patient's upper abdominal discomfort and nausea are anginal equivalents, confirmed by exertional symptoms, a positive stress test, and severe coronary artery stenosis on angiography."
+        ],
+        [
+          "Chronic Mesenteric Ischemia",
+          "Widespread atherosclerosis (CAD, PAD) and postprandial abdominal discomfort are suggestive of intestinal angina, though the cardiac findings are more definitive."
+        ],
+        [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "This common condition explains the chronic postprandial upper abdominal discomfort but not the new exertional symptoms or ischemic cardiac findings."
+        ],
+        [
+          "Diabetic Gastroparesis",
+          "The patient's history of diabetes makes this a possible cause for nausea and postprandial discomfort, but it does not account for the exertional symptoms or cardiac ischemia."
+        ],
+        [
+          "Peptic Ulcer Disease (PUD)",
+          "This diagnosis can cause chronic epigastric discomfort but is less likely given the clear link to exertion and confirmed severe coronary artery disease."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Coronary Syndrome",
+          "The 4-month history of intermittent symptoms and normal resting ECG are inconsistent with an acute event."
+        ],
+        [
+          "Pancreatitis",
+          "The chronicity of symptoms and a benign abdominal examination make this diagnosis unlikely."
+        ],
+        [
+          "Aortic Dissection",
+          "This acute, severe condition does not match the 4-month history of intermittent, less severe symptoms."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Peptic Ulcer Disease",
+            "The patient's age and symptoms of chronic, postprandial upper abdominal discomfort and nausea are classic for PUD."
+          ],
+          [
+            "GERD",
+            "This is an extremely common cause of chronic upper abdominal discomfort and nausea, which is often exacerbated after meals."
+          ],
+          [
+            "Gastric Malignancy",
+            "New onset of persistent upper GI symptoms in a 68-year-old man warrants high suspicion for malignancy."
+          ],
+          [
+            "Biliary Colic",
+            "Recurrent episodes of postprandial upper abdominal discomfort and nausea are highly suggestive of gallbladder pathology."
+          ],
+          [
+            "Gastritis",
+            "Chronic inflammation of the stomach lining is a common cause of dyspepsia that fits the patient's symptom profile."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Cholecystitis",
+            "The 4-month duration of recurrent symptoms is inconsistent with a single acute inflammatory process."
+          ],
+          [
+            "Viral Gastroenteritis",
+            "This is an acute, self-limiting illness, not a chronic condition lasting four months."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Peptic Ulcer Disease",
+            "The patient's symptoms of chronic, recurrent upper abdominal discomfort exacerbated by eating are classic for PUD."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "This common condition can present atypically with nausea and epigastric discomfort as the primary symptoms, often triggered by meals."
+          ],
+          [
+            "Gastric Malignancy",
+            "New-onset dyspeptic symptoms in a 68-year-old are an alarm feature warranting consideration of stomach cancer, despite the benign physical exam."
+          ],
+          [
+            "Functional Dyspepsia",
+            "This diagnosis of exclusion is highly prevalent and fits the patient's chronic upper abdominal symptoms in the absence of physical exam findings."
+          ],
+          [
+            "Biliary Colic",
+            "Recurrent, episodic postprandial upper abdominal discomfort is a characteristic presentation for symptomatic cholelithiasis (gallstones)."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Cholecystitis",
+            "Ruled out by the absence of fever and abdominal tenderness on examination."
+          ],
+          [
+            "Acute Pancreatitis",
+            "Inconsistent with the chronic, intermittent nature of symptoms and the nontender abdominal exam."
+          ],
+          [
+            "Perforated Viscus",
+            "The lack of severe pain, peritonitis, and systemic signs on exam makes this surgical emergency highly unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Stable Angina",
+            "The patient's multiple atherosclerotic risk factors, new exertional symptoms, and abdominal discomfort (as an anginal equivalent) strongly suggest coronary artery disease."
+          ],
+          [
+            "Chronic Mesenteric Ischemia",
+            "The patient's significant vascular risk factors and classic postprandial abdominal pain are highly suggestive of intestinal angina."
+          ],
+          [
+            "Peptic Ulcer Disease",
+            "This common condition can cause chronic, postprandial upper abdominal discomfort and nausea, and smoking is a known risk factor."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "GERD is a prevalent cause of chronic upper abdominal discomfort that can be exacerbated after eating."
+          ],
+          [
+            "Pancreatic Cancer",
+            "This malignancy must be considered in an older patient with diabetes, a smoking history, and new-onset vague upper abdominal symptoms."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Cholecystitis",
+            "The chronic 4-month duration of symptoms and lack of fever or abdominal tenderness make this acute diagnosis unlikely."
+          ],
+          [
+            "Acute Pancreatitis",
+            "The benign abdominal exam and chronic, intermittent nature of the symptoms are inconsistent with an acute inflammatory process."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Stable Angina Pectoris",
+            "The patient's exertional symptoms and atypical abdominal discomfort are explained by myocardial ischemia, which was confirmed by stress testing and coronary angiography."
+          ],
+          [
+            "Coronary Artery Disease (CAD)",
+            "Coronary angiography provided definitive evidence of severe stenosis in a major coronary artery, which is the underlying pathology for his symptoms."
+          ],
+          [
+            "Anginal Equivalent",
+            "The presentation with nausea and upper abdominal discomfort is a classic atypical manifestation of myocardial ischemia, particularly in patients with diabetes."
+          ],
+          [
+            "Gastroesophageal Reflux Disease (GERD)",
+            "The initial symptoms of postprandial upper abdominal discomfort are a common presentation for GERD, which can mimic cardiac pain."
+          ],
+          [
+            "Peptic Ulcer Disease (PUD)",
+            "Upper abdominal discomfort and nausea are primary symptoms of PUD, making it a reasonable initial consideration before the cardiac etiology was confirmed."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Coronary Syndrome",
+            "The 4-month duration of symptoms and normal resting ECG are inconsistent with an acute event."
+          ],
+          [
+            "Pancreatitis",
+            "The chronic nature of symptoms and a nontender abdominal exam make acute pancreatitis highly unlikely."
+          ],
+          [
+            "Acute Cholecystitis",
+            "The absence of fever, right upper quadrant tenderness, and the chronic symptom duration argue against this diagnosis."
+          ]
+        ]
+      },
+      "cf_id": "case_014_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of strong, palpable dorsalis pedis pulses bilaterally argues against peripheral arterial disease as a cause of the patient's symptoms, making coronary artery disease less likely."
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "case_id": "case_034",
+  "model": "gemini_pro",
+  "ground_truth": "Acute rheumatic fever",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Mitral Stenosis with Atrial Fibrillation",
+          "The patient's origin from a region historically endemic for rheumatic fever, combined with her age and symptoms of palpitations, dyspnea, and cough, is classic for this presentation."
+        ],
+        [
+          "New-onset Heart Failure",
+          "The triad of dyspnea, cough, and palpitations are cardinal symptoms of pulmonary congestion due to left-sided heart failure from various potential causes."
+        ],
+        [
+          "Hyperthyroidism",
+          "This condition is common in middle-aged women and can cause a high-output state presenting with palpitations, exertional dyspnea, and cough."
+        ],
+        [
+          "Pulmonary Embolism",
+          "The acute onset of shortness of breath, cough, and palpitations represents a classic presentation for this life-threatening diagnosis."
+        ],
+        [
+          "Atypical Pneumonia",
+          "An infection with an atypical organism could explain the subacute onset of dry cough and shortness of breath, with associated tachycardia perceived as palpitations."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Mitral Stenosis",
+          "The classic mid-diastolic rumbling murmur at the apex, combined with signs of biventricular heart failure and the patient's geographic origin, is highly suggestive of this diagnosis."
+        ],
+        [
+          "Left Atrial Myxoma",
+          "This intracardiac tumor can obstruct the mitral valve orifice, classically mimicking the auscultatory findings and heart failure symptoms of mitral stenosis."
+        ],
+        [
+          "Dilated Cardiomyopathy",
+          "This diagnosis explains the signs of biventricular heart failure, including bibasilar crackles and peripheral edema, though the specific murmur is less typical."
+        ],
+        [
+          "Constrictive Pericarditis",
+          "This condition impairs diastolic filling, leading to jugular vein distention, peripheral edema, and pulmonary congestion, and can present with a diastolic sound (pericardial knock)."
+        ],
+        [
+          "Severe Mitral Regurgitation",
+          "While the murmur is typically holosystolic, severe chronic disease can cause left atrial enlargement and biventricular failure signs similar to the presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "The patient is afebrile, and the constellation of findings including a cardiac murmur, JVD, and pitting edema points to a primary cardiac cause for the lung crackles."
+        ],
+        [
+          "Aortic Stenosis",
+          "The murmur described (mid-diastolic at the apex) is inconsistent with the systolic ejection murmur at the right upper sternal border characteristic of aortic stenosis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Rheumatic Mitral Stenosis",
+          "The patient presents with the classic mid-diastolic murmur, left atrial enlargement, and signs of decompensated heart failure, with a demographic history suggestive of rheumatic fever."
+        ],
+        [
+          "Left Atrial Myxoma",
+          "This atrial tumor can obstruct the mitral valve, perfectly mimicking the clinical and hemodynamic findings of mitral stenosis, including the murmur and heart failure."
+        ],
+        [
+          "Infective Endocarditis",
+          "This infection can affect the mitral valve, causing acute valvular dysfunction, heart failure, and elevated inflammatory markers, even in the absence of fever."
+        ],
+        [
+          "Constrictive Pericarditis",
+          "This condition impairs diastolic filling, leading to jugular venous distention, edema, and pulmonary congestion, and can present with an early diastolic sound known as a pericardial knock."
+        ],
+        [
+          "Severe Mitral Regurgitation with Heart Failure",
+          "Although the murmur is more typical for stenosis, severe regurgitation can also cause left atrial enlargement, pulmonary congestion, and heart failure symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Primary Pulmonary Hypertension",
+          "This diagnosis would not explain the left-sided findings of a mitral diastolic murmur and left atrial enlargement."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rheumatic Mitral Stenosis",
+          "The diagnosis is confirmed by echocardiogram showing thickened mitral leaflets and chordal fusion, supported by elevated ASO titers and a classic clinical presentation."
+        ],
+        [
+          "Infective Endocarditis",
+          "This condition can cause valvular damage leading to heart failure and is associated with elevated inflammatory markers, though the specific echo findings and afebrile state make it less likely."
+        ],
+        [
+          "Left Atrial Myxoma",
+          "This intracardiac tumor is a classic mimic of mitral stenosis, causing obstructive symptoms and a diastolic murmur, but was ruled out by the echocardiogram."
+        ],
+        [
+          "Mitral Annular Calcification",
+          "This is a degenerative cause of mitral stenosis, although it is less common in a 43-year-old and the echo findings were more typical of rheumatic disease."
+        ],
+        [
+          "Libman-Sacks Endocarditis",
+          "This non-bacterial endocarditis associated with autoimmune conditions like SLE can cause valvular stenosis and systemic inflammation, representing an alternative etiology for the patient's findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Left Atrial Myxoma",
+          "Echocardiogram showed specific valvular pathology consistent with rheumatic heart disease, not an intracardiac mass."
+        ],
+        [
+          "Primary Pulmonary Disease",
+          "The patient's signs and symptoms, including JVD, peripheral edema, and specific cardiac findings on exam and imaging, are explained by cardiogenic pulmonary edema rather than an intrinsic lung pathology."
+        ],
+        [
+          "Acute Coronary Syndrome",
+          "The presentation is more consistent with progressive heart failure from valvular disease, and the ECG did not show evidence of acute ischemia."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Mitral Stenosis with Atrial Fibrillation",
+            "The patient's origin from a region historically endemic for rheumatic fever, combined with her age and symptoms of palpitations, dyspnea, and cough, is classic for this presentation."
+          ],
+          [
+            "New-onset Heart Failure",
+            "The triad of dyspnea, cough, and palpitations are cardinal symptoms of pulmonary congestion due to left-sided heart failure from various potential causes."
+          ],
+          [
+            "Hyperthyroidism",
+            "This condition is common in middle-aged women and can cause a high-output state presenting with palpitations, exertional dyspnea, and cough."
+          ],
+          [
+            "Pulmonary Embolism",
+            "The acute onset of shortness of breath, cough, and palpitations represents a classic presentation for this life-threatening diagnosis."
+          ],
+          [
+            "Atypical Pneumonia",
+            "An infection with an atypical organism could explain the subacute onset of dry cough and shortness of breath, with associated tachycardia perceived as palpitations."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Dilated Cardiomyopathy",
+            "The patient presents with classic signs and symptoms of biventricular congestive heart failure (JVD, crackles, edema) in the absence of a murmur, which is a common presentation for this diagnosis."
+          ],
+          [
+            "Mitral Stenosis",
+            "The patient's immigration history from a region with a higher prevalence of rheumatic fever makes this a strong consideration, as it can lead to pulmonary congestion and right-sided heart failure."
+          ],
+          [
+            "Myocarditis",
+            "An inflammatory process of the myocardium could explain the subacute onset of heart failure in a relatively young adult."
+          ],
+          [
+            "Constrictive Pericarditis",
+            "This diagnosis is suggested by the signs of heart failure and the patient's immigration history, which is a risk factor for tuberculous pericarditis, a common cause."
+          ],
+          [
+            "Restrictive Cardiomyopathy",
+            "Infiltrative diseases such as sarcoidosis or amyloidosis can cause diastolic dysfunction and present with the signs of congestive heart failure seen in this patient."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumonia",
+            "The patient is afebrile and the presence of jugular vein distention and peripheral edema points to a cardiac etiology for the lung crackles rather than a primary infection."
+          ],
+          [
+            "Asthma",
+            "The physical exam findings of bibasilar crackles, jugular vein distention, and pitting edema are inconsistent with obstructive airway disease, which typically presents with wheezing."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rheumatic Mitral Stenosis",
+            "The patient's immigration history, age, and findings of left atrial enlargement with congestive heart failure are classic for this diagnosis."
+          ],
+          [
+            "Myocarditis",
+            "This diagnosis is suggested by the subacute onset of heart failure symptoms in combination with elevated inflammatory markers."
+          ],
+          [
+            "Idiopathic Dilated Cardiomyopathy",
+            "This is a common cause of unexplained congestive heart failure and cardiomegaly in this age group, representing a possible acute decompensation."
+          ],
+          [
+            "Cardiac Sarcoidosis",
+            "This infiltrative and inflammatory disease can present with heart failure, cardiomegaly, palpitations, and elevated inflammatory markers."
+          ],
+          [
+            "Constrictive Pericarditis",
+            "This condition explains the signs of congestive heart failure and is a consideration given the patient's immigration history, as tuberculosis is a common cause."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Hypertensive Heart Disease",
+            "The patient's blood pressure is normal to low, making chronic hypertension an unlikely cause of her heart failure."
+          ],
+          [
+            "Ischemic Cardiomyopathy",
+            "The patient's age and lack of typical risk factors or anginal symptoms make ischemia an unlikely etiology."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rheumatic Mitral Stenosis",
+            "The patient's immigrant history, signs of heart failure, left atrial enlargement, elevated ASO titers, and classic echocardiogram findings of thickened mitral leaflets and chordal fusion are all definitive for this diagnosis."
+          ],
+          [
+            "Infective Endocarditis",
+            "This diagnosis is a consideration for new-onset heart failure with elevated inflammatory markers, though the patient is afebrile and the echocardiogram did not show vegetations."
+          ],
+          [
+            "Dilated Cardiomyopathy",
+            "This was a primary consideration given the signs of congestive heart failure and cardiomegaly before the specific valvular pathology was identified by echocardiogram."
+          ],
+          [
+            "Mitral Annular Calcification",
+            "This degenerative cause of mitral stenosis could present with similar symptoms, but it is less likely given the patient's age and the specific echo findings of rheumatic changes."
+          ],
+          [
+            "Left Atrial Myxoma",
+            "This rare cardiac tumor can obstruct the mitral valve orifice, mimicking the signs and symptoms of mitral stenosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumonia",
+            "The presence of significant cardiac findings (JVD, cardiomegaly, LA enlargement) and lack of fever make a primary pulmonary infection unlikely."
+          ],
+          [
+            "Pulmonary Embolism",
+            "The subacute onset over one week and signs of chronic volume overload are inconsistent with a typical presentation of acute pulmonary embolism."
+          ]
+        ]
+      },
+      "cf_id": "case_034_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a murmur makes acute rheumatic fever less likely, as carditis is a major manifestation."
+    }
+  ]
+}

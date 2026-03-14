@@ -1,0 +1,264 @@
+{
+  "case_id": "case_057",
+  "model": "gemini_pro",
+  "ground_truth": "Loss of antithrombin III",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Nephrolithiasis",
+          "The acute onset of unilateral flank pain with hematuria is the classic presentation for a kidney stone causing obstruction."
+        ],
+        [
+          "Pyelonephritis",
+          "Flank pain and hematuria are common signs of an upper urinary tract infection, even without a documented fever."
+        ],
+        [
+          "Renal Cell Carcinoma",
+          "Hematuria and flank pain are two components of the classic triad for renal cancer, which is a key consideration in this age group."
+        ],
+        [
+          "Urothelial Carcinoma",
+          "Malignancy of the renal pelvis or ureter can present with hematuria and flank pain, often due to obstruction."
+        ],
+        [
+          "Renal Infarction",
+          "Acute occlusion of a renal artery can cause sudden, severe flank pain and hematuria."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Uncomplicated cystitis",
+          "The presence of flank pain suggests upper urinary tract involvement, not just a simple bladder infection."
+        ],
+        [
+          "Musculoskeletal pain",
+          "This diagnosis would not explain the presence of hematuria."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Membranous Nephropathy",
+          "This is the most common cause of nephrotic syndrome in adults and is strongly associated with both hepatitis B infection and renal vein thrombosis."
+        ],
+        [
+          "Hepatocellular Carcinoma",
+          "The patient's chronic hepatitis B and cirrhosis are major risk factors, and HCC can cause a paraneoplastic nephrotic syndrome or direct tumor invasion into the renal vein."
+        ],
+        [
+          "Membranoproliferative Glomerulonephritis",
+          "This glomerular disease is a well-known complication of chronic hepatitis B infection and commonly presents with nephrotic syndrome."
+        ],
+        [
+          "Renal Vein Thrombosis",
+          "A filling defect in the right renal vein on CT confirms this diagnosis, which explains the patient's acute flank pain and hematuria."
+        ],
+        [
+          "Focal Segmental Glomerulosclerosis",
+          "This is a common cause of primary nephrotic syndrome in adults and must be considered in any patient with this presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Nephrolithiasis",
+          "This diagnosis does not explain the nephrotic syndrome, anasarca, or the CT finding of a renal vein filling defect."
+        ],
+        [
+          "Pyelonephritis",
+          "The clinical picture is dominated by nephrotic syndrome, not infection, and lacks typical features like fever or urinary symptoms."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Renal Vein Thrombosis",
+          "The filling defect in the right renal vein on CT is diagnostic for this condition, explaining the acute flank pain and hematuria."
+        ],
+        [
+          "Nephrotic Syndrome",
+          "This is established by the presence of 4+ proteinuria, fatty casts, periorbital and lower extremity edema, and ascites."
+        ],
+        [
+          "Hereditary Antithrombin III Deficiency",
+          "This diagnosis is confirmed by low antithrombin III activity and a pathogenic SERPINC1 gene mutation, providing the underlying reason for a hypercoagulable state."
+        ],
+        [
+          "Membranous Nephropathy",
+          "As the most common cause of nephrotic syndrome in adults associated with both hepatitis B and renal vein thrombosis, this is the most likely underlying glomerular disease."
+        ],
+        [
+          "Cirrhosis",
+          "The history of chronic hepatitis B combined with a nodular liver and ascites on CT confirms this diagnosis, which contributes to the patient's fluid overload."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Nephrolithiasis",
+          "The CT scan did not show a kidney stone and instead revealed a venous thrombus as the cause of obstruction."
+        ],
+        [
+          "Pyelonephritis",
+          "The patient lacks fever and the CT findings are not consistent with a renal infection."
+        ],
+        [
+          "Renal Cell Carcinoma",
+          "The CT scan showed a thrombus but did not identify a primary renal mass."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Nephrolithiasis",
+            "The acute onset of unilateral flank pain with hematuria is the classic presentation for a kidney stone."
+          ],
+          [
+            "Pyelonephritis",
+            "Flank pain and hematuria are common signs of an upper urinary tract infection, even in the absence of fever."
+          ],
+          [
+            "Renal Cell Carcinoma",
+            "Hematuria and flank pain are potential presenting symptoms for a kidney malignancy, which must be considered in this age group."
+          ],
+          [
+            "Complicated Urinary Tract Infection",
+            "A severe lower urinary tract infection (cystitis) can cause gross hematuria and pain that may radiate to the flank."
+          ],
+          [
+            "Renal Infarction",
+            "This vascular emergency can cause sudden, severe flank pain and hematuria due to ischemia of kidney tissue."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Musculoskeletal strain",
+            "This diagnosis would not explain the presence of hematuria."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pulmonary Embolism",
+            "The acute onset of pleuritic chest pain, dyspnea, tachycardia, tachypnea, and hypoxia with clear lungs is a classic presentation."
+          ],
+          [
+            "Aortic Dissection",
+            "This vascular catastrophe can cause both severe chest pain and renal malperfusion, explaining the flank pain and hematuria."
+          ],
+          [
+            "Sepsis secondary to Pyelonephritis",
+            "A severe kidney infection could cause the initial urologic symptoms and progress to systemic collapse with respiratory compromise."
+          ],
+          [
+            "Pulmonary-Renal Syndrome",
+            "This group of autoimmune disorders can cause simultaneous inflammation of the lungs and kidneys, explaining the combination of respiratory distress and hematuria."
+          ],
+          [
+            "Acute Coronary Syndrome",
+            "This must be considered in a middle-aged woman with acute chest pain, shortness of breath, and signs of systemic stress like diaphoresis and tachycardia."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Simple Nephrolithiasis",
+            "This diagnosis fails to explain the patient's severe acute respiratory distress, cyanosis, and vital sign instability."
+          ],
+          [
+            "Pneumothorax",
+            "This is unlikely as it does not explain the preceding hematuria and flank pain, and lung auscultation was clear bilaterally."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Renal Vein Thrombosis",
+            "The CT finding of a filling defect in the right renal vein directly explains the patient's flank pain, hematuria, and enlarged kidney."
+          ],
+          [
+            "Pulmonary Embolism",
+            "Acute onset of pleuritic chest pain, shortness of breath, tachycardia, and tachypnea in a patient with a confirmed deep vein thrombus (in the renal vein) is classic for this diagnosis."
+          ],
+          [
+            "Membranous Nephropathy",
+            "This is the most common cause of nephrotic syndrome (4+ protein, fatty casts) associated with chronic hepatitis B, which would create the hypercoagulable state predisposing to thrombosis."
+          ],
+          [
+            "Cirrhosis",
+            "The CT findings of a nodular liver and ascites confirm this diagnosis, which is a known complication of chronic hepatitis B and a contributor to a hypercoagulable state."
+          ],
+          [
+            "Membranoproliferative Glomerulonephritis",
+            "This is a key alternative cause for hepatitis B-associated nephrotic syndrome, which would also explain the patient's renal findings and prothrombotic state."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pyelonephritis",
+            "The clinical picture is dominated by thrombosis and nephrotic syndrome, not infection, and lungs were clear."
+          ],
+          [
+            "Nephrolithiasis",
+            "This would not explain the nephrotic syndrome, respiratory collapse, or the filling defect in the renal vein."
+          ],
+          [
+            "Pneumonia",
+            "The patient's lungs were clear to auscultation, making an infectious lung process unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Hereditary Antithrombin III Deficiency",
+            "Confirmed by genetic testing, this is the underlying hypercoagulable state predisposing the patient to widespread thrombosis."
+          ],
+          [
+            "Renal Vein Thrombosis",
+            "CT imaging confirmed a filling defect in the right renal vein, explaining the flank pain, hematuria, and subsequent nephrotic syndrome."
+          ],
+          [
+            "Pulmonary Embolism",
+            "The acute onset of pleuritic chest pain, dyspnea, and hypoxia is the classic presentation of this complication of deep venous thrombosis."
+          ],
+          [
+            "Nephrotic Syndrome",
+            "The presence of 4+ proteinuria and fatty casts on urinalysis is diagnostic for this syndrome, which is a known consequence of renal vein thrombosis."
+          ],
+          [
+            "Liver Cirrhosis",
+            "A history of chronic hepatitis B with CT findings of a nodular liver and ascites confirms this diagnosis, which can also contribute to a coagulopathic state."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pyelonephritis",
+            "The clinical picture of thrombosis and nephrotic syndrome, without signs of infection, makes this diagnosis unlikely."
+          ],
+          [
+            "Nephrolithiasis",
+            "CT imaging revealed a renal vein thrombus rather than a kidney stone as the cause of flank pain and hematuria."
+          ],
+          [
+            "Hepatocellular Carcinoma",
+            "While a risk with cirrhosis, imaging did not show a discrete liver mass invading the vasculature, and a primary hypercoagulable disorder was identified."
+          ]
+        ]
+      },
+      "cf_id": "case_057_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports pleuritic chest pain and shortness of breath, which argues against antithrombin III deficiency, which typically presents with venous thromboembolism, not pulmonary embolism."
+    }
+  ]
+}

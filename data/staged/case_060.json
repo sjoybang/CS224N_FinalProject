@@ -1,0 +1,25 @@
+{
+  "case_id": "case_060",
+  "source": "MedQA-USMLE",
+  "original_question": "A 52-year-old man presents for a routine checkup. Past medical history is remarkable for stage 1 systemic hypertension and hepatitis A infection diagnosed 10 years ago. He takes aspirin, rosuvastatin, enalapril daily, and a magnesium supplement every once in a while. He is planning to visit Ecuador for a week-long vacation and is concerned about malaria prophylaxis before his travel. The physician advised taking 1 primaquine pill every day while he is there and for 7 consecutive days after leaving Ecuador. On the third day of his trip, the patient develops an acute onset headache, dizziness, shortness of breath, and fingertips and toes turning blue. His blood pressure is 135/80 mm Hg, heart rate is 94/min, respiratory rate is 22/min, temperature is 36.9\u2103 (98.4\u2109), and blood oxygen saturation is 97% in room air. While drawing blood for his laboratory workup, the nurse notes that his blood has a chocolate brown color. Which of the following statements best describes the etiology of this patient\u2019s most likely condition?",
+  "ground_truth": "Drug-induced methemoglobinemia",
+  "base": {
+    "stage_1": "A 52-year-old man with a history of hypertension and hepatitis A presents for a routine checkup prior to traveling to Ecuador. He is given a prescription for malaria prophylaxis.",
+    "stage_2": "Three days into his trip, the patient develops a headache, dizziness, shortness of breath, and cyanosis of his fingertips and toes. His blood pressure is 135/80 mm Hg, heart rate is 94/min, respiratory rate is 22/min, temperature is 36.9\u2103 (98.4\u2109), and blood oxygen saturation is 97% in room air.",
+    "stage_3": "Laboratory blood draw reveals that the patient's blood has a chocolate brown color.",
+    "stage_4": "Further laboratory analysis reveals elevated methemoglobin levels. The patient's G6PD level is normal."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood oxygen saturation is 85% despite supplemental oxygen, arguing against methemoglobinemia, which typically has a normal saturation gap.",
+      "rules_out": "Drug-induced methemoglobinemia",
+      "stage_1": "A 52-year-old man with a history of hypertension and hepatitis A presents for a routine checkup prior to traveling to Ecuador. He is given a prescription for malaria prophylaxis.",
+      "stage_2": "Three days into his trip, the patient develops a headache, dizziness, shortness of breath, and cyanosis of his fingertips and toes. His blood pressure is 135/80 mm Hg, heart rate is 94/min, respiratory rate is 22/min, temperature is 36.9\u2103 (98.4\u2109), and blood oxygen saturation is 85% with supplemental oxygen.",
+      "stage_3": "Laboratory blood draw reveals that the patient's blood has a chocolate brown color.",
+      "stage_4": "Further laboratory analysis reveals elevated methemoglobin levels. The patient's G6PD level is normal.",
+      "cf_id": "case_060_cf_a"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "case_011",
+  "source": "MedQA-USMLE",
+  "original_question": "A 62-year-old woman comes to the physician because of coughing and fatigue during the past 2 years. In the morning, the cough is productive of white phlegm. She becomes short of breath walking up a flight of stairs. She has hypertension and hyperlipidemia. She has recently retired from working as a nurse at a homeless shelter. She has smoked 1 pack of cigarettes daily for 40 years. Current medications include ramipril and fenofibrate. Her temperature is 36.5\u00b0C (97.7\u00b0F), respirations are 24/min, pulse is 85/min, and blood pressure is 140/90 mm Hg. Scattered wheezing and rhonchi are heard throughout both lung fields. There are no murmurs, rubs, or gallops but heart sounds are distant. Which of the following is the most likely underlying cause of this patient's symptoms?",
+  "ground_truth": "Progressive obstruction of expiratory airflow",
+  "base": {
+    "stage_1": "A 62-year-old woman presents to the clinic complaining of a chronic cough and fatigue that she has experienced for the past two years.",
+    "stage_2": "The patient's temperature is 36.5\u00b0C (97.7\u00b0F), respirations are 24/min, pulse is 85/min, and blood pressure is 140/90 mm Hg. Auscultation of the lungs reveals scattered wheezing and rhonchi throughout both lung fields. Heart sounds are distant, but no murmurs, rubs, or gallops are appreciated.",
+    "stage_3": "Pulmonary function testing reveals a decreased FEV1/FVC ratio. A chest X-ray shows hyperinflation of the lungs and a flattened diaphragm.",
+    "stage_4": "Sputum culture is negative for bacterial pathogens. Alpha-1 antitrypsin level is within normal limits."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of egophony on lung auscultation suggests consolidation, arguing against diffuse airway obstruction.",
+      "rules_out": "Progressive obstruction of expiratory airflow",
+      "stage_1": "A 62-year-old woman presents to the clinic complaining of a chronic cough and fatigue that she has experienced for the past two years.",
+      "stage_2": "The patient's temperature is 36.5\u00b0C (97.7\u00b0F), respirations are 24/min, pulse is 85/min, and blood pressure is 140/90 mm Hg. Auscultation of the lungs reveals egophony in the right lower lobe. Heart sounds are distant, but no murmurs, rubs, or gallops are appreciated.",
+      "stage_3": "Pulmonary function testing reveals a decreased FEV1/FVC ratio. A chest X-ray shows hyperinflation of the lungs and a flattened diaphragm.",
+      "stage_4": "Sputum culture is negative for bacterial pathogens. Alpha-1 antitrypsin level is within normal limits.",
+      "cf_id": "case_011_cf_a"
+    }
+  ]
+}

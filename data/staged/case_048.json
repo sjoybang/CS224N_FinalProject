@@ -1,0 +1,25 @@
+{
+  "case_id": "case_048",
+  "source": "MedQA-USMLE",
+  "original_question": "A 48-year-old man with HIV comes to the physician because of skin lesions over his face and neck for 2 weeks. They are not itchy or painful. He does not have fever or a sore throat. He was treated for candidal esophagitis 3 months ago. He is sexually active with his wife, who knows of his condition, and uses condoms consistently. He is currently receiving triple antiretroviral therapy with lamivudine, abacavir, and efavirenz. He is 175 cm (5 ft 9 in) tall and weighs 58 kg (128 lb); BMI is 18.8 kg/m2. Examination shows multiple skin colored papules over his face and neck with a dimpled center. Cervical lymphadenopathy is present. The remainder of the examination is unremarkable. His hemoglobin concentration is 12.1 g/dL, leukocyte count is 4,900/mm3, and platelet count is 143,000/mm3; serum studies and urinalysis show no abnormalities. CD4+ T-lymphocyte count is 312/mm3 (normal \u2265 500). Which of the following is the most likely cause of this patient's findings?",
+  "ground_truth": "Poxvirus",
+  "base": {
+    "stage_1": "A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat.",
+    "stage_2": "The patient's physical examination reveals multiple skin-colored papules with a dimpled center distributed over his face and neck. Cervical lymphadenopathy is also noted. He is 175 cm tall, weighs 58 kg, and has a BMI of 18.8 kg/m2. Vital signs are within normal limits.",
+    "stage_3": "Laboratory investigations reveal a hemoglobin concentration of 12.1 g/dL, a leukocyte count of 4,900/mm3, and a platelet count of 143,000/mm3. Serum studies and urinalysis show no abnormalities. His CD4+ T-lymphocyte count is 312/mm3.",
+    "stage_4": "A biopsy of one of the skin lesions reveals intracytoplasmic inclusion bodies on histopathological examination. Electron microscopy confirms the presence of poxvirus particles."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of vesicles instead of papules argues against Poxvirus, which typically presents with papules or nodules.",
+      "rules_out": "Poxvirus",
+      "stage_1": "A 48-year-old man with HIV presents with skin lesions on his face and neck that have been present for 2 weeks. He denies any associated itching, pain, fever, or sore throat.",
+      "stage_2": "The patient's physical examination reveals multiple vesicles with a dimpled center distributed over his face and neck. Cervical lymphadenopathy is also noted. He is 175 cm tall, weighs 58 kg, and has a BMI of 18.8 kg/m2. Vital signs are within normal limits.",
+      "stage_3": "Laboratory investigations reveal a hemoglobin concentration of 12.1 g/dL, a leukocyte count of 4,900/mm3, and a platelet count of 143,000/mm3. Serum studies and urinalysis show no abnormalities. His CD4+ T-lymphocyte count is 312/mm3.",
+      "stage_4": "A biopsy of one of the skin lesions reveals intracytoplasmic inclusion bodies on histopathological examination. Electron microscopy confirms the presence of poxvirus particles.",
+      "cf_id": "case_048_cf_a"
+    }
+  ]
+}

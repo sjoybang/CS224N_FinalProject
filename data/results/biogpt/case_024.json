@@ -1,0 +1,126 @@
+{
+  "case_id": "case_024",
+  "model": "biogpt",
+  "ground_truth": "Posterior communicating artery aneurysm",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals that the double vision is present in all fields of gaze. The patient also reports difficulty keeping her right eye open and notes right eyelid droop. Examination shows a dilated right pupil (6 mm) with poor reactivity to light. The remainder of the neurological exam is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals that the double vision is present in all fields of gaze. The patient also reports difficulty keeping her right eye open and notes right eyelid droop. Examination shows a dilated right pupil (6 mm) with poor reactivity to light. The remainder of the neurological exam is unremarkable. [Stage 3] Laboratory studies, including HbA1c, are within normal limits. No acute abnormalities are noted. Given the patient's presentation, MRI of the brain with angiography is performed to further evaluate the cranial nerves and rule out structural lesions. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals that the double vision is present in all fields of gaze. The patient also reports difficulty keeping her right eye open and notes right eyelid droop. Examination shows a dilated right pupil (6 mm) with poor reactivity to light. The remainder of the neurological exam is unremarkable. [Stage 3] Laboratory studies, including HbA1c, are within normal limits. No acute abnormalities are noted. Given the patient's presentation, MRI of the brain with angiography is performed to further evaluate the cranial nerves and rule out structural lesions. [Stage 4] MR angiography reveals a 7mm aneurysm at the junction of the right posterior communicating and internal carotid arteries, compressing the oculomotor nerve. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals that the double vision is present in all fields of gaze. The patient also reports difficulty keeping her right eye open and notes right eyelid droop. Examination shows pupils are equal and reactive to light. The remainder of the neurological exam is unremarkable. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals that the double vision is present in all fields of gaze. The patient also reports difficulty keeping her right eye open and notes right eyelid droop. Examination shows pupils are equal and reactive to light. The remainder of the neurological exam is unremarkable. [Stage 3] Laboratory studies, including HbA1c, are within normal limits. No acute abnormalities are noted. Given the patient's presentation, MRI of the brain with angiography is performed to further evaluate the cranial nerves and rule out structural lesions. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 63-year-old woman presents to her primary care physician complaining of double vision that has gradually worsened over the past two months. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals that the double vision is present in all fields of gaze. The patient also reports difficulty keeping her right eye open and notes right eyelid droop. Examination shows pupils are equal and reactive to light. The remainder of the neurological exam is unremarkable. [Stage 3] Laboratory studies, including HbA1c, are within normal limits. No acute abnormalities are noted. Given the patient's presentation, MRI of the brain with angiography is performed to further evaluate the cranial nerves and rule out structural lesions. [Stage 4] MR angiography reveals a 7mm aneurysm at the junction of the right posterior communicating and internal carotid arteries, compressing the oculomotor nerve. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_024_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's pupils are equal and reactive to light, which argues against compression of the oculomotor nerve."
+    }
+  ]
+}

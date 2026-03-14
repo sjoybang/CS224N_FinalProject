@@ -1,0 +1,25 @@
+{
+  "case_id": "case_003",
+  "source": "MedQA-USMLE",
+  "original_question": "A 20-year-old woman presents with menorrhagia for the past several years. She says that her menses \u201chave always been heavy\u201d, and she has experienced easy bruising for as long as she can remember. Family history is significant for her mother, who had similar problems with bruising easily. The patient's vital signs include: heart rate 98/min, respiratory rate 14/min, temperature 36.1\u00b0C (96.9\u00b0F), and blood pressure 110/87 mm Hg. Physical examination is unremarkable. Laboratory tests show the following: platelet count 200,000/mm3, PT 12 seconds, and PTT 43 seconds. Which of the following is the most likely cause of this patient\u2019s symptoms?",
+  "ground_truth": "Von Willebrand disease",
+  "base": {
+    "stage_1": "A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily.",
+    "stage_2": "The patient's vital signs are as follows: heart rate 98/min, respiratory rate 14/min, temperature 36.1\u00b0C (96.9\u00b0F), and blood pressure 110/87 mm Hg. Physical examination is unremarkable. She mentions her mother has similar bruising issues.",
+    "stage_3": "Initial laboratory results reveal a platelet count of 200,000/mm3, a prothrombin time (PT) of 12 seconds, and a partial thromboplastin time (PTT) of 43 seconds.",
+    "stage_4": "Further testing reveals a decreased von Willebrand factor (vWF) antigen level and reduced ristocetin cofactor activity. Factor VIII level is also slightly reduced."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals petechiae, which would be more consistent with a platelet disorder than VWD.",
+      "rules_out": "Von Willebrand disease",
+      "stage_1": "A 20-year-old woman presents to the clinic complaining of heavy menstrual bleeding for several years. She reports that her periods have always been heavy and that she bruises easily.",
+      "stage_2": "The patient's vital signs are as follows: heart rate 98/min, respiratory rate 14/min, temperature 36.1\u00b0C (96.9\u00b0F), and blood pressure 110/87 mm Hg. Physical examination reveals petechiae on her lower extremities. She mentions her mother has similar bruising issues.",
+      "stage_3": "Initial laboratory results reveal a platelet count of 200,000/mm3, a prothrombin time (PT) of 12 seconds, and a partial thromboplastin time (PTT) of 43 seconds.",
+      "stage_4": "Further testing reveals a decreased von Willebrand factor (vWF) antigen level and reduced ristocetin cofactor activity. Factor VIII level is also slightly reduced.",
+      "cf_id": "case_003_cf_a"
+    }
+  ]
+}

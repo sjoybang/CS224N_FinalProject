@@ -1,0 +1,25 @@
+{
+  "case_id": "case_030",
+  "source": "MedQA-USMLE",
+  "original_question": "A 35-year-old woman comes to the physician because of a 1-month history of double vision, difficulty climbing stairs, and weakness when trying to brush her hair. She reports that these symptoms are worse after she exercises and disappear after she rests for a few hours. Physical examination shows drooping of her right upper eyelid that worsens when the patient is asked to gaze at the ceiling for 2 minutes. There is diminished motor strength in the upper extremities. The remainder of the examination shows no abnormalities. Which of the following is the most likely diagnosis?",
+  "ground_truth": "Myasthenia gravis",
+  "base": {
+    "stage_1": "A 35-year-old woman presents to the clinic complaining of double vision, difficulty climbing stairs, and weakness.",
+    "stage_2": "The patient states her symptoms worsen with exercise and improve with rest. Physical examination reveals right upper eyelid drooping that worsens with sustained upward gaze. Motor strength is diminished in the upper extremities. The remainder of the examination is unremarkable. Vital signs are within normal limits.",
+    "stage_3": "Laboratory studies, including a complete blood count and comprehensive metabolic panel, are within normal limits. Thyroid function tests are also normal. A CT scan of the chest is performed to evaluate for thymoma.",
+    "stage_4": "Edrophonium (Tensilon) test is performed, resulting in a temporary improvement in muscle strength and resolution of ptosis. Acetylcholine receptor antibodies are found to be elevated."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that her symptoms are constant and do not fluctuate with activity or rest, which argues against myasthenia gravis.",
+      "rules_out": "Myasthenia gravis",
+      "stage_1": "A 35-year-old woman presents to the clinic complaining of double vision, difficulty climbing stairs, and weakness.",
+      "stage_2": "The patient states her symptoms are constant and do not fluctuate with activity or rest. Physical examination reveals right upper eyelid drooping that worsens with sustained upward gaze. Motor strength is diminished in the upper extremities. The remainder of the examination is unremarkable. Vital signs are within normal limits.",
+      "stage_3": "Laboratory studies, including a complete blood count and comprehensive metabolic panel, are within normal limits. Thyroid function tests are also normal. A CT scan of the chest is performed to evaluate for thymoma.",
+      "stage_4": "Edrophonium (Tensilon) test is performed, resulting in a temporary improvement in muscle strength and resolution of ptosis. Acetylcholine receptor antibodies are found to be elevated.",
+      "cf_id": "case_030_cf_a"
+    }
+  ]
+}

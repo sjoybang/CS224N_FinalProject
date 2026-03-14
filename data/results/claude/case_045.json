@@ -1,0 +1,290 @@
+{
+  "case_id": "case_045",
+  "model": "claude",
+  "ground_truth": "Rabies",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral meningitis",
+          "Young adult with fever and headache for three days suggests viral CNS infection, the most common form of meningitis in this age group."
+        ],
+        [
+          "Bacterial meningitis",
+          "Acute onset fever and headache are classic presenting symptoms requiring urgent evaluation given potentially life-threatening nature."
+        ],
+        [
+          "Influenza",
+          "Systemic viral infection commonly presents with fever and headache in young adults during seasonal outbreaks."
+        ],
+        [
+          "Migraine with fever",
+          "Primary headache disorder may coincide with concurrent febrile illness from separate infectious source."
+        ],
+        [
+          "Viral encephalitis",
+          "Fever and headache could represent early parenchymal brain infection before altered mental status develops."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to rule out any diagnoses definitively."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Rabies",
+          "Fever, confusion, hallucinations, and hydrophobia (agitation with water) are classic features of encephalitic rabies."
+        ],
+        [
+          "Herpes simplex encephalitis",
+          "Fever, headache, and altered mental status with confusion and hallucinations are characteristic of viral encephalitis, most commonly HSV."
+        ],
+        [
+          "Bacterial meningitis",
+          "Fever, headache, and confusion are consistent with meningitis, though hydrophobia is atypical."
+        ],
+        [
+          "Autoimmune encephalitis",
+          "Acute onset psychiatric symptoms, confusion, and fever can occur in anti-NMDA receptor or other autoimmune encephalitides."
+        ],
+        [
+          "Tetanus",
+          "Hydrophobia can occur due to painful pharyngeal spasms, along with fever and altered mental status in generalized tetanus."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively exclude diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Rabies",
+          "Fever, confusion, hallucinations, and hydrophobia (agitation with water) are pathognomonic features, with mild lymphocytic pleocytosis supporting viral encephalitis."
+        ],
+        [
+          "Herpes simplex encephalitis",
+          "Viral encephalitis presenting with fever, altered mental status, and lymphocytic pleocytosis, though hydrophobia would be atypical."
+        ],
+        [
+          "Autoimmune encephalitis (anti-NMDA receptor)",
+          "Young woman with psychiatric symptoms, confusion, and hallucinations with lymphocytic pleocytosis, though hydrophobia is unusual."
+        ],
+        [
+          "Enteroviral meningitis",
+          "Mild lymphocytic pleocytosis with fever and neurological symptoms fit viral meningoencephalitis, though hydrophobia is not typical."
+        ],
+        [
+          "West Nile virus encephalitis",
+          "Viral encephalitis with fever, confusion, and lymphocytic CSF findings in appropriate clinical context."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial meningitis",
+          "Normal CSF glucose and protein with only mild lymphocytic pleocytosis makes bacterial infection unlikely."
+        ],
+        [
+          "Brain abscess or mass lesion",
+          "CT scan shows no acute abnormalities."
+        ],
+        [
+          "Subarachnoid hemorrhage",
+          "Normal CT scan and CSF findings rule this out."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rabies (encephalitic form)",
+          "CSF PCR confirmed rabies virus RNA with classic presentation of hydrophobia, fever, confusion, hallucinations, and bat exposure two months prior."
+        ],
+        [
+          "Autoimmune encephalitis",
+          "Lymphocytic pleocytosis with psychiatric symptoms and confusion could suggest autoimmune etiology, though rabies PCR makes this less likely."
+        ],
+        [
+          "Herpes simplex encephalitis",
+          "Presents with fever, altered mental status, and lymphocytic pleocytosis, though typically shows temporal lobe abnormalities on imaging and rabies PCR is positive here."
+        ],
+        [
+          "Tuberculous meningitis",
+          "Can cause lymphocytic pleocytosis with subacute neuropsychiatric symptoms, though typically shows elevated protein and low glucose."
+        ],
+        [
+          "West Nile virus encephalitis",
+          "Mosquito-borne viral encephalitis can present with fever and altered mental status with lymphocytic pleocytosis, though rabies PCR positive here."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial meningitis",
+          "Normal CSF glucose and protein with lymphocytic (not neutrophilic) pleocytosis rules out typical bacterial causes."
+        ],
+        [
+          "Brain abscess or mass lesion",
+          "CT head showed no acute abnormalities."
+        ],
+        [
+          "Subarachnoid hemorrhage",
+          "CT head normal and clinical presentation inconsistent."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meningitis (viral)",
+            "Most common cause of fever and headache in young adults, often presents with this symptom constellation."
+          ],
+          [
+            "Meningitis (bacterial)",
+            "Life-threatening infection that must be considered urgently in any patient with fever and headache."
+          ],
+          [
+            "Influenza",
+            "Common viral illness causing fever, headache, and systemic symptoms in this age group."
+          ],
+          [
+            "COVID-19",
+            "Current endemic viral illness commonly presenting with fever and headache."
+          ],
+          [
+            "Sinusitis (acute bacterial)",
+            "Infection of paranasal sinuses can cause fever and headache, particularly frontal."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to rule out any diagnoses definitively."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Rabies",
+            "Fever, confusion, hallucinations, and hydrophobia (agitation when offered water) are classic presenting features of rabies encephalitis."
+          ],
+          [
+            "Herpes simplex encephalitis",
+            "Fever, headache, and altered mental status with confusion and hallucinations are characteristic of HSV encephalitis in young adults."
+          ],
+          [
+            "Bacterial meningitis",
+            "Fever, headache, and altered mental status are consistent with bacterial CNS infection, though hydrophobia is atypical."
+          ],
+          [
+            "Autoimmune encephalitis (anti-NMDA receptor)",
+            "Young woman with fever, psychiatric symptoms (hallucinations, agitation), and confusion fits the demographic and presentation."
+          ],
+          [
+            "Viral encephalitis (non-HSV)",
+            "Fever, headache, confusion, and behavioral changes can occur with other viral causes like arbovirus or enterovirus encephalitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "At this stage, no diagnoses can be definitively eliminated as the presentation of fever, headache, and encephalopathy is compatible with multiple infectious and inflammatory CNS processes."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Rabies",
+            "Fever, confusion, hallucinations, and hydrophobia (agitation when offered water) are classic features of rabies encephalitis."
+          ],
+          [
+            "Herpes simplex encephalitis",
+            "Fever, altered mental status, and lymphocytic pleocytosis are consistent, though hydrophobia is atypical for HSV encephalitis."
+          ],
+          [
+            "Autoimmune encephalitis (anti-NMDA receptor)",
+            "Young woman with fever, psychiatric symptoms (hallucinations, confusion), and CSF lymphocytic pleocytosis fits this diagnosis."
+          ],
+          [
+            "Viral meningoencephalitis (non-HSV)",
+            "Fever, headache, altered mental status with lymphocytic pleocytosis could represent enterovirus or other viral infection."
+          ],
+          [
+            "Japanese encephalitis",
+            "Geographic exposure history uncertain, but viral encephalitis with fever, altered mental status, and lymphocytic CSF is consistent."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial meningitis",
+            "CSF shows normal glucose and protein with only mild lymphocytic pleocytosis rather than neutrophilic predominance and elevated protein/low glucose."
+          ],
+          [
+            "Subarachnoid hemorrhage",
+            "CT head showed no acute abnormalities."
+          ],
+          [
+            "Brain abscess",
+            "CT head showed no acute abnormalities."
+          ],
+          [
+            "Acute stroke",
+            "CT head showed no acute abnormalities and patient has full range of motion with no focal neurological deficits."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rabies (encephalitic form)",
+            "CSF PCR positive for rabies virus RNA with history of bat exposure, hydrophobia, fever, confusion, and hallucinations definitively confirms this diagnosis."
+          ],
+          [
+            "Herpes simplex encephalitis",
+            "Viral encephalitis with fever, altered mental status, and lymphocytic pleocytosis, though rabies PCR positivity makes this less likely as primary diagnosis."
+          ],
+          [
+            "Autoimmune encephalitis",
+            "Psychiatric symptoms and confusion with lymphocytic CSF could suggest autoimmune etiology, though positive rabies PCR explains the presentation."
+          ],
+          [
+            "Other viral encephalitis (arboviral, enteroviral)",
+            "Fever, altered mental status, and lymphocytic pleocytosis are consistent, but rabies PCR positivity points to rabies as the cause."
+          ],
+          [
+            "Acute disseminated encephalomyelitis (ADEM)",
+            "Post-infectious encephalitis could present with confusion and normal imaging, but positive rabies PCR and hydrophobia are pathognomonic for rabies."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial meningitis",
+            "Normal CSF glucose and protein with only mild lymphocytic pleocytosis rules out bacterial infection."
+          ],
+          [
+            "Brain abscess",
+            "Normal head CT excludes space-occupying lesions."
+          ],
+          [
+            "Subarachnoid hemorrhage",
+            "Normal head CT and CSF findings exclude hemorrhage."
+          ]
+        ]
+      },
+      "cf_id": "case_045_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is noted to have full range of motion of her extremities and no cranial nerve deficits, which argues against rabies."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "case_010",
+  "source": "MedQA-USMLE",
+  "original_question": "A 23-year-old man comes to the physician for evaluation of decreased hearing, dizziness, and ringing in his right ear for the past 6 months. Physical examination shows multiple soft, yellow plaques and papules on his arms, chest, and back. There is sensorineural hearing loss and weakness of facial muscles bilaterally. His gait is unsteady. An MRI of the brain shows a 3-cm mass near the right internal auditory meatus and a 2-cm mass at the left cerebellopontine angle. The abnormal cells in these masses are most likely derived from which of the following embryological structures?",
+  "ground_truth": "Neurofibromatosis type 2",
+  "base": {
+    "stage_1": "A 23-year-old man presents to the clinic complaining of decreased hearing, dizziness, and ringing in his right ear, which has been ongoing for the past six months.",
+    "stage_2": "The patient's physical examination reveals multiple soft, yellow plaques and papules on his arms, chest, and back. Neurological examination demonstrates sensorineural hearing loss and bilateral facial muscle weakness. His gait appears unsteady.",
+    "stage_3": "An MRI of the brain reveals a 3-cm mass near the right internal auditory meatus and a 2-cm mass at the left cerebellopontine angle.",
+    "stage_4": "Biopsy of one of the skin lesions reveals the presence of Schwann cells. Genetic testing reveals a mutation in the NF2 gene."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of skin findings argues against neurofibromatosis, which typically presents with multiple cutaneous neurofibromas or other skin manifestations.",
+      "rules_out": "Neurofibromatosis type 2",
+      "stage_1": "A 23-year-old man presents to the clinic complaining of decreased hearing, dizziness, and ringing in his right ear, which has been ongoing for the past six months.",
+      "stage_2": "The patient's physical examination is unremarkable except for neurological findings. Neurological examination demonstrates sensorineural hearing loss and bilateral facial muscle weakness. His gait appears unsteady.",
+      "stage_3": "An MRI of the brain reveals a 3-cm mass near the right internal auditory meatus and a 2-cm mass at the left cerebellopontine angle.",
+      "stage_4": "Biopsy of one of the skin lesions reveals the presence of Schwann cells. Genetic testing reveals a mutation in the NF2 gene.",
+      "cf_id": "case_010_cf_a"
+    }
+  ]
+}

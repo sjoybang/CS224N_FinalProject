@@ -1,0 +1,126 @@
+{
+  "case_id": "case_040",
+  "model": "biogpt",
+  "ground_truth": "Cyst formation in a persistent thyroglossal duct",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 13-year-old girl presents to the office complaining of a lump on the front of her neck. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 13-year-old girl presents to the office complaining of a lump on the front of her neck. [Stage 2] The patient denies pain but reports the mass moves when she swallows. Examination reveals a midline neck mass, superior to the hyoid bone and inferior to the mandible. The mass is minimally mobile and fluctuant, without erythema. Vital signs are stable and she is afebrile. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 13-year-old girl presents to the office complaining of a lump on the front of her neck. [Stage 2] The patient denies pain but reports the mass moves when she swallows. Examination reveals a midline neck mass, superior to the hyoid bone and inferior to the mandible. The mass is minimally mobile and fluctuant, without erythema. Vital signs are stable and she is afebrile. [Stage 3] A complete blood count and thyroid function tests are performed and are within normal limits. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 13-year-old girl presents to the office complaining of a lump on the front of her neck. [Stage 2] The patient denies pain but reports the mass moves when she swallows. Examination reveals a midline neck mass, superior to the hyoid bone and inferior to the mandible. The mass is minimally mobile and fluctuant, without erythema. Vital signs are stable and she is afebrile. [Stage 3] A complete blood count and thyroid function tests are performed and are within normal limits. [Stage 4] Ultrasound of the neck demonstrates a well-defined cystic structure in the midline, connected by a thin tract extending superiorly towards the base of the tongue. Surgical excision and pathology confirm a thyroglossal duct cyst. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 13-year-old girl presents to the office complaining of a lump on the front of her neck. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 13-year-old girl presents to the office complaining of a lump on the front of her neck. [Stage 2] The patient denies pain but reports the mass moves when she swallows. Examination reveals a midline neck mass, superior to the hyoid bone and inferior to the mandible. The mass is minimally mobile, fluctuant, TENDER to palpation, and with overlying ERYTHEMA. Vital signs are stable and she is afebrile. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 13-year-old girl presents to the office complaining of a lump on the front of her neck. [Stage 2] The patient denies pain but reports the mass moves when she swallows. Examination reveals a midline neck mass, superior to the hyoid bone and inferior to the mandible. The mass is minimally mobile, fluctuant, TENDER to palpation, and with overlying ERYTHEMA. Vital signs are stable and she is afebrile. [Stage 3] A complete blood count and thyroid function tests are performed and are within normal limits. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 13-year-old girl presents to the office complaining of a lump on the front of her neck. [Stage 2] The patient denies pain but reports the mass moves when she swallows. Examination reveals a midline neck mass, superior to the hyoid bone and inferior to the mandible. The mass is minimally mobile, fluctuant, TENDER to palpation, and with overlying ERYTHEMA. Vital signs are stable and she is afebrile. [Stage 3] A complete blood count and thyroid function tests are performed and are within normal limits. [Stage 4] Ultrasound of the neck demonstrates a well-defined cystic structure in the midline, connected by a thin tract extending superiorly towards the base of the tongue. Surgical excision and pathology confirm a thyroglossal duct cyst. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_040_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of significant tenderness and erythema suggests an infectious process, making a thyroglossal duct cyst less likely."
+    }
+  ]
+}

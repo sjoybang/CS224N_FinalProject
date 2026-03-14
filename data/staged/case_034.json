@@ -1,0 +1,25 @@
+{
+  "case_id": "case_034",
+  "source": "MedQA-USMLE",
+  "original_question": "A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for 1 week. She immigrated to the United States from Korea at the age of 20. She says that her heart is racing and she has never felt these symptoms before. Her cough is dry and is associated with shortness of breath that occurs with minimal exertion. Her past medical history is otherwise unremarkable. She has no allergies and is not currently taking any medications. She is a nonsmoker and an occasional drinker. She denies illicit drug use. Her blood pressure is 100/65 mm Hg, pulse is 76/min, respiratory rate is 23/min, and temperature is 36.8\u00b0C (98.2\u00b0F). Her physical examination is significant for bibasilar lung crackles and a non-radiating, low-pitched, mid-diastolic rumbling murmur best heard at the apical region. In addition, she has jugular vein distention and bilateral pitting edema in her lower extremities. Which of the following best describes the infectious agent that led to this patient\u2019s condition?",
+  "ground_truth": "Acute rheumatic fever",
+  "base": {
+    "stage_1": "A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20.",
+    "stage_2": "The patient's blood pressure is 100/65 mm Hg, pulse is 76/min, respiratory rate is 23/min, and temperature is 36.8\u00b0C (98.2\u00b0F). Physical examination reveals bibasilar lung crackles, a non-radiating, low-pitched, mid-diastolic rumbling murmur best heard at the apical region, jugular vein distention, and bilateral pitting edema in her lower extremities.",
+    "stage_3": "An ECG shows evidence of left atrial enlargement. Chest X-ray reveals mild cardiomegaly and pulmonary vascular congestion. Initial laboratory results, including a complete blood count and basic metabolic panel, are within normal limits. An elevated erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP) are noted.",
+    "stage_4": "Further serological testing reveals elevated anti-streptolysin O (ASO) titers. An echocardiogram demonstrates mitral stenosis with thickened valve leaflets and chordal fusion, consistent with rheumatic heart disease."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a murmur makes acute rheumatic fever less likely, as carditis is a major manifestation.",
+      "rules_out": "Acute rheumatic fever",
+      "stage_1": "A 43-year-old woman presents to the emergency department complaining of palpitations, dry cough, and shortness of breath for the past week. She immigrated from Korea at age 20.",
+      "stage_2": "The patient's blood pressure is 100/65 mm Hg, pulse is 76/min, respiratory rate is 23/min, and temperature is 36.8\u00b0C (98.2\u00b0F). Physical examination reveals bibasilar lung crackles, jugular vein distention, and bilateral pitting edema in her lower extremities; no heart murmurs are appreciated.",
+      "stage_3": "An ECG shows evidence of left atrial enlargement. Chest X-ray reveals mild cardiomegaly and pulmonary vascular congestion. Initial laboratory results, including a complete blood count and basic metabolic panel, are within normal limits. An elevated erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP) are noted.",
+      "stage_4": "Further serological testing reveals elevated anti-streptolysin O (ASO) titers. An echocardiogram demonstrates mitral stenosis with thickened valve leaflets and chordal fusion, consistent with rheumatic heart disease.",
+      "cf_id": "case_034_cf_a"
+    }
+  ]
+}

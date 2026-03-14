@@ -1,0 +1,270 @@
+{
+  "case_id": "case_039",
+  "model": "gemini",
+  "ground_truth": "Penetrating neck trauma",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Cervical spinal cord injury",
+          "Stab wounds to the neck can directly injure the spinal cord, leading to pain and neurological deficits."
+        ],
+        [
+          "Vertebral artery injury",
+          "Penetrating trauma to the neck can damage the vertebral artery, causing pain and potential ischemic complications."
+        ],
+        [
+          "Esophageal perforation",
+          "A stab wound could perforate the esophagus, resulting in neck pain and potential mediastinitis."
+        ],
+        [
+          "Tracheal injury",
+          "Penetrating trauma can injure the trachea, leading to pain, difficulty breathing, and subcutaneous emphysema."
+        ],
+        [
+          "Soft tissue hematoma",
+          "Bleeding into the soft tissues of the neck from the stab wound can cause pain and swelling."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No information yet to eliminate any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Vertebral artery injury",
+          "Penetrating trauma near the vertebral artery raises concern for potential vascular damage."
+        ],
+        [
+          "Spinal cord injury",
+          "Neck pain following a stab wound could indicate damage to the spinal cord."
+        ],
+        [
+          "Soft tissue injury",
+          "The laceration could have caused localized muscle or ligament damage, resulting in pain."
+        ],
+        [
+          "Cervical spine fracture",
+          "Trauma to the neck raises the possibility of a fracture in the cervical vertebrae."
+        ],
+        [
+          "Esophageal perforation",
+          "Although less likely given the absence of immediate respiratory distress, a penetrating injury near the esophagus could cause perforation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Tension pneumothorax",
+          "Clear breath sounds bilaterally and adequate oxygen saturation make this unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Vertebral artery injury",
+          "Penetrating trauma near the vertebral artery's course raises concern for potential vascular damage."
+        ],
+        [
+          "Cervical spine fracture",
+          "Neck pain following a stab wound necessitates ruling out structural damage to the cervical vertebrae."
+        ],
+        [
+          "Soft tissue injury of neck",
+          "The laceration could have caused muscle strain, ligament sprain, or hematoma formation in the neck."
+        ],
+        [
+          "Esophageal perforation",
+          "Although less likely given the chest x-ray, a penetrating injury could involve the esophagus."
+        ],
+        [
+          "Tracheal injury",
+          "While the patient is breathing comfortably, a tracheal injury cannot be completely excluded without further evaluation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "Chest x-ray was negative."
+        ],
+        [
+          "Mediastinal widening",
+          "Chest x-ray was negative."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Vertebral artery dissection",
+          "The CT angiography confirms injury to the vertebral artery, which can lead to dissection."
+        ],
+        [
+          "Vertebral artery pseudoaneurysm",
+          "Trauma to the vertebral artery can cause a pseudoaneurysm."
+        ],
+        [
+          "Vertebral artery thrombosis",
+          "Injury to the vertebral artery can cause a thrombus."
+        ],
+        [
+          "Cervical spinal cord injury",
+          "While not directly confirmed, proximity to the spinal cord warrants consideration given the mechanism of injury."
+        ],
+        [
+          "Soft tissue hematoma",
+          "Bleeding from the stab wound could cause a hematoma."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumothorax",
+          "Chest x-ray was negative."
+        ],
+        [
+          "Mediastinal widening",
+          "Chest x-ray was negative."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Cervical spinal cord injury",
+            "Stab wounds to the neck can directly injure the spinal cord, leading to pain and neurological deficits."
+          ],
+          [
+            "Vertebral artery injury",
+            "Penetrating trauma to the neck can damage the vertebral artery, causing pain and potential ischemic complications."
+          ],
+          [
+            "Esophageal perforation",
+            "A stab wound could perforate the esophagus, resulting in neck pain and potential mediastinitis."
+          ],
+          [
+            "Tracheal injury",
+            "Penetrating trauma can injure the trachea, leading to pain, difficulty breathing, and subcutaneous emphysema."
+          ],
+          [
+            "Soft tissue hematoma",
+            "Bleeding into the soft tissues of the neck from the stab wound can cause pain and swelling."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No information yet to eliminate any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pneumothorax",
+            "Subcutaneous emphysema after a penetrating injury suggests air leakage into the subcutaneous tissues, potentially from a pneumothorax."
+          ],
+          [
+            "Vascular injury",
+            "A stab wound near major vessels in the neck raises concern for vascular damage, despite stable vital signs."
+          ],
+          [
+            "Esophageal perforation",
+            "Penetrating trauma to the neck can injure the esophagus, leading to air and fluid leakage and subcutaneous emphysema."
+          ],
+          [
+            "Tracheal injury",
+            "The presence of subcutaneous emphysema suggests a possible injury to the trachea."
+          ],
+          [
+            "Cervical spine injury",
+            "Neck pain following trauma warrants consideration of cervical spine injury, even without neurological deficits initially."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Aortic dissection",
+            "No reported chest pain or significant blood pressure abnormalities make this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Esophageal perforation",
+            "Subcutaneous emphysema in the neck after penetrating trauma raises concern for esophageal injury, even without mediastinal widening on CXR."
+          ],
+          [
+            "Tracheal injury",
+            "Penetrating trauma to the neck with subcutaneous emphysema can indicate tracheal damage, despite normal oxygen saturation and clear breath sounds."
+          ],
+          [
+            "Vascular injury",
+            "A stab wound near major vessels in the neck warrants consideration of vascular damage, even with stable vital signs."
+          ],
+          [
+            "Laryngeal fracture",
+            "Trauma to the anterior neck can cause laryngeal fracture, which may not be immediately apparent on initial exam or chest x-ray."
+          ],
+          [
+            "Muscular strain",
+            "While less likely given the mechanism, muscular strain from the trauma could contribute to the neck pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumothorax",
+            "Chest x-ray was negative."
+          ],
+          [
+            "Mediastinal widening",
+            "Chest x-ray was negative."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Vertebral artery dissection",
+            "The CT angiography confirms injury to the vertebral artery, which is consistent with a dissection."
+          ],
+          [
+            "Vertebral artery pseudoaneurysm",
+            "Injury to the vertebral artery from the stab wound could lead to the formation of a pseudoaneurysm."
+          ],
+          [
+            "Vertebral artery thrombosis",
+            "Trauma to the vertebral artery could cause thrombosis."
+          ],
+          [
+            "Cervical spine fracture",
+            "Although the chest x-ray was negative for mediastinal widening, a cervical spine fracture could still be present and related to the mechanism of injury."
+          ],
+          [
+            "Soft tissue infection",
+            "Subcutaneous emphysema raises concern for a possible infection, although labs are normal."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumothorax",
+            "Chest x-ray did not reveal any pneumothorax."
+          ],
+          [
+            "Mediastinal widening",
+            "Chest x-ray did not reveal any mediastinal widening."
+          ]
+        ]
+      },
+      "cf_id": "case_039_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of subcutaneous emphysema on exam argues against isolated vascular injury and raises concern for esophageal or tracheal injury."
+    }
+  ]
+}

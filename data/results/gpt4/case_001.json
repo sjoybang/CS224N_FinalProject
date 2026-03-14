@@ -1,0 +1,244 @@
+{
+  "case_id": "case_001",
+  "model": "gpt4",
+  "ground_truth": "Cystitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Urinary Tract Infection (UTI)",
+          "Burning upon urination is a common symptom of a UTI, especially in pregnant women."
+        ],
+        [
+          "Asymptomatic Bacteriuria",
+          "Pregnant women are at increased risk, and it can present with mild urinary symptoms."
+        ],
+        [
+          "Cystitis",
+          "Inflammation of the bladder can cause burning during urination and is common in young women."
+        ],
+        [
+          "Vaginitis",
+          "Infections such as yeast or bacterial vaginosis can cause irritation and burning sensations."
+        ],
+        [
+          "Pyelonephritis",
+          "Though less likely with only burning urination, it is a potential complication of untreated UTIs in pregnancy."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Urinary Tract Infection (UTI)",
+          "The burning sensation upon urination is a classic symptom of a UTI, and the absence of fever and costovertebral angle tenderness makes pyelonephritis less likely."
+        ],
+        [
+          "Asymptomatic Bacteriuria",
+          "Common in pregnant women, it can present with mild urinary symptoms without systemic signs of infection."
+        ],
+        [
+          "Cystitis",
+          "The localized urinary symptoms without systemic involvement suggest cystitis, a lower urinary tract infection."
+        ],
+        [
+          "Vaginitis",
+          "Irritation or infection of the vagina can cause dysuria and is common during pregnancy."
+        ],
+        [
+          "Urethritis",
+          "Inflammation of the urethra can cause burning during urination and may occur without systemic symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "The absence of fever and costovertebral angle tenderness makes this upper urinary tract infection unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Urinary Tract Infection (UTI)",
+          "The presence of leukocyte esterase, nitrites, and significant white blood cells in the urinalysis strongly suggests a UTI."
+        ],
+        [
+          "Asymptomatic Bacteriuria",
+          "Moderate bacteria in the urine without systemic symptoms could indicate asymptomatic bacteriuria, especially in pregnancy."
+        ],
+        [
+          "Pyelonephritis",
+          "Although there is no costovertebral angle tenderness, the significant pyuria and bacteriuria could still suggest early or atypical pyelonephritis."
+        ],
+        [
+          "Cystitis",
+          "The burning sensation upon urination and urinalysis findings are consistent with cystitis, a lower urinary tract infection."
+        ],
+        [
+          "Interstitial Cystitis",
+          "While less likely, the burning sensation could be due to interstitial cystitis, though the presence of bacteria makes this less probable."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Kidney Stones",
+          "The absence of costovertebral angle tenderness and the presence of bacteria make kidney stones unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Acute Cystitis",
+          "The presence of dysuria, positive leukocyte esterase, nitrites, and E. coli in urine culture strongly suggests a urinary tract infection, specifically acute cystitis."
+        ],
+        [
+          "Asymptomatic Bacteriuria",
+          "Although the patient is symptomatic, the high bacterial count in a pregnant woman could also indicate asymptomatic bacteriuria, which is common in pregnancy."
+        ],
+        [
+          "Pyelonephritis",
+          "While less likely due to the absence of fever and costoverbral angle tenderness, pyelonephritis remains a consideration given the significant bacteriuria."
+        ],
+        [
+          "Urethritis",
+          "The burning sensation during urination could also be due to urethritis, although the presence of E. coli makes this less likely."
+        ],
+        [
+          "Vaginitis",
+          "Although not directly indicated by the urinalysis, vaginitis could cause dysuria and should be considered, especially if there are concurrent vaginal symptoms not yet reported."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Interstitial Cystitis",
+          "The acute onset and presence of bacteria and nitrites in the urine make interstitial cystitis unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Urinary Tract Infection (UTI)",
+            "Burning upon urination is a common symptom of a UTI, especially in pregnant women."
+          ],
+          [
+            "Asymptomatic Bacteriuria",
+            "Pregnant women are at increased risk, and it can present with mild symptoms like burning urination."
+          ],
+          [
+            "Vaginitis",
+            "Infections such as yeast or bacterial vaginosis can cause irritation and burning during urination."
+          ],
+          [
+            "Cystitis",
+            "Inflammation of the bladder can cause burning urination and is common in young women."
+          ],
+          [
+            "Pyelonephritis",
+            "Though less likely without systemic symptoms, it can start with urinary symptoms in pregnant women."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pyelonephritis",
+            "The presence of right costovertebral angle tenderness suggests a kidney infection, which is common in pregnant women."
+          ],
+          [
+            "Urinary Tract Infection (UTI)",
+            "Burning upon urination is a classic symptom of a lower urinary tract infection."
+          ],
+          [
+            "Asymptomatic Bacteriuria",
+            "Although typically asymptomatic, it can present with mild symptoms in pregnancy and lead to complications."
+          ],
+          [
+            "Nephrolithiasis",
+            "Right costovertebral angle tenderness could indicate a kidney stone, which can cause urinary symptoms."
+          ],
+          [
+            "Acute Cystitis",
+            "Burning upon urination and the absence of fever could indicate a bladder infection."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fever-related infections",
+            "The patient's normal temperature makes infections typically associated with fever less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Pyelonephritis",
+            "The presence of right costovertebral angle tenderness, leukocyte esterase, nitrites, and significant pyuria suggests an upper urinary tract infection."
+          ],
+          [
+            "Cystitis",
+            "The burning upon urination and urinalysis findings are consistent with a lower urinary tract infection, although the CVA tenderness suggests a more severe infection."
+          ],
+          [
+            "Asymptomatic bacteriuria",
+            "Although typically asymptomatic, the presence of bacteria and pyuria in a pregnant woman could indicate this condition, but symptoms suggest otherwise."
+          ],
+          [
+            "Urolithiasis",
+            "The right costovertebral angle tenderness could be due to a kidney stone, although the urinalysis findings are more indicative of infection."
+          ],
+          [
+            "Interstitial cystitis",
+            "This condition can cause urinary symptoms, but the presence of bacteria and pyuria makes it less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Fever",
+            "The patient's normal temperature rules out fever as a symptom."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Pyelonephritis",
+            "The presence of right costovertebral angle tenderness, significant pyuria, bacteriuria, and a positive urine culture for E. coli suggest an upper urinary tract infection."
+          ],
+          [
+            "Cystitis",
+            "The burning upon urination and positive urinalysis for leukocyte esterase and nitrites are consistent with a lower urinary tract infection."
+          ],
+          [
+            "Asymptomatic bacteriuria",
+            "Although the patient is symptomatic, the high bacterial count in the urine culture could also indicate asymptomatic bacteriuria, which is common in pregnancy."
+          ],
+          [
+            "Urethritis",
+            "The burning sensation during urination could be due to urethritis, although the presence of E. coli makes this less likely."
+          ],
+          [
+            "Interstitial cystitis",
+            "Chronic bladder pain and urinary symptoms could suggest interstitial cystitis, but the acute onset and positive urine culture for E. coli make this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Vaginitis",
+            "The symptoms and urinalysis findings are more indicative of a urinary tract infection rather than a vaginal infection."
+          ]
+        ]
+      },
+      "cf_id": "case_001_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has marked CVA tenderness, which argues against uncomplicated cystitis."
+    }
+  ]
+}

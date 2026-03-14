@@ -1,0 +1,270 @@
+{
+  "case_id": "case_029",
+  "model": "gpt4",
+  "ground_truth": "Neuroleptic malignant syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Schizophrenia",
+          "The patient's age, recent onset of delusions, and abnormal behavior are consistent with early-onset schizophrenia."
+        ],
+        [
+          "Brief Psychotic Disorder",
+          "The acute onset of psychotic symptoms such as delusions and aggression fits the criteria for a brief psychotic disorder."
+        ],
+        [
+          "Substance-Induced Psychotic Disorder",
+          "Although the patient denies drug use, the possibility of undisclosed substance use or medication side effects (e.g., risperidone) could contribute to her symptoms."
+        ],
+        [
+          "Bipolar Disorder with Psychotic Features",
+          "The presence of aggression and delusions could indicate a manic episode with psychotic features."
+        ],
+        [
+          "Autoimmune Encephalitis",
+          "The acute onset of psychiatric symptoms in a young woman raises the possibility of an underlying autoimmune process affecting the brain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Delirium",
+          "The absence of fever, seizures, or acute medical illness makes delirium less likely."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Neuroleptic Malignant Syndrome",
+          "The recent initiation of risperidone, fever, confusion, autonomic instability, diaphoresis, and muscle rigidity are classic signs."
+        ],
+        [
+          "Serotonin Syndrome",
+          "Although less likely due to the absence of serotonergic medication, the fever, confusion, and autonomic instability could suggest this condition."
+        ],
+        [
+          "Malignant Hyperthermia",
+          "The acute onset of hyperthermia and muscle rigidity could suggest this, though it is less likely without exposure to triggering agents like anesthesia."
+        ],
+        [
+          "Encephalitis",
+          "Fever, confusion, and altered mental status could indicate an infectious or autoimmune encephalitis."
+        ],
+        [
+          "Heat Stroke",
+          "The high fever and confusion could be consistent with heat stroke, though the setting and muscle rigidity make it less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Illicit Drug Intoxication",
+          "Denied by the patient and not supported by the clinical presentation."
+        ],
+        [
+          "Sepsis",
+          "The absence of a clear infectious source and the presence of muscle rigidity make this less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Neuroleptic Malignant Syndrome",
+          "The recent initiation of risperidone, fever, confusion, autonomic instability, rigidity, and elevated creatine kinase are classic signs."
+        ],
+        [
+          "Malignant Hyperthermia",
+          "The acute onset of hyperthermia, muscle rigidity, and elevated creatine kinase could suggest this condition, although it is less likely without a triggering anesthetic agent."
+        ],
+        [
+          "Serotonin Syndrome",
+          "Although less likely due to the absence of serotonergic medications, the symptoms of fever, confusion, and autonomic instability overlap."
+        ],
+        [
+          "Rhabdomyolysis",
+          "The elevated creatine kinase and myoglobinuria (hemoglobin in urine) suggest muscle breakdown, which could be secondary to another condition."
+        ],
+        [
+          "Sepsis",
+          "The fever, leukocytosis, and confusion could indicate an infectious process, although the stiffness and elevated creatine kinase are less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Heat Stroke",
+          "The presence of muscle rigidity and recent antipsychotic use makes neuroleptic malignant syndrome more likely."
+        ],
+        [
+          "Viral Encephalitis",
+          "The absence of seizures and a more acute presentation with muscle rigidity and elevated creatine kinase are less consistent with this diagnosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Neuroleptic Malignant Syndrome",
+          "The acute onset of fever, rigidity, autonomic instability, and elevated creatine kinase following risperidone initiation strongly suggests this diagnosis."
+        ],
+        [
+          "Serotonin Syndrome",
+          "Although less likely due to the absence of serotonergic medication, the symptoms of fever, confusion, and autonomic instability could overlap with this condition."
+        ],
+        [
+          "Malignant Hyperthermia",
+          "The presentation of hyperthermia and muscle rigidity could mimic this condition, though it is typically triggered by anesthetic agents rather than antipsychotics."
+        ],
+        [
+          "Acute Rhabdomyolysis",
+          "The elevated creatine kinase and muscle rigidity could indicate muscle breakdown, although it is more likely secondary to another condition like NMS."
+        ],
+        [
+          "Viral Encephalitis",
+          "The fever, confusion, and altered mental status could suggest an infectious cause, though the rapid improvement after stopping risperidone makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Heat Stroke",
+          "The resolution of symptoms after discontinuing risperidone and supportive care suggests a drug-related cause rather than environmental heat exposure."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Schizophrenia",
+            "The patient's age, recent onset of delusions, and abnormal behavior are consistent with the typical presentation of schizophrenia."
+          ],
+          [
+            "Brief Psychotic Disorder",
+            "The acute onset of psychotic symptoms such as delusions and aggression within a short time frame fits this diagnosis."
+          ],
+          [
+            "Substance-Induced Psychotic Disorder",
+            "Although the patient denies drug use, the possibility of undisclosed substance use or medication side effects should be considered."
+          ],
+          [
+            "Bipolar Disorder with Psychotic Features",
+            "The presence of aggression and delusions could indicate a manic episode with psychotic features."
+          ],
+          [
+            "Antipsychotic-Induced Side Effects",
+            "The recent initiation of risperidone could contribute to behavioral changes and aggression."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Febrile Illness",
+            "The patient denies fever, making an infectious cause less likely."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Neuroleptic Malignant Syndrome",
+            "The recent initiation of risperidone, along with confusion, diaphoresis, autonomic instability, and rigidity, strongly suggests this condition."
+          ],
+          [
+            "Serotonin Syndrome",
+            "Although less likely without serotonergic medication, the symptoms of confusion, diaphoresis, and autonomic instability could fit this diagnosis."
+          ],
+          [
+            "Acute Psychotic Episode",
+            "The initial presentation of abnormal behavior and delusions could indicate an underlying psychotic disorder exacerbated by medication."
+          ],
+          [
+            "Catatonia",
+            "The patient's stiffness, lack of verbal responsiveness, and spontaneous eye-opening could be indicative of catatonic features."
+          ],
+          [
+            "Encephalitis",
+            "The acute onset of confusion and behavioral changes could suggest an infectious or autoimmune encephalitis, although fever is absent."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Illicit Drug Intoxication",
+            "The patient denies drug use, and there is no evidence to suggest otherwise."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Neuroleptic Malignant Syndrome",
+            "The recent initiation of risperidone, combined with confusion, diaphoresis, rigidity, and elevated creatine kinase, strongly suggests this diagnosis."
+          ],
+          [
+            "Rhabdomyolysis",
+            "The elevated creatine kinase and presence of hemoglobin in the urine indicate muscle breakdown, which could be secondary to the stiffness and immobility."
+          ],
+          [
+            "Acute Kidney Injury",
+            "The elevated creatinine level suggests renal impairment, possibly due to rhabdomyolysis or dehydration."
+          ],
+          [
+            "Serotonin Syndrome",
+            "Although less likely due to the absence of serotonergic medications, the symptoms of confusion, diaphoresis, and autonomic instability could fit this diagnosis."
+          ],
+          [
+            "Malignant Hyperthermia",
+            "While typically associated with anesthesia, the muscle rigidity and elevated creatine kinase could suggest a similar pathophysiological process."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infection",
+            "Normal temperature and lack of infectious symptoms make an infectious cause unlikely."
+          ],
+          [
+            "Seizure Disorder",
+            "The absence of seizure activity and normal temperature reduce the likelihood of a seizure-related condition."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Neuroleptic Malignant Syndrome",
+            "The acute onset of confusion, rigidity, diaphoresis, elevated creatine kinase, and resolution after discontinuation of risperidone strongly suggests this diagnosis."
+          ],
+          [
+            "Serotonin Syndrome",
+            "Although less likely due to the absence of serotonergic medication, the symptoms of autonomic instability and altered mental status could fit this diagnosis."
+          ],
+          [
+            "Malignant Catatonia",
+            "The patient's abnormal behavior, rigidity, and autonomic instability could be consistent with catatonia, although the rapid improvement after stopping risperidone is more typical of NMS."
+          ],
+          [
+            "Acute Kidney Injury",
+            "Elevated creatinine and proteinuria suggest renal involvement, possibly secondary to rhabdomyolysis from muscle breakdown."
+          ],
+          [
+            "Rhabdomyolysis",
+            "The significantly elevated creatine kinase indicates muscle breakdown, likely secondary to severe muscle rigidity."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Infection",
+            "Normal temperature and lack of infectious symptoms make an infectious cause unlikely."
+          ],
+          [
+            "Illicit Drug Use",
+            "Denied by the patient and not supported by the clinical findings."
+          ]
+        ]
+      },
+      "cf_id": "case_029_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's temperature is normal, which argues against neuroleptic malignant syndrome."
+    }
+  ]
+}

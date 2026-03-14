@@ -1,0 +1,25 @@
+{
+  "case_id": "case_058",
+  "source": "MedQA-USMLE",
+  "original_question": "A 57-year-old man comes to the physician for a follow-up evaluation of chronic, retrosternal chest pain. The pain is worse at night and after heavy meals. He has taken oral pantoprazole for several months without any relief of his symptoms. Esophagogastroduodenoscopy shows ulcerations in the distal esophagus and a proximally dislocated Z-line. A biopsy of the distal esophagus shows columnar epithelium with goblet cells. Which of the following microscopic findings underlie the same pathomechanism as the cellular changes seen in this patient?",
+  "ground_truth": "Barrett's esophagus",
+  "base": {
+    "stage_1": "A 57-year-old man presents for follow-up of chronic, retrosternal chest pain.",
+    "stage_2": "The patient reports the pain is worse at night and after heavy meals. He states that oral pantoprazole has not relieved his symptoms. Physical exam is unremarkable.",
+    "stage_3": "Esophagogastroduodenoscopy reveals ulcerations in the distal esophagus and a proximally dislocated Z-line.",
+    "stage_4": "A biopsy of the distal esophagus demonstrates columnar epithelium with goblet cells, confirming the diagnosis."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that the pain is relieved with antacids, which argues against Barrett's esophagus as it suggests typical GERD symptoms.",
+      "rules_out": "Barrett's esophagus",
+      "stage_1": "A 57-year-old man presents for follow-up of chronic, retrosternal chest pain.",
+      "stage_2": "The patient reports the pain is worse at night and after heavy meals. He states that oral pantoprazole has not relieved his symptoms, but that antacids do relieve the pain. Physical exam is unremarkable.",
+      "stage_3": "Esophagogastroduodenoscopy reveals ulcerations in the distal esophagus and a proximally dislocated Z-line.",
+      "stage_4": "A biopsy of the distal esophagus demonstrates columnar epithelium with goblet cells, confirming the diagnosis.",
+      "cf_id": "case_058_cf_a"
+    }
+  ]
+}

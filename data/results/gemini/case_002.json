@@ -1,0 +1,234 @@
+{
+  "case_id": "case_002",
+  "model": "gemini",
+  "ground_truth": "Thromboembolism",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Pulmonary embolism",
+          "Sudden onset dyspnea is a classic symptom."
+        ],
+        [
+          "Acute heart failure",
+          "This can present with sudden shortness of breath, especially in individuals with underlying cardiac risk factors."
+        ],
+        [
+          "Pneumonia",
+          "While often more gradual, sudden onset dyspnea can occur with rapidly progressing pneumonia."
+        ],
+        [
+          "Pneumothorax",
+          "This can cause sudden shortness of breath due to lung collapse."
+        ],
+        [
+          "Asthma exacerbation",
+          "Although less likely with sudden onset in a 58-year-old, it remains a possibility."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Pulmonary embolism",
+          "Recent femur fracture and immobility increase the risk of venous thromboembolism leading to sudden cardiac arrest."
+        ],
+        [
+          "Acute myocardial infarction",
+          "Sudden cardiac arrest can be caused by an acute blockage of a coronary artery."
+        ],
+        [
+          "Arrhythmia",
+          "A sudden, life-threatening arrhythmia can cause cardiac arrest."
+        ],
+        [
+          "Aortic dissection",
+          "Although less likely, aortic dissection can present with sudden cardiac arrest."
+        ],
+        [
+          "Tension pneumothorax",
+          "While less common, tension pneumothorax can cause sudden cardiac arrest due to impaired venous return."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Thromboembolic Pulmonary Hypertension",
+          "The presence of fibrous connective tissue around the pulmonary artery lumen suggests chronic thromboembolic changes."
+        ],
+        [
+          "Pulmonary Embolism",
+          "Given the recent femur fracture and immobility, a pulmonary embolism leading to cardiac arrest is a strong possibility."
+        ],
+        [
+          "Pulmonary Artery Sarcoma",
+          "Although rare, intimal sarcoma can cause pulmonary artery obstruction and present with similar histological findings."
+        ],
+        [
+          "Primary Pulmonary Hypertension",
+          "Fibrous changes in the pulmonary artery could be due to idiopathic pulmonary hypertension."
+        ],
+        [
+          "Pulmonary Veno-Occlusive Disease",
+          "This rare condition can cause pulmonary hypertension with histological findings of fibrosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Respiratory Distress Syndrome",
+          "ARDS is less likely given the specific histological finding of fibrous tissue around the pulmonary artery."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic thromboembolic pulmonary hypertension",
+          "The presence of organized thrombi with recanalization in the pulmonary artery confirms chronic thromboembolic disease as the underlying cause of pulmonary hypertension."
+        ],
+        [
+          "Pulmonary embolism",
+          "Although chronic, the initial presentation with sudden shortness of breath and cardiac arrest could be triggered by a new thromboembolic event on top of the chronic disease."
+        ],
+        [
+          "Primary pulmonary hypertension",
+          "While less likely given the thrombi, primary pulmonary hypertension can present similarly and should be considered."
+        ],
+        [
+          "Pulmonary veno-occlusive disease",
+          "This is a rare cause of pulmonary hypertension that can mimic CTEPH, although the thrombi make it less likely."
+        ],
+        [
+          "Sarcoidosis",
+          "Sarcoidosis can cause pulmonary hypertension through granulomatous infiltration of the pulmonary vasculature."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute respiratory distress syndrome",
+          "The autopsy findings of chronic thrombi and recanalization do not support ARDS."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Pulmonary embolism",
+            "Sudden onset dyspnea is a classic symptom."
+          ],
+          [
+            "Acute heart failure",
+            "This can present with sudden shortness of breath, especially in individuals with underlying cardiac risk factors."
+          ],
+          [
+            "Pneumonia",
+            "While often more gradual, sudden onset dyspnea can occur with rapidly progressing pneumonia."
+          ],
+          [
+            "Pneumothorax",
+            "This can cause sudden shortness of breath due to lung collapse."
+          ],
+          [
+            "Asthma exacerbation",
+            "Although less likely with sudden onset in a 58-year-old, it remains a possibility."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pulmonary Embolism",
+            "Given the recent femur fracture, rehab discharge, and sudden shortness of breath followed by cardiac arrest, pulmonary embolism is a strong possibility."
+          ],
+          [
+            "Acute Myocardial Infarction",
+            "Cardiac arrest suggests a possible cardiac event, and acute myocardial infarction is a common cause."
+          ],
+          [
+            "Arrhythmia",
+            "An arrhythmia could have precipitated the cardiac arrest and shortness of breath."
+          ],
+          [
+            "Pneumothorax",
+            "Sudden shortness of breath can be caused by a pneumothorax, although less likely given the other factors."
+          ],
+          [
+            "Cardiogenic Shock",
+            "The cardiac arrest could have resulted from cardiogenic shock due to underlying heart failure or other cardiac dysfunction."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic thromboembolic pulmonary hypertension",
+            "The presence of fibrous connective tissue around the pulmonary artery lumen suggests chronic thrombi organization."
+          ],
+          [
+            "Pulmonary hypertension",
+            "Fibrous tissue around the pulmonary artery can be a general response to elevated pulmonary artery pressures from various causes."
+          ],
+          [
+            "Pulmonary veno-occlusive disease",
+            "Although less likely given the artery location, this can cause pulmonary hypertension and fibrosis."
+          ],
+          [
+            "Connective tissue disease-associated pulmonary hypertension",
+            "Some connective tissue diseases can cause pulmonary hypertension with vascular remodeling."
+          ],
+          [
+            "Idiopathic pulmonary arterial hypertension",
+            "This diagnosis is possible when other causes of pulmonary hypertension are excluded, and vascular remodeling is present."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute pulmonary embolism",
+            "The presence of fibrous tissue indicates a chronic process, not an acute event."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic thromboembolic pulmonary hypertension",
+            "The presence of organized thrombi with recanalization in the pulmonary artery confirms chronic thromboembolic disease, leading to pulmonary hypertension."
+          ],
+          [
+            "Pulmonary embolism",
+            "The patient's history of a fractured femur and recent discharge from rehab increases the risk of thromboembolism, potentially leading to pulmonary embolism and subsequent cardiac arrest."
+          ],
+          [
+            "Acute respiratory distress syndrome",
+            "The sudden onset of shortness of breath and cardiac arrest could be indicative of ARDS, although the autopsy findings point more towards chronic thromboembolic disease."
+          ],
+          [
+            "Cardiogenic shock",
+            "Cardiac arrest could have resulted in cardiogenic shock, although the autopsy findings suggest a primary pulmonary issue."
+          ],
+          [
+            "Pulmonary veno-occlusive disease",
+            "While less likely given the thrombi, PVOD can present with pulmonary hypertension and shortness of breath."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pneumonia",
+            "No evidence of infection was presented."
+          ]
+        ]
+      },
+      "cf_id": "case_002_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient experienced cardiac arrest and resuscitation was successful, making thromboembolism less likely as the patient survived the acute event."
+    }
+  ]
+}

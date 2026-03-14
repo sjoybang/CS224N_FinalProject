@@ -1,0 +1,256 @@
+{
+  "case_id": "case_031",
+  "model": "gpt4",
+  "ground_truth": "Diphtheria",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Asthma",
+          "Common in children and can present with dyspnea, especially in a new environment."
+        ],
+        [
+          "Pneumonia",
+          "Common in children and can cause dyspnea, particularly if there is a recent history of infection."
+        ],
+        [
+          "Tuberculosis",
+          "More prevalent in Asia and can present with respiratory symptoms like dyspnea."
+        ],
+        [
+          "Foreign body aspiration",
+          "Common in young children and can cause sudden onset of dyspnea."
+        ],
+        [
+          "Congenital heart disease",
+          "Can present with dyspnea in children and may be undiagnosed in recent immigrants."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Diphtheria",
+          "The presence of a gray pseudomembrane in the oropharynx and cervical lymphadenopathy are classic signs of diphtheria."
+        ],
+        [
+          "Streptococcal pharyngitis",
+          "Although less common, severe cases can present with cervical lymphadenopathy and respiratory distress."
+        ],
+        [
+          "Infectious mononucleosis",
+          "This can cause cervical lymphadenopathy and oropharyngeal symptoms, though the pseudomembrane is atypical."
+        ],
+        [
+          "Epiglottitis",
+          "This condition can cause respiratory distress and oropharyngeal findings, but the pseudomembrane is not typical."
+        ],
+        [
+          "Retropharyngeal abscess",
+          "This can present with respiratory distress and cervical lymphadenopathy, though the pseudomembrane is not characteristic."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Croup",
+          "Typically presents with a barking cough and stridor, not a pseudomembrane."
+        ],
+        [
+          "Asthma",
+          "Does not cause a pseudomembrane or cervical lymphadenopathy."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Diphtheria",
+          "The presence of a gray pseudomembrane in the oropharynx, cervical lymphadenopathy, and myocarditis are classic signs of diphtheria."
+        ],
+        [
+          "Viral myocarditis",
+          "The EKG findings of myocarditis and elevated inflammatory markers could indicate viral myocarditis, although the pseudomembrane is not typical."
+        ],
+        [
+          "Bacterial pharyngitis",
+          "The oropharyngeal pseudomembrane and cervical lymphadenopathy could suggest a severe bacterial infection, though myocarditis is less common."
+        ],
+        [
+          "Scarlet fever",
+          "Cervical lymphadenopathy and elevated inflammatory markers could be consistent with scarlet fever, but the pseudomembrane and myocarditis are atypical."
+        ],
+        [
+          "Infectious mononucleosis",
+          "Cervical lymphadenopathy and elevated inflammatory markers are common, but the pseudomembrane and myocarditis are not typical features."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Epiglottitis",
+          "The presence of a pseudomembrane and myocarditis are not characteristic of epiglottitis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Diphtheria",
+          "The presence of a gray pseudomembrane in the oropharynx, positive culture for Corynebacterium diphtheriae, and positive toxin assay confirm this diagnosis."
+        ],
+        [
+          "Myocarditis secondary to diphtheria",
+          "The EKG findings of myocarditis are consistent with diphtheria-related cardiac complications."
+        ],
+        [
+          "Acute bacterial pharyngitis",
+          "The oropharyngeal findings and elevated inflammatory markers could suggest a bacterial infection, although diphtheria is confirmed."
+        ],
+        [
+          "Viral pharyngitis",
+          "While less likely given the bacterial culture results, viral infections can present with similar symptoms but are ruled out by the specific bacterial findings."
+        ],
+        [
+          "Cervical lymphadenitis",
+          "The cervical lymphadenopathy could be a secondary response to the oropharyngeal infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Epiglottitis",
+          "The presence of a pseudomembrane and positive culture for Corynebacterium diphtheriae make epiglottitis unlikely."
+        ],
+        [
+          "Streptococcal pharyngitis",
+          "The specific identification of Corynebacterium diphtheriae rules out streptococcal infection as the primary cause."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Asthma",
+            "Common in children and can present with dyspnea."
+          ],
+          [
+            "Foreign body aspiration",
+            "More likely in young children and can cause sudden onset of dyspnea."
+          ],
+          [
+            "Pneumonia",
+            "Common in children and can present with respiratory distress."
+          ],
+          [
+            "Tuberculosis",
+            "Endemic in some parts of Asia and can cause respiratory symptoms."
+          ],
+          [
+            "Viral upper respiratory infection",
+            "Common in children and can lead to dyspnea."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Viral upper respiratory infection",
+            "The presence of dyspnea, cervical lymphadenopathy, and elevated heart and respiratory rates are consistent with a viral infection, which is common in children."
+          ],
+          [
+            "Bacterial pneumonia",
+            "The elevated respiratory rate and dyspnea could indicate a lower respiratory tract infection such as pneumonia, especially in a child."
+          ],
+          [
+            "Asthma",
+            "The dyspnea and elevated respiratory rate could be due to asthma, which is common in children and can be exacerbated by environmental changes."
+          ],
+          [
+            "Tuberculosis",
+            "Given the patient's recent immigration from Asia, tuberculosis is a consideration due to endemic prevalence in some regions."
+          ],
+          [
+            "Foreign body aspiration",
+            "The acute onset of dyspnea in a child could be due to aspiration, although the normal oropharynx makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diphtheria",
+            "The absence of a pseudomembrane in the oropharynx makes diphtheria unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Viral myocarditis",
+            "The presence of myocarditis on EKG and elevated inflammatory markers in a child suggests a viral etiology, which is common in this age group."
+          ],
+          [
+            "Kawasaki disease",
+            "Cervical lymphadenopathy, elevated inflammatory markers, and potential cardiac involvement align with Kawasaki disease, especially in a child of Asian descent."
+          ],
+          [
+            "Acute rheumatic fever",
+            "The combination of myocarditis and elevated inflammatory markers could indicate acute rheumatic fever, particularly if there is a history of recent streptococcal infection."
+          ],
+          [
+            "Tuberculosis",
+            "As a recent immigrant from Asia, tuberculosis could present with systemic symptoms and cervical lymphadenopathy, although the chest X-ray is unremarkable."
+          ],
+          [
+            "Bacterial endocarditis",
+            "Although less common in children, the presence of myocarditis and elevated inflammatory markers could suggest bacterial endocarditis, especially if there is a predisposing cardiac condition."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Diphtheria",
+            "The absence of a pseudomembrane in the oropharynx makes diphtheria unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Diphtheria",
+            "The presence of Corynebacterium diphtheriae in the oropharyngeal culture and positive toxin assay confirms diphtheria."
+          ],
+          [
+            "Myocarditis",
+            "The EKG findings and elevated inflammatory markers are consistent with myocarditis, which can be a complication of diphtheria."
+          ],
+          [
+            "Viral Upper Respiratory Infection",
+            "The symptoms of dyspnea and elevated inflammatory markers could also suggest a viral infection, although less likely given the confirmed diphtheria."
+          ],
+          [
+            "Bacterial Pharyngitis",
+            "Cervical lymphadenopathy and elevated inflammatory markers could indicate bacterial pharyngitis, but the specific culture results point to diphtheria."
+          ],
+          [
+            "Reactive Airway Disease",
+            "The dyspnea and elevated respiratory rate could suggest reactive airway disease, though it does not explain the positive diphtheria culture."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Epiglottitis",
+            "The normal oropharynx without pseudomembrane and unremarkable chest X-ray make epiglottitis unlikely."
+          ],
+          [
+            "Pneumonia",
+            "The unremarkable chest X-ray rules out pneumonia."
+          ]
+        ]
+      },
+      "cf_id": "case_031_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a pseudomembrane in the oropharynx makes diphtheria much less likely."
+    }
+  ]
+}

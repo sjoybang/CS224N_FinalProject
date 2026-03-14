@@ -1,0 +1,25 @@
+{
+  "case_id": "case_014",
+  "source": "MedQA-USMLE",
+  "original_question": "A 68-year-old man comes to the physician because of recurrent episodes of nausea and abdominal discomfort for the past 4 months. The discomfort is located in the upper abdomen and sometimes occurs after eating, especially after a big meal. He has tried to go for a walk after dinner to help with digestion, but his complaints have only increased. For the past 3 weeks he has also had symptoms while climbing the stairs to his apartment. He has type 2 diabetes mellitus, hypertension, and stage 2 peripheral arterial disease. He has smoked one pack of cigarettes daily for the past 45 years. He drinks one to two beers daily and occasionally more on weekends. His current medications include metformin, enalapril, and aspirin. He is 168 cm (5 ft 6 in) tall and weighs 126 kg (278 lb); BMI is 45 kg/m2. His temperature is 36.4\u00b0C (97.5\u00b0F), pulse is 78/min, and blood pressure is 148/86 mm Hg. On physical examination, the abdomen is soft and nontender with no organomegaly. Foot pulses are absent bilaterally. An ECG shows no abnormalities. Which of the following is the most appropriate next step in diagnosis?",
+  "ground_truth": "Coronary artery disease",
+  "base": {
+    "stage_1": "A 68-year-old man presents with recurrent episodes of nausea and upper abdominal discomfort for the past 4 months, which is sometimes exacerbated after eating.",
+    "stage_2": "The patient's temperature is 36.4\u00b0C (97.5\u00b0F), pulse is 78/min, and blood pressure is 148/86 mm Hg. Physical examination reveals a soft, nontender abdomen without organomegaly. Foot pulses are absent bilaterally.",
+    "stage_3": "An ECG shows no abnormalities. The patient has a history of type 2 diabetes mellitus, hypertension, stage 2 peripheral arterial disease, and a significant smoking history. He also reports new-onset exertional symptoms while climbing stairs.",
+    "stage_4": "A cardiac stress test reveals significant ST-segment depression in multiple leads during exercise, suggestive of myocardial ischemia. Subsequent coronary angiography demonstrates severe stenosis in the left anterior descending artery."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of strong, palpable dorsalis pedis pulses bilaterally argues against peripheral arterial disease as a cause of the patient's symptoms, making coronary artery disease less likely.",
+      "rules_out": "Coronary artery disease",
+      "stage_1": "A 68-year-old man presents with recurrent episodes of nausea and upper abdominal discomfort for the past 4 months, which is sometimes exacerbated after eating.",
+      "stage_2": "The patient's temperature is 36.4\u00b0C (97.5\u00b0F), pulse is 78/min, and blood pressure is 148/86 mm Hg. Physical examination reveals a soft, nontender abdomen without organomegaly. Foot pulses are strong and palpable bilaterally.",
+      "stage_3": "An ECG shows no abnormalities. The patient has a history of type 2 diabetes mellitus, hypertension, stage 2 peripheral arterial disease, and a significant smoking history. He also reports new-onset exertional symptoms while climbing stairs.",
+      "stage_4": "A cardiac stress test reveals significant ST-segment depression in multiple leads during exercise, suggestive of myocardial ischemia. Subsequent coronary angiography demonstrates severe stenosis in the left anterior descending artery.",
+      "cf_id": "case_014_cf_a"
+    }
+  ]
+}

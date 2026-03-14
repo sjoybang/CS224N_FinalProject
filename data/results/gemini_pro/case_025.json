@@ -1,0 +1,273 @@
+{
+  "case_id": "case_025",
+  "model": "gemini_pro",
+  "ground_truth": "Wernicke encephalopathy",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Myasthenia Gravis",
+          "This autoimmune disorder of the neuromuscular junction classically presents with fluctuating weakness of the extraocular muscles, causing diplopia in this age group."
+        ],
+        [
+          "Cranial Nerve Palsy",
+          "An isolated palsy of the third, fourth, or sixth cranial nerve is a common cause of acute diplopia, which can be idiopathic or due to microvascular ischemia."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Diplopia is a common presenting symptom of this demyelinating CNS disease, which typically affects young adults."
+        ],
+        [
+          "Thyroid Eye Disease",
+          "This autoimmune condition causes inflammation and fibrosis of the extraocular muscles, leading to restrictive strabismus and diplopia."
+        ],
+        [
+          "Brainstem Lesion",
+          "A structural lesion such as a tumor, cavernoma, or small stroke in the brainstem could disrupt cranial nerve nuclei or pathways controlling eye movements."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Giant Cell Arteritis",
+          "The patient's age of 38 is well below the typical onset age of over 50 for this condition."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Wernicke-Korsakoff Syndrome",
+          "The patient presents with the classic triad of encephalopathy (confusion, memory loss, confabulation), oculomotor dysfunction (nystagmus, diplopia), and gait ataxia in the setting of chronic alcohol abuse."
+        ],
+        [
+          "Hepatic Encephalopathy",
+          "Chronic alcohol abuse is a primary cause of liver disease, which can lead to altered mental status, confusion, and neurological signs like ataxia and nystagmus."
+        ],
+        [
+          "Alcohol-related Cerebellar Degeneration",
+          "This diagnosis is suggested by the broad-based gait and nystagmus, which are hallmark signs of cerebellar damage due to the toxic effects of chronic alcohol consumption."
+        ],
+        [
+          "Chronic Subdural Hematoma",
+          "Patients with alcohol use disorder are at high risk for falls and head trauma, which can lead to an insidious presentation of confusion, gait disturbance, and focal neurological signs."
+        ],
+        [
+          "Vitamin B12 Deficiency",
+          "Malnutrition associated with alcoholism can cause vitamin B12 deficiency, leading to cognitive impairment and a sensory ataxia that could manifest as a broad-based gait."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Wernicke-Korsakoff Syndrome",
+          "The patient has the classic triad of encephalopathy, oculomotor dysfunction, and ataxia, with a history of alcoholism and confirmatory lab and MRI findings."
+        ],
+        [
+          "Alcoholic Cerebellar Degeneration",
+          "This diagnosis is strongly suggested by the chronic history of alcohol abuse and the prominent broad-based gait ataxia."
+        ],
+        [
+          "Hepatic Encephalopathy",
+          "Altered mental status and ataxia can be caused by liver dysfunction, a common consequence of chronic alcohol abuse."
+        ],
+        [
+          "Marchiafava-Bignami Disease",
+          "This is a rare demyelinating condition of the corpus callosum seen in chronic alcoholism that can present with confusion and ataxia."
+        ],
+        [
+          "Normal Pressure Hydrocephalus",
+          "The combination of cognitive changes and gait disturbance warrants consideration, though other features are less typical for this patient's specific presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Brain Tumor",
+          "The MRI showed atrophy of the mammillary bodies, not a mass lesion."
+        ],
+        [
+          "Stroke",
+          "The specific laboratory finding of decreased transketolase activity and the MRI finding of mammillary body atrophy are not characteristic of a stroke."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Wernicke-Korsakoff Syndrome",
+          "This diagnosis perfectly explains the acute triad of encephalopathy, ophthalmoplegia, and ataxia that responded to thiamine, as well as the chronic memory impairment, confabulation, and mammillary body atrophy."
+        ],
+        [
+          "Wernicke's Encephalopathy",
+          "The patient presents with the classic triad of confusion, ataxia, and ophthalmoplegia in the setting of alcoholism, which showed marked improvement after thiamine administration."
+        ],
+        [
+          "Alcoholic Cerebellar Degeneration",
+          "This condition is considered due to the patient's chronic alcohol abuse and broad-based gait, which are hallmark features."
+        ],
+        [
+          "Hepatic Encephalopathy",
+          "Confusion and ataxia in a patient with a history of heavy alcohol use raises suspicion for this diagnosis, which is caused by liver dysfunction."
+        ],
+        [
+          "Marchiafava-Bignami Disease",
+          "This rare demyelinating disease of the corpus callosum is associated with chronic alcoholism and can present with confusion and ataxia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Vertebrobasilar Stroke",
+          "The subacute onset, specific MRI findings, and dramatic, rapid improvement with thiamine administration make a stroke highly unlikely."
+        ],
+        [
+          "Multiple Sclerosis",
+          "The patient's profound confusion, history of alcoholism, and rapid reversal of acute symptoms with thiamine are not characteristic of multiple sclerosis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Myasthenia Gravis",
+            "This autoimmune disorder commonly presents with fluctuating, painless diplopia due to antibodies targeting the neuromuscular junction."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Diplopia can be the initial symptom of this demyelinating disease in a young adult, often due to a brainstem lesion or cranial nerve involvement."
+          ],
+          [
+            "Isolated Cranial Nerve Palsy",
+            "A palsy of the third, fourth, or sixth cranial nerve is a common cause of diplopia and can be idiopathic, viral, or microvascular in origin."
+          ],
+          [
+            "Thyroid Eye Disease",
+            "Inflammation and thickening of the extraocular muscles associated with thyroid autoimmunity can restrict eye movement and cause diplopia."
+          ],
+          [
+            "Intracranial Mass/Aneurysm",
+            "A tumor or aneurysm can cause diplopia by compressing cranial nerves or brainstem structures involved in eye movement."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Giant Cell Arteritis",
+            "The patient's age of 38 is well below the typical age of onset for this condition, which is over 50."
+          ],
+          [
+            "Traumatic Orbital Floor Fracture",
+            "There is no history of trauma provided in the clinical case."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff Syndrome",
+            "The combination of confusion, gait disturbance (broad-based gait), an ocular symptom (double vision), and an amnestic syndrome with confabulation is classic for this diagnosis in the setting of chronic alcoholism."
+          ],
+          [
+            "Chronic Subdural Hematoma",
+            "The patient's history of alcohol abuse increases the risk for head trauma, and the subacute presentation of cognitive decline, personality changes, and gait disturbance is highly suggestive."
+          ],
+          [
+            "Hepatic Encephalopathy",
+            "Given the severe alcohol abuse, underlying liver disease is probable, and the patient's confusion, agitation, and personality changes are common manifestations of this metabolic disorder."
+          ],
+          [
+            "Marchiafava-Bignami Disease",
+            "This rare demyelinating disorder of the corpus callosum is specifically associated with chronic alcoholism and can present with the patient's symptoms of dementia, personality change, and gait disturbance."
+          ],
+          [
+            "Alcoholic Cerebellar Degeneration",
+            "The patient's broad-based gait is a cardinal feature of this condition, which results from the direct toxic effects of alcohol on the cerebellum and often co-occurs with other alcohol-related brain damage."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myasthenia Gravis",
+            "This diagnosis would not explain the patient's central nervous system findings, including confusion, confabulation, personality changes, or broad-based gait."
+          ],
+          [
+            "Miller Fisher Syndrome",
+            "This peripheral neuropathy does not account for the prominent central cognitive deficits such as confusion, significant memory impairment, and confabulation."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff Syndrome",
+            "The combination of chronic alcoholism, cognitive deficits including confabulation, decreased transketolase activity, and mammillary body atrophy is classic for this diagnosis."
+          ],
+          [
+            "Alcoholic Cerebellar Degeneration",
+            "The patient's broad-based gait and history of chronic alcohol abuse are highly suggestive of cerebellar damage due to alcohol toxicity."
+          ],
+          [
+            "Hepatic Encephalopathy",
+            "Confusion and gait disturbance in a patient with a long history of heavy alcohol use could be caused by liver failure, a common complication of alcoholism."
+          ],
+          [
+            "Marchiafava-Bignami Disease",
+            "This rare complication of chronic alcoholism can cause dementia and gait abnormalities, though the specific MRI finding is atypical for this condition."
+          ],
+          [
+            "Frontotemporal Dementia",
+            "The patient's prominent behavioral changes (indifference, agitation) and cognitive decline could represent an early-onset dementia, although other findings make it less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Normal Pressure Hydrocephalus",
+            "The MRI shows atrophy rather than the expected ventriculomegaly."
+          ],
+          [
+            "Brain Tumor",
+            "The MRI did not report a mass and instead showed specific atrophic changes characteristic of another diagnosis."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Wernicke-Korsakoff Syndrome",
+            "This diagnosis perfectly aligns with the acute triad of encephalopathy, ophthalmoplegia, and ataxia that improved with thiamine, superimposed on a chronic amnestic syndrome with confabulation, all supported by a history of alcoholism and classic MRI findings."
+          ],
+          [
+            "Wernicke's Encephalopathy",
+            "The patient's acute presentation of confusion, ophthalmoplegia, and ataxia, which responded rapidly to thiamine administration, is the classic presentation of this thiamine deficiency state."
+          ],
+          [
+            "Alcoholic Cerebellar Degeneration",
+            "The patient's broad-based gait and ataxia are characteristic of this condition, which is common in individuals with a long-term history of alcohol abuse."
+          ],
+          [
+            "Hepatic Encephalopathy",
+            "Given the significant history of alcohol abuse, liver disease is likely, and the resulting encephalopathy could explain the patient's confusion and altered mental status."
+          ],
+          [
+            "Marchiafava-Bignami Disease",
+            "This rare demyelinating disease of the corpus callosum is associated with chronic alcoholism and can present with confusion and gait abnormalities, making it a less common but plausible consideration."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Vertebrobasilar Stroke",
+            "The rapid and significant improvement of ophthalmoplegia and ataxia following thiamine administration is not consistent with the natural history of an ischemic stroke."
+          ],
+          [
+            "Normal Pressure Hydrocephalus",
+            "This diagnosis is ruled out by the presence of ophthalmoplegia, atrophy of the mammillary bodies, and the dramatic clinical response to thiamine replacement."
+          ]
+        ]
+      },
+      "cf_id": "case_025_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's neurological exam reveals normal findings, which argues against Wernicke encephalopathy."
+    }
+  ]
+}

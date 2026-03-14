@@ -1,0 +1,248 @@
+{
+  "case_id": "case_045",
+  "model": "gpt4",
+  "ground_truth": "Rabies",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Meningitis",
+          "The combination of fever and headache raises suspicion for meningitis, a common presentation in young adults."
+        ],
+        [
+          "Influenza",
+          "Fever and headache are typical symptoms of influenza, especially during flu season."
+        ],
+        [
+          "Viral encephalitis",
+          "Fever and headache could indicate viral encephalitis, which can present similarly to meningitis."
+        ],
+        [
+          "Sinusitis",
+          "Headache and fever can be symptoms of sinusitis, particularly if there is any nasal congestion or facial pain."
+        ],
+        [
+          "Migraine",
+          "Although less likely, a migraine could present with headache and fever, especially if there is a history of migraines."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Encephalitis",
+          "The presence of fever, headache, confusion, and hallucinations suggests inflammation of the brain, commonly seen in encephalitis."
+        ],
+        [
+          "Meningitis",
+          "Fever, headache, and confusion are classic symptoms of meningitis, which involves inflammation of the protective membranes covering the brain and spinal cord."
+        ],
+        [
+          "Rabies",
+          "The combination of fever, confusion, hallucinations, and hydrophobia (agitation when offered water) is characteristic of rabies."
+        ],
+        [
+          "Delirium",
+          "Acute onset of confusion and hallucinations in the context of fever could indicate delirium, often secondary to an underlying infection or systemic illness."
+        ],
+        [
+          "Sepsis",
+          "Fever and altered mental status could be indicative of sepsis, a systemic response to infection that can affect brain function."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Dehydration",
+          "The presence of fever and confusion with agitation when offered water suggests a central nervous system issue rather than simple dehydration."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Viral encephalitis",
+          "The presence of fever, headache, confusion, hallucinations, and mild lymphocytic pleocytosis in the CSF is suggestive of viral encephalitis."
+        ],
+        [
+          "Herpes simplex encephalitis",
+          "The acute onset of fever, altered mental status, and normal CT scan with lymphocytic pleocytosis in the CSF is characteristic of herpes simplex encephalitis."
+        ],
+        [
+          "Autoimmune encephalitis",
+          "The combination of psychiatric symptoms, fever, and lymphocytic pleocytosis could indicate autoimmune encephalitis, although less common."
+        ],
+        [
+          "Meningitis",
+          "The fever, headache, and CSF findings could suggest viral meningitis, though the prominent confusion and hallucinations are less typical."
+        ],
+        [
+          "Rabies",
+          "The history of agitation when offered water and neurological symptoms could be indicative of rabies, although it is rare."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial meningitis",
+          "The normal glucose and protein levels in the CSF make bacterial meningitis unlikely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Rabies",
+          "The positive PCR test for rabies virus RNA in the CSF, along with the history of bat exposure, strongly supports this diagnosis."
+        ],
+        [
+          "Viral Encephalitis",
+          "The symptoms of fever, headache, confusion, and CSF findings of lymphocytic pleocytosis are consistent with viral encephalitis."
+        ],
+        [
+          "Herpes Simplex Encephalitis",
+          "Although less likely due to the rabies PCR result, the presentation of fever, confusion, and normal CT could suggest herpes simplex encephalitis."
+        ],
+        [
+          "Meningitis",
+          "The fever, headache, and CSF findings could suggest meningitis, although the normal glucose and protein levels make bacterial meningitis less likely."
+        ],
+        [
+          "Delirium",
+          "The acute onset of confusion and hallucinations could be attributed to delirium, though it does not explain the positive rabies PCR."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial Meningitis",
+          "The normal glucose and protein levels in the CSF make bacterial meningitis unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Meningitis",
+            "The combination of fever and headache raises suspicion for meningitis, a common presentation in young adults."
+          ],
+          [
+            "Influenza",
+            "Fever and headache are typical symptoms of influenza, especially during flu season."
+          ],
+          [
+            "Viral encephalitis",
+            "Fever and headache could indicate viral encephalitis, particularly if there are neurological symptoms."
+          ],
+          [
+            "Sinusitis",
+            "Headache and fever can be symptoms of sinusitis, especially if there is a history of upper respiratory infection."
+          ],
+          [
+            "Migraine",
+            "Although less likely, migraines can present with headache and fever, particularly if there is a history of migraines."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Encephalitis",
+            "The presence of fever, headache, confusion, and hallucinations suggests inflammation of the brain, commonly seen in encephalitis."
+          ],
+          [
+            "Meningitis",
+            "Fever and headache are classic symptoms, and confusion can occur if the infection spreads to the brain."
+          ],
+          [
+            "Rabies",
+            "The agitation when offered water and hallucinations are characteristic of rabies, especially with recent confusion."
+          ],
+          [
+            "Delirium",
+            "Acute confusion and hallucinations in the context of fever could indicate delirium due to an underlying infection or systemic illness."
+          ],
+          [
+            "Sepsis",
+            "Fever and confusion could be signs of systemic infection leading to sepsis, although the lack of other systemic signs makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Migraine",
+            "The presence of fever, confusion, and hallucinations are not typical features of a migraine."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Viral Encephalitis",
+            "The presence of fever, headache, confusion, hallucinations, and mild lymphocytic pleocytosis in the CSF suggests a viral infection of the central nervous system."
+          ],
+          [
+            "Herpes Simplex Encephalitis",
+            "The acute onset of confusion and hallucinations with normal glucose and protein in the CSF is characteristic of herpes simplex virus infection."
+          ],
+          [
+            "Rabies",
+            "The patient's agitation when offered water and neurological symptoms raise suspicion for rabies, especially if there is a history of animal exposure."
+          ],
+          [
+            "Autoimmune Encephalitis",
+            "The combination of psychiatric symptoms and mild lymphocytic pleocytosis could indicate an autoimmune process affecting the brain."
+          ],
+          [
+            "Aseptic Meningitis",
+            "The mild lymphocytic pleocytosis with normal glucose and protein levels in the CSF is consistent with aseptic meningitis, although the prominent neurological symptoms are less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Meningitis",
+            "The normal glucose and protein levels in the CSF make bacterial meningitis unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Rabies",
+            "The positive rabies virus RNA in the CSF, history of bat exposure, and symptoms of hydrophobia and encephalitis strongly suggest rabies."
+          ],
+          [
+            "Viral Encephalitis",
+            "The mild lymphocytic pleocytosis in the CSF and altered mental status are consistent with viral encephalitis, though rabies is more specific given the history."
+          ],
+          [
+            "Herpes Simplex Encephalitis",
+            "Typically presents with fever, headache, and altered mental status, but the normal glucose and protein in CSF make it less likely."
+          ],
+          [
+            "Bacterial Meningitis",
+            "Usually presents with more pronounced CSF abnormalities, such as elevated protein and low glucose, which are not present here."
+          ],
+          [
+            "Autoimmune Encephalitis",
+            "Can cause confusion and hallucinations, but the positive rabies PCR and recent bat exposure make this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial Meningitis",
+            "Ruled out due to normal glucose and protein levels in the CSF and mild lymphocytic pleocytosis."
+          ],
+          [
+            "Fungal Meningitis",
+            "Unlikely given the normal CSF glucose and protein levels and the acute presentation."
+          ]
+        ]
+      },
+      "cf_id": "case_045_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient is noted to have full range of motion of her extremities and no cranial nerve deficits, which argues against rabies."
+    }
+  ]
+}

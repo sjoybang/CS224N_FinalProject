@@ -1,0 +1,275 @@
+{
+  "case_id": "case_002",
+  "model": "gemini_pro",
+  "ground_truth": "Thromboembolism",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Pulmonary Embolism",
+          "Sudden onset of dyspnea is a classic presentation for an acute blockage of the pulmonary arteries."
+        ],
+        [
+          "Acute Coronary Syndrome",
+          "Shortness of breath is a common anginal equivalent, particularly in women, and can signify an acute myocardial infarction."
+        ],
+        [
+          "Acute Decompensated Heart Failure",
+          "Flash pulmonary edema from acute cardiac dysfunction can cause a very sudden onset of severe shortness of breath."
+        ],
+        [
+          "Spontaneous Pneumothorax",
+          "The acute collapse of a lung leads to a sudden onset of dyspnea."
+        ],
+        [
+          "Pneumonia",
+          "A severe or rapidly progressing lung infection can present with acute respiratory distress."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Pulmonary Embolism",
+          "The patient's recent femur fracture and subsequent immobility are major risk factors for a deep vein thrombosis leading to a fatal pulmonary embolism."
+        ],
+        [
+          "Myocardial Infarction",
+          "Sudden cardiac death in this age group is commonly caused by an acute coronary event, which can present as sudden dyspnea."
+        ],
+        [
+          "Aortic Dissection",
+          "This catastrophic vascular event can present with sudden shortness of breath and lead to rapid cardiovascular collapse and death."
+        ],
+        [
+          "Fatal Arrhythmia",
+          "A primary malignant ventricular arrhythmia could explain the sudden cardiac arrest with a brief prodrome of dyspnea."
+        ],
+        [
+          "Hemorrhagic Stroke",
+          "A catastrophic brainstem hemorrhage can cause abrupt loss of respiratory drive and subsequent cardiac arrest."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Chronic Thromboembolic Pulmonary Hypertension (CTEPH)",
+          "This diagnosis best explains the combination of VTE risk factors (femur fracture), sudden death, and autopsy findings of organized, fibrous tissue within the pulmonary arteries."
+        ],
+        [
+          "Idiopathic Pulmonary Arterial Hypertension (IPAH)",
+          "This is a diagnosis of exclusion for pulmonary hypertension that can cause intimal fibrosis in pulmonary arteries and lead to sudden death, though the patient's VTE risk factors make it less likely."
+        ],
+        [
+          "Recurrent Pulmonary Embolism",
+          "The patient may have had multiple, subclinical pulmonary emboli over time, leading to organized thrombi (fibrosis) and progressive pulmonary vascular obstruction culminating in a final fatal event."
+        ],
+        [
+          "Pulmonary Veno-occlusive Disease (PVOD)",
+          "This rare cause of pulmonary hypertension is characterized by fibrous obliteration of pulmonary venules and veins, which can fit the general histological description and clinical course."
+        ],
+        [
+          "Pulmonary Hypertension due to Left Heart Disease",
+          "Chronic left-sided heart failure can cause secondary pulmonary hypertension with reactive vascular remodeling and fibrosis in the pulmonary arteries."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Massive Pulmonary Embolism",
+          "The histological finding of fibrous connective tissue indicates a chronic process of organized thrombi, not a single, acute embolic event."
+        ],
+        [
+          "Myocardial Infarction",
+          "This would not explain the specific histological finding of chronic fibrous changes within the pulmonary artery."
+        ],
+        [
+          "Aortic Dissection",
+          "This diagnosis would be evident on gross autopsy and does not account for the specific microscopic findings in the lung vasculature."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic Thromboembolic Pulmonary Hypertension (CTEPH)",
+          "This is the confirmed diagnosis, supported by the definitive autopsy finding of organized, recanalized thrombi in the pulmonary artery and a history of risk factors for VTE."
+        ],
+        [
+          "Idiopathic Pulmonary Arterial Hypertension (IPAH)",
+          "This condition causes pulmonary hypertension with vascular remodeling and intimal fibrosis that can histologically mimic the changes of chronic thromboembolism before specific thrombus is identified."
+        ],
+        [
+          "Pulmonary Artery Sarcoma",
+          "This rare intraluminal tumor can mimic a large, organized thrombus on imaging and pathology, causing progressive pulmonary hypertension."
+        ],
+        [
+          "Pulmonary Tumor Thrombotic Microangiopathy (PTTM)",
+          "This paraneoplastic syndrome involves tumor emboli causing widespread fibrocellular intimal proliferation in small pulmonary vessels, which can be mistaken for organized thrombi."
+        ],
+        [
+          "Pulmonary Veno-occlusive Disease (PVOD)",
+          "This is a rare cause of pulmonary hypertension characterized by fibrous intimal proliferation, primarily of the pulmonary venules and veins, which could be considered in a differential of fibrotic pulmonary vasculopathies."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Massive Pulmonary Embolism",
+          "The finding of organized thrombi with recanalization and fibrosis indicates a chronic process, ruling out a purely acute event as the sole underlying diagnosis."
+        ],
+        [
+          "Acute Myocardial Infarction",
+          "The definitive cause of death was identified in the pulmonary vasculature on autopsy, not the coronary arteries or myocardium."
+        ],
+        [
+          "Aortic Dissection",
+          "Autopsy findings are localized to the pulmonary arteries, with no evidence of aortic pathology reported."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Pulmonary Embolism",
+            "The sudden onset of dyspnea is a classic presentation for an acute blockage of the pulmonary arteries."
+          ],
+          [
+            "Acute Coronary Syndrome",
+            "Shortness of breath is a common anginal equivalent, especially in women, and can signify a heart attack."
+          ],
+          [
+            "Acute Decompensated Heart Failure",
+            "A rapid onset of cardiac dysfunction can cause flash pulmonary edema, leading to sudden shortness of breath."
+          ],
+          [
+            "Pneumothorax",
+            "The abrupt collapse of a lung due to air entering the pleural space is a primary cause of sudden dyspnea."
+          ],
+          [
+            "Pneumonia",
+            "A severe or rapidly progressing lung infection can impair gas exchange and present with acute respiratory distress."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Interstitial Lung Disease",
+            "The \"sudden\" onset is inconsistent with the chronic, progressive course typical of this diagnosis."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Massive Pulmonary Embolism",
+            "The patient has major risk factors for VTE including a recent femur fracture and immobility, and presented with sudden dyspnea progressing to cardiac arrest."
+          ],
+          [
+            "Acute Myocardial Infarction",
+            "Sudden cardiac arrest is a common presentation of a large MI, and shortness of breath is a key anginal equivalent, especially in women."
+          ],
+          [
+            "Aortic Dissection",
+            "This vascular catastrophe can cause sudden shortness of breath and progress rapidly to cardiac arrest from complications like tamponade or coronary artery occlusion."
+          ],
+          [
+            "Cardiac Tamponade",
+            "This condition causes obstructive shock and can explain the rapid deterioration from dyspnea to cardiac arrest, though it may be secondary to another process."
+          ],
+          [
+            "Tension Pneumothorax",
+            "This is a reversible cause of obstructive shock and cardiac arrest that can present with sudden, severe shortness of breath."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Chronic Thromboembolic Pulmonary Hypertension (CTEPH)",
+            "The history of femur fracture provides a strong risk factor for venous thromboembolism, and the autopsy finding of organized fibrous tissue is the hallmark of unresolved emboli causing this condition."
+          ],
+          [
+            "Idiopathic Pulmonary Arterial Hypertension (IPAH)",
+            "This is a diagnosis of exclusion for severe pulmonary hypertension leading to cardiac arrest, which can feature some degree of intimal fibrosis on histology."
+          ],
+          [
+            "Pulmonary Artery Sarcoma",
+            "This rare malignancy can mimic chronic thromboembolic disease by causing obstruction of the pulmonary artery and can be composed of fibrous tissue."
+          ],
+          [
+            "Connective Tissue Disease-associated Pulmonary Arterial Hypertension",
+            "Systemic diseases like scleroderma can cause severe pulmonary hypertension through vascular remodeling and fibrosis, although no systemic features were described."
+          ],
+          [
+            "Pulmonary Veno-occlusive Disease (PVOD)",
+            "This is a rare cause of pulmonary hypertension characterized by widespread fibrous obstruction, though it typically affects the pulmonary venules rather than the arteries."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Massive Pulmonary Embolism",
+            "The histological finding of fibrous connective tissue indicates a chronic, organized process, not an acute thrombus."
+          ],
+          [
+            "Myocardial Infarction",
+            "This diagnosis would not explain the specific autopsy finding of organized fibrous tissue within the pulmonary artery."
+          ],
+          [
+            "Aortic Dissection",
+            "This would be identified by pathology in the aorta on autopsy, not in the pulmonary vasculature."
+          ],
+          [
+            "Pneumonia/ARDS",
+            "Histology would show alveolar inflammation and exudates, not organized fibrous tissue confined to the pulmonary artery."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic Thromboembolic Pulmonary Hypertension (CTEPH)",
+            "The autopsy finding of organized thrombi with recanalization within the pulmonary artery is the definitive feature of this diagnosis."
+          ],
+          [
+            "Acute Pulmonary Embolism",
+            "The sudden onset of shortness of breath, cardiac arrest, and risk factors from recent femur fracture are classic for a massive acute event."
+          ],
+          [
+            "Idiopathic Pulmonary Arterial Hypertension (IPAH)",
+            "This is a primary cause of pulmonary hypertension that presents with vascular remodeling and would be considered before organized thrombi are specifically identified."
+          ],
+          [
+            "Pulmonary Veno-occlusive Disease (PVOD)",
+            "This rare cause of pulmonary hypertension involves fibrous occlusion of post-capillary pulmonary vessels and can present with similar severe symptoms."
+          ],
+          [
+            "Connective Tissue Disease-associated Pulmonary Arterial Hypertension",
+            "Systemic diseases can cause pulmonary vascular fibrosis and hypertension, which could be on the differential given the histological findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myocardial Infarction",
+            "Autopsy findings are localized to the pulmonary vasculature, not the coronary arteries or myocardium."
+          ],
+          [
+            "Aortic Dissection",
+            "The pathology is confined to the pulmonary arteries, with no evidence of an aortic tear."
+          ],
+          [
+            "Acute Respiratory Distress Syndrome (ARDS)",
+            "Histology shows chronic vascular changes, not the diffuse alveolar damage characteristic of ARDS."
+          ]
+        ]
+      },
+      "cf_id": "case_002_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient experienced cardiac arrest and resuscitation was successful, making thromboembolism less likely as the patient survived the acute event."
+    }
+  ]
+}

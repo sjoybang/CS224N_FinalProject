@@ -1,0 +1,254 @@
+{
+  "case_id": "case_057",
+  "model": "gemini",
+  "ground_truth": "Loss of antithrombin III",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Nephrolithiasis",
+          "The sudden onset of flank pain and hematuria is highly suggestive of a kidney stone."
+        ],
+        [
+          "Ureterolithiasis",
+          "Similar to nephrolithiasis, a stone lodged in the ureter can cause flank pain and hematuria."
+        ],
+        [
+          "Urinary Tract Infection (UTI)",
+          "While flank pain is less common, a UTI can present with hematuria and discomfort."
+        ],
+        [
+          "Renal Cell Carcinoma",
+          "This malignancy can present with hematuria and flank pain, although less likely with acute onset."
+        ],
+        [
+          "Polycystic Kidney Disease (PKD)",
+          "Rupture of a cyst can cause flank pain and hematuria, although usually more chronic."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses can be definitively ruled out at this stage."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Nephrotic syndrome",
+          "The periorbital and lower extremity edema, weight gain, and proteinuria (implied by bloody urine) suggest nephrotic syndrome."
+        ],
+        [
+          "Acute glomerulonephritis",
+          "Hematuria, edema, and hypertension can be indicative of acute glomerulonephritis."
+        ],
+        [
+          "Congestive heart failure",
+          "Lower extremity edema, weight gain, and abdominal distension could be related to fluid overload from heart failure."
+        ],
+        [
+          "Renal cell carcinoma",
+          "Flank pain and hematuria can be symptoms of renal cell carcinoma."
+        ],
+        [
+          "Polycystic kidney disease",
+          "Flank pain and hematuria can be associated with polycystic kidney disease, though edema is less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary tract infection",
+          "Lacks typical UTI symptoms like dysuria or frequency."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Renal cell carcinoma",
+          "The presence of a large right kidney with abundant collateral vessels and a filling defect in the right renal vein, along with hematuria, strongly suggests renal cell carcinoma."
+        ],
+        [
+          "Nephrotic syndrome",
+          "The 4+ proteinuria, lower extremity edema, periorbital edema, and fatty casts on urinalysis are indicative of nephrotic syndrome."
+        ],
+        [
+          "Hepatitis B cirrhosis",
+          "The nodular liver with ascites is highly suggestive of cirrhosis secondary to chronic hepatitis B infection."
+        ],
+        [
+          "Membranous nephropathy",
+          "Given the nephrotic syndrome presentation and the patient's age, membranous nephropathy is a plausible cause of the proteinuria."
+        ],
+        [
+          "Focal segmental glomerulosclerosis",
+          "Although less likely given the other findings, FSGS can present with nephrotic syndrome and should be considered."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Urinary tract infection",
+          "Lungs are clear, and there is no mention of dysuria or fever."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Renal cell carcinoma",
+          "The presence of a large right kidney with abundant collateral vessels and a filling defect in the right renal vein on CT scan, along with hematuria, strongly suggests renal cell carcinoma."
+        ],
+        [
+          "Nephrotic syndrome",
+          "The 4+ proteinuria, fatty casts, periorbital edema, lower extremity edema, and weight gain are consistent with nephrotic syndrome."
+        ],
+        [
+          "Antithrombin III deficiency",
+          "The significantly decreased antithrombin III activity and confirmed heterozygous mutation in the SERPINC1 gene indicate hereditary antithrombin III deficiency."
+        ],
+        [
+          "Hepatitis B cirrhosis",
+          "The nodular liver with ascites is suggestive of cirrhosis secondary to chronic hepatitis B infection."
+        ],
+        [
+          "Renal vein thrombosis",
+          "The filling defect in the right renal vein could indicate renal vein thrombosis, potentially related to antithrombin III deficiency or renal cell carcinoma."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Diabetes mellitus",
+          "While the urinalysis showed positive glucose, this is more likely secondary to tubular dysfunction from nephrotic syndrome than primary diabetes."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Nephrolithiasis",
+            "The sudden onset of flank pain and hematuria is highly suggestive of a kidney stone."
+          ],
+          [
+            "Ureterolithiasis",
+            "Similar to nephrolithiasis, a stone lodged in the ureter can cause flank pain and hematuria."
+          ],
+          [
+            "Urinary Tract Infection (UTI)",
+            "While flank pain is less common, a UTI can present with hematuria and discomfort."
+          ],
+          [
+            "Renal Cell Carcinoma",
+            "This malignancy can present with hematuria and flank pain, although less likely with acute onset."
+          ],
+          [
+            "Polycystic Kidney Disease (PKD)",
+            "Rupture of a cyst can cause flank pain and hematuria, although usually more chronic."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses can be definitively ruled out at this stage."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pulmonary embolism",
+            "The sudden onset of pleuritic chest pain, shortness of breath, tachycardia, tachypnea, mild cyanosis, and hemopturia (bloody urine) are highly suggestive of pulmonary embolism."
+          ],
+          [
+            "Pneumonia",
+            "While lungs are clear to auscultation, pneumonia can present with pleuritic chest pain, shortness of breath, tachypnea, and bloody urine due to associated inflammation or infection."
+          ],
+          [
+            "Acute myocardial infarction",
+            "Chest pain, shortness of breath, diaphoresis, anxiety, and tachycardia can be indicative of acute myocardial infarction, even without typical chest pain presentation."
+          ],
+          [
+            "Aortic dissection",
+            "The combination of chest pain, anxiety, and potential for rapid deterioration warrants consideration of aortic dissection, especially given the patient's age."
+          ],
+          [
+            "Renal cell carcinoma",
+            "Hematuria and flank pain are classic symptoms, and while the acute respiratory symptoms are less typical, paraneoplastic syndromes or metastasis could be contributing factors."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pyelonephritis",
+            "Lungs are clear to auscultation, making this less likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Renal cell carcinoma",
+            "The presence of a large right kidney with abundant collateral vessels and a filling defect in the right renal vein, along with hematuria, strongly suggests renal cell carcinoma."
+          ],
+          [
+            "Pulmonary embolism",
+            "Pleuritic chest pain, shortness of breath, anxiety, diaphoresis, tachycardia, tachypnea, mild cyanosis, and a history of frequent flying are suggestive of pulmonary embolism."
+          ],
+          [
+            "Hepatitis B cirrhosis",
+            "Nodular liver with ascites is indicative of cirrhosis, and the patient has a history of chronic hepatitis B infection."
+          ],
+          [
+            "Diabetic nephropathy",
+            "The urinalysis showing 4+ protein, positive glucose, and fatty casts suggests possible diabetic nephropathy, although the patient's diabetic status is unknown."
+          ],
+          [
+            "Membranous nephropathy",
+            "The presence of 4+ proteinuria and fatty casts in the urinalysis could indicate membranous nephropathy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pyelonephritis",
+            "Lungs are clear to auscultation, making pyelonephritis less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Renal cell carcinoma",
+            "The presence of a large right kidney with abundant collateral vessels and a filling defect in the right renal vein, along with hematuria, strongly suggests renal cell carcinoma."
+          ],
+          [
+            "Pulmonary embolism",
+            "Pleuritic chest pain, shortness of breath, cyanosis, and increased respiratory rate in a patient with a history of frequent flying and antithrombin III deficiency are highly suggestive of pulmonary embolism."
+          ],
+          [
+            "Antithrombin III deficiency",
+            "The patient's heterozygous mutation in the SERPINC1 gene confirms hereditary antithrombin III deficiency, predisposing her to thrombotic events."
+          ],
+          [
+            "Hepatitis B cirrhosis",
+            "The nodular liver with ascites is consistent with cirrhosis secondary to chronic hepatitis B infection."
+          ],
+          [
+            "Diabetic nephropathy",
+            "The urinalysis showing 4+ protein, positive glucose, and fatty casts suggests possible diabetic nephropathy, although the patient's diabetic status is not explicitly stated."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pyelonephritis",
+            "Lungs are clear to auscultation, making pyelonephritis less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_057_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports pleuritic chest pain and shortness of breath, which argues against antithrombin III deficiency, which typically presents with venous thromboembolism, not pulmonary embolism."
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "case_id": "case_038",
+  "model": "gemini",
+  "ground_truth": "Histoplasmosis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral gastroenteritis",
+          "The acute onset of fever, nausea, and vomiting suggests a viral infection of the gastrointestinal tract."
+        ],
+        [
+          "Food poisoning",
+          "Recent ingestion of contaminated food could explain the sudden onset of gastrointestinal symptoms."
+        ],
+        [
+          "Acute appendicitis",
+          "Although less likely without abdominal pain, early appendicitis can present with fever, nausea, and vomiting."
+        ],
+        [
+          "Pyelonephritis",
+          "Kidney infection can present with fever, nausea, and vomiting, although flank pain is typically present."
+        ],
+        [
+          "Inflammatory bowel disease flare",
+          "While less acute, an IBD flare could manifest with these symptoms, especially in a young adult."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No information yet rules out any diagnosis."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Meningitis",
+          "Fever, altered mental status, and muscle twitching suggest possible central nervous system infection."
+        ],
+        [
+          "Encephalitis",
+          "Similar to meningitis, encephalitis can present with fever, altered mental status, and neurological symptoms like twitching."
+        ],
+        [
+          "Sepsis",
+          "The patient's fever, hypotension, and altered mental status could indicate a systemic inflammatory response to infection."
+        ],
+        [
+          "Toxic ingestion",
+          "Disorientation, agitation, and increased secretions could be caused by exposure to a toxin."
+        ],
+        [
+          "Heatstroke",
+          "High fever and altered mental status can be indicative of heatstroke, especially given the presentation with nausea and vomiting."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Common cold",
+          "Symptoms are too severe."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute Respiratory Distress Syndrome (ARDS)",
+          "The diffuse bilateral reticulonodular infiltrates on chest X-ray, hypoxemia, and need for mechanical ventilation are consistent with ARDS."
+        ],
+        [
+          "Septic Shock",
+          "Fever, hypotension, altered mental status, and elevated liver enzymes suggest a possible systemic infection leading to septic shock."
+        ],
+        [
+          "Disseminated Intravascular Coagulation (DIC)",
+          "Pancytopenia, elevated liver enzymes, and potential for sepsis can be associated with DIC."
+        ],
+        [
+          "Toxic Shock Syndrome (TSS)",
+          "Fever, hypotension, altered mental status, and diffuse infiltrates could be caused by a toxin-mediated illness like TSS."
+        ],
+        [
+          "Atypical Pneumonia",
+          "While less likely given the pancytopenia, atypical pneumonia could present with fever, respiratory distress, and reticulonodular infiltrates."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Disseminated histoplasmosis",
+          "The presence of fever, pancytopenia, elevated liver enzymes, diffuse reticulonodular infiltrates, and Histoplasma capsulatum in BAL fluid strongly suggests disseminated histoplasmosis."
+        ],
+        [
+          "Acute Respiratory Distress Syndrome (ARDS)",
+          "The patient's respiratory distress, hypoxemia, and bilateral infiltrates are consistent with ARDS."
+        ],
+        [
+          "Sepsis",
+          "Fever, hypotension, and altered mental status, along with pancytopenia, suggest a possible septic process."
+        ],
+        [
+          "Drug-induced liver injury",
+          "Elevated liver enzymes and altered mental status could be related to a drug reaction, although less likely given the Histoplasma finding."
+        ],
+        [
+          "Viral pneumonia",
+          "While Histoplasma is confirmed, a co-infection with a viral pneumonia cannot be entirely ruled out given the respiratory symptoms and infiltrates."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial pneumonia",
+          "The fungal stain and culture results point towards a fungal infection rather than bacterial."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Viral gastroenteritis",
+            "The acute onset of fever, nausea, and vomiting suggests a common viral infection of the gastrointestinal tract."
+          ],
+          [
+            "Food poisoning",
+            "Recent ingestion of contaminated food could explain the sudden onset of gastrointestinal symptoms."
+          ],
+          [
+            "Acute appendicitis",
+            "Although less likely without abdominal pain, early appendicitis can present with fever, nausea, and vomiting."
+          ],
+          [
+            "Pyelonephritis",
+            "Kidney infection can present with fever, nausea, and vomiting, although usually accompanied by flank pain."
+          ],
+          [
+            "Inflammatory bowel disease flare",
+            "While less acute, an IBD flare could manifest with these symptoms, especially in a younger adult."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No information yet rules out any of the listed diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Meningococcemia",
+            "The petechial rash, fever, altered mental status, and rapid deterioration suggest a possible meningococcal infection."
+          ],
+          [
+            "Septic shock",
+            "Fever, hypotension, altered mental status, and respiratory distress are consistent with septic shock."
+          ],
+          [
+            "Encephalitis",
+            "Fever, altered mental status, and muscle twitching can be indicative of encephalitis."
+          ],
+          [
+            "Toxic shock syndrome",
+            "The combination of fever, rash, hypotension, and altered mental status raises suspicion for toxic shock syndrome."
+          ],
+          [
+            "Heatstroke",
+            "High fever and altered mental status, especially with potential environmental exposure, could indicate heatstroke."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gastroenteritis",
+            "The altered mental status, respiratory distress, and petechial rash are not typical of gastroenteritis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Disseminated Intravascular Coagulation",
+            "Pancytopenia, elevated liver enzymes, petechial rash, and respiratory distress suggest DIC."
+          ],
+          [
+            "Acute Respiratory Distress Syndrome",
+            "The diffuse bilateral reticulonodular infiltrates on chest X-ray and respiratory distress are consistent with ARDS."
+          ],
+          [
+            "Thrombotic Thrombocytopenic Purpura",
+            "Pancytopenia and altered mental status, along with fever, suggest TTP."
+          ],
+          [
+            "Severe Sepsis",
+            "Fever, hypotension, altered mental status, and respiratory distress point towards severe sepsis."
+          ],
+          [
+            "Leptospirosis",
+            "Fever, elevated liver enzymes, and pulmonary involvement could indicate leptospirosis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Common Viral Gastroenteritis",
+            "The presence of petechial rash, pancytopenia, and respiratory distress make this unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Disseminated Histoplasmosis",
+            "The presence of fever, pancytopenia, elevated liver enzymes, reticulonodular infiltrates, and Histoplasma capsulatum in BAL fluid strongly suggests disseminated histoplasmosis."
+          ],
+          [
+            "Septic Shock",
+            "The patient's fever, hypotension, altered mental status, and petechial rash are consistent with septic shock."
+          ],
+          [
+            "Acute Respiratory Distress Syndrome (ARDS)",
+            "The patient's hypoxemia, bilateral infiltrates, and need for mechanical ventilation are indicative of ARDS."
+          ],
+          [
+            "Meningitis",
+            "The patient's fever, altered mental status, and agitation could be related to meningitis, although other findings are more prominent."
+          ],
+          [
+            "Drug-Induced Liver Injury",
+            "Elevated liver enzymes and altered mental status could be related to drug-induced liver injury, although less likely given the other findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Undetermined Viral Pneumonia",
+            "Histoplasma capsulatum identified in BAL."
+          ]
+        ]
+      },
+      "cf_id": "case_038_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's exam reveals a new petechial rash, arguing against histoplasmosis which does not typically present with petechiae."
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "case_id": "case_017",
+  "model": "claude",
+  "ground_truth": "Cauda equina syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Pathologic fracture from metastatic prostate cancer",
+          "Severe new-onset back pain in a patient with known metastatic prostate cancer strongly suggests vertebral metastasis with possible fracture."
+        ],
+        [
+          "Spinal cord compression from metastatic disease",
+          "Metastatic prostate cancer commonly spreads to spine and can cause epidural compression presenting as severe back pain."
+        ],
+        [
+          "Epidural abscess",
+          "Severe back pain with acute onset could represent spinal infection, though no fever or risk factors mentioned yet."
+        ],
+        [
+          "Vertebral osteomyelitis",
+          "Acute severe back pain can be caused by vertebral infection, particularly in immunocompromised or elderly patients."
+        ],
+        [
+          "Acute vertebral compression fracture (non-pathologic)",
+          "Elderly patient could have osteoporotic compression fracture causing acute severe pain."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Malignant spinal cord compression",
+          "Metastatic prostate cancer with new severe back pain, focal spine tenderness, and bilateral lower extremity weakness strongly suggests epidural metastasis compressing the spinal cord."
+        ],
+        [
+          "Pathologic vertebral fracture",
+          "Known metastatic disease with acute severe back pain and localized spine tenderness could indicate vertebral body collapse from bony metastases."
+        ],
+        [
+          "Epidural abscess",
+          "Severe back pain with focal tenderness and neurologic deficits could represent spinal infection, though less likely without fever or risk factors mentioned."
+        ],
+        [
+          "Cauda equina syndrome",
+          "Bilateral lower extremity weakness (asymmetric) with severe lower back pain suggests possible compression of the cauda equina nerve roots."
+        ],
+        [
+          "Epidural hematoma",
+          "Acute severe back pain with bilateral lower extremity weakness could indicate spontaneous spinal bleeding, though less common without anticoagulation or trauma history."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Mechanical low back pain",
+          "The presence of bilateral lower extremity weakness and severity of symptoms inconsistent with simple mechanical etiology."
+        ],
+        [
+          "Lumbar disc herniation",
+          "Typically causes unilateral symptoms and would be unusual to present this acutely with bilateral weakness in context of metastatic cancer."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Cauda equina syndrome secondary to metastatic epidural spinal cord compression",
+          "Saddle anesthesia, bilateral lower extremity weakness, hyporeflexia, and severe back pain in a patient with known metastatic prostate cancer strongly suggest malignant epidural compression of the cauda equina."
+        ],
+        [
+          "Pathological vertebral compression fracture",
+          "Metastatic prostate cancer to the spine can cause vertebral body collapse leading to acute severe back pain and potential neural compression."
+        ],
+        [
+          "Leptomeningeal carcinomatosis",
+          "Metastatic spread to the meninges covering the cauda equina could cause bilateral lower extremity weakness, sensory changes, and hyporeflexia."
+        ],
+        [
+          "Epidural abscess",
+          "Severe back pain with progressive neurological deficits including saddle anesthesia and bilateral weakness could indicate an infectious epidural collection, though no fever is noted."
+        ],
+        [
+          "Spinal epidural hematoma",
+          "Spontaneous bleeding in the epidural space (potentially related to cancer or coagulopathy) could cause acute compression of the cauda equina with similar neurological findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Peripheral neuropathy",
+          "The acute onset, severe focal back pain, and saddle anesthesia indicate a central spinal lesion rather than peripheral nerve disease."
+        ],
+        [
+          "Lumbar radiculopathy",
+          "The bilateral involvement, saddle anesthesia, and hyporeflexia suggest cauda equina pathology rather than isolated nerve root compression."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cauda equina syndrome due to metastatic prostate cancer",
+          "MRI confirms cauda equina compression by metastatic disease with classic clinical features including saddle anesthesia, bilateral lower extremity weakness, and hyporeflexia."
+        ],
+        [
+          "Pathological compression fracture with cauda equina syndrome",
+          "Metastatic prostate cancer commonly causes vertebral body fractures that can result in acute spinal canal compromise and cauda equina compression."
+        ],
+        [
+          "Epidural metastasis with cord compression",
+          "Prostate cancer metastases can extend into the epidural space causing direct compression of neural elements, though MRI specifies cauda equina involvement."
+        ],
+        [
+          "Spinal epidural abscess",
+          "Can present with similar symptoms of back pain, lower extremity weakness, and saddle anesthesia, though less likely given confirmed metastatic disease on imaging."
+        ],
+        [
+          "Spinal epidural hematoma",
+          "Can cause acute cauda equina syndrome with similar neurological findings, though imaging confirmed metastatic disease as the compressive etiology."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Lumbar disc herniation",
+          "MRI demonstrates metastatic compression rather than disc pathology as the cause of cauda equina syndrome."
+        ],
+        [
+          "Primary spinal tumor",
+          "Patient has known metastatic prostate cancer and imaging confirms metastatic disease rather than primary tumor."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Pathologic fracture from metastatic prostate cancer",
+            "Patient has known metastatic prostate cancer and new severe back pain, making vertebral metastases with compression fracture most likely."
+          ],
+          [
+            "Epidural spinal cord compression from metastatic disease",
+            "Metastatic prostate cancer commonly spreads to spine and can cause epidural compression with severe back pain."
+          ],
+          [
+            "Spinal epidural abscess",
+            "Severe new-onset back pain in older adult warrants consideration of infectious etiology, though no fever mentioned."
+          ],
+          [
+            "Acute vertebral compression fracture (osteoporotic)",
+            "Older male with sudden severe back pain could have age-related osteoporotic compression fracture."
+          ],
+          [
+            "Acute aortic dissection",
+            "Severe back pain described as never experienced before in elderly male requires consideration of vascular emergency."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Metastatic epidural spinal cord compression",
+            "Patient with known metastatic prostate cancer presenting with severe back pain, spinal tenderness, and bilateral lower extremity weakness suggests epidural metastases causing cord compression."
+          ],
+          [
+            "Pathologic vertebral fracture",
+            "Metastatic prostate cancer to spine can cause vertebral body collapse resulting in severe new-onset back pain and localized tenderness with neurologic compromise."
+          ],
+          [
+            "Cauda equina syndrome",
+            "Lower spine tenderness with bilateral lower extremity weakness (asymmetric) could represent compression of the cauda equina nerve roots, though pain relief with straight leg raise is atypical."
+          ],
+          [
+            "Leptomeningeal carcinomatosis",
+            "Metastatic prostate cancer can spread to meninges causing back pain and bilateral neurologic deficits, though typically presents with more multifocal findings."
+          ],
+          [
+            "Paraneoplastic myelopathy",
+            "Prostate cancer can rarely cause immune-mediated spinal cord dysfunction presenting with weakness and sensory changes, though acute severe pain makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Lumbar disc herniation",
+            "Pain relief with straight leg raise is paradoxical (typically worsens pain), and bilateral weakness with known metastatic cancer makes malignant etiology more likely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Cauda equina syndrome secondary to metastatic epidural spinal cord compression",
+            "Patient with metastatic prostate cancer presenting with saddle anesthesia, bilateral lower extremity weakness, hyporeflexia, and severe back pain\u2014classic cauda equina features with known malignancy."
+          ],
+          [
+            "Pathological vertebral compression fracture with cauda equina syndrome",
+            "Metastatic prostate cancer predisposes to pathological fractures, and the acute severe back pain with cauda equina signs suggests vertebral collapse compressing nerve roots."
+          ],
+          [
+            "Spinal epidural abscess",
+            "Severe back pain, bilateral lower extremity weakness, saddle anesthesia, and hyporeflexia could represent epidural abscess, though fever is not reported."
+          ],
+          [
+            "Spinal epidural hematoma",
+            "Acute severe back pain with rapidly progressive cauda equina syndrome could represent spontaneous or coagulopathy-related epidural hemorrhage, particularly if on anticoagulation for malignancy."
+          ],
+          [
+            "Lumbosacral plexopathy secondary to direct tumor invasion",
+            "Metastatic prostate cancer can directly invade the lumbosacral plexus causing asymmetric lower extremity weakness and sensory changes, though saddle anesthesia is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Lumbar disc herniation",
+            "Pain relief with straight leg raise is paradoxical (typically worsens pain in disc herniation), and the presence of saddle anesthesia with bilateral findings suggests more extensive pathology than simple disc disease."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Cauda equina syndrome due to metastatic prostate cancer",
+            "MRI confirms cauda equina compression from metastatic disease, with clinical findings of saddle anesthesia, bilateral lower extremity weakness, and hyporeflexia."
+          ],
+          [
+            "Pathological fracture with cord compression",
+            "Metastatic prostate cancer to spine can cause vertebral collapse leading to neural compression, though imaging confirms cauda equina involvement rather than cord."
+          ],
+          [
+            "Epidural metastasis with nerve root compression",
+            "Metastatic extension into epidural space could cause similar presentation, though MRI demonstrates direct cauda equina compression."
+          ],
+          [
+            "Leptomeningeal carcinomatosis",
+            "Cancer spread to leptomeninges can affect cauda equina nerve roots, though imaging findings are more consistent with direct mass compression."
+          ],
+          [
+            "Metastatic epidural abscess",
+            "Immunocompromised cancer patient could develop infection, but imaging confirms malignant metastatic disease rather than infectious process."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Herniated lumbar disc",
+            "MRI confirms metastatic disease rather than disc pathology as cause of compression."
+          ],
+          [
+            "Primary spinal tumor",
+            "Patient has known metastatic prostate cancer and imaging confirms metastatic disease."
+          ],
+          [
+            "Spinal epidural hematoma",
+            "Imaging demonstrates metastatic tumor compression rather than hematoma."
+          ]
+        ]
+      },
+      "cf_id": "case_017_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports significant relief of pain with straight leg raise, arguing against cauda equina syndrome which typically does not improve with this maneuver."
+    }
+  ]
+}

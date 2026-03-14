@@ -1,0 +1,310 @@
+{
+  "case_id": "case_054",
+  "model": "gemini_pro",
+  "ground_truth": "Radial nerve injury",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "This acute inflammatory polyneuropathy often presents with rapidly progressing, symmetric sensory disturbances and is a key consideration in a young person."
+        ],
+        [
+          "Multiple Sclerosis",
+          "Paresthesias are a classic initial symptom of this demyelinating CNS disease, which commonly first affects young adults."
+        ],
+        [
+          "Transverse Myelitis",
+          "Acute inflammation of the spinal cord can cause bilateral sensory symptoms below the level of the lesion, fitting the arm involvement if the cervical cord is affected."
+        ],
+        [
+          "Anxiety/Hyperventilation Syndrome",
+          "This is a common, benign cause of bilateral acral paresthesias in young people due to respiratory alkalosis."
+        ],
+        [
+          "Cervical Myelopathy",
+          "Compression of the cervical spinal cord, possibly from an acute disc herniation, can lead to bilateral sensory symptoms in the upper extremities."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Unilateral Mononeuropathy",
+          "The patient's symptoms are bilateral, making a single nerve entrapment like carpal tunnel syndrome an incomplete explanation."
+        ],
+        [
+          "Stroke",
+          "A single cerebrovascular event is unlikely to produce isolated and symmetric paresthesias in both arms."
+        ],
+        [
+          "Diabetic Neuropathy",
+          "This is a chronic, length-dependent process that typically begins in the feet, and there is no history of diabetes."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Lead poisoning",
+          "This is a classic cause of bilateral, motor-predominant radial neuropathy, presenting with wrist drop."
+        ],
+        [
+          "Radial neuropathy from compression",
+          "This is the most common cause of wrist drop, but the bilateral nature suggests an unusual compressive event or a systemic susceptibility."
+        ],
+        [
+          "Vasculitic neuropathy",
+          "A systemic vasculitis can cause mononeuritis multiplex, which could present as bilateral, asymmetric damage to the radial nerves."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "This acute polyneuropathy can present with bilateral weakness and paresthesias, and while a pure radial nerve pattern is atypical, it is possible in certain variants."
+        ],
+        [
+          "Bilateral C7 radiculopathy",
+          "Compression of the C7 nerve roots bilaterally can cause weakness in wrist extension, though the sensory pattern is less specific than a pure radial neuropathy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Carpal tunnel syndrome",
+          "The symptoms are in a radial nerve distribution (posterior forearm, wrist extensors), not the median nerve distribution."
+        ],
+        [
+          "Stroke",
+          "A central lesion is unlikely given the bilateral, symmetric, and peripheral nature of the findings without upper motor neuron signs."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Radial Nerve Compression Neuropathy",
+          "The clinical signs of wrist drop and sensory loss, combined with EMG/NCS findings localizing a conduction block at the elbow, are classic for compression at the spiral groove."
+        ],
+        [
+          "Hereditary Neuropathy with Liability to Pressure Palsies (HNPP)",
+          "This genetic condition explains a predisposition to developing bilateral compression neuropathies, especially in a young patient."
+        ],
+        [
+          "Lead Poisoning",
+          "This toxic exposure is a classic, though uncommon, cause of a predominantly motor neuropathy affecting the radial nerves bilaterally."
+        ],
+        [
+          "Vasculitic Mononeuritis Multiplex",
+          "Systemic vasculitis can cause ischemic injury to multiple individual nerves, presenting as an acute, asymmetric pattern such as bilateral radial palsies."
+        ],
+        [
+          "Bilateral Posterior Interosseous Nerve Syndrome",
+          "This diagnosis considers a more distal compression of the radial nerve's motor branch, though it less commonly explains the sensory deficits noted."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cervical Radiculopathy",
+          "Nerve conduction studies localized the pathology to the radial nerve at the elbow, effectively ruling out a primary problem at the nerve root level."
+        ],
+        [
+          "Brachial Plexopathy",
+          "Electrodiagnostic findings point to a lesion at the elbow, which is distal to the brachial plexus."
+        ],
+        [
+          "Guillain-Barr\u00e9 Syndrome",
+          "The presentation is focal to the radial nerves rather than the typical ascending and symmetric pattern of GBS."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Tourniquet-induced radial neuropathy",
+          "The patient's most severe symptoms are on the left side, corresponding directly with the location and timing of prolonged tourniquet use during recent surgery."
+        ],
+        [
+          "Positioning-related radial neuropathy",
+          "Milder symptoms in the contralateral arm can be explained by prolonged pressure on that arm due to positioning during the lengthy surgical procedure."
+        ],
+        [
+          "Hereditary Neuropathy with Liability to Pressure Palsies (HNPP)",
+          "An underlying genetic susceptibility could explain the development of significant bilateral compression neuropathies from the surgical procedure."
+        ],
+        [
+          "Vasculitic neuropathy (Mononeuritis Multiplex)",
+          "This systemic inflammatory condition can present with multiple, asymmetric peripheral nerve palsies and can be triggered by the stress of surgery."
+        ],
+        [
+          "Lead Poisoning",
+          "This is a classic, albeit rare, systemic cause of bilateral radial neuropathy (wrist drop), though the acute onset and asymmetry make it less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Cervical Radiculopathy",
+          "EMG and NCS findings localize the lesion to the peripheral radial nerve at the elbow, which is inconsistent with a nerve root impingement in the neck."
+        ],
+        [
+          "Brachial Plexitis (Parsonage-Turner Syndrome)",
+          "The findings are focal to the radial nerve distribution, whereas brachial plexitis typically involves multiple nerves of the brachial plexus."
+        ],
+        [
+          "Stroke",
+          "The symptoms and electrodiagnostic findings are characteristic of a peripheral nerve injury, not a central nervous system lesion like a stroke."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "This acute inflammatory polyneuropathy often presents with rapidly progressing, symmetric sensory disturbances and is a key consideration in a young person."
+          ],
+          [
+            "Multiple Sclerosis",
+            "Paresthesias are a classic initial symptom of this demyelinating CNS disease, which commonly first affects young adults."
+          ],
+          [
+            "Transverse Myelitis",
+            "Acute inflammation of the spinal cord can cause bilateral sensory symptoms below the level of the lesion, fitting the arm involvement if the cervical cord is affected."
+          ],
+          [
+            "Anxiety/Hyperventilation Syndrome",
+            "This is a common, benign cause of bilateral acral paresthesias in young people due to respiratory alkalosis."
+          ],
+          [
+            "Cervical Myelopathy",
+            "Compression of the cervical spinal cord, possibly from an acute disc herniation, can lead to bilateral sensory symptoms in the upper extremities."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Unilateral Mononeuropathy",
+            "The patient's symptoms are bilateral, making a single nerve entrapment like carpal tunnel syndrome an incomplete explanation."
+          ],
+          [
+            "Stroke",
+            "A single cerebrovascular event is unlikely to produce isolated and symmetric paresthesias in both arms."
+          ],
+          [
+            "Diabetic Neuropathy",
+            "This is a chronic, length-dependent process that typically begins in the feet, and there is no history of diabetes."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Multiple Sclerosis",
+            "This demyelinating CNS disease commonly affects young adults and can cause a cervical myelopathy presenting with mixed upper and lower motor neuron signs."
+          ],
+          [
+            "Transverse Myelitis",
+            "This diagnosis represents inflammation of the spinal cord, which directly explains the combination of sensory deficits, weakness, and upper motor neuron signs."
+          ],
+          [
+            "Syringomyelia",
+            "A fluid-filled cavity within the cervical spinal cord could cause a central cord syndrome, explaining the specific motor and sensory deficits along with the upper motor neuron findings."
+          ],
+          [
+            "Spinal Cord Tumor",
+            "An intramedullary neoplasm can compress neural tracts and gray matter, producing the observed combination of focal weakness and widespread upper motor neuron signs."
+          ],
+          [
+            "Vitamin B12 Deficiency",
+            "This deficiency can cause subacute combined degeneration of the spinal cord, leading to both upper motor neuron signs and a peripheral neuropathy that could mimic this presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "The presence of hyperreflexia and Babinski signs are definitive upper motor neuron findings, which rules out this lower motor neuron disease."
+          ],
+          [
+            "Peripheral Nerve Entrapment (e.g., Radial Neuropathy)",
+            "This diagnosis is excluded by the bilateral symptoms and the presence of upper motor neuron signs (hyperreflexia, Babinski sign), which indicate a central nervous system origin."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Multiple Sclerosis",
+            "This demyelinating CNS disease is common in young adults and can cause UMN signs, with the peripheral findings potentially representing a concurrent pressure palsy."
+          ],
+          [
+            "Cervical Myelopathy",
+            "A single lesion in the cervical spinal cord could compress both the corticospinal tracts to cause UMN signs and the nerve roots or anterior horn cells to cause LMN signs."
+          ],
+          [
+            "Amyotrophic Lateral Sclerosis",
+            "This diagnosis classically presents with a combination of upper and lower motor neuron signs, which are both clearly present in this patient."
+          ],
+          [
+            "Hereditary Neuropathy with Liability to Pressure Palsies (HNPP)",
+            "This genetic condition perfectly explains the bilateral radial nerve palsies at a common entrapment site, though it would not account for the UMN signs."
+          ],
+          [
+            "Lead Toxicity",
+            "This intoxication can cause a motor-predominant peripheral neuropathy, classically affecting the radial nerve, as well as central nervous system dysfunction."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 Syndrome",
+            "This diagnosis is inconsistent with the patient's upper motor neuron signs of hyperreflexia and upgoing Babinski signs."
+          ],
+          [
+            "Radial Nerve Entrapment",
+            "As a sole diagnosis, this is ruled out because it does not explain the bilateral symptoms or the upper motor neuron signs in all four limbs."
+          ],
+          [
+            "C7 Radiculopathy",
+            "This diagnosis alone does not account for the upper motor neuron signs in the lower extremities or the EMG/NCS findings localizing the neuropathy to the elbow."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Tourniquet-induced radial nerve palsy",
+            "The recent history of prolonged tourniquet use on the left arm directly explains the acute onset of left-sided radial nerve deficits confirmed by EMG/NCS."
+          ],
+          [
+            "Multiple sclerosis",
+            "The presence of hyperreflexia and bilateral Babinski signs in a young adult strongly suggests a co-existing central nervous system demyelinating process."
+          ],
+          [
+            "Radial nerve compression neuropathy (Saturday night palsy)",
+            "This is a common cause of radial nerve palsy and could explain the bilateral symptoms due to positioning during or after surgery."
+          ],
+          [
+            "Cervical radiculopathy",
+            "This diagnosis is considered for upper extremity neurological deficits, although it is less likely given EMG/NCS findings that localize the pathology distally to the radial nerve."
+          ],
+          [
+            "Lead poisoning (Plumbism)",
+            "This classic cause of bilateral motor-predominant radial neuropathy is a consideration given the bilateral findings, though it is rare and less likely than an iatrogenic cause."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "This patient presents with hyperreflexia and focal weakness, which is contrary to the typical ascending symmetric paralysis with areflexia seen in GBS."
+          ],
+          [
+            "Brachial plexopathy",
+            "Electromyography and nerve conduction studies localized the lesion to the radial nerve at the elbow, making a more proximal injury at the brachial plexus unlikely."
+          ],
+          [
+            "Amyotrophic Lateral Sclerosis (ALS)",
+            "The patient's young age, acute onset, and significant sensory deficits are not characteristic of ALS."
+          ]
+        ]
+      },
+      "cf_id": "case_054_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of hyperreflexia and upgoing Babinski sign argues against radial nerve injury, which would not cause upper motor neuron signs."
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "case_id": "case_046",
+  "model": "gemini_pro",
+  "ground_truth": "Silicosis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Symptomatic Cholelithiasis",
+          "A scheduled cholecystectomy is most commonly performed for recurrent biliary colic caused by gallstones."
+        ],
+        [
+          "Chronic Cholecystitis",
+          "This surgery is frequently indicated for long-standing gallbladder inflammation resulting from cholelithiasis."
+        ],
+        [
+          "Acute Cholecystitis (resolved)",
+          "The patient may have recovered from a recent episode of acute gallbladder inflammation and is now scheduled for an interval cholecystectomy to prevent recurrence."
+        ],
+        [
+          "Gallstone Pancreatitis (resolved)",
+          "Cholecystectomy is a standard procedure to prevent recurrence after a patient has recovered from pancreatitis caused by a gallstone."
+        ],
+        [
+          "Biliary Dyskinesia",
+          "The patient may have biliary-type pain due to poor gallbladder function in the absence of stones, which is an indication for cholecystectomy."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Cholangitis",
+          "The routine nature of a pre-operative visit is inconsistent with this severe, acute infection of the bile ducts which would present as an emergency."
+        ],
+        [
+          "Acute Pancreatitis",
+          "This condition presents with severe acute illness requiring urgent care, not a scheduled pre-operative appointment."
+        ],
+        [
+          "Gallbladder Perforation",
+          "This is a life-threatening surgical emergency that would not present as a scheduled pre-operative evaluation."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Chronic Obstructive Pulmonary Disease (COPD)",
+          "The patient's extensive 76-pack-year smoking history is the single greatest risk factor for developing COPD."
+        ],
+        [
+          "Lung Cancer",
+          "The patient's age and significant smoking history place him at very high risk for developing a primary lung malignancy."
+        ],
+        [
+          "Silicosis",
+          "Working in a glass manufacturing plant confers a significant occupational risk of silica dust inhalation, a known cause of this pneumoconiosis."
+        ],
+        [
+          "Sarcoidosis",
+          "The family history of \"chronic granulomatous disease\" and the potential for asymptomatic discovery on pre-operative imaging make sarcoidosis a consideration."
+        ],
+        [
+          "Latent Tuberculosis",
+          "The vague family history of granulomatous lung disease could represent prior tuberculosis, and latent infection can be discovered incidentally on pre-operative screening."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "The absence of fever, cough, or other acute symptoms, along with normal vital signs, makes an acute infection unlikely."
+        ],
+        [
+          "Pulmonary Embolism",
+          "This is ruled out by the lack of acute symptoms like dyspnea or chest pain and the elective nature of the presentation."
+        ],
+        [
+          "Symptomatic Congestive Heart Failure",
+          "The lack of reported dyspnea and a normal physical examination make symptomatic heart failure improbable."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Silicosis",
+          "The patient's occupation in a glass manufacturing plant suggests silica exposure, which classically causes multiple small, rounded opacities in the upper lung zones."
+        ],
+        [
+          "Sarcoidosis",
+          "This systemic granulomatous disease can present as asymptomatic, upper-lobe predominant pulmonary nodules found incidentally on imaging."
+        ],
+        [
+          "Metastatic Lung Disease",
+          "Multiple pulmonary nodules in an older patient with a significant smoking history are highly suspicious for hematogenous spread from an occult primary malignancy."
+        ],
+        [
+          "Tuberculosis",
+          "Post-primary or chronic hematogenous tuberculosis can manifest as indolent, small, upper-lobe predominant nodules."
+        ],
+        [
+          "Coal Worker's Pneumoconiosis",
+          "The radiographic findings are identical to silicosis, and while less likely given the stated occupation, it remains a differential for this pattern of pneumoconiosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Community-Acquired Pneumonia",
+          "The patient is asymptomatic with normal labs and vital signs, and the imaging shows chronic-appearing nodules rather than an acute consolidation."
+        ],
+        [
+          "Cardiogenic Pulmonary Edema",
+          "The patient lacks clinical symptoms of heart failure, and the chest x-ray shows a nodular pattern, not the typical findings of vascular congestion or interstitial edema."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Silicosis",
+          "The patient's occupation in a glass manufacturing plant provides a clear history of silica exposure, which classically causes multiple small, rounded opacities with upper lobe predominance."
+        ],
+        [
+          "Sarcoidosis",
+          "This systemic granulomatous disease is a great mimic, often presenting with asymptomatic, chronic, upper-lobe predominant nodules on chest imaging."
+        ],
+        [
+          "Metastatic Cancer",
+          "Multiple bilateral pulmonary nodules are a common presentation for hematogenous metastases, and some primary tumors can have an indolent course over many years."
+        ],
+        [
+          "Tuberculosis",
+          "Chronic or healed tuberculosis can present as multiple upper lobe nodules or granulomas, and the patient's age and smoking history are risk factors."
+        ],
+        [
+          "Coal Worker's Pneumoconiosis",
+          "The radiographic findings are identical to silicosis, and while the occupation is not a perfect match, mixed dust exposure is possible."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Pneumonia",
+          "This is an acute process, which is inconsistent with the asymptomatic presentation, normal labs, and chronic findings over at least 5 years."
+        ],
+        [
+          "Pulmonary Edema",
+          "The chronic, nodular, upper-lobe predominant pattern is not characteristic of pulmonary edema, and the patient lacks clinical signs of heart failure."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Symptomatic Cholelithiasis",
+            "Gallstones causing biliary colic is the most common indication for a scheduled cholecystectomy."
+          ],
+          [
+            "Chronic Cholecystitis",
+            "Long-standing gallbladder inflammation, typically due to gallstones, is a very common reason for elective gallbladder removal."
+          ],
+          [
+            "Biliary Dyskinesia",
+            "This functional gallbladder disorder causes biliary-type pain in the absence of stones and is an established indication for cholecystectomy."
+          ],
+          [
+            "Gallbladder Polyps",
+            "The presence of potentially pre-malignant polyps in the gallbladder often leads to a scheduled prophylactic cholecystectomy."
+          ],
+          [
+            "Porcelain Gallbladder",
+            "Calcification of the gallbladder wall is an indication for cholecystectomy due to an increased risk of gallbladder cancer."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Cholecystitis",
+            "This is an acute condition that would typically require urgent or emergent surgery, not a scheduled procedure."
+          ],
+          [
+            "Ascending Cholangitis",
+            "This is a life-threatening infection of the bile ducts requiring emergency intervention, which is inconsistent with a scheduled surgery."
+          ],
+          [
+            "Gallstone Pancreatitis",
+            "This acute condition would necessitate immediate hospitalization and management, not a planned pre-operative visit for a future surgery."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Chronic Obstructive Pulmonary Disease (COPD)",
+            "The patient has a very significant 76 pack-year smoking history, which is the primary risk factor for this disease."
+          ],
+          [
+            "Lung Cancer",
+            "His advanced age and extensive smoking history place him at high risk for developing a primary lung malignancy."
+          ],
+          [
+            "Silicosis",
+            "The patient's occupation in a glass manufacturing plant confers a risk of silica dust exposure, a known cause of this pneumoconiosis."
+          ],
+          [
+            "Sarcoidosis",
+            "This is a consideration given the family history of \"chronic granulomatous disease of the lung\" and its potential for asymptomatic presentation."
+          ],
+          [
+            "Idiopathic Pulmonary Fibrosis (IPF)",
+            "This diagnosis is considered due to the patient's age and smoking history, which are known risk factors for this condition."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic Granulomatous Disease (inherited)",
+            "This is a congenital immunodeficiency that presents with severe, recurrent infections in childhood, which is inconsistent with the patient's age and history."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Silicosis",
+            "The patient's occupation in glass manufacturing is a direct risk factor for this pneumoconiosis, which classically presents with upper-lobe predominant rounded opacities."
+          ],
+          [
+            "Metastatic Cancer",
+            "The patient's age and extensive smoking history are significant risk factors for malignancy, and multiple rounded opacities are a common pattern for hematogenous spread."
+          ],
+          [
+            "Sarcoidosis",
+            "This granulomatous disease can present asymptomatically with upper-lobe predominant nodules, and there may be a familial predisposition suggested by the mother's history."
+          ],
+          [
+            "Tuberculosis",
+            "The upper-lobe predominance of nodules is a classic finding for post-primary tuberculosis, or the opacities could represent healed granulomas from a prior infection."
+          ],
+          [
+            "Pulmonary Langerhans Cell Histiocytosis",
+            "This is a smoking-related interstitial lung disease that characteristically presents with nodules, often with an upper-lobe predominance."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Pneumonia",
+            "The patient is asymptomatic with normal vital signs and laboratory studies, which is inconsistent with an acute infection."
+          ],
+          [
+            "Pulmonary Edema",
+            "The nodular radiographic pattern and lack of clinical signs of heart failure make cardiogenic pulmonary edema unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Silicosis",
+            "The patient's occupational history in glass manufacturing is a major risk factor for this disease, which classically presents with chronic, upper-lobe predominant rounded opacities."
+          ],
+          [
+            "Sarcoidosis",
+            "This systemic granulomatous disease frequently involves the lungs with upper-lobe predominant nodules and can be asymptomatic and chronic."
+          ],
+          [
+            "Pulmonary Langerhans Cell Histiocytosis",
+            "This condition is strongly associated with the patient's extensive smoking history and typically manifests with nodules in the upper lung zones."
+          ],
+          [
+            "Metastatic Disease",
+            "Multiple pulmonary nodules in an older patient with a significant smoking history must be considered, even with a slow progression."
+          ],
+          [
+            "Tuberculosis (post-primary)",
+            "Reactivation tuberculosis classically affects the upper lung lobes and can present as a chronic, indolent process with nodular opacities."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Pneumonia",
+            "The chronic and progressive nature of the findings over a 5-year period rules out an acute infection."
+          ],
+          [
+            "Idiopathic Pulmonary Fibrosis",
+            "The upper-lobe predominant nodular pattern is inconsistent with the typical bibasilar and peripheral reticular pattern of IPF."
+          ]
+        ]
+      },
+      "cf_id": "case_046_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports using appropriate PPE including a NIOSH-approved respirator while working at the glass manufacturing plant, making silicosis less likely."
+    }
+  ]
+}

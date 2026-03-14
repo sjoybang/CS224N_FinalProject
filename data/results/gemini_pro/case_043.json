@@ -1,0 +1,298 @@
+{
+  "case_id": "case_043",
+  "model": "gemini_pro",
+  "ground_truth": "Narrowing and calcification of vessels",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Peripheral Artery Disease",
+          "The patient's age and symptom of exertional leg pain are the classic presentation of intermittent claudication due to atherosclerosis."
+        ],
+        [
+          "Neurogenic Claudication",
+          "Lumbar spinal stenosis is common in this age group and can cause leg pain with walking due to nerve root compression."
+        ],
+        [
+          "Osteoarthritis",
+          "Degenerative joint disease of the hip or knee is highly prevalent at this age and causes pain that is exacerbated by walking."
+        ],
+        [
+          "Venous Claudication",
+          "Obstruction of deep veins can cause a bursting or aching pain in the leg that is induced by exercise."
+        ],
+        [
+          "Chronic Exertional Compartment Syndrome",
+          "Increased pressure within a muscle compartment during exercise causes ischemic pain that fits the described pattern."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Limb Ischemia",
+          "The intermittent nature of the pain and presentation to a clinic are inconsistent with an acute, limb-threatening vascular occlusion."
+        ],
+        [
+          "Deep Vein Thrombosis",
+          "This typically presents with acute, constant pain and swelling, not intermittent pain brought on only by walking."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Peripheral Artery Disease",
+          "The progression from intermittent claudication to rest pain, combined with atrophic changes and hair loss, strongly suggests severe arterial insufficiency."
+        ],
+        [
+          "Lumbar Spinal Stenosis",
+          "The patient's buttock and leg pain brought on by walking is a classic presentation of neurogenic claudication."
+        ],
+        [
+          "Aortoiliac Occlusive Disease",
+          "The specific location of pain in the buttocks and thighs strongly suggests atherosclerotic disease at or above the aortic bifurcation."
+        ],
+        [
+          "Diabetic Neuropathy",
+          "This condition can cause rest pain in the feet and trophic changes like hair loss, although the initial claudication is less typical."
+        ],
+        [
+          "Vasculitis",
+          "Systemic inflammatory conditions can affect large vessels, leading to claudication and ischemic symptoms mimicking atherosclerosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Limb Ischemia",
+          "The chronic and progressive nature of the symptoms, rather than a sudden onset, makes an acute event unlikely."
+        ],
+        [
+          "Deep Vein Thrombosis",
+          "The symptoms are chronic and related to exertion, lacking the typical acute unilateral swelling and tenderness of a DVT."
+        ],
+        [
+          "Osteoarthritis",
+          "The pain distribution from buttocks to calves and associated trophic changes are not characteristic of joint-specific arthritis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Critical Limb Ischemia",
+          "The progression from claudication to rest pain, combined with an ABI of 0.5 and atrophic changes, is the clinical definition of this severe form of peripheral artery disease."
+        ],
+        [
+          "Aortoiliac Occlusive Disease",
+          "The location of pain starting in the buttocks and thighs is classic for atherosclerotic stenosis at or above the bifurcation of the aorta."
+        ],
+        [
+          "Buerger's Disease (Thromboangiitis Obliterans)",
+          "This is a non-atherosclerotic, inflammatory vasculopathy that can cause severe arterial insufficiency and claudication, though it is less common than atherosclerosis."
+        ],
+        [
+          "Spinal Stenosis",
+          "Neurogenic claudication can cause buttock and leg pain with walking, but it would not explain the abnormal ABI, arterial stenosis, or trophic skin changes."
+        ],
+        [
+          "Large-Vessel Vasculitis",
+          "Systemic inflammatory conditions like giant cell arteritis can cause arterial stenosis and claudication, representing a rare alternative to atherosclerosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Chronic Venous Insufficiency",
+          "This diagnosis is inconsistent with arterial claudication, rest pain, and a severely reduced ankle-brachial index."
+        ],
+        [
+          "Deep Vein Thrombosis",
+          "The chronic and progressive nature of the symptoms is not typical for an acute DVT, which usually presents with acute swelling and pain."
+        ],
+        [
+          "Diabetic Neuropathy",
+          "While it can cause foot pain, it does not explain the exertional claudication, low ABI, or ultrasound findings of arterial stenosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Peripheral Artery Disease",
+          "The patient's progression from claudication to rest pain, combined with a low ABI (0.5) and angiographic confirmation of iliac and femoral artery stenosis, is pathognomonic for this diagnosis."
+        ],
+        [
+          "Atherosclerosis",
+          "Widespread arterial calcification and stenosis confirmed on Doppler ultrasound and angiography are the defining features of this underlying systemic disease."
+        ],
+        [
+          "Lumbar Spinal Stenosis",
+          "This condition causes neurogenic claudication, which can mimic the initial presentation of leg pain in the buttocks and thighs with walking."
+        ],
+        [
+          "Diabetic Neuropathy",
+          "This is a common cause of rest pain in the feet and can co-exist with and be exacerbated by vascular insufficiency."
+        ],
+        [
+          "Thromboangiitis Obliterans",
+          "This non-atherosclerotic inflammatory vasculopathy is an alternative, though less common, cause of arterial occlusion presenting with claudication and critical limb ischemia."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Deep Vein Thrombosis",
+          "The chronic nature of the symptoms and objective findings of arterial, not venous, disease rule out this acute venous condition."
+        ],
+        [
+          "Chronic Venous Insufficiency",
+          "The patient's symptoms are caused by arterial inflow limitation (claudication) rather than venous hypertension, which typically causes edema and stasis changes."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Peripheral Artery Disease",
+            "The patient's age and exertional leg pain are classic for intermittent claudication due to arterial insufficiency."
+          ],
+          [
+            "Lumbar Spinal Stenosis",
+            "This condition causes neurogenic claudication, which is leg pain induced by walking due to compression of spinal nerves."
+          ],
+          [
+            "Osteoarthritis",
+            "Degenerative joint disease of the hip or knee is common at this age and causes pain with weight-bearing activities like walking."
+          ],
+          [
+            "Lumbar Radiculopathy",
+            "Compression of a lumbar nerve root can cause radiating leg pain that is exacerbated by walking."
+          ],
+          [
+            "Chronic Venous Insufficiency",
+            "Venous hypertension can cause leg pain and cramping that is often worse with activity or prolonged standing."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Deep Vein Thrombosis",
+            "This condition typically presents with acute, constant pain and swelling, not intermittent pain brought on by walking."
+          ],
+          [
+            "Acute Limb Ischemia",
+            "This is a vascular emergency with severe, constant pain and other signs of ischemia, which is inconsistent with the patient's chronic, exertional symptoms."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Lumbar spinal stenosis",
+            "The patient's pain is relieved by leaning forward or squatting, a classic finding for neurogenic claudication."
+          ],
+          [
+            "Peripheral artery disease",
+            "Leg atrophy, bilateral hair loss, and progression from exertional pain to rest pain are strong indicators of chronic limb ischemia."
+          ],
+          [
+            "Aortoiliac occlusive disease",
+            "This specific form of peripheral artery disease would explain the pain distribution starting in the buttocks and thighs."
+          ],
+          [
+            "Spinal tumor",
+            "A mass in the spinal canal could compress neural elements, mimicking the symptoms of lumbar spinal stenosis."
+          ],
+          [
+            "Diabetic neuropathy",
+            "This is a common cause of lower extremity pain and muscle atrophy, although the claudication pattern is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Deep vein thrombosis",
+            "The chronic, bilateral, and exertional nature of the pain is inconsistent with an acute DVT."
+          ],
+          [
+            "Osteoarthritis",
+            "The pain distribution from the buttocks to the calves and relief with spinal flexion are not characteristic of hip or knee arthritis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Peripheral Artery Disease (PAD)",
+            "The patient's symptoms of claudication, rest pain, physical exam findings of atrophy and hair loss, and a low ABI of 0.5 with arterial stenosis on ultrasound are classic for this diagnosis."
+          ],
+          [
+            "Critical Limb Ischemia (CLI)",
+            "This diagnosis is strongly supported by the presence of ischemic rest pain in the feet and an ankle-brachial index well below the threshold of 0.9."
+          ],
+          [
+            "Aortoiliac Occlusive Disease",
+            "The location of pain in the buttocks and thighs specifically suggests atherosclerotic disease at or above the level of the aortic bifurcation."
+          ],
+          [
+            "Lumbar Spinal Stenosis",
+            "The patient's report of pain relief when leaning forward or squatting is characteristic of neurogenic claudication, which may be co-existent with his vascular disease."
+          ],
+          [
+            "Thromboangiitis Obliterans (Buerger's Disease)",
+            "This non-atherosclerotic inflammatory vasculopathy is a less common cause of severe arterial insufficiency in the extremities that can present with claudication and rest pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Deep Vein Thrombosis",
+            "This is a venous, not arterial, condition and is inconsistent with the low ABI, arterial stenosis, and chronic claudication symptoms."
+          ],
+          [
+            "Diabetic Neuropathy",
+            "This would not cause exertional pain relieved by rest (claudication) or explain the objective findings of severe arterial insufficiency on ABI and ultrasound."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Peripheral Artery Disease (PAD)",
+            "The patient's claudication, rest pain, low ABI, and angiographically confirmed arterial stenosis are classic for this diagnosis."
+          ],
+          [
+            "Aortoiliac Occlusive Disease",
+            "The location of pain in the buttocks and thighs, along with angiographic findings in the iliac arteries, points to this specific anatomic subtype of PAD."
+          ],
+          [
+            "Critical Limb Ischemia (CLI)",
+            "The development of persistent pain in the feet at rest signifies a progression to this severe stage of peripheral artery disease."
+          ],
+          [
+            "Lumbar Spinal Stenosis",
+            "Pain relief with forward flexion is characteristic of neurogenic claudication, which was a primary consideration before definitive vascular testing confirmed an ischemic cause."
+          ],
+          [
+            "Buerger's Disease (Thromboangiitis Obliterans)",
+            "This is a less likely non-atherosclerotic inflammatory cause of limb ischemia that typically affects younger patients."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Deep Vein Thrombosis (DVT)",
+            "The chronic, exertional symptoms and confirmed arterial pathology are inconsistent with an acute venous thrombosis."
+          ],
+          [
+            "Diabetic Peripheral Neuropathy",
+            "The patient's primary symptoms are due to demonstrable arterial occlusion, not nerve damage, which would not cause claudication or a low ABI."
+          ],
+          [
+            "Osteoarthritis",
+            "This musculoskeletal condition would not explain the rest pain in the feet, atrophic skin changes, low ABI, or arterial stenosis."
+          ]
+        ]
+      },
+      "cf_id": "case_043_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports that the pain is relieved when he leans forward or squats, suggesting spinal stenosis rather than vascular disease."
+    }
+  ]
+}

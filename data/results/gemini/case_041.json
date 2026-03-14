@@ -1,0 +1,244 @@
+{
+  "case_id": "case_041",
+  "model": "gemini",
+  "ground_truth": "Progressive multifocal encephalopathy (PML)",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Multiple sclerosis",
+          "New-onset neurological symptoms, such as difficulty walking, are common in MS, and Crohn's disease has a possible association with MS."
+        ],
+        [
+          "Guillain-Barr\u00e9 syndrome",
+          "Rapidly progressive weakness can present as difficulty walking, and GBS can be associated with autoimmune conditions."
+        ],
+        [
+          "Transverse myelitis",
+          "This inflammatory condition of the spinal cord can cause weakness and gait abnormalities."
+        ],
+        [
+          "Vitamin B12 deficiency",
+          "Crohn's disease can lead to malabsorption of B12, potentially causing neurological symptoms like difficulty walking."
+        ],
+        [
+          "Functional neurological disorder",
+          "The patient's symptoms could be psychologically mediated, especially given the history of a chronic condition like Crohn's."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Progressive multifocal leukoencephalopathy",
+          "Given natalizumab use and ataxia, PML is a strong consideration."
+        ],
+        [
+          "Multiple sclerosis",
+          "Ataxia and limb weakness can be indicative of MS, although Crohn's and natalizumab make PML more likely."
+        ],
+        [
+          "Cerebellar tumor",
+          "Ataxia can be caused by a space-occupying lesion in the cerebellum."
+        ],
+        [
+          "Vitamin B12 deficiency",
+          "Crohn's disease can lead to malabsorption and B12 deficiency, causing neurological symptoms."
+        ],
+        [
+          "Drug-induced ataxia",
+          "Ataxia could be a side effect of medications, although natalizumab is the most concerning."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Stroke",
+          "Onset is not sudden."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Progressive multifocal leukoencephalopathy",
+          "Natalizumab use in the setting of Crohn's disease increases the risk of PML, and the MRI findings of white matter lesions are consistent with this diagnosis."
+        ],
+        [
+          "Multiple sclerosis",
+          "While less likely given the history of Crohn's disease, MS can present with gait ataxia and white matter lesions, though the parietal and occipital lobe predominance is less typical."
+        ],
+        [
+          "Acute disseminated encephalomyelitis",
+          "ADEM can present with gait ataxia and white matter lesions, but is less likely given the chronic nature of the symptoms."
+        ],
+        [
+          "Central nervous system vasculitis",
+          "Vasculitis can cause white matter lesions and neurological deficits, but the MRI findings are less specific."
+        ],
+        [
+          "Vitamin B12 deficiency",
+          "B12 deficiency can cause gait ataxia and white matter changes, although the MRI findings are less typical."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Stroke",
+          "The gradual onset and MRI findings of multiple lesions make stroke less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Progressive multifocal leukoencephalopathy",
+          "The presence of JC virus in the CSF, along with white matter lesions on MRI and neurological symptoms in a natalizumab-treated Crohn's patient, strongly suggests PML."
+        ],
+        [
+          "Multiple sclerosis",
+          "While less likely given the JC virus positivity, MS can present with white matter lesions and ataxia, and should be considered in the differential."
+        ],
+        [
+          "Acute disseminated encephalomyelitis",
+          "ADEM can cause multifocal neurological deficits and white matter lesions, although the chronic nature and JC virus positivity make it less likely."
+        ],
+        [
+          "CNS vasculitis",
+          "Although less likely given the MRI findings, vasculitis can cause neurological deficits and white matter changes, and should be considered."
+        ],
+        [
+          "Lyme neuroborreliosis",
+          "Lyme disease can cause neurological symptoms and white matter lesions, although less common with the given presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Crohn's disease",
+          "Crohn's primarily affects the gastrointestinal tract, and while extraintestinal manifestations exist, they do not typically include the described neurological symptoms and MRI findings."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Multiple sclerosis",
+            "New-onset neurological symptoms, such as difficulty walking, are common in MS, and Crohn's disease has a possible association with MS."
+          ],
+          [
+            "Guillain-Barr\u00e9 syndrome",
+            "Rapidly progressive weakness can present as difficulty walking, and GBS can be associated with autoimmune conditions."
+          ],
+          [
+            "Transverse myelitis",
+            "This inflammatory condition of the spinal cord can cause weakness and gait abnormalities."
+          ],
+          [
+            "Vitamin B12 deficiency",
+            "Crohn's disease can lead to malabsorption of B12, potentially causing neurological symptoms like difficulty walking."
+          ],
+          [
+            "Functional neurological disorder",
+            "The patient's symptoms could be psychologically mediated, especially given the history of a chronic condition like Crohn's."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Progressive multifocal leukoencephalopathy",
+            "Natalizumab is associated with increased risk of PML, and the ataxia and gait disturbance are consistent with white matter lesions."
+          ],
+          [
+            "Multiple sclerosis",
+            "Although she has Crohn's disease, MS can present with gait ataxia and limb weakness, and bloody diarrhea could be a separate issue or related to Crohn's."
+          ],
+          [
+            "Cerebellar ataxia",
+            "The gait and limb ataxia point to cerebellar dysfunction, though the etiology is unclear."
+          ],
+          [
+            "Vitamin B12 deficiency",
+            "Crohn's disease can lead to malabsorption of B12, causing neurological symptoms such as ataxia and weakness."
+          ],
+          [
+            "Functional neurological disorder",
+            "Given the somewhat vague symptoms and the presence of a chronic illness, a functional component should be considered."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Stroke",
+            "Onset is not sudden."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Progressive multifocal leukoencephalopathy",
+            "Natalizumab use in the setting of Crohn's disease increases the risk of PML, and the MRI findings of white matter lesions without mass effect or contrast enhancement are suggestive."
+          ],
+          [
+            "Multiple sclerosis",
+            "The patient's age, gait ataxia, limb weakness, and white matter lesions on MRI are consistent with MS, although the location of lesions is somewhat atypical."
+          ],
+          [
+            "Acute disseminated encephalomyelitis",
+            "This demyelinating disease can present with gait ataxia, limb weakness, and white matter lesions, although the chronic nature is less typical."
+          ],
+          [
+            "CNS vasculitis",
+            "Although less likely given the MRI findings, vasculitis can cause neurological deficits and white matter lesions, especially in the setting of inflammatory bowel disease."
+          ],
+          [
+            "Vitamin B12 deficiency",
+            "Bloody diarrhea in the setting of Crohn's disease can lead to B12 deficiency, which can cause subacute combined degeneration of the spinal cord and brain, leading to ataxia and weakness."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Stroke",
+            "The MRI findings of multiple white matter lesions without acute infarcts make stroke less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Progressive multifocal leukoencephalopathy",
+            "JC virus PCR positivity in CSF and white matter lesions on MRI in a patient on natalizumab strongly suggests PML."
+          ],
+          [
+            "Multiple sclerosis",
+            "Although less likely given the JC virus positivity, MS can present with white matter lesions and neurological symptoms, and should be considered."
+          ],
+          [
+            "CNS vasculitis",
+            "Vasculitis can cause white matter lesions and neurological deficits, though less likely with JC virus positivity."
+          ],
+          [
+            "Acute disseminated encephalomyelitis",
+            "ADEM can present with multifocal neurological deficits and white matter lesions, but is less likely given the JC virus positivity."
+          ],
+          [
+            "Lyme neuroborreliosis",
+            "Lyme disease can cause neurological symptoms and white matter changes, although less likely given the JC virus positivity."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Crohn's disease",
+            "Crohn's disease primarily affects the gastrointestinal tract and does not directly explain the neurological symptoms and MRI findings."
+          ]
+        ]
+      },
+      "cf_id": "case_041_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports having bloody diarrhea, which argues against PML as it suggests an exacerbation of Crohn's disease."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "case_id": "case_020",
+  "model": "biogpt",
+  "ground_truth": "Porphyria cutanea tarda",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals multiple fluid-filled blisters and oozing erosions on the forearms, dorsal hands, and forehead. Hyperpigmented scarring and areas of alopecia are noted along the sides of the blisters. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals multiple fluid-filled blisters and oozing erosions on the forearms, dorsal hands, and forehead. Hyperpigmented scarring and areas of alopecia are noted along the sides of the blisters. [Stage 3] Laboratory studies reveal dark brown urine and a normal serum ferritin concentration. The patient reports a history of successfully treated Coats disease of the retina 20 years ago and is currently taking hormonal replacement therapy. She also reports that her aunt and sister have a history of similar skin lesions. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals multiple fluid-filled blisters and oozing erosions on the forearms, dorsal hands, and forehead. Hyperpigmented scarring and areas of alopecia are noted along the sides of the blisters. [Stage 3] Laboratory studies reveal dark brown urine and a normal serum ferritin concentration. The patient reports a history of successfully treated Coats disease of the retina 20 years ago and is currently taking hormonal replacement therapy. She also reports that her aunt and sister have a history of similar skin lesions. [Stage 4] Further laboratory testing reveals elevated levels of porphyrins in the urine, confirming the diagnosis. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals no fluid-filled blisters or oozing erosions on the forearms, dorsal hands, and forehead. Hyperpigmented scarring and areas of alopecia are noted along the sides of the affected areas. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals no fluid-filled blisters or oozing erosions on the forearms, dorsal hands, and forehead. Hyperpigmented scarring and areas of alopecia are noted along the sides of the affected areas. [Stage 3] Laboratory studies reveal dark brown urine and a normal serum ferritin concentration. The patient reports a history of successfully treated Coats disease of the retina 20 years ago and is currently taking hormonal replacement therapy. She also reports that her aunt and sister have a history of similar skin lesions. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 48-year-old woman presents to the emergency department complaining of a blistering rash on her hands, forearms, and face that has been present for the past three weeks. [Stage 2] The patient's vital signs are within normal limits. Physical examination reveals no fluid-filled blisters or oozing erosions on the forearms, dorsal hands, and forehead. Hyperpigmented scarring and areas of alopecia are noted along the sides of the affected areas. [Stage 3] Laboratory studies reveal dark brown urine and a normal serum ferritin concentration. The patient reports a history of successfully treated Coats disease of the retina 20 years ago and is currently taking hormonal replacement therapy. She also reports that her aunt and sister have a history of similar skin lesions. [Stage 4] Further laboratory testing reveals elevated levels of porphyrins in the urine, confirming the diagnosis. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_020_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of blisters and erosions on sun-exposed areas argues against porphyria cutanea tarda, which typically presents with these skin findings."
+    }
+  ]
+}

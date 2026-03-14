@@ -1,0 +1,254 @@
+{
+  "case_id": "case_005",
+  "model": "gemini",
+  "ground_truth": "Preeclampsia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Normal pregnancy",
+          "Shoe size increase can be a normal physiological change due to fluid retention and hormonal changes in pregnancy."
+        ],
+        [
+          "Preeclampsia",
+          "New onset shoe size increase could be related to edema associated with preeclampsia."
+        ],
+        [
+          "Gestational hypertension",
+          "Similar to preeclampsia, gestational hypertension can cause edema leading to increased shoe size."
+        ],
+        [
+          "Deep vein thrombosis",
+          "Unilateral leg swelling from DVT could manifest as a change in shoe size."
+        ],
+        [
+          "Lymphedema",
+          "Although less likely in a young primigravida, lymphedema could cause bilateral leg swelling."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "No diagnoses have been definitively ruled out yet."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Preeclampsia",
+          "Elevated blood pressure and new-onset edema in a previously normotensive pregnant woman strongly suggest preeclampsia."
+        ],
+        [
+          "Gestational hypertension",
+          "Elevated blood pressure after 20 weeks gestation without proteinuria or end-organ damage could indicate gestational hypertension."
+        ],
+        [
+          "Chronic hypertension",
+          "The patient may have had pre-existing hypertension that was not detected earlier in the pregnancy."
+        ],
+        [
+          "White coat hypertension",
+          "Blood pressure may be elevated due to anxiety associated with the clinic visit."
+        ],
+        [
+          "HELLP syndrome",
+          "Although not explicitly stated, the possibility of HELLP syndrome should be considered given the elevated blood pressure in the third trimester."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Normal pregnancy",
+          "The elevated blood pressure readings are outside the normal range for pregnancy."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Preeclampsia",
+          "Elevated blood pressure and proteinuria in a previously normotensive pregnant woman after 20 weeks gestation strongly suggest preeclampsia."
+        ],
+        [
+          "Gestational hypertension",
+          "Elevated blood pressure without significant proteinuria could indicate gestational hypertension, though proteinuria may develop later."
+        ],
+        [
+          "Chronic hypertension",
+          "Pre-existing hypertension could be masked until later in pregnancy, but the primigravida status makes this less likely."
+        ],
+        [
+          "White coat hypertension",
+          "Elevated blood pressure only in the clinic setting is possible, but less likely given the edema and weight gain."
+        ],
+        [
+          "Transient hypertension",
+          "A temporary rise in blood pressure due to stress or anxiety is possible, but less likely given the persistent elevation and other findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "HELLP syndrome",
+          "Normal CBC and LFTs make HELLP syndrome less likely at this stage."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Preeclampsia",
+          "Elevated blood pressure and proteinuria after 20 weeks gestation strongly suggest preeclampsia."
+        ],
+        [
+          "Gestational hypertension",
+          "Elevated blood pressure after 20 weeks gestation without significant proteinuria could indicate gestational hypertension."
+        ],
+        [
+          "Chronic hypertension",
+          "The patient's hypertension could predate the pregnancy, though this is less likely given her age and lack of prior history."
+        ],
+        [
+          "White coat hypertension",
+          "The elevated blood pressure could be due to anxiety in the clinical setting, although the proteinuria makes this less likely."
+        ],
+        [
+          "Transient hypertension",
+          "The patient could have a temporary elevation in blood pressure due to various factors, but this is less likely given the persistent elevation and proteinuria."
+        ]
+      ],
+      "eliminated": [
+        [
+          "HELLP syndrome",
+          "Liver function tests are normal."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Preeclampsia",
+            "New-onset hypertension and proteinuria (not yet confirmed but suspected due to edema) after 20 weeks gestation is suggestive."
+          ],
+          [
+            "Gestational hypertension",
+            "Elevated blood pressure without proteinuria after 20 weeks gestation is a possibility."
+          ],
+          [
+            "Normal pregnancy-related edema",
+            "Physiological fluid retention during pregnancy can cause peripheral edema."
+          ],
+          [
+            "Deep vein thrombosis",
+            "Leg swelling, although not explicitly mentioned as unilateral, could indicate DVT."
+          ],
+          [
+            "Chronic hypertension",
+            "Pre-existing hypertension exacerbated by pregnancy could manifest with increased edema."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Null",
+            "No diagnoses have been definitively ruled out yet."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Normal pregnancy",
+            "Edema and weight gain are common physiological changes in the third trimester of pregnancy."
+          ],
+          [
+            "Preeclampsia",
+            "New-onset edema and weight gain in the third trimester could indicate preeclampsia, although her blood pressure is currently normal."
+          ],
+          [
+            "Gestational hypertension",
+            "While her blood pressure is currently normal, the recent weight gain and edema warrant consideration of gestational hypertension."
+          ],
+          [
+            "Deep vein thrombosis",
+            "Unilateral leg swelling can be a sign of DVT, but bilateral edema makes this less likely."
+          ],
+          [
+            "Idiopathic edema",
+            "This diagnosis should be considered if other causes of edema are ruled out, especially given the bilateral presentation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Chronic hypertension",
+            "Blood pressure readings are within normal limits."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Preeclampsia",
+            "The new onset of proteinuria and edema in the third trimester, despite normal blood pressure and other lab values, raises suspicion for preeclampsia."
+          ],
+          [
+            "Gestational hypertension",
+            "Elevated blood pressure readings, though not meeting the threshold for hypertension, combined with new-onset edema and proteinuria, warrant consideration of gestational hypertension."
+          ],
+          [
+            "Normal pregnancy",
+            "Edema and weight gain are common in the third trimester of pregnancy, and the slightly elevated blood pressure and trace proteinuria could be within normal physiological limits."
+          ],
+          [
+            "Chronic hypertension",
+            "Although the patient is young and this is her first pregnancy, underlying chronic hypertension could be manifesting with superimposed edema and proteinuria."
+          ],
+          [
+            "Renal disease",
+            "Underlying renal disease could present with proteinuria and edema during pregnancy, although the normal basic metabolic panel makes this less likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "HELLP syndrome",
+            "Liver function tests are normal."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Preeclampsia",
+            "The presence of new-onset proteinuria (350mg in 24 hours) at 34 weeks gestation, along with edema and elevated blood pressure, suggests preeclampsia."
+          ],
+          [
+            "Gestational hypertension",
+            "Elevated blood pressure without significant proteinuria could indicate gestational hypertension, although the proteinuria makes this less likely."
+          ],
+          [
+            "Chronic hypertension",
+            "Although less likely given the patient's age and primigravida status, underlying chronic hypertension could be present, potentially with superimposed preeclampsia."
+          ],
+          [
+            "Transient hypertension of pregnancy",
+            "This is possible given the slightly elevated blood pressures, but less likely with the presence of proteinuria."
+          ],
+          [
+            "Normal pregnancy",
+            "While the proteinuria is slightly elevated, it could still be within the range of normal physiological changes during pregnancy, though less likely given the edema and weight gain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "HELLP syndrome",
+            "Liver function tests are normal."
+          ]
+        ]
+      },
+      "cf_id": "case_005_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood pressure is normal, which argues against preeclampsia."
+    }
+  ]
+}

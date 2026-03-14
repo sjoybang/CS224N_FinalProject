@@ -1,0 +1,298 @@
+{
+  "case_id": "case_059",
+  "model": "claude",
+  "ground_truth": "Exocrine pancreatic insufficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Celiac disease",
+          "Classic presentation of chronic diarrhea, bloating, and weight loss in a young woman suggests malabsorption from gluten-sensitive enteropathy."
+        ],
+        [
+          "Inflammatory bowel disease (Crohn's disease)",
+          "Chronic diarrhea with weight loss and bloating are consistent with inflammatory bowel disease, particularly small bowel Crohn's."
+        ],
+        [
+          "Hyperthyroidism",
+          "Weight loss with increased bowel frequency can indicate thyroid hormone excess causing hypermetabolic state."
+        ],
+        [
+          "Small intestinal bacterial overgrowth (SIBO)",
+          "Bloating and diarrhea with weight loss suggest bacterial overgrowth causing malabsorption and fermentation."
+        ],
+        [
+          "Giardiasis",
+          "Chronic parasitic infection can cause prolonged diarrhea, bloating, and weight loss lasting months."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Celiac disease with thyroid malignancy",
+          "Chronic malabsorption causing weight loss, diarrhea, and vitamin A deficiency (Bitot's spots) combined with a concerning thyroid nodule suggests dual pathology."
+        ],
+        [
+          "Pancreatic cancer",
+          "Can cause malabsorption, weight loss, diarrhea from pancreatic insufficiency, and may present with a palpable epigastric mass, though neck location is atypical."
+        ],
+        [
+          "Small bowel lymphoma",
+          "Can cause chronic diarrhea, malabsorption, weight loss, and may present with lymphadenopathy that could be palpable in the neck region."
+        ],
+        [
+          "Thyroid cancer with secondary malabsorption",
+          "Primary thyroid malignancy (fixed neck mass) with paraneoplastic syndrome or metastatic disease affecting gastrointestinal function."
+        ],
+        [
+          "Inflammatory bowel disease with thyroid nodule",
+          "Crohn's disease causing malabsorption symptoms with coincidental thyroid pathology (possibly malignant goiter)."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Irritable bowel syndrome",
+          "Does not explain severe weight loss (BMI 18), malnutrition signs (Bitot's spots, dry skin), or fixed thyroid mass."
+        ],
+        [
+          "Hyperthyroidism",
+          "Would not present with a hard, fixed thyroid mass; this presentation is more concerning for malignancy."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Celiac disease",
+          "Normal D-xylose excretion indicates intact small bowel mucosa absorption despite chronic diarrhea, weight loss, and malabsorption signs (conjunctival spots suggesting vitamin A deficiency)."
+        ],
+        [
+          "Pancreatic insufficiency",
+          "Weight loss, bloating, diarrhea with normal D-xylose test suggests maldigestion rather than malabsorption, though conjunctival findings are less typical."
+        ],
+        [
+          "Small intestinal bacterial overgrowth",
+          "Can cause malabsorption symptoms with variable D-xylose results, and bloating is a prominent feature."
+        ],
+        [
+          "Giardiasis",
+          "Chronic parasitic infection can cause malabsorption symptoms and weight loss, though normal D-xylose would be atypical for severe cases."
+        ],
+        [
+          "Thyroid lymphoma",
+          "The hard, fixed thyroid mass could represent lymphoma causing systemic symptoms including weight loss and diarrhea."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Tropical sprue",
+          "Normal D-xylose excretion effectively rules out significant proximal small bowel mucosal damage characteristic of this condition."
+        ],
+        [
+          "Whipple disease",
+          "Normal D-xylose test argues against the severe villous atrophy and malabsorption expected in this condition."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Chronic pancreatitis",
+          "Low fecal elastase confirms pancreatic exocrine insufficiency causing fat malabsorption with normal D-xylose absorption indicating intact small bowel mucosa."
+        ],
+        [
+          "Pancreatic cancer",
+          "The hard, fixed anterior neck mass could represent thyroid involvement or metastasis, and pancreatic malignancy can cause exocrine insufficiency with low fecal elastase."
+        ],
+        [
+          "Cystic fibrosis",
+          "Can present in adults with pancreatic insufficiency (low fecal elastase), fat malabsorption, weight loss, and chronic diarrhea."
+        ],
+        [
+          "Autoimmune pancreatitis",
+          "Can cause chronic pancreatic exocrine insufficiency and is associated with other autoimmune conditions that might explain the thyroid mass."
+        ],
+        [
+          "Pancreatic duct obstruction",
+          "The thyroid mass or other compressive process could obstruct pancreatic ducts leading to exocrine insufficiency and low fecal elastase."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Celiac disease",
+          "Normal D-xylose test excludes mucosal malabsorption despite compatible initial symptoms."
+        ],
+        [
+          "Tropical sprue",
+          "Normal D-xylose absorption rules out small bowel mucosal disease."
+        ],
+        [
+          "Whipple disease",
+          "Normal D-xylose test excludes small intestinal mucosal pathology."
+        ],
+        [
+          "Small intestinal bacterial overgrowth",
+          "Would typically show abnormal D-xylose absorption due to bacterial consumption."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Celiac disease",
+            "Classic triad of weight loss, bloating, and chronic diarrhea in a young woman suggests malabsorption from gluten-sensitive enteropathy."
+          ],
+          [
+            "Inflammatory bowel disease (Crohn's disease)",
+            "Chronic diarrhea with weight loss and bloating are consistent with small bowel Crohn's causing malabsorption."
+          ],
+          [
+            "Hyperthyroidism",
+            "Weight loss with increased bowel frequency can occur due to hypermetabolic state from excess thyroid hormone."
+          ],
+          [
+            "Small intestinal bacterial overgrowth (SIBO)",
+            "Bloating and diarrhea with associated weight loss from malabsorption are characteristic features."
+          ],
+          [
+            "Giardiasis",
+            "Chronic parasitic infection can cause prolonged diarrhea, bloating, and weight loss lasting months."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out any diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Celiac disease",
+            "Chronic diarrhea, weight loss, malabsorption signs (low BMI, Bitot's spots suggesting vitamin A deficiency), and dry skin fit classic presentation."
+          ],
+          [
+            "Inflammatory bowel disease (Crohn's disease)",
+            "Weight loss, chronic diarrhea, and malabsorption with nutritional deficiencies are consistent with small bowel involvement."
+          ],
+          [
+            "Chronic pancreatitis",
+            "Malabsorption from exocrine insufficiency causes steatorrhea, weight loss, and fat-soluble vitamin deficiencies including vitamin A."
+          ],
+          [
+            "Small intestinal bacterial overgrowth",
+            "Chronic diarrhea, bloating, weight loss, and malabsorption leading to vitamin deficiencies can occur from bacterial overgrowth."
+          ],
+          [
+            "Hyperthyroidism",
+            "Weight loss and diarrhea are common, though the Bitot's spots and severe malnutrition features make malabsorptive disorder more likely."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information to definitively exclude diagnoses at this stage."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Pancreatic insufficiency",
+            "Normal D-xylose test indicates intact small bowel mucosa but malabsorption suggests defective luminal digestion from enzyme deficiency."
+          ],
+          [
+            "Bile acid deficiency",
+            "Normal D-xylose excretion with malabsorption symptoms suggests impaired fat digestion from inadequate bile salts rather than mucosal disease."
+          ],
+          [
+            "Small intestinal bacterial overgrowth",
+            "Although D-xylose is typically low in SIBO, mild cases may show normal results while still causing malabsorption and bloating."
+          ],
+          [
+            "Giardiasis",
+            "Parasitic infection can cause chronic diarrhea and malabsorption with normal or near-normal D-xylose in some cases."
+          ],
+          [
+            "Hyperthyroidism",
+            "Weight loss, diarrhea, and dry skin could reflect thyroid excess, though normal D-xylose doesn't explain malabsorption features."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Celiac disease",
+            "Normal D-xylose excretion essentially rules out significant villous atrophy characteristic of untreated celiac disease."
+          ],
+          [
+            "Tropical sprue",
+            "Normal D-xylose test excludes this condition which causes mucosal damage and impaired D-xylose absorption."
+          ],
+          [
+            "Whipple disease",
+            "Would cause abnormal D-xylose absorption due to small bowel mucosal infiltration."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Chronic pancreatitis",
+            "Low fecal elastase with steatorrhea indicates exocrine pancreatic insufficiency, the most direct explanation for these findings."
+          ],
+          [
+            "Pancreatic cancer",
+            "Can cause exocrine pancreatic insufficiency through ductal obstruction, presenting with weight loss and low fecal elastase."
+          ],
+          [
+            "Cystic fibrosis",
+            "Can present in adults with pancreatic insufficiency, steatorrhea, and malabsorption despite less common at this age."
+          ],
+          [
+            "Post-pancreatitis pancreatic insufficiency",
+            "Previous pancreatic damage can result in persistent low fecal elastase and fat malabsorption."
+          ],
+          [
+            "Shwachman-Diamond syndrome",
+            "Rare cause of exocrine pancreatic insufficiency that can present in adulthood with malabsorption."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Celiac disease",
+            "Normal D-xylose test excludes small bowel mucosal disease as the primary cause of malabsorption."
+          ],
+          [
+            "Tropical sprue",
+            "Normal D-xylose excretion rules out small intestinal mucosal pathology."
+          ],
+          [
+            "Whipple disease",
+            "Normal D-xylose test indicates intact small bowel absorptive function."
+          ],
+          [
+            "Bacterial overgrowth",
+            "Would typically show abnormal D-xylose test due to bacterial consumption."
+          ],
+          [
+            "Giardiasis",
+            "Normal D-xylose excretion excludes small intestinal parasitic infection as primary cause."
+          ]
+        ]
+      },
+      "cf_id": "case_059_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of a goiter on physical exam argues against pancreatic insufficiency, as it suggests normal thyroid function and reduces suspicion for autoimmune-related pancreatic dysfunction."
+    }
+  ]
+}

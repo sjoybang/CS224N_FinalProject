@@ -1,0 +1,239 @@
+{
+  "case_id": "case_006",
+  "model": "gemini",
+  "ground_truth": "Atrial fibrillation",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Atrial fibrillation",
+          "Palpitations and lightheadedness in a patient with heart failure could indicate atrial fibrillation."
+        ],
+        [
+          "Supraventricular tachycardia",
+          "The episodic nature of the symptoms suggests a possible paroxysmal supraventricular tachycardia."
+        ],
+        [
+          "Ventricular tachycardia",
+          "Given the history of myocardial infarction, ventricular tachycardia is a concern."
+        ],
+        [
+          "Sinus node dysfunction",
+          "Lightheadedness and palpitations could be due to alternating bradycardia and tachycardia."
+        ],
+        [
+          "Orthostatic hypotension",
+          "Lightheadedness could be related to changes in blood pressure upon standing, possibly exacerbated by heart failure medications."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Atrial fibrillation",
+          "The irregular heart rhythm and palpitations, coupled with a history of heart failure, strongly suggest atrial fibrillation."
+        ],
+        [
+          "Supraventricular tachycardia",
+          "Palpitations and a rapid heart rate of 125 bpm could indicate SVT."
+        ],
+        [
+          "Ventricular tachycardia",
+          "Given the history of myocardial infarction, ventricular tachycardia is a possibility, especially with palpitations and a rapid heart rate."
+        ],
+        [
+          "Sick sinus syndrome",
+          "The episodic lightheadedness and irregular heart rhythm could be due to sinus node dysfunction."
+        ],
+        [
+          "Atrioventricular block",
+          "Decreased S1 intensity and irregular rhythm may indicate AV block."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sinus tachycardia",
+          "Irregular rhythm makes sinus tachycardia less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Atrial fibrillation",
+          "The irregularly irregular rhythm on ECG with absent P waves strongly suggests atrial fibrillation, especially given the patient's history of heart failure."
+        ],
+        [
+          "Atrial flutter with variable block",
+          "Although P waves are absent, atrial flutter with variable conduction can mimic atrial fibrillation on ECG and should be considered."
+        ],
+        [
+          "Multifocal atrial tachycardia",
+          "While less likely given the absence of discernible P waves, MAT can present with an irregular rhythm and should be considered in the differential."
+        ],
+        [
+          "Sick sinus syndrome",
+          "Although less likely given the rapid heart rate, underlying sinus node dysfunction could be contributing to the arrhythmia, especially with a history of heart disease."
+        ],
+        [
+          "Paroxysmal supraventricular tachycardia",
+          "Although the rhythm is described as irregularly irregular, SVT with variable conduction should be considered."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Ventricular tachycardia",
+          "ECG shows no wide QRS complexes, making ventricular tachycardia less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Atrial fibrillation with rapid ventricular response",
+          "The Holter monitor confirms atrial fibrillation with rapid ventricular response, explaining the palpitations and irregular heart rhythm."
+        ],
+        [
+          "Sick sinus syndrome",
+          "Although atrial fibrillation is confirmed, underlying sinus node dysfunction could contribute to the overall rhythm instability and requires consideration."
+        ],
+        [
+          "Supraventricular tachycardia",
+          "While atrial fibrillation is the primary finding, episodes of SVT could be present and contribute to the rapid heart rate."
+        ],
+        [
+          "Atrial flutter",
+          "Atrial flutter can sometimes be difficult to distinguish from atrial fibrillation on a single ECG and may coexist."
+        ],
+        [
+          "Ventricular tachycardia",
+          "Although less likely given the ECG findings, ventricular tachycardia should be considered in the differential for palpitations and rapid heart rate, especially with a history of myocardial infarction."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sinus tachycardia",
+          "The ECG and Holter monitor show an irregularly irregular rhythm, not a regular tachycardia."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Atrial fibrillation",
+            "Palpitations and lightheadedness in a patient with heart failure could indicate atrial fibrillation."
+          ],
+          [
+            "Supraventricular tachycardia",
+            "The episodic nature of the symptoms suggests a possible paroxysmal supraventricular tachycardia."
+          ],
+          [
+            "Ventricular tachycardia",
+            "Given the history of myocardial infarction, ventricular tachycardia is a concern."
+          ],
+          [
+            "Sinus node dysfunction",
+            "Lightheadedness and palpitations could be due to alternating bradycardia and tachycardia."
+          ],
+          [
+            "Orthostatic hypotension",
+            "Lightheadedness could be related to changes in blood pressure upon standing, possibly exacerbated by heart failure medications."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Atrial fibrillation",
+            "Episodic palpitations and lightheadedness in a patient with a history of myocardial infarction and chronic heart failure could indicate paroxysmal atrial fibrillation."
+          ],
+          [
+            "Supraventricular tachycardia",
+            "Palpitations and lightheadedness could be caused by SVT, although the current heart rate is normal."
+          ],
+          [
+            "Sinus node dysfunction",
+            "Lightheadedness in the setting of heart failure could be due to underlying sinus node dysfunction, though the current heart rate is normal."
+          ],
+          [
+            "Orthostatic hypotension",
+            "Lightheadedness could be related to orthostatic changes in blood pressure, although the current blood pressure is normal."
+          ],
+          [
+            "Medication side effect",
+            "Lightheadedness and palpitations could be a side effect of medications the patient is taking for her heart conditions."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Atrial fibrillation",
+            "The irregularly irregular rhythm on ECG with absent P waves strongly suggests atrial fibrillation, especially given the patient's history of heart failure."
+          ],
+          [
+            "Atrial flutter with variable block",
+            "Although P waves are absent, atrial flutter with variable AV conduction can mimic atrial fibrillation on ECG and should be considered."
+          ],
+          [
+            "Multifocal atrial tachycardia",
+            "While less likely given the absence of clearly defined P waves, MAT can present with an irregular rhythm and should be in the differential."
+          ],
+          [
+            "Sick sinus syndrome",
+            "Although the heart rate is currently normal, the patient's age and history could indicate underlying sinus node dysfunction manifesting as intermittent arrhythmias."
+          ],
+          [
+            "Paroxysmal supraventricular tachycardia",
+            "Although less likely given the irregularly irregular rhythm, SVT with variable AV conduction could present similarly."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Normal sinus rhythm",
+            "The ECG showing an irregularly irregular rhythm with no discernible P waves rules out normal sinus rhythm."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Atrial fibrillation with rapid ventricular response",
+            "The Holter monitor confirms atrial fibrillation with rapid ventricular response, explaining the irregularly irregular rhythm, palpitations, and elevated heart rate."
+          ],
+          [
+            "Heart failure exacerbation",
+            "The patient's history of heart failure and reduced ejection fraction, coupled with atrial fibrillation, can lead to worsening heart failure symptoms."
+          ],
+          [
+            "Supraventricular tachycardia",
+            "While atrial fibrillation is confirmed, other SVTs could be present intermittently, contributing to the rapid heart rate episodes."
+          ],
+          [
+            "Sick sinus syndrome",
+            "Although less likely given the confirmed atrial fibrillation, underlying sinus node dysfunction could contribute to the overall rhythm instability."
+          ],
+          [
+            "Hyperthyroidism",
+            "While less likely given the normal exam, hyperthyroidism can induce atrial fibrillation and tachycardia, and should be considered."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sinus bradycardia",
+            "The average heart rate of 110 bpm and episodes exceeding 140 bpm rule out bradycardia."
+          ]
+        ]
+      },
+      "cf_id": "case_006_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's heart rate is regular at 78/min, which argues against atrial fibrillation."
+    }
+  ]
+}

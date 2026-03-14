@@ -1,0 +1,248 @@
+{
+  "case_id": "case_051",
+  "model": "gpt4",
+  "ground_truth": "Muscle physiology during exercise",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Muscular dystrophy",
+          "Common in young males and could be relevant in a study on muscle properties."
+        ],
+        [
+          "Myasthenia gravis",
+          "Affects muscle function and could be of interest in muscle property research."
+        ],
+        [
+          "Polymyositis",
+          "Involves muscle inflammation and weakness, relevant to muscle studies."
+        ],
+        [
+          "Becker muscular dystrophy",
+          "A milder form of muscular dystrophy that could be studied in young males."
+        ],
+        [
+          "Hyperthyroidism",
+          "Can affect muscle properties and is relevant in a study context."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Exercise-induced muscle fatigue",
+          "The activities involve repetitive muscle use, which can lead to temporary fatigue."
+        ],
+        [
+          "Delayed onset muscle soreness (DOMS)",
+          "The physical exertion from lifting weights and performing burpees can cause muscle soreness."
+        ],
+        [
+          "Muscle strain",
+          "The intense physical activity could result in overstretching or tearing of muscle fibers."
+        ],
+        [
+          "Rhabdomyolysis",
+          "Intense exercise can lead to muscle breakdown, especially if there is significant muscle pain or weakness."
+        ],
+        [
+          "Cardiac arrhythmia",
+          "The elevated heart rate during burpees could indicate an underlying arrhythmia, especially if there are irregularities in cardiac monitoring."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myasthenia gravis",
+          "The symptoms are exercise-induced and do not suggest a neuromuscular junction disorder."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Normal physiological response",
+          "The increased electrical activity in the muscles corresponds to expected physiological responses during exercise and stimulation."
+        ],
+        [
+          "Muscle hypertrophy",
+          "The subject may be experiencing muscle growth due to regular exercise, leading to increased EMG activity."
+        ],
+        [
+          "Exercise-induced muscle fatigue",
+          "The increased electrical activity could indicate muscle fatigue from the physical exertion of the study tasks."
+        ],
+        [
+          "Overtraining syndrome",
+          "The subject might be experiencing heightened muscle activity due to excessive physical stress from the study protocol."
+        ],
+        [
+          "Benign fasciculation syndrome",
+          "Although less likely, increased EMG activity could be due to benign muscle twitching."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myopathy",
+          "The EMG findings are consistent with normal muscle activity rather than muscle weakness or degeneration."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Normal physiological response",
+          "The increase in motor unit recruitment and electrical activity in response to physical tasks and stimulation is consistent with normal muscle physiology."
+        ],
+        [
+          "Exercise-induced muscle adaptation",
+          "The observed changes in muscle activity and recruitment patterns are typical adaptations to exercise and physical exertion."
+        ],
+        [
+          "Neuromuscular efficiency",
+          "The efficient recruitment of motor units during different phases suggests a well-functioning neuromuscular system."
+        ],
+        [
+          "Muscle hypertrophy",
+          "The increased recruitment and tension could indicate early signs of muscle adaptation leading to hypertrophy."
+        ],
+        [
+          "Sympathetic nervous system activation",
+          "The increased heart rate and muscle activity during exercise phases suggest activation of the sympathetic nervous system."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myopathy",
+          "The normal increase in motor unit recruitment and tension does not suggest muscle weakness or dysfunction typical of myopathy."
+        ],
+        [
+          "Neuropathy",
+          "The coordinated increase in motor unit recruitment across different muscles and tasks does not indicate nerve damage or dysfunction."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Muscular dystrophy",
+            "Common in young males and could be relevant in a study on muscle properties."
+          ],
+          [
+            "Myasthenia gravis",
+            "Affects muscle function and could be of interest in muscle property research."
+          ],
+          [
+            "Polymyositis",
+            "Involves muscle inflammation and weakness, relevant to muscle studies."
+          ],
+          [
+            "Becker muscular dystrophy",
+            "A milder form of muscular dystrophy that could be studied in young males."
+          ],
+          [
+            "Hyperthyroidism",
+            "Can affect muscle metabolism and properties, making it relevant to the study."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Exercise-associated muscle cramps",
+            "The patient experiences significant muscle cramping and pain during intense physical activity, which is characteristic of this condition."
+          ],
+          [
+            "Rhabdomyolysis",
+            "The intense exercise and subsequent muscle pain could indicate muscle breakdown, a hallmark of rhabdomyolysis."
+          ],
+          [
+            "Delayed onset muscle soreness (DOMS)",
+            "The muscle pain following exercise could be due to DOMS, common after unaccustomed physical activity."
+          ],
+          [
+            "Electrolyte imbalance",
+            "Intense exercise can lead to electrolyte disturbances, which may cause muscle cramps and pain."
+          ],
+          [
+            "Compartment syndrome",
+            "Although less likely, the severe pain during exercise could suggest increased pressure within a muscle compartment."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myasthenia gravis",
+            "The symptoms are exercise-induced and do not include muscle weakness that improves with rest, which is typical for myasthenia gravis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Exercise-associated muscle cramping",
+            "The patient experiences significant muscle cramping and pain during exercise, which is consistent with this condition."
+          ],
+          [
+            "Rhabdomyolysis",
+            "The intense exercise and muscle pain could indicate muscle breakdown, a hallmark of rhabdomyolysis."
+          ],
+          [
+            "Delayed onset muscle soreness",
+            "The muscle pain following exercise could be due to microtrauma and inflammation typical of this condition."
+          ],
+          [
+            "Myofascial pain syndrome",
+            "The localized muscle pain and cramping could be due to trigger points in the muscle."
+          ],
+          [
+            "Electrolyte imbalance",
+            "Intense exercise can lead to imbalances that cause muscle cramps and pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myasthenia gravis",
+            "The symptoms are exercise-induced and not consistent with the typical presentation of fluctuating muscle weakness."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Exercise-associated muscle cramping",
+            "The significant muscle cramping and pain during exercise, along with increased motor unit recruitment, suggest exercise-associated muscle cramping."
+          ],
+          [
+            "Delayed onset muscle soreness",
+            "The muscle pain following intense exercise like burpees is consistent with delayed onset muscle soreness."
+          ],
+          [
+            "Rhabdomyolysis",
+            "The severe muscle pain and cramping during intense exercise could indicate rhabdomyolysis, especially if there is muscle breakdown."
+          ],
+          [
+            "Myofascial pain syndrome",
+            "The muscle pain and cramping could be due to myofascial pain syndrome, characterized by muscle pain and increased muscle activity."
+          ],
+          [
+            "Electrolyte imbalance",
+            "Muscle cramping and pain during exercise can be caused by an electrolyte imbalance, which affects muscle function."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myasthenia gravis",
+            "The increased motor unit recruitment and muscle activity are inconsistent with the muscle weakness typical of myasthenia gravis."
+          ]
+        ]
+      },
+      "cf_id": "case_051_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports significant muscle cramping and pain in his legs during the burpee exercise phase, which is atypical for normal muscle physiology during exercise and suggests an underlying metabolic or electrolyte abnormality."
+    }
+  ]
+}

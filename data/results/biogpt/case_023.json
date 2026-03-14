@@ -1,0 +1,126 @@
+{
+  "case_id": "case_023",
+  "model": "biogpt",
+  "ground_truth": "Acting out",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 1 of 4): [Stage 1] A 16-year-old boy is brought in by his mother, who reports concerns about his recent behavioral changes. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 2 of 4): [Stage 1] A 16-year-old boy is brought in by his mother, who reports concerns about his recent behavioral changes. [Stage 2] The mother states that the patient was recently expelled from school for skipping classes. She also reports that he has been suspended three times in the past two months for bullying and aggressive behavior towards peers and teachers. She also mentions an incident where a neighbor found him smoking cigarettes. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 3 of 4): [Stage 1] A 16-year-old boy is brought in by his mother, who reports concerns about his recent behavioral changes. [Stage 2] The mother states that the patient was recently expelled from school for skipping classes. She also reports that he has been suspended three times in the past two months for bullying and aggressive behavior towards peers and teachers. She also mentions an incident where a neighbor found him smoking cigarettes. [Stage 3] The mother reports that prior to three months ago, the patient maintained an A average in school and regularly attended youth group events. She attributes the change in behavior to the father moving out three months ago after discovering his wife's affair. Further questioning reveals no suicidal or homicidal ideation. Urine drug screen is negative. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "< diagnosis >",
+          "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+        ]
+      ],
+      "eliminated": [
+        [
+          "< diagnosis >",
+          "< short reason > CASE (Stage 4 of 4): [Stage 1] A 16-year-old boy is brought in by his mother, who reports concerns about his recent behavioral changes. [Stage 2] The mother states that the patient was recently expelled from school for skipping classes. She also reports that he has been suspended three times in the past two months for bullying and aggressive behavior towards peers and teachers. She also mentions an incident where a neighbor found him smoking cigarettes. [Stage 3] The mother reports that prior to three months ago, the patient maintained an A average in school and regularly attended youth group events. She attributes the change in behavior to the father moving out three months ago after discovering his wife's affair. Further questioning reveals no suicidal or homicidal ideation. Urine drug screen is negative. [Stage 4] A follow-up appointment with the school counselor confirms the mother's report of escalating behavioral issues, including defiance and verbal altercations with staff. The counselor notes a significant decline in the patient's academic performance and social engagement since his parents' separation. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 1 of 4): [Stage 1] A 16-year-old boy is brought in by his mother, who reports concerns about his recent behavioral changes. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 2 of 4): [Stage 1] A 16-year-old boy is brought in by his mother, who reports concerns about his recent behavioral changes. [Stage 2] The mother states that the patient was recently expelled from school for skipping classes. She also reports that he has been suspended three times in the past two months for bullying and aggressive behavior towards peers and teachers. She also mentions an incident where a neighbor found him smoking cigarettes. The patient reports hearing voices that tell him he is worthless. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 3 of 4): [Stage 1] A 16-year-old boy is brought in by his mother, who reports concerns about his recent behavioral changes. [Stage 2] The mother states that the patient was recently expelled from school for skipping classes. She also reports that he has been suspended three times in the past two months for bullying and aggressive behavior towards peers and teachers. She also mentions an incident where a neighbor found him smoking cigarettes. The patient reports hearing voices that tell him he is worthless. [Stage 3] The mother reports that prior to three months ago, the patient maintained an A average in school and regularly attended youth group events. She attributes the change in behavior to the father moving out three months ago after discovering his wife's affair. Further questioning reveals no suicidal or homicidal ideation. Urine drug screen is negative. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "< diagnosis >",
+            "< 1 sentence justification > 2. < diagnosis >: < 1 sentence justification > 3. < diagnosis >: < 1 sentence justification > 4. < diagnosis >: < 1 sentence justification > 5. < diagnosis >: < 1 sentence justification >"
+          ]
+        ],
+        "eliminated": [
+          [
+            "< diagnosis >",
+            "< short reason > CASE (Stage 4 of 4): [Stage 1] A 16-year-old boy is brought in by his mother, who reports concerns about his recent behavioral changes. [Stage 2] The mother states that the patient was recently expelled from school for skipping classes. She also reports that he has been suspended three times in the past two months for bullying and aggressive behavior towards peers and teachers. She also mentions an incident where a neighbor found him smoking cigarettes. The patient reports hearing voices that tell him he is worthless. [Stage 3] The mother reports that prior to three months ago, the patient maintained an A average in school and regularly attended youth group events. She attributes the change in behavior to the father moving out three months ago after discovering his wife's affair. Further questioning reveals no suicidal or homicidal ideation. Urine drug screen is negative. [Stage 4] A follow-up appointment with the school counselor confirms the mother's report of escalating behavioral issues, including defiance and verbal altercations with staff. The counselor notes a significant decline in the patient's academic performance and social engagement since his parents' separation. CONSTRAINTS: - Use concise standard medical diagnosis names. - Do not include treatment or management. - If uncertain, still list the 5 most plausible diagnoses."
+          ]
+        ]
+      },
+      "cf_id": "case_023_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports auditory hallucinations, which argues against acting out."
+    }
+  ]
+}

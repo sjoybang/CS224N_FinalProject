@@ -1,0 +1,318 @@
+{
+  "case_id": "case_010",
+  "model": "gemini_pro",
+  "ground_truth": "Neurofibromatosis type 2",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Vestibular Schwannoma",
+          "This benign tumor classically presents with progressive unilateral hearing loss, tinnitus, and disequilibrium due to compression of the vestibulocochlear nerve."
+        ],
+        [
+          "Meniere's Disease",
+          "This inner ear disorder is characterized by the triad of fluctuating hearing loss, tinnitus, and episodic vertigo, which can become chronic over time."
+        ],
+        [
+          "Meningioma",
+          "A tumor in the cerebellopontine angle can compress the vestibulocochlear nerve, mimicking the symptoms of a vestibular schwannoma."
+        ],
+        [
+          "Cholesteatoma",
+          "This destructive growth in the middle ear can cause hearing loss and dizziness, and may erode into the inner ear to produce these specific symptoms."
+        ],
+        [
+          "Autoimmune Inner Ear Disease",
+          "A systemic inflammatory condition can target the inner ear, causing progressive sensorineural hearing loss and vestibular dysfunction."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Presbycusis",
+          "The patient's age of 23 makes age-related hearing loss extremely unlikely."
+        ],
+        [
+          "Cerebrovascular Accident",
+          "A stroke would present with a sudden onset of symptoms, not a progressive course over six months."
+        ],
+        [
+          "Benign Paroxysmal Positional Vertigo (BPPV)",
+          "This condition causes isolated, brief episodes of vertigo without the associated hearing loss or tinnitus."
+        ],
+        [
+          "Acute Otitis Media",
+          "This is an acute infection and would not cause chronic symptoms over a six-month period."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Neurofibromatosis type 2 (NF2)",
+          "The combination of bilateral sensorineural hearing loss and bilateral facial weakness in a young adult is the classic presentation for bilateral vestibular schwannomas characteristic of this diagnosis."
+        ],
+        [
+          "Cerebrotendinous xanthomatosis (CTX)",
+          "This diagnosis is suggested by the combination of neurological dysfunction (ataxia, cranial nerve deficits) and xanthomatous skin lesions."
+        ],
+        [
+          "Neurosarcoidosis",
+          "This systemic inflammatory condition is a strong consideration as it can cause multiple cranial neuropathies (especially bilateral facial palsy), ataxia, and skin papules/plaques."
+        ],
+        [
+          "Erdheim-Chester disease",
+          "This rare histiocytosis can present with CNS infiltration causing ataxia and cranial nerve palsies, as well as xanthomatous skin lesions."
+        ],
+        [
+          "Refsum disease",
+          "This metabolic disorder presents with sensorineural hearing loss and ataxia, though the described skin lesions are less typical than the ichthyosis usually seen."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Meniere's disease",
+          "This condition would not explain the bilateral facial weakness or the cutaneous findings."
+        ],
+        [
+          "Unilateral vestibular schwannoma",
+          "The presence of bilateral facial muscle weakness makes a single unilateral lesion highly unlikely."
+        ],
+        [
+          "Multiple sclerosis",
+          "This demyelinating disease does not account for the presence of yellow skin plaques and papules."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Neurofibromatosis type 2",
+          "The presence of bilateral masses in the cerebellopontine angles, highly suggestive of vestibular schwannomas, in a young adult is pathognomonic for this diagnosis."
+        ],
+        [
+          "Schwannomatosis",
+          "This condition is characterized by multiple schwannomas throughout the body, but is less likely as it typically spares the vestibular nerves which are clearly involved here."
+        ],
+        [
+          "Meningiomatosis",
+          "Multiple meningiomas can present as bilateral cerebellopontine angle masses, but schwannomas are more likely given the origin from the internal auditory meatus."
+        ],
+        [
+          "Metastatic Disease",
+          "Multiple intracranial lesions in any patient warrant consideration for metastases, although this is less common in this age group and specific location."
+        ],
+        [
+          "Von Hippel-Lindau Disease",
+          "This neurocutaneous syndrome can cause multiple CNS tumors, but it typically features hemangioblastomas rather than the bilateral schwannomas suggested by the findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sporadic Vestibular Schwannoma",
+          "The finding of bilateral masses on MRI rules out a single, sporadic tumor."
+        ],
+        [
+          "Meniere's Disease",
+          "This inner ear disorder does not cause bilateral facial weakness or intracranial masses."
+        ],
+        [
+          "Neurofibromatosis type 1",
+          "Bilateral vestibular schwannomas are the defining feature of NF2, not NF1."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Neurofibromatosis type 2",
+          "The presence of bilateral vestibular schwannomas and a confirmed NF2 gene mutation is diagnostic for this condition."
+        ],
+        [
+          "Schwannomatosis",
+          "This condition is characterized by multiple schwannomas, which aligns with the biopsy findings, though it typically lacks bilateral vestibular schwannomas."
+        ],
+        [
+          "Neurofibromatosis type 1",
+          "This is the most common neurocutaneous syndrome and a differential for any patient with multiple nerve sheath tumors, although the specific presentation is classic for NF2."
+        ],
+        [
+          "Meningiomatosis",
+          "Multiple meningiomas can present with bilateral cerebellopontine angle masses causing similar symptoms and are also associated with NF2."
+        ],
+        [
+          "Von Hippel-Lindau disease",
+          "This is another genetic tumor predisposition syndrome that can present with cerebellar tumors causing ataxia and inner ear tumors causing hearing loss."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Multiple Sclerosis",
+          "MRI findings of discrete masses and a schwannoma biopsy are inconsistent with a demyelinating process."
+        ],
+        [
+          "Sporadic Vestibular Schwannoma",
+          "The presence of bilateral tumors on MRI rules out a single, non-syndromic tumor."
+        ],
+        [
+          "Meniere's Disease",
+          "The finding of bilateral intracranial masses rules out this inner ear fluid disorder as the primary cause."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Vestibular Schwannoma",
+            "This benign tumor classically presents with slowly progressive unilateral hearing loss, tinnitus, and dizziness due to compression of the vestibulocochlear nerve."
+          ],
+          [
+            "Meniere's Disease",
+            "This inner ear disorder is defined by the triad of vertigo, hearing loss, and tinnitus, which can be progressive over months."
+          ],
+          [
+            "Meningioma",
+            "A tumor in the cerebellopontine angle can compress the eighth cranial nerve, producing symptoms identical to a vestibular schwannoma."
+          ],
+          [
+            "Multiple Sclerosis",
+            "A demyelinating plaque in the brainstem at the root entry zone of the vestibulocochlear nerve can cause these focal neurological symptoms in a young adult."
+          ],
+          [
+            "Chronic Labyrinthitis",
+            "Persistent inflammation of the inner ear could lead to chronic hearing loss, tinnitus, and vestibular dysfunction."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Benign Paroxysmal Positional Vertigo (BPPV)",
+            "BPPV causes isolated, brief episodes of vertigo without the associated hearing loss or tinnitus."
+          ],
+          [
+            "Acute Otitis Media",
+            "The six-month duration and lack of acute signs like fever or severe pain are inconsistent with an acute middle ear infection."
+          ],
+          [
+            "Sudden Sensorineural Hearing Loss (SSNHL)",
+            "The patient's symptoms have been ongoing and progressive for six months, which is contrary to a sudden onset."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Neurofibromatosis type 2",
+            "The combination of vestibulocochlear symptoms and bilateral facial nerve weakness in a young adult is highly suggestive of bilateral vestibular schwannomas."
+          ],
+          [
+            "Vestibular schwannoma",
+            "The initial presentation of unilateral hearing loss, tinnitus, and dizziness is a classic triad for a sporadic tumor of the vestibulocochlear nerve."
+          ],
+          [
+            "Neurosarcoidosis",
+            "This inflammatory disease can cause multiple cranial neuropathies, including the classic finding of bilateral facial palsy, along with vestibulocochlear and cerebellar signs."
+          ],
+          [
+            "Chronic meningitis",
+            "An infectious or inflammatory process at the base of the brain could affect multiple cranial nerves (VII, VIII) and cause gait instability."
+          ],
+          [
+            "Brainstem glioma",
+            "A pontine tumor could directly infiltrate the nuclei of the facial and vestibulocochlear nerves and disrupt cerebellar pathways, causing all the observed signs."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meniere's disease",
+            "This diagnosis does not account for the bilateral facial muscle weakness or the progressive, unsteady gait."
+          ],
+          [
+            "Labyrinthitis",
+            "This is an acute condition, which is inconsistent with the six-month progressive history and would not cause bilateral facial weakness."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Neurofibromatosis type 2",
+            "The presence of bilateral masses at the cerebellopontine angles in a young patient is the hallmark of this genetic disorder."
+          ],
+          [
+            "Meningioma (multiple)",
+            "These are common tumors of the cerebellopontine angle that can be multiple and would explain the bilateral masses and compressive symptoms."
+          ],
+          [
+            "Schwannomatosis",
+            "This is a related genetic disorder characterized by multiple schwannomas, which could account for the bilateral tumors."
+          ],
+          [
+            "Metastatic disease",
+            "The presence of multiple intracranial masses must raise consideration for metastases from an unknown primary cancer."
+          ],
+          [
+            "Neurosarcoidosis",
+            "This inflammatory condition can present with multiple cranial neuropathies and granulomatous masses that mimic tumors on imaging."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Unilateral vestibular schwannoma",
+            "The MRI reveals bilateral masses, ruling out a solitary tumor."
+          ],
+          [
+            "Meniere's disease",
+            "This inner ear disorder does not cause masses on an MRI or bilateral facial weakness."
+          ],
+          [
+            "Labyrinthitis",
+            "This is an inflammatory condition that would not appear as discrete, bilateral masses on an MRI."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Neurofibromatosis type 2",
+            "This diagnosis is confirmed by the presence of bilateral vestibular schwannomas and a pathogenic mutation in the NF2 gene."
+          ],
+          [
+            "Schwannomatosis",
+            "This condition involves multiple schwannomas, but is distinguished from NF2 by the typical absence of bilateral vestibular schwannomas and a different genetic etiology."
+          ],
+          [
+            "Meningiomatosis",
+            "Multiple meningiomas can present as bilateral cerebellopontine angle masses and are also a common feature associated with Neurofibromatosis type 2."
+          ],
+          [
+            "Metastatic Disease",
+            "Multiple intracranial masses in a young adult warrant consideration for metastases, although this is less likely given the specific tumor type and location."
+          ],
+          [
+            "Von Hippel-Lindau Disease",
+            "This is another neurocutaneous syndrome that can cause multiple central nervous system tumors, though the tumor type and location are less characteristic."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Unilateral Vestibular Schwannoma",
+            "This is ruled out by the MRI revealing bilateral masses at the cerebellopontine angles."
+          ],
+          [
+            "Meniere's Disease",
+            "The patient's symptoms are explained by structural masses on MRI, not an inner ear fluid disorder."
+          ],
+          [
+            "Multiple Sclerosis",
+            "MRI findings of discrete, enhancing masses are not consistent with the typical demyelinating plaques of multiple sclerosis."
+          ]
+        ]
+      },
+      "cf_id": "case_010_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of skin findings argues against neurofibromatosis, which typically presents with multiple cutaneous neurofibromas or other skin manifestations."
+    }
+  ]
+}

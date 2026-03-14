@@ -1,0 +1,25 @@
+{
+  "case_id": "case_051",
+  "source": "MedQA-USMLE",
+  "original_question": "A healthy 22-year-old male participates in a research study you are leading to compare the properties of skeletal and cardiac muscle. You conduct a 3-phased experiment with the participant. In the first phase, you get him to lift up a 2.3 kg (5 lb) weight off a table with his left hand. In the second phase, you get him to do 20 burpees, taking his heart rate to 150/min. In the third phase, you electrically stimulate his gastrocnemius with a frequency of 50 Hz. You are interested in the tension and electrical activity of specific muscles as follows: Biceps in phase 1, cardiac muscle in phase 2, and gastrocnemius in phase 3. What would you expect to be happening in the phases and the respective muscles of interest?",
+  "ground_truth": "Muscle physiology during exercise",
+  "base": {
+    "stage_1": "A 22-year-old male is participating in a research study on muscle properties.",
+    "stage_2": "The study involves three phases: lifting a 2.3 kg weight, performing 20 burpees (heart rate 150/min), and electrical stimulation of the gastrocnemius at 50 Hz. The biceps, cardiac muscle, and gastrocnemius are being monitored for tension and electrical activity.",
+    "stage_3": "Electromyography (EMG) shows increased electrical activity in the biceps during weight lifting, increased electrical activity in the heart during burpees, and increased electrical activity in the gastrocnemius during electrical stimulation.",
+    "stage_4": "Analysis of muscle fiber recruitment patterns reveals an increase in the number of active motor units in all three phases, correlating with the observed increase in tension."
+  },
+  "counterfactuals": [
+    {
+      "cf_id_suffix": "a",
+      "altered_stage": 2,
+      "alteration_description": "The patient reports significant muscle cramping and pain in his legs during the burpee exercise phase, which is atypical for normal muscle physiology during exercise and suggests an underlying metabolic or electrolyte abnormality.",
+      "rules_out": "Muscle physiology during exercise",
+      "stage_1": "A 22-year-old male is participating in a research study on muscle properties.",
+      "stage_2": "The study involves three phases: lifting a 2.3 kg weight, performing 20 burpees (heart rate 150/min), and electrical stimulation of the gastrocnemius at 50 Hz. The biceps, cardiac muscle, and gastrocnemius are being monitored for tension and electrical activity. The patient reports significant muscle cramping and pain in his legs during the burpee exercise phase.",
+      "stage_3": "Electromyography (EMG) shows increased electrical activity in the biceps during weight lifting, increased electrical activity in the heart during burpees, and increased electrical activity in the gastrocnemius during electrical stimulation.",
+      "stage_4": "Analysis of muscle fiber recruitment patterns reveals an increase in the number of active motor units in all three phases, correlating with the observed increase in tension.",
+      "cf_id": "case_051_cf_a"
+    }
+  ]
+}

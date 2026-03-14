@@ -1,0 +1,256 @@
+{
+  "case_id": "case_038",
+  "model": "gpt4",
+  "ground_truth": "Histoplasmosis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Gastroenteritis",
+          "The combination of fever, nausea, and vomiting is commonly seen in gastroenteritis."
+        ],
+        [
+          "Viral infection",
+          "Viral infections often present with systemic symptoms like fever and gastrointestinal symptoms such as nausea and vomiting."
+        ],
+        [
+          "Food poisoning",
+          "Acute onset of nausea, vomiting, and fever can be indicative of foodborne illness."
+        ],
+        [
+          "Appendicitis",
+          "Although less common, appendicitis can present with nausea, vomiting, and fever, especially in the early stages."
+        ],
+        [
+          "Hepatitis",
+          "Hepatitis can present with systemic symptoms including fever, nausea, and vomiting."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Rabies",
+          "The combination of fever, agitation, disorientation, copious oral secretions, and muscle twitching is highly suggestive of rabies, especially with the progression to respiratory distress and combativeness."
+        ],
+        [
+          "Neuroleptic Malignant Syndrome",
+          "The high fever, muscle twitching, and altered mental status could indicate neuroleptic malignant syndrome, particularly if there is a history of antipsychotic use."
+        ],
+        [
+          "Serotonin Syndrome",
+          "The presence of fever, agitation, muscle twitching, and autonomic instability could be consistent with serotonin syndrome, especially if there is a history of serotonergic medication use."
+        ],
+        [
+          "Meningitis",
+          "The fever, disorientation, and agitation could suggest meningitis, although the absence of neck stiffness and photophobia makes it less likely."
+        ],
+        [
+          "Heat Stroke",
+          "The high fever, disorientation, and muscle twitching could be indicative of heat stroke, particularly if there is a history of exposure to high temperatures or exertion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sepsis",
+          "While fever and hypotension are present, the specific neurological symptoms and copious oral secretions are less typical for sepsis."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute Respiratory Distress Syndrome (ARDS)",
+          "The diffuse bilateral reticulonodular infiltrates on chest X-ray and respiratory distress suggest ARDS."
+        ],
+        [
+          "Sepsis",
+          "The fever, hypotension, and pancytopenia are consistent with a systemic infection leading to sepsis."
+        ],
+        [
+          "Viral Hemorrhagic Fever",
+          "The combination of fever, pancytopenia, elevated liver enzymes, and respiratory symptoms could indicate a viral hemorrhagic fever."
+        ],
+        [
+          "Toxic Shock Syndrome",
+          "The high fever, hypotension, and multi-organ involvement, including liver dysfunction, suggest toxic shock syndrome."
+        ],
+        [
+          "Acute Liver Failure",
+          "The elevated liver enzymes, altered mental status, and coagulopathy (suggested by pancytopenia) could indicate acute liver failure."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Meningitis",
+          "The absence of neck stiffness and focal neurological signs makes meningitis less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Histoplasmosis",
+          "The presence of small, oval yeast cells within macrophages and culture growth of Histoplasma capsulatum confirms histoplasmosis."
+        ],
+        [
+          "Disseminated histoplasmosis",
+          "The systemic symptoms, pancytopenia, elevated liver enzymes, and diffuse lung infiltrates suggest dissemination of the infection."
+        ],
+        [
+          "Acute respiratory distress syndrome (ARDS)",
+          "The difficulty breathing, low oxygen saturation, and diffuse bilateral infiltrates on chest X-ray are consistent with ARDS secondary to infection."
+        ],
+        [
+          "Sepsis",
+          "The fever, hypotension, and altered mental status indicate a systemic inflammatory response likely due to infection."
+        ],
+        [
+          "Hepatitis",
+          "Elevated liver enzymes and systemic symptoms could indicate liver involvement, possibly due to disseminated infection."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Bacterial pneumonia",
+          "The identification of Histoplasma capsulatum and absence of bacterial pathogens in the context of fungal infection rules out bacterial pneumonia."
+        ],
+        [
+          "Viral infection",
+          "The specific identification of Histoplasma capsulatum as the causative agent excludes a primary viral etiology."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Gastroenteritis",
+            "The combination of fever, nausea, and vomiting is commonly seen in gastroenteritis."
+          ],
+          [
+            "Viral infection",
+            "Viral infections often present with systemic symptoms like fever and gastrointestinal symptoms such as nausea and vomiting."
+          ],
+          [
+            "Food poisoning",
+            "Acute onset of nausea, vomiting, and fever can be indicative of foodborne illness."
+          ],
+          [
+            "Appendicitis",
+            "Although less common, appendicitis can present with nausea, vomiting, and fever, especially in the early stages."
+          ],
+          [
+            "Hepatitis",
+            "Hepatitis can present with systemic symptoms including fever, nausea, and vomiting."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Meningococcal meningitis",
+            "The high fever, petechial rash, disorientation, and agitation are consistent with meningococcal infection, which can cause meningitis and septicemia."
+          ],
+          [
+            "Rabies",
+            "The combination of fever, agitation, disorientation, copious oral secretions, and muscle twitching suggests rabies, especially with the progression to respiratory distress."
+          ],
+          [
+            "Encephalitis",
+            "The fever, disorientation, agitation, and neurological symptoms could indicate viral encephalitis, which can present with similar systemic and neurological signs."
+          ],
+          [
+            "Sepsis",
+            "The fever, hypotension, altered mental status, and respiratory distress could be indicative of sepsis, potentially from a bacterial source."
+          ],
+          [
+            "Heat stroke",
+            "The high fever, disorientation, agitation, and muscle twitching could be due to heat stroke, although the petechial rash is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Influenza",
+            "The presence of petechial rash and severe neurological symptoms make influenza less likely."
+          ],
+          [
+            "Drug overdose",
+            "The specific combination of symptoms and the presence of a petechial rash are not typical for a drug overdose."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Sepsis",
+            "The combination of fever, hypotension, altered mental status, and pancytopenia suggests a systemic infection leading to sepsis."
+          ],
+          [
+            "Viral Hemorrhagic Fever",
+            "The high fever, petechial rash, and pancytopenia are consistent with a viral hemorrhagic fever."
+          ],
+          [
+            "Acute Respiratory Distress Syndrome (ARDS)",
+            "The difficulty breathing, low oxygen saturation, and diffuse bilateral infiltrates on chest X-ray suggest ARDS."
+          ],
+          [
+            "Disseminated Intravascular Coagulation (DIC)",
+            "The presence of a petechial rash, pancytopenia, and elevated liver enzymes could indicate DIC secondary to an underlying condition."
+          ],
+          [
+            "Toxic Shock Syndrome",
+            "The high fever, rash, hypotension, and multi-organ involvement are characteristic of toxic shock syndrome."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Meningitis",
+            "The absence of neck stiffness and specific neurological signs makes meningitis less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Histoplasmosis",
+            "The presence of small, oval yeast cells within macrophages and culture growth of Histoplasma capsulatum confirms histoplasmosis."
+          ],
+          [
+            "Disseminated histoplasmosis",
+            "The systemic symptoms, pancytopenia, elevated liver enzymes, and diffuse lung infiltrates suggest dissemination of the infection."
+          ],
+          [
+            "Acute respiratory distress syndrome (ARDS)",
+            "The difficulty breathing, low oxygen saturation, and diffuse bilateral infiltrates on chest X-ray are consistent with ARDS secondary to infection."
+          ],
+          [
+            "Sepsis",
+            "The fever, hypotension, and altered mental status indicate a systemic inflammatory response likely due to infection."
+          ],
+          [
+            "Meningitis",
+            "The disorientation, agitation, and fever could suggest central nervous system involvement, although not confirmed by specific tests."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Bacterial pneumonia",
+            "The fungal findings and culture results rule out a bacterial cause for the lung infiltrates."
+          ],
+          [
+            "Viral infection",
+            "The specific identification of Histoplasma capsulatum excludes a viral etiology for the symptoms."
+          ]
+        ]
+      },
+      "cf_id": "case_038_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's exam reveals a new petechial rash, arguing against histoplasmosis which does not typically present with petechiae."
+    }
+  ]
+}

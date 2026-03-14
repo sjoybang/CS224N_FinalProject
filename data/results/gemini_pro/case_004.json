@@ -1,0 +1,290 @@
+{
+  "case_id": "case_004",
+  "model": "gemini_pro",
+  "ground_truth": "Scorpion sting",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute Pancreatitis",
+          "The severe epigastric pain radiating to the back is a classic presentation for acute pancreatitis."
+        ],
+        [
+          "Acute Cholecystitis",
+          "Pain in the upper abdomen, nausea, and a subacute onset are highly suggestive of gallbladder inflammation, which is common in this demographic."
+        ],
+        [
+          "Peptic Ulcer Disease",
+          "A posterior penetrating ulcer can cause severe epigastric pain that radiates to the back."
+        ],
+        [
+          "Aortic Dissection",
+          "This is a critical consideration for any patient with severe abdominal pain radiating to the back, despite the patient's relatively young age."
+        ],
+        [
+          "Pyelonephritis",
+          "A kidney infection can present with severe flank and abdominal pain radiating to the back, often accompanied by nausea."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Irritable Bowel Syndrome",
+          "The acute onset and severe, progressive nature of the pain are not characteristic of this chronic functional disorder."
+        ],
+        [
+          "Gastroenteritis",
+          "The severity, localization, and specific radiation pattern of the pain are atypical for gastroenteritis, which usually presents with more diffuse, crampy pain."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute Pancreatitis",
+          "The patient's severe abdominal pain radiating to the back, nausea, and systemic inflammatory signs are classic, and the erythematous ankle swelling could represent pancreatitis-associated panniculitis."
+        ],
+        [
+          "Acute Cholecystitis",
+          "This condition presents with severe abdominal pain, nausea, and systemic signs, and is a very common cause of acute abdominal pain, especially in an obese patient."
+        ],
+        [
+          "Perforated Peptic Ulcer",
+          "A posterior perforation can mimic pancreatitis with severe epigastric pain radiating to the back and can lead to peritonitis and systemic inflammatory response syndrome."
+        ],
+        [
+          "Aortic Dissection",
+          "This life-threatening condition must be considered given the severe pain radiating to the back and signs of hemodynamic instability like hypotension and weak pulses."
+        ],
+        [
+          "Mesenteric Ischemia",
+          "This diagnosis is suggested by the severity of the abdominal pain and the patient's unwell appearance with systemic signs, which can be disproportionate to initial physical exam findings."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "The patient's lungs are clear to auscultation bilaterally, making a lower lobe pneumonia with referred abdominal pain highly unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Scorpion envenomation-induced pancreatitis",
+          "The patient is a zookeeper with a recent history of a scorpion sting, a known and direct cause of acute pancreatitis."
+        ],
+        [
+          "Gallstone pancreatitis",
+          "The patient's demographic of being a 40-year-old, obese female presents classic risk factors for cholelithiasis, the most common cause of pancreatitis."
+        ],
+        [
+          "Hypertriglyceridemia-induced pancreatitis",
+          "The patient's obesity is a significant risk factor for severely elevated triglycerides, a common metabolic cause of acute pancreatitis."
+        ],
+        [
+          "Drug-induced pancreatitis",
+          "The patient's use of oral contraceptive pills is a rare but recognized cause of acute pancreatitis."
+        ],
+        [
+          "Idiopathic pancreatitis",
+          "This diagnosis is considered when a thorough investigation fails to identify a specific cause such as gallstones, alcohol, or scorpion envenomation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Perforated peptic ulcer",
+          "The abdominal CT was consistent with pancreatitis and did not report findings of a perforated viscus."
+        ],
+        [
+          "Aortic dissection",
+          "An abdominal CT scan would likely have identified an aortic dissection, which was not reported."
+        ],
+        [
+          "Acute cholecystitis",
+          "The CT findings were primarily of pancreatitis, making isolated acute cholecystitis unlikely as the principal diagnosis."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Scorpion envenomation-induced acute pancreatitis",
+          "The patient was stung by a Tityus species scorpion, known to cause pancreatitis, and venom was detected in her serum."
+        ],
+        [
+          "Gallstone pancreatitis",
+          "The patient's demographic of being female, 40 years old, and obese represents classic risk factors for cholelithiasis, a leading cause of acute pancreatitis."
+        ],
+        [
+          "Hypertriglyceridemia-induced pancreatitis",
+          "The patient's obesity and use of oral contraceptives are risk factors for severely elevated triglycerides, a known metabolic cause of pancreatitis."
+        ],
+        [
+          "Drug-induced pancreatitis",
+          "The patient takes oral contraceptive pills, which are a recognized, though less common, iatrogenic cause of acute pancreatitis."
+        ],
+        [
+          "Idiopathic pancreatitis",
+          "This diagnosis is considered when a specific cause cannot be identified after a thorough investigation, which has not yet been fully completed."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Perforated peptic ulcer",
+          "The CT findings and markedly elevated lipase are specific for pancreatitis, not a perforated viscus."
+        ],
+        [
+          "Aortic dissection",
+          "The abdominal CT findings were consistent with pancreatitis and did not report evidence of an aortic dissection."
+        ],
+        [
+          "Acute cholecystitis",
+          "Markedly elevated lipase and CT findings confirm pancreatitis as the primary process, not isolated gallbladder inflammation."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute Pancreatitis",
+            "The patient's presentation of severe, gradually worsening abdominal pain radiating to the back with nausea is classic for acute pancreatitis."
+          ],
+          [
+            "Cholecystitis",
+            "Gallstone disease is common in this demographic and can cause severe, constant upper abdominal pain that may radiate to the back."
+          ],
+          [
+            "Perforated Peptic Ulcer",
+            "A posterior peptic ulcer can perforate, causing severe epigastric pain with radiation to the back due to irritation of retroperitoneal structures."
+          ],
+          [
+            "Aortic Dissection",
+            "This is a life-threatening vascular emergency that must be considered with any severe abdominal or chest pain that radiates to the back."
+          ],
+          [
+            "Pyelonephritis",
+            "A kidney infection can cause severe flank pain that is often perceived as abdominal pain radiating to the back, frequently accompanied by nausea."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Irritable Bowel Syndrome",
+            "This is a chronic condition and does not account for an acute, severe, and progressively worsening pain presentation."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute pancreatitis",
+            "The severe abdominal pain radiating to the back, nausea, and systemic signs (tachycardia, tachypnea) are classic for this diagnosis."
+          ],
+          [
+            "Cholecystitis/Choledocholithiasis",
+            "The patient's demographics (obese, 40-year-old female) and pain location are highly suggestive of gallstone-related disease."
+          ],
+          [
+            "Aortic dissection",
+            "This is a can't-miss diagnosis for severe pain radiating to the back accompanied by hypotension and tachycardia."
+          ],
+          [
+            "Myocardial infarction",
+            "Atypical presentations with epigastric pain are common in women, and the vital signs could represent early cardiogenic compromise."
+          ],
+          [
+            "Perforated viscus",
+            "A perforated ulcer could cause severe abdominal pain and signs of systemic illness, though the gradual onset is less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gastroenteritis",
+            "The severity of the pain, radiation to the back, and hemodynamic instability are inconsistent with uncomplicated gastroenteritis."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Scorpion envenomation-induced pancreatitis",
+            "The patient is a zookeeper with a specific history of a recent scorpion sting, a known cause of acute pancreatitis."
+          ],
+          [
+            "Gallstone pancreatitis",
+            "The patient's demographic (female, 40 years old, obese) presents classic risk factors for cholelithiasis, the most common cause of acute pancreatitis."
+          ],
+          [
+            "Hypertriglyceridemia-induced pancreatitis",
+            "Obesity and use of oral contraceptives are risk factors for elevated triglycerides, a common metabolic cause of pancreatitis."
+          ],
+          [
+            "Alcohol-induced pancreatitis",
+            "This is a very common cause of acute pancreatitis and must be considered until a social history is obtained to rule it out."
+          ],
+          [
+            "Medication-induced pancreatitis",
+            "The patient's use of oral contraceptive pills is a known iatrogenic cause of acute pancreatitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Post-ERCP pancreatitis",
+            "The patient has no history of a recent endoscopic retrograde cholangiopancreatography procedure."
+          ],
+          [
+            "Abdominal aortic aneurysm",
+            "The abdominal CT was consistent with pancreatitis and did not report findings of an aneurysm, which would have been visible."
+          ],
+          [
+            "Perforated peptic ulcer",
+            "The CT findings are specific for pancreatitis and did not report extraluminal air, which would be expected with a perforation."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Scorpion envenomation-induced acute pancreatitis",
+            "The patient was stung by a Tityus species scorpion, known to cause pancreatitis, with venom detected in her serum confirming envenomation."
+          ],
+          [
+            "Gallstone pancreatitis",
+            "The patient's demographic (female, 40, obese) presents classic risk factors for gallstones, a leading cause of acute pancreatitis."
+          ],
+          [
+            "Alcohol-induced pancreatitis",
+            "This is a very common cause of acute pancreatitis that must be considered in the absence of a detailed social history."
+          ],
+          [
+            "Hypertriglyceridemia-induced pancreatitis",
+            "Obesity is a significant risk factor for hypertriglyceridemia, a known metabolic cause of acute pancreatitis."
+          ],
+          [
+            "Drug-induced pancreatitis",
+            "The patient's use of oral contraceptive pills is a rare but reported cause of acute pancreatitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Aortic dissection",
+            "The abdominal CT was consistent with pancreatitis and did not show evidence of aortic dissection."
+          ],
+          [
+            "Perforated peptic ulcer",
+            "Markedly elevated lipase is highly specific for pancreatitis, and the CT scan did not show evidence of perforation."
+          ],
+          [
+            "Mesenteric ischemia",
+            "The clinical picture and CT findings are classic for acute pancreatitis, not bowel ischemia."
+          ]
+        ]
+      },
+      "cf_id": "case_004_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of local findings at the sting site argues against scorpion envenomation."
+    }
+  ]
+}

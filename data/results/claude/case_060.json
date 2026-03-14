@@ -1,0 +1,294 @@
+{
+  "case_id": "case_060",
+  "model": "claude",
+  "ground_truth": "Drug-induced methemoglobinemia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Hypertension - chronic condition",
+          "Patient has documented history of hypertension requiring ongoing monitoring."
+        ],
+        [
+          "Hepatitis A - resolved infection",
+          "History of hepatitis A mentioned, though likely represents past resolved infection given routine travel clearance."
+        ],
+        [
+          "Malaria risk - travel prophylaxis indication",
+          "Prescription for malaria prophylaxis indicates recognized risk for travel to endemic area (Ecuador)."
+        ],
+        [
+          "Travel-related vaccine needs",
+          "Routine pre-travel checkup for Ecuador may identify need for additional immunizations (yellow fever, typhoid)."
+        ],
+        [
+          "Cardiovascular disease screening",
+          "52-year-old male with hypertension warrants assessment for underlying coronary artery disease or other complications."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute hepatitis A infection",
+          "Patient is well enough for routine travel and international trip, inconsistent with acute hepatitis."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "Cyanosis with normal oxygen saturation and recent antimalarial prophylaxis (likely primaquine or dapsone) is classic for methemoglobinemia."
+        ],
+        [
+          "Acute mountain sickness",
+          "Travel to Ecuador (high altitude), headache, dizziness, and shortness of breath are consistent with altitude-related illness."
+        ],
+        [
+          "Glucose-6-phosphate dehydrogenase deficiency",
+          "Antimalarial medication can trigger hemolysis in G6PD deficiency causing cyanosis and respiratory symptoms."
+        ],
+        [
+          "Sulfhemoglobinemia",
+          "Similar presentation to methemoglobinemia with cyanosis despite normal pulse oximetry, can be drug-induced."
+        ],
+        [
+          "Polycythemia vera",
+          "Cyanosis and hyperviscosity symptoms could present acutely, though less likely given the temporal relationship to travel."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pneumonia",
+          "No fever, and oxygen saturation is normal at 97%."
+        ],
+        [
+          "Carbon monoxide poisoning",
+          "Oxygen saturation would typically be falsely elevated on pulse oximetry, and headache/dizziness present but cyanosis is not characteristic."
+        ],
+        [
+          "Acute coronary syndrome",
+          "Vital signs are relatively stable and cyanosis of extremities is not typical presentation."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "Chocolate brown blood is pathognomonic for methemoglobinemia, and malaria prophylaxis drugs (primaquine, dapsone) are known triggers causing cyanosis despite normal oxygen saturation."
+        ],
+        [
+          "G6PD deficiency with hemolysis",
+          "Malaria prophylaxis (especially primaquine) can trigger hemolysis in G6PD deficiency, though chocolate brown blood more specifically suggests methemoglobinemia which can coexist."
+        ],
+        [
+          "Sulfhemoglobinemia",
+          "Can produce cyanosis and dark blood similar to methemoglobinemia, potentially triggered by antimalarial medications, though less common."
+        ],
+        [
+          "Acute hemolytic anemia",
+          "Malaria prophylaxis could trigger hemolysis leading to symptoms, though chocolate brown blood is more characteristic of methemoglobin."
+        ],
+        [
+          "Carbon monoxide poisoning",
+          "Could cause tissue hypoxia and cyanosis with relatively normal pulse oximetry readings, though chocolate brown blood and travel timing make this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Polycythemia vera",
+          "Normal oxygen saturation and acute onset with medication exposure makes this chronic condition unlikely."
+        ],
+        [
+          "Pneumonia",
+          "Normal temperature and oxygen saturation of 97% argue against infectious pulmonary process."
+        ],
+        [
+          "Acute coronary syndrome",
+          "Symptoms and chocolate brown blood are inconsistent with cardiac ischemia presentation."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Primaquine-induced methemoglobinemia",
+          "Primaquine, a common malaria prophylaxis, is a known cause of methemoglobinemia with chocolate brown blood, and normal G6PD rules out hemolytic anemia as the primary issue."
+        ],
+        [
+          "Dapsone-induced methemoglobinemia",
+          "Dapsone can be used for malaria prophylaxis and is a well-established cause of dose-dependent methemoglobinemia with the clinical picture described."
+        ],
+        [
+          "Chloroquine/hydroxychloroquine-induced methemoglobinemia",
+          "These antimalarials can rarely cause methemoglobinemia, fitting the temporal relationship with malaria prophylaxis initiation."
+        ],
+        [
+          "Acquired methemoglobinemia from environmental toxin exposure",
+          "Travel to Ecuador could involve exposure to local water contaminants, pesticides, or other oxidizing agents causing methemoglobinemia."
+        ],
+        [
+          "Congenital methemoglobinemia (cytochrome b5 reductase deficiency)",
+          "Although typically presenting earlier in life, mild forms can manifest later when stressed by oxidizing medications like antimalarials."
+        ]
+      ],
+      "eliminated": [
+        [
+          "G6PD deficiency",
+          "Normal G6PD level rules out this diagnosis despite the patient taking malaria prophylaxis."
+        ],
+        [
+          "Hemolytic anemia",
+          "While antimalarials can cause hemolysis in G6PD deficiency, the normal G6PD level and primary presentation with methemoglobinemia makes this unlikely."
+        ],
+        [
+          "Respiratory failure/hypoxemia",
+          "Normal oxygen saturation of 97% on room air excludes true hypoxemic respiratory pathology."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Hypertension - chronic condition",
+            "Patient has documented history of hypertension requiring ongoing monitoring during routine checkup."
+          ],
+          [
+            "Hepatitis A - resolved infection",
+            "History of hepatitis A mentioned, though likely resolved given patient is ambulatory for routine travel visit."
+          ],
+          [
+            "Malaria exposure risk",
+            "Patient traveling to Ecuador (endemic area) necessitating prophylaxis prescription, indicating risk assessment for potential infection."
+          ],
+          [
+            "Travel-related diarrheal disease risk",
+            "Travel to Ecuador poses risk for infectious diarrhea from enterotoxigenic E. coli, parasites, or other pathogens."
+          ],
+          [
+            "Yellow fever exposure risk",
+            "Ecuador is in yellow fever endemic zone, requiring consideration for vaccination and risk assessment."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute hepatitis A infection",
+            "Patient is well enough for routine travel checkup and hepatitis A is listed as past history, indicating resolved infection."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Methemoglobinemia",
+            "Acute cyanosis with low oxygen saturation despite supplemental oxygen following malaria prophylaxis (likely primaquine or dapsone) is classic for methemoglobinemia."
+          ],
+          [
+            "Glucose-6-phosphate dehydrogenase (G6PD) deficiency with hemolysis",
+            "Antimalarial drugs can trigger hemolytic crisis in G6PD deficiency causing tissue hypoxia and cyanosis, though typically presents with jaundice."
+          ],
+          [
+            "Acute mountain sickness",
+            "Travel to Ecuador (high altitude regions) can cause hypoxemia, headache, and dizziness, though cyanosis of digits is less typical."
+          ],
+          [
+            "Pulmonary embolism",
+            "Acute dyspnea, hypoxemia, and digital cyanosis during prolonged travel could indicate PE, though lack of fever and relatively stable vital signs make this less likely."
+          ],
+          [
+            "Pneumonia with severe hypoxemia",
+            "Acute respiratory symptoms with hypoxemia could represent severe pneumonia, though absence of fever and rapid 3-day onset make this less probable."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Cardiac ischemia/myocardial infarction",
+            "Blood pressure and heart rate are stable without chest pain mentioned, and cyanosis pattern is peripheral rather than central cardiogenic."
+          ],
+          [
+            "High altitude pulmonary edema (HAPE)",
+            "Would expect tachycardia, crackles on exam, and more severe respiratory distress; oxygen saturation would typically improve more with supplemental oxygen."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Methemoglobinemia",
+            "Chocolate brown blood is pathognomonic for methemoglobinemia, consistent with cyanosis unresponsive to oxygen and likely caused by antimalarial prophylaxis (primaquine or dapsone)."
+          ],
+          [
+            "Glucose-6-phosphate dehydrogenase (G6PD) deficiency with hemolysis",
+            "Antimalarial drugs can trigger acute hemolytic crisis in G6PD deficiency, though this typically presents with jaundiced appearance rather than chocolate-colored blood."
+          ],
+          [
+            "Sulfhemoglobinemia",
+            "Can present with cyanosis and greenish-brown blood discoloration, potentially triggered by oxidant medications including some antimalarials."
+          ],
+          [
+            "Primaquine-induced oxidative hemolysis",
+            "Direct oxidative damage from antimalarial medication can cause hemolysis and methemoglobin formation, explaining the acute presentation after starting prophylaxis."
+          ],
+          [
+            "Dapsone toxicity",
+            "If prescribed dapsone for malaria prophylaxis, it commonly causes dose-dependent methemoglobinemia with characteristic chocolate-brown blood."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute altitude sickness",
+            "Would not cause chocolate-brown blood or cyanosis unresponsive to supplemental oxygen."
+          ],
+          [
+            "Carbon monoxide poisoning",
+            "Blood would be cherry-red rather than chocolate-brown."
+          ],
+          [
+            "Polycythemia",
+            "Would not present acutely or cause chocolate-colored blood."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Primaquine-induced methemoglobinemia",
+            "Primaquine, commonly prescribed for malaria prophylaxis, is a well-known cause of methemoglobinemia presenting with cyanosis, low oxygen saturation, and chocolate-brown blood."
+          ],
+          [
+            "Dapsone-induced methemoglobinemia",
+            "Dapsone is used for both malaria prophylaxis and treatment and is a classic cause of acquired methemoglobinemia with the clinical picture described."
+          ],
+          [
+            "Atovaquone-proguanil associated methemoglobinemia",
+            "While less common than primaquine or dapsone, atovaquone-proguanil (Malarone) has been rarely associated with methemoglobinemia in susceptible individuals."
+          ],
+          [
+            "Chloroquine-related methemoglobinemia",
+            "Chloroquine or hydroxychloroquine for malaria prophylaxis can rarely cause methemoglobinemia, though this is an uncommon adverse effect."
+          ],
+          [
+            "Concomitant medication or environmental exposure causing methemoglobinemia",
+            "Travel-related exposures (contaminated water, local anesthetics, or other medications obtained abroad) could have induced methemoglobinemia independent of malaria prophylaxis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "G6PD deficiency-related hemolysis",
+            "Normal G6PD level rules out this diagnosis despite use of potential oxidant antimalarials."
+          ],
+          [
+            "Primary methemoglobinemia (hereditary)",
+            "Late age of presentation and temporal association with new medication makes acquired cause far more likely than congenital disorder."
+          ]
+        ]
+      },
+      "cf_id": "case_060_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood oxygen saturation is 85% despite supplemental oxygen, arguing against methemoglobinemia, which typically has a normal saturation gap."
+    }
+  ]
+}

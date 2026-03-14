@@ -1,0 +1,234 @@
+{
+  "case_id": "case_016",
+  "model": "gemini",
+  "ground_truth": "Alpha-1-antitrypsin deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Hepatitis A",
+          "Recent onset jaundice and dark urine are consistent with acute viral hepatitis."
+        ],
+        [
+          "Choledocholithiasis",
+          "Blockage of the common bile duct by a gallstone can cause jaundice and dark urine."
+        ],
+        [
+          "Drug-induced liver injury",
+          "Certain medications can cause liver damage, leading to jaundice and dark urine."
+        ],
+        [
+          "Gilbert's Syndrome",
+          "This condition can cause mild jaundice, although it typically presents earlier in life."
+        ],
+        [
+          "Pancreatic cancer",
+          "Although less likely, obstruction of the bile duct due to a pancreatic mass could cause jaundice."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute Hepatitis A",
+          "Recent onset jaundice points towards acute hepatitis, and Hepatitis A is a common cause."
+        ],
+        [
+          "Choledocholithiasis",
+          "Blockage of the common bile duct by a gallstone can cause jaundice and dark urine."
+        ],
+        [
+          "Drug-induced Liver Injury",
+          "Certain medications can cause liver damage, leading to jaundice."
+        ],
+        [
+          "Gilbert's Syndrome",
+          "This common genetic condition can cause mild jaundice, although typically without dark urine."
+        ],
+        [
+          "Acute Hepatitis E",
+          "Similar to Hepatitis A, Hepatitis E can cause acute jaundice, especially if the patient has traveled to endemic areas."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Alpha-1 antitrypsin deficiency",
+          "The presence of PAS-positive globules on liver biopsy strongly suggests alpha-1 antitrypsin deficiency."
+        ],
+        [
+          "Alcoholic hepatitis",
+          "Elevated liver enzymes and jaundice could be due to alcoholic hepatitis, though the unremarkable abdominal exam is less typical."
+        ],
+        [
+          "Nonalcoholic steatohepatitis",
+          "Elevated liver enzymes and jaundice could be due to NASH, although PAS-positive globules are not a typical finding."
+        ],
+        [
+          "Drug-induced liver injury",
+          "Certain medications can cause elevated liver enzymes and jaundice, though the PAS-positive globules are less common."
+        ],
+        [
+          "Viral hepatitis",
+          "While less likely given the biopsy findings, viral hepatitis can present with jaundice and elevated liver enzymes."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Obstructive jaundice",
+          "Unremarkable abdominal exam makes obstruction less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Alpha-1 antitrypsin deficiency",
+          "The presence of PAS-positive globules in the liver biopsy along with bullous changes in the lungs and elevated liver enzymes strongly suggests this diagnosis."
+        ],
+        [
+          "Alcoholic hepatitis",
+          "Elevated liver enzymes and jaundice could be due to alcoholic hepatitis, although the lung findings are less typical."
+        ],
+        [
+          "Nonalcoholic steatohepatitis (NASH)",
+          "NASH can present with elevated liver enzymes and liver biopsy findings similar to alcoholic liver disease, but the lung findings are less common."
+        ],
+        [
+          "Autoimmune hepatitis",
+          "Autoimmune hepatitis can cause jaundice and elevated liver enzymes, but the lung findings would be atypical."
+        ],
+        [
+          "Drug-induced liver injury",
+          "Certain medications can cause liver damage and jaundice, but the lung findings would be less common."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Viral hepatitis",
+          "The liver biopsy findings are not typical of viral hepatitis."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Hepatitis A",
+            "Recent onset jaundice and dark urine are consistent with acute hepatitis A infection."
+          ],
+          [
+            "Hepatitis B",
+            "Similar to Hepatitis A, acute Hepatitis B infection can present with jaundice and dark urine."
+          ],
+          [
+            "Drug-induced liver injury",
+            "Certain medications can cause liver damage, leading to jaundice and dark urine."
+          ],
+          [
+            "Obstructive jaundice",
+            "Blockage of the bile duct can cause jaundice and dark urine due to bilirubin accumulation."
+          ],
+          [
+            "Gilbert's syndrome",
+            "This genetic disorder can cause mild jaundice, although dark urine is less typical."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Autoimmune hemolytic anemia",
+            "Jaundice and splenomegaly can be caused by the destruction of red blood cells."
+          ],
+          [
+            "Gilbert's syndrome",
+            "This condition can cause jaundice, especially during times of stress or illness."
+          ],
+          [
+            "Hepatitis A",
+            "This acute infection can cause jaundice and dark urine."
+          ],
+          [
+            "Primary biliary cholangitis",
+            "This chronic liver disease can cause jaundice and splenomegaly."
+          ],
+          [
+            "Drug-induced liver injury",
+            "Certain medications can cause jaundice and liver inflammation."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Alpha-1 antitrypsin deficiency",
+            "PAS-positive globules on liver biopsy in the setting of elevated LFTs and jaundice is highly suggestive."
+          ],
+          [
+            "Alcoholic hepatitis",
+            "Elevated LFTs and jaundice can be caused by alcohol abuse, though the PAS-positive globules are less typical."
+          ],
+          [
+            "Nonalcoholic steatohepatitis",
+            "NASH can present with elevated LFTs and jaundice, and while less specific, PAS-positive globules can be seen."
+          ],
+          [
+            "Wilson's disease",
+            "This can present with liver dysfunction and jaundice in a younger patient, though PAS-positive globules are not a typical finding."
+          ],
+          [
+            "Drug-induced liver injury",
+            "Certain medications can cause liver damage leading to jaundice and elevated LFTs, though PAS-positive globules are not a typical finding."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral hepatitis",
+            "The liver biopsy findings make this less likely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Alpha-1 antitrypsin deficiency",
+            "The presence of PAS-positive globules in the liver biopsy, bullous changes in the lungs, and elevated liver enzymes strongly suggest this diagnosis."
+          ],
+          [
+            "Alcoholic hepatitis",
+            "Elevated liver enzymes and splenomegaly could be related to alcohol use, though the PAS-positive globules are less typical."
+          ],
+          [
+            "Nonalcoholic steatohepatitis (NASH)",
+            "Elevated liver enzymes and potential for liver damage could be NASH, but the lung findings are less common."
+          ],
+          [
+            "Wilson's disease",
+            "While less likely given the lung findings, liver dysfunction in a younger adult warrants consideration."
+          ],
+          [
+            "Autoimmune hepatitis",
+            "Elevated liver enzymes and jaundice could indicate autoimmune hepatitis, although the PAS-positive globules and lung findings are less typical."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Viral hepatitis",
+            "The liver biopsy findings make viral hepatitis less likely."
+          ]
+        ]
+      },
+      "cf_id": "case_016_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals jaundice and mild splenomegaly, which argues against alpha-1-antitrypsin deficiency as it is not typically associated with splenomegaly."
+    }
+  ]
+}

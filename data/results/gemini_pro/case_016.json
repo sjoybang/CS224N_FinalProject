@@ -1,0 +1,290 @@
+{
+  "case_id": "case_016",
+  "model": "gemini_pro",
+  "ground_truth": "Alpha-1-antitrypsin deficiency",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Viral hepatitis",
+          "Acute viral infection is a very common cause of hepatocellular inflammation leading to jaundice and dark urine."
+        ],
+        [
+          "Alcoholic hepatitis",
+          "Significant alcohol consumption can cause acute liver injury and jaundice, which is a frequent presentation in this age group."
+        ],
+        [
+          "Drug-induced liver injury (DILI)",
+          "Many medications, supplements, or toxins can cause hepatocellular damage resulting in jaundice."
+        ],
+        [
+          "Choledocholithiasis",
+          "Obstruction of the common bile duct by a gallstone leads to cholestatic jaundice and dark urine."
+        ],
+        [
+          "Autoimmune hepatitis",
+          "Immune-mediated inflammation of the liver can present acutely with jaundice and is a consideration in young to middle-aged adults."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Gilbert's syndrome",
+          "This condition causes a mild unconjugated hyperbilirubinemia and would not cause dark urine from bilirubinuria."
+        ],
+        [
+          "Hemolytic anemia",
+          "This causes an unconjugated hyperbilirubinemia due to red blood cell breakdown and does not cause bilirubinuria."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute viral hepatitis",
+          "This is a very common cause of acute jaundice with dark urine in a young adult."
+        ],
+        [
+          "Drug-induced liver injury (DILI)",
+          "Many medications and supplements can cause an identical clinical picture of hepatocellular or cholestatic injury."
+        ],
+        [
+          "Choledocholithiasis",
+          "A stone in the common bile duct is a frequent cause of obstructive jaundice, which can be painless."
+        ],
+        [
+          "Autoimmune hepatitis",
+          "This condition can have an acute presentation mimicking viral hepatitis and is a consideration in this age group."
+        ],
+        [
+          "Primary sclerosing cholangitis (PSC)",
+          "This is a cause of chronic cholestatic jaundice that typically affects young to middle-aged men."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Hemolytic anemia",
+          "This would cause unconjugated hyperbilirubinemia, which does not lead to dark urine from bilirubin."
+        ],
+        [
+          "Gilbert's syndrome",
+          "This benign condition causes unconjugated hyperbilirubinemia and would not explain the dark urine."
+        ],
+        [
+          "Acute cholangitis",
+          "The absence of fever and abdominal pain makes an acute infection of the biliary tree highly unlikely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Alpha-1 antitrypsin deficiency",
+          "The presence of PAS-positive globules in hepatocytes on liver biopsy is a classic finding for this genetic disorder."
+        ],
+        [
+          "Chronic viral hepatitis",
+          "Hepatitis B and C are common causes of chronic hepatocellular injury with elevated transaminases in this age group."
+        ],
+        [
+          "Autoimmune hepatitis",
+          "This is an important cause of unexplained inflammatory liver disease with elevated transaminases, particularly in younger to middle-aged adults."
+        ],
+        [
+          "Wilson's disease",
+          "This genetic disorder of copper metabolism is a critical diagnosis to consider in a young adult presenting with liver disease, even with a normal neurological exam."
+        ],
+        [
+          "Drug-induced liver injury",
+          "A wide variety of medications can cause a hepatocellular injury pattern with jaundice, and this must be considered in any new-onset liver dysfunction."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Gilbert's syndrome",
+          "This condition causes unconjugated hyperbilirubinemia without the elevated liver transaminases seen in this case."
+        ],
+        [
+          "Extrahepatic biliary obstruction",
+          "This would typically present with a cholestatic pattern (elevated ALP/GGT) rather than the hepatocellular pattern (elevated ALT/AST) observed."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Alpha-1 Antitrypsin Deficiency",
+          "The combination of liver disease with pathognomonic PAS-positive globules on biopsy and basilar bullous lung changes is classic for this genetic disorder."
+        ],
+        [
+          "Autoimmune Hepatitis",
+          "This is a common cause of unexplained hepatocellular injury in a young adult, although the specific biopsy and lung findings are not typical."
+        ],
+        [
+          "Wilson's Disease",
+          "This is an important genetic cause of liver disease in a young patient, but it does not explain the specific liver biopsy or lung CT findings."
+        ],
+        [
+          "Chronic Viral Hepatitis",
+          "While a common cause of elevated liver enzymes, the biopsy findings are not characteristic of viral hepatitis and it does not explain the associated lung disease."
+        ],
+        [
+          "Hereditary Hemochromatosis",
+          "This genetic cause of liver disease is less likely as the biopsy would show iron deposition, not PAS-positive globules, and it is not associated with emphysema."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Gilbert's Syndrome",
+          "This condition causes unconjugated hyperbilirubinemia and would not result in elevated liver enzymes, dark urine, or the findings on biopsy and CT."
+        ],
+        [
+          "Primary Sclerosing Cholangitis",
+          "The hepatocellular pattern of injury and biopsy findings are inconsistent with this typically cholestatic disease."
+        ],
+        [
+          "Ischemic Hepatitis",
+          "The patient's stable vital signs and lack of a known hypotensive event make this diagnosis highly unlikely."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Viral hepatitis",
+            "Acute viral infection is a common cause of hepatocellular injury leading to jaundice and dark urine."
+          ],
+          [
+            "Drug-induced liver injury",
+            "Numerous medications, toxins, or supplements can cause hepatocellular damage or cholestasis, resulting in jaundice."
+          ],
+          [
+            "Alcoholic hepatitis",
+            "In the context of significant alcohol use, acute liver inflammation is a primary cause of jaundice."
+          ],
+          [
+            "Choledocholithiasis",
+            "Obstruction of the common bile duct by a gallstone leads to cholestasis and conjugated hyperbilirubinemia."
+          ],
+          [
+            "Autoimmune hepatitis",
+            "Chronic, immune-mediated liver inflammation can present acutely with jaundice, particularly in this age group."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gilbert's syndrome",
+            "This condition causes unconjugated hyperbilirubinemia and would not result in dark urine from bilirubinuria."
+          ],
+          [
+            "Hemolytic anemia",
+            "This causes an unconjugated hyperbilirubinemia, which is not excreted in the urine and thus does not cause dark urine from bilirubinuria."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Chronic Viral Hepatitis",
+            "Chronic infection (e.g., Hepatitis B or C) can lead to cirrhosis and portal hypertension, causing both jaundice and splenomegaly."
+          ],
+          [
+            "Infectious Mononucleosis",
+            "Acute infection with EBV or CMV is a classic cause of hepatitis (jaundice) and splenomegaly in a young adult."
+          ],
+          [
+            "Alcoholic Liver Disease",
+            "This is a common cause of chronic liver disease that progresses to cirrhosis, portal hypertension, and splenomegaly."
+          ],
+          [
+            "Autoimmune Hepatitis",
+            "This inflammatory liver condition can present with jaundice and is often associated with splenomegaly, particularly in younger patients."
+          ],
+          [
+            "Hemolytic Anemia",
+            "Increased red blood cell destruction causes jaundice from hyperbilirubinemia and splenomegaly from increased splenic clearance of erythrocytes."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gilbert's Syndrome",
+            "This condition causes unconjugated hyperbilirubinemia and would not explain the patient's dark urine or splenomegaly."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "The liver biopsy showing PAS-positive globules is the classic histological finding for this genetic disorder, which causes liver disease."
+          ],
+          [
+            "Autoimmune Hepatitis",
+            "This condition commonly presents with hepatocellular injury, jaundice, and splenomegaly in this age group, although the biopsy findings are not typical."
+          ],
+          [
+            "Chronic Viral Hepatitis",
+            "Chronic infection with hepatitis B or C is a common cause of elevated transaminases and can lead to jaundice and splenomegaly."
+          ],
+          [
+            "Wilson's Disease",
+            "This is an important inherited cause of liver disease in a young adult, presenting with elevated liver enzymes and potential splenomegaly."
+          ],
+          [
+            "Drug-Induced Liver Injury",
+            "Medication or toxin exposure is a frequent cause of hepatocellular injury and jaundice, which can mimic other forms of hepatitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gilbert's Syndrome",
+            "This condition causes unconjugated hyperbilirubinemia and would not result in dark urine, elevated transaminases, or splenomegaly."
+          ],
+          [
+            "Biliary Obstruction",
+            "The hepatocellular pattern of liver injury (elevated ALT/AST) makes a primary obstructive process less likely than parenchymal liver disease."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Alpha-1 Antitrypsin Deficiency",
+            "This diagnosis perfectly explains the combination of liver disease with PAS-positive globules on biopsy and basilar bullous lung disease."
+          ],
+          [
+            "Wilson's Disease",
+            "This is a key consideration for liver disease in a young adult, although it does not explain the lung or specific biopsy findings."
+          ],
+          [
+            "Autoimmune Hepatitis",
+            "This is a common cause of unexplained hepatocellular injury in this demographic, but it does not account for the lung pathology or PAS-positive globules."
+          ],
+          [
+            "Chronic Viral Hepatitis (B or C)",
+            "A prevalent cause of chronic liver disease and elevated transaminases that must be considered, though it does not explain the lung or biopsy findings."
+          ],
+          [
+            "Hereditary Hemochromatosis",
+            "This is an important genetic cause of liver disease and cirrhosis, but it does not explain the specific lung or biopsy findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gilbert's Syndrome",
+            "This condition does not cause elevated liver enzymes, dark urine, or splenomegaly."
+          ],
+          [
+            "Acute Viral Hepatitis",
+            "The presence of chronic lung changes (bullae) on CT is inconsistent with an acute, self-limited illness."
+          ]
+        ]
+      },
+      "cf_id": "case_016_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's physical exam reveals jaundice and mild splenomegaly, which argues against alpha-1-antitrypsin deficiency as it is not typically associated with splenomegaly."
+    }
+  ]
+}

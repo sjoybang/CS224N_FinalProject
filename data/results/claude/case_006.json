@@ -1,0 +1,290 @@
+{
+  "case_id": "case_006",
+  "model": "claude",
+  "ground_truth": "Atrial fibrillation",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Ventricular arrhythmia",
+          "Patient with structural heart disease (prior MI and heart failure) is at high risk for ventricular tachycardia causing palpitations and lightheadedness."
+        ],
+        [
+          "Atrial fibrillation",
+          "Common arrhythmia in heart failure patients that causes palpitations and can lead to hemodynamic compromise with lightheadedness."
+        ],
+        [
+          "Bradyarrhythmia/heart block",
+          "Heart failure and prior MI can affect conduction system, causing symptomatic bradycardia with lightheadedness and awareness of irregular heartbeats."
+        ],
+        [
+          "Medication-related arrhythmia",
+          "Heart failure medications (beta-blockers, antiarrhythmics, diuretics causing electrolyte imbalance) can provoke arrhythmias and associated symptoms."
+        ],
+        [
+          "Decompensated heart failure",
+          "Worsening heart failure can cause reduced cardiac output leading to lightheadedness and compensatory tachycardia perceived as palpitations."
+        ]
+      ],
+      "eliminated": [
+        [
+          "None",
+          "Insufficient information at this stage to definitively rule out any diagnoses."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Atrial fibrillation",
+          "Irregularly irregular rhythm with tachycardia in a patient with heart failure and presenting symptoms of palpitations and lightheadedness strongly suggests atrial fibrillation."
+        ],
+        [
+          "Atrial flutter with variable block",
+          "Can present with irregular rhythm and tachycardia, though typically more regular than atrial fibrillation, and occurs in patients with cardiac disease."
+        ],
+        [
+          "Multifocal atrial tachycardia",
+          "Irregular rhythm with tachycardia can occur in patients with cardiac disease, though decreased S1 intensity is less specific for this diagnosis."
+        ],
+        [
+          "Frequent premature atrial contractions",
+          "Can cause irregular rhythm and palpitations in cardiac patients, though sustained tachycardia of 125/min would be unusual."
+        ],
+        [
+          "Sick sinus syndrome with tachy-brady episodes",
+          "Can cause palpitations and lightheadedness with irregular rhythm, occurring in elderly patients with cardiac disease."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sinus tachycardia",
+          "Would present with regular rhythm, not the irregular rhythm found on examination."
+        ],
+        [
+          "Complete heart block",
+          "Would typically present with bradycardia rather than tachycardia at 125/min."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Atrial fibrillation with rapid ventricular response",
+          "ECG shows irregularly irregular rhythm without P waves, classic for atrial fibrillation, with heart rate of 125/min indicating poor rate control."
+        ],
+        [
+          "Atrial fibrillation with heart failure exacerbation",
+          "The combination of new-onset or poorly controlled atrial fibrillation and reduced LVEF (39%) with history of chronic heart failure suggests decompensation."
+        ],
+        [
+          "Atrial flutter with variable AV block",
+          "While less likely given absence of P waves, variable conduction could produce irregular rhythm and would explain palpitations and lightheadedness."
+        ],
+        [
+          "Multifocal atrial tachycardia",
+          "Can present with irregularly irregular rhythm in patients with cardiac disease, though typically shows at least some P wave morphology variations."
+        ],
+        [
+          "Sick sinus syndrome with atrial fibrillation",
+          "Episodic lightheadedness with palpitations in elderly patient with heart disease may indicate tachy-brady syndrome component."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Ventricular tachycardia",
+          "ECG findings of irregularly irregular rhythm without P waves are inconsistent with ventricular tachycardia, which typically has wide QRS complexes and regular or regularly irregular pattern."
+        ],
+        [
+          "Sinus tachycardia",
+          "Eliminated by absence of P waves and irregularly irregular rhythm on ECG."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Atrial fibrillation with rapid ventricular response",
+          "ECG shows irregularly irregular rhythm without P waves, confirmed by 24-hour Holter monitor with average heart rate 110 bpm and frequent episodes >140 bpm."
+        ],
+        [
+          "Atrial fibrillation with heart failure with reduced ejection fraction (HFrEF)",
+          "Patient has chronic heart failure history, LVEF 39%, and now confirmed atrial fibrillation causing symptomatic lightheadedness and palpitations."
+        ],
+        [
+          "Tachycardia-induced cardiomyopathy",
+          "Persistently elevated heart rate from uncontrolled atrial fibrillation may be contributing to or worsening the reduced LVEF of 39%."
+        ],
+        [
+          "Atrial fibrillation with hemodynamic instability",
+          "Frequent episodes of heart rate >140 bpm with symptoms of lightheadedness suggest inadequate cardiac output during rapid ventricular response."
+        ],
+        [
+          "Stroke risk from atrial fibrillation",
+          "Patient has multiple risk factors (age 62, heart failure, hypertension) placing her at high risk for thromboembolic events from atrial fibrillation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sinus tachycardia",
+          "Holter monitor confirms atrial fibrillation with irregularly irregular rhythm and absent P waves, not sinus rhythm."
+        ],
+        [
+          "Atrial flutter",
+          "ECG and Holter show irregularly irregular rhythm characteristic of atrial fibrillation rather than the regular pattern of atrial flutter."
+        ],
+        [
+          "Supraventricular tachycardia (other)",
+          "Holter monitor specifically confirms atrial fibrillation as the underlying rhythm disturbance."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Ventricular arrhythmia",
+            "Patient with structural heart disease (prior MI and CHF) is at high risk for ventricular tachycardia causing palpitations and lightheadedness."
+          ],
+          [
+            "Atrial fibrillation",
+            "Common arrhythmia in heart failure patients that causes palpitations and can lead to decreased cardiac output with lightheadedness."
+          ],
+          [
+            "Sinus node dysfunction",
+            "Heart failure and age increase risk for sick sinus syndrome causing episodic bradycardia with lightheadedness."
+          ],
+          [
+            "Atrioventricular block",
+            "Ischemic heart disease and heart failure can damage the conduction system leading to intermittent heart block."
+          ],
+          [
+            "Medication-related bradycardia or hypotension",
+            "Common cardiac medications (beta-blockers, diuretics, ACE inhibitors) can cause symptomatic bradycardia or orthostatic hypotension."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "Insufficient information at this stage to definitively rule out diagnoses."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Paroxysmal atrial fibrillation",
+            "Episodic palpitations and lightheadedness with currently normal rhythm suggests intermittent arrhythmia in a patient with heart failure risk factors."
+          ],
+          [
+            "Ventricular arrhythmia",
+            "History of myocardial infarction increases risk for ventricular tachycardia causing episodic symptoms despite currently regular rhythm."
+          ],
+          [
+            "Sick sinus syndrome",
+            "Episodic lightheadedness and palpitations may reflect intermittent bradycardia or tachycardia-bradycardia syndrome in this elderly patient."
+          ],
+          [
+            "Orthostatic hypotension",
+            "Lightheadedness episodes could be related to blood pressure fluctuations, particularly given chronic heart failure and potential medication use."
+          ],
+          [
+            "Premature ventricular contractions",
+            "Intermittent ectopic beats can cause palpitations and occasional lightheadedness in patients with structural heart disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute myocardial infarction",
+            "Patient is stable with normal vital signs and presenting for routine check-up with chronic episodic symptoms."
+          ],
+          [
+            "Acute heart failure exacerbation",
+            "Normal respiratory rate, no reported respiratory distress, and stable vital signs on routine visit."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Atrial fibrillation with reduced ejection fraction heart failure",
+            "Irregularly irregular rhythm without P waves on ECG is pathognomonic for atrial fibrillation, and LVEF of 39% confirms reduced ejection fraction heart failure."
+          ],
+          [
+            "Atrial fibrillation with rapid ventricular response (paroxysmal)",
+            "Episodic palpitations and lightheadedness suggest paroxysmal episodes, though current heart rate is controlled at 78/min."
+          ],
+          [
+            "Atrial flutter with variable AV block",
+            "Can present with irregularly irregular rhythm when AV conduction varies, though absence of flutter waves makes this less likely."
+          ],
+          [
+            "Multifocal atrial tachycardia",
+            "Can cause irregularly irregular rhythm without P waves in some leads, though typically seen in patients with severe pulmonary disease."
+          ],
+          [
+            "Sick sinus syndrome with atrial fibrillation",
+            "Episodic lightheadedness could suggest tachy-brady syndrome in elderly patient with underlying cardiac disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sinus rhythm with premature atrial contractions",
+            "ECG shows irregularly irregular rhythm with no discernible P waves, not regular sinus rhythm with occasional PACs."
+          ],
+          [
+            "Ventricular tachycardia",
+            "ECG shows irregularly irregular rhythm typical of atrial origin, not regular wide-complex ventricular rhythm."
+          ],
+          [
+            "Complete heart block",
+            "Would show regular ventricular escape rhythm with dissociated P waves, not irregularly irregular rhythm without P waves."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Atrial fibrillation with rapid ventricular response",
+            "ECG shows irregularly irregular rhythm without P waves, and Holter monitoring confirms atrial fibrillation with average HR 110 bpm and frequent episodes >140 bpm."
+          ],
+          [
+            "Atrial fibrillation with heart failure with reduced ejection fraction (HFrEF)",
+            "Patient has documented chronic heart failure with LVEF 39% and now presents with confirmed atrial fibrillation causing symptomatic palpitations and lightheadedness."
+          ],
+          [
+            "Tachycardia-induced cardiomyopathy",
+            "Prolonged rapid ventricular rates (frequent episodes >140 bpm) in atrial fibrillation may be contributing to or worsening the reduced LVEF of 39%."
+          ],
+          [
+            "Atrial fibrillation with hemodynamic instability",
+            "Episodic lightheadedness suggests periods of inadequate cardiac output, likely during episodes of heart rate exceeding 140 bpm in the setting of reduced baseline cardiac function."
+          ],
+          [
+            "Ischemic cardiomyopathy with atrial fibrillation",
+            "History of myocardial infarction explains the reduced LVEF, with atrial fibrillation as a common complication of structural heart disease."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Sinus rhythm variants",
+            "Holter monitor confirms atrial fibrillation, ruling out normal sinus rhythm or sinus arrhythmia."
+          ],
+          [
+            "Atrial flutter",
+            "ECG shows no discernible P waves and irregularly irregular rhythm, inconsistent with the regular sawtooth pattern of atrial flutter."
+          ],
+          [
+            "Other supraventricular tachycardias (AVNRT, AVRT)",
+            "Holter confirms atrial fibrillation rather than paroxysmal regular SVTs."
+          ]
+        ]
+      },
+      "cf_id": "case_006_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's heart rate is regular at 78/min, which argues against atrial fibrillation."
+    }
+  ]
+}

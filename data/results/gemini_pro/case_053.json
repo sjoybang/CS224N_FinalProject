@@ -1,0 +1,277 @@
+{
+  "case_id": "case_053",
+  "model": "gemini_pro",
+  "ground_truth": "Nephrotic syndrome",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Nephrotic syndrome",
+          "This is the classic presentation for minimal change disease, the most common cause of nephrotic syndrome in this age group."
+        ],
+        [
+          "Allergic reaction",
+          "Periorbital angioedema is a common manifestation of an allergic response to food, medication, or environmental triggers in children."
+        ],
+        [
+          "Acute glomerulonephritis",
+          "This renal condition causes sodium and water retention leading to edema, which often manifests first in the periorbital region."
+        ],
+        [
+          "Periorbital cellulitis",
+          "This is a common infection of the eyelid and surrounding tissues that presents with swelling, though it is often unilateral and inflammatory."
+        ],
+        [
+          "Sinusitis",
+          "Inflammation of the adjacent ethmoid sinuses can cause inflammatory edema that drains into the periorbital tissues."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Orbital cellulitis",
+          "The absence of reported pain with eye movements, proptosis, or vision changes makes this more severe infection unlikely."
+        ],
+        [
+          "Congestive heart failure",
+          "Isolated periorbital edema is an atypical primary presentation for heart failure in a child, which usually involves more prominent respiratory or systemic signs."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Minimal Change Disease",
+          "This is the most common cause of nephrotic syndrome in children, perfectly matching the patient's age and presentation of anasarca with hypotension."
+        ],
+        [
+          "Focal Segmental Glomerulosclerosis",
+          "This is another primary cause of nephrotic syndrome in children that can present identically to minimal change disease with massive edema."
+        ],
+        [
+          "Membranoproliferative Glomerulonephritis",
+          "This glomerular disease can present with nephrotic syndrome and severe edema, although it is less common than minimal change disease in this age group."
+        ],
+        [
+          "Acute Poststreptococcal Glomerulonephritis",
+          "While typically causing a nephritic picture with hypertension, this common pediatric condition can present with nephrotic-range proteinuria and severe edema."
+        ],
+        [
+          "Protein-Losing Enteropathy",
+          "This non-renal cause of severe protein loss leads to hypoalbuminemia and generalized edema, which fits the patient's presentation."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Congestive Heart Failure",
+          "The absence of respiratory signs, cardiac murmurs, or hepatomegaly on exam makes a primary cardiac cause of edema less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Minimal Change Disease",
+          "This is the most common cause of nephrotic syndrome in children and perfectly matches the presentation of anasarca, massive proteinuria, hypoalbuminemia, and normal complement levels."
+        ],
+        [
+          "Focal Segmental Glomerulosclerosis",
+          "This is the second most common cause of idiopathic nephrotic syndrome in children and can present with a clinical and laboratory picture indistinguishable from minimal change disease."
+        ],
+        [
+          "Membranous Nephropathy",
+          "Although less common in children than adults, this is a cause of primary nephrotic syndrome that would present with massive proteinuria and edema."
+        ],
+        [
+          "Membranoproliferative Glomerulonephritis",
+          "This is a cause of nephrotic syndrome in childhood, but is ranked lower due to the patient's normal serum complement levels."
+        ],
+        [
+          "Lupus Nephritis",
+          "While rare in this age group and typically presenting with other systemic findings, it is a potential secondary cause of a purely nephrotic picture."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Post-streptococcal Glomerulonephritis",
+          "This diagnosis is excluded by the absence of hematuria and the presence of normal complement levels, as it typically presents as a nephritic syndrome with low complements."
+        ],
+        [
+          "Allergic Angioedema",
+          "This is ruled out by the presence of pitting lower extremity edema, massive proteinuria, and hypoalbuminemia, which are not features of an allergic reaction."
+        ],
+        [
+          "Congestive Heart Failure",
+          "This is excluded as the primary cause of edema by the presence of nephrotic-range proteinuria and profound hypoalbuminemia, indicating a renal origin."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Minimal Change Disease",
+          "The patient's age, classic nephrotic syndrome presentation, and pathognomonic biopsy finding of diffuse podocyte foot process effacement make this the definitive diagnosis."
+        ],
+        [
+          "Focal Segmental Glomerulosclerosis",
+          "This is the second most common cause of idiopathic nephrotic syndrome in children and also shows podocyte effacement, but the biopsy did not show the characteristic segmental scarring."
+        ],
+        [
+          "Genetic Podocytopathy",
+          "Certain genetic defects can present with nephrotic syndrome and podocyte effacement on biopsy, mimicking minimal change disease clinically and histologically."
+        ],
+        [
+          "Membranoproliferative Glomerulonephritis",
+          "This is a less likely cause of childhood nephrotic syndrome, typically presenting with low complement and different biopsy findings than what was observed."
+        ],
+        [
+          "Membranous Nephropathy",
+          "This is a rare cause of nephrotic syndrome in young children and is ruled out by the biopsy, which lacked the characteristic subepithelial immune deposits."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Post-streptococcal glomerulonephritis",
+          "This is ruled out by the nephrotic-range proteinuria, lack of hematuria, and normal serum complement levels."
+        ],
+        [
+          "IgA Nephropathy",
+          "This diagnosis is inconsistent with a pure nephrotic syndrome presentation, as it typically causes episodic gross hematuria."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Nephrotic Syndrome",
+            "Periorbital edema is the classic initial presentation of nephrotic syndrome in a young child."
+          ],
+          [
+            "Allergic Reaction",
+            "Acute onset of periorbital edema is a common manifestation of a localized or systemic allergic response (angioedema)."
+          ],
+          [
+            "Acute Glomerulonephritis",
+            "This renal disease is a common cause of edema in the pediatric population, often presenting with facial swelling."
+          ],
+          [
+            "Periorbital Cellulitis",
+            "This is an infection of the eyelid and surrounding tissues that presents with swelling, though it is often also associated with erythema and warmth."
+          ],
+          [
+            "Sinusitis",
+            "Inflammation of the ethmoid sinuses can lead to periorbital edema due to their close anatomical proximity to the orbits."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Minimal Change Disease",
+            "This is the most common cause of nephrotic syndrome and massive edema in this age group, and the rash may be from a concurrent viral illness."
+          ],
+          [
+            "Post-infectious Glomerulonephritis",
+            "A recent infection, suggested by the rash, could have triggered an acute nephritic syndrome leading to edema."
+          ],
+          [
+            "Henoch-Sch\u00f6nlein Purpura (IgA Vasculitis)",
+            "This systemic vasculitis is common in children and can present with a rash and significant non-purpuric edema before other classic signs appear."
+          ],
+          [
+            "Acute Interstitial Nephritis",
+            "This condition can be triggered by infections or drugs, presenting with a characteristic rash and renal dysfunction causing edema."
+          ],
+          [
+            "Systemic Lupus Erythematosus",
+            "Although less common in this demographic, lupus nephritis can cause a nephrotic picture with edema, and the maculopapular rash is a possible cutaneous manifestation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Allergic Reaction",
+            "The presence of 3+ pitting edema points towards a systemic fluid retention or protein-losing state rather than the non-pitting edema of angioedema."
+          ],
+          [
+            "Congestive Heart Failure",
+            "The absence of respiratory distress, murmur, or hepatomegaly makes a primary cardiac etiology for the edema less likely."
+          ],
+          [
+            "Liver Failure",
+            "This is a rare cause of anasarca in a young child and would likely be accompanied by other signs such as jaundice or hepatosplenomegaly."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Minimal Change Disease",
+            "This is the most common cause of nephrotic syndrome in children, perfectly matching the patient's age and presentation with massive proteinuria, hypoalbuminemia, edema, and normal complements."
+          ],
+          [
+            "Focal Segmental Glomerulosclerosis (FSGS)",
+            "This is the second most common cause of idiopathic nephrotic syndrome in children and is clinically indistinguishable from minimal change disease at initial presentation."
+          ],
+          [
+            "Membranous Nephropathy",
+            "Although more common in adults, this can cause nephrotic syndrome in children and presents with heavy proteinuria and edema."
+          ],
+          [
+            "Drug-induced Nephrotic Syndrome",
+            "The combination of a rash and nephrotic syndrome could represent an allergic reaction to a medication (e.g., NSAIDs) causing glomerular and/or interstitial disease."
+          ],
+          [
+            "Henoch-Sch\u00f6nlein Purpura (HSP) Nephritis",
+            "This systemic vasculitis is considered due to the concurrent rash and nephrotic syndrome, although the rash is not classically purpuric and hematuria is absent."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Post-infectious Glomerulonephritis",
+            "This typically presents as a nephritic syndrome with hematuria, hypertension, and low complement levels, all of which are absent in this case."
+          ],
+          [
+            "Lupus Nephritis",
+            "This is unlikely given the patient's young age, male sex, and normal serum complement concentrations."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Minimal Change Disease",
+            "The definitive diagnosis is confirmed by electron microscopy showing diffuse effacement of podocyte foot processes in a child with classic nephrotic syndrome."
+          ],
+          [
+            "Focal Segmental Glomerulosclerosis (FSGS)",
+            "This is the next most likely cause of primary nephrotic syndrome in children, which is differentiated from minimal change disease by the presence of segmental scarring on biopsy."
+          ],
+          [
+            "Membranous Nephropathy",
+            "This is a less common cause of pediatric nephrotic syndrome that is excluded by the biopsy, which would have shown subepithelial immune deposits."
+          ],
+          [
+            "Membranoproliferative Glomerulonephritis (MPGN)",
+            "This diagnosis is unlikely due to normal complement levels and is definitively ruled out by the biopsy, which lacks the characteristic features of mesangial hypercellularity and thickened capillary walls."
+          ],
+          [
+            "Lupus Nephritis",
+            "This systemic cause of nephrotic syndrome is very unlikely given the patient's age and lack of other systemic features, and is excluded by the absence of immune complex deposition on biopsy."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Post-infectious Glomerulonephritis",
+            "This is ruled out by the purely nephrotic presentation (no hematuria), normal serum complements, and biopsy findings inconsistent with post-infectious changes."
+          ]
+        ]
+      },
+      "cf_id": "case_053_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The presence of a rash argues against nephrotic syndrome, which typically does not present with dermatological findings."
+    }
+  ]
+}

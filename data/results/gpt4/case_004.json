@@ -1,0 +1,252 @@
+{
+  "case_id": "case_004",
+  "model": "gpt4",
+  "ground_truth": "Scorpion sting",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Acute pancreatitis",
+          "The severe abdominal pain radiating to the back and nausea are classic symptoms of acute pancreatitis."
+        ],
+        [
+          "Peptic ulcer disease",
+          "Abdominal pain that worsens over time and radiates to the back can be indicative of a peptic ulcer."
+        ],
+        [
+          "Cholecystitis",
+          "The location and nature of the pain could suggest inflammation of the gallbladder."
+        ],
+        [
+          "Nephrolithiasis",
+          "Kidney stones can cause severe abdominal pain that radiates to the back."
+        ],
+        [
+          "Gastritis",
+          "Inflammation of the stomach lining can cause abdominal pain and nausea."
+        ]
+      ],
+      "eliminated": []
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Acute Pancreatitis",
+          "The severe abdominal pain radiating to the back and nausea are classic symptoms of acute pancreatitis."
+        ],
+        [
+          "Cholecystitis",
+          "The abdominal pain and nausea could also indicate inflammation of the gallbladder, especially in an obese patient."
+        ],
+        [
+          "Abdominal Aortic Aneurysm",
+          "The combination of abdominal pain radiating to the back and weak radial pulses raises concern for a vascular issue such as an aneurysm."
+        ],
+        [
+          "Gastroenteritis",
+          "The nausea and abdominal pain could be due to an infectious cause, although the lack of fever makes this less likely."
+        ],
+        [
+          "Cellulitis",
+          "The swollen, erythematous, and painful left ankle suggests a possible skin infection, which could be related to her systemic symptoms."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myocardial Infarction",
+          "The clear lung sounds and lack of chest pain make a cardiac cause less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute pancreatitis",
+          "The abdominal CT confirms the presence of acute pancreatitis, which aligns with the patient's severe abdominal pain radiating to the back."
+        ],
+        [
+          "Scorpion sting envenomation",
+          "The recent scorpion sting could contribute to systemic symptoms such as abdominal pain and autonomic instability."
+        ],
+        [
+          "Deep vein thrombosis (DVT)",
+          "The swollen, erythematous, and painful left ankle raises suspicion for DVT, especially given the patient's use of oral contraceptives."
+        ],
+        [
+          "Hypothyroidism-related myopathy",
+          "The patient's hypothyroidism could contribute to muscle pain and weakness, potentially exacerbating her symptoms."
+        ],
+        [
+          "Hypertensive crisis",
+          "Although her blood pressure is not extremely high, her history of hypertension and current symptoms could suggest a hypertensive complication."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myocardial infarction",
+          "The clear lung auscultation and lack of chest pain make this less likely."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Acute pancreatitis",
+          "The abdominal CT findings, elevated serum amylase and lipase, and the known association of Tityus scorpion venom with pancreatitis strongly support this diagnosis."
+        ],
+        [
+          "Scorpion envenomation",
+          "The presence of scorpion venom in the serum and recent history of a Tityus scorpion sting align with symptoms of envenomation, which can include systemic effects like pancreatitis."
+        ],
+        [
+          "Hypotension secondary to pancreatitis",
+          "The patient's low blood pressure and weak pulses may be due to systemic inflammation and fluid shifts associated with acute pancreatitis."
+        ],
+        [
+          "Cellulitis",
+          "The swollen, erythematous, and painful left ankle suggests a localized infection, possibly cellulitis, unrelated to the abdominal symptoms."
+        ],
+        [
+          "Hypothyroidism",
+          "Although not directly related to the acute presentation, hypothyroidism is part of the patient's medical history and could contribute to her overall unwell appearance."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Myocardial infarction",
+          "The clear lung sounds, regular heart rhythm, and lack of chest pain make this unlikely."
+        ],
+        [
+          "Pulmonary embolism",
+          "The absence of respiratory distress or significant hypoxia reduces the likelihood of this condition."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Acute pancreatitis",
+            "The severe abdominal pain radiating to the back and nausea are classic symptoms of acute pancreatitis."
+          ],
+          [
+            "Peptic ulcer disease",
+            "Abdominal pain that worsens over time and radiates to the back can be indicative of a peptic ulcer."
+          ],
+          [
+            "Cholecystitis",
+            "The gradual increase in abdominal pain and nausea could suggest inflammation of the gallbladder."
+          ],
+          [
+            "Nephrolithiasis",
+            "Kidney stones can cause severe abdominal pain that radiates to the back, along with nausea."
+          ],
+          [
+            "Gastritis",
+            "Inflammation of the stomach lining can cause abdominal pain and nausea, although radiation to the back is less common."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Acute pancreatitis",
+            "The severe abdominal pain radiating to the back, along with nausea, is characteristic of acute pancreatitis, especially in an obese patient."
+          ],
+          [
+            "Cholecystitis",
+            "The abdominal pain and nausea could also suggest cholecystitis, which is common in obese individuals and can present similarly."
+          ],
+          [
+            "Peptic ulcer disease",
+            "The abdominal pain radiating to the back could be due to a perforated peptic ulcer, which can cause severe pain and nausea."
+          ],
+          [
+            "Aortic dissection",
+            "The severe abdominal pain radiating to the back and weak radial pulses could indicate aortic dissection, although less common in this demographic."
+          ],
+          [
+            "Mesenteric ischemia",
+            "The abdominal pain and systemic signs could suggest mesenteric ischemia, especially with weak pulses indicating possible vascular compromise."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Anaphylaxis",
+            "The absence of swelling, erythema, or pain at the site of the reported sting and stable vital signs make anaphylaxis unlikely."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute Pancreatitis",
+            "The abdominal CT confirms the presence of acute pancreatitis, which aligns with the patient's symptoms of severe abdominal pain radiating to the back and nausea."
+          ],
+          [
+            "Scorpion Sting",
+            "The recent scorpion sting could contribute to the patient's symptoms, as some scorpion venoms can cause systemic effects including abdominal pain."
+          ],
+          [
+            "Gallstone Pancreatitis",
+            "The patient's obesity and female gender are risk factors for gallstones, which can lead to pancreatitis."
+          ],
+          [
+            "Drug-Induced Pancreatitis",
+            "The use of medications such as oral contraceptive pills and aspirin could potentially contribute to pancreatitis."
+          ],
+          [
+            "Hypertriglyceridemia-Induced Pancreatitis",
+            "Obesity and the use of oral contraceptives can be associated with elevated triglyceride levels, which is a known cause of pancreatitis."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myocardial Infarction",
+            "The clear lung sounds and lack of chest pain or other cardiac symptoms make this unlikely."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Acute Pancreatitis",
+            "The abdominal CT findings, elevated serum amylase and lipase levels, and the known association of Tityus scorpion venom with pancreatitis strongly support this diagnosis."
+          ],
+          [
+            "Scorpion Envenomation",
+            "The presence of scorpion venom in the serum and the history of a recent sting by a Tityus species indicate envenomation."
+          ],
+          [
+            "Hypotension",
+            "The patient's low blood pressure and weak radial pulses suggest hypotension, possibly secondary to pancreatitis or envenomation."
+          ],
+          [
+            "Nausea and Vomiting",
+            "Common symptoms associated with acute pancreatitis and scorpion envenomation, consistent with the patient's presentation."
+          ],
+          [
+            "Tachycardia",
+            "The elevated heart rate could be a physiological response to pain, stress, or hypotension related to pancreatitis or envenomation."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Myocardial Infarction",
+            "The absence of chest pain, normal heart examination, and clear lung auscultation make this unlikely."
+          ],
+          [
+            "Appendicitis",
+            "The CT findings and symptomatology are more consistent with pancreatitis rather than appendicitis."
+          ]
+        ]
+      },
+      "cf_id": "case_004_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The absence of local findings at the sting site argues against scorpion envenomation."
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "case_id": "case_001",
+  "model": "gemini",
+  "ground_truth": "Cystitis",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Urinary tract infection",
+          "Burning upon urination is a classic symptom of UTI."
+        ],
+        [
+          "Pyelonephritis",
+          "Ascending infection from the lower urinary tract could cause pyelonephritis, especially given the pregnancy."
+        ],
+        [
+          "Vaginitis",
+          "Vaginal inflammation can cause urinary symptoms like burning."
+        ],
+        [
+          "Urethritis",
+          "Inflammation of the urethra can cause dysuria."
+        ],
+        [
+          "Asymptomatic bacteriuria",
+          "Pregnant women are at increased risk, and it can sometimes present with mild dysuria."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Gastroenteritis",
+          "No gastrointestinal symptoms reported."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Urinary tract infection",
+          "Burning upon urination is a classic symptom, making it the most likely diagnosis."
+        ],
+        [
+          "Asymptomatic bacteriuria",
+          "Pregnant women are at increased risk, and the patient may be experiencing mild symptoms."
+        ],
+        [
+          "Vulvovaginitis",
+          "Inflammation of the vulva or vagina could cause dysuria."
+        ],
+        [
+          "Kidney stone",
+          "Although CVA tenderness is absent, a small stone could still be present."
+        ],
+        [
+          "Dehydration",
+          "Concentrated urine due to dehydration can cause burning upon urination."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pyelonephritis",
+          "Absence of fever and CVA tenderness makes this less likely."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Acute cystitis",
+          "The presence of dysuria, positive leukocyte esterase and nitrites, and WBCs/bacteria in the urine strongly suggest a lower urinary tract infection."
+        ],
+        [
+          "Asymptomatic bacteriuria",
+          "Pregnant women are screened for this condition, and while symptomatic now, it could have initially presented asymptomatically."
+        ],
+        [
+          "Pyelonephritis",
+          "Although CVA tenderness is absent, pyelonephritis can sometimes present without it, and the urinalysis findings warrant consideration."
+        ],
+        [
+          "Urethritis",
+          "While less likely given the urinalysis findings, urethritis could present with dysuria and pyuria."
+        ],
+        [
+          "Vaginitis",
+          "Vaginitis can sometimes cause urinary symptoms and should be considered in the differential, although the urinalysis makes this less likely."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Kidney stones",
+          "No flank pain or hematuria reported."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Cystitis",
+          "The patient's symptoms of dysuria, positive leukocyte esterase and nitrites, and significant bacteriuria on culture strongly suggest a lower urinary tract infection."
+        ],
+        [
+          "Asymptomatic bacteriuria in pregnancy",
+          "Although symptomatic, the high bacterial load of E. coli could represent asymptomatic bacteriuria, which is common in pregnancy."
+        ],
+        [
+          "Pyelonephritis",
+          "While CVA tenderness is absent, pyelonephritis can sometimes present without it, and the presence of bacteria and WBCs warrants consideration."
+        ],
+        [
+          "Urethritis",
+          "Although less likely given the culture results, urethritis could contribute to dysuria and pyuria."
+        ],
+        [
+          "Vaginitis",
+          "Vaginitis can sometimes cause urinary symptoms, although the urinalysis results make this less likely as the primary diagnosis."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Kidney stones",
+          "No hematuria or flank pain reported."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Urinary tract infection",
+            "Burning upon urination is a classic symptom of UTI."
+          ],
+          [
+            "Pyelonephritis",
+            "Ascending infection from the lower urinary tract could cause pyelonephritis, especially given the pregnancy."
+          ],
+          [
+            "Vaginitis",
+            "Vaginal inflammation can cause urinary symptoms like burning."
+          ],
+          [
+            "Urethritis",
+            "Inflammation of the urethra can cause dysuria."
+          ],
+          [
+            "Asymptomatic bacteriuria",
+            "Pregnant women are at increased risk, and it can sometimes present with mild dysuria."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Gastroenteritis",
+            "No gastrointestinal symptoms reported."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Pyelonephritis",
+            "Right CVA tenderness in a pregnant woman with dysuria suggests possible pyelonephritis."
+          ],
+          [
+            "Cystitis",
+            "Dysuria in a young, pregnant woman is highly suggestive of cystitis."
+          ],
+          [
+            "Nephrolithiasis",
+            "Right CVA tenderness could indicate a kidney stone, although dysuria is less typical."
+          ],
+          [
+            "Appendicitis",
+            "While less likely, appendicitis can present with atypical symptoms in pregnancy, including right-sided pain."
+          ],
+          [
+            "Labor",
+            "Although less likely given the dysuria, back pain and abdominal discomfort could be early signs of preterm labor."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Asymptomatic bacteriuria",
+            "Patient is symptomatic."
+          ]
+        ]
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Acute pyelonephritis",
+            "Right CVA tenderness, positive leukocyte esterase and nitrites, and high WBC count strongly suggest kidney infection."
+          ],
+          [
+            "Cystitis",
+            "While pyelonephritis is more likely, cystitis can present with similar urinary symptoms and positive urinalysis findings."
+          ],
+          [
+            "Asymptomatic bacteriuria",
+            "Pregnant women are at increased risk, and the patient may have bacteria without significant symptoms beyond dysuria."
+          ],
+          [
+            "Ureterolithiasis",
+            "Right CVA tenderness could indicate a kidney stone, although urinary infection is more likely given the urinalysis results."
+          ],
+          [
+            "Appendicitis",
+            "Although less likely given the urinary symptoms, right-sided pain in pregnancy can sometimes be atypical and appendicitis should be considered."
+          ]
+        ],
+        "eliminated": [
+          [
+            "None",
+            "No diagnoses have been definitively ruled out."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Acute pyelonephritis",
+            "Right CVA tenderness, positive urine culture with E. coli, and pyuria strongly suggest kidney infection."
+          ],
+          [
+            "Cystitis",
+            "While pyelonephritis is more likely, cystitis could still be present given the dysuria, positive urinalysis, and bacteriuria."
+          ],
+          [
+            "Asymptomatic bacteriuria",
+            "Although the patient is symptomatic, asymptomatic bacteriuria is common in pregnancy and should be considered."
+          ],
+          [
+            "Ureterolithiasis",
+            "Right CVA tenderness could indicate a kidney stone, although the urinalysis is more suggestive of infection."
+          ],
+          [
+            "Appendicitis",
+            "Although less likely given the urinary symptoms, appendicitis can present atypically in pregnancy with right-sided pain."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Vaginitis",
+            "No vaginal symptoms were reported."
+          ]
+        ]
+      },
+      "cf_id": "case_001_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient has marked CVA tenderness, which argues against uncomplicated cystitis."
+    }
+  ]
+}
