@@ -1,26 +1,11 @@
 """
-Metrics
-=======
-Computes the three process-oriented evaluation metrics from the milestone
-across all evaluated cases for one or more models.
-
-Metrics:
-  - Top-1 / Top-5 Accuracy     : ground truth in rank-1 / top-5 at final stage
-  - Reintroduction Error (RE↓) : eliminated diagnoses that reappear in later stages
-  - KL Divergence (↑)          : belief shift between base and counterfactual distributions
-  - Cross-Step Consistency (↑) : eliminated diagnoses that stay excluded in all later stages
-
-Usage:
-    python metrics.py --results_dir data/results
-    python metrics.py --results_dir data/results --model gemini
+Computes the three process-oriented evaluation metrics.
 """
 
 import json
 import math
 import argparse
 from pathlib import Path
-
-# ── Distribution helpers ──────────────────────────────────────────────────────
 
 def rank_to_dist(differential: list) -> dict:
     """Convert ranked differential list → reciprocal-rank probability distribution."""
@@ -39,8 +24,6 @@ def kl_divergence(p: dict, q: dict, epsilon: float = 1e-8) -> float:
         for d in diagnoses
     )
 
-# ── Per-case metrics ──────────────────────────────────────────────────────────
-
 def top_k_accuracy(stage_results: dict, ground_truth: str, k: int) -> float:
     """1 if ground_truth appears in top-k of final stage differential, else 0."""
     final = stage_results.get("stage_4", {}).get("differential", [])
@@ -54,7 +37,7 @@ def reintroduction_error(stage_results: dict) -> float:
     Lower is better.
     """
     errors = []
-    for t in range(1, 4):  # stages 1, 2, 3 — check if eliminated reappear in t+1
+    for t in range(1, 4): 
         elim_t = {d.lower() for d, _ in stage_results.get(f"stage_{t}", {}).get("eliminated", [])}
         if not elim_t:
             continue
@@ -106,8 +89,6 @@ def evidence_sensitivity(base_results: dict, cf_results: dict, altered_stage: in
 
     return sum(kl_values) / len(kl_values) if kl_values else 0.0
 
-# ── Aggregate over all cases ──────────────────────────────────────────────────
-
 def compute_metrics(results_dir: Path, model: str) -> dict:
     model_dir = results_dir / model
     result_files = sorted(model_dir.glob("case_*.json"))
@@ -148,8 +129,6 @@ def compute_metrics(results_dir: Path, model: str) -> dict:
         "consistency": avg(cons_scores),
     }
 
-# ── Pretty print ──────────────────────────────────────────────────────────────
-
 def print_table(rows: list[dict]):
     if not rows:
         print("No results to display.")
@@ -175,8 +154,6 @@ def print_table(rows: list[dict]):
         ]
         print("  ".join(fmt(v).ljust(w) for v, w in zip(vals, col_w)))
     print()
-
-# ── CLI ───────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Compute evaluation metrics")

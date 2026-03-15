@@ -1,40 +1,9 @@
 """
-Evaluation Pipeline
-===================
 For each staged case JSON, runs a model stage-by-stage (cumulative context)
 on both base and counterfactual variants. Saves ranked differentials and
 eliminated lists for downstream metric computation.
 
-Supported models:
-  gemini    — Gemini 2.0 Flash via Vertex AI (uses GCP credentials)
-  biogpt    — microsoft/biogpt via HuggingFace (runs locally)
-  gpt4      — GPT-4 via OpenAI API (requires --openai_key)
-  gpt35     — GPT-3.5-turbo via OpenAI API (requires --openai_key)
-
-Output schema per case (data/results/{model}/case_001.json):
-  {
-    "case_id": "case_001",
-    "model": "gemini",
-    "ground_truth": "Pneumonia",
-    "base": {
-      "stage_1": {"differential": [["Dx", "justification"], ...], "eliminated": [["Dx", "reason"], ...]},
-      "stage_2": { ... },
-      "stage_3": { ... },
-      "stage_4": { ... }
-    },
-    "counterfactuals": [
-      {
-        "cf_id": "case_001_cf_a",
-        "altered_stage": 2,
-        "stage_1": { ... }, ..., "stage_4": { ... }
-      }
-    ]
-  }
-
-Usage:
-    python evaluate.py --model gemini --project cs224n-487206 --data_dir data/staged --output_dir data/results
-    python evaluate.py --model biogpt --data_dir data/staged --output_dir data/results
-    python evaluate.py --model gpt4 --openai_key YOUR_KEY --data_dir data/staged --output_dir data/results
+Output one JSON file per case.
 """
 
 import os
@@ -43,9 +12,6 @@ import json
 import time
 import argparse
 from pathlib import Path
-from typing import Optional
-
-# ── Prompt ────────────────────────────────────────────────────────────────────
 
 EVAL_PROMPT = """You are a medical reasoning assistant. This is a research evaluation; do NOT give medical advice.
 
@@ -85,8 +51,6 @@ def build_prompt(stages_so_far: list[str], stage_num: int, total_stages: int = 4
         case_text=case_text,
     )
 
-# ── Output parser ─────────────────────────────────────────────────────────────
-
 def parse_output(text: str) -> dict:
     """Parse model output into differential and eliminated lists."""
     differential = []
@@ -109,8 +73,6 @@ def parse_output(text: str) -> dict:
 
     return {"differential": differential, "eliminated": eliminated}
 
-# ── Model backends ────────────────────────────────────────────────────────────
-
 class GeminiModel:
     def __init__(self, project: str, location: str = "us-central1", model_name: str = "gemini-2.0-flash-001"):
         from google import genai
@@ -127,22 +89,6 @@ class GeminiModel:
         )
         return response.text.strip()
 
-
-
-class ClaudeVertexModel:
-    def __init__(self, project: str, region: str = "global"):
-        from anthropic import AnthropicVertex
-        self.client = AnthropicVertex(project_id=project, region=region)
-
-    def generate(self, prompt: str) -> str:
-        response = self.client.messages.create(
-            model="claude-sonnet-4-5@20250929",
-            max_tokens=1024,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        return response.content[0].text.strip()
-
-
 class ClaudeDirectModel:
     def __init__(self, api_key: str, model_name: str = "claude-sonnet-4-5-20250929"):
         from anthropic import Anthropic
@@ -156,7 +102,6 @@ class ClaudeDirectModel:
             messages=[{"role": "user", "content": prompt}],
         )
         return response.content[0].text.strip()
-
 
 class OpenAIModel:
     def __init__(self, api_key: str, model_name: str = "gpt-4"):
@@ -178,48 +123,16 @@ GEMINI_MODEL_NAMES = {
     "gemini_pro": "gemini-2.5-pro",
 }
 
-VLLM_MODEL_NAMES = {
-    "llama3":     "meta-llama/Meta-Llama-3-8B-Instruct",
-    "mistral":    "mistralai/Mistral-7B-Instruct-v0.2",
-    "mixtral":    "mistralai/Mixtral-8x7B-Instruct-v0.1",
-    "medalpaca":  "medalpaca/medalpaca-13b",
-    "meditron":   "meditron:latest",
-}
-
-
-class VLLMModel:
-    """Calls a locally running vLLM server via its OpenAI-compatible API."""
-    def __init__(self, model_name: str, base_url: str = "http://localhost:8000/v1"):
-        from openai import OpenAI
-        self.client = OpenAI(api_key="EMPTY", base_url=base_url)
-        self.model_name = model_name
-
-    def generate(self, prompt: str) -> str:
-        response = self.client.chat.completions.create(
-            model=self.model_name,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0,
-            max_tokens=1024,
-        )
-        return response.choices[0].message.content.strip()
-
 
 def load_model(args):
     if args.model in GEMINI_MODEL_NAMES:
         return GeminiModel(project=args.project, location=args.location, model_name=GEMINI_MODEL_NAMES[args.model])
     elif args.model == "claude":
-        if args.anthropic_key:
-            return ClaudeDirectModel(api_key=args.anthropic_key)
-        return ClaudeVertexModel(project=args.project)
-    elif args.model in ("gpt4", "gpt35"):
-        model_name = "gpt-4o" if args.model == "gpt4" else "gpt-3.5-turbo"
-        return OpenAIModel(api_key=args.openai_key, model_name=model_name)
-    elif args.model in VLLM_MODEL_NAMES:
-        return VLLMModel(model_name=VLLM_MODEL_NAMES[args.model], base_url=args.vllm_url)
+        return ClaudeDirectModel(api_key=args.anthropic_key)
+    elif args.model == "gpt4":
+        return OpenAIModel(api_key=args.openai_key, model_name="gpt-4o")
     else:
         raise ValueError(f"Unknown model: {args.model}")
-
-# ── Per-variant evaluation ────────────────────────────────────────────────────
 
 def evaluate_variant(model, stages: dict, delay: float = 0.5) -> dict:
     """
@@ -245,8 +158,6 @@ def evaluate_variant(model, stages: dict, delay: float = 0.5) -> dict:
         time.sleep(delay)
 
     return results
-
-# ── Main pipeline ─────────────────────────────────────────────────────────────
 
 def run_evaluation(args):
     data_path = Path(args.data_dir)
@@ -281,11 +192,9 @@ def run_evaluation(args):
             "counterfactuals": [],
         }
 
-        # Base case
         print("  Base case ...")
         result["base"] = evaluate_variant(model, case["base"], delay=args.delay)
 
-        # Counterfactuals
         for cf in case.get("counterfactuals", []):
             print(f"  Counterfactual {cf['cf_id']} ...")
             cf_stages = {
@@ -306,13 +215,10 @@ def run_evaluation(args):
 
     print(f"\nDone. Results in {out_path.resolve()}")
 
-# ── CLI ───────────────────────────────────────────────────────────────────────
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate models on staged DDx dataset")
     parser.add_argument("--model", required=True,
-                        choices=["gemini", "gemini_pro", "claude", "gpt4", "gpt35",
-                                 "llama3", "mistral", "mixtral", "medalpaca", "meditron"],
+                        choices=["gemini", "gemini_pro", "claude", "gpt4"],
                         help="Model to evaluate")
     parser.add_argument("--data_dir", default="data/staged",
                         help="Directory of staged case JSONs")
@@ -323,22 +229,13 @@ if __name__ == "__main__":
     parser.add_argument("--location", default="us-central1",
                         help="Vertex AI region (for gemini)")
     parser.add_argument("--openai_key", default=os.environ.get("OPENAI_API_KEY"),
-                        help="OpenAI API key (for gpt4/gpt35)")
+                        help="OpenAI API key (for gpt4)")
     parser.add_argument("--anthropic_key", default=os.environ.get("ANTHROPIC_API_KEY"),
                         help="Anthropic API key (for claude direct)")
     parser.add_argument("--delay", type=float, default=0.5,
                         help="Seconds between API calls (default: 0.5)")
-    parser.add_argument("--vllm_url", default="http://localhost:8000/v1",
-                        help="vLLM server base URL (for llama3/mistral/mixtral/medalpaca)")
     parser.add_argument("--overwrite", action="store_true",
                         help="Re-evaluate cases that already have output files")
     args = parser.parse_args()
-
-    if args.model in ("gemini", "gemini_pro") and not args.project:
-        raise ValueError("--project required for gemini models")
-    if args.model == "claude" and not args.anthropic_key and not args.project:
-        raise ValueError("--anthropic_key or --project required for claude")
-    if args.model in ("gpt4", "gpt35") and not args.openai_key:
-        raise ValueError("--openai_key required for gpt4/gpt35 models")
 
     run_evaluation(args)

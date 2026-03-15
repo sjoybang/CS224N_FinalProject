@@ -1,18 +1,10 @@
 """
-Dataset Construction Pipeline
-==============================
 Loads USMLE-style questions from HuggingFace (bigbio/med_qa),
 filters for clinical vignette cases, then uses an LLM to:
   1. Decompose each question into 4 sequential evidence stages
   2. Generate 1-2 counterfactual variants by swapping a discriminative finding
 
-Output: one JSON file per case in data/staged/ and data/counterfactuals/
-
-Usage:
-    python construct_dataset.py \
-        --n_cases 60 \
-        --project YOUR_GCP_PROJECT_ID \
-        --output_dir data/staged
+Output one JSON file per case.
 """
 
 import os
@@ -25,8 +17,6 @@ from typing import Optional
 
 from google import genai
 from google.genai import types
-
-# ── HuggingFace dataset loading ──────────────────────────────────────────────
 
 def load_medqa(n_cases: int, split: str = "train") -> list[dict]:
     """
@@ -80,12 +70,10 @@ def _normalize_record(item: dict) -> dict:
     """
     Normalize across GBaker and bigbio schemas into a consistent dict.
     """
-    # GBaker schema
     if "options" in item and isinstance(item["options"], dict):
         options = item["options"]
         answer_idx = item.get("answer_idx", "A")
         answer_text = options.get(answer_idx, "")
-    # bigbio schema uses "choices" list
     elif "choices" in item:
         choices = item["choices"]
         answer_idx = item.get("answer_idx", 0)
@@ -105,8 +93,6 @@ def _normalize_record(item: dict) -> dict:
         "meta_info": item.get("meta_info", ""),
     }
 
-
-# ── LLM Calls ────────────────────────────────────────────────────────────────
 
 def make_client(project: str, location: str = "us-central1") -> genai.Client:
     return genai.Client(vertexai=True, project=project, location=location)
@@ -246,9 +232,6 @@ Stage {preferred_stage} has no clearly discriminative finding, in which case alt
         print(f"  [counterfactual] Error: {e}")
         return None
 
-
-# ── Main Pipeline ─────────────────────────────────────────────────────────────
-
 def build_dataset(
     n_cases: int,
     project: str,
@@ -268,7 +251,7 @@ def build_dataset(
     output_path.mkdir(parents=True, exist_ok=True)
 
     client = make_client(project, location)
-    raw_cases = load_medqa(n_cases * 3)  # load extra to account for filter failures
+    raw_cases = load_medqa(n_cases * 3)
 
     success = 0
     attempted = 0
@@ -279,23 +262,17 @@ def build_dataset(
 
         case_id = f"case_{success + 1:03d}"
         print(f"\n[{success + 1}/{n_cases}] Processing {case_id} ...")
-
-        # Step 1: Decompose
-        time.sleep(delay)
+        time.sleep(delay) # Decomposition
         base = decompose_vignette(client, record)
         if base is None:
             print("  Decomposition failed, skipping.")
             attempted += 1
             continue
-
-        # Validate all four stages present
-        if not all(base.get(f"stage_{k}") for k in [1, 2, 3, 4]):
+        if not all(base.get(f"stage_{k}") for k in [1, 2, 3, 4]): # Validation
             print("  Incomplete stages, skipping.")
             attempted += 1
             continue
-
-        # Step 2: Generate counterfactuals
-        counterfactuals = []
+        counterfactuals = [] # Counterfactual generation 
         for cf_i in range(n_counterfactuals):
             time.sleep(delay)
             cf = generate_counterfactual(client, case_id, base, cf_index=cf_i)
@@ -303,8 +280,6 @@ def build_dataset(
                 counterfactuals.append(cf)
             else:
                 print(f"  CF {cf_i + 1} failed.")
-
-        # Step 3: Assemble and save
         case_record = {
             "case_id": case_id,
             "source": "MedQA-USMLE",
@@ -329,9 +304,6 @@ def build_dataset(
 
     print(f"\nDone. {success}/{attempted} cases successfully constructed.")
     print(f"Output: {output_path.resolve()}")
-
-
-# ── CLI ───────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build staged DDx dataset from MedQA")
