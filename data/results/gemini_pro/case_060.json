@@ -1,0 +1,289 @@
+{
+  "case_id": "case_060",
+  "model": "gemini_pro",
+  "ground_truth": "Drug-induced methemoglobinemia",
+  "base": {
+    "stage_1": {
+      "differential": [
+        [
+          "Essential Hypertension",
+          "The patient has a known history of hypertension which requires ongoing assessment and management."
+        ],
+        [
+          "Dyslipidemia",
+          "This is a common comorbidity with hypertension and a major cardiovascular risk factor that should be screened for in a middle-aged man."
+        ],
+        [
+          "Hypertensive Heart Disease",
+          "The patient's age and history of hypertension place him at risk for cardiac end-organ damage, such as left ventricular hypertrophy."
+        ],
+        [
+          "Chronic Kidney Disease",
+          "Hypertension is a leading cause of chronic kidney disease, which would be evaluated as a potential complication."
+        ],
+        [
+          "Type 2 Diabetes Mellitus",
+          "This condition is frequently associated with hypertension and would be a standard screening consideration at a routine visit."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Acute Myocardial Infarction",
+          "The patient's presentation for a routine checkup is inconsistent with an acute, symptomatic event."
+        ],
+        [
+          "Acute Hepatitis A",
+          "The case specifies a \"history of\" this illness, indicating a past, resolved infection rather than an active one."
+        ]
+      ]
+    },
+    "stage_2": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "The acute onset of cyanosis with a normal pulse oximetry reading after starting a new medication (malaria prophylaxis) is a classic presentation."
+        ],
+        [
+          "High-Altitude Sickness",
+          "Travel to Ecuador makes altitude-related illness a strong possibility, as it presents with headache, dizziness, and shortness of breath."
+        ],
+        [
+          "Carbon Monoxide Poisoning",
+          "This diagnosis explains the symptoms of tissue hypoxia (headache, dizziness) in the setting of a falsely normal pulse oximetry reading."
+        ],
+        [
+          "Malaria",
+          "The patient is in an endemic region and symptoms like headache and tachypnea are consistent with an early infection that prophylaxis may not have fully prevented."
+        ],
+        [
+          "Sepsis",
+          "Tachypnea, tachycardia, and peripheral cyanosis are concerning for a systemic infection leading to poor tissue perfusion."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Pulmonary Embolism",
+          "The normal blood oxygen saturation makes a significant embolism causing cyanosis highly unlikely."
+        ],
+        [
+          "Anaphylaxis",
+          "The absence of hypotension, urticaria, or angioedema makes this diagnosis improbable."
+        ]
+      ]
+    },
+    "stage_3": {
+      "differential": [
+        [
+          "Methemoglobinemia",
+          "The patient has cyanosis, symptoms of hypoxia, a normal pulse oximetry reading, and pathognomonic chocolate-brown blood after starting a likely oxidizing medication."
+        ],
+        [
+          "Sulfhemoglobinemia",
+          "This is a rare dyshemoglobinemia that also presents with drug-induced cyanosis and a discrepancy between clinical appearance and pulse oximetry reading."
+        ],
+        [
+          "G6PD Deficiency",
+          "This common genetic enzymopathy predisposes individuals to methemoglobinemia and hemolysis when exposed to oxidizing drugs like primaquine."
+        ],
+        [
+          "Carbon Monoxide Poisoning",
+          "This is another cause of dyshemoglobinemia presenting with hypoxic symptoms and a falsely elevated pulse oximetry reading, though it typically causes cherry-red blood."
+        ],
+        [
+          "Pulmonary Embolism",
+          "This is a life-threatening cause of acute shortness of breath and tachypnea in a traveler, although it does not explain the blood color or normal oximetry."
+        ]
+      ],
+      "eliminated": [
+        [
+          "Sepsis",
+          "The patient is afebrile and hemodynamically stable, and sepsis does not explain the chocolate-brown blood or the normal pulse oximetry with cyanosis."
+        ],
+        [
+          "Polycythemia Vera",
+          "This is a chronic condition, which is inconsistent with the acute onset of symptoms over three days."
+        ]
+      ]
+    },
+    "stage_4": {
+      "differential": [
+        [
+          "Drug-induced methemoglobinemia",
+          "The acute onset of symptoms and pathognomonic lab findings occurred shortly after starting a new malaria prophylaxis medication, a known class of oxidizing agents."
+        ],
+        [
+          "Toxin-induced methemoglobinemia",
+          "The patient's travel to a new environment raises the possibility of exposure to oxidizing toxins such as nitrates or nitrites in local food or water."
+        ],
+        [
+          "Sulfhemoglobinemia",
+          "This condition presents with cyanosis and can be caused by similar oxidizing agents, although the specific lab confirmation of methemoglobin makes it less likely."
+        ],
+        [
+          "Congenital methemoglobinemia (Cytochrome b5 reductase deficiency)",
+          "This is a rare genetic cause of elevated methemoglobin that typically presents in infancy, making it unlikely given the patient's age and acute onset."
+        ],
+        [
+          "Hemoglobin M Disease",
+          "This is a rare, inherited hemoglobinopathy causing lifelong cyanosis and methemoglobinemia, which is inconsistent with the patient's acute presentation at age 52."
+        ]
+      ],
+      "eliminated": [
+        [
+          "G6PD Deficiency",
+          "This was ruled out by a direct laboratory test showing a normal G6PD level."
+        ],
+        [
+          "Carbon Monoxide Poisoning",
+          "This condition does not cause cyanosis or chocolate-brown blood, which are key features of this case."
+        ],
+        [
+          "Pulmonary Embolism",
+          "This diagnosis is inconsistent with the normal pulse oximetry, chocolate-brown blood, and confirmed elevated methemoglobin levels."
+        ]
+      ]
+    }
+  },
+  "counterfactuals": [
+    {
+      "stage_1": {
+        "differential": [
+          [
+            "Essential Hypertension",
+            "The patient has a known history of hypertension which requires ongoing assessment and management."
+          ],
+          [
+            "Dyslipidemia",
+            "This is a common comorbidity with hypertension and a major cardiovascular risk factor that should be screened for in a middle-aged man."
+          ],
+          [
+            "Hypertensive Heart Disease",
+            "The patient's age and history of hypertension place him at risk for cardiac end-organ damage, such as left ventricular hypertrophy."
+          ],
+          [
+            "Chronic Kidney Disease",
+            "Hypertension is a leading cause of chronic kidney disease, which would be evaluated as a potential complication."
+          ],
+          [
+            "Type 2 Diabetes Mellitus",
+            "This condition is frequently associated with hypertension and would be a standard screening consideration at a routine visit."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Acute Myocardial Infarction",
+            "The patient's presentation for a routine checkup is inconsistent with an acute, symptomatic event."
+          ],
+          [
+            "Acute Hepatitis A",
+            "The case specifies a \"history of\" this illness, indicating a past, resolved infection rather than an active one."
+          ]
+        ]
+      },
+      "stage_2": {
+        "differential": [
+          [
+            "Methemoglobinemia",
+            "The patient has acute onset cyanosis and severe hypoxemia refractory to supplemental oxygen after starting a new medication (malaria prophylaxis) which is a potential trigger."
+          ],
+          [
+            "High-Altitude Pulmonary Edema (HAPE)",
+            "The patient's acute respiratory distress and hypoxemia began shortly after traveling to Ecuador, a country with high-altitude regions."
+          ],
+          [
+            "Pulmonary Embolism (PE)",
+            "Recent long-distance travel is a major risk factor for PE, which classically presents with acute shortness of breath, tachypnea, and hypoxemia."
+          ],
+          [
+            "Acute Respiratory Distress Syndrome (ARDS)",
+            "The severe hypoxemia that is poorly responsive to supplemental oxygen is the hallmark of ARDS, which could be triggered by a severe travel-related infection."
+          ],
+          [
+            "Severe Malaria",
+            "The patient is in a malaria-endemic region, and a severe infection can cause ARDS and profound hypoxemia, as prophylaxis is not 100% effective."
+          ]
+        ],
+        "eliminated": []
+      },
+      "stage_3": {
+        "differential": [
+          [
+            "Methemoglobinemia",
+            "The triad of central cyanosis, hypoxia refractory to supplemental oxygen, and chocolate-colored blood is pathognomonic for this condition."
+          ],
+          [
+            "Sulfhemoglobinemia",
+            "This rare condition also presents with severe cyanosis and dark-colored blood and can be induced by similar offending agents as methemoglobinemia."
+          ],
+          [
+            "Massive Intravascular Hemolysis",
+            "An acute hemolytic crisis, potentially triggered by the antimalarial drug in a susceptible individual (e.g., G6PD deficiency), can cause hypoxia and alter blood color."
+          ],
+          [
+            "Sepsis with Hemolysis",
+            "A fulminant infection (e.g., Clostridium perfringens or malaria) can cause massive hemolysis and profound hypoxia, presenting as an acute decompensation in a traveler."
+          ],
+          [
+            "Carbon Monoxide Poisoning",
+            "This toxin causes profound tissue hypoxia with neurologic symptoms, but it is less likely given the presence of cyanosis and brown blood instead of classic cherry-red findings."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Pulmonary Embolism",
+            "Does not cause chocolate brown blood and the associated hypoxia typically improves with supplemental oxygen."
+          ],
+          [
+            "Pneumonia",
+            "Does not explain the abnormal blood color and the patient is afebrile."
+          ],
+          [
+            "Cyanide Poisoning",
+            "Causes bright red venous blood due to inhibition of cellular oxygen utilization, not chocolate brown blood."
+          ]
+        ]
+      },
+      "stage_4": {
+        "differential": [
+          [
+            "Drug-induced methemoglobinemia",
+            "The patient's acute symptoms developed after starting malaria prophylaxis, a known class of oxidizing agents that can cause this condition."
+          ],
+          [
+            "Toxin-induced methemoglobinemia",
+            "Travel to a new country introduces the possibility of exposure to environmental or ingested toxins, such as nitrates in water or aniline dyes."
+          ],
+          [
+            "Dietary methemoglobinemia",
+            "Ingestion of foods high in nitrates or nitrites is a possible, though less common, cause of acquired methemoglobinemia in adults."
+          ],
+          [
+            "Congenital methemoglobinemia",
+            "This is an unlikely cause given the patient's age at presentation, but a mild, previously undiagnosed enzymatic deficiency could have been unmasked by an oxidative stressor."
+          ],
+          [
+            "Methemoglobinemia secondary to sepsis",
+            "Systemic infection can induce methemoglobinemia, but this is less likely as the patient is afebrile and lacks other signs of severe infection."
+          ]
+        ],
+        "eliminated": [
+          [
+            "Carbon monoxide poisoning",
+            "This condition is associated with cherry-red blood, not the chocolate-brown blood observed in the patient."
+          ],
+          [
+            "Sulfhemoglobinemia",
+            "The specific laboratory confirmation of elevated methemoglobin levels rules this out as the primary cause of the abnormal hemoglobin."
+          ],
+          [
+            "Pulmonary embolism",
+            "This diagnosis would not explain the chocolate-brown blood color or the confirmed elevation in methemoglobin."
+          ]
+        ]
+      },
+      "cf_id": "case_060_cf_a",
+      "altered_stage": 2,
+      "alteration_description": "The patient's blood oxygen saturation is 85% despite supplemental oxygen, arguing against methemoglobinemia, which typically has a normal saturation gap."
+    }
+  ]
+}

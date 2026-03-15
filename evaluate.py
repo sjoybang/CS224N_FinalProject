@@ -128,32 +128,6 @@ class GeminiModel:
         return response.text.strip()
 
 
-class BioGPTModel:
-    def __init__(self):
-        import torch
-        from transformers import BioGptTokenizer, BioGptForCausalLM
-        print("Loading BioGPT (this may take a minute)...")
-        self.tokenizer = BioGptTokenizer.from_pretrained("microsoft/biogpt")
-        self.model = BioGptForCausalLM.from_pretrained("microsoft/biogpt")
-        self.model.eval()
-        self.torch = torch
-
-    def generate(self, prompt: str) -> str:
-        inputs = self.tokenizer(prompt, return_tensors="pt", truncation=True, max_length=1024)
-        with self.torch.no_grad():
-            output_ids = self.model.generate(
-                **inputs,
-                max_new_tokens=250,
-                num_beams=5,
-                do_sample=False,
-                early_stopping=True,
-                no_repeat_ngram_size=3,
-            )
-        full_text = self.tokenizer.decode(output_ids[0], skip_special_tokens=True)
-        if full_text.startswith(prompt):
-            return full_text[len(prompt):].strip()
-        return full_text.strip()
-
 
 class ClaudeVertexModel:
     def __init__(self, project: str, region: str = "global"):
@@ -209,6 +183,7 @@ VLLM_MODEL_NAMES = {
     "mistral":    "mistralai/Mistral-7B-Instruct-v0.2",
     "mixtral":    "mistralai/Mixtral-8x7B-Instruct-v0.1",
     "medalpaca":  "medalpaca/medalpaca-13b",
+    "meditron":   "meditron:latest",
 }
 
 
@@ -236,8 +211,6 @@ def load_model(args):
         if args.anthropic_key:
             return ClaudeDirectModel(api_key=args.anthropic_key)
         return ClaudeVertexModel(project=args.project)
-    elif args.model == "biogpt":
-        return BioGPTModel()
     elif args.model in ("gpt4", "gpt35"):
         model_name = "gpt-4o" if args.model == "gpt4" else "gpt-3.5-turbo"
         return OpenAIModel(api_key=args.openai_key, model_name=model_name)
@@ -338,8 +311,8 @@ def run_evaluation(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate models on staged DDx dataset")
     parser.add_argument("--model", required=True,
-                        choices=["gemini", "gemini_pro", "claude", "biogpt", "gpt4", "gpt35",
-                                 "llama3", "mistral", "mixtral", "medalpaca"],
+                        choices=["gemini", "gemini_pro", "claude", "gpt4", "gpt35",
+                                 "llama3", "mistral", "mixtral", "medalpaca", "meditron"],
                         help="Model to evaluate")
     parser.add_argument("--data_dir", default="data/staged",
                         help="Directory of staged case JSONs")
